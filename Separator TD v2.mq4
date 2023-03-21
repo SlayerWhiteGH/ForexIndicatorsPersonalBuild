@@ -12,6 +12,7 @@
 #property indicator_buffers 1
 #property indicator_color1 Yellow
 
+extern bool ShowAll               = false;
 extern int NumLookBack            = 1;                 //Look Back 1 = 5 Days
 extern int HourTime               = 5;                 //Hour Number:
 extern int MinuteTime             = 0;                 //Minute Number:
@@ -20,8 +21,6 @@ extern ENUM_LINE_STYLE linestyle  = STYLE_DOT;         //VLine Style:
 
 extern color clrlondonkz          = clrMediumSeaGreen; //LoKZ Color:
 extern color clrnykz              = clrMaroon;         //NYKZ Color:
-
-
 
 string stDy[] = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
 string iName="Separator TD ";
@@ -102,55 +101,43 @@ int OnCalculate(const int rates_total,
 
 //----
    for (int i = 0; i < rates_total; i++){
-    if (time[i] < lookbackTime) continue;
-    int pos = startingPoint + iterator;
-    if (pos >= rates_total) break;
-    int current_hour = TimeHour(time[pos]);
-    int current_minute = TimeMinute(time[pos]);
-    
-    if (current_minute == 0 && current_hour >= HourTime && time[pos] >= lookbackTime && time[pos] <= currentTime){
-        if (current_hour == HourTime){
-            string separator_name = "Separator-" + string(time[pos]);
-            if (ObjectFind(0, separator_name) == -1){
-                Sett(VLineCreate(0, separator_name, 0, time[pos], Line_Color, linestyle));
-                string day_str = stDy[TimeDayOfWeek(time[pos]) == 0 ? 6 : TimeDayOfWeek(time[pos]) - 1];
-                Sett(Text(0, "DayName-" + string(time[pos]), 0, time[pos], price_at_bottom, day_str, "Arial", 8, clrBlack, 90));
-                if (last_day != TimeDayOfWeek(time[pos])) {
-                    // Today vertikal line
-                    Sett(VLineCreate(0, "TodayVLine", 0, time[pos], Line_Color, linestyle));
-                }
-            }
-        }
-        else if (current_hour == londonOpen){
-            string london_name = "London vLine-" + string(time[pos]);
-            if (ObjectFind(0, london_name) == -1){
-                Sett(VLineCreate(0, london_name, 0, time[pos], clrlondonkz, 2, 1));
-                Sett(Text(0, "London-" + string(time[pos]), 0, time[pos], price_at_bottom, "London Open", "Arial", 7, clrlondonkz, 90));
-            }
-        }
-        else if (current_hour == preNYOpen){
-            string preNY_name = "preNYOpen vLine-" + string(time[pos]);
-            if (ObjectFind(0, preNY_name) == -1){
-                Sett(VLineCreate(0, preNY_name, 0, time[pos], clrnykz, 2, 1));
-                Sett(Text(0, "Pre NY-" + string(time[pos]), 0, time[pos], price_at_bottom, "Pre NY", "Arial", 7, clrnykz, 90));
-            }
-        }
-        else if (current_hour == NYOpen){
-            string NY_name = "NY vLine-" + string(time[pos]);
-            if (ObjectFind(0, NY_name) == -1){
-                Sett(VLineCreate(0, NY_name, 0, time[pos], clrnykz, 2, 1));
-                Sett(Text(0, "NY-" + string(time[pos]), 0, time[pos], price_at_bottom, "NY Open", "Arial", 7, clrnykz, 90));
-            }
-        }
-        else if (current_hour == londonClose){
-            string londonclose_name = "London Close vLine-" + string(time[pos]);
-            if (ObjectFind(0, londonclose_name) == -1){
-                Sett(VLineCreate(0, londonclose_name, 0, time[pos], clrlondonkz, 2, 1));
-                Sett(Text(0, "London Close-" + string(time[pos]), 0, time[pos], price_at_bottom, "London Close", "Arial", 7, clrlondonkz, 90));
-            }
-        }
+      if (ShowAll) {
+         if (TimeMinute(time[i]) == 0 && TimeHour(time[i]) >= HourTime && time[i] <= currentTime) {
+            if (TimeHour(time[i]) == HourTime){
+               if (ObjectFind(0, getLineSeparator(i)) == -1){
+                   Sett(VLineCreate(0, getLineSeparator(i), 0, time[i], Line_Color, linestyle));
+                   string day_str = stDy[TimeDayOfWeek(time[i]) == 0 ? 6 : TimeDayOfWeek(time[i]) - 1];
+                   Sett(Text(0, getLineSeparator(i) + string(time[i]), 0, time[i], price_at_bottom, day_str, "Arial", 8, clrBlack, 90));
+                  }
+               }
+              else if (TimeHour(time[i]) == londonOpen){
+                  if (ObjectFind(0, getLineLondonOpen(i)) == -1){
+                      Sett(VLineCreate(0, getLineLondonOpen(i), 0, time[i], clrlondonkz, 2, 1));
+                      Sett(Text(0, getLineLondonOpen(i), 0, time[i], price_at_bottom, "London Open", "Arial", 7, clrlondonkz, 90));
+                  }
+              }
+              else if (TimeHour(time[i]) == preNYOpen){
+                  if (ObjectFind(0, getLinePreNYOpen(i)) == -1){
+                      Sett(VLineCreate(0, getLinePreNYOpen(i), 0, time[i], clrnykz, 2, 1));
+                      Sett(Text(0, getLinePreNYOpen(i), 0, time[i], price_at_bottom, "Pre NY", "Arial", 7, clrnykz, 90));
+                  }
+              }
+              else if (TimeHour(time[i]) == NYOpen){
+                  if (ObjectFind(0, getLineNYOpen(i)) == -1){
+                      Sett(VLineCreate(0, getLineNYOpen(i), 0, time[i], clrnykz, 2, 1));
+                      Sett(Text(0, getLineNYOpen(i), 0, time[i], price_at_bottom, "NY Open", "Arial", 7, clrnykz, 90));
+                  }
+              }
+              else if (TimeHour(time[i]) == londonClose){
+                  if (ObjectFind(0, getLineLondonClose(i)) == -1){
+                      Sett(VLineCreate(0, getLineLondonClose(i), 0, time[i], clrlondonkz, 2, 1));
+                      Sett(Text(0, getLineLondonClose(i), 0, time[i], price_at_bottom, "London Close", "Arial", 7, clrlondonkz, 90));
+                  }
+              }
+         } 
+      }     
        
-    else if (today >= currentTime) {
+    if (today >= currentTime) {
          
          datetime separator_time = D'05:00:00';
          datetime london_open = D'07:00:00';
@@ -159,42 +146,36 @@ int OnCalculate(const int rates_total,
          datetime eight_am = D'13:30:00';
          datetime london_close = D'15:00:00';
      
-         string separator_name = "Separator Next Day";
-         if (ObjectFind(0, separator_name) == -1){
-             Sett(VLineCreate(0, separator_name, 0, separator_time, Line_Color, linestyle));
-             string day_str = stDy[TimeDayOfWeek(time[pos]) == 0 ? 6 : TimeDayOfWeek(time[i]) - 1];
-             Sett(Text(0, "Next Day-" + string(separator_time), 0,separator_time, price_at_bottom, day_str, "Arial", 8, clrBlack, 90));
+         if (ObjectFind(0, getLineSeparator(i)) == -1){
+             Sett(VLineCreate(0, getLineSeparator(i), 0, separator_time, Line_Color, linestyle));
+             string day_str = stDy[TimeDayOfWeek(time[i]) == 0 ? 6 : TimeDayOfWeek(time[i]) - 1];
+             Sett(Text(0, getLineSeparator(i), 0,separator_time, price_at_bottom, day_str, "Arial", 8, clrBlack, 90));
          }
-         string london_name = "London Open Next Day";
-         if (ObjectFind(0, london_name) == -1){
-             Sett(VLineCreate(0, london_name, 0, london_open, clrlondonkz, 2, 1));
-             Sett(Text(0, "Next Day-" + string(london_open), 0,london_open, price_at_bottom, "London Open", "Arial", 7, clrlondonkz, 90));
+         if (ObjectFind(0, getLineLondonOpen(i)) == -1){
+             Sett(VLineCreate(0, getLineLondonOpen(i), 0, london_open, clrlondonkz, 2, 1));
+             Sett(Text(0, getLineLondonOpen(i), 0,london_open, price_at_bottom, "London Open", "Arial", 7, clrlondonkz, 90));
          }
-         string preNY_name = "Pre NY Next Day";
-         if (ObjectFind(0, preNY_name) == -1){
-             Sett(VLineCreate(0, preNY_name, 0,pre_ny_open, clrnykz, 2, 1));
-             Sett(Text(0, "Next Day-" + string(pre_ny_open), 0,pre_ny_open, price_at_bottom, "Pre NY", "Arial", 7, clrnykz, 90));
+         if (ObjectFind(0, getLinePreNYOpen(i)) == -1){
+             Sett(VLineCreate(0, getLinePreNYOpen(i), 0,pre_ny_open, clrnykz, 2, 1));
+             Sett(Text(0, getLinePreNYOpen(i), 0,pre_ny_open, price_at_bottom, "Pre NY", "Arial", 7, clrnykz, 90));
          }
-         string NY_name = "NY Open Next Day";
-         if (ObjectFind(0, NY_name) == -1){
-             Sett(VLineCreate(0, NY_name, 0,ny_open, clrnykz, 2, 1));
-             Sett(Text(0, "Next Day-" + string(ny_open), 0,ny_open, price_at_bottom, "NY Open", "Arial", 7, clrnykz, 90));
+         if (ObjectFind(0, getLineNYOpen(i)) == -1){
+             Sett(VLineCreate(0, getLineNYOpen(i), 0,ny_open, clrnykz, 2, 1));
+             Sett(Text(0, getLineNYOpen(i), 0,ny_open, price_at_bottom, "NY Open", "Arial", 7, clrnykz, 90));
          }
-         string eight_am_name = "8.30AM Next Day";
-         if (ObjectFind(0, eight_am_name) == -1){
-             Sett(VLineCreate(0, eight_am_name, 0,eight_am, clrnykz, 2, 1));
-             Sett(Text(0, "Next Day-" + string(eight_am), 0,eight_am, price_at_bottom, "8.30 AM", "Arial", 7, clrnykz, 90));
+         if (ObjectFind(0, getLine8AM(i)) == -1){
+             Sett(VLineCreate(0, getLine8AM(i), 0,eight_am, clrnykz, 2, 1));
+             Sett(Text(0, getLine8AM(i), 0,eight_am, price_at_bottom, "8.30 AM", "Arial", 7, clrnykz, 90));
          }
-         string londonclose_name = "London Close Next Day";
-         if (ObjectFind(0, londonclose_name) == -1){
-             Sett(VLineCreate(0, londonclose_name, 0,london_close, clrlondonkz, 2, 1));
-             Sett(Text(0, "Next Day-" + string(london_close), 0,london_close, price_at_bottom, "London Close", "Arial", 7, clrlondonkz, 90));
+         if (ObjectFind(0, getLineLondonClose(i)) == -1){
+             Sett(VLineCreate(0, getLineLondonClose(i), 0,london_close, clrlondonkz, 2, 1));
+             Sett(Text(0, getLineLondonClose(i), 0,london_close, price_at_bottom, "London Close", "Arial", 7, clrlondonkz, 90));
          } 
 
       }  
     }
-    iterator++;
- }
+    
+ 
 
 //----
 if (!is_valid_timeframe){
@@ -202,6 +183,25 @@ if (!is_valid_timeframe){
    objDelete();}
 //----
 return(rates_total);
+}
+//+--------------------
+string getLineSeparator(int barKeberapa) {
+     return "Separator-" + string(Time[barKeberapa]);
+}
+string getLineLondonOpen(int barKeberapa) {
+     return "London Open-" + string(Time[barKeberapa]);
+}
+string getLinePreNYOpen(int barKeberapa) {
+     return "Pre NY Open-" + string(Time[barKeberapa]);
+}
+string getLineNYOpen(int barKeberapa) {
+     return "NY Open-" + string(Time[barKeberapa]);
+}
+string getLine8AM(int barKeberapa) {
+     return "8.30 AM-" + string(Time[barKeberapa]);
+}
+string getLineLondonClose(int barKeberapa) {
+     return "London Close-" + string(Time[barKeberapa]);
 }
 //+------------------------------------------------------------------+
 void Sett(bool Action){
