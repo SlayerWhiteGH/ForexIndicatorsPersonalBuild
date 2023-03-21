@@ -9,11 +9,9 @@
 #property version   "1.00"
 #property strict
 #property indicator_chart_window
-#property indicator_buffers 1
-#property indicator_color1 Yellow
 
-extern bool ShowAll               = false;
-extern int NumLookBack            = 1;                 //Look Back 1 = 5 Days
+
+extern bool ShowAll               = true;
 extern int HourTime               = 5;                 //Hour Number:
 extern int MinuteTime             = 0;                 //Minute Number:
 extern color Line_Color           = clrBlack;          //VLine Color:
@@ -23,9 +21,7 @@ extern color clrlondonkz          = clrMediumSeaGreen; //LoKZ Color:
 extern color clrnykz              = clrMaroon;         //NYKZ Color:
 
 string stDy[] = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
-string iName="Separator TD ";
-bool is_valid_timeframe = (Period() <= PERIOD_M15) ? true : false;
-   
+string iName = "Separator TD ";
 
 //+------------------------------------------------------------------+
 //| Custom indicator initialization function                         |
@@ -61,6 +57,9 @@ void objDelete(string inpStr=""){
 //+------------------------------------------------------------------+
 //| Custom indicator iteration function                              |
 //+------------------------------------------------------------------+
+//+------
+
+//+------
 int OnCalculate(const int rates_total,
                 const int prev_calculated,
                 const datetime &time[],
@@ -71,137 +70,152 @@ int OnCalculate(const int rates_total,
                 const long &tick_volume[],
                 const long &volume[],
                 const int &spread[])
-{   
-//---- 
-   int limit            = Bars - IndicatorCounted();
-   int lookback         = NumLookBack;
-   int startingPoint    = 0;
-   int iterator         = 0;
-   int londonOpen       = 7;
-   int preNYOpen        = 10;
-   int NYOpen           = 12;
-   int londonClose      = 15;
-//----
-   int chart_height = ChartGetInteger(0, CHART_HEIGHT_IN_PIXELS);
-   double chart_price_range = ChartGetDouble(0, CHART_PRICE_MAX) - ChartGetDouble(0, CHART_PRICE_MIN);
-   double price_per_pixel = chart_price_range / chart_height;
-   double y_pos = ChartGetInteger(0, chart_price_range)  - 1;
-   double price_at_bottom = ChartGetDouble(0, CHART_PRICE_MIN) + y_pos * price_per_pixel; 
-//----
-   datetime currentTime = TimeLocal() - (24*60*60);
-   datetime lookbackTime = currentTime - (lookback*7*24*60*60);
-   int pos = startingPoint + iterator;
-    
-   datetime today = TimeLocal();
-   datetime tomorrow = TimeLocal() + 24 * 60 * 60; // tambahkan 24 jam ke waktu saat ini
-   int last_day;
-   last_day = TimeDayOfWeek(today); // Mendapatkan hari dalam seminggu (0-6) pada waktu saat ini
-  
-//----
+{ 
+    if (ObjectFind(0, getLineSeparator(getSeparatorTime())) == -1){
+        Sett(VLineCreate(0, getLineSeparator(getSeparatorTime()), 0, getSeparatorTime(), Line_Color, linestyle));
+        Sett(Text(0, getTextSeparator(getSeparatorTime()), 0, getSeparatorTime(), getLowestYPos(), getDayName(getSeparatorTime()), "Arial", 8, clrBlack, 90));
+    }
+    if (ObjectFind(0, getLineLondonOpen(getLondonOpenTime())) == -1){
+        Sett(VLineCreate(0, getLineLondonOpen(getLondonOpenTime()), 0, getLondonOpenTime(), clrlondonkz, 2, 1));
+        Sett(Text(0, getTextLondonOpen(getLondonOpenTime()), 0, getLondonOpenTime(), getLowestYPos(), "London Open", "Arial", 7, clrlondonkz, 90));
+    }
+    if (ObjectFind(0, getLinePreNYOpen(getPreNYOpenTime())) == -1){
+        Sett(VLineCreate(0, getLinePreNYOpen(getPreNYOpenTime()), 0, getPreNYOpenTime(), clrnykz, 2, 1));
+        Sett(Text(0, getTextPreNYOpen(getPreNYOpenTime()), 0, getPreNYOpenTime(), getLowestYPos(), "Pre NY", "Arial", 7, clrnykz, 90));
+    }
+    if (ObjectFind(0, getLineNYOpen(getNYOpenTime())) == -1){
+        Sett(VLineCreate(0, getLineNYOpen(getNYOpenTime()), 0, getNYOpenTime(), clrnykz, 2, 1));
+        Sett(Text(0, getTextNYOpen(getNYOpenTime()), 0, getNYOpenTime(), getLowestYPos(), "NY Open", "Arial", 7, clrnykz, 90));
+    }
+    if (ObjectFind(0, getLine8AM(get830Time())) == -1){
+        Sett(VLineCreate(0, getLine8AM(get830Time()), 0,get830Time(), clrnykz, 2, 1));
+        Sett(Text(0, getText8AM(get830Time()), 0, get830Time(), getLowestYPos(), "8.30 AM", "Arial", 7, clrnykz, 90));
+    }
+    if (ObjectFind(0, getLineLondonClose(getLondonCloseTime())) == -1){
+        Sett(VLineCreate(0, getLineLondonClose(getLondonCloseTime()), 0, getLondonCloseTime(), clrlondonkz, 2, 1));
+        Sett(Text(0, getTextLondonClose(getLondonCloseTime()), 0, getLondonCloseTime(), getLowestYPos(), "London Close", "Arial", 7, clrlondonkz, 90));
+    }
 
-//----
-   for (int i = 0; i < rates_total; i++){
-      if (ShowAll) {
-         if (TimeMinute(time[i]) == 0 && TimeHour(time[i]) >= HourTime && time[i] <= currentTime) {
-            if (TimeHour(time[i]) == HourTime){
-               if (ObjectFind(0, getLineSeparator(i)) == -1){
-                   Sett(VLineCreate(0, getLineSeparator(i), 0, time[i], Line_Color, linestyle));
-                   string day_str = stDy[TimeDayOfWeek(time[i]) == 0 ? 6 : TimeDayOfWeek(time[i]) - 1];
-                   Sett(Text(0, getLineSeparator(i) + string(time[i]), 0, time[i], price_at_bottom, day_str, "Arial", 8, clrBlack, 90));
-                  }
-               }
-              else if (TimeHour(time[i]) == londonOpen){
-                  if (ObjectFind(0, getLineLondonOpen(i)) == -1){
-                      Sett(VLineCreate(0, getLineLondonOpen(i), 0, time[i], clrlondonkz, 2, 1));
-                      Sett(Text(0, getLineLondonOpen(i), 0, time[i], price_at_bottom, "London Open", "Arial", 7, clrlondonkz, 90));
-                  }
-              }
-              else if (TimeHour(time[i]) == preNYOpen){
-                  if (ObjectFind(0, getLinePreNYOpen(i)) == -1){
-                      Sett(VLineCreate(0, getLinePreNYOpen(i), 0, time[i], clrnykz, 2, 1));
-                      Sett(Text(0, getLinePreNYOpen(i), 0, time[i], price_at_bottom, "Pre NY", "Arial", 7, clrnykz, 90));
-                  }
-              }
-              else if (TimeHour(time[i]) == NYOpen){
-                  if (ObjectFind(0, getLineNYOpen(i)) == -1){
-                      Sett(VLineCreate(0, getLineNYOpen(i), 0, time[i], clrnykz, 2, 1));
-                      Sett(Text(0, getLineNYOpen(i), 0, time[i], price_at_bottom, "NY Open", "Arial", 7, clrnykz, 90));
-                  }
-              }
-              else if (TimeHour(time[i]) == londonClose){
-                  if (ObjectFind(0, getLineLondonClose(i)) == -1){
-                      Sett(VLineCreate(0, getLineLondonClose(i), 0, time[i], clrlondonkz, 2, 1));
-                      Sett(Text(0, getLineLondonClose(i), 0, time[i], price_at_bottom, "London Close", "Arial", 7, clrlondonkz, 90));
-                  }
-              }
-         } 
-      }     
-       
-    if (today >= currentTime) {
-         
-         datetime separator_time = D'05:00:00';
-         datetime london_open = D'07:00:00';
-         datetime pre_ny_open = D'10:00:00';
-         datetime ny_open = D'12:00:00';
-         datetime eight_am = D'13:30:00';
-         datetime london_close = D'15:00:00';
-     
-         if (ObjectFind(0, getLineSeparator(i)) == -1){
-             Sett(VLineCreate(0, getLineSeparator(i), 0, separator_time, Line_Color, linestyle));
-             string day_str = stDy[TimeDayOfWeek(time[i]) == 0 ? 6 : TimeDayOfWeek(time[i]) - 1];
-             Sett(Text(0, getLineSeparator(i), 0,separator_time, price_at_bottom, day_str, "Arial", 8, clrBlack, 90));
-         }
-         if (ObjectFind(0, getLineLondonOpen(i)) == -1){
-             Sett(VLineCreate(0, getLineLondonOpen(i), 0, london_open, clrlondonkz, 2, 1));
-             Sett(Text(0, getLineLondonOpen(i), 0,london_open, price_at_bottom, "London Open", "Arial", 7, clrlondonkz, 90));
-         }
-         if (ObjectFind(0, getLinePreNYOpen(i)) == -1){
-             Sett(VLineCreate(0, getLinePreNYOpen(i), 0,pre_ny_open, clrnykz, 2, 1));
-             Sett(Text(0, getLinePreNYOpen(i), 0,pre_ny_open, price_at_bottom, "Pre NY", "Arial", 7, clrnykz, 90));
-         }
-         if (ObjectFind(0, getLineNYOpen(i)) == -1){
-             Sett(VLineCreate(0, getLineNYOpen(i), 0,ny_open, clrnykz, 2, 1));
-             Sett(Text(0, getLineNYOpen(i), 0,ny_open, price_at_bottom, "NY Open", "Arial", 7, clrnykz, 90));
-         }
-         if (ObjectFind(0, getLine8AM(i)) == -1){
-             Sett(VLineCreate(0, getLine8AM(i), 0,eight_am, clrnykz, 2, 1));
-             Sett(Text(0, getLine8AM(i), 0,eight_am, price_at_bottom, "8.30 AM", "Arial", 7, clrnykz, 90));
-         }
-         if (ObjectFind(0, getLineLondonClose(i)) == -1){
-             Sett(VLineCreate(0, getLineLondonClose(i), 0,london_close, clrlondonkz, 2, 1));
-             Sett(Text(0, getLineLondonClose(i), 0,london_close, price_at_bottom, "London Close", "Arial", 7, clrlondonkz, 90));
-         } 
+    for (int i = 0; i < rates_total; i++){
+        if (ShowAll) {
+            if (TimeMinute(time[i]) == 0 && TimeHour(time[i]) >= HourTime && time[i] <= getCurrentTime()) {
+                if (TimeHour(time[i]) == HourTime){
+                    if (ObjectFind(0, getLineSeparator(time[i])) == -1){
+                        Sett(VLineCreate(0, getLineSeparator(time[i]), 0, time[i], Line_Color, linestyle));
+                    }
+                    if (ObjectFind(0, getTextSeparator(time[i])) == -1) {
+                        Sett(Text(0, getTextSeparator(time[i]), 0, time[i], getLowestYPos(), getDayName(time[i]), "Arial", 8, clrBlack, 90));
+                    }
+                }
+                else if (TimeHour(time[i]) == TimeHour(getLondonOpenTime())){
+                    if (ObjectFind(0, getLineLondonOpen(time[i])) == -1){
+                        Sett(VLineCreate(0, getLineLondonOpen(time[i]), 0, time[i], clrlondonkz, 2, 1));
+                    }
+                    if (ObjectFind(0, getTextLondonOpen(time[i])) == -1) {
+                        Sett(Text(0, getTextLondonOpen(time[i]), 0, time[i], getLowestYPos(), "London Open", "Arial", 7, clrlondonkz, 90));
+                    } 
+                }
+                else if (TimeHour(time[i]) == TimeHour(getPreNYOpenTime())){
+                    if (ObjectFind(0, getLinePreNYOpen(time[i])) == -1){
+                        Sett(VLineCreate(0, getLinePreNYOpen(time[i]) + "a", 0, time[i], clrnykz, 2, 1));
+                    }
+                    if (ObjectFind(0, getTextPreNYOpen(time[i])) == -1) {
+                        Sett(Text(0, getTextPreNYOpen(time[i]), 0, time[i], getLowestYPos(), "Pre NY", "Arial", 7, clrnykz, 90));
+                    }
+                }
+                else if (TimeHour(time[i]) == TimeHour(getNYOpenTime())){
+                    if (ObjectFind(0, getLineNYOpen(time[i])) == -1){
+                        Sett(VLineCreate(0, getLineNYOpen(time[i]) + "a", 0, time[i], clrnykz, 2, 1));
+                    }
+                    if (ObjectFind(0, getTextNYOpen(time[i])) == -1) {
+                        Sett(Text(0, getTextNYOpen(time[i]), 0, time[i], getLowestYPos(), "NY Open", "Arial", 7, clrnykz, 90));
+                    }
+                }
+                else if (TimeHour(time[i]) == TimeHour(getLondonCloseTime())){
+                    if (ObjectFind(0, getLineLondonClose(time[i])) == -1){
+                        Sett(VLineCreate(0, getLineLondonClose(time[i]) + "a", 0, time[i], clrlondonkz, 2, 1));
+                    }
+                    if (ObjectFind(0, getTextLondonClose(time[i])) == -1) {
+                        Sett(Text(0, getLineLondonClose(time[i]), 0, time[i], getLowestYPos(), "London Close", "Arial", 7, clrlondonkz, 90));
+                    }
+                }
+            } 
+        }     
+    }
 
-      }  
+    if (!isValidTimeframe()){
+        // Remove all objects if the timeframe is not valid
+        objDelete();
     }
     
- 
-
-//----
-if (!is_valid_timeframe){
-    // Remove all objects if the timeframe is not valid
-   objDelete();}
-//----
-return(rates_total);
+    return(rates_total);
 }
 //+--------------------
-string getLineSeparator(int barKeberapa) {
-     return "Separator-" + string(Time[barKeberapa]);
+string getLineSeparator(datetime waktu) {
+     return "VLine Separator-" + string(waktu);
 }
-string getLineLondonOpen(int barKeberapa) {
-     return "London Open-" + string(Time[barKeberapa]);
+string getLineLondonOpen(datetime waktu) {
+     return "VLine London Open-" + string(waktu);
 }
-string getLinePreNYOpen(int barKeberapa) {
-     return "Pre NY Open-" + string(Time[barKeberapa]);
+string getLinePreNYOpen(datetime waktu) {
+     return "VLine Pre NY Open-" + string(waktu);
 }
-string getLineNYOpen(int barKeberapa) {
-     return "NY Open-" + string(Time[barKeberapa]);
+string getLineNYOpen(datetime waktu) {
+     return "VLine NY Open-" + string(waktu);
 }
-string getLine8AM(int barKeberapa) {
-     return "8.30 AM-" + string(Time[barKeberapa]);
+string getLine8AM(datetime waktu) {
+     return "VLine 8.30 AM-" + string(waktu);
 }
-string getLineLondonClose(int barKeberapa) {
-     return "London Close-" + string(Time[barKeberapa]);
+string getLineLondonClose(datetime waktu) {
+     return "VLine London Close-" + string(waktu);
+}
+string getTextSeparator(datetime waktu) {
+     return "Text Separator-" + string(waktu);
+}
+string getTextLondonOpen(datetime waktu) {
+     return "Text London Open-" + string(waktu);
+}
+string getTextPreNYOpen(datetime waktu) {
+     return "Text Pre NY Open-" + string(waktu);
+}
+string getTextNYOpen(datetime waktu) {
+     return "Text NY Open-" + string(waktu);
+}
+string getText8AM(datetime waktu) {
+     return "Text 8.30 AM-" + string(waktu);
+}
+string getTextLondonClose(datetime waktu) {
+     return "Text London Close-" + string(waktu);
+}
+datetime getSeparatorTime() {
+    return StrToTime(string(TimeYear(TimeCurrent())) + "." + string(TimeMonth(TimeCurrent())) + "." + string(TimeDay(TimeCurrent())) + " 0" + string(HourTime) + ":00:00");
+}
+datetime getLondonOpenTime() {
+    return StrToTime(string(TimeYear(TimeCurrent())) + "." + string(TimeMonth(TimeCurrent())) + "." + string(TimeDay(TimeCurrent())) + " 0" + string(HourTime + 2) + ":00:00");
+}
+datetime getPreNYOpenTime() {
+    return StrToTime(string(TimeYear(TimeCurrent())) + "." + string(TimeMonth(TimeCurrent())) + "." + string(TimeDay(TimeCurrent())) + " 0" + string(HourTime + 5) + ":00:00");
+}
+datetime getNYOpenTime() {
+    return StrToTime(string(TimeYear(TimeCurrent())) + "." + string(TimeMonth(TimeCurrent())) + "." + string(TimeDay(TimeCurrent())) + " 0" + string(HourTime + 7) + ":00:00");
+}
+datetime get830Time() {
+    return StrToTime(string(TimeYear(TimeCurrent())) + "." + string(TimeMonth(TimeCurrent())) + "." + string(TimeDay(TimeCurrent())) + " 0" + string(HourTime + 8) + ":30:00");
+}
+datetime getLondonCloseTime() {
+    return StrToTime(string(TimeYear(TimeCurrent())) + "." + string(TimeMonth(TimeCurrent())) + "." + string(TimeDay(TimeCurrent())) + " 0" + string(HourTime + 10) + ":00:00");
+}
+string getDayName(datetime waktu) {
+    return stDy[TimeDayOfWeek(waktu) == 0 ? 6 : TimeDayOfWeek(waktu) - 1];
+}
+bool isValidTimeframe() {
+    return Period() <= PERIOD_M15;
+}
+datetime getCurrentTime() {
+    return TimeLocal() - (24*60*60); 
+}
+double getLowestYPos() {
+    return Low[iLowest(Symbol(), PERIOD_CURRENT, MODE_LOW, WindowFirstVisibleBar())];
 }
 //+------------------------------------------------------------------+
 void Sett(bool Action){
