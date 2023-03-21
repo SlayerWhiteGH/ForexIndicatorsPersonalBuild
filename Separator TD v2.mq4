@@ -214,8 +214,23 @@ bool isValidTimeframe() {
 datetime getCurrentTime() {
     return TimeLocal() - (24*60*60); 
 }
+//double getLowestYPos() {
+//    return Low[iLowest(Symbol(), PERIOD_CURRENT, MODE_LOW, WindowFirstVisibleBar())];
+//}
+int chart_height() {
+    return ChartGetInteger(0, CHART_HEIGHT_IN_PIXELS);
+}
+double chart_price_range() {
+    return ChartGetDouble(0, CHART_PRICE_MAX) - ChartGetDouble(0, CHART_PRICE_MIN);
+}
+double price_per_pixel() {
+    return (chart_price_range() / chart_height() );
+}
+double y_pos(){
+    return ChartGetInteger(0, chart_price_range()  - 1);
+}
 double getLowestYPos() {
-    return Low[iLowest(Symbol(), PERIOD_CURRENT, MODE_LOW, WindowFirstVisibleBar())];
+    return ChartGetDouble(0, CHART_PRICE_MIN) + y_pos() * price_per_pixel();
 }
 //+------------------------------------------------------------------+
 void Sett(bool Action){
@@ -243,9 +258,9 @@ bool Text(const long              chart_ID=0,               // chart's ID
           const color             clr=clrBlack,               // color 
           const double            angle=0.0,                // text slope 
           const ENUM_ANCHOR_POINT anchor=ANCHOR_LEFT_UPPER, // anchor type 
-          const bool              back=false,               // in the background 
+          const bool              back=true,               // in the background 
           const bool              selection=false,          // highlight to move 
-          const bool              hidden=false,              // hidden in the object list 
+          const bool              hidden=true,              // hidden in the object list 
           const long              z_order=0){               // priority for mouse click  
    ChangeTextEmptyPoint(time,price); 
    ResetLastError(); 
@@ -278,7 +293,7 @@ bool VLineCreate(const long            chart_ID=0,        // chart's ID
                  const int             width=1,           // line width 
                  const bool            back=true,        // in the background 
                  const bool            selection=false,    // highlight to move 
-                 const bool            hidden=false,       // hidden in the object list 
+                 const bool            hidden=true,       // hidden in the object list 
                  const long            z_order=0){         // priority for mouse click 
    ResetLastError(); 
    string Name=iName+name;
