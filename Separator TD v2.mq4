@@ -34,35 +34,6 @@ string iName = "Separator TD ";
 int init()
 {
 //---- indicators
-    if (ObjectFind(0, getLineSeparator(getSeparatorTime())) == -1){
-        Sett(VLineCreate(0, getLineSeparator(getSeparatorTime()), 0, getSeparatorTime(), Line_Color, linestyle));
-        Sett(Text(0, getTextSeparator(getSeparatorTime()), 0, getSeparatorTime(), getLowestYPos(), getDayName(getSeparatorTime()), "Arial", 8, Line_Color, 90));
-    }
-    if (ObjectFind(0, getLineLondonOpen(getLondonOpenTime())) == -1){
-        Sett(VLineCreate(0, getLineLondonOpen(getLondonOpenTime()), 0, getLondonOpenTime(), clrlondonkz, 2, 1));
-        Sett(Text(0, getTextLondonOpen(getLondonOpenTime()), 0, getLondonOpenTime(), getLowestYPos(), "London Open", "Arial", 7, clrlondonkz, 90));
-    }
-    if (ObjectFind(0, getLinePreNYOpen(getPreNYOpenTime())) == -1){
-        Sett(VLineCreate(0, getLinePreNYOpen(getPreNYOpenTime()), 0, getPreNYOpenTime(), clrnykz, 2, 1));
-        Sett(Text(0, getTextPreNYOpen(getPreNYOpenTime()), 0, getPreNYOpenTime(), getLowestYPos(), "Pre NY", "Arial", 7, clrnykz, 90));
-    }
-    if (ObjectFind(0, getLineNYOpen(getNYOpenTime())) == -1){
-        Sett(VLineCreate(0, getLineNYOpen(getNYOpenTime()), 0, getNYOpenTime(), clrnykz, 2, 1));
-        Sett(Text(0, getTextNYOpen(getNYOpenTime()), 0, getNYOpenTime(), getLowestYPos(), "NY Open", "Arial", 7, clrnykz, 90));
-    }
-    if (ObjectFind(0, getLine8AM(get830Time())) == -1){
-        Sett(VLineCreate(0, getLine8AM(get830Time()), 0,get830Time(), clrnykz, 2, 1));
-        Sett(Text(0, getText8AM(get830Time()), 0, get830Time(), getLowestYPos(), "8.30 AM", "Arial", 7, clrnykz, 90));
-    }
-    if (ObjectFind(0, getLineLondonClose(getLondonCloseTime())) == -1){
-        Sett(VLineCreate(0, getLineLondonClose(getLondonCloseTime()), 0, getLondonCloseTime(), clrlondonkz, 2, 1));
-        Sett(Text(0, getTextLondonClose(getLondonCloseTime()), 0, getLondonCloseTime(), getLowestYPos(), "London Close", "Arial", 7, clrlondonkz, 90));
-    }
-    if (ObjectFind(0, getLineNYLaunch(getNYLaunchTime())) == -1){
-        Sett(VLineCreate(0, getLineNYLaunch(getNYLaunchTime()), 0, getNYLaunchTime(), clrnykz, 2, 1));
-        Sett(Text(0, getTextNYLaunch(getNYLaunchTime()), 0, getNYLaunchTime(), getLowestYPos(), "London Close", "Arial", 7, clrnykz, 90));
-    }
-
     SetIndexBuffer(0, trendBuffer);
     SetIndexStyle(0, DRAW_LINE, 0, 1, Line_Color);
     SetIndexEmptyValue(0, 0.0);
@@ -115,6 +86,56 @@ int OnCalculate(const int rates_total,
                 const long &volume[],
                 const int &spread[])
 { 
+    if (ObjectFind(0, getLineSeparator(getSeparatorTime())) == -1){
+        Sett(VLineCreate(0, getLineSeparator(getSeparatorTime()), 0, getSeparatorTime(), Line_Color, linestyle));
+        Sett(Text(0, getTextSeparator(getSeparatorTime()), 0, getSeparatorTime(), getLowestYPos(), getDayName(getSeparatorTime()), "Arial", 8, Line_Color, 90));
+    }
+    if (ObjectFind(0, getLineLondonOpen(getLondonOpenTime())) == -1){
+        Sett(VLineCreate(0, getLineLondonOpen(getLondonOpenTime()), 0, getLondonOpenTime(), clrlondonkz, 2, 1));
+        Sett(Text(0, getTextLondonOpen(getLondonOpenTime()), 0, getLondonOpenTime(), getLowestYPos(), "London Open", "Arial", 7, clrlondonkz, 90));
+    }
+    if (ObjectFind(0, getLinePreNYOpen(getPreNYOpenTime())) == -1){
+        Sett(VLineCreate(0, getLinePreNYOpen(getPreNYOpenTime()), 0, getPreNYOpenTime(), clrnykz, 2, 1));
+        Sett(Text(0, getTextPreNYOpen(getPreNYOpenTime()), 0, getPreNYOpenTime(), getLowestYPos(), "Pre NY", "Arial", 7, clrnykz, 90));
+    }
+    if (ObjectFind(0, getLineNYOpen(getNYOpenTime())) == -1){
+        Sett(VLineCreate(0, getLineNYOpen(getNYOpenTime()), 0, getNYOpenTime(), clrnykz, 2, 1));
+        Sett(Text(0, getTextNYOpen(getNYOpenTime()), 0, getNYOpenTime(), getLowestYPos(), "NY Open", "Arial", 7, clrnykz, 90));
+    }
+    if (ObjectFind(0, getLine8AM(get830Time())) == -1){
+        Sett(VLineCreate(0, getLine8AM(get830Time()), 0,get830Time(), clrnykz, 2, 1));
+        Sett(Text(0, getText8AM(get830Time()), 0, get830Time(), getLowestYPos(), "8.30 AM", "Arial", 7, clrnykz, 90));
+    }
+    if (ObjectFind(0, getLineLondonClose(getLondonCloseTime())) == -1){
+        Sett(VLineCreate(0, getLineLondonClose(getLondonCloseTime()), 0, getLondonCloseTime(), clrlondonkz, 2, 1));
+        Sett(Text(0, getTextLondonClose(getLondonCloseTime()), 0, getLondonCloseTime(), getLowestYPos(), "London Close", "Arial", 7, clrlondonkz, 90));
+    }
+    if (ObjectFind(0, getLineNYLaunch(getNYLaunchTime())) == -1){
+        Sett(VLineCreate(0, getLineNYLaunch(getNYLaunchTime()), 0, getNYLaunchTime(), clrnykz, 2, 1));
+        Sett(Text(0, getTextNYLaunch(getNYLaunchTime()), 0, getNYLaunchTime(), getLowestYPos(), "London Close", "Arial", 7, clrnykz, 90));
+    }
+
+    
+    tmpTrendValue = open[getBarIndex(getSeparatorTime())];
+    Sett(Text(0, getTextTrend(), 0, getSeparatorTime(), tmpTrendValue, "MOP", "Arial Bold", 8, Line_Color));
+    for (int i = 0; i <= getBarIndex(getSeparatorTime()); i++) {
+        trendBuffer[i] = tmpTrendValue;
+    }
+
+    if (ShowLondonNewYork) {
+        tmpLondonValue = open[getBarIndex(getLondonOpenTime())];
+        Sett(Text(0, getTextLondonTrend(), 0, getLondonOpenTime(), tmpLondonValue, "London", "Arial Bold", 8, clrlondonkz));
+        for (int i = getBarIndex(getLondonCloseTime()); i <= getBarIndex(getLondonOpenTime()); i++) {
+            londonBuffer[i] = tmpLondonValue;
+        }
+
+        tmpNyValue = open[getBarIndex(getNYOpenTime())];
+        Sett(Text(0, getTextNyTrend(), 0, getNYOpenTime(), tmpNyValue, "New York", "Arial Bold", 8, clrnykz));
+        for (int i = getBarIndex(getNYLaunchTime()); i <= getBarIndex(getNYOpenTime()); i++) {
+            nyBuffer[i] = tmpNyValue;
+        }
+    }
+
     if (isValidTimeframe()) {
         for (int i = 0; i < rates_total; i++){
             if (ShowAll && beforeToday(time[i])) {
@@ -168,43 +189,9 @@ int OnCalculate(const int rates_total,
                     }
                 }
             }
-            if (afterToday(time[i])) {
-                    if (time[i] == getSeparatorTime()) {
-                        if (tmpTrendValue == NULL) {
-                            tmpTrendValue = open[i];
-                        }
-                        trendBuffer[i] = tmpTrendValue;
-                    }
-                    else if (time[i] >= getSeparatorTime()) {
-                        trendBuffer[i] = tmpTrendValue;
-
-                        Sett(Text(0, getTextTrend(), 0, time[i], tmpTrendValue, "MOP", "Arial Bold", 8, Line_Color));
-                    }
-                    if (ShowLondonNewYork) {
-                        if (time[i] == getLondonOpenTime()) {
-                            if (tmpLondonValue == NULL) {
-                                tmpLondonValue = open[i];
-                            }
-                            londonBuffer[i] = tmpLondonValue;
-                        }
-                        else if (time[i] >= getLondonOpenTime() && time[i] <= getLondonCloseTime()) {
-                            londonBuffer[i] = tmpLondonValue;
-                        }
-                        if (time[i] == getNYOpenTime()) {
-                            if (tmpNyValue == NULL) {
-                                tmpNyValue = open[i];
-                            }
-                            nyBuffer[i] = tmpNyValue;
-                        }
-                        else if(time[i] >= getNYOpenTime() && time[i] <= getNYLaunchTime()) {
-                            nyBuffer[i] = tmpNyValue;
-                        }
-                    }
-                }     
         }
     }
-
-    if (!isValidTimeframe()){
+    else {
         // Remove all objects if the timeframe is not valid
         objDelete();
     }
@@ -217,6 +204,9 @@ bool beforeToday(datetime waktu) {
 }
 bool afterToday(datetime waktu) {
    return waktu > getCurrentTime();
+}
+int getBarIndex(datetime waktu) {
+    return iBarShift(Symbol(), Period(), waktu, true);
 }
 string getLineSeparator(datetime waktu) {
      return "VLine Separator-" + string(waktu);
@@ -262,6 +252,12 @@ string getTextNYLaunch(datetime waktu) {
 }
 string getTextTrend() {
     return "Text Trend Separator";
+}
+string getTextLondonTrend() {
+    return "Text Trend London";
+}
+string getTextNyTrend() {
+    return "Text Trend New York";
 }
 datetime getSeparatorTime() {
     return StrToTime(string(TimeYear(TimeCurrent())) + "." + string(TimeMonth(TimeCurrent())) + "." + string(TimeDay(TimeCurrent())) + " 0" + string(HourTime) + ":00:00");
