@@ -11,8 +11,8 @@
 #property indicator_chart_window
 #property indicator_buffers 3
 
-extern bool ShowAll               = true;
-extern bool ShowLondonNewYork     = true;
+extern bool ShowAll               = FALSE;             //Show All Line
+extern bool ShowLondonNewYork     = true;              //Show London & NY
 extern int HourTime               = 5;                 //Hour Number:
 extern int MinuteTime             = 0;                 //Minute Number:
 extern color Line_Color           = clrYellow;          //VLine Color:
@@ -112,10 +112,13 @@ int OnCalculate(const int rates_total,
     }
     if (ObjectFind(0, getLineNYLaunch(getNYLaunchTime())) == -1){
         Sett(VLineCreate(0, getLineNYLaunch(getNYLaunchTime()), 0, getNYLaunchTime(), clrnykz, 2, 1));
-        Sett(Text(0, getTextNYLaunch(getNYLaunchTime()), 0, getNYLaunchTime(), getLowestYPos(), "London Close", "Arial", 7, clrnykz, 90));
+        Sett(Text(0, getTextNYLaunch(getNYLaunchTime()), 0, getNYLaunchTime(), getLowestYPos(), "NY Launch", "Arial", 7, clrnykz, 90));
     }
 
     
+    
+    if (isValidTimeframe()) {
+//+-----------------------
     tmpTrendValue = open[getBarIndex(getSeparatorTime())];
     Sett(Text(0, getTextTrend(), 0, getSeparatorTime(), tmpTrendValue, "MOP", "Arial Bold", 8, Line_Color));
     for (int i = 0; i <= getBarIndex(getSeparatorTime()); i++) {
@@ -124,19 +127,18 @@ int OnCalculate(const int rates_total,
 
     if (ShowLondonNewYork) {
         tmpLondonValue = open[getBarIndex(getLondonOpenTime())];
-        Sett(Text(0, getTextLondonTrend(), 0, getLondonOpenTime(), tmpLondonValue, "London", "Arial Bold", 8, clrlondonkz));
+        Sett(Text(0, getTextLondonTrend(), 0, getLondonOpenTime(), tmpLondonValue, "London Open", "Arial Bold", 7, clrlondonkz));
         for (int i = getBarIndex(getLondonCloseTime()); i <= getBarIndex(getLondonOpenTime()); i++) {
             londonBuffer[i] = tmpLondonValue;
         }
 
         tmpNyValue = open[getBarIndex(getNYOpenTime())];
-        Sett(Text(0, getTextNyTrend(), 0, getNYOpenTime(), tmpNyValue, "New York", "Arial Bold", 8, clrnykz));
+        Sett(Text(0, getTextNyTrend(), 0, getNYOpenTime(), tmpNyValue, "NY Open", "Arial Bold", 7, clrnykz));
         for (int i = getBarIndex(getNYLaunchTime()); i <= getBarIndex(getNYOpenTime()); i++) {
             nyBuffer[i] = tmpNyValue;
         }
     }
-
-    if (isValidTimeframe()) {
+//+-----------------------
         for (int i = 0; i < rates_total; i++){
             if (ShowAll && beforeToday(time[i])) {
                 // Before Today
@@ -195,7 +197,6 @@ int OnCalculate(const int rates_total,
         // Remove all objects if the timeframe is not valid
         objDelete();
     }
-    
     return(rates_total);
 }
 //+--------------------
