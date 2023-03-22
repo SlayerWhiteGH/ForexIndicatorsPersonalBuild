@@ -115,10 +115,10 @@ int OnCalculate(const int rates_total,
                 const long &volume[],
                 const int &spread[])
 { 
-    for (int i = 0; i < rates_total; i++){
-        if (ShowAll && isValidTimeframe()) {
-            // Before Today
-            if (beforeToday(time[i])) {
+    if (isValidTimeframe()) {
+        for (int i = 0; i < rates_total; i++){
+            if (ShowAll && beforeToday(time[i])) {
+                // Before Today
                 if (TimeHour(time[i]) == HourTime){
                     if (ObjectFind(0, getLineSeparator(time[i])) == -1){
                         Sett(VLineCreate(0, getLineSeparator(time[i]), 0, time[i], Line_Color, linestyle));
@@ -168,40 +168,40 @@ int OnCalculate(const int rates_total,
                     }
                 }
             }
-            else if (afterToday(time[i])) {
-                if (time[i] == getSeparatorTime()) {
-                    if (tmpTrendValue == NULL) {
-                        tmpTrendValue = open[i];
+            if (afterToday(time[i])) {
+                    if (time[i] == getSeparatorTime()) {
+                        if (tmpTrendValue == NULL) {
+                            tmpTrendValue = open[i];
+                        }
+                        trendBuffer[i] = tmpTrendValue;
                     }
-                    trendBuffer[i] = tmpTrendValue;
-                }
-                else if (time[i] >= getSeparatorTime()) {
-                    trendBuffer[i] = tmpTrendValue;
+                    else if (time[i] >= getSeparatorTime()) {
+                        trendBuffer[i] = tmpTrendValue;
 
-                    Sett(Text(0, getTextTrend(), 0, time[i], tmpTrendValue, "MOP", "Arial Bold", 8, Line_Color));
-                }
-                if (ShowLondonNewYork) {
-                    if (time[i] == getLondonOpenTime()) {
-                        if (tmpLondonValue == NULL) {
-                            tmpLondonValue = open[i];
+                        Sett(Text(0, getTextTrend(), 0, time[i], tmpTrendValue, "MOP", "Arial Bold", 8, Line_Color));
+                    }
+                    if (ShowLondonNewYork) {
+                        if (time[i] == getLondonOpenTime()) {
+                            if (tmpLondonValue == NULL) {
+                                tmpLondonValue = open[i];
+                            }
+                            londonBuffer[i] = tmpLondonValue;
                         }
-                        londonBuffer[i] = tmpLondonValue;
-                    }
-                    else if (time[i] >= getLondonOpenTime() && time[i] <= getLondonCloseTime()) {
-                        londonBuffer[i] = tmpLondonValue;
-                    }
-                    if (time[i] == getNYOpenTime()) {
-                        if (tmpNyValue == NULL) {
-                            tmpNyValue = open[i];
+                        else if (time[i] >= getLondonOpenTime() && time[i] <= getLondonCloseTime()) {
+                            londonBuffer[i] = tmpLondonValue;
                         }
-                        nyBuffer[i] = tmpNyValue;
+                        if (time[i] == getNYOpenTime()) {
+                            if (tmpNyValue == NULL) {
+                                tmpNyValue = open[i];
+                            }
+                            nyBuffer[i] = tmpNyValue;
+                        }
+                        else if(time[i] >= getNYOpenTime() && time[i] <= getNYLaunchTime()) {
+                            nyBuffer[i] = tmpNyValue;
+                        }
                     }
-                    else if(time[i] >= getNYOpenTime() && time[i] <= getNYLaunchTime()) {
-                        nyBuffer[i] = tmpNyValue;
-                    }
-                }
-            }
-        }     
+                }     
+        }
     }
 
     if (!isValidTimeframe()){
