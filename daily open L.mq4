@@ -1,4 +1,4 @@
---//*
+//*
 //* my_DailyOpen_indicator
 //*
 //* Revision 1.1  2005/11/13 Midnite
@@ -37,8 +37,8 @@ int init()
    Alert ("Please enter a value lower than 60 minutes");
    return (0);}
   
-SetIndexStyle(0,DRAW_LINE);
-SetIndexBuffer(0,TodayOpenBuffer);
+//SetIndexStyle(0,DRAW_LINE);
+SetIndexBuffer(0, TodayOpenBuffer);
 SetIndexLabel(0,"Open");
 SetIndexEmptyValue(0,0.0);
 return(0);
@@ -88,54 +88,4 @@ int DailyOpen(int offset, int i){
    }
    return(0);
 }
-//+------------------------------------------------------------------+
-void Sett(bool Action){
-   ResetLastError();
-   if(!Action){
-      Print(": failed to draw = ",GetLastError());
-      return;
-   }
-}
-//+------------------------------------------------------------------+
-bool Text(const long              chart_ID=0,               // chart's ID 
-          const string            name="Text",              // object name 
-          const int               sub_window=0,             // subwindow index 
-          datetime                time=0,                   // anchor point time 
-          double                  price=0,                  // anchor point price 
-          const string            text="Text",              // the text itself 
-          const string            font="Arial",             // font 
-          const int               font_size=8,             // font size 
-          const color             clr=clrYellow,               // color 
-          const double            angle=0.0,                // text slope 
-          const ENUM_ANCHOR_POINT anchor=ANCHOR_LEFT_UPPER, // anchor type 
-          const bool              back=true,               // in the background 
-          const bool              selection=false,          // highlight to move 
-          const bool              hidden=false,              // hidden in the object list 
-          const long              z_order=0){               // priority for mouse click  
-   ChangeTextEmptyPoint(time,price); 
-   ResetLastError(); 
-   string Name=name;
-   if(ObjectFind(Name)==WRONG_VALUE)
-      ObjectCreate(chart_ID,Name,OBJ_TEXT,sub_window,0,0);
-   ObjectSetInteger(chart_ID,Name,OBJPROP_TIME,time);
-   ObjectSetDouble(chart_ID,Name,OBJPROP_PRICE,price);
-   ObjectSetString(chart_ID,Name,OBJPROP_TEXT,text); 
-   ObjectSetString(chart_ID,Name,OBJPROP_FONT,font); 
-   ObjectSetInteger(chart_ID,Name,OBJPROP_FONTSIZE,font_size); 
-   ObjectSetDouble(chart_ID,Name,OBJPROP_ANGLE,angle); 
-   ObjectSetInteger(chart_ID,Name,OBJPROP_ANCHOR,anchor); 
-   ObjectSetInteger(chart_ID,Name,OBJPROP_COLOR,clr); 
-   ObjectSetInteger(chart_ID,Name,OBJPROP_BACK,back); 
-   ObjectSetInteger(chart_ID,Name,OBJPROP_SELECTABLE,selection); 
-   ObjectSetInteger(chart_ID,Name,OBJPROP_SELECTED,selection); 
-   ObjectSetInteger(chart_ID,Name,OBJPROP_HIDDEN,hidden); 
-   ObjectSetInteger(chart_ID,Name,OBJPROP_ZORDER,z_order); 
-   ObjectSetString(chart_ID,Name,OBJPROP_TOOLTIP,"\n"); 
-   return(true); 
-}
-//+------------------------------------------------------------------+
-void ChangeTextEmptyPoint(datetime &time,double &price){ 
-   if(!time) time=TimeCurrent(); 
-   if(!price)price=SymbolInfoDouble(Symbol(),SYMBOL_BID); 
-  } 
 //+------------------------------------------------------------------+
