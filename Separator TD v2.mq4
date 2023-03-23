@@ -115,30 +115,36 @@ int OnCalculate(const int rates_total,
         Sett(Text(0, getTextNYLaunch(getNYLaunchTime()), 0, getNYLaunchTime(), getLowestYPos(), "London Close", "Arial", 7, clrnykz, 90));
     }
 
-    
-    tmpTrendValue = open[getBarIndex(getSeparatorTime())];
-    Sett(Text(0, getTextTrend(), 0, getSeparatorTime(), tmpTrendValue, "MOP", "Arial Bold", 8, Line_Color));
-    for (int i = 0; i <= getBarIndex(getSeparatorTime()); i++) {
-        trendBuffer[i] = tmpTrendValue;
+    if (TimeCurrent() >= getSeparatorTime()) {
+        tmpTrendValue = open[getBarIndex(getSeparatorTime())];
+        Sett(Text(0, getTextTrend(), 0, getSeparatorTime(), tmpTrendValue, "MOP", "Arial Bold", 8, Line_Color));
+        for (int i = getBarIndex(getSeparatorTime()); i >= 0; i--) {
+            trendBuffer[i] = tmpTrendValue;
+        }
     }
 
     if (ShowLondonNewYork) {
-        tmpLondonValue = open[getBarIndex(getLondonOpenTime())];
-        Sett(Text(0, getTextLondonTrend(), 0, getLondonOpenTime(), tmpLondonValue, "London", "Arial Bold", 8, clrlondonkz));
-        for (int i = getBarIndex(getLondonCloseTime()); i <= getBarIndex(getLondonOpenTime()); i++) {
-            londonBuffer[i] = tmpLondonValue;
+        if (TimeCurrent() >= getLondonOpenTime()) {
+            tmpLondonValue = open[getBarIndex(getLondonOpenTime())];
+            // int indexEnd = getBarIndex(getLondonCloseTime)
+            Sett(Text(0, getTextLondonTrend(), 0, getLondonOpenTime(), tmpLondonValue, "London", "Arial Bold", 8, clrlondonkz));
+            for (int i = getBarIndex(getLondonOpenTime()); i >= (getBarIndex(getLondonCloseTime()) == NULL ? 0 : getBarIndex(getLondonCloseTime())); i--) {
+                londonBuffer[i] = tmpLondonValue;
+            }
         }
 
-        tmpNyValue = open[getBarIndex(getNYOpenTime())];
-        Sett(Text(0, getTextNyTrend(), 0, getNYOpenTime(), tmpNyValue, "New York", "Arial Bold", 8, clrnykz));
-        for (int i = getBarIndex(getNYLaunchTime()); i <= getBarIndex(getNYOpenTime()); i++) {
-            nyBuffer[i] = tmpNyValue;
+        if (TimeCurrent() >= getNYOpenTime()) {
+            tmpNyValue = open[getBarIndex(getNYOpenTime())];
+            Sett(Text(0, getTextNyTrend(), 0, getNYOpenTime(), tmpNyValue, "New York", "Arial Bold", 8, clrnykz));
+            for (int i = getBarIndex(getNYLaunchTime()); i <= getBarIndex(getNYOpenTime()); i++) {
+                nyBuffer[i] = tmpNyValue;
+            }
         }
     }
 
-    if (isValidTimeframe()) {
+    if (isValidTimeframe() && ShowAll) {
         for (int i = 0; i < rates_total; i++){
-            if (ShowAll && beforeToday(time[i])) {
+            if (beforeToday(time[i])) {
                 // Before Today
                 if (TimeHour(time[i]) == HourTime){
                     if (ObjectFind(0, getLineSeparator(time[i])) == -1){
