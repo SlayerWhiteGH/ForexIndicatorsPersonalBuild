@@ -138,7 +138,7 @@ int OnCalculate(const int rates_total,
             if (TimeCurrent() >= getNYOpenTime()) {
                 tmpNyValue = open[getBarIndex(getNYOpenTime())];
                 Sett(Text(0, getTextNyTrend(), 0, getNYOpenTime(), tmpNyValue, "NY Open", "Arial Bold", 7, clrnykz));
-                for (int i = getBarIndex(getNYOpenTime); i >= (getBarIndex(getNYLaunchTime()) == NULL ? 0 : getBarIndex(getNYLaunchTime())); i--) {
+                for (int i = getBarIndex(getNYOpenTime()); i >= (getBarIndex(getNYLaunchTime()) == NULL ? 0 : getBarIndex(getNYLaunchTime())); i--) {
                     nyBuffer[i] = tmpNyValue;
                 }
             }
