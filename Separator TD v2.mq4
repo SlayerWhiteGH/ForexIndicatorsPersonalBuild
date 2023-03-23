@@ -86,112 +86,115 @@ int OnCalculate(const int rates_total,
                 const long &volume[],
                 const int &spread[])
 { 
-    if (ObjectFind(0, getLineSeparator(getSeparatorTime())) == -1){
-        Sett(VLineCreate(0, getLineSeparator(getSeparatorTime()), 0, getSeparatorTime(), Line_Color, linestyle));
-        Sett(Text(0, getTextSeparator(getSeparatorTime()), 0, getSeparatorTime(), getLowestYPos(), getDayName(getSeparatorTime()), "Arial", 8, Line_Color, 90));
-    }
-    if (ObjectFind(0, getLineLondonOpen(getLondonOpenTime())) == -1){
-        Sett(VLineCreate(0, getLineLondonOpen(getLondonOpenTime()), 0, getLondonOpenTime(), clrlondonkz, 2, 1));
-        Sett(Text(0, getTextLondonOpen(getLondonOpenTime()), 0, getLondonOpenTime(), getLowestYPos(), "London Open", "Arial", 7, clrlondonkz, 90));
-    }
-    if (ObjectFind(0, getLinePreNYOpen(getPreNYOpenTime())) == -1){
-        Sett(VLineCreate(0, getLinePreNYOpen(getPreNYOpenTime()), 0, getPreNYOpenTime(), clrnykz, 2, 1));
-        Sett(Text(0, getTextPreNYOpen(getPreNYOpenTime()), 0, getPreNYOpenTime(), getLowestYPos(), "Pre NY", "Arial", 7, clrnykz, 90));
-    }
-    if (ObjectFind(0, getLineNYOpen(getNYOpenTime())) == -1){
-        Sett(VLineCreate(0, getLineNYOpen(getNYOpenTime()), 0, getNYOpenTime(), clrnykz, 2, 1));
-        Sett(Text(0, getTextNYOpen(getNYOpenTime()), 0, getNYOpenTime(), getLowestYPos(), "NY Open", "Arial", 7, clrnykz, 90));
-    }
-    if (ObjectFind(0, getLine8AM(get830Time())) == -1){
-        Sett(VLineCreate(0, getLine8AM(get830Time()), 0,get830Time(), clrnykz, 2, 1));
-        Sett(Text(0, getText8AM(get830Time()), 0, get830Time(), getLowestYPos(), "8.30 AM", "Arial", 7, clrnykz, 90));
-    }
-    if (ObjectFind(0, getLineLondonClose(getLondonCloseTime())) == -1){
-        Sett(VLineCreate(0, getLineLondonClose(getLondonCloseTime()), 0, getLondonCloseTime(), clrlondonkz, 2, 1));
-        Sett(Text(0, getTextLondonClose(getLondonCloseTime()), 0, getLondonCloseTime(), getLowestYPos(), "London Close", "Arial", 7, clrlondonkz, 90));
-    }
-    if (ObjectFind(0, getLineNYLaunch(getNYLaunchTime())) == -1){
-        Sett(VLineCreate(0, getLineNYLaunch(getNYLaunchTime()), 0, getNYLaunchTime(), clrnykz, 2, 1));
-        Sett(Text(0, getTextNYLaunch(getNYLaunchTime()), 0, getNYLaunchTime(), getLowestYPos(), "NY Launch", "Arial", 7, clrnykz, 90));
-    }
+    if (isValidTimeframe()) {
 
-    if (TimeCurrent() >= getSeparatorTime()) {
-        tmpTrendValue = open[getBarIndex(getSeparatorTime())];
-        Sett(Text(0, getTextTrend(), 0, getSeparatorTime(), tmpTrendValue, "MOP", "Arial Bold", 8, Line_Color));
-        for (int i = getBarIndex(getSeparatorTime()); i >= 0; i--) {
-            trendBuffer[i] = tmpTrendValue;
+        if (ObjectFind(0, getLineSeparator(getSeparatorTime())) == -1){
+            Sett(VLineCreate(0, getLineSeparator(getSeparatorTime()), 0, getSeparatorTime(), Line_Color, linestyle));
+            Sett(Text(0, getTextSeparator(getSeparatorTime()), 0, getSeparatorTime(), getLowestYPos(), getDayName(getSeparatorTime()), "Arial", 8, Line_Color, 90));
         }
-    }
+        if (ObjectFind(0, getLineLondonOpen(getLondonOpenTime())) == -1){
+            Sett(VLineCreate(0, getLineLondonOpen(getLondonOpenTime()), 0, getLondonOpenTime(), clrlondonkz, 2, 1));
+            Sett(Text(0, getTextLondonOpen(getLondonOpenTime()), 0, getLondonOpenTime(), getLowestYPos(), "London Open", "Arial", 7, clrlondonkz, 90));
+        }
+        if (ObjectFind(0, getLinePreNYOpen(getPreNYOpenTime())) == -1){
+            Sett(VLineCreate(0, getLinePreNYOpen(getPreNYOpenTime()), 0, getPreNYOpenTime(), clrnykz, 2, 1));
+            Sett(Text(0, getTextPreNYOpen(getPreNYOpenTime()), 0, getPreNYOpenTime(), getLowestYPos(), "Pre NY", "Arial", 7, clrnykz, 90));
+        }
+        if (ObjectFind(0, getLineNYOpen(getNYOpenTime())) == -1){
+            Sett(VLineCreate(0, getLineNYOpen(getNYOpenTime()), 0, getNYOpenTime(), clrnykz, 2, 1));
+            Sett(Text(0, getTextNYOpen(getNYOpenTime()), 0, getNYOpenTime(), getLowestYPos(), "NY Open", "Arial", 7, clrnykz, 90));
+        }
+        if (ObjectFind(0, getLine8AM(get830Time())) == -1){
+            Sett(VLineCreate(0, getLine8AM(get830Time()), 0,get830Time(), clrnykz, 2, 1));
+            Sett(Text(0, getText8AM(get830Time()), 0, get830Time(), getLowestYPos(), "8.30 AM", "Arial", 7, clrnykz, 90));
+        }
+        if (ObjectFind(0, getLineLondonClose(getLondonCloseTime())) == -1){
+            Sett(VLineCreate(0, getLineLondonClose(getLondonCloseTime()), 0, getLondonCloseTime(), clrlondonkz, 2, 1));
+            Sett(Text(0, getTextLondonClose(getLondonCloseTime()), 0, getLondonCloseTime(), getLowestYPos(), "London Close", "Arial", 7, clrlondonkz, 90));
+        }
+        if (ObjectFind(0, getLineNYLaunch(getNYLaunchTime())) == -1){
+            Sett(VLineCreate(0, getLineNYLaunch(getNYLaunchTime()), 0, getNYLaunchTime(), clrnykz, 2, 1));
+            Sett(Text(0, getTextNYLaunch(getNYLaunchTime()), 0, getNYLaunchTime(), getLowestYPos(), "NY Launch", "Arial", 7, clrnykz, 90));
+        }
 
-    if (ShowLondonNewYork) {
-        if (TimeCurrent() >= getLondonOpenTime()) {
-            tmpLondonValue = open[getBarIndex(getLondonOpenTime())];
-            // int indexEnd = getBarIndex(getLondonCloseTime)
-            Sett(Text(0, getTextLondonTrend(), 0, getLondonOpenTime(), tmpLondonValue, "London Open", "Arial Bold", 7, clrlondonkz));
-            for (int i = getBarIndex(getLondonOpenTime()); i >= (getBarIndex(getLondonCloseTime()) == NULL ? 0 : getBarIndex(getLondonCloseTime())); i--) {
-                londonBuffer[i] = tmpLondonValue;
+        if (TimeCurrent() >= getSeparatorTime()) {
+            tmpTrendValue = open[getBarIndex(getSeparatorTime())];
+            Sett(Text(0, getTextTrend(), 0, getSeparatorTime(), tmpTrendValue, "MOP", "Arial Bold", 8, Line_Color));
+            for (int i = getBarIndex(getSeparatorTime()); i >= 0; i--) {
+                trendBuffer[i] = tmpTrendValue;
             }
         }
 
-        if (TimeCurrent() >= getNYOpenTime()) {
-            tmpNyValue = open[getBarIndex(getNYOpenTime())];
-            Sett(Text(0, getTextNyTrend(), 0, getNYOpenTime(), tmpNyValue, "NY Open", "Arial Bold", 7, clrnykz));
-            for (int i = getBarIndex(getNYOpenTime); i >= (getBarIndex(getNYLaunchTime()) == NULL ? 0 : getBarIndex(getNYLaunchTime())); i--) {
-                nyBuffer[i] = tmpNyValue;
+        if (ShowLondonNewYork) {
+            if (TimeCurrent() >= getLondonOpenTime()) {
+                tmpLondonValue = open[getBarIndex(getLondonOpenTime())];
+                // int indexEnd = getBarIndex(getLondonCloseTime)
+                Sett(Text(0, getTextLondonTrend(), 0, getLondonOpenTime(), tmpLondonValue, "London Open", "Arial Bold", 7, clrlondonkz));
+                for (int i = getBarIndex(getLondonOpenTime()); i >= (getBarIndex(getLondonCloseTime()) == NULL ? 0 : getBarIndex(getLondonCloseTime())); i--) {
+                    londonBuffer[i] = tmpLondonValue;
+                }
+            }
+
+            if (TimeCurrent() >= getNYOpenTime()) {
+                tmpNyValue = open[getBarIndex(getNYOpenTime())];
+                Sett(Text(0, getTextNyTrend(), 0, getNYOpenTime(), tmpNyValue, "NY Open", "Arial Bold", 7, clrnykz));
+                for (int i = getBarIndex(getNYOpenTime); i >= (getBarIndex(getNYLaunchTime()) == NULL ? 0 : getBarIndex(getNYLaunchTime())); i--) {
+                    nyBuffer[i] = tmpNyValue;
+                }
             }
         }
-    }
 
-    if (isValidTimeframe() && ShowAll) {
-        for (int i = 0; i < rates_total; i++){
-            if (beforeToday(time[i])) {
-                // Before Today
-                if (TimeHour(time[i]) == HourTime){
-                    if (ObjectFind(0, getLineSeparator(time[i])) == -1){
-                        Sett(VLineCreate(0, getLineSeparator(time[i]), 0, time[i], Line_Color, linestyle));
+        if (ShowAll) {
+            for (int i = 0; i < rates_total; i++){
+                if (beforeToday(time[i])) {
+                    // Before Today
+                    if (TimeHour(time[i]) == HourTime){
+                        if (ObjectFind(0, getLineSeparator(time[i])) == -1){
+                            Sett(VLineCreate(0, getLineSeparator(time[i]), 0, time[i], Line_Color, linestyle));
+                        }
+                        if (ObjectFind(0, getTextSeparator(time[i])) == -1) {
+                            Sett(Text(0, getTextSeparator(time[i]), 0, time[i], getLowestYPos(), getDayName(time[i]), "Arial", 8, Line_Color, 90));
+                        }
                     }
-                    if (ObjectFind(0, getTextSeparator(time[i])) == -1) {
-                        Sett(Text(0, getTextSeparator(time[i]), 0, time[i], getLowestYPos(), getDayName(time[i]), "Arial", 8, Line_Color, 90));
+                    else if (TimeHour(time[i]) == TimeHour(getLondonOpenTime())){
+                        if (ObjectFind(0, getLineLondonOpen(time[i])) == -1){
+                            Sett(VLineCreate(0, getLineLondonOpen(time[i]), 0, time[i], clrlondonkz, 2, 1));
+                        }
+                        if (ObjectFind(0, getTextLondonOpen(time[i])) == -1) {
+                            Sett(Text(0, getTextLondonOpen(time[i]), 0, time[i], getLowestYPos(), "London Open", "Arial", 7, clrlondonkz, 90));
+                        } 
                     }
-                }
-                else if (TimeHour(time[i]) == TimeHour(getLondonOpenTime())){
-                    if (ObjectFind(0, getLineLondonOpen(time[i])) == -1){
-                        Sett(VLineCreate(0, getLineLondonOpen(time[i]), 0, time[i], clrlondonkz, 2, 1));
+                    else if (TimeHour(time[i]) == TimeHour(getPreNYOpenTime())){
+                        if (ObjectFind(0, getLinePreNYOpen(time[i])) == -1){
+                            Sett(VLineCreate(0, getLinePreNYOpen(time[i]) + "a", 0, time[i], clrnykz, 2, 1));
+                        }
+                        if (ObjectFind(0, getTextPreNYOpen(time[i])) == -1) {
+                            Sett(Text(0, getTextPreNYOpen(time[i]), 0, time[i], getLowestYPos(), "Pre NY", "Arial", 7, clrnykz, 90));
+                        }
                     }
-                    if (ObjectFind(0, getTextLondonOpen(time[i])) == -1) {
-                        Sett(Text(0, getTextLondonOpen(time[i]), 0, time[i], getLowestYPos(), "London Open", "Arial", 7, clrlondonkz, 90));
-                    } 
-                }
-                else if (TimeHour(time[i]) == TimeHour(getPreNYOpenTime())){
-                    if (ObjectFind(0, getLinePreNYOpen(time[i])) == -1){
-                        Sett(VLineCreate(0, getLinePreNYOpen(time[i]) + "a", 0, time[i], clrnykz, 2, 1));
+                    else if (TimeHour(time[i]) == TimeHour(getNYOpenTime())){
+                        if (ObjectFind(0, getLineNYOpen(time[i])) == -1){
+                            Sett(VLineCreate(0, getLineNYOpen(time[i]) + "a", 0, time[i], clrnykz, 2, 1));
+                        }
+                        if (ObjectFind(0, getTextNYOpen(time[i])) == -1) {
+                            Sett(Text(0, getTextNYOpen(time[i]), 0, time[i], getLowestYPos(), "NY Open", "Arial", 7, clrnykz, 90));
+                        }
                     }
-                    if (ObjectFind(0, getTextPreNYOpen(time[i])) == -1) {
-                        Sett(Text(0, getTextPreNYOpen(time[i]), 0, time[i], getLowestYPos(), "Pre NY", "Arial", 7, clrnykz, 90));
+                    else if (TimeHour(time[i]) == TimeHour(getLondonCloseTime())){
+                        if (ObjectFind(0, getLineLondonClose(time[i])) == -1){
+                            Sett(VLineCreate(0, getLineLondonClose(time[i]) + "a", 0, time[i], clrlondonkz, 2, 1));
+                        }
+                        if (ObjectFind(0, getTextLondonClose(time[i])) == -1) {
+                            Sett(Text(0, getTextLondonClose(time[i]), 0, time[i], getLowestYPos(), "London Close", "Arial", 7, clrlondonkz, 90));
+                        }
                     }
-                }
-                else if (TimeHour(time[i]) == TimeHour(getNYOpenTime())){
-                    if (ObjectFind(0, getLineNYOpen(time[i])) == -1){
-                        Sett(VLineCreate(0, getLineNYOpen(time[i]) + "a", 0, time[i], clrnykz, 2, 1));
-                    }
-                    if (ObjectFind(0, getTextNYOpen(time[i])) == -1) {
-                        Sett(Text(0, getTextNYOpen(time[i]), 0, time[i], getLowestYPos(), "NY Open", "Arial", 7, clrnykz, 90));
-                    }
-                }
-                else if (TimeHour(time[i]) == TimeHour(getLondonCloseTime())){
-                    if (ObjectFind(0, getLineLondonClose(time[i])) == -1){
-                        Sett(VLineCreate(0, getLineLondonClose(time[i]) + "a", 0, time[i], clrlondonkz, 2, 1));
-                    }
-                    if (ObjectFind(0, getTextLondonClose(time[i])) == -1) {
-                        Sett(Text(0, getTextLondonClose(time[i]), 0, time[i], getLowestYPos(), "London Close", "Arial", 7, clrlondonkz, 90));
-                    }
-                }
-                else if (TimeHour(time[i]) == TimeHour(getNYLaunchTime())){
-                    if (ObjectFind(0, getLineNYLaunch(time[i])) == -1){
-                        Sett(VLineCreate(0, getLineNYLaunch(time[i]) + "a", 0, time[i], clrnykz, 2, 1));
-                    }
-                    if (ObjectFind(0, getTextNYLaunch(time[i])) == -1) {
-                        Sett(Text(0, getTextNYLaunch(time[i]), 0, time[i], getLowestYPos(), "NY Launch", "Arial", 7, clrnykz, 90));
+                    else if (TimeHour(time[i]) == TimeHour(getNYLaunchTime())){
+                        if (ObjectFind(0, getLineNYLaunch(time[i])) == -1){
+                            Sett(VLineCreate(0, getLineNYLaunch(time[i]) + "a", 0, time[i], clrnykz, 2, 1));
+                        }
+                        if (ObjectFind(0, getTextNYLaunch(time[i])) == -1) {
+                            Sett(Text(0, getTextNYLaunch(time[i]), 0, time[i], getLowestYPos(), "NY Launch", "Arial", 7, clrnykz, 90));
+                        }
                     }
                 }
             }
