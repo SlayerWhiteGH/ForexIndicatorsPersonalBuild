@@ -17,7 +17,8 @@ input KEYS_ON_KEYBOARD TrendlineKey = _Q;
 input KEYS_ON_KEYBOARD RectangleKey = _W;
 
 extern int   mWid = 1;
-extern color mCol = clrRed;
+extern color mCol = clrWhite;
+extern color rCol = "70,70,70";
 extern bool  mDeleteOnExit = false;
 
 int mCnt = 0;
@@ -152,7 +153,7 @@ void OnChartEvent(const int id,         // Event ID
         {
           if(mDrawTrendline) 
             {
-              ObjectCreate("m.Data"+IntegerToString(TimeLocal()), OBJ_TREND, 0, mTime, mPrice, mTime2, mPrice2);
+              ObjectCreate("m.Data"+IntegerToString(TimeLocal()), OBJ_TREND, 0, mTime, mPrice, mTime2, mPrice);
               ObjectSet("m.Data"+IntegerToString(TimeLocal()), OBJPROP_COLOR, mCol);
               ObjectSet("m.Data"+IntegerToString(TimeLocal()), OBJPROP_WIDTH, mWid);
               ObjectSet("m.Data"+IntegerToString(TimeLocal()), OBJPROP_RAY, false);
@@ -160,7 +161,7 @@ void OnChartEvent(const int id,         // Event ID
           if(mDrawRectangle) 
             {
               ObjectCreate("m.DataR"+IntegerToString(TimeLocal()), OBJ_RECTANGLE, 0, mTime, mPrice, mTime2, mPrice2);
-              ObjectSet("m.DataR"+IntegerToString(TimeLocal()), OBJPROP_COLOR, mCol);
+              ObjectSet("m.DataR"+IntegerToString(TimeLocal()), OBJPROP_COLOR, rCol);
               ObjectSet("m.DataR"+IntegerToString(TimeLocal()), OBJPROP_BACK, true);
             }
           
