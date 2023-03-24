@@ -1,0 +1,222 @@
+case 94: switch(_Period){
+                  case  PERIOD_M1 : strPer= "";    intPer=          NULL;   clrPer=mClr?C'000,255,000':C'000,155,000';  break;/*TF Entry 1 / PERIOD 20*/
+                  case  PERIOD_M5 : strPer= "";    intPer=          NULL;   clrPer=mClr?C'255,255,255':C'155,155,155';  break;  
+                  case  PERIOD_M15: strPer= "M1";  intPer=            mn;   clrPer=mClr?C'255,255,255':C'055,055,055';  break;  
+                  case  PERIOD_M30: strPer= "M2";  intPer=          2*mn;   clrPer=mClr?C'173,255,047':C'073,155,000';  break;
+                  case  PERIOD_H1 : strPer= "M5";  intPer=          4*mn;   clrPer=mClr?C'238,130,238':C'255,000,255';  break;
+                  case  PERIOD_H4 : strPer= "M30"; intPer=         32*mn;   clrPer=mClr?C'255,255,000':C'150,150,000';  break;
+                  case  PERIOD_D1 : strPer= "H4";  intPer=        256*mn;   clrPer=mClr?C'000,255,000':C'000,150,000';  break;
+                  case  PERIOD_W1 : strPer= "H12"; intPer=       1024*mn;   clrPer=mClr?C'255,140,000':C'255,140,000';  break;
+                  case  PERIOD_MN1: strPer= "D3";  intPer=       4096*mn;   clrPer=mClr?C'255,020,147':C'255,020,147';  break;
+               } break;
+      case 95: switch(_Period){
+                  case  PERIOD_M1 : strPer= "S15"; intPer=          NULL;   clrPer=mClr?C'255,255,000':C'190,190,000';  break;/*TF Entry 1 / PERIOD 20*/
+                  case  PERIOD_M5 : strPer= "M1";  intPer=            mn;   clrPer=mClr?C'255,255,255':C'055,055,055';  break;  
+                  case  PERIOD_M15: strPer= "M5";  intPer=          4*mn;   clrPer=mClr?C'238,130,238':C'255,000,255';  break;
+                  case  PERIOD_M30: strPer= "M8";  intPer=          8*mn;   clrPer=mClr?C'255,140,000':C'155,040,000';  break;
+                  case  PERIOD_H1 : strPer= "M15"; intPer=         16*mn;   clrPer=mClr?C'000,255,255':C'000,155,255';  break;
+                  case  PERIOD_H4 : strPer= "H1";  intPer=         64*mn;   clrPer=mClr?C'255,000,000':C'255,000,000';  break;
+                  case  PERIOD_D1 : strPer= "H8";  intPer=        512*mn;   clrPer=mClr?C'186,085,211':C'186,085,211';  break;
+                  case  PERIOD_W1 : strPer= "D1";  intPer=       2048*mn;   clrPer=mClr?C'175,238,238':C'075,138,138';  break;
+                  case  PERIOD_MN1: strPer= "W1";  intPer=       8192*mn;   clrPer=mClr?C'043,043,255':C'043,043,255';  break;
+               } break;
+      case 96: switch(_Period){ 
+                  case  PERIOD_M1 : strPer= "S30"; intPer=          NULL;   clrPer=mClr?C'255,000,000':C'125,000,000';  break;/*TFX Entry / Period 20*/
+                  case  PERIOD_M5 : strPer= "M2";  intPer=          2*mn;   clrPer=mClr?C'173,255,047':C'073,155,000';  break;
+                  case  PERIOD_M15: strPer= "M8";  intPer=          8*mn;   clrPer=mClr?C'255,140,000':C'155,040,000';  break;
+                  case  PERIOD_M30: strPer= "M15"; intPer=         16*mn;   clrPer=mClr?C'000,255,255':C'000,155,255';  break;
+                  case  PERIOD_H1 : strPer= "M30"; intPer=         32*mn;   clrPer=mClr?C'255,255,000':C'150,150,000';  break;
+                  case  PERIOD_H4 : strPer= "H2";  intPer=        128*mn;   clrPer=mClr?C'255,255,255':C'105,105,105';  break;
+                  case  PERIOD_D1 : strPer= "H12"; intPer=       1024*mn;   clrPer=mClr?C'255,140,000':C'255,140,000';  break;
+                  case  PERIOD_W1 : strPer= "D3";  intPer=       4096*mn;   clrPer=mClr?C'255,020,147':C'255,020,147';  break;
+                  case  PERIOD_MN1: strPer= "W2";  intPer=      16384*mn;   clrPer=mClr?C'238,130,238':C'238,130,238';  break;
+               } break;
+      case 97: switch(_Period){
+                  case  PERIOD_M1 : strPer= "M1";  intPer=            mn;   clrPer=mClr?C'255,255,255':C'055,055,055';  break;/*TF Active / PERIOD 20*/
+                  case  PERIOD_M5 : strPer= "M5";  intPer=          4*mn;   clrPer=mClr?C'238,130,238':C'255,000,255';  break;
+                  case  PERIOD_M15: strPer= "M15"; intPer=         16*mn;   clrPer=mClr?C'000,255,255':C'000,155,255';  break;
+                  case  PERIOD_M30: strPer= "M30"; intPer=         32*mn;   clrPer=mClr?C'255,255,000':C'150,150,000';  break;
+                  case  PERIOD_H1 : strPer= "H1";  intPer=         64*mn;   clrPer=mClr?C'255,000,000':C'255,000,000';  break;
+                  case  PERIOD_H4 : strPer= "H4";  intPer=        256*mn;   clrPer=mClr?C'000,255,000':C'000,150,000';  break;
+                  case  PERIOD_D1 : strPer= "D1";  intPer=       2048*mn;   clrPer=mClr?C'175,238,238':C'075,138,138';  break;
+                  case  PERIOD_W1 : strPer= "W1";  intPer=       8192*mn;   clrPer=mClr?C'043,043,255':C'043,043,255';  break;
+                  case  PERIOD_MN1: strPer= "MN1"; intPer=      32768*mn;   clrPer=mClr?C'000,128,000':C'000,128,000';  break;
+               } break;
+               
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+      case 98: switch(_Period){
+                  case  PERIOD_M1 : strPer= "M2";  intPer=          2*mn;   clrPer=mClr?C'173,255,047':C'073,155,000';  break;/*TFX / PERIOD 20 ACUAN 1*/
+                  case  PERIOD_M5 : strPer= "M8";  intPer=          8*mn;   clrPer=mClr?C'255,140,000':C'155,040,000';  break;
+                  case  PERIOD_M15: strPer= "M30"; intPer=         32*mn;   clrPer=mClr?C'255,255,000':C'150,150,000';  break;
+                  case  PERIOD_M30: strPer= "H1";  intPer=         64*mn;   clrPer=mClr?C'255,000,000':C'255,000,000';  break;
+                  case  PERIOD_H1 : strPer= "H2";  intPer=        128*mn;   clrPer=mClr?C'255,255,255':C'105,105,105';  break;
+                  case  PERIOD_H4 : strPer= "H8";  intPer=        512*mn;   clrPer=mClr?C'186,085,211':C'186,085,211';  break;
+                  case  PERIOD_D1 : strPer= "D3";  intPer=       4096*mn;   clrPer=mClr?C'255,020,147':C'255,020,147';  break;
+                  case  PERIOD_W1 : strPer= "W2";  intPer=      16384*mn;   clrPer=mClr?C'238,130,238':C'238,130,238';  break;
+               } break;
+      case 99: switch(_Period){
+                  case  PERIOD_M1 : strPer= "M5";  intPer=          4*mn;   clrPer=mClr?C'238,130,238':C'255,000,255';  break;/*TF Up / PERIOD 20 ACUAN 2*/
+                  case  PERIOD_M5 : strPer= "M15"; intPer=         16*mn;   clrPer=mClr?C'000,255,255':C'000,155,255';  break;
+                  case  PERIOD_M15: strPer= "H1";  intPer=         64*mn;   clrPer=mClr?C'255,000,000':C'255,000,000';  break;
+                  case  PERIOD_M30: strPer= "H2";  intPer=        128*mn;   clrPer=mClr?C'255,255,255':C'105,105,105';  break;
+                  case  PERIOD_H1 : strPer= "H4";  intPer=        256*mn;   clrPer=mClr?C'000,255,000':C'000,150,000';  break;
+                  case  PERIOD_H4 : strPer= "H12"; intPer=       1024*mn;   clrPer=mClr?C'255,140,000':C'255,140,000';  break;
+                  case  PERIOD_D1 : strPer= "W1";  intPer=       8192*mn;   clrPer=mClr?C'043,043,255':C'043,043,255';  break;
+                  case  PERIOD_W1 : strPer= "MN1"; intPer=      32768*mn;   clrPer=mClr?C'000,128,000':C'035,090,035';  break;
+               } break;
+      case 100: switch(_Period){
+                  case  PERIOD_M1 : strPer= "M8";  intPer=          8*mn;   clrPer=mClr?C'255,140,000':C'155,040,000';  break; /*TFX Up / PERIOD 20 ACUAN 3*/
+                  case  PERIOD_M5 : strPer= "M30"; intPer=         32*mn;   clrPer=mClr?C'255,255,000':C'150,150,000';  break;
+                  case  PERIOD_M15: strPer= "H2";  intPer=        128*mn;   clrPer=mClr?C'255,255,255':C'105,105,105';  break;
+                  case  PERIOD_M30: strPer= "H4";  intPer=        256*mn;   clrPer=mClr?C'000,255,000':C'000,150,000';  break;
+                  case  PERIOD_H1 : strPer= "H8";  intPer=        512*mn;   clrPer=mClr?C'186,085,211':C'186,085,211';  break;
+                  case  PERIOD_H4 : strPer= "D1";  intPer=       2048*mn;   clrPer=mClr?C'175,238,238':C'075,138,138';  break;
+                  case  PERIOD_D1 : strPer= "W2";  intPer=      16384*mn;   clrPer=mClr?C'238,130,238':C'238,130,238';  break;
+               } break;
+      case 101: switch(_Period){
+                  case  PERIOD_M1 : strPer= "M15"; intPer=         16*mn;   clrPer=mClr?C'000,255,255':C'000,155,255';  break; /*TF 2 Up / PERIOD 20 ACUAN 4*/
+                  case  PERIOD_M5 : strPer= "H1";  intPer=         64*mn;   clrPer=mClr?C'255,000,000':C'255,000,000';  break;
+                  case  PERIOD_M15: strPer= "H4";  intPer=        256*mn;   clrPer=mClr?C'000,255,000':C'000,150,000';  break;
+                  case  PERIOD_M30: strPer= "H8";  intPer=        512*mn;   clrPer=mClr?C'186,085,211':C'186,085,211';  break;
+                  case  PERIOD_H1 : strPer= "H12"; intPer=       1024*mn;   clrPer=mClr?C'255,140,000':C'255,140,000';  break;
+                  case  PERIOD_H4 : strPer= "D3";  intPer=       4096*mn;   clrPer=mClr?C'255,020,147':C'255,020,147';  break;
+                  case  PERIOD_D1 : strPer= "MN1"; intPer=      32768*mn;   clrPer=mClr?C'000,128,000':C'035,090,035';  break;
+               } break;
+      case 102: switch(_Period){
+                  case  PERIOD_M1 : strPer= "M30"; intPer=         32*mn;   clrPer=mClr?C'255,255,000':C'150,150,000';  break; /*TF 2 Up / PERIOD 20 ACUAN 5*/
+                  case  PERIOD_M5 : strPer= "H2";  intPer=        128*mn;   clrPer=mClr?C'255,255,255':C'105,105,105';  break;
+                  case  PERIOD_M15: strPer= "H8";  intPer=        512*mn;   clrPer=mClr?C'186,085,211':C'186,085,211';  break;
+                  case  PERIOD_M30: strPer= "H12"; intPer=       1024*mn;   clrPer=mClr?C'255,140,000':C'255,140,000';  break;
+                  case  PERIOD_H1 : strPer= "D1";  intPer=       2048*mn;   clrPer=mClr?C'175,238,238':C'075,138,138';  break;
+                  case  PERIOD_H4 : strPer= "W1";  intPer=       8192*mn;   clrPer=mClr?C'043,043,255':C'043,043,255';  break;
+               } break;
+      case 103: switch(_Period){
+                  case  PERIOD_M1 : strPer= "H1";  intPer=         64*mn;   clrPer=mClr?C'255,000,000':C'255,000,000';  break; /*TF 3 Up / PERIOD 20 ACUAN 6*/
+                  case  PERIOD_M5 : strPer= "H4";  intPer=        256*mn;   clrPer=mClr?C'000,255,000':C'000,150,000';  break;
+                  case  PERIOD_M15: strPer= "H12"; intPer=       1024*mn;   clrPer=mClr?C'255,140,000':C'255,140,000';  break;
+                  case  PERIOD_M30: strPer= "D1";  intPer=       2048*mn;   clrPer=mClr?C'175,238,238':C'075,138,138';  break;
+                  case  PERIOD_H1 : strPer= "D3";  intPer=       4096*mn;   clrPer=mClr?C'255,020,147':C'255,020,147';  break;
+                  case  PERIOD_H4 : strPer= "W2";  intPer=      16384*mn;   clrPer=mClr?C'238,130,238':C'238,130,238';  break;
+               } break;
+      case 104: switch(_Period){
+                  case  PERIOD_M1 : strPer= "H2";  intPer=        128*mn;   clrPer=mClr?C'255,255,255':C'105,105,105';  break; /*TFX 3 Up / PERIOD 20 ACUAN 7*/
+                  case  PERIOD_M5 : strPer= "H8";  intPer=        512*mn;   clrPer=mClr?C'186,085,211':C'186,085,211';  break;
+                  case  PERIOD_M15: strPer= "D1";  intPer=       2048*mn;   clrPer=mClr?C'175,238,238':C'075,138,138';  break;
+                  case  PERIOD_M30: strPer= "D3";  intPer=       4096*mn;   clrPer=mClr?C'255,020,147':C'255,020,147';  break;
+                  case  PERIOD_H1 : strPer= "W1";  intPer=       8192*mn;   clrPer=mClr?C'043,043,255':C'043,043,255';  break;
+               } break;
+              
+                 
+                 
+//==========================================================================================================================================================================                 
+                 
+                 
+      case 114: switch(_Period){
+                  case  PERIOD_M1 : strPer= "";    intPer=          NULL;   clrPer=mClr?C'000,255,000':C'000,155,000';  break;/*TF Entry 1 / PERIOD 20*/
+                  case  PERIOD_M5 : strPer= "";    intPer=          NULL;   clrPer=mClr?C'255,255,255':C'155,155,155';  break;  
+                  case  PERIOD_M15: strPer= "M1";  intPer=            mn*2;   clrPer=mClr?C'255,255,255':C'055,055,055';  break;  
+                  case  PERIOD_M30: strPer= "M2";  intPer=          2*mn*2;   clrPer=mClr?C'173,255,047':C'073,155,000';  break;
+                  case  PERIOD_H1 : strPer= "M5";  intPer=          4*mn*2;   clrPer=mClr?C'238,130,238':C'255,000,255';  break;
+                  case  PERIOD_H4 : strPer= "M30"; intPer=         32*mn*2;   clrPer=mClr?C'255,255,000':C'150,150,000';  break;
+                  case  PERIOD_D1 : strPer= "H4";  intPer=        256*mn*2;   clrPer=mClr?C'000,255,000':C'000,150,000';  break;
+                  case  PERIOD_W1 : strPer= "H12"; intPer=       1024*mn*2;   clrPer=mClr?C'255,140,000':C'255,140,000';  break;
+                  case  PERIOD_MN1: strPer= "D3";  intPer=       4096*mn*2;   clrPer=mClr?C'255,020,147':C'255,020,147';  break;
+               } break;
+      case 115: switch(_Period){
+                  case  PERIOD_M1 : strPer= "S15"; intPer=          NULL;   clrPer=mClr?C'255,255,000':C'190,190,000';  break;/*TF Entry 1 / PERIOD 20*/
+                  case  PERIOD_M5 : strPer= "M1";  intPer=            mn*2;   clrPer=mClr?C'255,255,255':C'055,055,055';  break;  
+                  case  PERIOD_M15: strPer= "M5";  intPer=          4*mn*2;   clrPer=mClr?C'238,130,238':C'255,000,255';  break;
+                  case  PERIOD_M30: strPer= "M8";  intPer=          8*mn*2;   clrPer=mClr?C'255,140,000':C'155,040,000';  break;
+                  case  PERIOD_H1 : strPer= "M15"; intPer=         16*mn*2;   clrPer=mClr?C'000,255,255':C'000,155,255';  break;
+                  case  PERIOD_H4 : strPer= "H1";  intPer=         64*mn*2;   clrPer=mClr?C'255,000,000':C'255,000,000';  break;
+                  case  PERIOD_D1 : strPer= "H8";  intPer=        512*mn*2;   clrPer=mClr?C'186,085,211':C'186,085,211';  break;
+                  case  PERIOD_W1 : strPer= "D1";  intPer=       2048*mn*2;   clrPer=mClr?C'175,238,238':C'075,138,138';  break;
+                  case  PERIOD_MN1: strPer= "W1";  intPer=       8192*mn*2;   clrPer=mClr?C'043,043,255':C'043,043,255';  break;
+               } break;
+      case 116: switch(_Period){ 
+                  case  PERIOD_M1 : strPer= "S30"; intPer=          NULL;   clrPer=mClr?C'255,000,000':C'125,000,000';  break;/*TFX Entry / Period 20*/
+                  case  PERIOD_M5 : strPer= "M2";  intPer=          2*mn*2;   clrPer=mClr?C'173,255,047':C'073,155,000';  break;
+                  case  PERIOD_M15: strPer= "M8";  intPer=          8*mn*2;   clrPer=mClr?C'255,140,000':C'155,040,000';  break;
+                  case  PERIOD_M30: strPer= "M15"; intPer=         16*mn*2;   clrPer=mClr?C'000,255,255':C'000,155,255';  break;
+                  case  PERIOD_H1 : strPer= "M30"; intPer=         32*mn*2;   clrPer=mClr?C'255,255,000':C'150,150,000';  break;
+                  case  PERIOD_H4 : strPer= "H2";  intPer=        128*mn*2;   clrPer=mClr?C'255,255,255':C'105,105,105';  break;
+                  case  PERIOD_D1 : strPer= "H12"; intPer=       1024*mn*2;   clrPer=mClr?C'255,140,000':C'255,140,000';  break;
+                  case  PERIOD_W1 : strPer= "D3";  intPer=       4096*mn*2;   clrPer=mClr?C'255,020,147':C'255,020,147';  break;
+                  case  PERIOD_MN1: strPer= "W2";  intPer=      16384*mn*2;   clrPer=mClr?C'238,130,238':C'238,130,238';  break;
+               } break;
+      case 117: switch(_Period){
+                  case  PERIOD_M1 : strPer= "M1";  intPer=            mn*2;   clrPer=mClr?C'255,255,255':C'055,055,055';  break;/*TF Active / PERIOD 20*/
+                  case  PERIOD_M5 : strPer= "M5";  intPer=          4*mn*2;   clrPer=mClr?C'238,130,238':C'255,000,255';  break;
+                  case  PERIOD_M15: strPer= "M15"; intPer=         16*mn*2;   clrPer=mClr?C'000,255,255':C'000,155,255';  break;
+                  case  PERIOD_M30: strPer= "M30"; intPer=         32*mn*2;   clrPer=mClr?C'255,255,000':C'150,150,000';  break;
+                  case  PERIOD_H1 : strPer= "H1";  intPer=         64*mn*2;   clrPer=mClr?C'255,000,000':C'255,000,000';  break;
+                  case  PERIOD_H4 : strPer= "H4";  intPer=        256*mn*2;   clrPer=mClr?C'000,255,000':C'000,150,000';  break;
+                  case  PERIOD_D1 : strPer= "D1";  intPer=       2048*mn*2;   clrPer=mClr?C'175,238,238':C'075,138,138';  break;
+                  case  PERIOD_W1 : strPer= "W1";  intPer=       8192*mn*2;   clrPer=mClr?C'043,043,255':C'043,043,255';  break;
+                  case  PERIOD_MN1: strPer= "MN1"; intPer=      32768*mn*2;   clrPer=mClr?C'000,128,000':C'000,128,000';  break;
+               } break;
+               
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+      case 118: switch(_Period){
+                  case  PERIOD_M1 : strPer= "M2";  intPer=          2*mn*2;   clrPer=mClr?C'173,255,047':C'073,155,000';  break;/*TFX / PERIOD 20 ACUAN 1*/
+                  case  PERIOD_M5 : strPer= "M8";  intPer=          8*mn*2;   clrPer=mClr?C'255,140,000':C'155,040,000';  break;
+                  case  PERIOD_M15: strPer= "M30"; intPer=         32*mn*2;   clrPer=mClr?C'255,255,000':C'150,150,000';  break;
+                  case  PERIOD_M30: strPer= "H1";  intPer=         64*mn*2;   clrPer=mClr?C'255,000,000':C'255,000,000';  break;
+                  case  PERIOD_H1 : strPer= "H2";  intPer=        128*mn*2;   clrPer=mClr?C'255,255,255':C'105,105,105';  break;
+                  case  PERIOD_H4 : strPer= "H8";  intPer=        512*mn*2;   clrPer=mClr?C'186,085,211':C'186,085,211';  break;
+                  case  PERIOD_D1 : strPer= "D3";  intPer=       4096*mn*2;   clrPer=mClr?C'255,020,147':C'255,020,147';  break;
+                  case  PERIOD_W1 : strPer= "W2";  intPer=      16384*mn*2;   clrPer=mClr?C'238,130,238':C'238,130,238';  break;
+               } break;
+      case 119: switch(_Period){
+                  case  PERIOD_M1 : strPer= "M5";  intPer=          4*mn*2;   clrPer=mClr?C'238,130,238':C'255,000,255';  break;/*TF Up / PERIOD 20 ACUAN 2*/
+                  case  PERIOD_M5 : strPer= "M15"; intPer=         16*mn*2;   clrPer=mClr?C'000,255,255':C'000,155,255';  break;
+                  case  PERIOD_M15: strPer= "H1";  intPer=         64*mn*2;   clrPer=mClr?C'255,000,000':C'255,000,000';  break;
+                  case  PERIOD_M30: strPer= "H2";  intPer=        128*mn*2;   clrPer=mClr?C'255,255,255':C'105,105,105';  break;
+                  case  PERIOD_H1 : strPer= "H4";  intPer=        256*mn*2;   clrPer=mClr?C'000,255,000':C'000,150,000';  break;
+                  case  PERIOD_H4 : strPer= "H12"; intPer=       1024*mn*2;   clrPer=mClr?C'255,140,000':C'255,140,000';  break;
+                  case  PERIOD_D1 : strPer= "W1";  intPer=       8192*mn*2;   clrPer=mClr?C'043,043,255':C'043,043,255';  break;
+                  case  PERIOD_W1 : strPer= "MN1"; intPer=      32768*mn*2;   clrPer=mClr?C'000,128,000':C'035,090,035';  break;
+               } break;
+      case 120: switch(_Period){
+                  case  PERIOD_M1 : strPer= "M8";  intPer=          8*mn*2;   clrPer=mClr?C'255,140,000':C'155,040,000';  break; /*TFX Up / PERIOD 20 ACUAN 3*/
+                  case  PERIOD_M5 : strPer= "M30"; intPer=         32*mn*2;   clrPer=mClr?C'255,255,000':C'150,150,000';  break;
+                  case  PERIOD_M15: strPer= "H2";  intPer=        128*mn*2;   clrPer=mClr?C'255,255,255':C'105,105,105';  break;
+                  case  PERIOD_M30: strPer= "H4";  intPer=        256*mn*2;   clrPer=mClr?C'000,255,000':C'000,150,000';  break;
+                  case  PERIOD_H1 : strPer= "H8";  intPer=        512*mn*2;   clrPer=mClr?C'186,085,211':C'186,085,211';  break;
+                  case  PERIOD_H4 : strPer= "D1";  intPer=       2048*mn*2;   clrPer=mClr?C'175,238,238':C'075,138,138';  break;
+                  case  PERIOD_D1 : strPer= "W2";  intPer=      16384*mn*2;   clrPer=mClr?C'238,130,238':C'238,130,238';  break;
+               } break;
+      case 121: switch(_Period){
+                  case  PERIOD_M1 : strPer= "M15"; intPer=         16*mn*2;   clrPer=mClr?C'000,255,255':C'000,155,255';  break; /*TF 2 Up / PERIOD 20 ACUAN 4*/
+                  case  PERIOD_M5 : strPer= "H1";  intPer=         64*mn*2;   clrPer=mClr?C'255,000,000':C'255,000,000';  break;
+                  case  PERIOD_M15: strPer= "H4";  intPer=        256*mn*2;   clrPer=mClr?C'000,255,000':C'000,150,000';  break;
+                  case  PERIOD_M30: strPer= "H8";  intPer=        512*mn*2;   clrPer=mClr?C'186,085,211':C'186,085,211';  break;
+                  case  PERIOD_H1 : strPer= "H12"; intPer=       1024*mn*2;   clrPer=mClr?C'255,140,000':C'255,140,000';  break;
+                  case  PERIOD_H4 : strPer= "D3";  intPer=       4096*mn*2;   clrPer=mClr?C'255,020,147':C'255,020,147';  break;
+                  case  PERIOD_D1 : strPer= "MN1"; intPer=      32768*mn*2;   clrPer=mClr?C'000,128,000':C'035,090,035';  break;
+               } break;
+      case 122: switch(_Period){
+                  case  PERIOD_M1 : strPer= "M30"; intPer=         32*mn*2;   clrPer=mClr?C'255,255,000':C'150,150,000';  break; /*TF 2 Up / PERIOD 20 ACUAN 5*/
+                  case  PERIOD_M5 : strPer= "H2";  intPer=        128*mn*2;   clrPer=mClr?C'255,255,255':C'105,105,105';  break;
+                  case  PERIOD_M15: strPer= "H8";  intPer=        512*mn*2;   clrPer=mClr?C'186,085,211':C'186,085,211';  break;
+                  case  PERIOD_M30: strPer= "H12"; intPer=       1024*mn*2;   clrPer=mClr?C'255,140,000':C'255,140,000';  break;
+                  case  PERIOD_H1 : strPer= "D1";  intPer=       2048*mn*2;   clrPer=mClr?C'175,238,238':C'075,138,138';  break;
+                  case  PERIOD_H4 : strPer= "W1";  intPer=       8192*mn*2;   clrPer=mClr?C'043,043,255':C'043,043,255';  break;
+               } break;
+      case 123: switch(_Period){
+                  case  PERIOD_M1 : strPer= "H1";  intPer=         64*mn*2;   clrPer=mClr?C'255,000,000':C'255,000,000';  break; /*TF 3 Up / PERIOD 20 ACUAN 6*/
+                  case  PERIOD_M5 : strPer= "H4";  intPer=        256*mn*2;   clrPer=mClr?C'000,255,000':C'000,150,000';  break;
+                  case  PERIOD_M15: strPer= "H12"; intPer=       1024*mn*2;   clrPer=mClr?C'255,140,000':C'255,140,000';  break;
+                  case  PERIOD_M30: strPer= "D1";  intPer=       2048*mn*2;   clrPer=mClr?C'175,238,238':C'075,138,138';  break;
+                  case  PERIOD_H1 : strPer= "D3";  intPer=       4096*mn*2;   clrPer=mClr?C'255,020,147':C'255,020,147';  break;
+                  case  PERIOD_H4 : strPer= "W2";  intPer=      16384*mn*2;   clrPer=mClr?C'238,130,238':C'238,130,238';  break;
+               } break;
+      case 124: switch(_Period){
+                  case  PERIOD_M1 : strPer= "H2";  intPer=        128*mn*2;   clrPer=mClr?C'255,255,255':C'105,105,105';  break; /*TFX 3 Up / PERIOD 20 ACUAN 7*/
+                  case  PERIOD_M5 : strPer= "H8";  intPer=        512*mn*2;   clrPer=mClr?C'186,085,211':C'186,085,211';  break;
+                  case  PERIOD_M15: strPer= "D1";  intPer=       2048*mn*2;   clrPer=mClr?C'175,238,238':C'075,138,138';  break;
+                  case  PERIOD_M30: strPer= "D3";  intPer=       4096*mn*2;   clrPer=mClr?C'255,020,147':C'255,020,147';  break;
+                  case  PERIOD_H1 : strPer= "W1";  intPer=       8192*mn*2;   clrPer=mClr?C'043,043,255':C'043,043,255';  break;
+               } break;
