@@ -117,7 +117,7 @@ int OnCalculate(const int rates_total,
             Sett(Text(0, getTextNYLaunch(getNYLaunchTime()), 0, getNYLaunchTime(), getLowestYPos(), "NY Launch", "Arial", 7, clrnykz, 90));
         }
 
-        if (TimeCurrent() >= getSeparatorTime()) {
+        if (!currentTimeIsWeekend() && TimeCurrent() >= getSeparatorTime()) {
             tmpTrendValue = open[getBarIndex(getSeparatorTime())];
             Sett(Text(0, getTextTrend(), 0, getSeparatorTime(), tmpTrendValue, "MOP", "Arial Bold", 8, Line_Color));
             for (int i = getBarIndex(getSeparatorTime()); i >= 0; i--) {
@@ -126,7 +126,7 @@ int OnCalculate(const int rates_total,
         }
 
         if (ShowLondonNewYork) {
-            if (TimeCurrent() >= getLondonOpenTime()) {
+            if (!currentTimeIsWeekend() && TimeCurrent() >= getLondonOpenTime()) {
                 tmpLondonValue = open[getBarIndex(getLondonOpenTime())];
                 // int indexEnd = getBarIndex(getLondonCloseTime)
                 Sett(Text(0, getTextLondonTrend(), 0, getLondonOpenTime(), tmpLondonValue, "London Open", "Arial Bold", 7, clrlondonkz));
@@ -135,7 +135,7 @@ int OnCalculate(const int rates_total,
                 }
             }
 
-            if (TimeCurrent() >= getNYOpenTime()) {
+            if (!currentTimeIsWeekend() && TimeCurrent() >= getNYOpenTime()) {
                 tmpNyValue = open[getBarIndex(getNYOpenTime())];
                 Sett(Text(0, getTextNyTrend(), 0, getNYOpenTime(), tmpNyValue, "NY Open", "Arial Bold", 7, clrnykz));
                 for (int i = getBarIndex(getNYOpenTime()); i >= (getBarIndex(getNYLaunchTime()) == NULL ? 0 : getBarIndex(getNYLaunchTime())); i--) {
@@ -314,6 +314,9 @@ double y_pos(){
 }
 double getLowestYPos() {
     return ChartGetDouble(0, CHART_PRICE_MIN) + y_pos() * price_per_pixel();
+}
+bool currentTimeIsWeekend() {
+   return TimeDayOfWeek(TimeCurrent()) == 0 || TimeDayOfWeek(TimeCurrent()) == 6;
 }
 //+------------------------------------------------------------------+
 void Sett(bool Action){
