@@ -22,6 +22,7 @@ extern int   mWid = 1;
 extern color mCol = clrWhite;
 extern color rCol = "70,70,70";
 extern bool  mDeleteOnExit = false;
+extern bool  rectangleAsBackground = false;
 
 int mCnt = 0;
 datetime mTime = 0, mTime2 = 0;
@@ -41,16 +42,20 @@ string objName;
 double objLastPrice1;
 double objLastPrice2;
 
+#define TextFontSize 16
+#define TextFont "Arial"
+#define TextColor "Black"
+
 //+------------------------------------------------------------------+
 int init()
-  {
-   trendlineKey = getNumericalValue(TrendlineKey);
-   rectangleKey = getNumericalValue(RectangleKey);
-   rayKey = getNumericalValue(RayKey);
-   flatKey = getNumericalValue(FlatKey);
+{
+    trendlineKey = getNumericalValue(TrendlineKey);
+    rectangleKey = getNumericalValue(RectangleKey);
+    rayKey = getNumericalValue(RayKey);
+    flatKey = getNumericalValue(FlatKey);
 
-   return(0);
-  }
+    return(0);
+}
 
 //+------------------------------------------------------------------+
 int deinit()
@@ -85,22 +90,51 @@ void OnChartEvent(const int id,         // Event ID
     if (id == CHARTEVENT_KEYDOWN) {
       
         if (lparam == trendlineKey) {
+            if (mDrawRectangle) {
+                mDrawRectangle = false;
+                deleteLabel(RectangleKey);
+            }
             mDrawTrendline = !mDrawTrendline;
-            if (mDrawRectangle) mDrawRectangle = false;
-
+            if (mDrawTrendline) {
+                createLabel(TrendlineKey);
+            }
+            else {
+                deleteLabel(TrendlineKey);
+            }
         }
 
         if (lparam == rectangleKey) {
+            if (mDrawTrendline) {
+                mDrawTrendline = false;
+                deleteLabel(TrendlineKey);
+            }
             mDrawRectangle = !mDrawRectangle;
-            if (mDrawTrendline) mDrawTrendline = false;
+            if (mDrawRectangle) {
+                createLabel(RectangleKey);
+            }
+            else {
+                deleteLabel(RectangleKey);
+            }
         }
 
         if (lparam == rayKey) {
             mRay = !mRay;
+            if (mRay) {
+                createLabel(RayKey);
+            }
+            else {
+                deleteLabel(RayKey);
+            }
         }
 
         if (lparam == flatKey) {
             mFlat = !mFlat;
+            if (mFlat) {
+                createLabel(FlatKey);
+            }
+            else {
+                deleteLabel(FlatKey);
+            }
         }
     }
 
@@ -127,8 +161,8 @@ void OnChartEvent(const int id,         // Event ID
                 }
                 if (mDrawRectangle) {
                     ObjectCreate("m.DataR"+IntegerToString(TimeLocal()), OBJ_RECTANGLE, 0, mTime, mPrice, mTime2, mPrice2);
-                    ObjectSet("m.DataR"+IntegerToString(TimeLocal()), OBJPROP_COLOR, mCol);
-                    ObjectSet("m.DataR"+IntegerToString(TimeLocal()), OBJPROP_BACK, true);
+                    ObjectSet("m.DataR"+IntegerToString(TimeLocal()), OBJPROP_COLOR, rCol);
+                    ObjectSet("m.DataR"+IntegerToString(TimeLocal()), OBJPROP_BACK, rectangleAsBackground);
                 }    
                 mPrice = 0;
                 mPrice2 = 0;
@@ -194,4 +228,30 @@ void setObjName(string name) {
 void setObjPrice(double price1, double price2) {
     objLastPrice1 = price1;
     objLastPrice2 = price2;
+}
+
+void createLabel(KEYS_ON_KEYBOARD key) {
+    string name = key == TrendlineKey ? "Trendline"
+                    : key == RectangleKey ? "Rectangle"
+                    : key == RayKey ? "Ray"
+                    : "Flat";
+    int yDistance = key == TrendlineKey ? 0
+                    : key == RectangleKey ? 0
+                    : key == RayKey ? 20
+                    : 40;
+    
+    ObjectCreate(name + " Label", OBJ_LABEL, 0, 0, 0);
+    ObjectSetText(name + " Label", name + " : ON", TextFontSize, TextFont, TextColor);
+    ObjectSet(name + " Label", OBJPROP_CORNER, 3);
+    ObjectSet(name + " Label", OBJPROP_XDISTANCE, 15);
+    ObjectSet(name + " Label", OBJPROP_YDISTANCE, yDistance);
+}
+
+void deleteLabel(KEYS_ON_KEYBOARD key) {
+    string name = key == TrendlineKey ? "Trendline"
+                    : key == RectangleKey ? "Rectangle"
+                    : key == RayKey ? "Ray"
+                    : "Flat";
+
+    ObjectDelete(name + " Label");
 }
