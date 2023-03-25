@@ -25,6 +25,7 @@ input KEYS_ON_KEYBOARD StyleKey = _Four;
 
 extern int   mWid = 1;
 extern color mCol = clrWhite;
+<<<<<<< HEAD
 extern color rCol = "70,70,70";                     
 extern bool  mDeleteOnExit = false;                 // Delete All Objects On Exit?
 extern bool  rectangleAsBackground = false;         // Rectangle As Background?
@@ -33,6 +34,13 @@ extern color trendlineColor2 = clrGreen;            // Trendline Color 2
 extern color trendlineColor3 = clrBlue;             // Trendline Color 3
 extern int   TextFontSize = 10;
 extern color TextColor = clrBlack;
+=======
+extern color rCol = "70,70,70";
+extern bool  mDeleteOnExit = false;
+extern bool  rectangleAsBackground = false;
+input color TextColor = clrRed;
+input color TextFontSize = 8;
+>>>>>>> e9c996f390ad11e533a1580d42bbaf2da8cc6b4b
 
 int mCnt = 0;
 datetime mTime = 0, mTime2 = 0;
@@ -58,7 +66,10 @@ string objName;
 double objLastPrice1;
 double objLastPrice2;
 
+<<<<<<< HEAD
 #define TextFont "Arial"
+=======
+>>>>>>> e9c996f390ad11e533a1580d42bbaf2da8cc6b4b
 
 //+------------------------------------------------------------------+
 int init()
