@@ -94,27 +94,27 @@ int OnCalculate(const int rates_total,
         }
         if (ObjectFind(0, getLineLondonOpen(getLondonOpenTime())) == -1){
             Sett(VLineCreate(0, getLineLondonOpen(getLondonOpenTime()), 0, getLondonOpenTime(), clrlondonkz, 2, 1));
-            Sett(Text(0, getTextLondonOpen(getLondonOpenTime()), 0, getLondonOpenTime(), getLowestYPos(), "London Open", "Arial", 7, clrlondonkz, 90));
+            Sett(Text(0, getTextLondonOpen(getLondonOpenTime()), 0, getLondonOpenTime(), getLowestYPos(), "London KZ", "Arial", 7, clrlondonkz, 90));
         }
         if (ObjectFind(0, getLinePreNYOpen(getPreNYOpenTime())) == -1){
-            Sett(VLineCreate(0, getLinePreNYOpen(getPreNYOpenTime()), 0, getPreNYOpenTime(), clrnykz, 2, 1));
-            Sett(Text(0, getTextPreNYOpen(getPreNYOpenTime()), 0, getPreNYOpenTime(), getLowestYPos(), "Pre NY", "Arial", 7, clrnykz, 90));
+            Sett(VLineCreate(0, getLinePreNYOpen(getPreNYOpenTime()), 0, getPreNYOpenTime(), clrlondonkz, 2, 1));
+            Sett(Text(0, getTextPreNYOpen(getPreNYOpenTime()), 0, getPreNYOpenTime(), getLowestYPos(), "London KZ", "Arial", 7, clrlondonkz, 90));
         }
         if (ObjectFind(0, getLineNYOpen(getNYOpenTime())) == -1){
             Sett(VLineCreate(0, getLineNYOpen(getNYOpenTime()), 0, getNYOpenTime(), clrnykz, 2, 1));
-            Sett(Text(0, getTextNYOpen(getNYOpenTime()), 0, getNYOpenTime(), getLowestYPos(), "NY Open", "Arial", 7, clrnykz, 90));
+            Sett(Text(0, getTextNYOpen(getNYOpenTime()), 0, getNYOpenTime(), getLowestYPos(), "NewYork KZ", "Arial", 7, clrnykz, 90));
         }
         if (ObjectFind(0, getLine8AM(get830Time())) == -1){
             Sett(VLineCreate(0, getLine8AM(get830Time()), 0,get830Time(), clrnykz, 2, 1));
             Sett(Text(0, getText8AM(get830Time()), 0, get830Time(), getLowestYPos(), "8.30 AM", "Arial", 7, clrnykz, 90));
         }
         if (ObjectFind(0, getLineLondonClose(getLondonCloseTime())) == -1){
-            Sett(VLineCreate(0, getLineLondonClose(getLondonCloseTime()), 0, getLondonCloseTime(), clrlondonkz, 2, 1));
-            Sett(Text(0, getTextLondonClose(getLondonCloseTime()), 0, getLondonCloseTime(), getLowestYPos(), "London Close", "Arial", 7, clrlondonkz, 90));
+            Sett(VLineCreate(0, getLineLondonClose(getLondonCloseTime()), 0, getLondonCloseTime(), clrnykz, 2, 1));
+            Sett(Text(0, getTextLondonClose(getLondonCloseTime()), 0, getLondonCloseTime(), getLowestYPos(), "NewYork KZ", "Arial", 7, clrnykz, 90));
         }
         if (ObjectFind(0, getLineNYLaunch(getNYLaunchTime())) == -1){
-            Sett(VLineCreate(0, getLineNYLaunch(getNYLaunchTime()), 0, getNYLaunchTime(), clrnykz, 2, 1));
-            Sett(Text(0, getTextNYLaunch(getNYLaunchTime()), 0, getNYLaunchTime(), getLowestYPos(), "NY Launch", "Arial", 7, clrnykz, 90));
+            Sett(VLineCreate(0, getLineNYLaunch(getNYLaunchTime()), 0, getNYLaunchTime(), clrlondonkz, 2, 1));
+            Sett(Text(0, getTextNYLaunch(getNYLaunchTime()), 0, getNYLaunchTime(), getLowestYPos(), "London Close KZ", "Arial", 7, clrlondonkz, 90));
         }
 
         if (!currentTimeIsWeekend() && TimeCurrent() >= getSeparatorTime()) {
@@ -161,15 +161,15 @@ int OnCalculate(const int rates_total,
                             Sett(VLineCreate(0, getLineLondonOpen(time[i]), 0, time[i], clrlondonkz, 2, 1));
                         }
                         if (ObjectFind(0, getTextLondonOpen(time[i])) == -1) {
-                            Sett(Text(0, getTextLondonOpen(time[i]), 0, time[i], getLowestYPos(), "London Open", "Arial", 7, clrlondonkz, 90));
+                            Sett(Text(0, getTextLondonOpen(time[i]), 0, time[i], getLowestYPos(), "London KZ", "Arial", 7, clrlondonkz, 90));
                         } 
                     }
                     else if (TimeHour(time[i]) == TimeHour(getPreNYOpenTime())){
                         if (ObjectFind(0, getLinePreNYOpen(time[i])) == -1){
-                            Sett(VLineCreate(0, getLinePreNYOpen(time[i]) + "a", 0, time[i], clrnykz, 2, 1));
+                            Sett(VLineCreate(0, getLinePreNYOpen(time[i]) + "a", 0, time[i], clrlondonkz, 2, 1));
                         }
                         if (ObjectFind(0, getTextPreNYOpen(time[i])) == -1) {
-                            Sett(Text(0, getTextPreNYOpen(time[i]), 0, time[i], getLowestYPos(), "Pre NY", "Arial", 7, clrnykz, 90));
+                            Sett(Text(0, getTextPreNYOpen(time[i]), 0, time[i], getLowestYPos(), "London KZ", "Arial", 7, clrlondonkz, 90));
                         }
                     }
                     else if (TimeHour(time[i]) == TimeHour(getNYOpenTime())){
@@ -177,23 +177,23 @@ int OnCalculate(const int rates_total,
                             Sett(VLineCreate(0, getLineNYOpen(time[i]) + "a", 0, time[i], clrnykz, 2, 1));
                         }
                         if (ObjectFind(0, getTextNYOpen(time[i])) == -1) {
-                            Sett(Text(0, getTextNYOpen(time[i]), 0, time[i], getLowestYPos(), "NY Open", "Arial", 7, clrnykz, 90));
+                            Sett(Text(0, getTextNYOpen(time[i]), 0, time[i], getLowestYPos(), "NewYork KZ", "Arial", 7, clrnykz, 90));
                         }
                     }
                     else if (TimeHour(time[i]) == TimeHour(getLondonCloseTime())){
                         if (ObjectFind(0, getLineLondonClose(time[i])) == -1){
-                            Sett(VLineCreate(0, getLineLondonClose(time[i]) + "a", 0, time[i], clrlondonkz, 2, 1));
+                            Sett(VLineCreate(0, getLineLondonClose(time[i]) + "a", 0, time[i], clrnykz, 2, 1));
                         }
                         if (ObjectFind(0, getTextLondonClose(time[i])) == -1) {
-                            Sett(Text(0, getTextLondonClose(time[i]), 0, time[i], getLowestYPos(), "London Close", "Arial", 7, clrlondonkz, 90));
+                            Sett(Text(0, getTextLondonClose(time[i]), 0, time[i], getLowestYPos(), "NewYork KZ", "Arial", 7, clrnykz, 90));
                         }
                     }
                     else if (TimeHour(time[i]) == TimeHour(getNYLaunchTime())){
                         if (ObjectFind(0, getLineNYLaunch(time[i])) == -1){
-                            Sett(VLineCreate(0, getLineNYLaunch(time[i]) + "a", 0, time[i], clrnykz, 2, 1));
+                            Sett(VLineCreate(0, getLineNYLaunch(time[i]) + "a", 0, time[i], clrlondonkz, 2, 1));
                         }
                         if (ObjectFind(0, getTextNYLaunch(time[i])) == -1) {
-                            Sett(Text(0, getTextNYLaunch(time[i]), 0, time[i], getLowestYPos(), "NY Launch", "Arial", 7, clrnykz, 90));
+                            Sett(Text(0, getTextNYLaunch(time[i]), 0, time[i], getLowestYPos(), "London Close KZ", "Arial", 7, clrlondonkz, 90));
                         }
                     }
                 }
