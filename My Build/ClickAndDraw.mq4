@@ -23,6 +23,8 @@ extern color mCol = clrWhite;
 extern color rCol = "70,70,70";
 extern bool  mDeleteOnExit = false;
 extern bool  rectangleAsBackground = false;
+input color TextColor = clrRed;
+input color TextFontSize = 8;
 
 int mCnt = 0;
 datetime mTime = 0, mTime2 = 0;
@@ -42,9 +44,6 @@ string objName;
 double objLastPrice1;
 double objLastPrice2;
 
-#define TextFontSize 16
-#define TextFont "Arial"
-#define TextColor "Black"
 
 //+------------------------------------------------------------------+
 int init()
@@ -241,7 +240,7 @@ void createLabel(KEYS_ON_KEYBOARD key) {
                     : 40;
     
     ObjectCreate(name + " Label", OBJ_LABEL, 0, 0, 0);
-    ObjectSetText(name + " Label", name + " : ON", TextFontSize, TextFont, TextColor);
+    ObjectSetText(name + " Label", name + " : ON", TextFontSize, "Arial", TextColor);
     ObjectSet(name + " Label", OBJPROP_CORNER, 3);
     ObjectSet(name + " Label", OBJPROP_XDISTANCE, 15);
     ObjectSet(name + " Label", OBJPROP_YDISTANCE, yDistance);
