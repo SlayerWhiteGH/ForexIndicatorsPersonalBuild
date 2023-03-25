@@ -19,7 +19,8 @@ input KEYS_ON_KEYBOARD RayKey = _E;
 input KEYS_ON_KEYBOARD FlatKey = _R;
 
 extern int   mWid = 1;
-extern color mCol = clrRed;
+extern color mCol = clrWhite;
+extern color rCol = "70,70,70";
 extern bool  mDeleteOnExit = false;
 
 int mCnt = 0;
