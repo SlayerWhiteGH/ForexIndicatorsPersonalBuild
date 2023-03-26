@@ -6,12 +6,12 @@
 #property indicator_chart_window
 
 enum KEYS_ON_KEYBOARD {
-  _A/*A*/,  _B/*B*/,  _C/*C*/,  _D/*D*/,  _E/*E*/,
-  _F/*F*/,  _G/*G*/,  _H/*H*/,  _I/*I*/,  _J/*J*/,
-  _K/*K*/,  _L/*L*/,  _M/*M*/,  _N/*N*/,  _O/*O*/,
-  _P/*P*/,  _Q/*Q*/,  _R/*R*/,  _S/*S*/,  _T/*T*/,
-  _U/*U*/,  _V/*V*/,  _W/*W*/,  _X/*X*/,  _Y/*Y*/, 
-  _Z/*Z*/, _One/*1*/, _Two/*2*/, _Three/*3*/, _Four/*4*/
+  _A = 65/*A*/,  _B = 66/*B*/,  _C = 67/*C*/,  _D = 68/*D*/,  _E = 69/*E*/,
+  _F = 70/*F*/,  _G = 71/*G*/,  _H = 72/*H*/,  _I = 73/*I*/,  _J = 74/*J*/,
+  _K = 75/*K*/,  _L = 76/*L*/,  _M = 77/*M*/,  _N = 78/*N*/,  _O = 79/*O*/,
+  _P = 80/*P*/,  _Q = 81/*Q*/,  _R = 82/*R*/,  _S = 83/*S*/,  _T = 84/*T*/,
+  _U = 85/*U*/,  _V = 86/*V*/,  _W = 87/*W*/,  _X = 88/*X*/,  _Y = 89/*Y*/, 
+  _Z = 90/*Z*/, _One = 49/*1*/, _Two = 50/*2*/, _Three = 51/*3*/, _Four = 52/*4*/
 };
 
 input KEYS_ON_KEYBOARD TrendlineKey = _Q;
@@ -24,37 +24,25 @@ input KEYS_ON_KEYBOARD Color3Key = _Three;
 input KEYS_ON_KEYBOARD StyleKey = _Four;
 
 extern int   mWid = 1;
-extern color mCol = clrWhite;
 extern color rCol = "70,70,70";       
+extern bool  mDrawTrendline = false;
+extern bool  mDrawRectangle = false;
+extern bool  mRay = false;
+extern bool  mFlat = true;
 extern bool  mDeleteOnExit = false;                 // Delete All Objects On Exit?
-extern bool  rectangleAsBackground = false;         // Rectangle As Background?
+extern bool  rectangleAsBackground = true;         // Rectangle As Background?
 extern color trendlineColor1 = clrRed;              // Trendline Color 1
 extern color trendlineColor2 = clrGreen;            // Trendline Color 2
 extern color trendlineColor3 = clrBlue;             // Trendline Color 3
 extern int   TextFontSize = 10;
 extern color TextColor = clrBlack;
 
-
+color mTrendlineColor;
+extern int mStyle;
 
 int mCnt = 0;
 datetime mTime = 0, mTime2 = 0;
 double mPrice = 0, mPrice2 = 0;
-
-bool mDrawTrendline;
-bool mDrawRectangle;
-bool mRay;
-bool mFlat;
-color mTrendlineColor;
-int mStyle;
-
-int trendlineKey; 
-int rectangleKey;
-int rayKey;
-int flatKey;
-int color1Key;
-int color2Key;
-int color3Key;
-int styleKey;
 
 string objName;
 double objLastPrice1;
@@ -66,19 +54,6 @@ double objLastPrice2;
 //+------------------------------------------------------------------+
 int init()
 {
-    trendlineKey = getNumericalValue(TrendlineKey);
-    rectangleKey = getNumericalValue(RectangleKey);
-    rayKey = getNumericalValue(RayKey);
-    flatKey = getNumericalValue(FlatKey);
-    color1Key = getNumericalValue(Color1Key);
-    color2Key = getNumericalValue(Color2Key);
-    color3Key = getNumericalValue(Color3Key);
-    styleKey = getNumericalValue(StyleKey);
-
-    mDrawTrendline = false;
-    mDrawRectangle = false;
-    mRay = false;
-    mFlat = false;
     mTrendlineColor = trendlineColor1;
     mStyle = 0;
 
@@ -116,7 +91,7 @@ void OnChartEvent(const int id,         // Event ID
                   const string& sparam)  // Parameter of type string events 
 {
     if (id == CHARTEVENT_KEYDOWN) {
-        if (lparam == trendlineKey) {
+        if (lparam == TrendlineKey) {
             if (mDrawRectangle) {
                 mDrawRectangle = false;
                 deleteLabel(RectangleKey);
@@ -127,14 +102,21 @@ void OnChartEvent(const int id,         // Event ID
                 createLabel(TrendlineKey);
                 if (mStyle == 2) mStyle = 0;
                 createLabel(StyleKey);
+
+                mFlat = true;
+                createLabel(FlatKey);
             }
             else {
                 deleteLabel(TrendlineKey);
                 deleteLabel(StyleKey);
+                if (mRay) {
+                    mRay = false;
+                    deleteLabel(RayKey);
+                }
             }
         }
 
-        if (lparam == rectangleKey) {
+        if (lparam == RectangleKey) {
             if (mDrawTrendline) {
                 mDrawTrendline = false;
                 deleteLabel(TrendlineKey);
@@ -158,7 +140,7 @@ void OnChartEvent(const int id,         // Event ID
             }
         }
 
-        if (lparam == rayKey) {
+        if (lparam == RayKey) {
             if (!mDrawRectangle) {
                 mRay = !mRay;
                 if (mRay) {
@@ -170,7 +152,7 @@ void OnChartEvent(const int id,         // Event ID
             }
         }
 
-        if (lparam == flatKey) {
+        if (lparam == FlatKey) {
             if (!mDrawRectangle) {
                 mFlat = !mFlat;
                 if (mFlat) {
@@ -182,25 +164,31 @@ void OnChartEvent(const int id,         // Event ID
             }
         }
 
-        if (lparam == color1Key) {
-            deleteLabel(TrendlineKey);
-            mTrendlineColor = trendlineColor1;
-            createLabel(TrendlineKey);
+        if (lparam == Color1Key) {
+            if (mDrawTrendline) {
+                deleteLabel(TrendlineKey);
+                mTrendlineColor = trendlineColor1;
+                createLabel(TrendlineKey);
+            }
         }
 
-        if (lparam == color2Key) {
-            deleteLabel(TrendlineKey);
-            mTrendlineColor = trendlineColor2;
-            createLabel(TrendlineKey);
+        if (lparam == Color2Key) {
+            if (mDrawTrendline) {
+                deleteLabel(TrendlineKey);
+                mTrendlineColor = trendlineColor2;
+                createLabel(TrendlineKey);
+            }
         }
 
-        if (lparam == color3Key) {
-            deleteLabel(TrendlineKey);
-            mTrendlineColor = trendlineColor3;
-            createLabel(TrendlineKey);
+        if (lparam == Color3Key) {
+            if (mDrawTrendline) {
+                deleteLabel(TrendlineKey);
+                mTrendlineColor = trendlineColor3;
+                createLabel(TrendlineKey);
+            }
         }
 
-        if (lparam == styleKey) {
+        if (lparam == StyleKey) {
             if (mDrawTrendline || mDrawRectangle) {
                 deleteLabel(StyleKey);
                 if (mDrawTrendline) {
@@ -239,11 +227,23 @@ void OnChartEvent(const int id,         // Event ID
                     ObjectSet("m.Data"+IntegerToString(TimeLocal()), OBJPROP_WIDTH, mWid);
                     ObjectSet("m.Data"+IntegerToString(TimeLocal()), OBJPROP_RAY, mRay);
                     ObjectSet("m.Data"+IntegerToString(TimeLocal()), OBJPROP_STYLE, mStyle);
+
+                    mDrawTrendline = false;
+                    deleteLabel(TrendlineKey);
+                    deleteLabel(StyleKey);
+                    if (mRay) {
+                        mRay = false;
+                        deleteLabel(RayKey);
+                    }
                 }
                 if (mDrawRectangle) {
                     ObjectCreate("m.DataR"+IntegerToString(TimeLocal()), OBJ_RECTANGLE, 0, mTime, mPrice, mTime2, mPrice2);
                     ObjectSet("m.DataR"+IntegerToString(TimeLocal()), OBJPROP_COLOR, rCol);
                     ObjectSet("m.DataR"+IntegerToString(TimeLocal()), OBJPROP_BACK, rectangleAsBackground);
+
+                    mDrawRectangle = false;
+                    deleteLabel(RectangleKey);
+                    deleteLabel(StyleKey);
                 }    
                 mPrice = 0;
                 mPrice2 = 0;
@@ -271,39 +271,6 @@ void OnChartEvent(const int id,         // Event ID
         }
     }
     return;
-} 
-  
-int getNumericalValue(KEYS_ON_KEYBOARD key) {
-  return key == _A ? 65
-        : key == _B ? 66
-        : key == _C ? 67
-        : key == _D ? 68
-        : key == _E ? 69
-        : key == _F ? 70
-        : key == _G ? 71
-        : key == _H ? 72
-        : key == _I ? 73
-        : key == _J ? 74
-        : key == _K ? 75
-        : key == _L ? 76
-        : key == _M ? 77
-        : key == _N ? 78
-        : key == _O ? 79
-        : key == _P ? 80
-        : key == _Q ? 81
-        : key == _R ? 82
-        : key == _S ? 83
-        : key == _T ? 84
-        : key == _U ? 85
-        : key == _V ? 86
-        : key == _W ? 87
-        : key == _X ? 88
-        : key == _Y ? 89
-        : key == _Z ? 90
-        : key == _One ? 49
-        : key == _Two ? 50
-        : key == _Three ? 51
-        : 52;
 }
 
 void setObjName(string name) {
@@ -325,8 +292,8 @@ void createLabel(KEYS_ON_KEYBOARD key) {
     int yDistance = key == StyleKey ? 0
                     : key == TrendlineKey ? 20
                     : key == RectangleKey ? 20
-                    : key == RayKey ? 40
-                    : 60;
+                    : key == RayKey ? 60
+                    : 40;
     
     ObjectCreate(name + " Label", OBJ_LABEL, 0, 0, 0);
     ObjectSetText(name + " Label", name + (key == StyleKey ? (mStyle == 0 ? " : Solid" : mStyle == 1 ? " : Dash" : rectangleAsBackground ? " : ON" : " : OFF") : " : ON"), TextFontSize, TextFont, TextColor);
