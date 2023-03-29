@@ -28,7 +28,7 @@ extern color rCol = "70,70,70";
 extern bool  mDrawTrendline = false;
 extern bool  mDrawRectangle = false;
 extern bool  mRay = false;
-extern bool  mFlat = true;
+extern bool  mFlat = false;
 extern bool  mDeleteOnExit = false;                 // Delete All Objects On Exit?
 extern bool  rectangleAsBackground = true;         // Rectangle As Background?
 extern color trendlineColor1 = clrRed;              // Trendline Color 1
@@ -113,6 +113,9 @@ void OnChartEvent(const int id,         // Event ID
                     mRay = false;
                     deleteLabel(RayKey);
                 }
+
+                mFlat = false;
+                deleteLabel(FlatKey);
             }
         }
 
@@ -234,6 +237,11 @@ void OnChartEvent(const int id,         // Event ID
                     if (mRay) {
                         mRay = false;
                         deleteLabel(RayKey);
+                    }
+
+                    if (mFlat) {
+                        mFlat = false;
+                        deleteLabel(FlatKey);
                     }
                 }
                 if (mDrawRectangle) {
