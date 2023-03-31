@@ -1,0 +1,1689 @@
+0	19:24:50.631	Quick Style DXY,M15: uninit reason 9
+0	19:24:50.635	OHLC Magnet DXY,M15: uninit reason 9
+0	19:24:50.635	Watermark Symbol DXY,M15: uninit reason 9
+0	19:24:50.635	Trading box Technical analysis DXY,M15: uninit reason 9
+0	19:24:50.635	Show Pips DXY,M15: uninit reason 9
+0	19:24:50.635	ICT Asian_Range DXY,M15: deinitialized
+0	19:24:50.635	ICT Asian_Range DXY,M15: uninit reason 9
+0	19:24:50.635	Time Range Separator DXY,M15: uninit reason 9
+0	19:24:50.635	Bigger TF OHLC dvl BTE Button DXY,M15: uninit reason 9
+0	19:24:50.636	Separator TD v2 DXY,M15: uninit reason 9
+0	19:24:50.636	ClickAndDraw DXY,M15: uninit reason 9
+0	19:24:50.636	Quick Style GBPUSD,M1: uninit reason 9
+0	19:24:50.638	OHLC Magnet GBPUSD,M1: uninit reason 9
+0	19:24:50.638	Watermark Symbol GBPUSD,M1: uninit reason 9
+0	19:24:50.639	Trading box Technical analysis GBPUSD,M1: uninit reason 9
+0	19:24:50.639	Show Pips GBPUSD,M1: uninit reason 9
+0	19:24:50.639	ICT Asian_Range GBPUSD,M1: deinitialized
+0	19:24:50.639	ICT Asian_Range GBPUSD,M1: uninit reason 9
+0	19:24:50.639	Time Range Separator GBPUSD,M1: uninit reason 9
+0	19:24:50.639	Bigger TF OHLC dvl BTE Button GBPUSD,M1: uninit reason 9
+0	19:24:50.640	Separator TD v2 GBPUSD,M1: uninit reason 9
+0	19:24:50.640	ClickAndDraw GBPUSD,M1: uninit reason 9
+0	19:24:50.640	Quick Style XAUUSD,M1: uninit reason 9
+0	19:24:50.642	OHLC Magnet XAUUSD,M1: uninit reason 9
+0	19:24:50.642	Watermark Symbol XAUUSD,M1: uninit reason 9
+0	19:24:50.642	Trading box Technical analysis XAUUSD,M1: uninit reason 9
+0	19:24:50.642	Show Pips XAUUSD,M1: uninit reason 9
+0	19:24:50.642	ICT Asian_Range XAUUSD,M1: deinitialized
+0	19:24:50.642	ICT Asian_Range XAUUSD,M1: uninit reason 9
+0	19:24:50.642	Time Range Separator XAUUSD,M1: uninit reason 9
+0	19:24:50.642	Bigger TF OHLC dvl BTE Button XAUUSD,M1: uninit reason 9
+0	19:24:50.643	Separator TD v2 XAUUSD,M1: uninit reason 9
+0	19:24:50.643	ClickAndDraw XAUUSD,M1: uninit reason 9
+0	19:24:50.777	Custom indicator Quick Style DXY,M15: removed
+0	19:24:50.780	Custom indicator OHLC Magnet DXY,M15: removed
+0	19:24:50.785	Custom indicator Watermark Symbol DXY,M15: removed
+0	19:24:50.794	Custom indicator Trading box Technical analysis DXY,M15: removed
+0	19:24:50.801	Custom indicator Show Pips DXY,M15: removed
+0	19:24:50.801	Custom indicator ICT Asian_Range DXY,M15: removed
+0	19:24:50.808	Custom indicator Time Range Separator DXY,M15: removed
+0	19:24:50.812	Custom indicator Bigger TF OHLC dvl BTE Button DXY,M15: removed
+0	19:24:50.815	Custom indicator Separator TD v2 DXY,M15: removed
+0	19:24:50.820	Custom indicator ClickAndDraw DXY,M15: removed
+0	19:24:50.860	Custom indicator Quick Style GBPUSD,M1: removed
+0	19:24:50.863	Custom indicator OHLC Magnet GBPUSD,M1: removed
+0	19:24:50.867	Custom indicator Watermark Symbol GBPUSD,M1: removed
+0	19:24:50.873	Custom indicator Trading box Technical analysis GBPUSD,M1: removed
+0	19:24:50.876	Custom indicator Show Pips GBPUSD,M1: removed
+0	19:24:50.876	Custom indicator ICT Asian_Range GBPUSD,M1: removed
+0	19:24:50.879	Custom indicator Time Range Separator GBPUSD,M1: removed
+0	19:24:50.884	Custom indicator Bigger TF OHLC dvl BTE Button GBPUSD,M1: removed
+0	19:24:50.887	Custom indicator Separator TD v2 GBPUSD,M1: removed
+0	19:24:50.893	Custom indicator ClickAndDraw GBPUSD,M1: removed
+0	19:24:50.911	Custom indicator Quick Style XAUUSD,M1: removed
+0	19:24:50.914	Custom indicator OHLC Magnet XAUUSD,M1: removed
+0	19:24:50.916	Custom indicator Watermark Symbol XAUUSD,M1: removed
+0	19:24:50.919	Custom indicator Trading box Technical analysis XAUUSD,M1: removed
+0	19:24:50.920	Custom indicator Show Pips XAUUSD,M1: removed
+0	19:24:50.920	Custom indicator ICT Asian_Range XAUUSD,M1: removed
+0	19:24:50.924	Custom indicator Time Range Separator XAUUSD,M1: removed
+0	19:24:50.926	Custom indicator Bigger TF OHLC dvl BTE Button XAUUSD,M1: removed
+0	19:24:50.928	Custom indicator Separator TD v2 XAUUSD,M1: removed
+0	19:24:50.930	Custom indicator ClickAndDraw XAUUSD,M1: removed
+0	19:24:59.641	Custom indicator Market\Quick Style DXY,M15: loaded successfully
+0	19:24:59.657	Custom indicator Market\OHLC Magnet DXY,M15: loaded successfully
+0	19:24:59.672	Custom indicator Market\Watermark Symbol DXY,M15: loaded successfully
+0	19:24:59.694	Custom indicator Market\Trading box Technical analysis DXY,M15: loaded successfully
+0	19:24:59.707	Custom indicator Market\Show Pips DXY,M15: loaded successfully
+0	19:24:59.779	Custom indicator Mine\ICT\ICT Asian_Range DXY,M15: loaded successfully
+0	19:24:59.791	Custom indicator Market\Time Range Separator DXY,M15: loaded successfully
+0	19:24:59.804	Custom indicator Mine\Daily Open\Bigger TF OHLC dvl BTE Button DXY,M15: loaded successfully
+0	19:24:59.816	Custom indicator Mine\My Build\Separator TD v2 DXY,M15: loaded successfully
+0	19:24:59.827	Custom indicator Mine\My Build\ClickAndDraw DXY,M15: loaded successfully
+0	19:24:59.859	Quick Style DXY,M15: 0
+0	19:24:59.859	Quick Style DXY,M15: 0
+0	19:24:59.859	Quick Style DXY,M15: 1
+0	19:24:59.859	Quick Style DXY,M15: 1
+0	19:24:59.860	Quick Style DXY,M15: 2
+0	19:24:59.860	Quick Style DXY,M15: initialized
+0	19:24:59.878	OHLC Magnet DXY,M15: initialized
+0	19:24:59.896	Watermark Symbol DXY,M15: initialized
+0	19:24:59.929	Trading box Technical analysis DXY,M15: initialized
+0	19:24:59.947	Show Pips DXY,M15: initialized
+0	19:24:59.947	ICT Asian_Range DXY,M15: initialized
+0	19:24:59.964	Time Range Separator DXY,M15: initialized
+0	19:24:59.990	Bigger TF OHLC dvl BTE Button DXY,M15: initialized
+0	19:25:00.058	Separator TD v2 DXY,M15: initialized
+0	19:25:00.080	ClickAndDraw DXY,M15: initialized
+0	19:25:00.123	Custom indicator Market\Quick Style GBPUSD,M1: loaded successfully
+0	19:25:00.135	Custom indicator Market\OHLC Magnet GBPUSD,M1: loaded successfully
+0	19:25:00.148	Custom indicator Market\Watermark Symbol GBPUSD,M1: loaded successfully
+0	19:25:00.170	Custom indicator Market\Trading box Technical analysis GBPUSD,M1: loaded successfully
+0	19:25:00.187	Custom indicator Market\Show Pips GBPUSD,M1: loaded successfully
+0	19:25:00.267	Custom indicator Mine\ICT\ICT Asian_Range GBPUSD,M1: loaded successfully
+0	19:25:00.281	Custom indicator Market\Time Range Separator GBPUSD,M1: loaded successfully
+0	19:25:00.292	Custom indicator Mine\Daily Open\Bigger TF OHLC dvl BTE Button GBPUSD,M1: loaded successfully
+0	19:25:00.303	Custom indicator Mine\My Build\Separator TD v2 GBPUSD,M1: loaded successfully
+0	19:25:00.314	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M1: loaded successfully
+0	19:25:00.350	Quick Style GBPUSD,M1: 0
+0	19:25:00.350	Quick Style GBPUSD,M1: 0
+0	19:25:00.350	Quick Style GBPUSD,M1: 1
+0	19:25:00.350	Quick Style GBPUSD,M1: 1
+0	19:25:00.350	Quick Style GBPUSD,M1: 2
+0	19:25:00.351	Quick Style GBPUSD,M1: initialized
+0	19:25:00.371	OHLC Magnet GBPUSD,M1: initialized
+0	19:25:00.391	Watermark Symbol GBPUSD,M1: initialized
+0	19:25:00.426	Trading box Technical analysis GBPUSD,M1: initialized
+0	19:25:00.445	Show Pips GBPUSD,M1: initialized
+0	19:25:00.445	ICT Asian_Range GBPUSD,M1: initialized
+0	19:25:00.461	Time Range Separator GBPUSD,M1: initialized
+0	19:25:00.485	Bigger TF OHLC dvl BTE Button GBPUSD,M1: initialized
+0	19:25:00.538	Separator TD v2 GBPUSD,M1: initialized
+0	19:25:00.561	ClickAndDraw GBPUSD,M1: initialized
+0	19:25:00.644	Custom indicator Market\Quick Style XAUUSD,M1: loaded successfully
+0	19:25:00.657	Custom indicator Market\OHLC Magnet XAUUSD,M1: loaded successfully
+0	19:25:00.671	Custom indicator Market\Watermark Symbol XAUUSD,M1: loaded successfully
+0	19:25:00.692	Custom indicator Market\Trading box Technical analysis XAUUSD,M1: loaded successfully
+0	19:25:00.705	Custom indicator Market\Show Pips XAUUSD,M1: loaded successfully
+0	19:25:00.778	Custom indicator Mine\ICT\ICT Asian_Range XAUUSD,M1: loaded successfully
+0	19:25:00.791	Custom indicator Market\Time Range Separator XAUUSD,M1: loaded successfully
+0	19:25:00.803	Custom indicator Mine\Daily Open\Bigger TF OHLC dvl BTE Button XAUUSD,M1: loaded successfully
+0	19:25:00.816	Custom indicator Mine\My Build\Separator TD v2 XAUUSD,M1: loaded successfully
+0	19:25:00.827	Custom indicator Mine\My Build\ClickAndDraw XAUUSD,M1: loaded successfully
+0	19:25:00.862	Quick Style XAUUSD,M1: 0
+0	19:25:00.862	Quick Style XAUUSD,M1: 0
+0	19:25:00.862	Quick Style XAUUSD,M1: 1
+0	19:25:00.863	Quick Style XAUUSD,M1: 1
+0	19:25:00.863	Quick Style XAUUSD,M1: 2
+0	19:25:00.863	Quick Style XAUUSD,M1: initialized
+0	19:25:00.881	OHLC Magnet XAUUSD,M1: initialized
+0	19:25:00.899	Watermark Symbol XAUUSD,M1: initialized
+0	19:25:00.934	Trading box Technical analysis XAUUSD,M1: initialized
+0	19:25:00.951	Show Pips XAUUSD,M1: initialized
+0	19:25:00.951	ICT Asian_Range XAUUSD,M1: initialized
+0	19:25:00.967	Time Range Separator XAUUSD,M1: initialized
+0	19:25:00.992	Bigger TF OHLC dvl BTE Button XAUUSD,M1: initialized
+0	19:25:01.047	Separator TD v2 XAUUSD,M1: initialized
+0	19:25:01.068	ClickAndDraw XAUUSD,M1: initialized
+0	19:27:00.056	Trading box Technical analysis XAUUSD,M1: Alert: One rectangle or trendline need to be selected for @ Object Start function
+0	19:27:17.482	Trading box Technical analysis XAUUSD,M1: Alert: One rectangle or trendline need to be selected for @ Object Start function
+0	19:27:25.796	Trading box Technical analysis XAUUSD,M1: Alert: Technical analysis Dashboard cannot be found on any chart.
+0	19:28:06.509	Quick Style XAUUSD,M1: uninit reason 3
+0	19:28:06.513	OHLC Magnet XAUUSD,M1: uninit reason 3
+0	19:28:06.513	Watermark Symbol XAUUSD,M1: uninit reason 3
+0	19:28:06.514	Trading box Technical analysis XAUUSD,M1: uninit reason 3
+0	19:28:06.514	Show Pips XAUUSD,M1: uninit reason 3
+0	19:28:06.514	ICT Asian_Range XAUUSD,M1: deinitialized
+0	19:28:06.514	ICT Asian_Range XAUUSD,M1: uninit reason 3
+0	19:28:06.514	Time Range Separator XAUUSD,M1: uninit reason 3
+0	19:28:06.514	Bigger TF OHLC dvl BTE Button XAUUSD,M1: uninit reason 3
+0	19:28:06.514	Separator TD v2 XAUUSD,M1: uninit reason 3
+0	19:28:06.515	ClickAndDraw XAUUSD,M1: uninit reason 3
+0	19:28:06.536	Quick Style XAUUSD,H1: 0
+0	19:28:06.536	Quick Style XAUUSD,H1: 0
+0	19:28:06.536	Quick Style XAUUSD,H1: 1
+0	19:28:06.536	Quick Style XAUUSD,H1: 1
+0	19:28:06.536	Quick Style XAUUSD,H1: 2
+0	19:28:06.536	Quick Style XAUUSD,H1: initialized
+0	19:28:06.536	OHLC Magnet XAUUSD,H1: initialized
+0	19:28:06.537	Watermark Symbol XAUUSD,H1: initialized
+0	19:28:06.538	Trading box Technical analysis XAUUSD,H1: initialized
+0	19:28:06.538	Show Pips XAUUSD,H1: initialized
+0	19:28:06.538	ICT Asian_Range XAUUSD,H1: initialized
+0	19:28:06.538	Time Range Separator XAUUSD,H1: initialized
+0	19:28:06.538	Bigger TF OHLC dvl BTE Button XAUUSD,H1: initialized
+0	19:28:06.538	Separator TD v2 XAUUSD,H1: initialized
+0	19:28:06.539	ClickAndDraw XAUUSD,H1: initialized
+0	19:28:07.291	Quick Style XAUUSD,H1: uninit reason 3
+0	19:28:07.295	OHLC Magnet XAUUSD,H1: uninit reason 3
+0	19:28:07.295	Watermark Symbol XAUUSD,H1: uninit reason 3
+0	19:28:07.295	Trading box Technical analysis XAUUSD,H1: uninit reason 3
+0	19:28:07.295	Show Pips XAUUSD,H1: uninit reason 3
+0	19:28:07.295	ICT Asian_Range XAUUSD,H1: deinitialized
+0	19:28:07.295	ICT Asian_Range XAUUSD,H1: uninit reason 3
+0	19:28:07.295	Time Range Separator XAUUSD,H1: uninit reason 3
+0	19:28:07.295	Bigger TF OHLC dvl BTE Button XAUUSD,H1: uninit reason 3
+0	19:28:07.296	Separator TD v2 XAUUSD,H1: uninit reason 3
+0	19:28:07.296	ClickAndDraw XAUUSD,H1: uninit reason 3
+0	19:28:07.340	Quick Style XAUUSD,H4: 0
+0	19:28:07.341	Quick Style XAUUSD,H4: 0
+0	19:28:07.341	Quick Style XAUUSD,H4: 1
+0	19:28:07.341	Quick Style XAUUSD,H4: 1
+0	19:28:07.341	Quick Style XAUUSD,H4: 2
+0	19:28:07.341	Quick Style XAUUSD,H4: initialized
+0	19:28:07.341	OHLC Magnet XAUUSD,H4: initialized
+0	19:28:07.341	Watermark Symbol XAUUSD,H4: initialized
+0	19:28:07.343	Trading box Technical analysis XAUUSD,H4: initialized
+0	19:28:07.343	Show Pips XAUUSD,H4: initialized
+0	19:28:07.343	ICT Asian_Range XAUUSD,H4: initialized
+0	19:28:07.343	Time Range Separator XAUUSD,H4: initialized
+0	19:28:07.343	Bigger TF OHLC dvl BTE Button XAUUSD,H4: initialized
+0	19:28:07.343	Separator TD v2 XAUUSD,H4: initialized
+0	19:28:07.343	ClickAndDraw XAUUSD,H4: initialized
+0	19:28:22.424	Quick Style XAUUSD,H4: uninit reason 3
+0	19:28:22.427	OHLC Magnet XAUUSD,H4: uninit reason 3
+0	19:28:22.427	Watermark Symbol XAUUSD,H4: uninit reason 3
+0	19:28:22.427	Trading box Technical analysis XAUUSD,H4: uninit reason 3
+0	19:28:22.427	Show Pips XAUUSD,H4: uninit reason 3
+0	19:28:22.427	ICT Asian_Range XAUUSD,H4: deinitialized
+0	19:28:22.427	ICT Asian_Range XAUUSD,H4: uninit reason 3
+0	19:28:22.427	Time Range Separator XAUUSD,H4: uninit reason 3
+0	19:28:22.428	Bigger TF OHLC dvl BTE Button XAUUSD,H4: uninit reason 3
+0	19:28:22.428	Separator TD v2 XAUUSD,H4: uninit reason 3
+0	19:28:22.429	ClickAndDraw XAUUSD,H4: uninit reason 3
+0	19:28:22.448	Quick Style XAUUSD,Daily: 0
+0	19:28:22.448	Quick Style XAUUSD,Daily: 0
+0	19:28:22.448	Quick Style XAUUSD,Daily: 1
+0	19:28:22.448	Quick Style XAUUSD,Daily: 1
+0	19:28:22.448	Quick Style XAUUSD,Daily: 2
+0	19:28:22.448	Quick Style XAUUSD,Daily: initialized
+0	19:28:22.449	OHLC Magnet XAUUSD,Daily: initialized
+0	19:28:22.449	Watermark Symbol XAUUSD,Daily: initialized
+0	19:28:22.450	Trading box Technical analysis XAUUSD,Daily: initialized
+0	19:28:22.450	Show Pips XAUUSD,Daily: initialized
+0	19:28:22.450	ICT Asian_Range XAUUSD,Daily: initialized
+0	19:28:22.450	Time Range Separator XAUUSD,Daily: initialized
+0	19:28:22.450	Bigger TF OHLC dvl BTE Button XAUUSD,Daily: initialized
+0	19:28:22.450	Separator TD v2 XAUUSD,Daily: initialized
+0	19:28:22.451	ClickAndDraw XAUUSD,Daily: initialized
+0	19:28:41.684	Quick Style XAUUSD,Daily: uninit reason 3
+0	19:28:41.688	OHLC Magnet XAUUSD,Daily: uninit reason 3
+0	19:28:41.688	Watermark Symbol XAUUSD,Daily: uninit reason 3
+0	19:28:41.688	Trading box Technical analysis XAUUSD,Daily: uninit reason 3
+0	19:28:41.688	Show Pips XAUUSD,Daily: uninit reason 3
+0	19:28:41.688	ICT Asian_Range XAUUSD,Daily: deinitialized
+0	19:28:41.688	ICT Asian_Range XAUUSD,Daily: uninit reason 3
+0	19:28:41.688	Time Range Separator XAUUSD,Daily: uninit reason 3
+0	19:28:41.688	Bigger TF OHLC dvl BTE Button XAUUSD,Daily: uninit reason 3
+0	19:28:41.689	Separator TD v2 XAUUSD,Daily: uninit reason 3
+0	19:28:41.689	ClickAndDraw XAUUSD,Daily: uninit reason 3
+0	19:28:41.708	Quick Style XAUUSD,H1: 0
+0	19:28:41.708	Quick Style XAUUSD,H1: 0
+0	19:28:41.708	Quick Style XAUUSD,H1: 1
+0	19:28:41.709	Quick Style XAUUSD,H1: 1
+0	19:28:41.709	Quick Style XAUUSD,H1: 2
+0	19:28:41.709	Quick Style XAUUSD,H1: initialized
+0	19:28:41.709	OHLC Magnet XAUUSD,H1: initialized
+0	19:28:41.709	Watermark Symbol XAUUSD,H1: initialized
+0	19:28:41.711	Trading box Technical analysis XAUUSD,H1: initialized
+0	19:28:41.711	Show Pips XAUUSD,H1: initialized
+0	19:28:41.711	ICT Asian_Range XAUUSD,H1: initialized
+0	19:28:41.711	Time Range Separator XAUUSD,H1: initialized
+0	19:28:41.711	Bigger TF OHLC dvl BTE Button XAUUSD,H1: initialized
+0	19:28:41.711	Separator TD v2 XAUUSD,H1: initialized
+0	19:28:41.712	ClickAndDraw XAUUSD,H1: initialized
+0	19:30:25.693	Quick Style XAUUSD,H1: uninit reason 3
+0	19:30:25.696	OHLC Magnet XAUUSD,H1: uninit reason 3
+0	19:30:25.696	Watermark Symbol XAUUSD,H1: uninit reason 3
+0	19:30:25.696	Trading box Technical analysis XAUUSD,H1: uninit reason 3
+0	19:30:25.696	Show Pips XAUUSD,H1: uninit reason 3
+0	19:30:25.696	ICT Asian_Range XAUUSD,H1: deinitialized
+0	19:30:25.696	ICT Asian_Range XAUUSD,H1: uninit reason 3
+0	19:30:25.696	Time Range Separator XAUUSD,H1: uninit reason 3
+0	19:30:25.696	Bigger TF OHLC dvl BTE Button XAUUSD,H1: uninit reason 3
+0	19:30:25.696	Separator TD v2 XAUUSD,H1: uninit reason 3
+0	19:30:25.696	ClickAndDraw XAUUSD,H1: uninit reason 3
+0	19:30:25.709	Quick Style XAUUSD,H4: 0
+0	19:30:25.709	Quick Style XAUUSD,H4: 0
+0	19:30:25.709	Quick Style XAUUSD,H4: 1
+0	19:30:25.709	Quick Style XAUUSD,H4: 1
+0	19:30:25.709	Quick Style XAUUSD,H4: 2
+0	19:30:25.710	Quick Style XAUUSD,H4: initialized
+0	19:30:25.710	OHLC Magnet XAUUSD,H4: initialized
+0	19:30:25.710	Watermark Symbol XAUUSD,H4: initialized
+0	19:30:25.711	Trading box Technical analysis XAUUSD,H4: initialized
+0	19:30:25.712	Show Pips XAUUSD,H4: initialized
+0	19:30:25.712	ICT Asian_Range XAUUSD,H4: initialized
+0	19:30:25.712	Time Range Separator XAUUSD,H4: initialized
+0	19:30:25.712	Bigger TF OHLC dvl BTE Button XAUUSD,H4: initialized
+0	19:30:25.712	Separator TD v2 XAUUSD,H4: initialized
+0	19:30:25.712	ClickAndDraw XAUUSD,H4: initialized
+0	19:31:56.590	Quick Style XAUUSD,H4: uninit reason 3
+0	19:31:56.593	OHLC Magnet XAUUSD,H4: uninit reason 3
+0	19:31:56.593	Watermark Symbol XAUUSD,H4: uninit reason 3
+0	19:31:56.593	Trading box Technical analysis XAUUSD,H4: uninit reason 3
+0	19:31:56.593	Show Pips XAUUSD,H4: uninit reason 3
+0	19:31:56.593	ICT Asian_Range XAUUSD,H4: deinitialized
+0	19:31:56.593	ICT Asian_Range XAUUSD,H4: uninit reason 3
+0	19:31:56.593	Time Range Separator XAUUSD,H4: uninit reason 3
+0	19:31:56.594	Bigger TF OHLC dvl BTE Button XAUUSD,H4: uninit reason 3
+0	19:31:56.594	Separator TD v2 XAUUSD,H4: uninit reason 3
+0	19:31:56.595	ClickAndDraw XAUUSD,H4: uninit reason 3
+0	19:31:56.606	Quick Style XAUUSD,H1: 0
+0	19:31:56.606	Quick Style XAUUSD,H1: 0
+0	19:31:56.606	Quick Style XAUUSD,H1: 1
+0	19:31:56.606	Quick Style XAUUSD,H1: 1
+0	19:31:56.606	Quick Style XAUUSD,H1: 2
+0	19:31:56.606	Quick Style XAUUSD,H1: initialized
+0	19:31:56.607	OHLC Magnet XAUUSD,H1: initialized
+0	19:31:56.607	Watermark Symbol XAUUSD,H1: initialized
+0	19:31:56.608	Trading box Technical analysis XAUUSD,H1: initialized
+0	19:31:56.608	Show Pips XAUUSD,H1: initialized
+0	19:31:56.608	ICT Asian_Range XAUUSD,H1: initialized
+0	19:31:56.608	Time Range Separator XAUUSD,H1: initialized
+0	19:31:56.608	Bigger TF OHLC dvl BTE Button XAUUSD,H1: initialized
+0	19:31:56.608	Separator TD v2 XAUUSD,H1: initialized
+0	19:31:56.609	ClickAndDraw XAUUSD,H1: initialized
+0	19:33:49.050	Quick Style XAUUSD,H1: uninit reason 3
+0	19:33:49.054	OHLC Magnet XAUUSD,H1: uninit reason 3
+0	19:33:49.054	Watermark Symbol XAUUSD,H1: uninit reason 3
+0	19:33:49.054	Trading box Technical analysis XAUUSD,H1: uninit reason 3
+0	19:33:49.054	Show Pips XAUUSD,H1: uninit reason 3
+0	19:33:49.054	ICT Asian_Range XAUUSD,H1: deinitialized
+0	19:33:49.054	ICT Asian_Range XAUUSD,H1: uninit reason 3
+0	19:33:49.054	Time Range Separator XAUUSD,H1: uninit reason 3
+0	19:33:49.055	Bigger TF OHLC dvl BTE Button XAUUSD,H1: uninit reason 3
+0	19:33:49.055	Separator TD v2 XAUUSD,H1: uninit reason 3
+0	19:33:49.055	ClickAndDraw XAUUSD,H1: uninit reason 3
+0	19:33:49.076	Quick Style XAUUSD,M5: 0
+0	19:33:49.076	Quick Style XAUUSD,M5: 0
+0	19:33:49.076	Quick Style XAUUSD,M5: 1
+0	19:33:49.076	Quick Style XAUUSD,M5: 1
+0	19:33:49.076	Quick Style XAUUSD,M5: 2
+0	19:33:49.076	Quick Style XAUUSD,M5: initialized
+0	19:33:49.076	OHLC Magnet XAUUSD,M5: initialized
+0	19:33:49.076	Watermark Symbol XAUUSD,M5: initialized
+0	19:33:49.078	Trading box Technical analysis XAUUSD,M5: initialized
+0	19:33:49.079	Show Pips XAUUSD,M5: initialized
+0	19:33:49.079	ICT Asian_Range XAUUSD,M5: initialized
+0	19:33:49.079	Time Range Separator XAUUSD,M5: initialized
+0	19:33:49.079	Bigger TF OHLC dvl BTE Button XAUUSD,M5: initialized
+0	19:33:49.079	Separator TD v2 XAUUSD,M5: initialized
+0	19:33:49.079	ClickAndDraw XAUUSD,M5: initialized
+1	19:33:49.172	Separator TD v2 XAUUSD,M5: array out of range in 'Separator TD v2.mq4' (121,33)
+0	19:34:08.185	Quick Style XAUUSD,M5: uninit reason 3
+0	19:34:08.189	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	19:34:08.189	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	19:34:08.189	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	19:34:08.189	Show Pips XAUUSD,M5: uninit reason 3
+0	19:34:08.189	ICT Asian_Range XAUUSD,M5: deinitialized
+0	19:34:08.189	ICT Asian_Range XAUUSD,M5: uninit reason 3
+0	19:34:08.189	Time Range Separator XAUUSD,M5: uninit reason 3
+0	19:34:08.189	Bigger TF OHLC dvl BTE Button XAUUSD,M5: uninit reason 3
+0	19:34:08.190	Separator TD v2 XAUUSD,M5: uninit reason 3
+0	19:34:08.190	ClickAndDraw XAUUSD,M5: uninit reason 3
+0	19:34:08.203	Quick Style XAUUSD,H1: 0
+0	19:34:08.204	Quick Style XAUUSD,H1: 0
+0	19:34:08.204	Quick Style XAUUSD,H1: 1
+0	19:34:08.204	Quick Style XAUUSD,H1: 1
+0	19:34:08.204	Quick Style XAUUSD,H1: 2
+0	19:34:08.204	Quick Style XAUUSD,H1: initialized
+0	19:34:08.204	OHLC Magnet XAUUSD,H1: initialized
+0	19:34:08.204	Watermark Symbol XAUUSD,H1: initialized
+0	19:34:08.206	Trading box Technical analysis XAUUSD,H1: initialized
+0	19:34:08.206	Show Pips XAUUSD,H1: initialized
+0	19:34:08.206	ICT Asian_Range XAUUSD,H1: initialized
+0	19:34:08.206	Time Range Separator XAUUSD,H1: initialized
+0	19:34:08.206	Bigger TF OHLC dvl BTE Button XAUUSD,H1: initialized
+0	19:34:08.206	Separator TD v2 XAUUSD,H1: initialized
+0	19:34:08.207	ClickAndDraw XAUUSD,H1: initialized
+0	19:34:24.526	Quick Style XAUUSD,H1: uninit reason 3
+0	19:34:24.529	OHLC Magnet XAUUSD,H1: uninit reason 3
+0	19:34:24.529	Watermark Symbol XAUUSD,H1: uninit reason 3
+0	19:34:24.530	Trading box Technical analysis XAUUSD,H1: uninit reason 3
+0	19:34:24.530	Show Pips XAUUSD,H1: uninit reason 3
+0	19:34:24.530	ICT Asian_Range XAUUSD,H1: deinitialized
+0	19:34:24.530	ICT Asian_Range XAUUSD,H1: uninit reason 3
+0	19:34:24.530	Time Range Separator XAUUSD,H1: uninit reason 3
+0	19:34:24.531	Bigger TF OHLC dvl BTE Button XAUUSD,H1: uninit reason 3
+0	19:34:24.531	Separator TD v2 XAUUSD,H1: uninit reason 3
+0	19:34:24.531	ClickAndDraw XAUUSD,H1: uninit reason 3
+0	19:34:24.545	Quick Style XAUUSD,M5: 0
+0	19:34:24.545	Quick Style XAUUSD,M5: 0
+0	19:34:24.545	Quick Style XAUUSD,M5: 1
+0	19:34:24.545	Quick Style XAUUSD,M5: 1
+0	19:34:24.545	Quick Style XAUUSD,M5: 2
+0	19:34:24.546	Quick Style XAUUSD,M5: initialized
+0	19:34:24.546	OHLC Magnet XAUUSD,M5: initialized
+0	19:34:24.546	Watermark Symbol XAUUSD,M5: initialized
+0	19:34:24.547	Trading box Technical analysis XAUUSD,M5: initialized
+0	19:34:24.547	Show Pips XAUUSD,M5: initialized
+0	19:34:24.547	ICT Asian_Range XAUUSD,M5: initialized
+0	19:34:24.548	Time Range Separator XAUUSD,M5: initialized
+0	19:34:24.548	Bigger TF OHLC dvl BTE Button XAUUSD,M5: initialized
+0	19:34:24.548	Separator TD v2 XAUUSD,M5: initialized
+0	19:34:24.548	ClickAndDraw XAUUSD,M5: initialized
+0	19:34:49.887	Quick Style XAUUSD,M5: uninit reason 3
+0	19:34:49.891	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	19:34:49.891	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	19:34:49.891	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	19:34:49.891	Show Pips XAUUSD,M5: uninit reason 3
+0	19:34:49.891	ICT Asian_Range XAUUSD,M5: deinitialized
+0	19:34:49.891	ICT Asian_Range XAUUSD,M5: uninit reason 3
+0	19:34:49.891	Time Range Separator XAUUSD,M5: uninit reason 3
+0	19:34:49.891	Bigger TF OHLC dvl BTE Button XAUUSD,M5: uninit reason 3
+0	19:34:49.892	Separator TD v2 XAUUSD,M5: uninit reason 3
+0	19:34:49.892	ClickAndDraw XAUUSD,M5: uninit reason 3
+0	19:34:49.909	Quick Style XAUUSD,M15: 0
+0	19:34:49.909	Quick Style XAUUSD,M15: 0
+0	19:34:49.910	Quick Style XAUUSD,M15: 1
+0	19:34:49.910	Quick Style XAUUSD,M15: 1
+0	19:34:49.910	Quick Style XAUUSD,M15: 2
+0	19:34:49.910	Quick Style XAUUSD,M15: initialized
+0	19:34:49.910	OHLC Magnet XAUUSD,M15: initialized
+0	19:34:49.910	Watermark Symbol XAUUSD,M15: initialized
+0	19:34:49.911	Trading box Technical analysis XAUUSD,M15: initialized
+0	19:34:49.911	Show Pips XAUUSD,M15: initialized
+0	19:34:49.911	ICT Asian_Range XAUUSD,M15: initialized
+0	19:34:49.911	Time Range Separator XAUUSD,M15: initialized
+0	19:34:49.912	Bigger TF OHLC dvl BTE Button XAUUSD,M15: initialized
+0	19:34:49.912	Separator TD v2 XAUUSD,M15: initialized
+0	19:34:49.912	ClickAndDraw XAUUSD,M15: initialized
+1	19:34:49.999	Separator TD v2 XAUUSD,M15: array out of range in 'Separator TD v2.mq4' (121,33)
+0	19:35:01.873	Quick Style XAUUSD,M15: uninit reason 3
+0	19:35:01.876	OHLC Magnet XAUUSD,M15: uninit reason 3
+0	19:35:01.876	Watermark Symbol XAUUSD,M15: uninit reason 3
+0	19:35:01.877	Trading box Technical analysis XAUUSD,M15: uninit reason 3
+0	19:35:01.877	Show Pips XAUUSD,M15: uninit reason 3
+0	19:35:01.877	ICT Asian_Range XAUUSD,M15: deinitialized
+0	19:35:01.877	ICT Asian_Range XAUUSD,M15: uninit reason 3
+0	19:35:01.877	Time Range Separator XAUUSD,M15: uninit reason 3
+0	19:35:01.877	Bigger TF OHLC dvl BTE Button XAUUSD,M15: uninit reason 3
+0	19:35:01.877	Separator TD v2 XAUUSD,M15: uninit reason 3
+0	19:35:01.877	ClickAndDraw XAUUSD,M15: uninit reason 3
+0	19:35:01.890	Quick Style XAUUSD,H1: 0
+0	19:35:01.890	Quick Style XAUUSD,H1: 0
+0	19:35:01.890	Quick Style XAUUSD,H1: 1
+0	19:35:01.890	Quick Style XAUUSD,H1: 1
+0	19:35:01.890	Quick Style XAUUSD,H1: 2
+0	19:35:01.891	Quick Style XAUUSD,H1: initialized
+0	19:35:01.891	OHLC Magnet XAUUSD,H1: initialized
+0	19:35:01.891	Watermark Symbol XAUUSD,H1: initialized
+0	19:35:01.893	Trading box Technical analysis XAUUSD,H1: initialized
+0	19:35:01.894	Show Pips XAUUSD,H1: initialized
+0	19:35:01.894	ICT Asian_Range XAUUSD,H1: initialized
+0	19:35:01.894	Time Range Separator XAUUSD,H1: initialized
+0	19:35:01.894	Bigger TF OHLC dvl BTE Button XAUUSD,H1: initialized
+0	19:35:01.894	Separator TD v2 XAUUSD,H1: initialized
+0	19:35:01.894	ClickAndDraw XAUUSD,H1: initialized
+0	19:35:13.928	Quick Style XAUUSD,H1: uninit reason 3
+0	19:35:13.931	OHLC Magnet XAUUSD,H1: uninit reason 3
+0	19:35:13.931	Watermark Symbol XAUUSD,H1: uninit reason 3
+0	19:35:13.932	Trading box Technical analysis XAUUSD,H1: uninit reason 3
+0	19:35:13.932	Show Pips XAUUSD,H1: uninit reason 3
+0	19:35:13.932	ICT Asian_Range XAUUSD,H1: deinitialized
+0	19:35:13.932	ICT Asian_Range XAUUSD,H1: uninit reason 3
+0	19:35:13.932	Time Range Separator XAUUSD,H1: uninit reason 3
+0	19:35:13.932	Bigger TF OHLC dvl BTE Button XAUUSD,H1: uninit reason 3
+0	19:35:13.933	Separator TD v2 XAUUSD,H1: uninit reason 3
+0	19:35:13.933	ClickAndDraw XAUUSD,H1: uninit reason 3
+0	19:35:13.945	Quick Style XAUUSD,M15: 0
+0	19:35:13.946	Quick Style XAUUSD,M15: 0
+0	19:35:13.946	Quick Style XAUUSD,M15: 1
+0	19:35:13.946	Quick Style XAUUSD,M15: 1
+0	19:35:13.946	Quick Style XAUUSD,M15: 2
+0	19:35:13.946	Quick Style XAUUSD,M15: initialized
+0	19:35:13.946	OHLC Magnet XAUUSD,M15: initialized
+0	19:35:13.946	Watermark Symbol XAUUSD,M15: initialized
+0	19:35:13.948	Trading box Technical analysis XAUUSD,M15: initialized
+0	19:35:13.948	Show Pips XAUUSD,M15: initialized
+0	19:35:13.948	ICT Asian_Range XAUUSD,M15: initialized
+0	19:35:13.948	Time Range Separator XAUUSD,M15: initialized
+0	19:35:13.948	Bigger TF OHLC dvl BTE Button XAUUSD,M15: initialized
+0	19:35:13.948	Separator TD v2 XAUUSD,M15: initialized
+0	19:35:13.949	ClickAndDraw XAUUSD,M15: initialized
+0	19:35:15.455	Quick Style XAUUSD,M15: uninit reason 3
+0	19:35:15.458	OHLC Magnet XAUUSD,M15: uninit reason 3
+0	19:35:15.458	Watermark Symbol XAUUSD,M15: uninit reason 3
+0	19:35:15.459	Trading box Technical analysis XAUUSD,M15: uninit reason 3
+0	19:35:15.459	Show Pips XAUUSD,M15: uninit reason 3
+0	19:35:15.459	ICT Asian_Range XAUUSD,M15: deinitialized
+0	19:35:15.459	ICT Asian_Range XAUUSD,M15: uninit reason 3
+0	19:35:15.459	Time Range Separator XAUUSD,M15: uninit reason 3
+0	19:35:15.459	Bigger TF OHLC dvl BTE Button XAUUSD,M15: uninit reason 3
+0	19:35:15.460	Separator TD v2 XAUUSD,M15: uninit reason 3
+0	19:35:15.460	ClickAndDraw XAUUSD,M15: uninit reason 3
+0	19:35:15.475	Quick Style XAUUSD,M5: 0
+0	19:35:15.475	Quick Style XAUUSD,M5: 0
+0	19:35:15.476	Quick Style XAUUSD,M5: 1
+0	19:35:15.476	Quick Style XAUUSD,M5: 1
+0	19:35:15.476	Quick Style XAUUSD,M5: 2
+0	19:35:15.476	Quick Style XAUUSD,M5: initialized
+0	19:35:15.476	OHLC Magnet XAUUSD,M5: initialized
+0	19:35:15.476	Watermark Symbol XAUUSD,M5: initialized
+0	19:35:15.478	Trading box Technical analysis XAUUSD,M5: initialized
+0	19:35:15.478	Show Pips XAUUSD,M5: initialized
+0	19:35:15.478	ICT Asian_Range XAUUSD,M5: initialized
+0	19:35:15.478	Time Range Separator XAUUSD,M5: initialized
+0	19:35:15.478	Bigger TF OHLC dvl BTE Button XAUUSD,M5: initialized
+0	19:35:15.478	Separator TD v2 XAUUSD,M5: initialized
+0	19:35:15.478	ClickAndDraw XAUUSD,M5: initialized
+0	19:35:55.933	Quick Style XAUUSD,M5: uninit reason 3
+0	19:35:55.936	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	19:35:55.936	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	19:35:55.937	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	19:35:55.937	Show Pips XAUUSD,M5: uninit reason 3
+0	19:35:55.937	ICT Asian_Range XAUUSD,M5: deinitialized
+0	19:35:55.937	ICT Asian_Range XAUUSD,M5: uninit reason 3
+0	19:35:55.937	Time Range Separator XAUUSD,M5: uninit reason 3
+0	19:35:55.937	Bigger TF OHLC dvl BTE Button XAUUSD,M5: uninit reason 3
+0	19:35:55.938	Separator TD v2 XAUUSD,M5: uninit reason 3
+0	19:35:55.938	ClickAndDraw XAUUSD,M5: uninit reason 3
+0	19:35:55.948	Quick Style XAUUSD,H1: 0
+0	19:35:55.949	Quick Style XAUUSD,H1: 0
+0	19:35:55.949	Quick Style XAUUSD,H1: 1
+0	19:35:55.949	Quick Style XAUUSD,H1: 1
+0	19:35:55.949	Quick Style XAUUSD,H1: 2
+0	19:35:55.949	Quick Style XAUUSD,H1: initialized
+0	19:35:55.949	OHLC Magnet XAUUSD,H1: initialized
+0	19:35:55.949	Watermark Symbol XAUUSD,H1: initialized
+0	19:35:55.950	Trading box Technical analysis XAUUSD,H1: initialized
+0	19:35:55.951	Show Pips XAUUSD,H1: initialized
+0	19:35:55.951	ICT Asian_Range XAUUSD,H1: initialized
+0	19:35:55.951	Time Range Separator XAUUSD,H1: initialized
+0	19:35:55.951	Bigger TF OHLC dvl BTE Button XAUUSD,H1: initialized
+0	19:35:55.951	Separator TD v2 XAUUSD,H1: initialized
+0	19:35:55.951	ClickAndDraw XAUUSD,H1: initialized
+0	19:36:21.528	Quick Style XAUUSD,H1: uninit reason 3
+0	19:36:21.531	OHLC Magnet XAUUSD,H1: uninit reason 3
+0	19:36:21.531	Watermark Symbol XAUUSD,H1: uninit reason 3
+0	19:36:21.532	Trading box Technical analysis XAUUSD,H1: uninit reason 3
+0	19:36:21.532	Show Pips XAUUSD,H1: uninit reason 3
+0	19:36:21.532	ICT Asian_Range XAUUSD,H1: deinitialized
+0	19:36:21.532	ICT Asian_Range XAUUSD,H1: uninit reason 3
+0	19:36:21.532	Time Range Separator XAUUSD,H1: uninit reason 3
+0	19:36:21.532	Bigger TF OHLC dvl BTE Button XAUUSD,H1: uninit reason 3
+0	19:36:21.533	Separator TD v2 XAUUSD,H1: uninit reason 3
+0	19:36:21.533	ClickAndDraw XAUUSD,H1: uninit reason 3
+0	19:36:21.546	Quick Style XAUUSD,M5: 0
+0	19:36:21.546	Quick Style XAUUSD,M5: 0
+0	19:36:21.546	Quick Style XAUUSD,M5: 1
+0	19:36:21.546	Quick Style XAUUSD,M5: 1
+0	19:36:21.546	Quick Style XAUUSD,M5: 2
+0	19:36:21.546	Quick Style XAUUSD,M5: initialized
+0	19:36:21.547	OHLC Magnet XAUUSD,M5: initialized
+0	19:36:21.547	Watermark Symbol XAUUSD,M5: initialized
+0	19:36:21.548	Trading box Technical analysis XAUUSD,M5: initialized
+0	19:36:21.548	Show Pips XAUUSD,M5: initialized
+0	19:36:21.548	ICT Asian_Range XAUUSD,M5: initialized
+0	19:36:21.548	Time Range Separator XAUUSD,M5: initialized
+0	19:36:21.548	Bigger TF OHLC dvl BTE Button XAUUSD,M5: initialized
+0	19:36:21.548	Separator TD v2 XAUUSD,M5: initialized
+0	19:36:21.549	ClickAndDraw XAUUSD,M5: initialized
+0	19:36:56.057	Quick Style XAUUSD,M5: uninit reason 3
+0	19:36:56.060	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	19:36:56.060	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	19:36:56.061	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	19:36:56.061	Show Pips XAUUSD,M5: uninit reason 3
+0	19:36:56.061	ICT Asian_Range XAUUSD,M5: deinitialized
+0	19:36:56.061	ICT Asian_Range XAUUSD,M5: uninit reason 3
+0	19:36:56.061	Time Range Separator XAUUSD,M5: uninit reason 3
+0	19:36:56.061	Bigger TF OHLC dvl BTE Button XAUUSD,M5: uninit reason 3
+0	19:36:56.061	Separator TD v2 XAUUSD,M5: uninit reason 3
+0	19:36:56.062	ClickAndDraw XAUUSD,M5: uninit reason 3
+0	19:36:56.077	Quick Style XAUUSD,M1: 0
+0	19:36:56.077	Quick Style XAUUSD,M1: 0
+0	19:36:56.077	Quick Style XAUUSD,M1: 1
+0	19:36:56.077	Quick Style XAUUSD,M1: 1
+0	19:36:56.077	Quick Style XAUUSD,M1: 2
+0	19:36:56.077	Quick Style XAUUSD,M1: initialized
+0	19:36:56.078	OHLC Magnet XAUUSD,M1: initialized
+0	19:36:56.078	Watermark Symbol XAUUSD,M1: initialized
+0	19:36:56.079	Trading box Technical analysis XAUUSD,M1: initialized
+0	19:36:56.079	Show Pips XAUUSD,M1: initialized
+0	19:36:56.079	ICT Asian_Range XAUUSD,M1: initialized
+0	19:36:56.079	Time Range Separator XAUUSD,M1: initialized
+0	19:36:56.079	Bigger TF OHLC dvl BTE Button XAUUSD,M1: initialized
+0	19:36:56.079	Separator TD v2 XAUUSD,M1: initialized
+0	19:36:56.080	ClickAndDraw XAUUSD,M1: initialized
+0	19:37:23.977	Expert Market\Trade Assistant Pro 36 in 1 XAUUSD,M1: loaded successfully
+0	19:37:24.972	Trade Assistant Pro 36 in 1 XAUUSD,M1 inputs: Slippage=500; BlockTradeDrag=true; Prefix=; Suffix=; font_size_OnChart=8; MMLineStyle=2; MMLineSize=1; MMSLLineColor=255; MMColorEntryLine=9498256; MMColorTPLine=32768; MMColorStopLimitLine=16742913; TMTSTLColor=16711680; INColorHLLines=16711680; INStyleHLLines=2; INSizeHLLines=1; TFBColorBullish=2014249; TFBColorBearish=4017898; TPAColorBullish=32768; TPAColorBearish=255; TGPColorUp=32768; TGPColorDown=255; TBSColorBullish=14772545; TBSColorBearish=4678655; TFLfibo_color0=16711680; TFLfibo_color1=255; TFLfibo_color2=255; TFLLineStyle=4; TFLLineSize=1; TSRM5Color=16711680; TSRM15Color=16711680; TSRM30Color=16711680; TSRH1Color=32768; TSRH4Color=32768; TSRD1Color=255; TSRW1Color=36095; TSRMNColor=65280; TSRLineStyle=4; TSRLineSize=1; TMMLineColor=16748574; TMMLineStyle=3; TMMLineSize=1; AlertsCustomColor=65535; AlertsLineStyle=3; AlertsLineSize=1; TPRColor=3165994; TWMColor=8421504; TSDColorSupport=6994790; TSDColorRes=6247159; NewsColorHigh=255; NewsColorMed=16711680; NewsColorLow=32768; TelegramToken=; 
+0	19:37:25.285	Trade Assistant Pro 36 in 1 XAUUSD,M1: initialized
+2	19:37:47.434	Trade Assistant Pro 36 in 1 XAUUSD,M1: open #257680097 buy limit 0.06 XAUUSD at 1964.253 sl: 1962.662 tp: 1967.435 ok
+0	19:37:47.449	Trade Assistant Pro 36 in 1 XAUUSD,M1: Buy Limit placed @1964.253, SL: 1962.662, TP: 1967.435  Lot: 0.06
+2	19:37:55.208	Trade Assistant Pro 36 in 1 XAUUSD,M1: ExpertRemove function called
+0	19:37:55.209	Trade Assistant Pro 36 in 1 XAUUSD,M1: uninit reason 0
+0	19:37:55.215	Expert Trade Assistant Pro 36 in 1 XAUUSD,M1: removed
+0	19:38:02.977	Quick Style XAUUSD,M1: uninit reason 3
+0	19:38:02.980	OHLC Magnet XAUUSD,M1: uninit reason 3
+0	19:38:02.980	Watermark Symbol XAUUSD,M1: uninit reason 3
+0	19:38:02.981	Trading box Technical analysis XAUUSD,M1: uninit reason 3
+0	19:38:02.981	Show Pips XAUUSD,M1: uninit reason 3
+0	19:38:02.981	ICT Asian_Range XAUUSD,M1: deinitialized
+0	19:38:02.981	ICT Asian_Range XAUUSD,M1: uninit reason 3
+0	19:38:02.981	Time Range Separator XAUUSD,M1: uninit reason 3
+0	19:38:02.981	Bigger TF OHLC dvl BTE Button XAUUSD,M1: uninit reason 3
+0	19:38:02.981	Separator TD v2 XAUUSD,M1: uninit reason 3
+0	19:38:02.982	ClickAndDraw XAUUSD,M1: uninit reason 3
+0	19:38:02.995	Quick Style XAUUSD,M5: 0
+0	19:38:02.995	Quick Style XAUUSD,M5: 0
+0	19:38:02.996	Quick Style XAUUSD,M5: 1
+0	19:38:02.996	Quick Style XAUUSD,M5: 1
+0	19:38:02.996	Quick Style XAUUSD,M5: 2
+0	19:38:02.996	Quick Style XAUUSD,M5: initialized
+0	19:38:02.996	OHLC Magnet XAUUSD,M5: initialized
+0	19:38:02.996	Watermark Symbol XAUUSD,M5: initialized
+0	19:38:02.997	Trading box Technical analysis XAUUSD,M5: initialized
+0	19:38:02.998	Show Pips XAUUSD,M5: initialized
+0	19:38:02.998	ICT Asian_Range XAUUSD,M5: initialized
+0	19:38:02.998	Time Range Separator XAUUSD,M5: initialized
+0	19:38:02.998	Bigger TF OHLC dvl BTE Button XAUUSD,M5: initialized
+0	19:38:02.998	Separator TD v2 XAUUSD,M5: initialized
+0	19:38:02.998	ClickAndDraw XAUUSD,M5: initialized
+0	19:38:27.961	Quick Style GBPUSD,M1: uninit reason 3
+0	19:38:27.966	OHLC Magnet GBPUSD,M1: uninit reason 3
+0	19:38:27.966	Watermark Symbol GBPUSD,M1: uninit reason 3
+0	19:38:27.966	Trading box Technical analysis GBPUSD,M1: uninit reason 3
+0	19:38:27.966	Show Pips GBPUSD,M1: uninit reason 3
+0	19:38:27.966	ICT Asian_Range GBPUSD,M1: deinitialized
+0	19:38:27.966	ICT Asian_Range GBPUSD,M1: uninit reason 3
+0	19:38:27.966	Time Range Separator GBPUSD,M1: uninit reason 3
+0	19:38:27.967	Bigger TF OHLC dvl BTE Button GBPUSD,M1: uninit reason 3
+0	19:38:27.967	Separator TD v2 GBPUSD,M1: uninit reason 3
+0	19:38:27.968	ClickAndDraw GBPUSD,M1: uninit reason 3
+0	19:38:27.989	Quick Style GBPUSD,H1: 0
+0	19:38:27.989	Quick Style GBPUSD,H1: 0
+0	19:38:27.990	Quick Style GBPUSD,H1: 1
+0	19:38:27.990	Quick Style GBPUSD,H1: 1
+0	19:38:27.990	Quick Style GBPUSD,H1: 2
+0	19:38:27.990	Quick Style GBPUSD,H1: initialized
+0	19:38:27.990	OHLC Magnet GBPUSD,H1: initialized
+0	19:38:27.990	Watermark Symbol GBPUSD,H1: initialized
+0	19:38:27.992	Trading box Technical analysis GBPUSD,H1: initialized
+0	19:38:27.992	Show Pips GBPUSD,H1: initialized
+0	19:38:27.992	ICT Asian_Range GBPUSD,H1: initialized
+0	19:38:27.992	Time Range Separator GBPUSD,H1: initialized
+0	19:38:27.992	Bigger TF OHLC dvl BTE Button GBPUSD,H1: initialized
+0	19:38:27.992	Separator TD v2 GBPUSD,H1: initialized
+0	19:38:27.993	ClickAndDraw GBPUSD,H1: initialized
+0	19:38:40.044	Quick Style GBPUSD,H1: uninit reason 7
+0	19:38:40.046	OHLC Magnet GBPUSD,H1: uninit reason 7
+0	19:38:40.046	Watermark Symbol GBPUSD,H1: uninit reason 7
+0	19:38:40.047	Trading box Technical analysis GBPUSD,H1: uninit reason 7
+0	19:38:40.047	Show Pips GBPUSD,H1: uninit reason 7
+0	19:38:40.047	ICT Asian_Range GBPUSD,H1: deinitialized
+0	19:38:40.047	ICT Asian_Range GBPUSD,H1: uninit reason 7
+0	19:38:40.047	Time Range Separator GBPUSD,H1: uninit reason 7
+0	19:38:40.048	Bigger TF OHLC dvl BTE Button GBPUSD,H1: uninit reason 7
+0	19:38:40.048	Separator TD v2 GBPUSD,H1: uninit reason 7
+0	19:38:40.049	ClickAndDraw GBPUSD,H1: uninit reason 7
+0	19:38:40.051	Custom indicator Quick Style GBPUSD,H1: removed
+0	19:38:40.052	Custom indicator OHLC Magnet GBPUSD,H1: removed
+0	19:38:40.054	Custom indicator Watermark Symbol GBPUSD,H1: removed
+0	19:38:40.055	Custom indicator Trading box Technical analysis GBPUSD,H1: removed
+0	19:38:40.057	Custom indicator Show Pips GBPUSD,H1: removed
+0	19:38:40.057	Custom indicator ICT Asian_Range GBPUSD,H1: removed
+0	19:38:40.058	Custom indicator Time Range Separator GBPUSD,H1: removed
+0	19:38:40.059	Custom indicator Bigger TF OHLC dvl BTE Button GBPUSD,H1: removed
+0	19:38:40.061	Custom indicator Separator TD v2 GBPUSD,H1: removed
+0	19:38:40.063	Custom indicator ClickAndDraw GBPUSD,H1: removed
+0	19:38:40.094	Custom indicator Market\Quick Style GBPUSD,H1: loaded successfully
+0	19:38:40.109	Custom indicator Market\OHLC Magnet GBPUSD,H1: loaded successfully
+0	19:38:40.123	Custom indicator Market\Watermark Symbol GBPUSD,H1: loaded successfully
+0	19:38:40.145	Custom indicator Market\Trading box Technical analysis GBPUSD,H1: loaded successfully
+0	19:38:40.158	Custom indicator Market\Show Pips GBPUSD,H1: loaded successfully
+0	19:38:40.236	Custom indicator Mine\ICT\ICT Asian_Range GBPUSD,H1: loaded successfully
+0	19:38:40.248	Custom indicator Market\Time Range Separator GBPUSD,H1: loaded successfully
+0	19:38:40.261	Custom indicator Mine\Daily Open\Bigger TF OHLC dvl BTE Button GBPUSD,H1: loaded successfully
+0	19:38:40.273	Custom indicator Mine\My Build\Separator TD v2 GBPUSD,H1: loaded successfully
+3	19:38:40.274	cannot open file 'C:\Users\Sukhs\Desktop\MT4 Portable\MQL4\indicators\ES\esShowHideObjects.ex4' [3]
+0	19:38:40.286	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,H1: loaded successfully
+0	19:38:40.318	Quick Style GBPUSD,H1: 0
+0	19:38:40.318	Quick Style GBPUSD,H1: 0
+0	19:38:40.318	Quick Style GBPUSD,H1: 1
+0	19:38:40.319	Quick Style GBPUSD,H1: 1
+0	19:38:40.319	Quick Style GBPUSD,H1: 2
+0	19:38:40.319	Quick Style GBPUSD,H1: initialized
+0	19:38:40.338	OHLC Magnet GBPUSD,H1: initialized
+0	19:38:40.356	Watermark Symbol GBPUSD,H1: initialized
+0	19:38:40.388	Trading box Technical analysis GBPUSD,H1: initialized
+0	19:38:40.409	Show Pips GBPUSD,H1: initialized
+0	19:38:40.409	ICT Asian_Range GBPUSD,H1: initialized
+0	19:38:40.429	Time Range Separator GBPUSD,H1: initialized
+0	19:38:40.454	Bigger TF OHLC dvl BTE Button GBPUSD,H1: initialized
+0	19:38:40.506	Separator TD v2 GBPUSD,H1: initialized
+0	19:38:40.527	ClickAndDraw GBPUSD,H1: initialized
+0	19:39:35.446	Quick Style GBPUSD,H1: uninit reason 3
+0	19:39:35.450	OHLC Magnet GBPUSD,H1: uninit reason 3
+0	19:39:35.450	Watermark Symbol GBPUSD,H1: uninit reason 3
+0	19:39:35.450	Trading box Technical analysis GBPUSD,H1: uninit reason 3
+0	19:39:35.450	Show Pips GBPUSD,H1: uninit reason 3
+0	19:39:35.450	ICT Asian_Range GBPUSD,H1: deinitialized
+0	19:39:35.450	ICT Asian_Range GBPUSD,H1: uninit reason 3
+0	19:39:35.450	Time Range Separator GBPUSD,H1: uninit reason 3
+0	19:39:35.451	Bigger TF OHLC dvl BTE Button GBPUSD,H1: uninit reason 3
+0	19:39:35.451	Separator TD v2 GBPUSD,H1: uninit reason 3
+0	19:39:35.451	ClickAndDraw GBPUSD,H1: uninit reason 3
+0	19:39:35.466	Quick Style GBPUSD,M1: 0
+0	19:39:35.466	Quick Style GBPUSD,M1: 0
+0	19:39:35.466	Quick Style GBPUSD,M1: 1
+0	19:39:35.466	Quick Style GBPUSD,M1: 1
+0	19:39:35.466	Quick Style GBPUSD,M1: 2
+0	19:39:35.466	Quick Style GBPUSD,M1: initialized
+0	19:39:35.466	OHLC Magnet GBPUSD,M1: initialized
+0	19:39:35.466	Watermark Symbol GBPUSD,M1: initialized
+0	19:39:35.468	Trading box Technical analysis GBPUSD,M1: initialized
+0	19:39:35.468	Show Pips GBPUSD,M1: initialized
+0	19:39:35.468	ICT Asian_Range GBPUSD,M1: initialized
+0	19:39:35.468	Time Range Separator GBPUSD,M1: initialized
+0	19:39:35.468	Bigger TF OHLC dvl BTE Button GBPUSD,M1: initialized
+0	19:39:35.468	Separator TD v2 GBPUSD,M1: initialized
+0	19:39:35.469	ClickAndDraw GBPUSD,M1: initialized
+0	19:40:03.426	Quick Style GBPUSD,M1: uninit reason 3
+0	19:40:03.429	OHLC Magnet GBPUSD,M1: uninit reason 3
+0	19:40:03.429	Watermark Symbol GBPUSD,M1: uninit reason 3
+0	19:40:03.430	Trading box Technical analysis GBPUSD,M1: uninit reason 3
+0	19:40:03.430	Show Pips GBPUSD,M1: uninit reason 3
+0	19:40:03.430	ICT Asian_Range GBPUSD,M1: deinitialized
+0	19:40:03.430	ICT Asian_Range GBPUSD,M1: uninit reason 3
+0	19:40:03.430	Time Range Separator GBPUSD,M1: uninit reason 3
+0	19:40:03.430	Bigger TF OHLC dvl BTE Button GBPUSD,M1: uninit reason 3
+0	19:40:03.430	Separator TD v2 GBPUSD,M1: uninit reason 3
+0	19:40:03.431	ClickAndDraw GBPUSD,M1: uninit reason 3
+0	19:40:03.444	Quick Style GBPUSD,M5: 0
+0	19:40:03.445	Quick Style GBPUSD,M5: 0
+0	19:40:03.445	Quick Style GBPUSD,M5: 1
+0	19:40:03.445	Quick Style GBPUSD,M5: 1
+0	19:40:03.445	Quick Style GBPUSD,M5: 2
+0	19:40:03.445	Quick Style GBPUSD,M5: initialized
+0	19:40:03.445	OHLC Magnet GBPUSD,M5: initialized
+0	19:40:03.445	Watermark Symbol GBPUSD,M5: initialized
+0	19:40:03.447	Trading box Technical analysis GBPUSD,M5: initialized
+0	19:40:03.447	Show Pips GBPUSD,M5: initialized
+0	19:40:03.447	ICT Asian_Range GBPUSD,M5: initialized
+0	19:40:03.447	Time Range Separator GBPUSD,M5: initialized
+0	19:40:03.447	Bigger TF OHLC dvl BTE Button GBPUSD,M5: initialized
+0	19:40:03.447	Separator TD v2 GBPUSD,M5: initialized
+0	19:40:03.447	ClickAndDraw GBPUSD,M5: initialized
+0	19:40:18.576	Quick Style GBPUSD,M5: uninit reason 3
+0	19:40:18.580	OHLC Magnet GBPUSD,M5: uninit reason 3
+0	19:40:18.580	Watermark Symbol GBPUSD,M5: uninit reason 3
+0	19:40:18.581	Trading box Technical analysis GBPUSD,M5: uninit reason 3
+0	19:40:18.581	Show Pips GBPUSD,M5: uninit reason 3
+0	19:40:18.581	ICT Asian_Range GBPUSD,M5: deinitialized
+0	19:40:18.581	ICT Asian_Range GBPUSD,M5: uninit reason 3
+0	19:40:18.581	Time Range Separator GBPUSD,M5: uninit reason 3
+0	19:40:18.581	Bigger TF OHLC dvl BTE Button GBPUSD,M5: uninit reason 3
+0	19:40:18.582	Separator TD v2 GBPUSD,M5: uninit reason 3
+0	19:40:18.582	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	19:40:18.602	Quick Style GBPUSD,M15: 0
+0	19:40:18.602	Quick Style GBPUSD,M15: 0
+0	19:40:18.602	Quick Style GBPUSD,M15: 1
+0	19:40:18.602	Quick Style GBPUSD,M15: 1
+0	19:40:18.602	Quick Style GBPUSD,M15: 2
+0	19:40:18.603	Quick Style GBPUSD,M15: initialized
+0	19:40:18.603	OHLC Magnet GBPUSD,M15: initialized
+0	19:40:18.603	Watermark Symbol GBPUSD,M15: initialized
+0	19:40:18.604	Trading box Technical analysis GBPUSD,M15: initialized
+0	19:40:18.604	Show Pips GBPUSD,M15: initialized
+0	19:40:18.605	ICT Asian_Range GBPUSD,M15: initialized
+0	19:40:18.605	Time Range Separator GBPUSD,M15: initialized
+0	19:40:18.605	Bigger TF OHLC dvl BTE Button GBPUSD,M15: initialized
+0	19:40:18.605	Separator TD v2 GBPUSD,M15: initialized
+0	19:40:18.605	ClickAndDraw GBPUSD,M15: initialized
+1	19:40:18.695	Separator TD v2 GBPUSD,M15: array out of range in 'Separator TD v2.mq4' (121,33)
+0	19:40:20.369	Quick Style GBPUSD,M15: uninit reason 3
+0	19:40:20.374	OHLC Magnet GBPUSD,M15: uninit reason 3
+0	19:40:20.374	Watermark Symbol GBPUSD,M15: uninit reason 3
+0	19:40:20.374	Trading box Technical analysis GBPUSD,M15: uninit reason 3
+0	19:40:20.374	Show Pips GBPUSD,M15: uninit reason 3
+0	19:40:20.374	ICT Asian_Range GBPUSD,M15: deinitialized
+0	19:40:20.374	ICT Asian_Range GBPUSD,M15: uninit reason 3
+0	19:40:20.374	Time Range Separator GBPUSD,M15: uninit reason 3
+0	19:40:20.375	Bigger TF OHLC dvl BTE Button GBPUSD,M15: uninit reason 3
+0	19:40:20.375	Separator TD v2 GBPUSD,M15: uninit reason 3
+0	19:40:20.375	ClickAndDraw GBPUSD,M15: uninit reason 3
+0	19:40:20.393	Quick Style GBPUSD,M30: 0
+0	19:40:20.393	Quick Style GBPUSD,M30: 0
+0	19:40:20.393	Quick Style GBPUSD,M30: 1
+0	19:40:20.393	Quick Style GBPUSD,M30: 1
+0	19:40:20.393	Quick Style GBPUSD,M30: 2
+0	19:40:20.394	Quick Style GBPUSD,M30: initialized
+0	19:40:20.394	OHLC Magnet GBPUSD,M30: initialized
+0	19:40:20.394	Watermark Symbol GBPUSD,M30: initialized
+0	19:40:20.395	Trading box Technical analysis GBPUSD,M30: initialized
+0	19:40:20.395	Show Pips GBPUSD,M30: initialized
+0	19:40:20.395	ICT Asian_Range GBPUSD,M30: initialized
+0	19:40:20.395	Time Range Separator GBPUSD,M30: initialized
+0	19:40:20.395	Bigger TF OHLC dvl BTE Button GBPUSD,M30: initialized
+0	19:40:20.395	Separator TD v2 GBPUSD,M30: initialized
+0	19:40:20.395	ClickAndDraw GBPUSD,M30: initialized
+1	19:40:20.473	Separator TD v2 GBPUSD,M30: array out of range in 'Separator TD v2.mq4' (121,33)
+0	19:40:23.392	Quick Style GBPUSD,M30: uninit reason 3
+0	19:40:23.395	OHLC Magnet GBPUSD,M30: uninit reason 3
+0	19:40:23.395	Watermark Symbol GBPUSD,M30: uninit reason 3
+0	19:40:23.396	Trading box Technical analysis GBPUSD,M30: uninit reason 3
+0	19:40:23.396	Show Pips GBPUSD,M30: uninit reason 3
+0	19:40:23.396	ICT Asian_Range GBPUSD,M30: deinitialized
+0	19:40:23.396	ICT Asian_Range GBPUSD,M30: uninit reason 3
+0	19:40:23.396	Time Range Separator GBPUSD,M30: uninit reason 3
+0	19:40:23.396	Bigger TF OHLC dvl BTE Button GBPUSD,M30: uninit reason 3
+0	19:40:23.396	Separator TD v2 GBPUSD,M30: uninit reason 3
+0	19:40:23.396	ClickAndDraw GBPUSD,M30: uninit reason 3
+0	19:40:23.409	Quick Style GBPUSD,H1: 0
+0	19:40:23.409	Quick Style GBPUSD,H1: 0
+0	19:40:23.409	Quick Style GBPUSD,H1: 1
+0	19:40:23.409	Quick Style GBPUSD,H1: 1
+0	19:40:23.409	Quick Style GBPUSD,H1: 2
+0	19:40:23.409	Quick Style GBPUSD,H1: initialized
+0	19:40:23.410	OHLC Magnet GBPUSD,H1: initialized
+0	19:40:23.410	Watermark Symbol GBPUSD,H1: initialized
+0	19:40:23.411	Trading box Technical analysis GBPUSD,H1: initialized
+0	19:40:23.411	Show Pips GBPUSD,H1: initialized
+0	19:40:23.411	ICT Asian_Range GBPUSD,H1: initialized
+0	19:40:23.411	Time Range Separator GBPUSD,H1: initialized
+0	19:40:23.411	Bigger TF OHLC dvl BTE Button GBPUSD,H1: initialized
+0	19:40:23.411	Separator TD v2 GBPUSD,H1: initialized
+0	19:40:23.412	ClickAndDraw GBPUSD,H1: initialized
+0	19:41:24.837	ClickAndDraw GBPUSD,H1: uninit reason 5
+0	19:41:24.858	ClickAndDraw GBPUSD,H1: initialized
+0	19:41:36.440	ClickAndDraw GBPUSD,H1: uninit reason 5
+0	19:41:36.457	ClickAndDraw GBPUSD,H1: initialized
+0	19:42:17.420	Quick Style GBPUSD,H1: uninit reason 3
+0	19:42:17.425	OHLC Magnet GBPUSD,H1: uninit reason 3
+0	19:42:17.425	Watermark Symbol GBPUSD,H1: uninit reason 3
+0	19:42:17.425	Trading box Technical analysis GBPUSD,H1: uninit reason 3
+0	19:42:17.425	Show Pips GBPUSD,H1: uninit reason 3
+0	19:42:17.425	ICT Asian_Range GBPUSD,H1: deinitialized
+0	19:42:17.425	ICT Asian_Range GBPUSD,H1: uninit reason 3
+0	19:42:17.425	Time Range Separator GBPUSD,H1: uninit reason 3
+0	19:42:17.426	Bigger TF OHLC dvl BTE Button GBPUSD,H1: uninit reason 3
+0	19:42:17.426	Separator TD v2 GBPUSD,H1: uninit reason 3
+0	19:42:17.426	ClickAndDraw GBPUSD,H1: uninit reason 3
+0	19:42:17.442	Quick Style GBPUSD,M5: 0
+0	19:42:17.442	Quick Style GBPUSD,M5: 0
+0	19:42:17.442	Quick Style GBPUSD,M5: 1
+0	19:42:17.443	Quick Style GBPUSD,M5: 1
+0	19:42:17.443	Quick Style GBPUSD,M5: 2
+0	19:42:17.443	Quick Style GBPUSD,M5: initialized
+0	19:42:17.443	OHLC Magnet GBPUSD,M5: initialized
+0	19:42:17.443	Watermark Symbol GBPUSD,M5: initialized
+0	19:42:17.445	Trading box Technical analysis GBPUSD,M5: initialized
+0	19:42:17.445	Show Pips GBPUSD,M5: initialized
+0	19:42:17.445	ICT Asian_Range GBPUSD,M5: initialized
+0	19:42:17.445	Time Range Separator GBPUSD,M5: initialized
+0	19:42:17.445	Bigger TF OHLC dvl BTE Button GBPUSD,M5: initialized
+0	19:42:17.445	Separator TD v2 GBPUSD,M5: initialized
+0	19:42:17.446	ClickAndDraw GBPUSD,M5: initialized
+0	19:42:22.112	Quick Style GBPUSD,M5: uninit reason 3
+0	19:42:22.116	OHLC Magnet GBPUSD,M5: uninit reason 3
+0	19:42:22.116	Watermark Symbol GBPUSD,M5: uninit reason 3
+0	19:42:22.116	Trading box Technical analysis GBPUSD,M5: uninit reason 3
+0	19:42:22.116	Show Pips GBPUSD,M5: uninit reason 3
+0	19:42:22.116	ICT Asian_Range GBPUSD,M5: deinitialized
+0	19:42:22.116	ICT Asian_Range GBPUSD,M5: uninit reason 3
+0	19:42:22.116	Time Range Separator GBPUSD,M5: uninit reason 3
+0	19:42:22.117	Bigger TF OHLC dvl BTE Button GBPUSD,M5: uninit reason 3
+0	19:42:22.117	Separator TD v2 GBPUSD,M5: uninit reason 3
+0	19:42:22.117	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	19:42:22.130	Quick Style GBPUSD,M15: 0
+0	19:42:22.130	Quick Style GBPUSD,M15: 0
+0	19:42:22.130	Quick Style GBPUSD,M15: 1
+0	19:42:22.130	Quick Style GBPUSD,M15: 1
+0	19:42:22.130	Quick Style GBPUSD,M15: 2
+0	19:42:22.130	Quick Style GBPUSD,M15: initialized
+0	19:42:22.130	OHLC Magnet GBPUSD,M15: initialized
+0	19:42:22.131	Watermark Symbol GBPUSD,M15: initialized
+0	19:42:22.132	Trading box Technical analysis GBPUSD,M15: initialized
+0	19:42:22.132	Show Pips GBPUSD,M15: initialized
+0	19:42:22.133	ICT Asian_Range GBPUSD,M15: initialized
+0	19:42:22.133	Time Range Separator GBPUSD,M15: initialized
+0	19:42:22.133	Bigger TF OHLC dvl BTE Button GBPUSD,M15: initialized
+0	19:42:22.133	Separator TD v2 GBPUSD,M15: initialized
+0	19:42:22.133	ClickAndDraw GBPUSD,M15: initialized
+0	19:42:50.462	Quick Style GBPUSD,M15: uninit reason 3
+0	19:42:50.466	OHLC Magnet GBPUSD,M15: uninit reason 3
+0	19:42:50.466	Watermark Symbol GBPUSD,M15: uninit reason 3
+0	19:42:50.466	Trading box Technical analysis GBPUSD,M15: uninit reason 3
+0	19:42:50.466	Show Pips GBPUSD,M15: uninit reason 3
+0	19:42:50.466	ICT Asian_Range GBPUSD,M15: deinitialized
+0	19:42:50.466	ICT Asian_Range GBPUSD,M15: uninit reason 3
+0	19:42:50.466	Time Range Separator GBPUSD,M15: uninit reason 3
+0	19:42:50.466	Bigger TF OHLC dvl BTE Button GBPUSD,M15: uninit reason 3
+0	19:42:50.467	Separator TD v2 GBPUSD,M15: uninit reason 3
+0	19:42:50.467	ClickAndDraw GBPUSD,M15: uninit reason 3
+0	19:42:50.481	Quick Style GBPUSD,M1: 0
+0	19:42:50.481	Quick Style GBPUSD,M1: 0
+0	19:42:50.481	Quick Style GBPUSD,M1: 1
+0	19:42:50.481	Quick Style GBPUSD,M1: 1
+0	19:42:50.481	Quick Style GBPUSD,M1: 2
+0	19:42:50.482	Quick Style GBPUSD,M1: initialized
+0	19:42:50.482	OHLC Magnet GBPUSD,M1: initialized
+0	19:42:50.482	Watermark Symbol GBPUSD,M1: initialized
+0	19:42:50.483	Trading box Technical analysis GBPUSD,M1: initialized
+0	19:42:50.483	Show Pips GBPUSD,M1: initialized
+0	19:42:50.483	ICT Asian_Range GBPUSD,M1: initialized
+0	19:42:50.483	Time Range Separator GBPUSD,M1: initialized
+0	19:42:50.483	Bigger TF OHLC dvl BTE Button GBPUSD,M1: initialized
+0	19:42:50.483	Separator TD v2 GBPUSD,M1: initialized
+0	19:42:50.484	ClickAndDraw GBPUSD,M1: initialized
+0	19:42:56.329	Quick Style GBPUSD,M1: uninit reason 3
+0	19:42:56.333	OHLC Magnet GBPUSD,M1: uninit reason 3
+0	19:42:56.333	Watermark Symbol GBPUSD,M1: uninit reason 3
+0	19:42:56.334	Trading box Technical analysis GBPUSD,M1: uninit reason 3
+0	19:42:56.334	Show Pips GBPUSD,M1: uninit reason 3
+0	19:42:56.334	ICT Asian_Range GBPUSD,M1: deinitialized
+0	19:42:56.334	ICT Asian_Range GBPUSD,M1: uninit reason 3
+0	19:42:56.334	Time Range Separator GBPUSD,M1: uninit reason 3
+0	19:42:56.334	Bigger TF OHLC dvl BTE Button GBPUSD,M1: uninit reason 3
+0	19:42:56.335	Separator TD v2 GBPUSD,M1: uninit reason 3
+0	19:42:56.335	ClickAndDraw GBPUSD,M1: uninit reason 3
+0	19:42:56.350	Quick Style GBPUSD,M5: 0
+0	19:42:56.350	Quick Style GBPUSD,M5: 0
+0	19:42:56.350	Quick Style GBPUSD,M5: 1
+0	19:42:56.350	Quick Style GBPUSD,M5: 1
+0	19:42:56.350	Quick Style GBPUSD,M5: 2
+0	19:42:56.351	Quick Style GBPUSD,M5: initialized
+0	19:42:56.351	OHLC Magnet GBPUSD,M5: initialized
+0	19:42:56.351	Watermark Symbol GBPUSD,M5: initialized
+0	19:42:56.352	Trading box Technical analysis GBPUSD,M5: initialized
+0	19:42:56.353	Show Pips GBPUSD,M5: initialized
+0	19:42:56.353	ICT Asian_Range GBPUSD,M5: initialized
+0	19:42:56.353	Time Range Separator GBPUSD,M5: initialized
+0	19:42:56.353	Bigger TF OHLC dvl BTE Button GBPUSD,M5: initialized
+0	19:42:56.353	Separator TD v2 GBPUSD,M5: initialized
+0	19:42:56.353	ClickAndDraw GBPUSD,M5: initialized
+0	19:42:57.462	Quick Style GBPUSD,M5: uninit reason 3
+0	19:42:57.465	OHLC Magnet GBPUSD,M5: uninit reason 3
+0	19:42:57.465	Watermark Symbol GBPUSD,M5: uninit reason 3
+0	19:42:57.465	Trading box Technical analysis GBPUSD,M5: uninit reason 3
+0	19:42:57.465	Show Pips GBPUSD,M5: uninit reason 3
+0	19:42:57.465	ICT Asian_Range GBPUSD,M5: deinitialized
+0	19:42:57.465	ICT Asian_Range GBPUSD,M5: uninit reason 3
+0	19:42:57.465	Time Range Separator GBPUSD,M5: uninit reason 3
+0	19:42:57.466	Bigger TF OHLC dvl BTE Button GBPUSD,M5: uninit reason 3
+0	19:42:57.466	Separator TD v2 GBPUSD,M5: uninit reason 3
+0	19:42:57.466	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	19:42:57.477	Quick Style GBPUSD,M15: 0
+0	19:42:57.477	Quick Style GBPUSD,M15: 0
+0	19:42:57.478	Quick Style GBPUSD,M15: 1
+0	19:42:57.478	Quick Style GBPUSD,M15: 1
+0	19:42:57.478	Quick Style GBPUSD,M15: 2
+0	19:42:57.478	Quick Style GBPUSD,M15: initialized
+0	19:42:57.479	OHLC Magnet GBPUSD,M15: initialized
+0	19:42:57.479	Watermark Symbol GBPUSD,M15: initialized
+0	19:42:57.480	Trading box Technical analysis GBPUSD,M15: initialized
+0	19:42:57.480	Show Pips GBPUSD,M15: initialized
+0	19:42:57.480	ICT Asian_Range GBPUSD,M15: initialized
+0	19:42:57.480	Time Range Separator GBPUSD,M15: initialized
+0	19:42:57.480	Bigger TF OHLC dvl BTE Button GBPUSD,M15: initialized
+0	19:42:57.480	Separator TD v2 GBPUSD,M15: initialized
+0	19:42:57.480	ClickAndDraw GBPUSD,M15: initialized
+0	19:43:50.653	Quick Style GBPUSD,M15: uninit reason 3
+0	19:43:50.656	OHLC Magnet GBPUSD,M15: uninit reason 3
+0	19:43:50.656	Watermark Symbol GBPUSD,M15: uninit reason 3
+0	19:43:50.657	Trading box Technical analysis GBPUSD,M15: uninit reason 3
+0	19:43:50.657	Show Pips GBPUSD,M15: uninit reason 3
+0	19:43:50.657	ICT Asian_Range GBPUSD,M15: deinitialized
+0	19:43:50.657	ICT Asian_Range GBPUSD,M15: uninit reason 3
+0	19:43:50.657	Time Range Separator GBPUSD,M15: uninit reason 3
+0	19:43:50.657	Bigger TF OHLC dvl BTE Button GBPUSD,M15: uninit reason 3
+0	19:43:50.657	Separator TD v2 GBPUSD,M15: uninit reason 3
+0	19:43:50.658	ClickAndDraw GBPUSD,M15: uninit reason 3
+0	19:43:50.673	Quick Style GBPUSD,M1: 0
+0	19:43:50.673	Quick Style GBPUSD,M1: 0
+0	19:43:50.674	Quick Style GBPUSD,M1: 1
+0	19:43:50.674	Quick Style GBPUSD,M1: 1
+0	19:43:50.674	Quick Style GBPUSD,M1: 2
+0	19:43:50.674	Quick Style GBPUSD,M1: initialized
+0	19:43:50.674	OHLC Magnet GBPUSD,M1: initialized
+0	19:43:50.674	Watermark Symbol GBPUSD,M1: initialized
+0	19:43:50.675	Trading box Technical analysis GBPUSD,M1: initialized
+0	19:43:50.676	Show Pips GBPUSD,M1: initialized
+0	19:43:50.676	ICT Asian_Range GBPUSD,M1: initialized
+0	19:43:50.676	Time Range Separator GBPUSD,M1: initialized
+0	19:43:50.676	Bigger TF OHLC dvl BTE Button GBPUSD,M1: initialized
+0	19:43:50.676	Separator TD v2 GBPUSD,M1: initialized
+0	19:43:50.676	ClickAndDraw GBPUSD,M1: initialized
+0	19:43:57.751	Quick Style GBPUSD,M1: uninit reason 3
+0	19:43:57.755	OHLC Magnet GBPUSD,M1: uninit reason 3
+0	19:43:57.755	Watermark Symbol GBPUSD,M1: uninit reason 3
+0	19:43:57.755	Trading box Technical analysis GBPUSD,M1: uninit reason 3
+0	19:43:57.755	Show Pips GBPUSD,M1: uninit reason 3
+0	19:43:57.755	ICT Asian_Range GBPUSD,M1: deinitialized
+0	19:43:57.755	ICT Asian_Range GBPUSD,M1: uninit reason 3
+0	19:43:57.755	Time Range Separator GBPUSD,M1: uninit reason 3
+0	19:43:57.756	Bigger TF OHLC dvl BTE Button GBPUSD,M1: uninit reason 3
+0	19:43:57.756	Separator TD v2 GBPUSD,M1: uninit reason 3
+0	19:43:57.756	ClickAndDraw GBPUSD,M1: uninit reason 3
+0	19:43:57.767	Quick Style GBPUSD,M15: 0
+0	19:43:57.767	Quick Style GBPUSD,M15: 0
+0	19:43:57.767	Quick Style GBPUSD,M15: 1
+0	19:43:57.768	Quick Style GBPUSD,M15: 1
+0	19:43:57.768	Quick Style GBPUSD,M15: 2
+0	19:43:57.768	Quick Style GBPUSD,M15: initialized
+0	19:43:57.768	OHLC Magnet GBPUSD,M15: initialized
+0	19:43:57.768	Watermark Symbol GBPUSD,M15: initialized
+0	19:43:57.770	Trading box Technical analysis GBPUSD,M15: initialized
+0	19:43:57.770	Show Pips GBPUSD,M15: initialized
+0	19:43:57.770	ICT Asian_Range GBPUSD,M15: initialized
+0	19:43:57.770	Time Range Separator GBPUSD,M15: initialized
+0	19:43:57.770	Bigger TF OHLC dvl BTE Button GBPUSD,M15: initialized
+0	19:43:57.770	Separator TD v2 GBPUSD,M15: initialized
+0	19:43:57.770	ClickAndDraw GBPUSD,M15: initialized
+0	19:43:58.221	Quick Style GBPUSD,M15: uninit reason 3
+0	19:43:58.225	OHLC Magnet GBPUSD,M15: uninit reason 3
+0	19:43:58.225	Watermark Symbol GBPUSD,M15: uninit reason 3
+0	19:43:58.225	Trading box Technical analysis GBPUSD,M15: uninit reason 3
+0	19:43:58.225	Show Pips GBPUSD,M15: uninit reason 3
+0	19:43:58.225	ICT Asian_Range GBPUSD,M15: deinitialized
+0	19:43:58.225	ICT Asian_Range GBPUSD,M15: uninit reason 3
+0	19:43:58.225	Time Range Separator GBPUSD,M15: uninit reason 3
+0	19:43:58.226	Bigger TF OHLC dvl BTE Button GBPUSD,M15: uninit reason 3
+0	19:43:58.226	Separator TD v2 GBPUSD,M15: uninit reason 3
+0	19:43:58.227	ClickAndDraw GBPUSD,M15: uninit reason 3
+0	19:43:58.241	Quick Style GBPUSD,M5: 0
+0	19:43:58.241	Quick Style GBPUSD,M5: 0
+0	19:43:58.241	Quick Style GBPUSD,M5: 1
+0	19:43:58.241	Quick Style GBPUSD,M5: 1
+0	19:43:58.241	Quick Style GBPUSD,M5: 2
+0	19:43:58.241	Quick Style GBPUSD,M5: initialized
+0	19:43:58.242	OHLC Magnet GBPUSD,M5: initialized
+0	19:43:58.242	Watermark Symbol GBPUSD,M5: initialized
+0	19:43:58.243	Trading box Technical analysis GBPUSD,M5: initialized
+0	19:43:58.243	Show Pips GBPUSD,M5: initialized
+0	19:43:58.243	ICT Asian_Range GBPUSD,M5: initialized
+0	19:43:58.243	Time Range Separator GBPUSD,M5: initialized
+0	19:43:58.243	Bigger TF OHLC dvl BTE Button GBPUSD,M5: initialized
+0	19:43:58.243	Separator TD v2 GBPUSD,M5: initialized
+0	19:43:58.243	ClickAndDraw GBPUSD,M5: initialized
+0	19:43:59.508	Quick Style GBPUSD,M5: uninit reason 3
+0	19:43:59.512	OHLC Magnet GBPUSD,M5: uninit reason 3
+0	19:43:59.512	Watermark Symbol GBPUSD,M5: uninit reason 3
+0	19:43:59.513	Trading box Technical analysis GBPUSD,M5: uninit reason 3
+0	19:43:59.513	Show Pips GBPUSD,M5: uninit reason 3
+0	19:43:59.513	ICT Asian_Range GBPUSD,M5: deinitialized
+0	19:43:59.513	ICT Asian_Range GBPUSD,M5: uninit reason 3
+0	19:43:59.513	Time Range Separator GBPUSD,M5: uninit reason 3
+0	19:43:59.513	Bigger TF OHLC dvl BTE Button GBPUSD,M5: uninit reason 3
+0	19:43:59.513	Separator TD v2 GBPUSD,M5: uninit reason 3
+0	19:43:59.514	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	19:43:59.525	Quick Style GBPUSD,M15: 0
+0	19:43:59.525	Quick Style GBPUSD,M15: 0
+0	19:43:59.525	Quick Style GBPUSD,M15: 1
+0	19:43:59.525	Quick Style GBPUSD,M15: 1
+0	19:43:59.526	Quick Style GBPUSD,M15: 2
+0	19:43:59.526	Quick Style GBPUSD,M15: initialized
+0	19:43:59.526	OHLC Magnet GBPUSD,M15: initialized
+0	19:43:59.526	Watermark Symbol GBPUSD,M15: initialized
+0	19:43:59.527	Trading box Technical analysis GBPUSD,M15: initialized
+0	19:43:59.527	Show Pips GBPUSD,M15: initialized
+0	19:43:59.528	ICT Asian_Range GBPUSD,M15: initialized
+0	19:43:59.528	Time Range Separator GBPUSD,M15: initialized
+0	19:43:59.528	Bigger TF OHLC dvl BTE Button GBPUSD,M15: initialized
+0	19:43:59.528	Separator TD v2 GBPUSD,M15: initialized
+0	19:43:59.528	ClickAndDraw GBPUSD,M15: initialized
+0	19:44:17.830	Quick Style GBPUSD,M15: uninit reason 3
+0	19:44:17.834	OHLC Magnet GBPUSD,M15: uninit reason 3
+0	19:44:17.834	Watermark Symbol GBPUSD,M15: uninit reason 3
+0	19:44:17.834	Trading box Technical analysis GBPUSD,M15: uninit reason 3
+0	19:44:17.834	Show Pips GBPUSD,M15: uninit reason 3
+0	19:44:17.834	ICT Asian_Range GBPUSD,M15: deinitialized
+0	19:44:17.834	ICT Asian_Range GBPUSD,M15: uninit reason 3
+0	19:44:17.834	Time Range Separator GBPUSD,M15: uninit reason 3
+0	19:44:17.835	Bigger TF OHLC dvl BTE Button GBPUSD,M15: uninit reason 3
+0	19:44:17.835	Separator TD v2 GBPUSD,M15: uninit reason 3
+0	19:44:17.836	ClickAndDraw GBPUSD,M15: uninit reason 3
+0	19:44:17.849	Quick Style GBPUSD,M5: 0
+0	19:44:17.849	Quick Style GBPUSD,M5: 0
+0	19:44:17.850	Quick Style GBPUSD,M5: 1
+0	19:44:17.850	Quick Style GBPUSD,M5: 1
+0	19:44:17.850	Quick Style GBPUSD,M5: 2
+0	19:44:17.850	Quick Style GBPUSD,M5: initialized
+0	19:44:17.850	OHLC Magnet GBPUSD,M5: initialized
+0	19:44:17.850	Watermark Symbol GBPUSD,M5: initialized
+0	19:44:17.851	Trading box Technical analysis GBPUSD,M5: initialized
+0	19:44:17.852	Show Pips GBPUSD,M5: initialized
+0	19:44:17.852	ICT Asian_Range GBPUSD,M5: initialized
+0	19:44:17.852	Time Range Separator GBPUSD,M5: initialized
+0	19:44:17.852	Bigger TF OHLC dvl BTE Button GBPUSD,M5: initialized
+0	19:44:17.852	Separator TD v2 GBPUSD,M5: initialized
+0	19:44:17.852	ClickAndDraw GBPUSD,M5: initialized
+0	19:44:25.244	Quick Style GBPUSD,M5: uninit reason 3
+0	19:44:25.247	OHLC Magnet GBPUSD,M5: uninit reason 3
+0	19:44:25.247	Watermark Symbol GBPUSD,M5: uninit reason 3
+0	19:44:25.247	Trading box Technical analysis GBPUSD,M5: uninit reason 3
+0	19:44:25.247	Show Pips GBPUSD,M5: uninit reason 3
+0	19:44:25.247	ICT Asian_Range GBPUSD,M5: deinitialized
+0	19:44:25.247	ICT Asian_Range GBPUSD,M5: uninit reason 3
+0	19:44:25.247	Time Range Separator GBPUSD,M5: uninit reason 3
+0	19:44:25.248	Bigger TF OHLC dvl BTE Button GBPUSD,M5: uninit reason 3
+0	19:44:25.248	Separator TD v2 GBPUSD,M5: uninit reason 3
+0	19:44:25.248	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	19:44:25.260	Quick Style GBPUSD,M15: 0
+0	19:44:25.260	Quick Style GBPUSD,M15: 0
+0	19:44:25.260	Quick Style GBPUSD,M15: 1
+0	19:44:25.260	Quick Style GBPUSD,M15: 1
+0	19:44:25.260	Quick Style GBPUSD,M15: 2
+0	19:44:25.260	Quick Style GBPUSD,M15: initialized
+0	19:44:25.260	OHLC Magnet GBPUSD,M15: initialized
+0	19:44:25.260	Watermark Symbol GBPUSD,M15: initialized
+0	19:44:25.262	Trading box Technical analysis GBPUSD,M15: initialized
+0	19:44:25.262	Show Pips GBPUSD,M15: initialized
+0	19:44:25.262	ICT Asian_Range GBPUSD,M15: initialized
+0	19:44:25.262	Time Range Separator GBPUSD,M15: initialized
+0	19:44:25.262	Bigger TF OHLC dvl BTE Button GBPUSD,M15: initialized
+0	19:44:25.262	Separator TD v2 GBPUSD,M15: initialized
+0	19:44:25.262	ClickAndDraw GBPUSD,M15: initialized
+0	19:44:28.992	Quick Style GBPUSD,M15: uninit reason 3
+0	19:44:28.995	OHLC Magnet GBPUSD,M15: uninit reason 3
+0	19:44:28.995	Watermark Symbol GBPUSD,M15: uninit reason 3
+0	19:44:28.996	Trading box Technical analysis GBPUSD,M15: uninit reason 3
+0	19:44:28.996	Show Pips GBPUSD,M15: uninit reason 3
+0	19:44:28.996	ICT Asian_Range GBPUSD,M15: deinitialized
+0	19:44:28.996	ICT Asian_Range GBPUSD,M15: uninit reason 3
+0	19:44:28.996	Time Range Separator GBPUSD,M15: uninit reason 3
+0	19:44:28.996	Bigger TF OHLC dvl BTE Button GBPUSD,M15: uninit reason 3
+0	19:44:28.996	Separator TD v2 GBPUSD,M15: uninit reason 3
+0	19:44:28.997	ClickAndDraw GBPUSD,M15: uninit reason 3
+0	19:44:29.008	Quick Style GBPUSD,M5: 0
+0	19:44:29.008	Quick Style GBPUSD,M5: 0
+0	19:44:29.009	Quick Style GBPUSD,M5: 1
+0	19:44:29.009	Quick Style GBPUSD,M5: 1
+0	19:44:29.009	Quick Style GBPUSD,M5: 2
+0	19:44:29.009	Quick Style GBPUSD,M5: initialized
+0	19:44:29.009	OHLC Magnet GBPUSD,M5: initialized
+0	19:44:29.010	Watermark Symbol GBPUSD,M5: initialized
+0	19:44:29.011	Trading box Technical analysis GBPUSD,M5: initialized
+0	19:44:29.011	Show Pips GBPUSD,M5: initialized
+0	19:44:29.011	ICT Asian_Range GBPUSD,M5: initialized
+0	19:44:29.011	Time Range Separator GBPUSD,M5: initialized
+0	19:44:29.011	Bigger TF OHLC dvl BTE Button GBPUSD,M5: initialized
+0	19:44:29.011	Separator TD v2 GBPUSD,M5: initialized
+0	19:44:29.012	ClickAndDraw GBPUSD,M5: initialized
+0	19:45:27.021	Quick Style GBPUSD,M5: uninit reason 3
+0	19:45:27.026	OHLC Magnet GBPUSD,M5: uninit reason 3
+0	19:45:27.026	Watermark Symbol GBPUSD,M5: uninit reason 3
+0	19:45:27.026	Trading box Technical analysis GBPUSD,M5: uninit reason 3
+0	19:45:27.026	Show Pips GBPUSD,M5: uninit reason 3
+0	19:45:27.026	ICT Asian_Range GBPUSD,M5: deinitialized
+0	19:45:27.026	ICT Asian_Range GBPUSD,M5: uninit reason 3
+0	19:45:27.026	Time Range Separator GBPUSD,M5: uninit reason 3
+0	19:45:27.026	Bigger TF OHLC dvl BTE Button GBPUSD,M5: uninit reason 3
+0	19:45:27.027	Separator TD v2 GBPUSD,M5: uninit reason 3
+0	19:45:27.027	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	19:45:27.044	Quick Style GBPUSD,M1: 0
+0	19:45:27.044	Quick Style GBPUSD,M1: 0
+0	19:45:27.044	Quick Style GBPUSD,M1: 1
+0	19:45:27.044	Quick Style GBPUSD,M1: 1
+0	19:45:27.045	Quick Style GBPUSD,M1: 2
+0	19:45:27.045	Quick Style GBPUSD,M1: initialized
+0	19:45:27.045	OHLC Magnet GBPUSD,M1: initialized
+0	19:45:27.045	Watermark Symbol GBPUSD,M1: initialized
+0	19:45:27.047	Trading box Technical analysis GBPUSD,M1: initialized
+0	19:45:27.047	Show Pips GBPUSD,M1: initialized
+0	19:45:27.047	ICT Asian_Range GBPUSD,M1: initialized
+0	19:45:27.047	Time Range Separator GBPUSD,M1: initialized
+0	19:45:27.047	Bigger TF OHLC dvl BTE Button GBPUSD,M1: initialized
+0	19:45:27.047	Separator TD v2 GBPUSD,M1: initialized
+0	19:45:27.048	ClickAndDraw GBPUSD,M1: initialized
+0	19:45:37.537	Quick Style GBPUSD,M1: uninit reason 3
+0	19:45:37.540	OHLC Magnet GBPUSD,M1: uninit reason 3
+0	19:45:37.540	Watermark Symbol GBPUSD,M1: uninit reason 3
+0	19:45:37.541	Trading box Technical analysis GBPUSD,M1: uninit reason 3
+0	19:45:37.541	Show Pips GBPUSD,M1: uninit reason 3
+0	19:45:37.541	ICT Asian_Range GBPUSD,M1: deinitialized
+0	19:45:37.541	ICT Asian_Range GBPUSD,M1: uninit reason 3
+0	19:45:37.541	Time Range Separator GBPUSD,M1: uninit reason 3
+0	19:45:37.541	Bigger TF OHLC dvl BTE Button GBPUSD,M1: uninit reason 3
+0	19:45:37.542	Separator TD v2 GBPUSD,M1: uninit reason 3
+0	19:45:37.542	ClickAndDraw GBPUSD,M1: uninit reason 3
+0	19:45:37.553	Quick Style GBPUSD,M5: 0
+0	19:45:37.553	Quick Style GBPUSD,M5: 0
+0	19:45:37.553	Quick Style GBPUSD,M5: 1
+0	19:45:37.553	Quick Style GBPUSD,M5: 1
+0	19:45:37.553	Quick Style GBPUSD,M5: 2
+0	19:45:37.553	Quick Style GBPUSD,M5: initialized
+0	19:45:37.553	OHLC Magnet GBPUSD,M5: initialized
+0	19:45:37.554	Watermark Symbol GBPUSD,M5: initialized
+0	19:45:37.555	Trading box Technical analysis GBPUSD,M5: initialized
+0	19:45:37.555	Show Pips GBPUSD,M5: initialized
+0	19:45:37.555	ICT Asian_Range GBPUSD,M5: initialized
+0	19:45:37.555	Time Range Separator GBPUSD,M5: initialized
+0	19:45:37.555	Bigger TF OHLC dvl BTE Button GBPUSD,M5: initialized
+0	19:45:37.555	Separator TD v2 GBPUSD,M5: initialized
+0	19:45:37.555	ClickAndDraw GBPUSD,M5: initialized
+0	19:46:12.832	Quick Style GBPUSD,M5: uninit reason 3
+0	19:46:12.836	OHLC Magnet GBPUSD,M5: uninit reason 3
+0	19:46:12.836	Watermark Symbol GBPUSD,M5: uninit reason 3
+0	19:46:12.836	Trading box Technical analysis GBPUSD,M5: uninit reason 3
+0	19:46:12.836	Show Pips GBPUSD,M5: uninit reason 3
+0	19:46:12.836	ICT Asian_Range GBPUSD,M5: deinitialized
+0	19:46:12.836	ICT Asian_Range GBPUSD,M5: uninit reason 3
+0	19:46:12.836	Time Range Separator GBPUSD,M5: uninit reason 3
+0	19:46:12.837	Bigger TF OHLC dvl BTE Button GBPUSD,M5: uninit reason 3
+0	19:46:12.838	Separator TD v2 GBPUSD,M5: uninit reason 3
+0	19:46:12.838	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	19:46:12.852	Quick Style GBPUSD,M1: 0
+0	19:46:12.853	Quick Style GBPUSD,M1: 0
+0	19:46:12.853	Quick Style GBPUSD,M1: 1
+0	19:46:12.853	Quick Style GBPUSD,M1: 1
+0	19:46:12.853	Quick Style GBPUSD,M1: 2
+0	19:46:12.853	Quick Style GBPUSD,M1: initialized
+0	19:46:12.853	OHLC Magnet GBPUSD,M1: initialized
+0	19:46:12.853	Watermark Symbol GBPUSD,M1: initialized
+0	19:46:12.854	Trading box Technical analysis GBPUSD,M1: initialized
+0	19:46:12.855	Show Pips GBPUSD,M1: initialized
+0	19:46:12.855	ICT Asian_Range GBPUSD,M1: initialized
+0	19:46:12.855	Time Range Separator GBPUSD,M1: initialized
+0	19:46:12.855	Bigger TF OHLC dvl BTE Button GBPUSD,M1: initialized
+0	19:46:12.855	Separator TD v2 GBPUSD,M1: initialized
+0	19:46:12.855	ClickAndDraw GBPUSD,M1: initialized
+0	19:47:06.782	Quick Style GBPUSD,M1: uninit reason 3
+0	19:47:06.786	OHLC Magnet GBPUSD,M1: uninit reason 3
+0	19:47:06.786	Watermark Symbol GBPUSD,M1: uninit reason 3
+0	19:47:06.786	Trading box Technical analysis GBPUSD,M1: uninit reason 3
+0	19:47:06.786	Show Pips GBPUSD,M1: uninit reason 3
+0	19:47:06.786	ICT Asian_Range GBPUSD,M1: deinitialized
+0	19:47:06.786	ICT Asian_Range GBPUSD,M1: uninit reason 3
+0	19:47:06.786	Time Range Separator GBPUSD,M1: uninit reason 3
+0	19:47:06.787	Bigger TF OHLC dvl BTE Button GBPUSD,M1: uninit reason 3
+0	19:47:06.787	Separator TD v2 GBPUSD,M1: uninit reason 3
+0	19:47:06.787	ClickAndDraw GBPUSD,M1: uninit reason 3
+0	19:47:06.803	Quick Style GBPUSD,M5: 0
+0	19:47:06.803	Quick Style GBPUSD,M5: 0
+0	19:47:06.803	Quick Style GBPUSD,M5: 1
+0	19:47:06.803	Quick Style GBPUSD,M5: 1
+0	19:47:06.803	Quick Style GBPUSD,M5: 2
+0	19:47:06.804	Quick Style GBPUSD,M5: initialized
+0	19:47:06.804	OHLC Magnet GBPUSD,M5: initialized
+0	19:47:06.804	Watermark Symbol GBPUSD,M5: initialized
+0	19:47:06.805	Trading box Technical analysis GBPUSD,M5: initialized
+0	19:47:06.805	Show Pips GBPUSD,M5: initialized
+0	19:47:06.806	ICT Asian_Range GBPUSD,M5: initialized
+0	19:47:06.806	Time Range Separator GBPUSD,M5: initialized
+0	19:47:06.806	Bigger TF OHLC dvl BTE Button GBPUSD,M5: initialized
+0	19:47:06.806	Separator TD v2 GBPUSD,M5: initialized
+0	19:47:06.806	ClickAndDraw GBPUSD,M5: initialized
+0	19:47:07.967	Quick Style GBPUSD,M5: uninit reason 3
+0	19:47:07.971	OHLC Magnet GBPUSD,M5: uninit reason 3
+0	19:47:07.971	Watermark Symbol GBPUSD,M5: uninit reason 3
+0	19:47:07.971	Trading box Technical analysis GBPUSD,M5: uninit reason 3
+0	19:47:07.971	Show Pips GBPUSD,M5: uninit reason 3
+0	19:47:07.971	ICT Asian_Range GBPUSD,M5: deinitialized
+0	19:47:07.971	ICT Asian_Range GBPUSD,M5: uninit reason 3
+0	19:47:07.971	Time Range Separator GBPUSD,M5: uninit reason 3
+0	19:47:07.972	Bigger TF OHLC dvl BTE Button GBPUSD,M5: uninit reason 3
+0	19:47:07.972	Separator TD v2 GBPUSD,M5: uninit reason 3
+0	19:47:07.972	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	19:47:07.984	Quick Style GBPUSD,M1: 0
+0	19:47:07.984	Quick Style GBPUSD,M1: 0
+0	19:47:07.984	Quick Style GBPUSD,M1: 1
+0	19:47:07.984	Quick Style GBPUSD,M1: 1
+0	19:47:07.984	Quick Style GBPUSD,M1: 2
+0	19:47:07.984	Quick Style GBPUSD,M1: initialized
+0	19:47:07.984	OHLC Magnet GBPUSD,M1: initialized
+0	19:47:07.984	Watermark Symbol GBPUSD,M1: initialized
+0	19:47:07.985	Trading box Technical analysis GBPUSD,M1: initialized
+0	19:47:07.986	Show Pips GBPUSD,M1: initialized
+0	19:47:07.986	ICT Asian_Range GBPUSD,M1: initialized
+0	19:47:07.986	Time Range Separator GBPUSD,M1: initialized
+0	19:47:07.986	Bigger TF OHLC dvl BTE Button GBPUSD,M1: initialized
+0	19:47:07.986	Separator TD v2 GBPUSD,M1: initialized
+0	19:47:07.986	ClickAndDraw GBPUSD,M1: initialized
+0	19:51:24.671	Quick Style GBPUSD,M1: uninit reason 3
+0	19:51:24.674	OHLC Magnet GBPUSD,M1: uninit reason 3
+0	19:51:24.674	Watermark Symbol GBPUSD,M1: uninit reason 3
+0	19:51:24.675	Trading box Technical analysis GBPUSD,M1: uninit reason 3
+0	19:51:24.675	Show Pips GBPUSD,M1: uninit reason 3
+0	19:51:24.675	ICT Asian_Range GBPUSD,M1: deinitialized
+0	19:51:24.675	ICT Asian_Range GBPUSD,M1: uninit reason 3
+0	19:51:24.675	Time Range Separator GBPUSD,M1: uninit reason 3
+0	19:51:24.675	Bigger TF OHLC dvl BTE Button GBPUSD,M1: uninit reason 3
+0	19:51:24.675	Separator TD v2 GBPUSD,M1: uninit reason 3
+0	19:51:24.676	ClickAndDraw GBPUSD,M1: uninit reason 3
+0	19:51:24.689	Quick Style GBPUSD,M5: 0
+0	19:51:24.689	Quick Style GBPUSD,M5: 0
+0	19:51:24.689	Quick Style GBPUSD,M5: 1
+0	19:51:24.689	Quick Style GBPUSD,M5: 1
+0	19:51:24.689	Quick Style GBPUSD,M5: 2
+0	19:51:24.689	Quick Style GBPUSD,M5: initialized
+0	19:51:24.690	OHLC Magnet GBPUSD,M5: initialized
+0	19:51:24.690	Watermark Symbol GBPUSD,M5: initialized
+0	19:51:24.691	Trading box Technical analysis GBPUSD,M5: initialized
+0	19:51:24.691	Show Pips GBPUSD,M5: initialized
+0	19:51:24.691	ICT Asian_Range GBPUSD,M5: initialized
+0	19:51:24.691	Time Range Separator GBPUSD,M5: initialized
+0	19:51:24.691	Bigger TF OHLC dvl BTE Button GBPUSD,M5: initialized
+0	19:51:24.691	Separator TD v2 GBPUSD,M5: initialized
+0	19:51:24.692	ClickAndDraw GBPUSD,M5: initialized
+0	19:51:58.479	Quick Style GBPUSD,M5: uninit reason 3
+0	19:51:58.483	OHLC Magnet GBPUSD,M5: uninit reason 3
+0	19:51:58.483	Watermark Symbol GBPUSD,M5: uninit reason 3
+0	19:51:58.484	Trading box Technical analysis GBPUSD,M5: uninit reason 3
+0	19:51:58.484	Show Pips GBPUSD,M5: uninit reason 3
+0	19:51:58.484	ICT Asian_Range GBPUSD,M5: deinitialized
+0	19:51:58.484	ICT Asian_Range GBPUSD,M5: uninit reason 3
+0	19:51:58.484	Time Range Separator GBPUSD,M5: uninit reason 3
+0	19:51:58.484	Bigger TF OHLC dvl BTE Button GBPUSD,M5: uninit reason 3
+0	19:51:58.484	Separator TD v2 GBPUSD,M5: uninit reason 3
+0	19:51:58.485	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	19:51:58.504	Quick Style GBPUSD,M1: 0
+0	19:51:58.504	Quick Style GBPUSD,M1: 0
+0	19:51:58.504	Quick Style GBPUSD,M1: 1
+0	19:51:58.504	Quick Style GBPUSD,M1: 1
+0	19:51:58.504	Quick Style GBPUSD,M1: 2
+0	19:51:58.505	Quick Style GBPUSD,M1: initialized
+0	19:51:58.505	OHLC Magnet GBPUSD,M1: initialized
+0	19:51:58.505	Watermark Symbol GBPUSD,M1: initialized
+0	19:51:58.507	Trading box Technical analysis GBPUSD,M1: initialized
+0	19:51:58.507	Show Pips GBPUSD,M1: initialized
+0	19:51:58.507	ICT Asian_Range GBPUSD,M1: initialized
+0	19:51:58.507	Time Range Separator GBPUSD,M1: initialized
+0	19:51:58.507	Bigger TF OHLC dvl BTE Button GBPUSD,M1: initialized
+0	19:51:58.507	Separator TD v2 GBPUSD,M1: initialized
+0	19:51:58.508	ClickAndDraw GBPUSD,M1: initialized
+0	19:52:45.051	Expert Market\Trade Assistant Pro 36 in 1 GBPUSD,M1: loaded successfully
+0	19:52:45.836	Trade Assistant Pro 36 in 1 GBPUSD,M1 inputs: Slippage=500; BlockTradeDrag=true; Prefix=; Suffix=; font_size_OnChart=8; MMLineStyle=2; MMLineSize=1; MMSLLineColor=255; MMColorEntryLine=9498256; MMColorTPLine=32768; MMColorStopLimitLine=16742913; TMTSTLColor=16711680; INColorHLLines=16711680; INStyleHLLines=2; INSizeHLLines=1; TFBColorBullish=2014249; TFBColorBearish=4017898; TPAColorBullish=32768; TPAColorBearish=255; TGPColorUp=32768; TGPColorDown=255; TBSColorBullish=14772545; TBSColorBearish=4678655; TFLfibo_color0=16711680; TFLfibo_color1=255; TFLfibo_color2=255; TFLLineStyle=4; TFLLineSize=1; TSRM5Color=16711680; TSRM15Color=16711680; TSRM30Color=16711680; TSRH1Color=32768; TSRH4Color=32768; TSRD1Color=255; TSRW1Color=36095; TSRMNColor=65280; TSRLineStyle=4; TSRLineSize=1; TMMLineColor=16748574; TMMLineStyle=3; TMMLineSize=1; AlertsCustomColor=65535; AlertsLineStyle=3; AlertsLineSize=1; TPRColor=3165994; TWMColor=8421504; TSDColorSupport=6994790; TSDColorRes=6247159; NewsColorHigh=255; NewsColorMed=16711680; NewsColorLow=32768; TelegramToken=; 
+0	19:52:46.137	Trade Assistant Pro 36 in 1 GBPUSD,M1: initialized
+2	19:53:16.505	Trade Assistant Pro 36 in 1 GBPUSD,M1: open #257691164 buy limit 0.09 GBPUSD at 1.23274 sl: 1.23168 tp: 1.23486 ok
+0	19:53:16.518	Trade Assistant Pro 36 in 1 GBPUSD,M1: Buy Limit placed @1.23274, SL: 1.23168, TP: 1.23486  Lot: 0.09
+2	19:53:20.149	Trade Assistant Pro 36 in 1 GBPUSD,M1: ExpertRemove function called
+0	19:53:20.149	Trade Assistant Pro 36 in 1 GBPUSD,M1: uninit reason 0
+0	19:53:20.157	Expert Trade Assistant Pro 36 in 1 GBPUSD,M1: removed
+0	19:53:23.821	Quick Style GBPUSD,M1: uninit reason 3
+0	19:53:23.825	OHLC Magnet GBPUSD,M1: uninit reason 3
+0	19:53:23.825	Watermark Symbol GBPUSD,M1: uninit reason 3
+0	19:53:23.826	Trading box Technical analysis GBPUSD,M1: uninit reason 3
+0	19:53:23.826	Show Pips GBPUSD,M1: uninit reason 3
+0	19:53:23.826	ICT Asian_Range GBPUSD,M1: deinitialized
+0	19:53:23.826	ICT Asian_Range GBPUSD,M1: uninit reason 3
+0	19:53:23.826	Time Range Separator GBPUSD,M1: uninit reason 3
+0	19:53:23.826	Bigger TF OHLC dvl BTE Button GBPUSD,M1: uninit reason 3
+0	19:53:23.827	Separator TD v2 GBPUSD,M1: uninit reason 3
+0	19:53:23.827	ClickAndDraw GBPUSD,M1: uninit reason 3
+0	19:53:23.843	Quick Style GBPUSD,M5: 0
+0	19:53:23.843	Quick Style GBPUSD,M5: 0
+0	19:53:23.843	Quick Style GBPUSD,M5: 1
+0	19:53:23.843	Quick Style GBPUSD,M5: 1
+0	19:53:23.843	Quick Style GBPUSD,M5: 2
+0	19:53:23.843	Quick Style GBPUSD,M5: initialized
+0	19:53:23.843	OHLC Magnet GBPUSD,M5: initialized
+0	19:53:23.844	Watermark Symbol GBPUSD,M5: initialized
+0	19:53:23.845	Trading box Technical analysis GBPUSD,M5: initialized
+0	19:53:23.845	Show Pips GBPUSD,M5: initialized
+0	19:53:23.845	ICT Asian_Range GBPUSD,M5: initialized
+0	19:53:23.845	Time Range Separator GBPUSD,M5: initialized
+0	19:53:23.845	Bigger TF OHLC dvl BTE Button GBPUSD,M5: initialized
+0	19:53:23.845	Separator TD v2 GBPUSD,M5: initialized
+0	19:53:23.846	ClickAndDraw GBPUSD,M5: initialized
+0	19:55:05.974	Script Market\Show Hide Trade Levels GBPUSD,M5: loaded successfully
+0	19:55:05.999	Show Hide Trade Levels GBPUSD,M5: initialized
+0	19:55:05.999	Show Hide Trade Levels GBPUSD,M5: Toggling chart 133244319629765784 'show trade levels' from [Show] to [Hide]
+0	19:55:05.999	Show Hide Trade Levels GBPUSD,M5: uninit reason 0
+0	19:55:06.001	Script Show Hide Trade Levels GBPUSD,M5: removed
+0	19:55:08.828	Script Market\Show Hide Trade Levels GBPUSD,M5: loaded successfully
+0	19:55:08.850	Show Hide Trade Levels GBPUSD,M5: initialized
+0	19:55:08.851	Show Hide Trade Levels GBPUSD,M5: Toggling chart 133244319629765784 'show trade levels' from [Hide] to [Show]
+0	19:55:08.851	Show Hide Trade Levels GBPUSD,M5: uninit reason 0
+0	19:55:08.853	Script Show Hide Trade Levels GBPUSD,M5: removed
+0	19:55:09.986	Script Market\Show Hide Trade Levels GBPUSD,M5: loaded successfully
+0	19:55:10.011	Show Hide Trade Levels GBPUSD,M5: initialized
+0	19:55:10.011	Show Hide Trade Levels GBPUSD,M5: Toggling chart 133244319629765784 'show trade levels' from [Show] to [Hide]
+0	19:55:10.012	Show Hide Trade Levels GBPUSD,M5: uninit reason 0
+0	19:55:10.015	Script Show Hide Trade Levels GBPUSD,M5: removed
+0	19:55:29.324	Quick Style GBPUSD,M5: uninit reason 3
+0	19:55:29.329	OHLC Magnet GBPUSD,M5: uninit reason 3
+0	19:55:29.329	Watermark Symbol GBPUSD,M5: uninit reason 3
+0	19:55:29.329	Trading box Technical analysis GBPUSD,M5: uninit reason 3
+0	19:55:29.329	Show Pips GBPUSD,M5: uninit reason 3
+0	19:55:29.329	ICT Asian_Range GBPUSD,M5: deinitialized
+0	19:55:29.329	ICT Asian_Range GBPUSD,M5: uninit reason 3
+0	19:55:29.329	Time Range Separator GBPUSD,M5: uninit reason 3
+0	19:55:29.330	Bigger TF OHLC dvl BTE Button GBPUSD,M5: uninit reason 3
+0	19:55:29.330	Separator TD v2 GBPUSD,M5: uninit reason 3
+0	19:55:29.330	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	19:55:29.348	Quick Style GBPUSD,M15: 0
+0	19:55:29.348	Quick Style GBPUSD,M15: 0
+0	19:55:29.348	Quick Style GBPUSD,M15: 1
+0	19:55:29.348	Quick Style GBPUSD,M15: 1
+0	19:55:29.348	Quick Style GBPUSD,M15: 2
+0	19:55:29.349	Quick Style GBPUSD,M15: initialized
+0	19:55:29.349	OHLC Magnet GBPUSD,M15: initialized
+0	19:55:29.349	Watermark Symbol GBPUSD,M15: initialized
+0	19:55:29.350	Trading box Technical analysis GBPUSD,M15: initialized
+0	19:55:29.351	Show Pips GBPUSD,M15: initialized
+0	19:55:29.351	ICT Asian_Range GBPUSD,M15: initialized
+0	19:55:29.351	Time Range Separator GBPUSD,M15: initialized
+0	19:55:29.351	Bigger TF OHLC dvl BTE Button GBPUSD,M15: initialized
+0	19:55:29.351	Separator TD v2 GBPUSD,M15: initialized
+0	19:55:29.351	ClickAndDraw GBPUSD,M15: initialized
+0	19:55:32.663	Quick Style GBPUSD,M15: uninit reason 3
+0	19:55:32.667	OHLC Magnet GBPUSD,M15: uninit reason 3
+0	19:55:32.667	Watermark Symbol GBPUSD,M15: uninit reason 3
+0	19:55:32.668	Trading box Technical analysis GBPUSD,M15: uninit reason 3
+0	19:55:32.668	Show Pips GBPUSD,M15: uninit reason 3
+0	19:55:32.668	ICT Asian_Range GBPUSD,M15: deinitialized
+0	19:55:32.668	ICT Asian_Range GBPUSD,M15: uninit reason 3
+0	19:55:32.668	Time Range Separator GBPUSD,M15: uninit reason 3
+0	19:55:32.668	Bigger TF OHLC dvl BTE Button GBPUSD,M15: uninit reason 3
+0	19:55:32.669	Separator TD v2 GBPUSD,M15: uninit reason 3
+0	19:55:32.669	ClickAndDraw GBPUSD,M15: uninit reason 3
+0	19:55:32.683	Quick Style GBPUSD,M5: 0
+0	19:55:32.683	Quick Style GBPUSD,M5: 0
+0	19:55:32.683	Quick Style GBPUSD,M5: 1
+0	19:55:32.683	Quick Style GBPUSD,M5: 1
+0	19:55:32.684	Quick Style GBPUSD,M5: 2
+0	19:55:32.684	Quick Style GBPUSD,M5: initialized
+0	19:55:32.684	OHLC Magnet GBPUSD,M5: initialized
+0	19:55:32.685	Watermark Symbol GBPUSD,M5: initialized
+0	19:55:32.686	Trading box Technical analysis GBPUSD,M5: initialized
+0	19:55:32.686	Show Pips GBPUSD,M5: initialized
+0	19:55:32.686	ICT Asian_Range GBPUSD,M5: initialized
+0	19:55:32.686	Time Range Separator GBPUSD,M5: initialized
+0	19:55:32.686	Bigger TF OHLC dvl BTE Button GBPUSD,M5: initialized
+0	19:55:32.686	Separator TD v2 GBPUSD,M5: initialized
+0	19:55:32.686	ClickAndDraw GBPUSD,M5: initialized
+0	19:57:05.044	Quick Style GBPUSD,M5: uninit reason 3
+0	19:57:05.048	OHLC Magnet GBPUSD,M5: uninit reason 3
+0	19:57:05.048	Watermark Symbol GBPUSD,M5: uninit reason 3
+0	19:57:05.049	Trading box Technical analysis GBPUSD,M5: uninit reason 3
+0	19:57:05.049	Show Pips GBPUSD,M5: uninit reason 3
+0	19:57:05.049	ICT Asian_Range GBPUSD,M5: deinitialized
+0	19:57:05.049	ICT Asian_Range GBPUSD,M5: uninit reason 3
+0	19:57:05.049	Time Range Separator GBPUSD,M5: uninit reason 3
+0	19:57:05.049	Bigger TF OHLC dvl BTE Button GBPUSD,M5: uninit reason 3
+0	19:57:05.050	Separator TD v2 GBPUSD,M5: uninit reason 3
+0	19:57:05.050	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	19:57:05.064	Quick Style GBPUSD,M15: 0
+0	19:57:05.064	Quick Style GBPUSD,M15: 0
+0	19:57:05.064	Quick Style GBPUSD,M15: 1
+0	19:57:05.064	Quick Style GBPUSD,M15: 1
+0	19:57:05.065	Quick Style GBPUSD,M15: 2
+0	19:57:05.065	Quick Style GBPUSD,M15: initialized
+0	19:57:05.065	OHLC Magnet GBPUSD,M15: initialized
+0	19:57:05.065	Watermark Symbol GBPUSD,M15: initialized
+0	19:57:05.067	Trading box Technical analysis GBPUSD,M15: initialized
+0	19:57:05.067	Show Pips GBPUSD,M15: initialized
+0	19:57:05.067	ICT Asian_Range GBPUSD,M15: initialized
+0	19:57:05.067	Time Range Separator GBPUSD,M15: initialized
+0	19:57:05.067	Bigger TF OHLC dvl BTE Button GBPUSD,M15: initialized
+0	19:57:05.067	Separator TD v2 GBPUSD,M15: initialized
+0	19:57:05.067	ClickAndDraw GBPUSD,M15: initialized
+0	19:57:15.473	Quick Style GBPUSD,M15: uninit reason 3
+0	19:57:15.477	OHLC Magnet GBPUSD,M15: uninit reason 3
+0	19:57:15.477	Watermark Symbol GBPUSD,M15: uninit reason 3
+0	19:57:15.477	Trading box Technical analysis GBPUSD,M15: uninit reason 3
+0	19:57:15.477	Show Pips GBPUSD,M15: uninit reason 3
+0	19:57:15.477	ICT Asian_Range GBPUSD,M15: deinitialized
+0	19:57:15.477	ICT Asian_Range GBPUSD,M15: uninit reason 3
+0	19:57:15.477	Time Range Separator GBPUSD,M15: uninit reason 3
+0	19:57:15.478	Bigger TF OHLC dvl BTE Button GBPUSD,M15: uninit reason 3
+0	19:57:15.478	Separator TD v2 GBPUSD,M15: uninit reason 3
+0	19:57:15.478	ClickAndDraw GBPUSD,M15: uninit reason 3
+0	19:57:15.490	Quick Style GBPUSD,M30: 0
+0	19:57:15.490	Quick Style GBPUSD,M30: 0
+0	19:57:15.490	Quick Style GBPUSD,M30: 1
+0	19:57:15.490	Quick Style GBPUSD,M30: 1
+0	19:57:15.490	Quick Style GBPUSD,M30: 2
+0	19:57:15.491	Quick Style GBPUSD,M30: initialized
+0	19:57:15.491	OHLC Magnet GBPUSD,M30: initialized
+0	19:57:15.491	Watermark Symbol GBPUSD,M30: initialized
+0	19:57:15.492	Trading box Technical analysis GBPUSD,M30: initialized
+0	19:57:15.493	Show Pips GBPUSD,M30: initialized
+0	19:57:15.493	ICT Asian_Range GBPUSD,M30: initialized
+0	19:57:15.493	Time Range Separator GBPUSD,M30: initialized
+0	19:57:15.493	Bigger TF OHLC dvl BTE Button GBPUSD,M30: initialized
+0	19:57:15.493	Separator TD v2 GBPUSD,M30: initialized
+0	19:57:15.493	ClickAndDraw GBPUSD,M30: initialized
+0	19:57:37.461	Quick Style GBPUSD,M30: uninit reason 3
+0	19:57:37.465	OHLC Magnet GBPUSD,M30: uninit reason 3
+0	19:57:37.466	Watermark Symbol GBPUSD,M30: uninit reason 3
+0	19:57:37.466	Trading box Technical analysis GBPUSD,M30: uninit reason 3
+0	19:57:37.466	Show Pips GBPUSD,M30: uninit reason 3
+0	19:57:37.466	ICT Asian_Range GBPUSD,M30: deinitialized
+0	19:57:37.466	ICT Asian_Range GBPUSD,M30: uninit reason 3
+0	19:57:37.466	Time Range Separator GBPUSD,M30: uninit reason 3
+0	19:57:37.466	Bigger TF OHLC dvl BTE Button GBPUSD,M30: uninit reason 3
+0	19:57:37.467	Separator TD v2 GBPUSD,M30: uninit reason 3
+0	19:57:37.467	ClickAndDraw GBPUSD,M30: uninit reason 3
+0	19:57:37.477	Quick Style GBPUSD,H1: 0
+0	19:57:37.478	Quick Style GBPUSD,H1: 0
+0	19:57:37.478	Quick Style GBPUSD,H1: 1
+0	19:57:37.478	Quick Style GBPUSD,H1: 1
+0	19:57:37.478	Quick Style GBPUSD,H1: 2
+0	19:57:37.478	Quick Style GBPUSD,H1: initialized
+0	19:57:37.478	OHLC Magnet GBPUSD,H1: initialized
+0	19:57:37.478	Watermark Symbol GBPUSD,H1: initialized
+0	19:57:37.480	Trading box Technical analysis GBPUSD,H1: initialized
+0	19:57:37.480	Show Pips GBPUSD,H1: initialized
+0	19:57:37.480	ICT Asian_Range GBPUSD,H1: initialized
+0	19:57:37.480	Time Range Separator GBPUSD,H1: initialized
+0	19:57:37.480	Bigger TF OHLC dvl BTE Button GBPUSD,H1: initialized
+0	19:57:37.480	Separator TD v2 GBPUSD,H1: initialized
+0	19:57:37.480	ClickAndDraw GBPUSD,H1: initialized
+0	20:00:17.387	Quick Style GBPUSD,H1: uninit reason 3
+0	20:00:17.391	OHLC Magnet GBPUSD,H1: uninit reason 3
+0	20:00:17.391	Watermark Symbol GBPUSD,H1: uninit reason 3
+0	20:00:17.392	Trading box Technical analysis GBPUSD,H1: uninit reason 3
+0	20:00:17.392	Show Pips GBPUSD,H1: uninit reason 3
+0	20:00:17.392	ICT Asian_Range GBPUSD,H1: deinitialized
+0	20:00:17.392	ICT Asian_Range GBPUSD,H1: uninit reason 3
+0	20:00:17.392	Time Range Separator GBPUSD,H1: uninit reason 3
+0	20:00:17.392	Bigger TF OHLC dvl BTE Button GBPUSD,H1: uninit reason 3
+0	20:00:17.393	Separator TD v2 GBPUSD,H1: uninit reason 3
+0	20:00:17.393	ClickAndDraw GBPUSD,H1: uninit reason 3
+0	20:00:17.405	Quick Style GBPUSD,Weekly: 0
+0	20:00:17.405	Quick Style GBPUSD,Weekly: 0
+0	20:00:17.406	Quick Style GBPUSD,Weekly: 1
+0	20:00:17.407	Quick Style GBPUSD,Weekly: 1
+0	20:00:17.407	Quick Style GBPUSD,Weekly: 2
+0	20:00:17.407	Quick Style GBPUSD,Weekly: initialized
+0	20:00:17.407	OHLC Magnet GBPUSD,Weekly: initialized
+0	20:00:17.408	Watermark Symbol GBPUSD,Weekly: initialized
+0	20:00:17.410	Trading box Technical analysis GBPUSD,Weekly: initialized
+0	20:00:17.410	Show Pips GBPUSD,Weekly: initialized
+0	20:00:17.410	ICT Asian_Range GBPUSD,Weekly: initialized
+0	20:00:17.410	Time Range Separator GBPUSD,Weekly: initialized
+0	20:00:17.410	Bigger TF OHLC dvl BTE Button GBPUSD,Weekly: initialized
+0	20:00:17.410	Separator TD v2 GBPUSD,Weekly: initialized
+0	20:00:17.411	ClickAndDraw GBPUSD,Weekly: initialized
+0	20:01:17.971	Quick Style GBPUSD,Weekly: uninit reason 3
+0	20:01:17.975	OHLC Magnet GBPUSD,Weekly: uninit reason 3
+0	20:01:17.975	Watermark Symbol GBPUSD,Weekly: uninit reason 3
+0	20:01:17.976	Trading box Technical analysis GBPUSD,Weekly: uninit reason 3
+0	20:01:17.976	Show Pips GBPUSD,Weekly: uninit reason 3
+0	20:01:17.976	ICT Asian_Range GBPUSD,Weekly: deinitialized
+0	20:01:17.976	ICT Asian_Range GBPUSD,Weekly: uninit reason 3
+0	20:01:17.976	Time Range Separator GBPUSD,Weekly: uninit reason 3
+0	20:01:17.976	Bigger TF OHLC dvl BTE Button GBPUSD,Weekly: uninit reason 3
+0	20:01:17.976	Separator TD v2 GBPUSD,Weekly: uninit reason 3
+0	20:01:17.977	ClickAndDraw GBPUSD,Weekly: uninit reason 3
+0	20:01:17.992	Quick Style GBPUSD,M5: 0
+0	20:01:17.992	Quick Style GBPUSD,M5: 0
+0	20:01:17.992	Quick Style GBPUSD,M5: 1
+0	20:01:17.992	Quick Style GBPUSD,M5: 1
+0	20:01:17.992	Quick Style GBPUSD,M5: 2
+0	20:01:17.993	Quick Style GBPUSD,M5: initialized
+0	20:01:17.993	OHLC Magnet GBPUSD,M5: initialized
+0	20:01:17.993	Watermark Symbol GBPUSD,M5: initialized
+0	20:01:17.994	Trading box Technical analysis GBPUSD,M5: initialized
+0	20:01:17.994	Show Pips GBPUSD,M5: initialized
+0	20:01:17.994	ICT Asian_Range GBPUSD,M5: initialized
+0	20:01:17.994	Time Range Separator GBPUSD,M5: initialized
+0	20:01:17.994	Bigger TF OHLC dvl BTE Button GBPUSD,M5: initialized
+0	20:01:17.994	Separator TD v2 GBPUSD,M5: initialized
+0	20:01:17.995	ClickAndDraw GBPUSD,M5: initialized
+0	20:01:22.716	Quick Style GBPUSD,M5: uninit reason 3
+0	20:01:22.720	OHLC Magnet GBPUSD,M5: uninit reason 3
+0	20:01:22.720	Watermark Symbol GBPUSD,M5: uninit reason 3
+0	20:01:22.720	Trading box Technical analysis GBPUSD,M5: uninit reason 3
+0	20:01:22.720	Show Pips GBPUSD,M5: uninit reason 3
+0	20:01:22.720	ICT Asian_Range GBPUSD,M5: deinitialized
+0	20:01:22.720	ICT Asian_Range GBPUSD,M5: uninit reason 3
+0	20:01:22.720	Time Range Separator GBPUSD,M5: uninit reason 3
+0	20:01:22.721	Bigger TF OHLC dvl BTE Button GBPUSD,M5: uninit reason 3
+0	20:01:22.721	Separator TD v2 GBPUSD,M5: uninit reason 3
+0	20:01:22.721	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	20:01:22.737	Quick Style GBPUSD,H1: 0
+0	20:01:22.738	Quick Style GBPUSD,H1: 0
+0	20:01:22.738	Quick Style GBPUSD,H1: 1
+0	20:01:22.738	Quick Style GBPUSD,H1: 1
+0	20:01:22.738	Quick Style GBPUSD,H1: 2
+0	20:01:22.738	Quick Style GBPUSD,H1: initialized
+0	20:01:22.738	OHLC Magnet GBPUSD,H1: initialized
+0	20:01:22.739	Watermark Symbol GBPUSD,H1: initialized
+0	20:01:22.740	Trading box Technical analysis GBPUSD,H1: initialized
+0	20:01:22.741	Show Pips GBPUSD,H1: initialized
+0	20:01:22.741	ICT Asian_Range GBPUSD,H1: initialized
+0	20:01:22.741	Time Range Separator GBPUSD,H1: initialized
+0	20:01:22.741	Bigger TF OHLC dvl BTE Button GBPUSD,H1: initialized
+0	20:01:22.741	Separator TD v2 GBPUSD,H1: initialized
+0	20:01:22.741	ClickAndDraw GBPUSD,H1: initialized
+0	20:03:46.205	Script Market\Show Hide Trade Levels GBPUSD,H1: loaded successfully
+0	20:03:46.223	Show Hide Trade Levels GBPUSD,H1: initialized
+0	20:03:46.226	Show Hide Trade Levels GBPUSD,H1: Toggling chart 133244319629765784 'show trade levels' from [Hide] to [Show]
+0	20:03:46.226	Show Hide Trade Levels GBPUSD,H1: uninit reason 0
+0	20:03:46.228	Script Show Hide Trade Levels GBPUSD,H1: removed
+0	20:03:48.488	Quick Style GBPUSD,H1: uninit reason 3
+0	20:03:48.492	OHLC Magnet GBPUSD,H1: uninit reason 3
+0	20:03:48.492	Watermark Symbol GBPUSD,H1: uninit reason 3
+0	20:03:48.492	Trading box Technical analysis GBPUSD,H1: uninit reason 3
+0	20:03:48.492	Show Pips GBPUSD,H1: uninit reason 3
+0	20:03:48.492	ICT Asian_Range GBPUSD,H1: deinitialized
+0	20:03:48.492	ICT Asian_Range GBPUSD,H1: uninit reason 3
+0	20:03:48.492	Time Range Separator GBPUSD,H1: uninit reason 3
+0	20:03:48.493	Bigger TF OHLC dvl BTE Button GBPUSD,H1: uninit reason 3
+0	20:03:48.493	Separator TD v2 GBPUSD,H1: uninit reason 3
+0	20:03:48.493	ClickAndDraw GBPUSD,H1: uninit reason 3
+0	20:03:48.507	Quick Style GBPUSD,M5: 0
+0	20:03:48.507	Quick Style GBPUSD,M5: 0
+0	20:03:48.507	Quick Style GBPUSD,M5: 1
+0	20:03:48.507	Quick Style GBPUSD,M5: 1
+0	20:03:48.507	Quick Style GBPUSD,M5: 2
+0	20:03:48.507	Quick Style GBPUSD,M5: initialized
+0	20:03:48.507	OHLC Magnet GBPUSD,M5: initialized
+0	20:03:48.508	Watermark Symbol GBPUSD,M5: initialized
+0	20:03:48.509	Trading box Technical analysis GBPUSD,M5: initialized
+0	20:03:48.509	Show Pips GBPUSD,M5: initialized
+0	20:03:48.510	ICT Asian_Range GBPUSD,M5: initialized
+0	20:03:48.510	Time Range Separator GBPUSD,M5: initialized
+0	20:03:48.510	Bigger TF OHLC dvl BTE Button GBPUSD,M5: initialized
+0	20:03:48.510	Separator TD v2 GBPUSD,M5: initialized
+0	20:03:48.510	ClickAndDraw GBPUSD,M5: initialized
+0	20:03:56.543	Quick Style GBPUSD,M5: uninit reason 3
+0	20:03:56.547	OHLC Magnet GBPUSD,M5: uninit reason 3
+0	20:03:56.547	Watermark Symbol GBPUSD,M5: uninit reason 3
+0	20:03:56.547	Trading box Technical analysis GBPUSD,M5: uninit reason 3
+0	20:03:56.547	Show Pips GBPUSD,M5: uninit reason 3
+0	20:03:56.547	ICT Asian_Range GBPUSD,M5: deinitialized
+0	20:03:56.547	ICT Asian_Range GBPUSD,M5: uninit reason 3
+0	20:03:56.547	Time Range Separator GBPUSD,M5: uninit reason 3
+0	20:03:56.548	Bigger TF OHLC dvl BTE Button GBPUSD,M5: uninit reason 3
+0	20:03:56.548	Separator TD v2 GBPUSD,M5: uninit reason 3
+0	20:03:56.548	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	20:03:56.565	Quick Style GBPUSD,M1: 0
+0	20:03:56.566	Quick Style GBPUSD,M1: 0
+0	20:03:56.566	Quick Style GBPUSD,M1: 1
+0	20:03:56.566	Quick Style GBPUSD,M1: 1
+0	20:03:56.566	Quick Style GBPUSD,M1: 2
+0	20:03:56.566	Quick Style GBPUSD,M1: initialized
+0	20:03:56.566	OHLC Magnet GBPUSD,M1: initialized
+0	20:03:56.567	Watermark Symbol GBPUSD,M1: initialized
+0	20:03:56.568	Trading box Technical analysis GBPUSD,M1: initialized
+0	20:03:56.568	Show Pips GBPUSD,M1: initialized
+0	20:03:56.568	ICT Asian_Range GBPUSD,M1: initialized
+0	20:03:56.568	Time Range Separator GBPUSD,M1: initialized
+0	20:03:56.568	Bigger TF OHLC dvl BTE Button GBPUSD,M1: initialized
+0	20:03:56.568	Separator TD v2 GBPUSD,M1: initialized
+0	20:03:56.569	ClickAndDraw GBPUSD,M1: initialized
+0	20:12:18.713	Quick Style GBPUSD,M1: uninit reason 3
+0	20:12:18.716	OHLC Magnet GBPUSD,M1: uninit reason 3
+0	20:12:18.716	Watermark Symbol GBPUSD,M1: uninit reason 3
+0	20:12:18.716	Trading box Technical analysis GBPUSD,M1: uninit reason 3
+0	20:12:18.716	Show Pips GBPUSD,M1: uninit reason 3
+0	20:12:18.716	ICT Asian_Range GBPUSD,M1: deinitialized
+0	20:12:18.716	ICT Asian_Range GBPUSD,M1: uninit reason 3
+0	20:12:18.716	Time Range Separator GBPUSD,M1: uninit reason 3
+0	20:12:18.717	Bigger TF OHLC dvl BTE Button GBPUSD,M1: uninit reason 3
+0	20:12:18.717	Separator TD v2 GBPUSD,M1: uninit reason 3
+0	20:12:18.717	ClickAndDraw GBPUSD,M1: uninit reason 3
+0	20:12:18.731	Quick Style GBPUSD,M30: 0
+0	20:12:18.731	Quick Style GBPUSD,M30: 0
+0	20:12:18.731	Quick Style GBPUSD,M30: 1
+0	20:12:18.731	Quick Style GBPUSD,M30: 1
+0	20:12:18.731	Quick Style GBPUSD,M30: 2
+0	20:12:18.731	Quick Style GBPUSD,M30: initialized
+0	20:12:18.732	OHLC Magnet GBPUSD,M30: initialized
+0	20:12:18.732	Watermark Symbol GBPUSD,M30: initialized
+0	20:12:18.734	Trading box Technical analysis GBPUSD,M30: initialized
+0	20:12:18.734	Show Pips GBPUSD,M30: initialized
+0	20:12:18.735	ICT Asian_Range GBPUSD,M30: initialized
+0	20:12:18.735	Time Range Separator GBPUSD,M30: initialized
+0	20:12:18.735	Bigger TF OHLC dvl BTE Button GBPUSD,M30: initialized
+0	20:12:18.735	Separator TD v2 GBPUSD,M30: initialized
+0	20:12:18.736	ClickAndDraw GBPUSD,M30: initialized
+0	20:12:20.355	Quick Style GBPUSD,M30: uninit reason 3
+0	20:12:20.360	OHLC Magnet GBPUSD,M30: uninit reason 3
+0	20:12:20.360	Watermark Symbol GBPUSD,M30: uninit reason 3
+0	20:12:20.360	Trading box Technical analysis GBPUSD,M30: uninit reason 3
+0	20:12:20.360	Show Pips GBPUSD,M30: uninit reason 3
+0	20:12:20.360	ICT Asian_Range GBPUSD,M30: deinitialized
+0	20:12:20.360	ICT Asian_Range GBPUSD,M30: uninit reason 3
+0	20:12:20.360	Time Range Separator GBPUSD,M30: uninit reason 3
+0	20:12:20.360	Bigger TF OHLC dvl BTE Button GBPUSD,M30: uninit reason 3
+0	20:12:20.361	Separator TD v2 GBPUSD,M30: uninit reason 3
+0	20:12:20.361	ClickAndDraw GBPUSD,M30: uninit reason 3
+0	20:12:20.374	Quick Style GBPUSD,M15: 0
+0	20:12:20.374	Quick Style GBPUSD,M15: 0
+0	20:12:20.375	Quick Style GBPUSD,M15: 1
+0	20:12:20.375	Quick Style GBPUSD,M15: 1
+0	20:12:20.375	Quick Style GBPUSD,M15: 2
+0	20:12:20.375	Quick Style GBPUSD,M15: initialized
+0	20:12:20.375	OHLC Magnet GBPUSD,M15: initialized
+0	20:12:20.375	Watermark Symbol GBPUSD,M15: initialized
+0	20:12:20.376	Trading box Technical analysis GBPUSD,M15: initialized
+0	20:12:20.377	Show Pips GBPUSD,M15: initialized
+0	20:12:20.377	ICT Asian_Range GBPUSD,M15: initialized
+0	20:12:20.377	Time Range Separator GBPUSD,M15: initialized
+0	20:12:20.377	Bigger TF OHLC dvl BTE Button GBPUSD,M15: initialized
+0	20:12:20.377	Separator TD v2 GBPUSD,M15: initialized
+0	20:12:20.377	ClickAndDraw GBPUSD,M15: initialized
+0	20:12:21.095	Quick Style GBPUSD,M15: uninit reason 3
+0	20:12:21.098	OHLC Magnet GBPUSD,M15: uninit reason 3
+0	20:12:21.098	Watermark Symbol GBPUSD,M15: uninit reason 3
+0	20:12:21.098	Trading box Technical analysis GBPUSD,M15: uninit reason 3
+0	20:12:21.098	Show Pips GBPUSD,M15: uninit reason 3
+0	20:12:21.098	ICT Asian_Range GBPUSD,M15: deinitialized
+0	20:12:21.098	ICT Asian_Range GBPUSD,M15: uninit reason 3
+0	20:12:21.098	Time Range Separator GBPUSD,M15: uninit reason 3
+0	20:12:21.098	Bigger TF OHLC dvl BTE Button GBPUSD,M15: uninit reason 3
+0	20:12:21.099	Separator TD v2 GBPUSD,M15: uninit reason 3
+0	20:12:21.099	ClickAndDraw GBPUSD,M15: uninit reason 3
+0	20:12:21.113	Quick Style GBPUSD,M5: 0
+0	20:12:21.113	Quick Style GBPUSD,M5: 0
+0	20:12:21.114	Quick Style GBPUSD,M5: 1
+0	20:12:21.114	Quick Style GBPUSD,M5: 1
+0	20:12:21.114	Quick Style GBPUSD,M5: 2
+0	20:12:21.114	Quick Style GBPUSD,M5: initialized
+0	20:12:21.114	OHLC Magnet GBPUSD,M5: initialized
+0	20:12:21.114	Watermark Symbol GBPUSD,M5: initialized
+0	20:12:21.115	Trading box Technical analysis GBPUSD,M5: initialized
+0	20:12:21.116	Show Pips GBPUSD,M5: initialized
+0	20:12:21.116	ICT Asian_Range GBPUSD,M5: initialized
+0	20:12:21.116	Time Range Separator GBPUSD,M5: initialized
+0	20:12:21.116	Bigger TF OHLC dvl BTE Button GBPUSD,M5: initialized
+0	20:12:21.116	Separator TD v2 GBPUSD,M5: initialized
+0	20:12:21.116	ClickAndDraw GBPUSD,M5: initialized
+0	20:23:36.139	Trading box Technical analysis GBPUSD,M5: Alert: GBPUSD  1.23042  Price touched support - M5 BSL
