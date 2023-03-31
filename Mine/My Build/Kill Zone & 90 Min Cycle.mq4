@@ -9,7 +9,7 @@
 #property version   "1.00"
 #property strict
 #property indicator_chart_window
-#property indicator_buffers 3
+#property indicator_buffers 4
 
 extern bool ShowAll               = FALSE;             //Show All Day (Kill Zone):
 extern bool ShowAll90Min          = FALSE;             //Show All Day (90 Min Cycle):
@@ -22,12 +22,14 @@ extern color Line_Color           = clrWhite;          //VLine Color:
 extern ENUM_LINE_STYLE linestyle  = STYLE_DOT;         //VLine Style:
 extern color clr90min             = clrBlack;          //90 Min Cycle Color:
 
+extern color clrasia              = clrLightSalmon;     //LoKZ Color:
 extern color clrlondonkz          = clrDodgerBlue;     //LoKZ Color:
 extern color clrnykz              = clrDarkOrange;     //NYKZ Color:
 
 double trendBuffer[], tmpTrendValue;
 double londonBuffer[], tmpLondonValue;
 double nyBuffer[], tmpNyValue;
+double asiaBuffer[], tmpAsiaValue;
 
 string stDy[]   = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
 string iName    = "Kill Zone & 90 Min Cycle";
@@ -48,6 +50,10 @@ int init()
     SetIndexBuffer(2, nyBuffer);
     SetIndexStyle(2, DRAW_LINE, 0, 1, clrnykz);
     SetIndexEmptyValue(2, 0.0);
+
+    SetIndexBuffer(3, asiaBuffer);
+    SetIndexStyle(3, DRAW_LINE, 0, 1, clrasia);
+    SetIndexEmptyValue(3, 0.0);
 //----
    return(INIT_SUCCEEDED);
 }
@@ -105,6 +111,13 @@ int OnCalculate(const int rates_total,
             Sett(Text(0, getTextSeparator(getSeparatorTime()), 0, getSeparatorTime(), getLowestYPos(), getDayName(getSeparatorTime()), "Arial", 8, Line_Color, 90));
         }
 
+        if (!currentTimeIsWeekend() && TimeCurrent() >= getAsiaOpenTime()) {
+            tmpAsiaValue = open[getBarIndex(getAsiaOpenTime())];
+            Sett(Text(0, getTextAsiaTrend(), 0, getAsiaOpenTime(), tmpAsiaValue, "Asia Open", "Arial", 7, clrasia));
+            for (int i = getBarIndex(getAsiaOpenTime()); i >= (getBarIndex(getSeparatorTime()) == NULL ? 0 : getBarIndex(getSeparatorTime())); i--) {
+                asiaBuffer[i] = tmpAsiaValue;
+            }
+        }
 
         if (!currentTimeIsWeekend() && TimeCurrent() >= getSeparatorTime()) {
             tmpTrendValue = open[getBarIndex(getSeparatorTime())];
@@ -409,6 +422,9 @@ datetime get11AMTime() {
     return StrToTime(string(TimeYear(TimeCurrent())) + "." + string(TimeMonth(TimeCurrent())) + "." + string(TimeDay(TimeCurrent())) + " 0" + string(HourTime + 11) + ":00:00");
 }
 //+--------------------
+string getLineAsiaOpen(datetime waktu) {
+     return "VLine Asia Open-" + string(waktu);
+}
 string getLineSeparator(datetime waktu) {
      return "VLine Separator-" + string(waktu);
 }
@@ -429,6 +445,9 @@ string getLineLondonClose(datetime waktu) {
 }
 string getLineNYLaunch(datetime waktu) {
     return "VLine NY Launch-" + string(waktu);
+}
+string getTextAsiaOpen(datetime waktu) {
+     return "Text Asia Open-" + string(waktu);
 }
 string getTextSeparator(datetime waktu) {
      return "Text Separator-" + string(waktu);
@@ -451,6 +470,9 @@ string getTextLondonClose(datetime waktu) {
 string getTextNYLaunch(datetime waktu) {
     return "Text NY Launch-" + string(waktu);
 }
+string getTextAsiaTrend() {
+    return "Text Trend Asia";
+}
 string getTextTrend() {
     return "Text Trend Separator";
 }
@@ -459,6 +481,9 @@ string getTextLondonTrend() {
 }
 string getTextNyTrend() {
     return "Text Trend New York";
+}
+datetime getAsiaOpenTime() {
+    return StrToTime(string(TimeYear(TimeCurrent())) + "." + string(TimeMonth(TimeCurrent())) + "." + string(TimeDay(TimeCurrent())) + " 0" + string(HourTime - 4) + ":00:00");
 }
 datetime getSeparatorTime() {
     return StrToTime(string(TimeYear(TimeCurrent())) + "." + string(TimeMonth(TimeCurrent())) + "." + string(TimeDay(TimeCurrent())) + " 0" + string(HourTime) + ":00:00");
