@@ -38,10 +38,11 @@ void start()
       TrendTime = Time[0];     
    }
   
-  for(int i = ObjectsTotal()-1; i >= 0; i--)
-       if(ObjectType(ObjectName(i)) == OBJ_TREND)
-       ObjectSet(ObjectName(i), OBJPROP_PRICE2, ObjectGetDouble(0,ObjectName(i),OBJPROP_PRICE1))
-        ;
+    for(int i = ObjectsTotal()-1; i >= 0; i--) {
+        if(ObjectType(ObjectName(i)) == OBJ_TREND) {
+            ObjectSet(ObjectName(i), OBJPROP_PRICE2, ObjectGetDouble(0,ObjectName(i),OBJPROP_PRICE1));
+        }
+    }
 
  }
 

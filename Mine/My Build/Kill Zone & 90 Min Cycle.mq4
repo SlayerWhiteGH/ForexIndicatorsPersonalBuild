@@ -54,6 +54,8 @@ int init()
     SetIndexBuffer(3, asiaBuffer);
     SetIndexStyle(3, DRAW_LINE, 0, 1, clrasia);
     SetIndexEmptyValue(3, 0.0);
+
+
 //----
    return(INIT_SUCCEEDED);
 }
@@ -213,7 +215,7 @@ int OnCalculate(const int rates_total,
             for (int i = 0; i < rates_total; i++){
                 if (beforeToday(time[i])) {
                     // Before Today
-                    if (TimeHour(time[i]) == HourTime){
+                    if (TimeHour(time[i]) == HourTime && TimeMinute(time[i]) == 0){
                         if (ObjectFind(0, getLineSeparator(time[i])) == -1){
                             Sett(VLineCreate(0, getLineSeparator(time[i]), 0, time[i], Line_Color, linestyle));
                         }
@@ -221,7 +223,7 @@ int OnCalculate(const int rates_total,
                             Sett(Text(0, getTextSeparator(time[i]), 0, time[i], getLowestYPos(), getDayName(time[i]), "Arial", 8, Line_Color, 90));
                         }
                     }
-                    else if (TimeHour(time[i]) == TimeHour(getLondonOpenTime())){
+                    else if (TimeToStr(time[i], TIME_SECONDS) == TimeToStr(getLondonOpenTime(), TIME_SECONDS)){
                         if (ObjectFind(0, getLineLondonOpen(time[i])) == -1){
                             Sett(VLineCreate(0, getLineLondonOpen(time[i]), 0, time[i], clrlondonkz, 2, 1));
                         }
@@ -229,33 +231,33 @@ int OnCalculate(const int rates_total,
                             Sett(Text(0, getTextLondonOpen(time[i]), 0, time[i], getLowestYPos(), "London KZ", "Arial", 7, clrlondonkz, 90));
                         } 
                     }
-                    else if (TimeHour(time[i]) == TimeHour(getPreNYOpenTime())){
+                    else if (TimeToStr(time[i], TIME_SECONDS) == TimeToStr(getPreNYOpenTime(), TIME_SECONDS)){
                         if (ObjectFind(0, getLinePreNYOpen(time[i])) == -1){
-                            Sett(VLineCreate(0, getLinePreNYOpen(time[i]) + "All", 0, time[i], clrlondonkz, 2, 1));
+                            Sett(VLineCreate(0, getLinePreNYOpen(time[i]), 0, time[i], clrlondonkz, 2, 1));
                         }
                         if (ObjectFind(0, getTextPreNYOpen(time[i])) == -1) {
                             Sett(Text(0, getTextPreNYOpen(time[i]), 0, time[i], getLowestYPos(), "London KZ", "Arial", 7, clrlondonkz, 90));
                         }
                     }
-                    else if (TimeHour(time[i]) == TimeHour(getNYOpenTime())){
+                    else if (TimeToStr(time[i], TIME_SECONDS) == TimeToStr(getNYOpenTime(), TIME_SECONDS)){
                         if (ObjectFind(0, getLineNYOpen(time[i])) == -1){
-                            Sett(VLineCreate(0, getLineNYOpen(time[i]) + "All", 0, time[i], clrnykz, 2, 1));
+                            Sett(VLineCreate(0, getLineNYOpen(time[i]), 0, time[i], clrnykz, 2, 1));
                         }
                         if (ObjectFind(0, getTextNYOpen(time[i])) == -1) {
                             Sett(Text(0, getTextNYOpen(time[i]), 0, time[i], getLowestYPos(), "NewYork KZ", "Arial", 7, clrnykz, 90));
                         }
                     }
-                    else if (TimeHour(time[i]) == TimeHour(getLondonCloseTime())){
+                    else if (TimeToStr(time[i], TIME_SECONDS) == TimeToStr(getLondonCloseTime(), TIME_SECONDS)){
                         if (ObjectFind(0, getLineLondonClose(time[i])) == -1){
-                            Sett(VLineCreate(0, getLineLondonClose(time[i]) + "All", 0, time[i], clrnykz, 2, 1));
+                            Sett(VLineCreate(0, getLineLondonClose(time[i]), 0, time[i], clrnykz, 2, 1));
                         }
                         if (ObjectFind(0, getTextLondonClose(time[i])) == -1) {
                             Sett(Text(0, getTextLondonClose(time[i]), 0, time[i], getLowestYPos(), "NewYork KZ", "Arial", 7, clrnykz, 90));
                         }
                     }
-                    else if (TimeHour(time[i]) == TimeHour(getNYLaunchTime())){
+                    else if (TimeToStr(time[i], TIME_SECONDS) == TimeToStr(getNYLaunchTime(), TIME_SECONDS)){
                         if (ObjectFind(0, getLineNYLaunch(time[i])) == -1){
-                            Sett(VLineCreate(0, getLineNYLaunch(time[i]) + "All", 0, time[i], clrlondonkz, 2, 1));
+                            Sett(VLineCreate(0, getLineNYLaunch(time[i]), 0, time[i], clrlondonkz, 2, 1));
                         }
                         if (ObjectFind(0, getTextNYLaunch(time[i])) == -1) {
                             Sett(Text(0, getTextNYLaunch(time[i]), 0, time[i], getLowestYPos(), "London Close KZ", "Arial", 7, clrlondonkz, 90));
@@ -272,63 +274,70 @@ int OnCalculate(const int rates_total,
                     // Before Today
                     if (TimeHour(time[i]) == HourTime && TimeMinute(time[i]) == MinuteTime){
                         if (ObjectFind(0, getLineSeparator(time[i])) == -1){
-                            Sett(VLineCreate(0, getLineSeparator(time[i]) + "All", 0, time[i], Line_Color, linestyle));
+                            Sett(VLineCreate(0, getLineSeparator(time[i]), 0, time[i], Line_Color, linestyle));
                         }
                         if (ObjectFind(0, getTextSeparator(time[i])) == -1) {
                             Sett(Text(0, getTextSeparator(time[i]), 0, time[i], getLowestYPos(), getDayName(time[i]), "Arial", 8, Line_Color, 90));
                         }
                     }
-                    else if (TimeHour(time[i]) == TimeHour(get2AMTime())){
+
+                    else if (TimeToStr(time[i], TIME_SECONDS) == TimeToStr(get2AMTime(), TIME_SECONDS)){
                         if (ObjectFind(0, getLine2AM(time[i])) == -1){
-                            Sett(VLineCreate(0, getLine2AM(time[i]) + "B", 0, time[i] , clr90min, 2, 1));
+                            Sett(VLineCreate(0, getLine2AM(time[i]), 0, time[i] , clr90min, 2, 1));
                         }
                         if (ObjectFind(0, getText2AM(time[i])) == -1) {
                             Sett(Text(0, getText2AM(time[i]), 0, time[i], getLowestYPos(), "2.00 AM", "Arial", 7, clr90min, 90));
                         } 
                     }
-                    else if (TimeHour(time[i]) == TimeHour(get330AMTime())){
+
+                    else if (TimeToStr(time[i], TIME_SECONDS) == TimeToStr(get330AMTime(), TIME_SECONDS)){
                         if (ObjectFind(0, getLine330AM(time[i])) == -1){
-                            Sett(VLineCreate(0, getLine330AM(time[i]) + "B", 0, time[i], clr90min, 2, 1));
+                            Sett(VLineCreate(0, getLine330AM(time[i]), 0, time[i], clr90min, 2, 1));
                         }
                         if (ObjectFind(0, getText330AM(time[i])) == -1) {
                             Sett(Text(0, getText330AM(time[i]), 0, time[i], getLowestYPos(), "3.30 AM", "Arial", 7, clr90min, 90));
                         }
                     }
-                    else if (TimeHour(time[i]) == TimeHour(get5AMTime())){
+
+                    else if (TimeToStr(time[i], TIME_SECONDS) == TimeToStr(get5AMTime(), TIME_SECONDS)){
                         if (ObjectFind(0, getLine5AM(time[i])) == -1){
-                            Sett(VLineCreate(0, getLine5AM(time[i]) + "B", 0, time[i], clr90min, 2, 1));
+                            Sett(VLineCreate(0, getLine5AM(time[i]), 0, time[i], clr90min, 2, 1));
                         }
                         if (ObjectFind(0, getText5AM(time[i])) == -1) {
                             Sett(Text(0, getText5AM(time[i]), 0, time[i], getLowestYPos(), "5.00 AM", "Arial", 7, clr90min, 90));
                         }
                     }
-                    else if (TimeHour(time[i]) == TimeHour(get630AMTime())){
+
+                    else if (TimeToStr(time[i], TIME_SECONDS) == TimeToStr(get630AMTime(), TIME_SECONDS)){
                         if (ObjectFind(0, getLine630AM(time[i])) == -1){
-                            Sett(VLineCreate(0, getLine630AM(time[i]) + "B", 0, time[i], clr90min, 2, 1));
+                            Sett(VLineCreate(0, getLine630AM(time[i]), 0, time[i], clr90min, 2, 1));
                         }
                         if (ObjectFind(0, getText630AM(time[i])) == -1) {
                             Sett(Text(0, getText630AM(time[i]), 0, time[i], getLowestYPos(), "6.30 AM", "Arial", 7, clr90min, 90));
                         }
                     }
-                    else if (TimeHour(time[i]) == TimeHour(get8AMTime())){
+
+                    else if (TimeToStr(time[i], TIME_SECONDS) == TimeToStr(get8AMTime(), TIME_SECONDS)){
                         if (ObjectFind(0, getLine8AM(time[i])) == -1){
-                            Sett(VLineCreate(0, getLine8AM(time[i]) + "B", 0, time[i], clr90min, 2, 1));
+                            Sett(VLineCreate(0, getLine8AM(time[i]), 0, time[i], clr90min, 2, 1));
                         }
                         if (ObjectFind(0, getText8AM(time[i])) == -1) {
                             Sett(Text(0, getText8AM(time[i]), 0, time[i], getLowestYPos(), "8.00 AM", "Arial", 7, clr90min, 90));
                         }
                     }
-                    else if (TimeHour(time[i]) == TimeHour(get930AMTime())){
+
+                    else if (TimeToStr(time[i], TIME_SECONDS) == TimeToStr(get930AMTime(), TIME_SECONDS)){
                         if (ObjectFind(0, getLine930AM(time[i])) == -1){
-                            Sett(VLineCreate(0, getLine930AM(time[i]) + "B", 0, time[i], clr90min, 2, 1));
+                            Sett(VLineCreate(0, getLine930AM(time[i]), 0, time[i], clr90min, 2, 1));
                         }
                         if (ObjectFind(0, getText930AM(time[i])) == -1) {
                             Sett(Text(0, getText930AM(time[i]), 0, time[i], getLowestYPos(), "9.30 AM", "Arial", 7, clr90min, 90));
                         }
                     }
-                    else if (TimeHour(time[i]) == TimeHour(get11AMTime())){
+
+                    else if (TimeToStr(time[i], TIME_SECONDS) == TimeToStr(get11AMTime(), TIME_SECONDS)){
                         if (ObjectFind(0, getLine11AM(time[i])) == -1){
-                            Sett(VLineCreate(0, getLine11AM(time[i]) + "B", 0, time[i], clr90min, 2, 1));
+                            Sett(VLineCreate(0, getLine11AM(time[i]), 0, time[i], clr90min, 2, 1));
                         }
                         if (ObjectFind(0, getText11AM(time[i])) == -1) {
                             Sett(Text(0, getText11AM(time[i]), 0, time[i], getLowestYPos(), "11.00 AM", "Arial", 7, clr90min, 90));
@@ -349,7 +358,7 @@ int OnCalculate(const int rates_total,
 }
 //+--------------------
 bool beforeToday(datetime waktu) {
-    return TimeMinute(waktu) == 0 && TimeHour(waktu) >= HourTime && waktu <= getCurrentTime();
+    return waktu < getCurrentTime();
 }
 bool afterToday(datetime waktu) {
    return waktu > getCurrentTime();
@@ -513,7 +522,9 @@ bool isValidTimeframe() {
     return Period() <= PERIOD_M15;
 }
 datetime getCurrentTime() {
-    return TimeLocal() - (24*60*60); 
+    string dateCurrent = TimeToStr(TimeCurrent(), TIME_DATE);
+    string time = " 00:00:00";
+    return StrToTime(dateCurrent + time);
 }
 //double getLowestYPos() {
 //    return Low[iLowest(Symbol(), PERIOD_CURRENT, MODE_LOW, WindowFirstVisibleBar())];
