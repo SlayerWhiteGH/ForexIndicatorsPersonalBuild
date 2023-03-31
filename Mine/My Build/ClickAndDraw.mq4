@@ -45,6 +45,7 @@ datetime mTime = 0, mTime2 = 0;
 double mPrice = 0, mPrice2 = 0;
 
 string objName;
+bool objSelected;
 double objLastPrice1;
 double objLastPrice2;
 
@@ -104,7 +105,7 @@ void OnChartEvent(const int id,         // Event ID
                 createLabel(StyleKey);
 
                 mFlat = true;
-                createLabel(FlatKey);
+                deleteLabel(FlatKey);
             }
             else {
                 deleteLabel(TrendlineKey);
@@ -113,9 +114,6 @@ void OnChartEvent(const int id,         // Event ID
                     mRay = false;
                     deleteLabel(RayKey);
                 }
-
-                mFlat = false;
-                deleteLabel(FlatKey);
             }
         }
 
@@ -134,7 +132,7 @@ void OnChartEvent(const int id,         // Event ID
 
                 mFlat = false;
                 mRay = false;
-                deleteLabel(FlatKey);
+                createLabel(FlatKey);
                 deleteLabel(RayKey);
             }
             else {
@@ -159,10 +157,10 @@ void OnChartEvent(const int id,         // Event ID
             if (!mDrawRectangle) {
                 mFlat = !mFlat;
                 if (mFlat) {
-                    createLabel(FlatKey);
+                    deleteLabel(FlatKey);
                 }
                 else {
-                    deleteLabel(FlatKey);
+                    createLabel(FlatKey);
                 }
             }
         }
@@ -238,11 +236,6 @@ void OnChartEvent(const int id,         // Event ID
                         mRay = false;
                         deleteLabel(RayKey);
                     }
-
-                    if (mFlat) {
-                        mFlat = false;
-                        deleteLabel(FlatKey);
-                    }
                 }
                 if (mDrawRectangle) {
                     ObjectCreate("m.DataR"+IntegerToString(TimeLocal()), OBJ_RECTANGLE, 0, mTime, mPrice, mTime2, mPrice2);
@@ -261,6 +254,17 @@ void OnChartEvent(const int id,         // Event ID
             mPrice = 0;
             mPrice2 = 0;    
         }
+
+        if (objSelected) {
+            if (ObjectGet(objName, OBJPROP_SELECTED) == false) {
+                if (!mFlat) {
+                    mFlat = true;
+                    deleteLabel(FlatKey);
+                }
+
+                objSelected = false;
+            }
+        }
     } 
 
     if (id == CHARTEVENT_OBJECT_CLICK) {
@@ -268,6 +272,14 @@ void OnChartEvent(const int id,         // Event ID
         double currPrice1 = ObjectGet(sparam, OBJPROP_PRICE1);
         double currPrice2 = ObjectGet(sparam, OBJPROP_PRICE2);
         setObjPrice(currPrice1, currPrice2);
+        setObjSelected(true);
+
+        if (ObjectGet(sparam, OBJPROP_TYPE) == OBJ_RECTANGLE) {
+            if (mFlat) {
+                mFlat = false;
+                createLabel(FlatKey);
+            }
+        }
     }
 
     if (id == CHARTEVENT_OBJECT_DRAG) {
@@ -290,6 +302,10 @@ void setObjPrice(double price1, double price2) {
     objLastPrice2 = price2;
 }
 
+void setObjSelected(bool isSelected) {
+    objSelected = isSelected;
+}
+
 void createLabel(KEYS_ON_KEYBOARD key) {
     string name = key == TrendlineKey ? "Trendline"
                     : key == RectangleKey ? "Rectangle"
@@ -304,7 +320,18 @@ void createLabel(KEYS_ON_KEYBOARD key) {
                     : 40;
     
     ObjectCreate(name + " Label", OBJ_LABEL, 0, 0, 0);
-    ObjectSetText(name + " Label", name + (key == StyleKey ? (mStyle == 0 ? " : Solid" : mStyle == 1 ? " : Dash" : rectangleAsBackground ? " : ON" : " : OFF") : " : ON"), TextFontSize, TextFont, TextColor);
+    ObjectSetText(
+        name + " Label", 
+        name + (
+            key == StyleKey ? (
+                mStyle == 0 ? " : Solid" 
+                : mStyle == 1 ? " : Dash" 
+                : rectangleAsBackground ? " : ON" 
+                : " : OFF"
+            ) 
+            : key == FlatKey ? " : OFF"
+            : " : ON"
+        ), TextFontSize, TextFont, TextColor);
     ObjectSet(name + " Label", OBJPROP_CORNER, 3);
     ObjectSet(name + " Label", OBJPROP_XDISTANCE, 15);
     ObjectSet(name + " Label", OBJPROP_YDISTANCE, yDistance);
