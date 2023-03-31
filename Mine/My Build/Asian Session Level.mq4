@@ -120,12 +120,12 @@ int OnCalculate(const int rates_total,
             iterator++;
         }
         if (isEndTime(i)){
-            int highest = iHighest(Symbol(), PERIOD_CURRENT, MODE_HIGH, iterator, i);
-            int lowest = iLowest(Symbol(), PERIOD_CURRENT, MODE_LOW, iterator, i);
+            int highest = iHighest(Symbol(), Period(), MODE_HIGH, iterator, i);
+            int lowest = iLowest(Symbol(), Period(), MODE_LOW, iterator, i);
             double range = (high[highest] - low[lowest]);
 
-            /*for(int j=startingPoint; j>startingPoint-iterator; j--)*/
-              for(int j=startingPoint; j>=0; j--){
+            //for(int j=startingPoint; j>startingPoint-iterator; j--)
+            for(int j=startingPoint; j>=0; j--){
                 if (TimeHour(time[j]) >= StartTime && TimeHour(time[j]) < EndTime){
                     HighBuffer[j] = high[highest];
                     LowBuffer[j] = low[lowest];
@@ -145,7 +145,9 @@ int OnCalculate(const int rates_total,
             iterator = 0;
         }
     }
-    
+
+
+
     return 0;
 }
 
