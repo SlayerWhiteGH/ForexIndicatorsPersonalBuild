@@ -1428,3 +1428,70 @@
 0	02:42:48.899	Custom indicator Mine\My Build\ClickAndDraw EURUSD,M5: loaded successfully
 0	02:42:48.910	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle EURUSD,M5: loaded successfully
 0	02:42:48.920	Custom indicator Mine\Background Indicator\CandleTime EURUSD,M5: loaded successfully
+0	19:54:40.363	Compiling 'CDS EA FracPSarMA 1b'
+0	19:54:40.364	Compiling 'Position Sizer'
+0	19:54:43.121	Compiling 'Awptic'
+0	19:54:43.121	Compiling 'Drawing Tools'
+0	19:54:43.123	Compiling 'PositionSizeCalculator'
+0	19:54:43.123	Compiling 'Average Daily Range V4.1'
+0	19:54:43.124	Compiling 'candlestick'
+0	19:54:43.124	Compiling 'Trading Session vLines'
+0	19:54:43.125	Compiling '!BBMA OA MTF 2022'
+0	19:54:43.125	Compiling '!BBMA KG N.G 2022'
+0	19:54:43.125	Compiling '!BBMA MATrend N v7.0'
+0	19:54:43.125	Compiling '!BBMA MATrick Modified 2023 v3'
+0	19:54:43.125	Compiling '!BBMA MATrick N.G 2022 v1'
+0	19:54:43.126	Compiling '!BBMA MATrick N.G 2022 v3'
+0	19:54:43.126	Compiling '!BBMA OA 2022'
+0	19:54:43.126	Compiling '!BBMA MATrick Modified 2023 v3'
+0	19:54:43.126	Compiling '!BBMA MATrick Modified N.G 2022'
+0	19:54:43.126	Compiling '!BBMA MATrick N.G 2022 v3'
+0	19:54:43.126	Compiling '!BBMA OA v1'
+0	19:54:43.127	Compiling '!BBMA Periode 40'
+0	19:54:43.127	Compiling '!AML MABB MULTI 3 PERIOD 2020'
+0	19:54:43.127	Compiling '!BBMA MARS N.G 2022'
+0	19:54:43.127	Compiling '!BBMA MATrick Modified N.G 2022'
+0	19:54:43.128	Compiling '!BBMA MATrick N.G 2022 Test'
+0	19:54:43.128	Compiling '!BySu-Fx SIMPLE BBMA V1.0b (1)'
+0	19:54:43.128	Compiling 'Button !BBMA MATrick'
+0	19:54:43.130	Compiling 'Daily LinesBoxes'
+0	19:54:43.130	Compiling 'Separator Time'
+0	19:54:43.132	Compiling 'ICT Tools v2.23'
+0	19:54:43.132	Compiling 'InsideBars'
+0	19:54:43.132	Compiling 'Trading Sessions Trade'
+0	19:54:43.133	Compiling 'ClickAndDraw'
+0	19:54:43.133	Compiling 'Separator TD v2'
+0	19:54:43.133	Compiling 'FOP Line'
+0	19:54:43.134	Compiling '_KG_Market_Hours'
+0	19:55:03.317	Compiling '00-Scr-ObjectCopier_PASTE5'
+0	19:55:04.249	Compiling 'stdlib'
+0	19:55:06.575	Custom indicator Mine\ICT\ICT Asian_Range DXY,M15: loaded successfully
+0	19:55:06.589	Custom indicator Mine\Daily Open\Bigger TF OHLC dvl BTE Button DXY,M15: loaded successfully
+0	19:55:06.602	Custom indicator Mine\My Build\Separator TD v2 DXY,M15: loaded successfully
+0	19:55:06.615	Custom indicator Mine\My Build\ClickAndDraw DXY,M15: loaded successfully
+0	19:55:06.631	ICT Asian_Range DXY,M15: initialized
+0	19:55:06.663	Bigger TF OHLC dvl BTE Button DXY,M15: initialized
+0	19:55:06.730	Separator TD v2 DXY,M15: initialized
+0	19:55:06.758	ClickAndDraw DXY,M15: initialized
+0	19:55:06.930	Custom indicator Mine\ICT\ICT Asian_Range GBPUSD,M5: loaded successfully
+0	19:55:06.949	Custom indicator Mine\Daily Open\Bigger TF OHLC dvl BTE Button GBPUSD,M5: loaded successfully
+0	19:55:06.965	Custom indicator Mine\My Build\Separator TD v2 GBPUSD,M5: loaded successfully
+0	19:55:06.984	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M5: loaded successfully
+0	19:55:07.004	ICT Asian_Range GBPUSD,M5: initialized
+0	19:55:07.056	Bigger TF OHLC dvl BTE Button GBPUSD,M5: initialized
+0	19:55:07.149	Separator TD v2 GBPUSD,M5: initialized
+0	19:55:07.187	ClickAndDraw GBPUSD,M5: initialized
+0	19:55:07.340	Custom indicator Mine\ICT\ICT Asian_Range XAUUSD,Daily: loaded successfully
+0	19:55:07.352	Custom indicator Mine\Daily Open\Bigger TF OHLC dvl BTE Button XAUUSD,Daily: loaded successfully
+0	19:55:07.365	Custom indicator Mine\My Build\Separator TD v2 XAUUSD,Daily: loaded successfully
+0	19:55:07.379	Custom indicator Mine\My Build\ClickAndDraw XAUUSD,Daily: loaded successfully
+0	19:55:07.386	ICT Asian_Range XAUUSD,Daily: initialized
+0	19:55:07.419	Bigger TF OHLC dvl BTE Button XAUUSD,Daily: initialized
+0	19:55:07.489	Separator TD v2 XAUUSD,Daily: initialized
+0	19:55:07.519	ClickAndDraw XAUUSD,Daily: initialized
+0	19:55:07.565	Custom indicator Mine\My Build\ClickAndDraw AUDUSD,M15: loaded successfully
+0	19:55:07.578	Custom indicator Drawing Tools AUDUSD,M15: loaded successfully
+0	19:55:07.599	Custom indicator Mine\RTM\Ouro Drawing AUDUSD,M15: loaded successfully
+0	19:55:07.644	ClickAndDraw AUDUSD,M15: initialized
+0	19:55:07.676	Drawing Tools AUDUSD,M15: initialized
+0	19:55:07.899	Ouro Drawing AUDUSD,M15: initialized
