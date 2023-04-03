@@ -23,10 +23,10 @@ input color clrSeparator           = clrWhite;          // VLine Color:
 input ENUM_LINE_STYLE lineStyle  = STYLE_DOT;           // VLine Style:
 input color clr90min             = clrBlack;            // 90 Min Cycle Color:
 
-input color clrAsia              = clrLightSalmon;      // LoKZ Color:
-input color clrLondonKz          = clrDodgerBlue;       // LoKZ Color:
-input color clrNyKz              = clrDarkOrange;       // NYKZ Color:
-input int fontSize               = 8;                     // Text Font Size:
+input color clrAsia              = clrLightSalmon;      // Asia Color:
+input color clrLondonKz          = clrDodgerBlue;       // London Color:
+input color clrNyKz              = clrDarkOrange;       // New York Color:
+input int fontSize               = 7;                     // Text Font Size:
 
 double trendBuffer[], tmpTrendValue;
 double londonBuffer[], tmpLondonValue;
@@ -37,8 +37,8 @@ double textAngle = 90;
 string stDy[]   = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
 string asiaOpen = "Asia Open";
 string mop = "MOP";
-string london[] = {"London Session 1 Start", "London Session 1 Stop", "London Session 2 Start", "London Session 2 Stop"};
-string newYork[] = {"NewYork Start", "8.30 AM", "NewYork Stop"};
+string london[] = {"London Open", "5 AM - London", "London Close", "12 PM - London Close"};
+string newYork[] = {"NY Open", "8.30 AM", "10 AM - NY"};
 string ninetyMinutesCycle[] = {"2.00 AM", "3.30 AM", "5.00 AM", "6.30 AM", "8.00 AM", "9.30 AM", "11.00 AM"};
 string iName    = "KZ&90MC";
 string objName;
@@ -135,55 +135,18 @@ int OnCalculate(const int rates_total,
             Sett(Text(objName, getDateTimeSeparator(), lowestYPos, getDayName(getCurrentTime()), fontSize, clrSeparator, textAngle));
         }
 
-        // Trendline Text Asia Open and Buffer Initialization
-        // Jumlah hari sesuai sama lookback
-        for (int i = lookback; i > 0; i--) {
-            dt = getDateTimeAsiaOpen() - (oneDay * i);
-            if (!currentTimeIsWeekend(dt)) {
-                startIndex = getBarIndex(dt);
-                stopIndex = getBarIndex(getDateTimeSeparator() - (oneDay * i));
-                tmpAsiaValue = open[startIndex];
-
-                objName = "TT " + asiaOpen + " " + string(dt);
-                if (!findObject(objName)) {
-                    Sett(Text(objName, dt, tmpAsiaValue, asiaOpen, fontSize, clrAsia));        
-                }
-
-                for (int j = startIndex; j >= stopIndex; j--) {
-                    asiaBuffer[j] = tmpAsiaValue;
-                }
-            }
-        }
-        // Ini 1 hari doang
+        // Ini 1 hari Asia Open
+        objName = "TT " + asiaOpen + " " + string(getDateTimeAsiaOpen());
         startIndex = getBarIndex(getDateTimeAsiaOpen());
         stopIndex = getBarIndex(getDateTimeSeparator());
         tmpAsiaValue = open[startIndex];
-        objName = "TT " + asiaOpen + " " + string(getDateTimeAsiaOpen());
         Sett(Text(objName, getDateTimeAsiaOpen(), tmpAsiaValue, asiaOpen, fontSize, clrAsia));
         for (int i = startIndex; i >= (stopIndex == NULL ? 0 : stopIndex); i--) {
             asiaBuffer[i] = tmpAsiaValue;
         }
 
-        // Trendline Text Separator and Buffer Initialization
-        // Jumlah hari sesuai sama lookback
-        for (int i = lookback; i > 0; i--) {
-            dt = getDateTimeSeparator() - (oneDay * i);
-            if (!currentTimeIsWeekend(dt)) {
-                startIndex = getBarIndex(dt);
-                stopIndex = getBarIndex(dt + oneDay);
-                tmpTrendValue = open[startIndex];
-                
-                objName = "TT " + mop + " " + string(dt);
-                if (!findObject(objName)) {
-                    Sett(Text(objName, dt, tmpTrendValue, mop, fontSize, clrSeparator));
-                }
-                
-                for (int j = startIndex; j > stopIndex; j--) {
-                    trendBuffer[j] = tmpTrendValue;
-                }
-            }
-        }
-        // Ini 1 hari doang
+
+        // Ini 1 hari MOP
         objName = "TT " + mop + " " + string(getDateTimeSeparator());
         startIndex = getBarIndex(getDateTimeSeparator());
         stopIndex = 0;
@@ -191,6 +154,128 @@ int OnCalculate(const int rates_total,
         Sett(Text(objName, getDateTimeSeparator(), tmpTrendValue, mop, fontSize, clrSeparator));
         for (int i = startIndex; i >= stopIndex; i--) {
             trendBuffer[i] = tmpTrendValue;
+        }
+
+
+        if (ShowAll || ShowAll90Min) {
+            datetime dtStop;
+
+            for (int i = 1; i <= lookback; i++) {
+                dt = getDateTimeSeparator() - (oneDay * i);
+                if (!currentTimeIsWeekend(dt)) {
+                    // Separator VLine
+                    objName = "VL " + getDayName(dt) + " " + string(dt);
+                    if (!findObject(objName)) {
+                        Sett(VLineCreate(objName, dt, clrSeparator, 2, 1));
+                    }
+                    // Separator VLine Text
+                    objName = "VLT " + getDayName(dt) + " " + string(dt);
+                    if (!findObject(objName)) {
+                        Sett(Text(objName, dt, lowestYPos, getDayName(dt), fontSize, clrSeparator, textAngle));
+                    }
+                }
+            }
+
+            // Trendline Text Asia Open
+            // Jumlah hari sesuai sama lookback
+            for (int i = lookback; i > 0; i--) {
+                dt = getDateTimeAsiaOpen() - (oneDay * i);
+                dtStop = getDateTimeSeparator() - (oneDay * i);
+                if (!currentTimeIsWeekend(dt)) {
+                    startIndex = getBarIndex(dt);
+                    stopIndex = getBarIndex(dtStop);
+                    //tmpAsiaValue = open[startIndex];
+
+                    if (startIndex >= 0 && stopIndex >= 0 && startIndex < ArraySize(asiaBuffer) && stopIndex < ArraySize(asiaBuffer)) {
+                    tmpAsiaValue = open[startIndex];
+
+                        objName = "TT " + asiaOpen + " " + string(dt);
+                        if (!findObject(objName)) {
+                            Sett(Text(objName, dt, tmpAsiaValue, asiaOpen, fontSize, clrAsia));        
+                        }
+
+                        for (int j = startIndex; j >= stopIndex; j--) {
+                            asiaBuffer[j] = tmpAsiaValue;
+                        }
+                    }
+                }
+            }
+
+            // Trendline Text Separator/MOP
+            // Jumlah hari sesuai sama lookback
+            for (int i = lookback; i > 0; i--) {
+                dt = getDateTimeSeparator() - (oneDay * i);
+                dtStop = getDateTimeSeparator() - (oneDay * i) + oneDay;
+                if (!currentTimeIsWeekend(dt)) {
+                    startIndex = getBarIndex(dt);
+                    stopIndex = getBarIndex(dtStop);
+                    //tmpTrendValue = open[startIndex];
+
+                    if (startIndex >= 0 && stopIndex >= 0 && startIndex < ArraySize(trendBuffer) && stopIndex < ArraySize(trendBuffer)) {
+                    tmpTrendValue = open[startIndex];
+                    
+                        objName = "TT " + mop + " " + string(dt);
+                        if (!findObject(objName)) {
+                            Sett(Text(objName, dt, tmpTrendValue, mop, fontSize, clrSeparator));
+                        }
+                        
+                        for (int j = startIndex; j > stopIndex; j--) {
+                            trendBuffer[j] = tmpTrendValue;
+                        }
+                    }
+                }
+            }
+
+            // London Buffer
+            // Jumlah hari sesuai sama lookback
+            for (int i = lookback; i > 0; i--) {
+                dt = getDateTimeLondonSession1Start() - (oneDay * i);
+                dtStop = getDateTimeLondonSession1Stop() - (oneDay * i);
+                if (!currentTimeIsWeekend(dt)) {
+                    startIndex = getBarIndex(dt);
+                    stopIndex = getBarIndex(dtStop);
+                    //tmpLondonValue = open[startIndex];
+
+                    if (startIndex >= 0 && stopIndex >= 0 && startIndex < ArraySize(londonBuffer) && stopIndex < ArraySize(londonBuffer)) {
+                    tmpLondonValue = open[startIndex];
+
+                        objName = "TT " + london[0] + " " + string(dt);
+                        if (!findObject(objName)) {
+                            Sett(Text(objName, dt, tmpLondonValue, london[0], fontSize, clrLondonKz));        
+                        }
+
+                        for (int j = startIndex; j >= stopIndex; j--) {
+                            londonBuffer[j] = tmpLondonValue;
+                        }
+                    }
+                }
+            }
+
+            // New York Buffer
+            // Jumlah hari sesuai sama lookback
+            for (int i = lookback; i > 0; i--) {
+                dt = getDateTimeNewYorkStart() - (oneDay * i);
+                dtStop = getDateTimeNewYorkStop() - (oneDay * i);
+                if (!currentTimeIsWeekend(dt)) {
+                    startIndex = getBarIndex(dt);
+                    stopIndex = getBarIndex(dtStop);
+                    //tmpNyValue = open[startIndex];
+
+                    if (startIndex >= 0 && stopIndex >= 0 && startIndex < ArraySize(nyBuffer) && stopIndex < ArraySize(nyBuffer)) {
+                    tmpNyValue = open[startIndex];
+
+                        objName = "TT " + newYork[0] + " " + string(dt);
+                        if (!findObject(objName)) {
+                            Sett(Text(objName, dt, tmpNyValue, newYork[0], fontSize, clrNyKz));        
+                        }
+
+                        for (int j = startIndex; j >= stopIndex; j--) {
+                            nyBuffer[j] = tmpNyValue;
+                        }
+                    }    
+                }
+            }
+       
         }
 
         if (ShowKillZone){
@@ -202,7 +287,7 @@ int OnCalculate(const int rates_total,
             // London Session 1 Start Text
             objName = "VLT " + london[0];
             if (!findObject(objName)) {
-                Sett(Text(objName, getDateTimeLondonSession1Start(), lowestYPos, london[0], 7, clrLondonKz, textAngle));
+                Sett(Text(objName, getDateTimeLondonSession1Start(), lowestYPos, london[0], fontSize, clrLondonKz, textAngle));
             }
             
             // London Session 1 Stop Vline
@@ -213,7 +298,7 @@ int OnCalculate(const int rates_total,
             // London Session 1 Stop Text
             objName = "VLT " + london[1];
             if (!findObject(objName)) {
-                Sett(Text(objName, getDateTimeLondonSession1Stop(), lowestYPos, london[1], 7, clrLondonKz, textAngle));
+                Sett(Text(objName, getDateTimeLondonSession1Stop(), lowestYPos, london[1], fontSize, clrLondonKz, textAngle));
             }
 
             // NewYork Start VLine
@@ -224,7 +309,7 @@ int OnCalculate(const int rates_total,
             // NewYork Start Text
             objName = "VLT " + newYork[0];
             if (!findObject(objName)) {
-                Sett(Text(objName, getDateTimeNewYorkStart(), lowestYPos, newYork[0], 7, clrNyKz, textAngle));
+                Sett(Text(objName, getDateTimeNewYorkStart(), lowestYPos, newYork[0], fontSize, clrNyKz, textAngle));
             }
 
             // NewYork 8.30 AM Vline
@@ -235,7 +320,7 @@ int OnCalculate(const int rates_total,
             // NewYork 8.30 AM Text
             objName = "VLT " + newYork[1];
             if (!findObject(objName)) {
-                Sett(Text(objName, getDateTime830(), lowestYPos, newYork[1], 7, clrNyKz, textAngle));
+                Sett(Text(objName, getDateTime830(), lowestYPos, newYork[1], fontSize, clrNyKz, textAngle));
             }
 
             // NewYork Stop / London Sessian 2 Start Vline
@@ -246,7 +331,7 @@ int OnCalculate(const int rates_total,
             // NewYork Stop / London Sessian 2 Start Text
             objName = "VLT " + newYork[2];
             if (!findObject(objName)) {
-                Sett(Text(objName, getDateTimeNewYorkStop(), lowestYPos, newYork[2] + " / " + london[2], 7, clrNyKz, textAngle));
+                Sett(Text(objName, getDateTimeNewYorkStop(), lowestYPos, newYork[2] + " / " + london[2], fontSize, clrNyKz, textAngle));
             }
 
             // London Session 2 Stop Vline
@@ -257,10 +342,9 @@ int OnCalculate(const int rates_total,
             // London Session 2 Stop Text
             objName = "VLT " + london[3];
             if (!findObject(objName)) {
-                Sett(Text(objName, getDateTimeLondonSession2Stop(), lowestYPos, london[3], 7, clrLondonKz, textAngle));
+                Sett(Text(objName, getDateTimeLondonSession2Stop(), lowestYPos, london[3], fontSize, clrLondonKz, textAngle));
             }
         } 
-
 
         if (Show90Min){
             // 2.00 AM VLine
@@ -341,90 +425,30 @@ int OnCalculate(const int rates_total,
             }
         }
 
-
         // London and New York Trendlines
         if (ShowLondonNewYork) {
-            datetime dtStop;
-            // London Buffer
-            // Jumlah hari sesuai sama lookback
-            for (int i = lookback; i > 0; i--) {
-                dt = getDateTimeLondonSession1Start() - (oneDay * i);
-                dtStop = getDateTimeLondonSession1Stop() - (oneDay * i);
-                if (!currentTimeIsWeekend(dt)) {
-                    startIndex = getBarIndex(dt);
-                    stopIndex = getBarIndex(dtStop);
-                    tmpLondonValue = open[startIndex];
-
-                    objName = "TT " + london[0] + " " + string(dt);
-                    if (!findObject(objName)) {
-                        Sett(Text(objName, dt, tmpLondonValue, london[0], fontSize, clrLondonKz));        
-                    }
-
-                    for (int j = startIndex; j >= stopIndex; j--) {
-                        londonBuffer[j] = tmpLondonValue;
-                    }
-                }
-            }
-            // Ini 1 hari doang (hari ini)
+            // Ini 1 hari London (hari ini)
             startIndex = getBarIndex(getDateTimeLondonSession1Start());
             stopIndex = getBarIndex(getDateTimeLondonSession1Stop());
             tmpLondonValue = open[startIndex];
             objName = "TT " + london[0] + " " + string(getDateTimeLondonSession1Start());
             if (!findObject(objName)) {
-                Sett(Text(objName, getDateTimeLondonSession1Start(), tmpLondonValue, london[0], 7, clrLondonKz, 0, "Arial Bold"));
+                Sett(Text(objName, getDateTimeLondonSession1Start(), tmpLondonValue, london[0], fontSize, clrLondonKz, 0, "Arial"));
             }
             for (int i = startIndex; i >= (stopIndex == NULL ? 0 : stopIndex); i--) {
                 londonBuffer[i] = tmpLondonValue;
             }
 
-            // New York Buffer
-            // Jumlah hari sesuai sama lookback
-            for (int i = lookback; i > 0; i--) {
-                dt = getDateTimeNewYorkStart() - (oneDay * i);
-                dtStop = getDateTimeNewYorkStop() - (oneDay * i);
-                if (!currentTimeIsWeekend(dt)) {
-                    startIndex = getBarIndex(dt);
-                    stopIndex = getBarIndex(dtStop);
-                    tmpNyValue = open[startIndex];
-
-                    objName = "TT " + newYork[0] + " " + string(dt);
-                    if (!findObject(objName)) {
-                        Sett(Text(objName, dt, tmpNyValue, newYork[0], fontSize, clrNyKz));        
-                    }
-
-                    for (int j = startIndex; j >= stopIndex; j--) {
-                        nyBuffer[j] = tmpNyValue;
-                    }
-                }
-            }
-            // Ini 1 hari doang (hari ini)
+            // Ini 1 hari New York (hari ini)
             startIndex = getBarIndex(getDateTimeNewYorkStart());
             stopIndex = getBarIndex(getDateTimeNewYorkStop());
             tmpNyValue = open[startIndex];
             objName = "TT " + newYork[0] + " " + string(getDateTimeNewYorkStart());
             if (!findObject(objName)) {
-                Sett(Text(objName, getDateTimeNewYorkStart(), tmpNyValue, newYork[0], 7, clrNyKz, 0, "Arial Bold"));
+                Sett(Text(objName, getDateTimeNewYorkStart(), tmpNyValue, newYork[0], fontSize, clrNyKz, 0, "Arial"));
             }
             for (int i = startIndex; i > (stopIndex == NULL ? 0 : stopIndex); i--) {
                 nyBuffer[i] = tmpNyValue;
-            }
-        }
-
-        if (ShowAll || ShowAll90Min) {
-            for (int i = 1; i <= lookback; i++) {
-                dt = getDateTimeSeparator() - (oneDay * i);
-                if (!currentTimeIsWeekend(dt)) {
-                    // Separator VLine
-                    objName = "VL " + getDayName(dt) + " " + string(dt);
-                    if (!findObject(objName)) {
-                        Sett(VLineCreate(objName, dt, clrSeparator, 2, 1));
-                    }
-                    // Separator VLine Text
-                    objName = "VLT " + getDayName(dt) + " " + string(dt);
-                    if (!findObject(objName)) {
-                        Sett(Text(objName, dt, lowestYPos, getDayName(dt), 7, clrSeparator, textAngle));
-                    }
-                }
             }
         }
 
@@ -442,7 +466,7 @@ int OnCalculate(const int rates_total,
                     // 2.00 AM Text
                     objName = "VLT " + ninetyMinutesCycle[0] + " " + string(dt);
                     if (!findObject(objName)) {
-                        Sett(Text(objName, dt, lowestYPos, ninetyMinutesCycle[0], 7, clr90min, textAngle));
+                        Sett(Text(objName, dt, lowestYPos, ninetyMinutesCycle[0], fontSize, clr90min, textAngle));
                     }
                 }
 
@@ -457,7 +481,7 @@ int OnCalculate(const int rates_total,
                     // 3.30 AM Text
                     objName = "VLT " + ninetyMinutesCycle[1] + " " + string(dt);
                     if (!findObject(objName)) {
-                        Sett(Text(objName, dt, lowestYPos, ninetyMinutesCycle[1], 7, clr90min, textAngle));
+                        Sett(Text(objName, dt, lowestYPos, ninetyMinutesCycle[1], fontSize, clr90min, textAngle));
                     }
                 }
                 
@@ -472,7 +496,7 @@ int OnCalculate(const int rates_total,
                     // 5.00 AM Text
                     objName = "VLT " + ninetyMinutesCycle[2] + " " + string(dt);
                     if (!findObject(objName)) {
-                        Sett(Text(objName, dt, lowestYPos, ninetyMinutesCycle[2], 7, clr90min, textAngle));
+                        Sett(Text(objName, dt, lowestYPos, ninetyMinutesCycle[2], fontSize, clr90min, textAngle));
                     }
                 }
 
@@ -487,7 +511,7 @@ int OnCalculate(const int rates_total,
                     // 6.30 AM Text
                     objName = "VLT " + ninetyMinutesCycle[3] + " " + string(dt);
                     if (!findObject(objName)) {
-                        Sett(Text(objName, dt, lowestYPos, ninetyMinutesCycle[3], 7, clr90min, textAngle));
+                        Sett(Text(objName, dt, lowestYPos, ninetyMinutesCycle[3], fontSize, clr90min, textAngle));
                     }
                 }
 
@@ -502,7 +526,7 @@ int OnCalculate(const int rates_total,
                     // 8.00 AM Text
                     objName = "VLT " + ninetyMinutesCycle[4] + " " + string(dt);
                     if (!findObject(objName)) {
-                        Sett(Text(objName, dt, lowestYPos, ninetyMinutesCycle[4], 7, clr90min, textAngle));
+                        Sett(Text(objName, dt, lowestYPos, ninetyMinutesCycle[4], fontSize, clr90min, textAngle));
                     }
                 }
 
@@ -517,7 +541,7 @@ int OnCalculate(const int rates_total,
                     // 9.30 AM Text
                     objName = "VLT " + ninetyMinutesCycle[5] + " " + string(dt);
                     if (!findObject(objName)) {
-                        Sett(Text(objName, dt, lowestYPos, ninetyMinutesCycle[5], 7, clr90min, textAngle));
+                        Sett(Text(objName, dt, lowestYPos, ninetyMinutesCycle[5], fontSize, clr90min, textAngle));
                     }
                 }
 
@@ -532,7 +556,7 @@ int OnCalculate(const int rates_total,
                     // 11.00 AM Text
                     objName = "VLT " + ninetyMinutesCycle[6] + " " + string(dt);
                     if (!findObject(objName)) {
-                        Sett(Text(objName, dt, lowestYPos, ninetyMinutesCycle[6], 7, clr90min, textAngle));
+                        Sett(Text(objName, dt, lowestYPos, ninetyMinutesCycle[6], fontSize, clr90min, textAngle));
                     }
                 }
             }
@@ -567,7 +591,7 @@ int OnCalculate(const int rates_total,
                     // London Session 1 Start Text
                     objName = "VLT " + london[0] + " " + string(dt);
                     if (!findObject(objName)) {
-                        Sett(Text(objName, dt, lowestYPos, london[0], 7, clrLondonKz, textAngle));
+                        Sett(Text(objName, dt, lowestYPos, london[0], fontSize, clrLondonKz, textAngle));
                     }
                 }
                 
@@ -582,7 +606,7 @@ int OnCalculate(const int rates_total,
                     // London Session 1 Stop Text
                     objName = "VLT " + london[1] + " " + string(dt);
                     if (!findObject(objName)) {
-                        Sett(Text(objName, dt, lowestYPos, london[1], 7, clrLondonKz, textAngle));
+                        Sett(Text(objName, dt, lowestYPos, london[1], fontSize, clrLondonKz, textAngle));
                     }
                 }
 
@@ -597,7 +621,7 @@ int OnCalculate(const int rates_total,
                     // NewYork Start Text
                     objName = "VLT " + newYork[0] + " " + string(dt);
                     if (!findObject(objName)) {
-                        Sett(Text(objName, dt, lowestYPos, newYork[0], 7, clrNyKz, textAngle));
+                        Sett(Text(objName, dt, lowestYPos, newYork[0], fontSize, clrNyKz, textAngle));
                     }
                 }
 
@@ -612,7 +636,7 @@ int OnCalculate(const int rates_total,
                     // NewYork 8.30 AM Text
                     objName = "VL " + newYork[1] + " " + string(dt);
                     if (!findObject(objName)) {
-                        Sett(Text(objName, dt, lowestYPos, newYork[1], 7, clrNyKz, textAngle));
+                        Sett(Text(objName, dt, lowestYPos, newYork[1], fontSize, clrNyKz, textAngle));
                     }
                 }
 
@@ -627,7 +651,7 @@ int OnCalculate(const int rates_total,
                     // NewYork Stop / London Sessian 2 Start Text
                     objName = "VLT " + newYork[2] + " " + string(dt);
                     if (!findObject(objName)) {
-                        Sett(Text(objName, dt, lowestYPos, newYork[2] + " / " + london[2], 7, clrNyKz, textAngle));
+                        Sett(Text(objName, dt, lowestYPos, newYork[2] + " / " + london[2], fontSize, clrNyKz, textAngle));
                     }
                 }
 
@@ -642,7 +666,7 @@ int OnCalculate(const int rates_total,
                     // London Session 2 Stop Text
                     objName = "VLT " + london[3] + " " + string(dt);
                     if (!findObject(objName)) {
-                        Sett(Text(objName, dt, lowestYPos, london[3], 7, clrLondonKz, textAngle));
+                        Sett(Text(objName, dt, lowestYPos, london[3], fontSize, clrLondonKz, textAngle));
                     }
                 }
             }
