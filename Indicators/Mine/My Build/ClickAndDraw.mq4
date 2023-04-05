@@ -5,6 +5,8 @@
 #property strict
 #property indicator_chart_window
 
+#include "../../Awptic/Object.mqh"
+
 enum KEYS_ON_KEYBOARD {
   _A = 65/*A*/,  _B = 66/*B*/,  _C = 67/*C*/,  _D = 68/*D*/,  _E = 69/*E*/,
   _F = 70/*F*/,  _G = 71/*G*/,  _H = 72/*H*/,  _I = 73/*I*/,  _J = 74/*J*/,
@@ -49,6 +51,8 @@ bool objSelected;
 double objLastPrice1;
 double objLastPrice2;
 
+Object *myObjects[];
+
 #define TextFont "Arial"
 
 
@@ -58,25 +62,52 @@ int init()
     mTrendlineColor = trendlineColor1;
     mStyle = 0;
 
+    
+    for (int i = 0; i < ObjectsTotal(); i++) {
+        ENUM_OBJECT type = ObjectGet(ObjectName(i), OBJPROP_TYPE);
+        if (type == OBJ_TREND || type == OBJ_RECTANGLE) {
+            string name = ObjectName(i);
+            increaseMyObjectsSize();
+            for (int j = 0; j < ArraySize(myObjects); j++) {
+                printf("Iteration i : " + string(i));
+                printf("Iteration j : " + string(j));
+
+                if (myObjects[j] == NULL) {
+                    myObjects[j] = new Object(false, name, type);
+                    printf("Name : " + myObjects[j].getName());
+                    break;
+                }
+            }
+        }
+    }
+
     return(0);
 }
 
 //+------------------------------------------------------------------+
 int deinit()
- {
-  string mObj;
-  if(mDeleteOnExit)
+{
+
+    string mObj;
+    if(mDeleteOnExit)
     {
-     for(int i = ObjectsTotal() - 1; i >= 0; i--)
-      {
+        for(int i = ObjectsTotal() - 1; i >= 0; i--)
+        {
         mObj = ObjectName(i);
         if(StringSubstr(mObj, 0, 2) == "m.")
-          ObjectDelete(mObj);
-      }
+            ObjectDelete(mObj);
+        }
+
     }
-    
+
+    for (int i = 0; i < ArraySize(myObjects); i++) {
+        delete myObjects[i];
+    }
+
+    ArrayFree(myObjects);
+
     return(0);
- }
+}
 
 //+------------------------------------------------------------------+
 int start()
@@ -349,5 +380,29 @@ void deleteLabel(KEYS_ON_KEYBOARD key) {
                     : "Style";
 
     ObjectDelete(name + " Label");
+}
+
+void increaseMyObjectsSize() {
+    ArrayResize(myObjects, ArraySize(myObjects) + 1);
+}
+
+void setFlat(Object myObj, bool isFlat) {
+    myObj.setFlat(isFlat);
+    if (isFlat) {
+        createLabel(FlatKey);
+    }
+    else {
+        deleteLabel(FlatKey);
+    }
+}
+
+void setRay(Object myObj, bool isRay) {
+    myObj.setRay(isRay);
+    if (isRay) {
+        createLabel(RayKey);
+    }
+    else {
+        deleteLabel(RayKey);
+    }
 }
 

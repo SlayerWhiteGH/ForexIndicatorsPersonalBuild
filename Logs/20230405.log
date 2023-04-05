@@ -1,0 +1,123 @@
+0	01:55:36.186	Compiling 'PositionSizeCalculator'
+0	01:55:36.193	Compiling '!BBMA MATrick N.G 2022 Test'
+0	01:55:36.196	Compiling 'Trading Sessions Trade'
+3	01:55:39.314	cannot load 'C:\MT4 Portable\MQL4\indicators\Market\Quick Style.ex4'
+3	01:55:39.322	cannot load 'C:\MT4 Portable\MQL4\indicators\Market\OHLC Magnet.ex4'
+3	01:55:39.329	cannot load 'C:\MT4 Portable\MQL4\indicators\Market\Watermark Symbol.ex4'
+3	01:55:39.351	cannot load 'C:\MT4 Portable\MQL4\indicators\Market\Trading box Technical analysis.ex4'
+0	01:55:39.430	Custom indicator Mine\ICT\ICT Asian_Range DXY,Daily: loaded successfully
+3	01:55:39.436	cannot load 'C:\MT4 Portable\MQL4\indicators\Market\Time Range Separator.ex4'
+0	01:55:39.451	Custom indicator Mine\My Build\ClickAndDraw DXY,Daily: loaded successfully
+0	01:55:39.464	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle DXY,Daily: loaded successfully
+0	01:55:39.475	Custom indicator Mine\Background Indicator\CandleTime DXY,Daily: loaded successfully
+0	01:55:39.484	ICT Asian_Range DXY,Daily: initialized
+0	01:55:39.508	ClickAndDraw DXY,Daily: initialized
+0	01:55:39.581	Kill Zone & 90 Min Cycle DXY,Daily: initialized
+0	01:55:39.600	CandleTime DXY,Daily: initialized
+3	01:55:39.654	cannot load 'C:\MT4 Portable\MQL4\indicators\Market\Quick Style.ex4'
+3	01:55:39.663	cannot load 'C:\MT4 Portable\MQL4\indicators\Market\OHLC Magnet.ex4'
+3	01:55:39.672	cannot load 'C:\MT4 Portable\MQL4\indicators\Market\Watermark Symbol.ex4'
+3	01:55:39.693	cannot load 'C:\MT4 Portable\MQL4\indicators\Market\Trading box Technical analysis.ex4'
+0	01:55:39.774	Custom indicator Mine\ICT\ICT Asian_Range GBPUSD,M15: loaded successfully
+3	01:55:39.780	cannot load 'C:\MT4 Portable\MQL4\indicators\Market\Time Range Separator.ex4'
+0	01:55:39.794	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	01:55:39.808	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle GBPUSD,M15: loaded successfully
+0	01:55:39.820	Custom indicator Mine\Background Indicator\CandleTime GBPUSD,M15: loaded successfully
+0	01:55:39.834	ICT Asian_Range GBPUSD,M15: initialized
+0	01:55:39.857	ClickAndDraw GBPUSD,M15: initialized
+0	01:55:39.929	Kill Zone & 90 Min Cycle GBPUSD,M15: initialized
+0	01:55:39.947	CandleTime GBPUSD,M15: initialized
+1	01:55:39.957	Kill Zone & 90 Min Cycle GBPUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (160,28)
+3	01:55:40.021	cannot load 'C:\MT4 Portable\MQL4\indicators\Market\Quick Style.ex4'
+3	01:55:40.028	cannot load 'C:\MT4 Portable\MQL4\indicators\Market\OHLC Magnet.ex4'
+3	01:55:40.035	cannot load 'C:\MT4 Portable\MQL4\indicators\Market\Watermark Symbol.ex4'
+3	01:55:40.054	cannot load 'C:\MT4 Portable\MQL4\indicators\Market\Trading box Technical analysis.ex4'
+0	01:55:40.134	Custom indicator Mine\ICT\ICT Asian_Range EURUSD,Daily: loaded successfully
+3	01:55:40.140	cannot load 'C:\MT4 Portable\MQL4\indicators\Market\Time Range Separator.ex4'
+0	01:55:40.153	Custom indicator Mine\My Build\ClickAndDraw EURUSD,Daily: loaded successfully
+0	01:55:40.169	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle EURUSD,Daily: loaded successfully
+0	01:55:40.179	Custom indicator Mine\Background Indicator\CandleTime EURUSD,Daily: loaded successfully
+0	01:55:40.185	ICT Asian_Range EURUSD,Daily: initialized
+0	01:55:40.209	ClickAndDraw EURUSD,Daily: initialized
+0	01:55:40.279	Kill Zone & 90 Min Cycle EURUSD,Daily: initialized
+0	01:55:40.298	CandleTime EURUSD,Daily: initialized
+3	01:55:40.345	cannot load 'C:\MT4 Portable\MQL4\indicators\Market\Technical analysis Dashboard.ex4'
+0	01:57:35.307	ICT Asian_Range GBPUSD,M15: deinitialized
+0	01:57:35.307	ICT Asian_Range GBPUSD,M15: uninit reason 7
+0	01:57:35.307	ClickAndDraw GBPUSD,M15: uninit reason 7
+0	01:57:35.307	Kill Zone & 90 Min Cycle GBPUSD,M15: uninit reason 7
+0	01:57:35.307	CandleTime GBPUSD,M15: uninit reason 7
+0	01:57:35.308	Custom indicator ICT Asian_Range GBPUSD,M15: removed
+0	01:57:35.310	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	01:57:35.311	Custom indicator Kill Zone & 90 Min Cycle GBPUSD,M15: removed
+0	01:57:35.312	Custom indicator CandleTime GBPUSD,M15: removed
+3	01:57:35.320	cannot load 'C:\MT4 Portable\MQL4\indicators\Market\Quick Style.ex4'
+0	01:57:35.333	Custom indicator Mine\ICT\OBdraw251 GBPUSD,M15: loaded successfully
+3	01:57:35.339	cannot load 'C:\MT4 Portable\MQL4\indicators\Market\OHLC Magnet.ex4'
+3	01:57:35.345	cannot load 'C:\MT4 Portable\MQL4\indicators\Market\Watermark Symbol.ex4'
+3	01:57:35.354	cannot load 'C:\MT4 Portable\MQL4\indicators\Market\Show Pips.ex4'
+0	01:57:35.371	OBdraw251 GBPUSD,M15: initialized
+0	01:57:52.831	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	01:58:01.105	ClickAndDraw GBPUSD,M15: initialized
+0	01:58:10.307	Custom indicator Awptic\Awptic GBPUSD,M15: loaded successfully
+0	01:58:13.151	Awptic GBPUSD,M15: initialized
+1	01:58:13.151	Awptic GBPUSD,M15: array out of range in 'Awptic.mq4' (43,18)
+0	02:02:53.577	Awptic GBPUSD,M15: uninit reason 2
+0	02:02:53.579	Custom indicator Awptic GBPUSD,M15: removed
+0	02:02:53.592	Custom indicator Awptic\Awptic GBPUSD,M15: loaded successfully
+0	02:02:53.604	Awptic GBPUSD,M15: initialized
+1	02:02:53.604	Awptic GBPUSD,M15: array out of range in 'Awptic.mq4' (43,18)
+0	02:03:50.330	Awptic GBPUSD,M15: uninit reason 2
+0	02:03:50.332	Custom indicator Awptic GBPUSD,M15: removed
+0	02:03:50.342	Custom indicator Awptic\Awptic GBPUSD,M15: loaded successfully
+0	02:03:50.352	Awptic GBPUSD,M15: initialized
+1	02:03:50.353	Awptic GBPUSD,M15: array out of range in 'Awptic.mq4' (43,18)
+0	02:05:38.171	Awptic GBPUSD,M15: uninit reason 2
+0	02:05:38.173	Custom indicator Awptic GBPUSD,M15: removed
+0	02:05:38.183	Custom indicator Awptic\Awptic GBPUSD,M15: loaded successfully
+0	02:05:38.195	Awptic GBPUSD,M15: initialized
+1	02:05:38.195	Awptic GBPUSD,M15: array out of range in 'Awptic.mq4' (43,18)
+0	02:11:42.003	Awptic GBPUSD,M15: uninit reason 2
+0	02:11:42.005	Custom indicator Awptic GBPUSD,M15: removed
+0	02:11:42.015	Custom indicator Awptic\Awptic GBPUSD,M15: loaded successfully
+0	02:11:42.029	Awptic GBPUSD,M15: initialized
+1	02:11:42.030	Awptic GBPUSD,M15: array out of range in 'Awptic.mq4' (44,18)
+0	02:12:30.468	Awptic GBPUSD,M15: uninit reason 2
+0	02:12:30.470	Custom indicator Awptic GBPUSD,M15: removed
+0	02:12:30.481	Custom indicator Awptic\Awptic GBPUSD,M15: loaded successfully
+0	02:12:30.494	Awptic GBPUSD,M15: initialized
+1	02:12:30.495	Awptic GBPUSD,M15: array out of range in 'Awptic.mq4' (40,14)
+0	02:12:41.686	Awptic GBPUSD,M15: uninit reason 2
+0	02:12:41.688	Custom indicator Awptic GBPUSD,M15: removed
+0	02:12:41.699	Custom indicator Awptic\Awptic GBPUSD,M15: loaded successfully
+0	02:12:41.711	Awptic GBPUSD,M15: initialized
+1	02:12:41.711	Awptic GBPUSD,M15: array out of range in 'Awptic.mq4' (40,14)
+0	02:12:56.625	Awptic GBPUSD,M15: uninit reason 2
+0	02:12:56.628	Custom indicator Awptic GBPUSD,M15: removed
+0	02:12:56.640	Custom indicator Awptic\Awptic GBPUSD,M15: loaded successfully
+0	02:12:56.652	Awptic GBPUSD,M15: initialized
+1	02:12:56.653	Awptic GBPUSD,M15: array out of range in 'Awptic.mq4' (40,14)
+0	02:24:58.980	ICT Asian_Range DXY,Daily: deinitialized
+0	02:24:58.980	ICT Asian_Range DXY,Daily: uninit reason 9
+0	02:24:58.980	ClickAndDraw DXY,Daily: uninit reason 9
+0	02:24:58.980	Kill Zone & 90 Min Cycle DXY,Daily: uninit reason 9
+0	02:24:58.980	CandleTime DXY,Daily: uninit reason 9
+0	02:24:58.980	OBdraw251 GBPUSD,M15: uninit reason 9
+0	02:24:58.980	ClickAndDraw GBPUSD,M15: uninit reason 9
+0	02:24:58.980	Awptic GBPUSD,M15: uninit reason 9
+0	02:24:58.980	ICT Asian_Range EURUSD,Daily: deinitialized
+0	02:24:58.980	ICT Asian_Range EURUSD,Daily: uninit reason 9
+0	02:24:58.980	ClickAndDraw EURUSD,Daily: uninit reason 9
+0	02:24:58.980	Kill Zone & 90 Min Cycle EURUSD,Daily: uninit reason 9
+0	02:24:58.981	CandleTime EURUSD,Daily: uninit reason 9
+0	02:24:59.068	Custom indicator ICT Asian_Range DXY,Daily: removed
+0	02:24:59.070	Custom indicator ClickAndDraw DXY,Daily: removed
+0	02:24:59.072	Custom indicator Kill Zone & 90 Min Cycle DXY,Daily: removed
+0	02:24:59.073	Custom indicator CandleTime DXY,Daily: removed
+0	02:24:59.101	Custom indicator OBdraw251 GBPUSD,M15: removed
+0	02:24:59.102	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	02:24:59.104	Custom indicator Awptic GBPUSD,M15: removed
+0	02:24:59.124	Custom indicator ICT Asian_Range EURUSD,Daily: removed
+0	02:24:59.126	Custom indicator ClickAndDraw EURUSD,Daily: removed
+0	02:24:59.128	Custom indicator Kill Zone & 90 Min Cycle EURUSD,Daily: removed
+0	02:24:59.130	Custom indicator CandleTime EURUSD,Daily: removed

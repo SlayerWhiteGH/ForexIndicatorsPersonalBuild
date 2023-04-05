@@ -9,7 +9,9 @@
 #property strict
 #property indicator_chart_window
 
-#import "ClickAndDraw.ex4"
+#include "Object.mqh"
+
+Object *myObjects[];
 //+------------------------------------------------------------------+
 //| Custom indicator initialization function                         |
 //+------------------------------------------------------------------+
@@ -35,7 +37,13 @@ int OnCalculate(const int rates_total,
                 const int &spread[])
   {
 //---
-   
+    ArrayResize(myObjects, ObjectsTotal());
+    for (int i = 0; i < ObjectsTotal(); i++) {
+        string name = ObjectName(i);
+        ENUM_OBJECT type = ObjectGet(name, OBJPROP_TYPE);
+        myObjects[i] = new Object(false, name, type);
+        printf("Name : " + myObjects[i].getName());
+    }
 //--- return value of prev_calculated for next call
    return(rates_total);
   }
@@ -48,6 +56,6 @@ void OnChartEvent(const int id,
                   const string &sparam)
   {
 //---
-   
+    
   }
 //+------------------------------------------------------------------+
