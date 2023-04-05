@@ -16,6 +16,7 @@ enum KEYS_ON_KEYBOARD {
   _Z = 90/*Z*/, _One = 49/*1*/, _Two = 50/*2*/, _Three = 51/*3*/, _Four = 52/*4*/
 };
 
+input KEYS_ON_KEYBOARD ExtendKey = _X;
 input KEYS_ON_KEYBOARD TrendlineKey = _Q;
 input KEYS_ON_KEYBOARD RectangleKey = _W;
 input KEYS_ON_KEYBOARD RayKey = _R;
@@ -25,14 +26,16 @@ input KEYS_ON_KEYBOARD Color2Key = _Two;
 input KEYS_ON_KEYBOARD Color3Key = _Three;
 input KEYS_ON_KEYBOARD StyleKey = _Four;
 
+
 extern int   mWid = 1;
-extern color rCol = "70,70,70";       
+extern color rCol = "70,70,70"; 
+extern bool  mExtend = true;      
 extern bool  mDrawTrendline = false;
 extern bool  mDrawRectangle = false;
 extern bool  mRay = false;
 extern bool  mFlat = false;
 extern bool  mDeleteOnExit = false;                 // Delete All Objects On Exit?
-extern bool  rectangleAsBackground = true;         // Rectangle As Background?
+extern bool  rectangleAsBackground = true;          // Rectangle As Background?
 extern color trendlineColor1 = clrRed;              // Trendline Color 1
 extern color trendlineColor2 = clrGreen;            // Trendline Color 2
 extern color trendlineColor3 = clrBlue;             // Trendline Color 3
@@ -202,6 +205,9 @@ void OnChartEvent(const int id,         // Event ID
                 mTrendlineColor = trendlineColor1;
                 createLabel(TrendlineKey);
             }
+            if (ObjectGet(objName, OBJPROP_SELECTED) == true) {
+                ObjectSet(objName, OBJPROP_COLOR, trendlineColor1);
+            }
         }
 
         if (lparam == Color2Key) {
@@ -210,6 +216,9 @@ void OnChartEvent(const int id,         // Event ID
                 mTrendlineColor = trendlineColor2;
                 createLabel(TrendlineKey);
             }
+            if (ObjectGet(objName, OBJPROP_SELECTED) == true) {
+                ObjectSet(objName, OBJPROP_COLOR, trendlineColor2);
+            }
         }
 
         if (lparam == Color3Key) {
@@ -217,6 +226,9 @@ void OnChartEvent(const int id,         // Event ID
                 deleteLabel(TrendlineKey);
                 mTrendlineColor = trendlineColor3;
                 createLabel(TrendlineKey);
+            }
+            if (ObjectGet(objName, OBJPROP_SELECTED) == true) {
+                ObjectSet(objName, OBJPROP_COLOR, trendlineColor3);
             }
         }
 
@@ -236,6 +248,22 @@ void OnChartEvent(const int id,         // Event ID
 
             }
         }
+
+        if (lparam == ExtendKey) {
+            if (ObjectGet(objName, OBJPROP_SELECTED) == true) {
+                if (mExtend == true) {
+                    setExtend(objName);
+                    mExtend = false;
+                } else {
+                    datetime x1 = ObjectGet(objName, OBJPROP_TIME1);
+                    ObjectSet(objName, OBJPROP_TIME2, getHighEngulf(x1));
+
+                }
+            } 
+
+
+        }
+
     }
 
     if (id == CHARTEVENT_CLICK) {
@@ -292,7 +320,6 @@ void OnChartEvent(const int id,         // Event ID
                     mFlat = true;
                     deleteLabel(FlatKey);
                 }
-
                 objSelected = false;
             }
         }
@@ -304,7 +331,7 @@ void OnChartEvent(const int id,         // Event ID
         double currPrice2 = ObjectGet(sparam, OBJPROP_PRICE2);
         setObjPrice(currPrice1, currPrice2);
         setObjSelected(true);
-
+        
         if (ObjectGet(sparam, OBJPROP_TYPE) == OBJ_RECTANGLE) {
             if (mFlat) {
                 mFlat = false;
@@ -322,6 +349,21 @@ void OnChartEvent(const int id,         // Event ID
         }
     }
     return;
+}
+
+datetime getHighEngulf(datetime waktu) {
+    datetime firstEngulf = 0;
+    int indexX1 = iBarShift(Symbol(), Period(), waktu, true);
+    for (int i = indexX1 - 1 ; i >= 0 ; i--) {
+        if (High[i] > High[indexX1]) {
+            firstEngulf = Time[i];
+        }
+    }
+    return firstEngulf;
+}
+
+void setExtend(string name) {
+    ObjectSet(name, OBJPROP_TIME2, TimeCurrent());
 }
 
 void setObjName(string name) {

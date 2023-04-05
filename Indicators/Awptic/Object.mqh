@@ -1,13 +1,14 @@
 //+------------------------------------------------------------------+
 //|                                                       Object.mqh |
-//|                                           Copyright 2023, Awptic |
+//|                                  Copyright 2023, MetaQuotes Ltd. |
 //|                                             https://www.mql5.com |
 //+------------------------------------------------------------------+
-#property copyright "Copyright 2023, Awptic"
+#property copyright "Copyright 2023, MetaQuotes Ltd."
 #property link      "https://www.mql5.com"
 #property version   "1.00"
 #property strict
-class Object {
+class Object
+  {
 private:
     bool flat;
     bool extend;
@@ -42,7 +43,7 @@ public:
     void setFlat(bool status) {
         flat = status;
         if (flat) {
-            setPrice2(getPrice1);
+            setPrice2(getPrice1());
         }
     }
     void setExtend(bool status) {
@@ -134,7 +135,7 @@ public:
     bool isSelected() {
         return ObjectGet(name, OBJPROP_SELECTED) == true;
     }
-    bool isSelected() {
+    bool isReadOnly() {
         return ObjectGet(name, OBJPROP_READONLY) == true;
     }
     bool isSelectable() {
