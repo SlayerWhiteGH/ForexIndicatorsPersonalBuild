@@ -428,7 +428,7 @@ void increaseMyObjectsSize() {
     ArrayResize(myObjects, ArraySize(myObjects) + 1);
 }
 
-void setFlat(Object myObj, bool isFlat) {
+void setFlat(Object *myObj, bool isFlat) {
     myObj.setFlat(isFlat);
     if (isFlat) {
         createLabel(FlatKey);
@@ -438,7 +438,7 @@ void setFlat(Object myObj, bool isFlat) {
     }
 }
 
-void setRay(Object myObj, bool isRay) {
+void setRay(Object *myObj, bool isRay) {
     myObj.setRay(isRay);
     if (isRay) {
         createLabel(RayKey);
