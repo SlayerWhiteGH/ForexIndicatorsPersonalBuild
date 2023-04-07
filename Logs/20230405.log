@@ -7478,4 +7478,2557 @@
 0	06:24:06.937	ClickAndDraw EURUSD,Daily: Iteration i : 1257
 0	06:24:06.937	ClickAndDraw EURUSD,Daily: Iteration j : 16
 0	06:24:06.937	ClickAndDraw EURUSD,Daily: Iteration i : 1257
-0	06:24
+0	06:240	11:18:57.427	Compiling 'Awptic'
+0	11:18:57.429	Compiling 'ClickAndDraw'
+0	11:19:00.489	Custom indicator Market\Quick Style DXY,M5: loaded successfully
+0	11:19:00.502	Custom indicator Market\OHLC Magnet DXY,M5: loaded successfully
+0	11:19:00.515	Custom indicator Market\Watermark Symbol DXY,M5: loaded successfully
+0	11:19:00.538	Custom indicator Market\Trading box Technical analysis DXY,M5: loaded successfully
+0	11:19:00.618	Custom indicator Mine\ICT\ICT Asian_Range DXY,M5: loaded successfully
+0	11:19:00.630	Custom indicator Market\Time Range Separator DXY,M5: loaded successfully
+3	11:19:00.631	cannot open file 'C:\MT4 Portable\MQL4\indicators\Mine\My Build\ClickAndDraw.ex4' [2]
+0	11:19:00.643	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle DXY,M5: loaded successfully
+0	11:19:00.653	Custom indicator Mine\Background Indicator\CandleTime DXY,M5: loaded successfully
+0	11:19:00.692	Quick Style DXY,M5: 0
+0	11:19:00.692	Quick Style DXY,M5: 0
+0	11:19:00.692	Quick Style DXY,M5: 1
+0	11:19:00.692	Quick Style DXY,M5: 1
+0	11:19:00.692	Quick Style DXY,M5: 2
+0	11:19:00.692	Quick Style DXY,M5: initialized
+0	11:19:00.712	OHLC Magnet DXY,M5: initialized
+0	11:19:00.732	Watermark Symbol DXY,M5: initialized
+0	11:19:00.771	Trading box Technical analysis DXY,M5: initialized
+0	11:19:00.771	ICT Asian_Range DXY,M5: initialized
+0	11:19:00.794	Time Range Separator DXY,M5: initialized
+0	11:19:00.867	Kill Zone & 90 Min Cycle DXY,M5: initialized
+0	11:19:00.883	CandleTime DXY,M5: initialized
+1	11:19:00.885	Kill Zone & 90 Min Cycle DXY,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (145,23)
+0	11:19:00.924	Custom indicator Market\Quick Style GBPUSD,M1: loaded successfully
+0	11:19:00.937	Custom indicator Market\OHLC Magnet GBPUSD,M1: loaded successfully
+0	11:19:00.950	Custom indicator Market\Watermark Symbol GBPUSD,M1: loaded successfully
+0	11:19:00.974	Custom indicator Market\Trading box Technical analysis GBPUSD,M1: loaded successfully
+0	11:19:01.051	Custom indicator Mine\ICT\ICT Asian_Range GBPUSD,M1: loaded successfully
+0	11:19:01.066	Custom indicator Market\Time Range Separator GBPUSD,M1: loaded successfully
+3	11:19:01.066	cannot open file 'C:\MT4 Portable\MQL4\indicators\Mine\My Build\ClickAndDraw.ex4' [2]
+0	11:19:01.079	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle GBPUSD,M1: loaded successfully
+0	11:19:01.091	Custom indicator Mine\Background Indicator\CandleTime GBPUSD,M1: loaded successfully
+0	11:19:01.127	Quick Style GBPUSD,M1: 0
+0	11:19:01.127	Quick Style GBPUSD,M1: 0
+0	11:19:01.127	Quick Style GBPUSD,M1: 1
+0	11:19:01.128	Quick Style GBPUSD,M1: 1
+0	11:19:01.128	Quick Style GBPUSD,M1: 2
+0	11:19:01.128	Quick Style GBPUSD,M1: initialized
+0	11:19:01.147	OHLC Magnet GBPUSD,M1: initialized
+0	11:19:01.165	Watermark Symbol GBPUSD,M1: initialized
+0	11:19:01.198	Trading box Technical analysis GBPUSD,M1: initialized
+0	11:19:01.198	ICT Asian_Range GBPUSD,M1: initialized
+0	11:19:01.216	Time Range Separator GBPUSD,M1: initialized
+0	11:19:01.288	Kill Zone & 90 Min Cycle GBPUSD,M1: initialized
+0	11:19:01.305	CandleTime GBPUSD,M1: initialized
+1	11:19:01.332	Kill Zone & 90 Min Cycle GBPUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (145,23)
+0	11:19:01.376	Custom indicator Market\Quick Style EURUSD,M15: loaded successfully
+0	11:19:01.388	Custom indicator Market\OHLC Magnet EURUSD,M15: loaded successfully
+0	11:19:01.401	Custom indicator Market\Watermark Symbol EURUSD,M15: loaded successfully
+0	11:19:01.425	Custom indicator Market\Trading box Technical analysis EURUSD,M15: loaded successfully
+0	11:19:01.500	Custom indicator Mine\ICT\ICT Asian_Range EURUSD,M15: loaded successfully
+0	11:19:01.512	Custom indicator Market\Time Range Separator EURUSD,M15: loaded successfully
+3	11:19:01.512	cannot open file 'C:\MT4 Portable\MQL4\indicators\Mine\My Build\ClickAndDraw.ex4' [2]
+0	11:19:01.523	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle EURUSD,M15: loaded successfully
+0	11:19:01.533	Custom indicator Mine\Background Indicator\CandleTime EURUSD,M15: loaded successfully
+0	11:19:01.562	Quick Style EURUSD,M15: 0
+0	11:19:01.562	Quick Style EURUSD,M15: 0
+0	11:19:01.562	Quick Style EURUSD,M15: 1
+0	11:19:01.562	Quick Style EURUSD,M15: 1
+0	11:19:01.562	Quick Style EURUSD,M15: 2
+0	11:19:01.563	Quick Style EURUSD,M15: initialized
+0	11:19:01.580	OHLC Magnet EURUSD,M15: initialized
+0	11:19:01.598	Watermark Symbol EURUSD,M15: initialized
+0	11:19:01.628	Trading box Technical analysis EURUSD,M15: initialized
+0	11:19:01.628	ICT Asian_Range EURUSD,M15: initialized
+0	11:19:01.645	Time Range Separator EURUSD,M15: initialized
+0	11:19:01.711	Kill Zone & 90 Min Cycle EURUSD,M15: initialized
+0	11:19:01.727	CandleTime EURUSD,M15: initialized
+1	11:19:01.741	Kill Zone & 90 Min Cycle EURUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (145,23)
+0	11:19:01.786	Custom indicator Market\Quick Style XAUUSD,M5: loaded successfully
+0	11:19:01.797	Custom indicator Mine\ICT\OBdraw251 XAUUSD,M5: loaded successfully
+0	11:19:01.810	Custom indicator Market\OHLC Magnet XAUUSD,M5: loaded successfully
+0	11:19:01.822	Custom indicator Market\Watermark Symbol XAUUSD,M5: loaded successfully
+3	11:19:01.822	cannot open file 'C:\MT4 Portable\MQL4\indicators\Mine\My Build\ClickAndDraw.ex4' [2]
+0	11:19:01.853	Quick Style XAUUSD,M5: 0
+0	11:19:01.854	Quick Style XAUUSD,M5: 0
+0	11:19:01.854	Quick Style XAUUSD,M5: 1
+0	11:19:01.854	Quick Style XAUUSD,M5: 1
+0	11:19:01.854	Quick Style XAUUSD,M5: 2
+0	11:19:01.854	Quick Style XAUUSD,M5: initialized
+0	11:19:01.869	OBdraw251 XAUUSD,M5: initialized
+0	11:19:01.885	OHLC Magnet XAUUSD,M5: initialized
+0	11:19:01.902	Watermark Symbol XAUUSD,M5: initialized
+0	11:19:23.822	Quick Style EURUSD,M15: uninit reason 7
+0	11:19:23.824	OHLC Magnet EURUSD,M15: uninit reason 7
+0	11:19:23.824	Watermark Symbol EURUSD,M15: uninit reason 7
+0	11:19:23.825	Trading box Technical analysis EURUSD,M15: uninit reason 7
+0	11:19:23.825	ICT Asian_Range EURUSD,M15: deinitialized
+0	11:19:23.825	ICT Asian_Range EURUSD,M15: uninit reason 7
+0	11:19:23.825	Time Range Separator EURUSD,M15: uninit reason 7
+0	11:19:23.826	Kill Zone & 90 Min Cycle EURUSD,M15: uninit reason 7
+0	11:19:23.826	CandleTime EURUSD,M15: uninit reason 7
+0	11:19:23.828	Custom indicator Quick Style EURUSD,M15: removed
+0	11:19:23.830	Custom indicator OHLC Magnet EURUSD,M15: removed
+0	11:19:23.831	Custom indicator Watermark Symbol EURUSD,M15: removed
+0	11:19:23.832	Custom indicator Trading box Technical analysis EURUSD,M15: removed
+0	11:19:23.833	Custom indicator ICT Asian_Range EURUSD,M15: removed
+0	11:19:23.834	Custom indicator Time Range Separator EURUSD,M15: removed
+0	11:19:23.835	Custom indicator Kill Zone & 90 Min Cycle EURUSD,M15: removed
+0	11:19:23.837	Custom indicator CandleTime EURUSD,M15: removed
+0	11:19:23.855	Custom indicator Market\Quick Style EURUSD,M15: loaded successfully
+0	11:19:23.868	Custom indicator Market\OHLC Magnet EURUSD,M15: loaded successfully
+0	11:19:23.880	Custom indicator Market\Watermark Symbol EURUSD,M15: loaded successfully
+0	11:19:23.900	Custom indicator Market\Trading box Technical analysis EURUSD,M15: loaded successfully
+0	11:19:23.970	Custom indicator Mine\ICT\ICT Asian_Range EURUSD,M15: loaded successfully
+0	11:19:23.982	Custom indicator Market\Time Range Separator EURUSD,M15: loaded successfully
+3	11:19:23.983	cannot open file 'C:\MT4 Portable\MQL4\indicators\Mine\My Build\ClickAndDraw.ex4' [2]
+0	11:19:23.994	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle EURUSD,M15: loaded successfully
+0	11:19:24.004	Custom indicator Mine\Background Indicator\CandleTime EURUSD,M15: loaded successfully
+0	11:19:24.033	Quick Style EURUSD,M15: 0
+0	11:19:24.033	Quick Style EURUSD,M15: 0
+0	11:19:24.034	Quick Style EURUSD,M15: 1
+0	11:19:24.034	Quick Style EURUSD,M15: 1
+0	11:19:24.034	Quick Style EURUSD,M15: 2
+0	11:19:24.034	Quick Style EURUSD,M15: initialized
+0	11:19:24.051	OHLC Magnet EURUSD,M15: initialized
+0	11:19:24.068	Watermark Symbol EURUSD,M15: initialized
+0	11:19:24.098	Trading box Technical analysis EURUSD,M15: initialized
+0	11:19:24.098	ICT Asian_Range EURUSD,M15: initialized
+0	11:19:24.114	Time Range Separator EURUSD,M15: initialized
+0	11:19:24.181	Kill Zone & 90 Min Cycle EURUSD,M15: initialized
+0	11:19:24.198	CandleTime EURUSD,M15: initialized
+1	11:19:24.287	Kill Zone & 90 Min Cycle EURUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (145,23)
+3	11:19:33.615	cannot open file 'C:\MT4 Portable\MQL4\indicators\Mine\My Build\ClickAndDraw.ex4' [2]
+0	11:23:57.878	Custom indicator Mine\My Build\ClickAndDraw EURUSD,M15: loaded successfully
+0	11:24:00.140	ClickAndDraw EURUSD,M15: Iteration i : 1525
+0	11:24:00.140	ClickAndDraw EURUSD,M15: Iteration j : 0
+0	11:24:00.140	ClickAndDraw EURUSD,M15: Name : m.Data1680567141
+0	11:24:00.140	ClickAndDraw EURUSD,M15: initialized
+0	11:24:35.706	Quick Style EURUSD,M15: uninit reason 7
+0	11:24:35.709	OHLC Magnet EURUSD,M15: uninit reason 7
+0	11:24:35.709	Watermark Symbol EURUSD,M15: uninit reason 7
+0	11:24:35.709	Trading box Technical analysis EURUSD,M15: uninit reason 7
+0	11:24:35.709	ICT Asian_Range EURUSD,M15: deinitialized
+0	11:24:35.709	ICT Asian_Range EURUSD,M15: uninit reason 7
+0	11:24:35.709	Time Range Separator EURUSD,M15: uninit reason 7
+0	11:24:35.710	Kill Zone & 90 Min Cycle EURUSD,M15: uninit reason 7
+0	11:24:35.710	CandleTime EURUSD,M15: uninit reason 7
+0	11:24:35.710	ClickAndDraw EURUSD,M15: uninit reason 7
+0	11:24:35.712	Custom indicator Quick Style EURUSD,M15: removed
+0	11:24:35.713	Custom indicator OHLC Magnet EURUSD,M15: removed
+0	11:24:35.715	Custom indicator Watermark Symbol EURUSD,M15: removed
+0	11:24:35.716	Custom indicator Trading box Technical analysis EURUSD,M15: removed
+0	11:24:35.717	Custom indicator ICT Asian_Range EURUSD,M15: removed
+0	11:24:35.718	Custom indicator Time Range Separator EURUSD,M15: removed
+0	11:24:35.719	Custom indicator Kill Zone & 90 Min Cycle EURUSD,M15: removed
+0	11:24:35.721	Custom indicator CandleTime EURUSD,M15: removed
+0	11:24:35.722	Custom indicator ClickAndDraw EURUSD,M15: removed
+0	11:24:35.742	Custom indicator Market\Quick Style EURUSD,M15: loaded successfully
+0	11:24:35.756	Custom indicator Market\OHLC Magnet EURUSD,M15: loaded successfully
+0	11:24:35.769	Custom indicator Market\Watermark Symbol EURUSD,M15: loaded successfully
+0	11:24:35.789	Custom indicator Market\Trading box Technical analysis EURUSD,M15: loaded successfully
+0	11:24:35.873	Custom indicator Mine\ICT\ICT Asian_Range EURUSD,M15: loaded successfully
+0	11:24:35.885	Custom indicator Market\Time Range Separator EURUSD,M15: loaded successfully
+0	11:24:35.896	Custom indicator Mine\My Build\ClickAndDraw EURUSD,M15: loaded successfully
+0	11:24:35.908	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle EURUSD,M15: loaded successfully
+0	11:24:35.918	Custom indicator Mine\Background Indicator\CandleTime EURUSD,M15: loaded successfully
+0	11:24:35.948	Quick Style EURUSD,M15: 0
+0	11:24:35.948	Quick Style EURUSD,M15: 0
+0	11:24:35.948	Quick Style EURUSD,M15: 1
+0	11:24:35.948	Quick Style EURUSD,M15: 1
+0	11:24:35.949	Quick Style EURUSD,M15: 2
+0	11:24:35.949	Quick Style EURUSD,M15: initialized
+0	11:24:35.967	OHLC Magnet EURUSD,M15: initialized
+0	11:24:35.984	Watermark Symbol EURUSD,M15: initialized
+0	11:24:36.014	Trading box Technical analysis EURUSD,M15: initialized
+0	11:24:36.014	ICT Asian_Range EURUSD,M15: initialized
+0	11:24:36.031	Time Range Separator EURUSD,M15: initialized
+0	11:24:36.056	ClickAndDraw EURUSD,M15: Iteration i : 1470
+0	11:24:36.056	ClickAndDraw EURUSD,M15: Iteration j : 0
+0	11:24:36.056	ClickAndDraw EURUSD,M15: Name : m.Data1680567141
+0	11:24:36.056	ClickAndDraw EURUSD,M15: initialized
+0	11:24:36.127	Kill Zone & 90 Min Cycle EURUSD,M15: initialized
+0	11:24:36.145	CandleTime EURUSD,M15: initialized
+1	11:24:36.233	Kill Zone & 90 Min Cycle EURUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (145,23)
+0	11:24:49.509	Quick Style EURUSD,M15: uninit reason 3
+0	11:24:49.512	OHLC Magnet EURUSD,M15: uninit reason 3
+0	11:24:49.512	Watermark Symbol EURUSD,M15: uninit reason 3
+0	11:24:49.513	Trading box Technical analysis EURUSD,M15: uninit reason 3
+0	11:24:49.513	ICT Asian_Range EURUSD,M15: deinitialized
+0	11:24:49.513	ICT Asian_Range EURUSD,M15: uninit reason 3
+0	11:24:49.513	Time Range Separator EURUSD,M15: uninit reason 3
+0	11:24:49.513	ClickAndDraw EURUSD,M15: uninit reason 3
+0	11:24:49.513	Kill Zone & 90 Min Cycle EURUSD,M15: uninit reason 3
+0	11:24:49.513	CandleTime EURUSD,M15: uninit reason 3
+0	11:24:49.527	Quick Style EURUSD,M5: 0
+0	11:24:49.527	Quick Style EURUSD,M5: 0
+0	11:24:49.527	Quick Style EURUSD,M5: 1
+0	11:24:49.527	Quick Style EURUSD,M5: 1
+0	11:24:49.527	Quick Style EURUSD,M5: 2
+0	11:24:49.527	Quick Style EURUSD,M5: initialized
+0	11:24:49.527	OHLC Magnet EURUSD,M5: initialized
+0	11:24:49.527	Watermark Symbol EURUSD,M5: initialized
+0	11:24:49.529	Trading box Technical analysis EURUSD,M5: initialized
+0	11:24:49.529	ICT Asian_Range EURUSD,M5: initialized
+0	11:24:49.529	Time Range Separator EURUSD,M5: initialized
+0	11:24:49.530	ClickAndDraw EURUSD,M5: Iteration i : 1456
+0	11:24:49.530	ClickAndDraw EURUSD,M5: Iteration j : 0
+0	11:24:49.530	ClickAndDraw EURUSD,M5: Name : m.Data1680567141
+0	11:24:49.530	ClickAndDraw EURUSD,M5: initialized
+0	11:24:49.530	Kill Zone & 90 Min Cycle EURUSD,M5: initialized
+0	11:24:49.530	CandleTime EURUSD,M5: initialized
+1	11:24:49.602	Kill Zone & 90 Min Cycle EURUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (145,23)
+0	11:24:57.233	Kill Zone & 90 Min Cycle EURUSD,M5: uninit reason 5
+0	11:24:57.248	Kill Zone & 90 Min Cycle EURUSD,M5: initialized
+1	11:24:57.849	Kill Zone & 90 Min Cycle EURUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (145,23)
+0	11:29:42.835	Compiling 'Mine\My Build\Kill Zone & 90 Min Cycle'
+0	11:29:44.104	ClickAndDraw EURUSD,M5: uninit reason 2
+0	11:29:44.106	Custom indicator ClickAndDraw EURUSD,M5: removed
+0	11:29:44.122	Custom indicator Mine\My Build\ClickAndDraw EURUSD,M5: loaded successfully
+0	11:29:44.161	ClickAndDraw EURUSD,M5: Iteration i : 1502
+0	11:29:44.161	ClickAndDraw EURUSD,M5: Iteration j : 0
+0	11:29:44.161	ClickAndDraw EURUSD,M5: Name : m.Data1680567141
+0	11:29:44.161	ClickAndDraw EURUSD,M5: initialized
+0	11:29:44.161	Kill Zone & 90 Min Cycle EURUSD,M5: uninit reason 2
+0	11:29:44.163	Custom indicator Kill Zone & 90 Min Cycle EURUSD,M5: removed
+0	11:29:44.182	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle EURUSD,M5: loaded successfully
+0	11:29:44.294	Kill Zone & 90 Min Cycle EURUSD,M5: initialized
+1	11:29:44.295	Kill Zone & 90 Min Cycle EURUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:29:44.296	Kill Zone & 90 Min Cycle GBPUSD,M1: uninit reason 2
+0	11:29:44.299	Custom indicator Kill Zone & 90 Min Cycle GBPUSD,M1: removed
+0	11:29:44.321	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle GBPUSD,M1: loaded successfully
+0	11:29:44.431	Kill Zone & 90 Min Cycle GBPUSD,M1: initialized
+1	11:29:44.432	Kill Zone & 90 Min Cycle GBPUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:29:44.435	Kill Zone & 90 Min Cycle DXY,M5: uninit reason 2
+0	11:29:44.437	Custom indicator Kill Zone & 90 Min Cycle DXY,M5: removed
+0	11:29:44.458	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle DXY,M5: loaded successfully
+0	11:29:44.568	Kill Zone & 90 Min Cycle DXY,M5: initialized
+1	11:29:44.568	Kill Zone & 90 Min Cycle DXY,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:29:47.144	ClickAndDraw EURUSD,M5: uninit reason 2
+0	11:29:47.147	Custom indicator ClickAndDraw EURUSD,M5: removed
+0	11:29:47.173	Custom indicator Mine\My Build\ClickAndDraw EURUSD,M5: loaded successfully
+0	11:29:47.236	ClickAndDraw EURUSD,M5: Iteration i : 1502
+0	11:29:47.236	ClickAndDraw EURUSD,M5: Iteration j : 0
+0	11:29:47.236	ClickAndDraw EURUSD,M5: Name : m.Data1680567141
+0	11:29:47.236	ClickAndDraw EURUSD,M5: initialized
+0	11:29:50.221	Kill Zone & 90 Min Cycle EURUSD,M5: uninit reason 2
+0	11:29:50.223	Custom indicator Kill Zone & 90 Min Cycle EURUSD,M5: removed
+0	11:29:50.246	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle EURUSD,M5: loaded successfully
+0	11:29:50.378	Kill Zone & 90 Min Cycle EURUSD,M5: initialized
+1	11:29:50.378	Kill Zone & 90 Min Cycle EURUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:29:50.380	Kill Zone & 90 Min Cycle GBPUSD,M1: uninit reason 2
+0	11:29:50.382	Custom indicator Kill Zone & 90 Min Cycle GBPUSD,M1: removed
+0	11:29:50.408	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle GBPUSD,M1: loaded successfully
+0	11:29:50.553	Kill Zone & 90 Min Cycle GBPUSD,M1: initialized
+1	11:29:50.554	Kill Zone & 90 Min Cycle GBPUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:29:50.556	Kill Zone & 90 Min Cycle DXY,M5: uninit reason 2
+0	11:29:50.561	Custom indicator Kill Zone & 90 Min Cycle DXY,M5: removed
+0	11:29:50.587	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle DXY,M5: loaded successfully
+0	11:29:50.716	Kill Zone & 90 Min Cycle DXY,M5: initialized
+1	11:29:50.716	Kill Zone & 90 Min Cycle DXY,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:29:54.205	Quick Style EURUSD,M5: uninit reason 3
+0	11:29:54.213	OHLC Magnet EURUSD,M5: uninit reason 3
+0	11:29:54.213	Watermark Symbol EURUSD,M5: uninit reason 3
+0	11:29:54.214	Trading box Technical analysis EURUSD,M5: uninit reason 3
+0	11:29:54.214	ICT Asian_Range EURUSD,M5: deinitialized
+0	11:29:54.214	ICT Asian_Range EURUSD,M5: uninit reason 3
+0	11:29:54.214	Time Range Separator EURUSD,M5: uninit reason 3
+0	11:29:54.215	ClickAndDraw EURUSD,M5: uninit reason 3
+0	11:29:54.215	Kill Zone & 90 Min Cycle EURUSD,M5: uninit reason 3
+0	11:29:54.215	CandleTime EURUSD,M5: uninit reason 3
+0	11:29:54.249	Quick Style EURUSD,M15: 0
+0	11:29:54.249	Quick Style EURUSD,M15: 0
+0	11:29:54.250	Quick Style EURUSD,M15: 1
+0	11:29:54.250	Quick Style EURUSD,M15: 1
+0	11:29:54.250	Quick Style EURUSD,M15: 2
+0	11:29:54.251	Quick Style EURUSD,M15: initialized
+0	11:29:54.252	OHLC Magnet EURUSD,M15: initialized
+0	11:29:54.252	Watermark Symbol EURUSD,M15: initialized
+0	11:29:54.255	Trading box Technical analysis EURUSD,M15: initialized
+0	11:29:54.255	ICT Asian_Range EURUSD,M15: initialized
+0	11:29:54.255	Time Range Separator EURUSD,M15: initialized
+0	11:29:54.258	ClickAndDraw EURUSD,M15: Iteration i : 1456
+0	11:29:54.259	ClickAndDraw EURUSD,M15: Iteration j : 0
+0	11:29:54.259	ClickAndDraw EURUSD,M15: Name : m.Data1680567141
+0	11:29:54.259	ClickAndDraw EURUSD,M15: initialized
+0	11:29:54.259	Kill Zone & 90 Min Cycle EURUSD,M15: initialized
+0	11:29:54.259	CandleTime EURUSD,M15: initialized
+1	11:29:54.515	Kill Zone & 90 Min Cycle EURUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:30:48.328	Kill Zone & 90 Min Cycle EURUSD,M15: uninit reason 2
+0	11:30:48.330	Custom indicator Kill Zone & 90 Min Cycle EURUSD,M15: removed
+0	11:30:48.383	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle EURUSD,M15: loaded successfully
+0	11:30:48.567	Kill Zone & 90 Min Cycle EURUSD,M15: initialized
+1	11:30:48.567	Kill Zone & 90 Min Cycle EURUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:30:48.570	Kill Zone & 90 Min Cycle GBPUSD,M1: uninit reason 2
+0	11:30:48.573	Custom indicator Kill Zone & 90 Min Cycle GBPUSD,M1: removed
+0	11:30:48.602	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle GBPUSD,M1: loaded successfully
+0	11:30:48.715	Kill Zone & 90 Min Cycle GBPUSD,M1: initialized
+1	11:30:48.716	Kill Zone & 90 Min Cycle GBPUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:30:48.718	Kill Zone & 90 Min Cycle DXY,M5: uninit reason 2
+0	11:30:48.719	Custom indicator Kill Zone & 90 Min Cycle DXY,M5: removed
+0	11:30:48.739	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle DXY,M5: loaded successfully
+0	11:30:48.845	Kill Zone & 90 Min Cycle DXY,M5: initialized
+1	11:30:48.845	Kill Zone & 90 Min Cycle DXY,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:30:51.543	Quick Style EURUSD,M15: uninit reason 3
+0	11:30:51.546	OHLC Magnet EURUSD,M15: uninit reason 3
+0	11:30:51.546	Watermark Symbol EURUSD,M15: uninit reason 3
+0	11:30:51.547	Trading box Technical analysis EURUSD,M15: uninit reason 3
+0	11:30:51.547	ICT Asian_Range EURUSD,M15: deinitialized
+0	11:30:51.547	ICT Asian_Range EURUSD,M15: uninit reason 3
+0	11:30:51.547	Time Range Separator EURUSD,M15: uninit reason 3
+0	11:30:51.547	ClickAndDraw EURUSD,M15: uninit reason 3
+0	11:30:51.547	Kill Zone & 90 Min Cycle EURUSD,M15: uninit reason 3
+0	11:30:51.547	CandleTime EURUSD,M15: uninit reason 3
+0	11:30:51.560	Quick Style EURUSD,M5: 0
+0	11:30:51.560	Quick Style EURUSD,M5: 0
+0	11:30:51.560	Quick Style EURUSD,M5: 1
+0	11:30:51.560	Quick Style EURUSD,M5: 1
+0	11:30:51.560	Quick Style EURUSD,M5: 2
+0	11:30:51.560	Quick Style EURUSD,M5: initialized
+0	11:30:51.560	OHLC Magnet EURUSD,M5: initialized
+0	11:30:51.560	Watermark Symbol EURUSD,M5: initialized
+0	11:30:51.562	Trading box Technical analysis EURUSD,M5: initialized
+0	11:30:51.562	ICT Asian_Range EURUSD,M5: initialized
+0	11:30:51.562	Time Range Separator EURUSD,M5: initialized
+0	11:30:51.563	ClickAndDraw EURUSD,M5: Iteration i : 1456
+0	11:30:51.563	ClickAndDraw EURUSD,M5: Iteration j : 0
+0	11:30:51.563	ClickAndDraw EURUSD,M5: Name : m.Data1680567141
+0	11:30:51.563	ClickAndDraw EURUSD,M5: initialized
+0	11:30:51.563	Kill Zone & 90 Min Cycle EURUSD,M5: initialized
+0	11:30:51.563	CandleTime EURUSD,M5: initialized
+1	11:30:51.642	Kill Zone & 90 Min Cycle EURUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:30:53.388	Quick Style EURUSD,M5: uninit reason 3
+0	11:30:53.391	OHLC Magnet EURUSD,M5: uninit reason 3
+0	11:30:53.391	Watermark Symbol EURUSD,M5: uninit reason 3
+0	11:30:53.391	Trading box Technical analysis EURUSD,M5: uninit reason 3
+0	11:30:53.391	ICT Asian_Range EURUSD,M5: deinitialized
+0	11:30:53.391	ICT Asian_Range EURUSD,M5: uninit reason 3
+0	11:30:53.391	Time Range Separator EURUSD,M5: uninit reason 3
+0	11:30:53.392	ClickAndDraw EURUSD,M5: uninit reason 3
+0	11:30:53.392	Kill Zone & 90 Min Cycle EURUSD,M5: uninit reason 3
+0	11:30:53.392	CandleTime EURUSD,M5: uninit reason 3
+0	11:30:53.401	Quick Style EURUSD,M15: 0
+0	11:30:53.401	Quick Style EURUSD,M15: 0
+0	11:30:53.401	Quick Style EURUSD,M15: 1
+0	11:30:53.401	Quick Style EURUSD,M15: 1
+0	11:30:53.401	Quick Style EURUSD,M15: 2
+0	11:30:53.401	Quick Style EURUSD,M15: initialized
+0	11:30:53.401	OHLC Magnet EURUSD,M15: initialized
+0	11:30:53.401	Watermark Symbol EURUSD,M15: initialized
+0	11:30:53.403	Trading box Technical analysis EURUSD,M15: initialized
+0	11:30:53.403	ICT Asian_Range EURUSD,M15: initialized
+0	11:30:53.403	Time Range Separator EURUSD,M15: initialized
+0	11:30:53.404	ClickAndDraw EURUSD,M15: Iteration i : 1456
+0	11:30:53.404	ClickAndDraw EURUSD,M15: Iteration j : 0
+0	11:30:53.404	ClickAndDraw EURUSD,M15: Name : m.Data1680567141
+0	11:30:53.404	ClickAndDraw EURUSD,M15: initialized
+0	11:30:53.404	Kill Zone & 90 Min Cycle EURUSD,M15: initialized
+0	11:30:53.404	CandleTime EURUSD,M15: initialized
+1	11:30:53.494	Kill Zone & 90 Min Cycle EURUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:31:26.822	Kill Zone & 90 Min Cycle EURUSD,M15: uninit reason 2
+0	11:31:26.825	Custom indicator Kill Zone & 90 Min Cycle EURUSD,M15: removed
+0	11:31:26.843	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle EURUSD,M15: loaded successfully
+0	11:31:26.949	Kill Zone & 90 Min Cycle EURUSD,M15: initialized
+1	11:31:26.950	Kill Zone & 90 Min Cycle EURUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:31:26.985	Kill Zone & 90 Min Cycle GBPUSD,M1: uninit reason 2
+0	11:31:26.991	Custom indicator Kill Zone & 90 Min Cycle GBPUSD,M1: removed
+0	11:31:27.056	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle GBPUSD,M1: loaded successfully
+0	11:31:27.205	Kill Zone & 90 Min Cycle GBPUSD,M1: initialized
+1	11:31:27.206	Kill Zone & 90 Min Cycle GBPUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:31:27.209	Kill Zone & 90 Min Cycle DXY,M5: uninit reason 2
+0	11:31:27.211	Custom indicator Kill Zone & 90 Min Cycle DXY,M5: removed
+0	11:31:27.231	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle DXY,M5: loaded successfully
+0	11:31:27.344	Kill Zone & 90 Min Cycle DXY,M5: initialized
+1	11:31:27.344	Kill Zone & 90 Min Cycle DXY,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:31:30.074	Quick Style EURUSD,M15: uninit reason 3
+0	11:31:30.076	OHLC Magnet EURUSD,M15: uninit reason 3
+0	11:31:30.076	Watermark Symbol EURUSD,M15: uninit reason 3
+0	11:31:30.077	Trading box Technical analysis EURUSD,M15: uninit reason 3
+0	11:31:30.077	ICT Asian_Range EURUSD,M15: deinitialized
+0	11:31:30.077	ICT Asian_Range EURUSD,M15: uninit reason 3
+0	11:31:30.077	Time Range Separator EURUSD,M15: uninit reason 3
+0	11:31:30.077	ClickAndDraw EURUSD,M15: uninit reason 3
+0	11:31:30.077	Kill Zone & 90 Min Cycle EURUSD,M15: uninit reason 3
+0	11:31:30.077	CandleTime EURUSD,M15: uninit reason 3
+0	11:31:30.088	Quick Style EURUSD,M30: 0
+0	11:31:30.088	Quick Style EURUSD,M30: 0
+0	11:31:30.088	Quick Style EURUSD,M30: 1
+0	11:31:30.089	Quick Style EURUSD,M30: 1
+0	11:31:30.089	Quick Style EURUSD,M30: 2
+0	11:31:30.089	Quick Style EURUSD,M30: initialized
+0	11:31:30.089	OHLC Magnet EURUSD,M30: initialized
+0	11:31:30.089	Watermark Symbol EURUSD,M30: initialized
+0	11:31:30.091	Trading box Technical analysis EURUSD,M30: initialized
+0	11:31:30.091	ICT Asian_Range EURUSD,M30: initialized
+0	11:31:30.091	Time Range Separator EURUSD,M30: initialized
+0	11:31:30.092	ClickAndDraw EURUSD,M30: Iteration i : 1456
+0	11:31:30.092	ClickAndDraw EURUSD,M30: Iteration j : 0
+0	11:31:30.092	ClickAndDraw EURUSD,M30: Name : m.Data1680567141
+0	11:31:30.092	ClickAndDraw EURUSD,M30: initialized
+0	11:31:30.092	Kill Zone & 90 Min Cycle EURUSD,M30: initialized
+0	11:31:30.093	CandleTime EURUSD,M30: initialized
+0	11:31:32.362	Quick Style EURUSD,M30: uninit reason 3
+0	11:31:32.365	OHLC Magnet EURUSD,M30: uninit reason 3
+0	11:31:32.365	Watermark Symbol EURUSD,M30: uninit reason 3
+0	11:31:32.365	Trading box Technical analysis EURUSD,M30: uninit reason 3
+0	11:31:32.365	ICT Asian_Range EURUSD,M30: deinitialized
+0	11:31:32.365	ICT Asian_Range EURUSD,M30: uninit reason 3
+0	11:31:32.365	Time Range Separator EURUSD,M30: uninit reason 3
+0	11:31:32.366	ClickAndDraw EURUSD,M30: uninit reason 3
+0	11:31:32.366	Kill Zone & 90 Min Cycle EURUSD,M30: uninit reason 3
+0	11:31:32.366	CandleTime EURUSD,M30: uninit reason 3
+0	11:31:32.376	Quick Style EURUSD,M15: 0
+0	11:31:32.376	Quick Style EURUSD,M15: 0
+0	11:31:32.376	Quick Style EURUSD,M15: 1
+0	11:31:32.376	Quick Style EURUSD,M15: 1
+0	11:31:32.376	Quick Style EURUSD,M15: 2
+0	11:31:32.376	Quick Style EURUSD,M15: initialized
+0	11:31:32.376	OHLC Magnet EURUSD,M15: initialized
+0	11:31:32.376	Watermark Symbol EURUSD,M15: initialized
+0	11:31:32.378	Trading box Technical analysis EURUSD,M15: initialized
+0	11:31:32.378	ICT Asian_Range EURUSD,M15: initialized
+0	11:31:32.378	Time Range Separator EURUSD,M15: initialized
+0	11:31:32.379	ClickAndDraw EURUSD,M15: Iteration i : 1453
+0	11:31:32.379	ClickAndDraw EURUSD,M15: Iteration j : 0
+0	11:31:32.379	ClickAndDraw EURUSD,M15: Name : m.Data1680567141
+0	11:31:32.379	ClickAndDraw EURUSD,M15: initialized
+0	11:31:32.379	Kill Zone & 90 Min Cycle EURUSD,M15: initialized
+0	11:31:32.379	CandleTime EURUSD,M15: initialized
+1	11:31:32.471	Kill Zone & 90 Min Cycle EURUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:31:35.337	Quick Style EURUSD,M15: uninit reason 3
+0	11:31:35.340	OHLC Magnet EURUSD,M15: uninit reason 3
+0	11:31:35.340	Watermark Symbol EURUSD,M15: uninit reason 3
+0	11:31:35.340	Trading box Technical analysis EURUSD,M15: uninit reason 3
+0	11:31:35.340	ICT Asian_Range EURUSD,M15: deinitialized
+0	11:31:35.340	ICT Asian_Range EURUSD,M15: uninit reason 3
+0	11:31:35.340	Time Range Separator EURUSD,M15: uninit reason 3
+0	11:31:35.341	ClickAndDraw EURUSD,M15: uninit reason 3
+0	11:31:35.341	Kill Zone & 90 Min Cycle EURUSD,M15: uninit reason 3
+0	11:31:35.341	CandleTime EURUSD,M15: uninit reason 3
+0	11:31:35.350	Quick Style EURUSD,M30: 0
+0	11:31:35.350	Quick Style EURUSD,M30: 0
+0	11:31:35.350	Quick Style EURUSD,M30: 1
+0	11:31:35.350	Quick Style EURUSD,M30: 1
+0	11:31:35.351	Quick Style EURUSD,M30: 2
+0	11:31:35.351	Quick Style EURUSD,M30: initialized
+0	11:31:35.351	OHLC Magnet EURUSD,M30: initialized
+0	11:31:35.351	Watermark Symbol EURUSD,M30: initialized
+0	11:31:35.352	Trading box Technical analysis EURUSD,M30: initialized
+0	11:31:35.353	ICT Asian_Range EURUSD,M30: initialized
+0	11:31:35.353	Time Range Separator EURUSD,M30: initialized
+0	11:31:35.354	ClickAndDraw EURUSD,M30: Iteration i : 1456
+0	11:31:35.354	ClickAndDraw EURUSD,M30: Iteration j : 0
+0	11:31:35.354	ClickAndDraw EURUSD,M30: Name : m.Data1680567141
+0	11:31:35.354	ClickAndDraw EURUSD,M30: initialized
+0	11:31:35.354	Kill Zone & 90 Min Cycle EURUSD,M30: initialized
+0	11:31:35.354	CandleTime EURUSD,M30: initialized
+0	11:31:37.087	Quick Style EURUSD,M30: uninit reason 3
+0	11:31:37.091	OHLC Magnet EURUSD,M30: uninit reason 3
+0	11:31:37.091	Watermark Symbol EURUSD,M30: uninit reason 3
+0	11:31:37.091	Trading box Technical analysis EURUSD,M30: uninit reason 3
+0	11:31:37.091	ICT Asian_Range EURUSD,M30: deinitialized
+0	11:31:37.091	ICT Asian_Range EURUSD,M30: uninit reason 3
+0	11:31:37.091	Time Range Separator EURUSD,M30: uninit reason 3
+0	11:31:37.092	ClickAndDraw EURUSD,M30: uninit reason 3
+0	11:31:37.092	Kill Zone & 90 Min Cycle EURUSD,M30: uninit reason 3
+0	11:31:37.092	CandleTime EURUSD,M30: uninit reason 3
+0	11:31:37.106	Quick Style EURUSD,M1: 0
+0	11:31:37.106	Quick Style EURUSD,M1: 0
+0	11:31:37.106	Quick Style EURUSD,M1: 1
+0	11:31:37.106	Quick Style EURUSD,M1: 1
+0	11:31:37.106	Quick Style EURUSD,M1: 2
+0	11:31:37.106	Quick Style EURUSD,M1: initialized
+0	11:31:37.106	OHLC Magnet EURUSD,M1: initialized
+0	11:31:37.107	Watermark Symbol EURUSD,M1: initialized
+0	11:31:37.108	Trading box Technical analysis EURUSD,M1: initialized
+0	11:31:37.108	ICT Asian_Range EURUSD,M1: initialized
+0	11:31:37.108	Time Range Separator EURUSD,M1: initialized
+0	11:31:37.109	ClickAndDraw EURUSD,M1: Iteration i : 1453
+0	11:31:37.109	ClickAndDraw EURUSD,M1: Iteration j : 0
+0	11:31:37.109	ClickAndDraw EURUSD,M1: Name : m.Data1680567141
+0	11:31:37.109	ClickAndDraw EURUSD,M1: initialized
+0	11:31:37.109	Kill Zone & 90 Min Cycle EURUSD,M1: initialized
+0	11:31:37.110	CandleTime EURUSD,M1: initialized
+1	11:31:37.144	Kill Zone & 90 Min Cycle EURUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:31:37.798	Quick Style EURUSD,M1: uninit reason 3
+0	11:31:37.801	OHLC Magnet EURUSD,M1: uninit reason 3
+0	11:31:37.801	Watermark Symbol EURUSD,M1: uninit reason 3
+0	11:31:37.801	Trading box Technical analysis EURUSD,M1: uninit reason 3
+0	11:31:37.801	ICT Asian_Range EURUSD,M1: deinitialized
+0	11:31:37.801	ICT Asian_Range EURUSD,M1: uninit reason 3
+0	11:31:37.801	Time Range Separator EURUSD,M1: uninit reason 3
+0	11:31:37.802	ClickAndDraw EURUSD,M1: uninit reason 3
+0	11:31:37.802	Kill Zone & 90 Min Cycle EURUSD,M1: uninit reason 3
+0	11:31:37.802	CandleTime EURUSD,M1: uninit reason 3
+0	11:31:37.814	Quick Style EURUSD,M5: 0
+0	11:31:37.814	Quick Style EURUSD,M5: 0
+0	11:31:37.814	Quick Style EURUSD,M5: 1
+0	11:31:37.814	Quick Style EURUSD,M5: 1
+0	11:31:37.814	Quick Style EURUSD,M5: 2
+0	11:31:37.815	Quick Style EURUSD,M5: initialized
+0	11:31:37.815	OHLC Magnet EURUSD,M5: initialized
+0	11:31:37.815	Watermark Symbol EURUSD,M5: initialized
+0	11:31:37.816	Trading box Technical analysis EURUSD,M5: initialized
+0	11:31:37.816	ICT Asian_Range EURUSD,M5: initialized
+0	11:31:37.816	Time Range Separator EURUSD,M5: initialized
+0	11:31:37.817	ClickAndDraw EURUSD,M5: Iteration i : 1456
+0	11:31:37.817	ClickAndDraw EURUSD,M5: Iteration j : 0
+0	11:31:37.817	ClickAndDraw EURUSD,M5: Name : m.Data1680567141
+0	11:31:37.817	ClickAndDraw EURUSD,M5: initialized
+0	11:31:37.817	Kill Zone & 90 Min Cycle EURUSD,M5: initialized
+0	11:31:37.818	CandleTime EURUSD,M5: initialized
+1	11:31:37.891	Kill Zone & 90 Min Cycle EURUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:31:50.753	Kill Zone & 90 Min Cycle EURUSD,M5: uninit reason 5
+0	11:31:50.770	Kill Zone & 90 Min Cycle EURUSD,M5: initialized
+1	11:31:51.691	Kill Zone & 90 Min Cycle EURUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:31:55.507	Quick Style EURUSD,M5: uninit reason 3
+0	11:31:55.510	OHLC Magnet EURUSD,M5: uninit reason 3
+0	11:31:55.510	Watermark Symbol EURUSD,M5: uninit reason 3
+0	11:31:55.511	Trading box Technical analysis EURUSD,M5: uninit reason 3
+0	11:31:55.511	ICT Asian_Range EURUSD,M5: deinitialized
+0	11:31:55.511	ICT Asian_Range EURUSD,M5: uninit reason 3
+0	11:31:55.511	Time Range Separator EURUSD,M5: uninit reason 3
+0	11:31:55.511	ClickAndDraw EURUSD,M5: uninit reason 3
+0	11:31:55.511	Kill Zone & 90 Min Cycle EURUSD,M5: uninit reason 3
+0	11:31:55.511	CandleTime EURUSD,M5: uninit reason 3
+0	11:31:55.521	Quick Style EURUSD,M15: 0
+0	11:31:55.521	Quick Style EURUSD,M15: 0
+0	11:31:55.521	Quick Style EURUSD,M15: 1
+0	11:31:55.521	Quick Style EURUSD,M15: 1
+0	11:31:55.521	Quick Style EURUSD,M15: 2
+0	11:31:55.521	Quick Style EURUSD,M15: initialized
+0	11:31:55.521	OHLC Magnet EURUSD,M15: initialized
+0	11:31:55.521	Watermark Symbol EURUSD,M15: initialized
+0	11:31:55.523	Trading box Technical analysis EURUSD,M15: initialized
+0	11:31:55.523	ICT Asian_Range EURUSD,M15: initialized
+0	11:31:55.523	Time Range Separator EURUSD,M15: initialized
+0	11:31:55.524	ClickAndDraw EURUSD,M15: Iteration i : 1456
+0	11:31:55.524	ClickAndDraw EURUSD,M15: Iteration j : 0
+0	11:31:55.524	ClickAndDraw EURUSD,M15: Name : m.Data1680567141
+0	11:31:55.524	ClickAndDraw EURUSD,M15: initialized
+0	11:31:55.524	Kill Zone & 90 Min Cycle EURUSD,M15: initialized
+0	11:31:55.525	CandleTime EURUSD,M15: initialized
+1	11:31:55.617	Kill Zone & 90 Min Cycle EURUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:32:21.305	Kill Zone & 90 Min Cycle EURUSD,M15: uninit reason 2
+0	11:32:21.307	Custom indicator Kill Zone & 90 Min Cycle EURUSD,M15: removed
+0	11:32:21.325	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle EURUSD,M15: loaded successfully
+0	11:32:21.416	Kill Zone & 90 Min Cycle EURUSD,M15: initialized
+1	11:32:21.417	Kill Zone & 90 Min Cycle EURUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:32:21.418	Kill Zone & 90 Min Cycle GBPUSD,M1: uninit reason 2
+0	11:32:21.420	Custom indicator Kill Zone & 90 Min Cycle GBPUSD,M1: removed
+0	11:32:21.440	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle GBPUSD,M1: loaded successfully
+0	11:32:21.537	Kill Zone & 90 Min Cycle GBPUSD,M1: initialized
+1	11:32:21.538	Kill Zone & 90 Min Cycle GBPUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:32:21.539	Kill Zone & 90 Min Cycle DXY,M5: uninit reason 2
+0	11:32:21.541	Custom indicator Kill Zone & 90 Min Cycle DXY,M5: removed
+0	11:32:21.560	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle DXY,M5: loaded successfully
+0	11:32:21.654	Kill Zone & 90 Min Cycle DXY,M5: initialized
+1	11:32:21.654	Kill Zone & 90 Min Cycle DXY,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:32:25.570	Quick Style EURUSD,M15: uninit reason 3
+0	11:32:25.573	OHLC Magnet EURUSD,M15: uninit reason 3
+0	11:32:25.573	Watermark Symbol EURUSD,M15: uninit reason 3
+0	11:32:25.573	Trading box Technical analysis EURUSD,M15: uninit reason 3
+0	11:32:25.573	ICT Asian_Range EURUSD,M15: deinitialized
+0	11:32:25.573	ICT Asian_Range EURUSD,M15: uninit reason 3
+0	11:32:25.573	Time Range Separator EURUSD,M15: uninit reason 3
+0	11:32:25.574	ClickAndDraw EURUSD,M15: uninit reason 3
+0	11:32:25.574	Kill Zone & 90 Min Cycle EURUSD,M15: uninit reason 3
+0	11:32:25.574	CandleTime EURUSD,M15: uninit reason 3
+0	11:32:25.584	Quick Style EURUSD,M30: 0
+0	11:32:25.584	Quick Style EURUSD,M30: 0
+0	11:32:25.584	Quick Style EURUSD,M30: 1
+0	11:32:25.584	Quick Style EURUSD,M30: 1
+0	11:32:25.584	Quick Style EURUSD,M30: 2
+0	11:32:25.584	Quick Style EURUSD,M30: initialized
+0	11:32:25.585	OHLC Magnet EURUSD,M30: initialized
+0	11:32:25.585	Watermark Symbol EURUSD,M30: initialized
+0	11:32:25.586	Trading box Technical analysis EURUSD,M30: initialized
+0	11:32:25.586	ICT Asian_Range EURUSD,M30: initialized
+0	11:32:25.586	Time Range Separator EURUSD,M30: initialized
+0	11:32:25.587	ClickAndDraw EURUSD,M30: Iteration i : 1456
+0	11:32:25.587	ClickAndDraw EURUSD,M30: Iteration j : 0
+0	11:32:25.587	ClickAndDraw EURUSD,M30: Name : m.Data1680567141
+0	11:32:25.587	ClickAndDraw EURUSD,M30: initialized
+0	11:32:25.588	Kill Zone & 90 Min Cycle EURUSD,M30: initialized
+0	11:32:25.588	CandleTime EURUSD,M30: initialized
+0	11:32:26.561	Quick Style EURUSD,M30: uninit reason 3
+0	11:32:26.564	OHLC Magnet EURUSD,M30: uninit reason 3
+0	11:32:26.564	Watermark Symbol EURUSD,M30: uninit reason 3
+0	11:32:26.565	Trading box Technical analysis EURUSD,M30: uninit reason 3
+0	11:32:26.565	ICT Asian_Range EURUSD,M30: deinitialized
+0	11:32:26.565	ICT Asian_Range EURUSD,M30: uninit reason 3
+0	11:32:26.565	Time Range Separator EURUSD,M30: uninit reason 3
+0	11:32:26.565	ClickAndDraw EURUSD,M30: uninit reason 3
+0	11:32:26.565	Kill Zone & 90 Min Cycle EURUSD,M30: uninit reason 3
+0	11:32:26.565	CandleTime EURUSD,M30: uninit reason 3
+0	11:32:26.575	Quick Style EURUSD,M15: 0
+0	11:32:26.575	Quick Style EURUSD,M15: 0
+0	11:32:26.575	Quick Style EURUSD,M15: 1
+0	11:32:26.575	Quick Style EURUSD,M15: 1
+0	11:32:26.575	Quick Style EURUSD,M15: 2
+0	11:32:26.575	Quick Style EURUSD,M15: initialized
+0	11:32:26.575	OHLC Magnet EURUSD,M15: initialized
+0	11:32:26.575	Watermark Symbol EURUSD,M15: initialized
+0	11:32:26.577	Trading box Technical analysis EURUSD,M15: initialized
+0	11:32:26.577	ICT Asian_Range EURUSD,M15: initialized
+0	11:32:26.577	Time Range Separator EURUSD,M15: initialized
+0	11:32:26.578	ClickAndDraw EURUSD,M15: Iteration i : 1453
+0	11:32:26.578	ClickAndDraw EURUSD,M15: Iteration j : 0
+0	11:32:26.578	ClickAndDraw EURUSD,M15: Name : m.Data1680567141
+0	11:32:26.578	ClickAndDraw EURUSD,M15: initialized
+0	11:32:26.578	Kill Zone & 90 Min Cycle EURUSD,M15: initialized
+0	11:32:26.578	CandleTime EURUSD,M15: initialized
+1	11:32:26.671	Kill Zone & 90 Min Cycle EURUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:35:34.260	Kill Zone & 90 Min Cycle EURUSD,M15: uninit reason 2
+0	11:35:34.262	Custom indicator Kill Zone & 90 Min Cycle EURUSD,M15: removed
+0	11:35:34.278	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle EURUSD,M15: loaded successfully
+0	11:35:34.374	Kill Zone & 90 Min Cycle EURUSD,M15: initialized
+1	11:35:34.374	Kill Zone & 90 Min Cycle EURUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (159,37)
+0	11:35:34.375	Kill Zone & 90 Min Cycle GBPUSD,M1: uninit reason 2
+0	11:35:34.377	Custom indicator Kill Zone & 90 Min Cycle GBPUSD,M1: removed
+0	11:35:34.394	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle GBPUSD,M1: loaded successfully
+0	11:35:34.494	Kill Zone & 90 Min Cycle GBPUSD,M1: initialized
+1	11:35:34.494	Kill Zone & 90 Min Cycle GBPUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (159,37)
+0	11:35:34.496	Kill Zone & 90 Min Cycle DXY,M5: uninit reason 2
+0	11:35:34.498	Custom indicator Kill Zone & 90 Min Cycle DXY,M5: removed
+0	11:35:34.514	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle DXY,M5: loaded successfully
+0	11:35:34.610	Kill Zone & 90 Min Cycle DXY,M5: initialized
+1	11:35:34.610	Kill Zone & 90 Min Cycle DXY,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (159,37)
+0	11:35:37.436	Quick Style EURUSD,M15: uninit reason 3
+0	11:35:37.448	OHLC Magnet EURUSD,M15: uninit reason 3
+0	11:35:37.448	Watermark Symbol EURUSD,M15: uninit reason 3
+0	11:35:37.449	Trading box Technical analysis EURUSD,M15: uninit reason 3
+0	11:35:37.449	ICT Asian_Range EURUSD,M15: deinitialized
+0	11:35:37.449	ICT Asian_Range EURUSD,M15: uninit reason 3
+0	11:35:37.449	Time Range Separator EURUSD,M15: uninit reason 3
+0	11:35:37.450	ClickAndDraw EURUSD,M15: uninit reason 3
+0	11:35:37.450	Kill Zone & 90 Min Cycle EURUSD,M15: uninit reason 3
+0	11:35:37.450	CandleTime EURUSD,M15: uninit reason 3
+0	11:35:37.477	Quick Style EURUSD,M5: 0
+0	11:35:37.478	Quick Style EURUSD,M5: 0
+0	11:35:37.478	Quick Style EURUSD,M5: 1
+0	11:35:37.478	Quick Style EURUSD,M5: 1
+0	11:35:37.478	Quick Style EURUSD,M5: 2
+0	11:35:37.479	Quick Style EURUSD,M5: initialized
+0	11:35:37.479	OHLC Magnet EURUSD,M5: initialized
+0	11:35:37.479	Watermark Symbol EURUSD,M5: initialized
+0	11:35:37.482	Trading box Technical analysis EURUSD,M5: initialized
+0	11:35:37.482	ICT Asian_Range EURUSD,M5: initialized
+0	11:35:37.482	Time Range Separator EURUSD,M5: initialized
+0	11:35:37.484	ClickAndDraw EURUSD,M5: Iteration i : 1456
+0	11:35:37.484	ClickAndDraw EURUSD,M5: Iteration j : 0
+0	11:35:37.484	ClickAndDraw EURUSD,M5: Name : m.Data1680567141
+0	11:35:37.484	ClickAndDraw EURUSD,M5: initialized
+0	11:35:37.484	Kill Zone & 90 Min Cycle EURUSD,M5: initialized
+0	11:35:37.485	CandleTime EURUSD,M5: initialized
+1	11:35:37.672	Kill Zone & 90 Min Cycle EURUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (159,37)
+0	11:36:10.641	Quick Style EURUSD,M5: uninit reason 3
+0	11:36:10.644	OHLC Magnet EURUSD,M5: uninit reason 3
+0	11:36:10.644	Watermark Symbol EURUSD,M5: uninit reason 3
+0	11:36:10.644	Trading box Technical analysis EURUSD,M5: uninit reason 3
+0	11:36:10.644	ICT Asian_Range EURUSD,M5: deinitialized
+0	11:36:10.644	ICT Asian_Range EURUSD,M5: uninit reason 3
+0	11:36:10.644	Time Range Separator EURUSD,M5: uninit reason 3
+0	11:36:10.645	ClickAndDraw EURUSD,M5: uninit reason 3
+0	11:36:10.645	Kill Zone & 90 Min Cycle EURUSD,M5: uninit reason 3
+0	11:36:10.645	CandleTime EURUSD,M5: uninit reason 3
+0	11:36:10.655	Quick Style EURUSD,M15: 0
+0	11:36:10.655	Quick Style EURUSD,M15: 0
+0	11:36:10.655	Quick Style EURUSD,M15: 1
+0	11:36:10.655	Quick Style EURUSD,M15: 1
+0	11:36:10.655	Quick Style EURUSD,M15: 2
+0	11:36:10.655	Quick Style EURUSD,M15: initialized
+0	11:36:10.655	OHLC Magnet EURUSD,M15: initialized
+0	11:36:10.655	Watermark Symbol EURUSD,M15: initialized
+0	11:36:10.657	Trading box Technical analysis EURUSD,M15: initialized
+0	11:36:10.657	ICT Asian_Range EURUSD,M15: initialized
+0	11:36:10.657	Time Range Separator EURUSD,M15: initialized
+0	11:36:10.658	ClickAndDraw EURUSD,M15: Iteration i : 1456
+0	11:36:10.658	ClickAndDraw EURUSD,M15: Iteration j : 0
+0	11:36:10.658	ClickAndDraw EURUSD,M15: Name : m.Data1680567141
+0	11:36:10.658	ClickAndDraw EURUSD,M15: initialized
+0	11:36:10.658	Kill Zone & 90 Min Cycle EURUSD,M15: initialized
+0	11:36:10.658	CandleTime EURUSD,M15: initialized
+1	11:36:10.748	Kill Zone & 90 Min Cycle EURUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (159,37)
+0	11:36:22.621	Quick Style EURUSD,M15: uninit reason 3
+0	11:36:22.624	OHLC Magnet EURUSD,M15: uninit reason 3
+0	11:36:22.624	Watermark Symbol EURUSD,M15: uninit reason 3
+0	11:36:22.625	Trading box Technical analysis EURUSD,M15: uninit reason 3
+0	11:36:22.625	ICT Asian_Range EURUSD,M15: deinitialized
+0	11:36:22.625	ICT Asian_Range EURUSD,M15: uninit reason 3
+0	11:36:22.625	Time Range Separator EURUSD,M15: uninit reason 3
+0	11:36:22.625	ClickAndDraw EURUSD,M15: uninit reason 3
+0	11:36:22.625	Kill Zone & 90 Min Cycle EURUSD,M15: uninit reason 3
+0	11:36:22.625	CandleTime EURUSD,M15: uninit reason 3
+0	11:36:22.636	Quick Style GBPUSD,M15: 0
+0	11:36:22.636	Quick Style GBPUSD,M15: 0
+0	11:36:22.636	Quick Style GBPUSD,M15: 1
+0	11:36:22.636	Quick Style GBPUSD,M15: 1
+0	11:36:22.636	Quick Style GBPUSD,M15: 2
+0	11:36:22.637	Quick Style GBPUSD,M15: initialized
+0	11:36:22.637	OHLC Magnet GBPUSD,M15: initialized
+0	11:36:22.637	Watermark Symbol GBPUSD,M15: initialized
+0	11:36:22.638	Trading box Technical analysis GBPUSD,M15: initialized
+0	11:36:22.638	ICT Asian_Range GBPUSD,M15: initialized
+0	11:36:22.638	Time Range Separator GBPUSD,M15: initialized
+0	11:36:22.639	ClickAndDraw GBPUSD,M15: Iteration i : 1456
+0	11:36:22.639	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	11:36:22.639	ClickAndDraw GBPUSD,M15: Name : m.Data1680567141
+0	11:36:22.639	ClickAndDraw GBPUSD,M15: initialized
+0	11:36:22.639	Kill Zone & 90 Min Cycle GBPUSD,M15: initialized
+0	11:36:22.640	CandleTime GBPUSD,M15: initialized
+1	11:36:22.727	Kill Zone & 90 Min Cycle GBPUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (159,37)
+0	11:36:26.595	Quick Style GBPUSD,M15: uninit reason 3
+0	11:36:26.598	OHLC Magnet GBPUSD,M15: uninit reason 3
+0	11:36:26.598	Watermark Symbol GBPUSD,M15: uninit reason 3
+0	11:36:26.598	Trading box Technical analysis GBPUSD,M15: uninit reason 3
+0	11:36:26.598	ICT Asian_Range GBPUSD,M15: deinitialized
+0	11:36:26.598	ICT Asian_Range GBPUSD,M15: uninit reason 3
+0	11:36:26.598	Time Range Separator GBPUSD,M15: uninit reason 3
+0	11:36:26.599	ClickAndDraw GBPUSD,M15: uninit reason 3
+0	11:36:26.599	Kill Zone & 90 Min Cycle GBPUSD,M15: uninit reason 3
+0	11:36:26.599	CandleTime GBPUSD,M15: uninit reason 3
+0	11:36:26.611	Quick Style GBPUSD,M5: 0
+0	11:36:26.611	Quick Style GBPUSD,M5: 0
+0	11:36:26.611	Quick Style GBPUSD,M5: 1
+0	11:36:26.611	Quick Style GBPUSD,M5: 1
+0	11:36:26.612	Quick Style GBPUSD,M5: 2
+0	11:36:26.612	Quick Style GBPUSD,M5: initialized
+0	11:36:26.612	OHLC Magnet GBPUSD,M5: initialized
+0	11:36:26.612	Watermark Symbol GBPUSD,M5: initialized
+0	11:36:26.613	Trading box Technical analysis GBPUSD,M5: initialized
+0	11:36:26.614	ICT Asian_Range GBPUSD,M5: initialized
+0	11:36:26.614	Time Range Separator GBPUSD,M5: initialized
+0	11:36:26.614	ClickAndDraw GBPUSD,M5: Iteration i : 1456
+0	11:36:26.614	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	11:36:26.614	ClickAndDraw GBPUSD,M5: Name : m.Data1680567141
+0	11:36:26.614	ClickAndDraw GBPUSD,M5: initialized
+0	11:36:26.615	Kill Zone & 90 Min Cycle GBPUSD,M5: initialized
+0	11:36:26.615	CandleTime GBPUSD,M5: initialized
+1	11:36:26.687	Kill Zone & 90 Min Cycle GBPUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (159,37)
+0	11:36:28.886	Quick Style GBPUSD,M5: uninit reason 3
+0	11:36:28.891	OHLC Magnet GBPUSD,M5: uninit reason 3
+0	11:36:28.891	Watermark Symbol GBPUSD,M5: uninit reason 3
+0	11:36:28.891	Trading box Technical analysis GBPUSD,M5: uninit reason 3
+0	11:36:28.891	ICT Asian_Range GBPUSD,M5: deinitialized
+0	11:36:28.891	ICT Asian_Range GBPUSD,M5: uninit reason 3
+0	11:36:28.891	Time Range Separator GBPUSD,M5: uninit reason 3
+0	11:36:28.892	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	11:36:28.892	Kill Zone & 90 Min Cycle GBPUSD,M5: uninit reason 3
+0	11:36:28.892	CandleTime GBPUSD,M5: uninit reason 3
+0	11:36:28.901	Quick Style GBPUSD,M15: 0
+0	11:36:28.901	Quick Style GBPUSD,M15: 0
+0	11:36:28.901	Quick Style GBPUSD,M15: 1
+0	11:36:28.901	Quick Style GBPUSD,M15: 1
+0	11:36:28.901	Quick Style GBPUSD,M15: 2
+0	11:36:28.901	Quick Style GBPUSD,M15: initialized
+0	11:36:28.902	OHLC Magnet GBPUSD,M15: initialized
+0	11:36:28.902	Watermark Symbol GBPUSD,M15: initialized
+0	11:36:28.903	Trading box Technical analysis GBPUSD,M15: initialized
+0	11:36:28.903	ICT Asian_Range GBPUSD,M15: initialized
+0	11:36:28.903	Time Range Separator GBPUSD,M15: initialized
+0	11:36:28.904	ClickAndDraw GBPUSD,M15: Iteration i : 1456
+0	11:36:28.904	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	11:36:28.904	ClickAndDraw GBPUSD,M15: Name : m.Data1680567141
+0	11:36:28.904	ClickAndDraw GBPUSD,M15: initialized
+0	11:36:28.904	Kill Zone & 90 Min Cycle GBPUSD,M15: initialized
+0	11:36:28.905	CandleTime GBPUSD,M15: initialized
+1	11:36:28.998	Kill Zone & 90 Min Cycle GBPUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (159,37)
+0	11:37:13.848	Quick Style GBPUSD,M15: uninit reason 3
+0	11:37:13.851	OHLC Magnet GBPUSD,M15: uninit reason 3
+0	11:37:13.851	Watermark Symbol GBPUSD,M15: uninit reason 3
+0	11:37:13.852	Trading box Technical analysis GBPUSD,M15: uninit reason 3
+0	11:37:13.852	ICT Asian_Range GBPUSD,M15: deinitialized
+0	11:37:13.852	ICT Asian_Range GBPUSD,M15: uninit reason 3
+0	11:37:13.852	Time Range Separator GBPUSD,M15: uninit reason 3
+0	11:37:13.852	ClickAndDraw GBPUSD,M15: uninit reason 3
+0	11:37:13.852	Kill Zone & 90 Min Cycle GBPUSD,M15: uninit reason 3
+0	11:37:13.852	CandleTime GBPUSD,M15: uninit reason 3
+0	11:37:13.863	Quick Style XAUUSD,M15: 0
+0	11:37:13.863	Quick Style XAUUSD,M15: 0
+0	11:37:13.863	Quick Style XAUUSD,M15: 1
+0	11:37:13.863	Quick Style XAUUSD,M15: 1
+0	11:37:13.863	Quick Style XAUUSD,M15: 2
+0	11:37:13.863	Quick Style XAUUSD,M15: initialized
+0	11:37:13.863	OHLC Magnet XAUUSD,M15: initialized
+0	11:37:13.864	Watermark Symbol XAUUSD,M15: initialized
+0	11:37:13.865	Trading box Technical analysis XAUUSD,M15: initialized
+0	11:37:13.865	ICT Asian_Range XAUUSD,M15: initialized
+0	11:37:13.865	Time Range Separator XAUUSD,M15: initialized
+0	11:37:13.866	ClickAndDraw XAUUSD,M15: Iteration i : 1456
+0	11:37:13.866	ClickAndDraw XAUUSD,M15: Iteration j : 0
+0	11:37:13.866	ClickAndDraw XAUUSD,M15: Name : m.Data1680567141
+0	11:37:13.866	ClickAndDraw XAUUSD,M15: initialized
+0	11:37:13.866	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	11:37:13.867	CandleTime XAUUSD,M15: initialized
+1	11:37:13.980	Kill Zone & 90 Min Cycle XAUUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (159,37)
+0	11:37:17.189	Quick Style XAUUSD,M15: uninit reason 3
+0	11:37:17.192	OHLC Magnet XAUUSD,M15: uninit reason 3
+0	11:37:17.192	Watermark Symbol XAUUSD,M15: uninit reason 3
+0	11:37:17.193	Trading box Technical analysis XAUUSD,M15: uninit reason 3
+0	11:37:17.193	ICT Asian_Range XAUUSD,M15: deinitialized
+0	11:37:17.193	ICT Asian_Range XAUUSD,M15: uninit reason 3
+0	11:37:17.193	Time Range Separator XAUUSD,M15: uninit reason 3
+0	11:37:17.193	ClickAndDraw XAUUSD,M15: uninit reason 3
+0	11:37:17.193	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 3
+0	11:37:17.193	CandleTime XAUUSD,M15: uninit reason 3
+0	11:37:17.203	Quick Style XAUUSD,M5: 0
+0	11:37:17.203	Quick Style XAUUSD,M5: 0
+0	11:37:17.204	Quick Style XAUUSD,M5: 1
+0	11:37:17.204	Quick Style XAUUSD,M5: 1
+0	11:37:17.204	Quick Style XAUUSD,M5: 2
+0	11:37:17.204	Quick Style XAUUSD,M5: initialized
+0	11:37:17.204	OHLC Magnet XAUUSD,M5: initialized
+0	11:37:17.204	Watermark Symbol XAUUSD,M5: initialized
+0	11:37:17.206	Trading box Technical analysis XAUUSD,M5: initialized
+0	11:37:17.206	ICT Asian_Range XAUUSD,M5: initialized
+0	11:37:17.206	Time Range Separator XAUUSD,M5: initialized
+0	11:37:17.207	ClickAndDraw XAUUSD,M5: Iteration i : 1456
+0	11:37:17.207	ClickAndDraw XAUUSD,M5: Iteration j : 0
+0	11:37:17.207	ClickAndDraw XAUUSD,M5: Name : m.Data1680567141
+0	11:37:17.207	ClickAndDraw XAUUSD,M5: initialized
+0	11:37:17.207	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	11:37:17.207	CandleTime XAUUSD,M5: initialized
+1	11:37:17.279	Kill Zone & 90 Min Cycle XAUUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (159,37)
+0	11:37:19.009	Quick Style XAUUSD,M5: uninit reason 3
+0	11:37:19.013	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	11:37:19.013	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	11:37:19.013	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	11:37:19.013	ICT Asian_Range XAUUSD,M5: deinitialized
+0	11:37:19.013	ICT Asian_Range XAUUSD,M5: uninit reason 3
+0	11:37:19.013	Time Range Separator XAUUSD,M5: uninit reason 3
+0	11:37:19.014	ClickAndDraw XAUUSD,M5: uninit reason 3
+0	11:37:19.014	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	11:37:19.014	CandleTime XAUUSD,M5: uninit reason 3
+0	11:37:19.027	Quick Style XAUUSD,M1: 0
+0	11:37:19.027	Quick Style XAUUSD,M1: 0
+0	11:37:19.027	Quick Style XAUUSD,M1: 1
+0	11:37:19.027	Quick Style XAUUSD,M1: 1
+0	11:37:19.028	Quick Style XAUUSD,M1: 2
+0	11:37:19.028	Quick Style XAUUSD,M1: initialized
+0	11:37:19.028	OHLC Magnet XAUUSD,M1: initialized
+0	11:37:19.028	Watermark Symbol XAUUSD,M1: initialized
+0	11:37:19.029	Trading box Technical analysis XAUUSD,M1: initialized
+0	11:37:19.030	ICT Asian_Range XAUUSD,M1: initialized
+0	11:37:19.030	Time Range Separator XAUUSD,M1: initialized
+0	11:37:19.030	ClickAndDraw XAUUSD,M1: Iteration i : 1456
+0	11:37:19.030	ClickAndDraw XAUUSD,M1: Iteration j : 0
+0	11:37:19.030	ClickAndDraw XAUUSD,M1: Name : m.Data1680567141
+0	11:37:19.030	ClickAndDraw XAUUSD,M1: initialized
+0	11:37:19.031	Kill Zone & 90 Min Cycle XAUUSD,M1: initialized
+0	11:37:19.031	CandleTime XAUUSD,M1: initialized
+1	11:37:19.061	Kill Zone & 90 Min Cycle XAUUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (159,37)
+0	11:44:11.676	Kill Zone & 90 Min Cycle XAUUSD,M1: uninit reason 2
+0	11:44:11.680	Custom indicator Kill Zone & 90 Min Cycle XAUUSD,M1: removed
+0	11:44:11.707	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle XAUUSD,M1: loaded successfully
+0	11:44:11.834	Kill Zone & 90 Min Cycle XAUUSD,M1: initialized
+1	11:44:11.835	Kill Zone & 90 Min Cycle XAUUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:44:11.836	Kill Zone & 90 Min Cycle GBPUSD,M1: uninit reason 2
+0	11:44:11.839	Custom indicator Kill Zone & 90 Min Cycle GBPUSD,M1: removed
+0	11:44:11.860	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle GBPUSD,M1: loaded successfully
+0	11:44:11.976	Kill Zone & 90 Min Cycle GBPUSD,M1: initialized
+1	11:44:11.978	Kill Zone & 90 Min Cycle GBPUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:44:11.980	Kill Zone & 90 Min Cycle DXY,M5: uninit reason 2
+0	11:44:11.983	Custom indicator Kill Zone & 90 Min Cycle DXY,M5: removed
+0	11:44:12.013	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle DXY,M5: loaded successfully
+0	11:44:12.234	Kill Zone & 90 Min Cycle DXY,M5: initialized
+1	11:44:12.235	Kill Zone & 90 Min Cycle DXY,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:44:14.003	Quick Style XAUUSD,M1: uninit reason 3
+0	11:44:14.008	OHLC Magnet XAUUSD,M1: uninit reason 3
+0	11:44:14.008	Watermark Symbol XAUUSD,M1: uninit reason 3
+0	11:44:14.009	Trading box Technical analysis XAUUSD,M1: uninit reason 3
+0	11:44:14.009	ICT Asian_Range XAUUSD,M1: deinitialized
+0	11:44:14.009	ICT Asian_Range XAUUSD,M1: uninit reason 3
+0	11:44:14.009	Time Range Separator XAUUSD,M1: uninit reason 3
+0	11:44:14.009	ClickAndDraw XAUUSD,M1: uninit reason 3
+0	11:44:14.009	Kill Zone & 90 Min Cycle XAUUSD,M1: uninit reason 3
+0	11:44:14.009	CandleTime XAUUSD,M1: uninit reason 3
+0	11:44:14.025	Quick Style XAUUSD,M5: 0
+0	11:44:14.025	Quick Style XAUUSD,M5: 0
+0	11:44:14.025	Quick Style XAUUSD,M5: 1
+0	11:44:14.025	Quick Style XAUUSD,M5: 1
+0	11:44:14.025	Quick Style XAUUSD,M5: 2
+0	11:44:14.026	Quick Style XAUUSD,M5: initialized
+0	11:44:14.026	OHLC Magnet XAUUSD,M5: initialized
+0	11:44:14.026	Watermark Symbol XAUUSD,M5: initialized
+0	11:44:14.028	Trading box Technical analysis XAUUSD,M5: initialized
+0	11:44:14.028	ICT Asian_Range XAUUSD,M5: initialized
+0	11:44:14.028	Time Range Separator XAUUSD,M5: initialized
+0	11:44:14.031	ClickAndDraw XAUUSD,M5: Iteration i : 1456
+0	11:44:14.031	ClickAndDraw XAUUSD,M5: Iteration j : 0
+0	11:44:14.031	ClickAndDraw XAUUSD,M5: Name : m.Data1680567141
+0	11:44:14.031	ClickAndDraw XAUUSD,M5: initialized
+0	11:44:14.031	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	11:44:14.032	CandleTime XAUUSD,M5: initialized
+1	11:44:14.158	Kill Zone & 90 Min Cycle XAUUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:44:15.818	Quick Style XAUUSD,M5: uninit reason 3
+0	11:44:15.825	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	11:44:15.825	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	11:44:15.826	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	11:44:15.826	ICT Asian_Range XAUUSD,M5: deinitialized
+0	11:44:15.826	ICT Asian_Range XAUUSD,M5: uninit reason 3
+0	11:44:15.826	Time Range Separator XAUUSD,M5: uninit reason 3
+0	11:44:15.826	ClickAndDraw XAUUSD,M5: uninit reason 3
+0	11:44:15.826	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	11:44:15.826	CandleTime XAUUSD,M5: uninit reason 3
+0	11:44:15.849	Quick Style XAUUSD,M15: 0
+0	11:44:15.849	Quick Style XAUUSD,M15: 0
+0	11:44:15.850	Quick Style XAUUSD,M15: 1
+0	11:44:15.850	Quick Style XAUUSD,M15: 1
+0	11:44:15.850	Quick Style XAUUSD,M15: 2
+0	11:44:15.850	Quick Style XAUUSD,M15: initialized
+0	11:44:15.850	OHLC Magnet XAUUSD,M15: initialized
+0	11:44:15.851	Watermark Symbol XAUUSD,M15: initialized
+0	11:44:15.853	Trading box Technical analysis XAUUSD,M15: initialized
+0	11:44:15.853	ICT Asian_Range XAUUSD,M15: initialized
+0	11:44:15.853	Time Range Separator XAUUSD,M15: initialized
+0	11:44:15.856	ClickAndDraw XAUUSD,M15: Iteration i : 1456
+0	11:44:15.856	ClickAndDraw XAUUSD,M15: Iteration j : 0
+0	11:44:15.856	ClickAndDraw XAUUSD,M15: Name : m.Data1680567141
+0	11:44:15.856	ClickAndDraw XAUUSD,M15: initialized
+0	11:44:15.856	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	11:44:15.857	CandleTime XAUUSD,M15: initialized
+1	11:44:16.008	Kill Zone & 90 Min Cycle XAUUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:44:17.383	Quick Style XAUUSD,M15: uninit reason 3
+0	11:44:17.386	OHLC Magnet XAUUSD,M15: uninit reason 3
+0	11:44:17.386	Watermark Symbol XAUUSD,M15: uninit reason 3
+0	11:44:17.387	Trading box Technical analysis XAUUSD,M15: uninit reason 3
+0	11:44:17.387	ICT Asian_Range XAUUSD,M15: deinitialized
+0	11:44:17.387	ICT Asian_Range XAUUSD,M15: uninit reason 3
+0	11:44:17.387	Time Range Separator XAUUSD,M15: uninit reason 3
+0	11:44:17.388	ClickAndDraw XAUUSD,M15: uninit reason 3
+0	11:44:17.388	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 3
+0	11:44:17.388	CandleTime XAUUSD,M15: uninit reason 3
+0	11:44:17.401	Quick Style XAUUSD,M5: 0
+0	11:44:17.401	Quick Style XAUUSD,M5: 0
+0	11:44:17.402	Quick Style XAUUSD,M5: 1
+0	11:44:17.402	Quick Style XAUUSD,M5: 1
+0	11:44:17.402	Quick Style XAUUSD,M5: 2
+0	11:44:17.402	Quick Style XAUUSD,M5: initialized
+0	11:44:17.402	OHLC Magnet XAUUSD,M5: initialized
+0	11:44:17.402	Watermark Symbol XAUUSD,M5: initialized
+0	11:44:17.405	Trading box Technical analysis XAUUSD,M5: initialized
+0	11:44:17.405	ICT Asian_Range XAUUSD,M5: initialized
+0	11:44:17.405	Time Range Separator XAUUSD,M5: initialized
+0	11:44:17.406	ClickAndDraw XAUUSD,M5: Iteration i : 1456
+0	11:44:17.406	ClickAndDraw XAUUSD,M5: Iteration j : 0
+0	11:44:17.406	ClickAndDraw XAUUSD,M5: Name : m.Data1680567141
+0	11:44:17.406	ClickAndDraw XAUUSD,M5: initialized
+0	11:44:17.407	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	11:44:17.407	CandleTime XAUUSD,M5: initialized
+1	11:44:17.530	Kill Zone & 90 Min Cycle XAUUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:45:10.057	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 5
+0	11:45:10.074	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+1	11:45:10.651	Kill Zone & 90 Min Cycle XAUUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:45:12.641	Quick Style XAUUSD,M5: uninit reason 3
+0	11:45:12.645	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	11:45:12.645	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	11:45:12.645	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	11:45:12.645	ICT Asian_Range XAUUSD,M5: deinitialized
+0	11:45:12.645	ICT Asian_Range XAUUSD,M5: uninit reason 3
+0	11:45:12.645	Time Range Separator XAUUSD,M5: uninit reason 3
+0	11:45:12.646	ClickAndDraw XAUUSD,M5: uninit reason 3
+0	11:45:12.646	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	11:45:12.646	CandleTime XAUUSD,M5: uninit reason 3
+0	11:45:12.658	Quick Style XAUUSD,M1: 0
+0	11:45:12.658	Quick Style XAUUSD,M1: 0
+0	11:45:12.658	Quick Style XAUUSD,M1: 1
+0	11:45:12.658	Quick Style XAUUSD,M1: 1
+0	11:45:12.658	Quick Style XAUUSD,M1: 2
+0	11:45:12.658	Quick Style XAUUSD,M1: initialized
+0	11:45:12.658	OHLC Magnet XAUUSD,M1: initialized
+0	11:45:12.659	Watermark Symbol XAUUSD,M1: initialized
+0	11:45:12.660	Trading box Technical analysis XAUUSD,M1: initialized
+0	11:45:12.660	ICT Asian_Range XAUUSD,M1: initialized
+0	11:45:12.660	Time Range Separator XAUUSD,M1: initialized
+0	11:45:12.661	ClickAndDraw XAUUSD,M1: Iteration i : 1456
+0	11:45:12.661	ClickAndDraw XAUUSD,M1: Iteration j : 0
+0	11:45:12.661	ClickAndDraw XAUUSD,M1: Name : m.Data1680567141
+0	11:45:12.661	ClickAndDraw XAUUSD,M1: initialized
+0	11:45:12.661	Kill Zone & 90 Min Cycle XAUUSD,M1: initialized
+0	11:45:12.662	CandleTime XAUUSD,M1: initialized
+1	11:45:12.694	Kill Zone & 90 Min Cycle XAUUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:45:13.477	Quick Style XAUUSD,M1: uninit reason 3
+0	11:45:13.481	OHLC Magnet XAUUSD,M1: uninit reason 3
+0	11:45:13.481	Watermark Symbol XAUUSD,M1: uninit reason 3
+0	11:45:13.482	Trading box Technical analysis XAUUSD,M1: uninit reason 3
+0	11:45:13.482	ICT Asian_Range XAUUSD,M1: deinitialized
+0	11:45:13.482	ICT Asian_Range XAUUSD,M1: uninit reason 3
+0	11:45:13.482	Time Range Separator XAUUSD,M1: uninit reason 3
+0	11:45:13.482	ClickAndDraw XAUUSD,M1: uninit reason 3
+0	11:45:13.482	Kill Zone & 90 Min Cycle XAUUSD,M1: uninit reason 3
+0	11:45:13.482	CandleTime XAUUSD,M1: uninit reason 3
+0	11:45:13.493	Quick Style XAUUSD,M5: 0
+0	11:45:13.493	Quick Style XAUUSD,M5: 0
+0	11:45:13.493	Quick Style XAUUSD,M5: 1
+0	11:45:13.493	Quick Style XAUUSD,M5: 1
+0	11:45:13.493	Quick Style XAUUSD,M5: 2
+0	11:45:13.493	Quick Style XAUUSD,M5: initialized
+0	11:45:13.494	OHLC Magnet XAUUSD,M5: initialized
+0	11:45:13.494	Watermark Symbol XAUUSD,M5: initialized
+0	11:45:13.495	Trading box Technical analysis XAUUSD,M5: initialized
+0	11:45:13.495	ICT Asian_Range XAUUSD,M5: initialized
+0	11:45:13.495	Time Range Separator XAUUSD,M5: initialized
+0	11:45:13.496	ClickAndDraw XAUUSD,M5: Iteration i : 1456
+0	11:45:13.496	ClickAndDraw XAUUSD,M5: Iteration j : 0
+0	11:45:13.496	ClickAndDraw XAUUSD,M5: Name : m.Data1680567141
+0	11:45:13.496	ClickAndDraw XAUUSD,M5: initialized
+0	11:45:13.496	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	11:45:13.497	CandleTime XAUUSD,M5: initialized
+1	11:45:13.577	Kill Zone & 90 Min Cycle XAUUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:45:14.077	Quick Style XAUUSD,M5: uninit reason 3
+0	11:45:14.081	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	11:45:14.081	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	11:45:14.081	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	11:45:14.081	ICT Asian_Range XAUUSD,M5: deinitialized
+0	11:45:14.081	ICT Asian_Range XAUUSD,M5: uninit reason 3
+0	11:45:14.081	Time Range Separator XAUUSD,M5: uninit reason 3
+0	11:45:14.082	ClickAndDraw XAUUSD,M5: uninit reason 3
+0	11:45:14.082	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	11:45:14.082	CandleTime XAUUSD,M5: uninit reason 3
+0	11:45:14.093	Quick Style XAUUSD,M15: 0
+0	11:45:14.093	Quick Style XAUUSD,M15: 0
+0	11:45:14.093	Quick Style XAUUSD,M15: 1
+0	11:45:14.093	Quick Style XAUUSD,M15: 1
+0	11:45:14.093	Quick Style XAUUSD,M15: 2
+0	11:45:14.094	Quick Style XAUUSD,M15: initialized
+0	11:45:14.094	OHLC Magnet XAUUSD,M15: initialized
+0	11:45:14.094	Watermark Symbol XAUUSD,M15: initialized
+0	11:45:14.095	Trading box Technical analysis XAUUSD,M15: initialized
+0	11:45:14.095	ICT Asian_Range XAUUSD,M15: initialized
+0	11:45:14.096	Time Range Separator XAUUSD,M15: initialized
+0	11:45:14.096	ClickAndDraw XAUUSD,M15: Iteration i : 1456
+0	11:45:14.096	ClickAndDraw XAUUSD,M15: Iteration j : 0
+0	11:45:14.096	ClickAndDraw XAUUSD,M15: Name : m.Data1680567141
+0	11:45:14.096	ClickAndDraw XAUUSD,M15: initialized
+0	11:45:14.097	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	11:45:14.097	CandleTime XAUUSD,M15: initialized
+1	11:45:14.186	Kill Zone & 90 Min Cycle XAUUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:45:14.791	Quick Style XAUUSD,M15: uninit reason 3
+0	11:45:14.794	OHLC Magnet XAUUSD,M15: uninit reason 3
+0	11:45:14.795	Watermark Symbol XAUUSD,M15: uninit reason 3
+0	11:45:14.795	Trading box Technical analysis XAUUSD,M15: uninit reason 3
+0	11:45:14.795	ICT Asian_Range XAUUSD,M15: deinitialized
+0	11:45:14.795	ICT Asian_Range XAUUSD,M15: uninit reason 3
+0	11:45:14.795	Time Range Separator XAUUSD,M15: uninit reason 3
+0	11:45:14.796	ClickAndDraw XAUUSD,M15: uninit reason 3
+0	11:45:14.796	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 3
+0	11:45:14.796	CandleTime XAUUSD,M15: uninit reason 3
+0	11:45:14.806	Quick Style XAUUSD,M5: 0
+0	11:45:14.806	Quick Style XAUUSD,M5: 0
+0	11:45:14.806	Quick Style XAUUSD,M5: 1
+0	11:45:14.806	Quick Style XAUUSD,M5: 1
+0	11:45:14.806	Quick Style XAUUSD,M5: 2
+0	11:45:14.807	Quick Style XAUUSD,M5: initialized
+0	11:45:14.807	OHLC Magnet XAUUSD,M5: initialized
+0	11:45:14.807	Watermark Symbol XAUUSD,M5: initialized
+0	11:45:14.808	Trading box Technical analysis XAUUSD,M5: initialized
+0	11:45:14.808	ICT Asian_Range XAUUSD,M5: initialized
+0	11:45:14.808	Time Range Separator XAUUSD,M5: initialized
+0	11:45:14.809	ClickAndDraw XAUUSD,M5: Iteration i : 1456
+0	11:45:14.809	ClickAndDraw XAUUSD,M5: Iteration j : 0
+0	11:45:14.809	ClickAndDraw XAUUSD,M5: Name : m.Data1680567141
+0	11:45:14.809	ClickAndDraw XAUUSD,M5: initialized
+0	11:45:14.810	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	11:45:14.810	CandleTime XAUUSD,M5: initialized
+1	11:45:14.887	Kill Zone & 90 Min Cycle XAUUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:45:16.397	Quick Style XAUUSD,M5: uninit reason 3
+0	11:45:16.400	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	11:45:16.400	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	11:45:16.400	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	11:45:16.400	ICT Asian_Range XAUUSD,M5: deinitialized
+0	11:45:16.400	ICT Asian_Range XAUUSD,M5: uninit reason 3
+0	11:45:16.400	Time Range Separator XAUUSD,M5: uninit reason 3
+0	11:45:16.401	ClickAndDraw XAUUSD,M5: uninit reason 3
+0	11:45:16.401	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	11:45:16.401	CandleTime XAUUSD,M5: uninit reason 3
+0	11:45:16.411	Quick Style XAUUSD,M15: 0
+0	11:45:16.411	Quick Style XAUUSD,M15: 0
+0	11:45:16.411	Quick Style XAUUSD,M15: 1
+0	11:45:16.411	Quick Style XAUUSD,M15: 1
+0	11:45:16.411	Quick Style XAUUSD,M15: 2
+0	11:45:16.411	Quick Style XAUUSD,M15: initialized
+0	11:45:16.411	OHLC Magnet XAUUSD,M15: initialized
+0	11:45:16.411	Watermark Symbol XAUUSD,M15: initialized
+0	11:45:16.413	Trading box Technical analysis XAUUSD,M15: initialized
+0	11:45:16.413	ICT Asian_Range XAUUSD,M15: initialized
+0	11:45:16.413	Time Range Separator XAUUSD,M15: initialized
+0	11:45:16.414	ClickAndDraw XAUUSD,M15: Iteration i : 1456
+0	11:45:16.414	ClickAndDraw XAUUSD,M15: Iteration j : 0
+0	11:45:16.414	ClickAndDraw XAUUSD,M15: Name : m.Data1680567141
+0	11:45:16.414	ClickAndDraw XAUUSD,M15: initialized
+0	11:45:16.414	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	11:45:16.415	CandleTime XAUUSD,M15: initialized
+1	11:45:16.508	Kill Zone & 90 Min Cycle XAUUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:45:17.233	Quick Style XAUUSD,M15: uninit reason 3
+0	11:45:17.235	OHLC Magnet XAUUSD,M15: uninit reason 3
+0	11:45:17.235	Watermark Symbol XAUUSD,M15: uninit reason 3
+0	11:45:17.236	Trading box Technical analysis XAUUSD,M15: uninit reason 3
+0	11:45:17.236	ICT Asian_Range XAUUSD,M15: deinitialized
+0	11:45:17.236	ICT Asian_Range XAUUSD,M15: uninit reason 3
+0	11:45:17.236	Time Range Separator XAUUSD,M15: uninit reason 3
+0	11:45:17.236	ClickAndDraw XAUUSD,M15: uninit reason 3
+0	11:45:17.236	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 3
+0	11:45:17.236	CandleTime XAUUSD,M15: uninit reason 3
+0	11:45:17.259	Quick Style XAUUSD,M30: 0
+0	11:45:17.259	Quick Style XAUUSD,M30: 0
+0	11:45:17.259	Quick Style XAUUSD,M30: 1
+0	11:45:17.259	Quick Style XAUUSD,M30: 1
+0	11:45:17.259	Quick Style XAUUSD,M30: 2
+0	11:45:17.260	Quick Style XAUUSD,M30: initialized
+0	11:45:17.260	OHLC Magnet XAUUSD,M30: initialized
+0	11:45:17.260	Watermark Symbol XAUUSD,M30: initialized
+0	11:45:17.261	Trading box Technical analysis XAUUSD,M30: initialized
+0	11:45:17.261	ICT Asian_Range XAUUSD,M30: initialized
+0	11:45:17.261	Time Range Separator XAUUSD,M30: initialized
+0	11:45:17.262	ClickAndDraw XAUUSD,M30: Iteration i : 1456
+0	11:45:17.262	ClickAndDraw XAUUSD,M30: Iteration j : 0
+0	11:45:17.262	ClickAndDraw XAUUSD,M30: Name : m.Data1680567141
+0	11:45:17.262	ClickAndDraw XAUUSD,M30: initialized
+0	11:45:17.262	Kill Zone & 90 Min Cycle XAUUSD,M30: initialized
+0	11:45:17.263	CandleTime XAUUSD,M30: initialized
+0	11:45:17.999	Quick Style XAUUSD,M30: uninit reason 3
+0	11:45:18.002	OHLC Magnet XAUUSD,M30: uninit reason 3
+0	11:45:18.002	Watermark Symbol XAUUSD,M30: uninit reason 3
+0	11:45:18.002	Trading box Technical analysis XAUUSD,M30: uninit reason 3
+0	11:45:18.002	ICT Asian_Range XAUUSD,M30: deinitialized
+0	11:45:18.002	ICT Asian_Range XAUUSD,M30: uninit reason 3
+0	11:45:18.002	Time Range Separator XAUUSD,M30: uninit reason 3
+0	11:45:18.003	ClickAndDraw XAUUSD,M30: uninit reason 3
+0	11:45:18.003	Kill Zone & 90 Min Cycle XAUUSD,M30: uninit reason 3
+0	11:45:18.003	CandleTime XAUUSD,M30: uninit reason 3
+0	11:45:18.013	Quick Style XAUUSD,M15: 0
+0	11:45:18.013	Quick Style XAUUSD,M15: 0
+0	11:45:18.013	Quick Style XAUUSD,M15: 1
+0	11:45:18.013	Quick Style XAUUSD,M15: 1
+0	11:45:18.014	Quick Style XAUUSD,M15: 2
+0	11:45:18.014	Quick Style XAUUSD,M15: initialized
+0	11:45:18.014	OHLC Magnet XAUUSD,M15: initialized
+0	11:45:18.014	Watermark Symbol XAUUSD,M15: initialized
+0	11:45:18.015	Trading box Technical analysis XAUUSD,M15: initialized
+0	11:45:18.016	ICT Asian_Range XAUUSD,M15: initialized
+0	11:45:18.016	Time Range Separator XAUUSD,M15: initialized
+0	11:45:18.016	ClickAndDraw XAUUSD,M15: Iteration i : 1453
+0	11:45:18.016	ClickAndDraw XAUUSD,M15: Iteration j : 0
+0	11:45:18.016	ClickAndDraw XAUUSD,M15: Name : m.Data1680567141
+0	11:45:18.016	ClickAndDraw XAUUSD,M15: initialized
+0	11:45:18.017	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	11:45:18.017	CandleTime XAUUSD,M15: initialized
+1	11:45:18.107	Kill Zone & 90 Min Cycle XAUUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:46:07.751	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 5
+0	11:46:07.772	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+1	11:46:08.212	Kill Zone & 90 Min Cycle XAUUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:46:09.564	Quick Style XAUUSD,M15: uninit reason 3
+0	11:46:09.566	OHLC Magnet XAUUSD,M15: uninit reason 3
+0	11:46:09.567	Watermark Symbol XAUUSD,M15: uninit reason 3
+0	11:46:09.567	Trading box Technical analysis XAUUSD,M15: uninit reason 3
+0	11:46:09.567	ICT Asian_Range XAUUSD,M15: deinitialized
+0	11:46:09.567	ICT Asian_Range XAUUSD,M15: uninit reason 3
+0	11:46:09.567	Time Range Separator XAUUSD,M15: uninit reason 3
+0	11:46:09.568	ClickAndDraw XAUUSD,M15: uninit reason 3
+0	11:46:09.568	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 3
+0	11:46:09.568	CandleTime XAUUSD,M15: uninit reason 3
+0	11:46:09.578	Quick Style XAUUSD,M5: 0
+0	11:46:09.578	Quick Style XAUUSD,M5: 0
+0	11:46:09.578	Quick Style XAUUSD,M5: 1
+0	11:46:09.578	Quick Style XAUUSD,M5: 1
+0	11:46:09.579	Quick Style XAUUSD,M5: 2
+0	11:46:09.579	Quick Style XAUUSD,M5: initialized
+0	11:46:09.579	OHLC Magnet XAUUSD,M5: initialized
+0	11:46:09.579	Watermark Symbol XAUUSD,M5: initialized
+0	11:46:09.581	Trading box Technical analysis XAUUSD,M5: initialized
+0	11:46:09.581	ICT Asian_Range XAUUSD,M5: initialized
+0	11:46:09.581	Time Range Separator XAUUSD,M5: initialized
+0	11:46:09.582	ClickAndDraw XAUUSD,M5: Iteration i : 1456
+0	11:46:09.582	ClickAndDraw XAUUSD,M5: Iteration j : 0
+0	11:46:09.582	ClickAndDraw XAUUSD,M5: Name : m.Data1680567141
+0	11:46:09.582	ClickAndDraw XAUUSD,M5: initialized
+0	11:46:09.583	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	11:46:09.583	CandleTime XAUUSD,M5: initialized
+1	11:46:09.664	Kill Zone & 90 Min Cycle XAUUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:46:10.273	Quick Style XAUUSD,M5: uninit reason 3
+0	11:46:10.276	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	11:46:10.276	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	11:46:10.276	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	11:46:10.276	ICT Asian_Range XAUUSD,M5: deinitialized
+0	11:46:10.276	ICT Asian_Range XAUUSD,M5: uninit reason 3
+0	11:46:10.276	Time Range Separator XAUUSD,M5: uninit reason 3
+0	11:46:10.277	ClickAndDraw XAUUSD,M5: uninit reason 3
+0	11:46:10.277	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	11:46:10.277	CandleTime XAUUSD,M5: uninit reason 3
+0	11:46:10.288	Quick Style XAUUSD,M30: 0
+0	11:46:10.288	Quick Style XAUUSD,M30: 0
+0	11:46:10.288	Quick Style XAUUSD,M30: 1
+0	11:46:10.288	Quick Style XAUUSD,M30: 1
+0	11:46:10.289	Quick Style XAUUSD,M30: 2
+0	11:46:10.289	Quick Style XAUUSD,M30: initialized
+0	11:46:10.290	OHLC Magnet XAUUSD,M30: initialized
+0	11:46:10.290	Watermark Symbol XAUUSD,M30: initialized
+0	11:46:10.291	Trading box Technical analysis XAUUSD,M30: initialized
+0	11:46:10.291	ICT Asian_Range XAUUSD,M30: initialized
+0	11:46:10.291	Time Range Separator XAUUSD,M30: initialized
+0	11:46:10.292	ClickAndDraw XAUUSD,M30: Iteration i : 1456
+0	11:46:10.292	ClickAndDraw XAUUSD,M30: Iteration j : 0
+0	11:46:10.292	ClickAndDraw XAUUSD,M30: Name : m.Data1680567141
+0	11:46:10.292	ClickAndDraw XAUUSD,M30: initialized
+0	11:46:10.292	Kill Zone & 90 Min Cycle XAUUSD,M30: initialized
+0	11:46:10.293	CandleTime XAUUSD,M30: initialized
+0	11:46:13.326	Quick Style XAUUSD,M30: uninit reason 3
+0	11:46:13.330	OHLC Magnet XAUUSD,M30: uninit reason 3
+0	11:46:13.330	Watermark Symbol XAUUSD,M30: uninit reason 3
+0	11:46:13.331	Trading box Technical analysis XAUUSD,M30: uninit reason 3
+0	11:46:13.331	ICT Asian_Range XAUUSD,M30: deinitialized
+0	11:46:13.331	ICT Asian_Range XAUUSD,M30: uninit reason 3
+0	11:46:13.331	Time Range Separator XAUUSD,M30: uninit reason 3
+0	11:46:13.331	ClickAndDraw XAUUSD,M30: uninit reason 3
+0	11:46:13.331	Kill Zone & 90 Min Cycle XAUUSD,M30: uninit reason 3
+0	11:46:13.332	CandleTime XAUUSD,M30: uninit reason 3
+0	11:46:13.342	Quick Style XAUUSD,M15: 0
+0	11:46:13.342	Quick Style XAUUSD,M15: 0
+0	11:46:13.343	Quick Style XAUUSD,M15: 1
+0	11:46:13.343	Quick Style XAUUSD,M15: 1
+0	11:46:13.343	Quick Style XAUUSD,M15: 2
+0	11:46:13.343	Quick Style XAUUSD,M15: initialized
+0	11:46:13.343	OHLC Magnet XAUUSD,M15: initialized
+0	11:46:13.344	Watermark Symbol XAUUSD,M15: initialized
+0	11:46:13.345	Trading box Technical analysis XAUUSD,M15: initialized
+0	11:46:13.345	ICT Asian_Range XAUUSD,M15: initialized
+0	11:46:13.345	Time Range Separator XAUUSD,M15: initialized
+0	11:46:13.347	ClickAndDraw XAUUSD,M15: Iteration i : 1453
+0	11:46:13.347	ClickAndDraw XAUUSD,M15: Iteration j : 0
+0	11:46:13.347	ClickAndDraw XAUUSD,M15: Name : m.Data1680567141
+0	11:46:13.347	ClickAndDraw XAUUSD,M15: initialized
+0	11:46:13.347	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	11:46:13.347	CandleTime XAUUSD,M15: initialized
+1	11:46:13.450	Kill Zone & 90 Min Cycle XAUUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:46:23.495	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 5
+0	11:46:23.514	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+1	11:46:24.277	Kill Zone & 90 Min Cycle XAUUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:46:26.946	Quick Style XAUUSD,M15: uninit reason 3
+0	11:46:26.949	OHLC Magnet XAUUSD,M15: uninit reason 3
+0	11:46:26.949	Watermark Symbol XAUUSD,M15: uninit reason 3
+0	11:46:26.950	Trading box Technical analysis XAUUSD,M15: uninit reason 3
+0	11:46:26.950	ICT Asian_Range XAUUSD,M15: deinitialized
+0	11:46:26.950	ICT Asian_Range XAUUSD,M15: uninit reason 3
+0	11:46:26.950	Time Range Separator XAUUSD,M15: uninit reason 3
+0	11:46:26.951	ClickAndDraw XAUUSD,M15: uninit reason 3
+0	11:46:26.951	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 3
+0	11:46:26.951	CandleTime XAUUSD,M15: uninit reason 3
+0	11:46:26.963	Quick Style XAUUSD,M30: 0
+0	11:46:26.963	Quick Style XAUUSD,M30: 0
+0	11:46:26.963	Quick Style XAUUSD,M30: 1
+0	11:46:26.963	Quick Style XAUUSD,M30: 1
+0	11:46:26.963	Quick Style XAUUSD,M30: 2
+0	11:46:26.964	Quick Style XAUUSD,M30: initialized
+0	11:46:26.964	OHLC Magnet XAUUSD,M30: initialized
+0	11:46:26.964	Watermark Symbol XAUUSD,M30: initialized
+0	11:46:26.966	Trading box Technical analysis XAUUSD,M30: initialized
+0	11:46:26.966	ICT Asian_Range XAUUSD,M30: initialized
+0	11:46:26.966	Time Range Separator XAUUSD,M30: initialized
+0	11:46:26.967	ClickAndDraw XAUUSD,M30: Iteration i : 1456
+0	11:46:26.967	ClickAndDraw XAUUSD,M30: Iteration j : 0
+0	11:46:26.967	ClickAndDraw XAUUSD,M30: Name : m.Data1680567141
+0	11:46:26.967	ClickAndDraw XAUUSD,M30: initialized
+0	11:46:26.967	Kill Zone & 90 Min Cycle XAUUSD,M30: initialized
+0	11:46:26.968	CandleTime XAUUSD,M30: initialized
+0	11:46:27.477	Quick Style XAUUSD,M30: uninit reason 3
+0	11:46:27.481	OHLC Magnet XAUUSD,M30: uninit reason 3
+0	11:46:27.481	Watermark Symbol XAUUSD,M30: uninit reason 3
+0	11:46:27.481	Trading box Technical analysis XAUUSD,M30: uninit reason 3
+0	11:46:27.481	ICT Asian_Range XAUUSD,M30: deinitialized
+0	11:46:27.481	ICT Asian_Range XAUUSD,M30: uninit reason 3
+0	11:46:27.481	Time Range Separator XAUUSD,M30: uninit reason 3
+0	11:46:27.482	ClickAndDraw XAUUSD,M30: uninit reason 3
+0	11:46:27.482	Kill Zone & 90 Min Cycle XAUUSD,M30: uninit reason 3
+0	11:46:27.483	CandleTime XAUUSD,M30: uninit reason 3
+0	11:46:27.494	Quick Style XAUUSD,M5: 0
+0	11:46:27.494	Quick Style XAUUSD,M5: 0
+0	11:46:27.494	Quick Style XAUUSD,M5: 1
+0	11:46:27.494	Quick Style XAUUSD,M5: 1
+0	11:46:27.494	Quick Style XAUUSD,M5: 2
+0	11:46:27.494	Quick Style XAUUSD,M5: initialized
+0	11:46:27.495	OHLC Magnet XAUUSD,M5: initialized
+0	11:46:27.495	Watermark Symbol XAUUSD,M5: initialized
+0	11:46:27.496	Trading box Technical analysis XAUUSD,M5: initialized
+0	11:46:27.496	ICT Asian_Range XAUUSD,M5: initialized
+0	11:46:27.496	Time Range Separator XAUUSD,M5: initialized
+0	11:46:27.497	ClickAndDraw XAUUSD,M5: Iteration i : 1453
+0	11:46:27.497	ClickAndDraw XAUUSD,M5: Iteration j : 0
+0	11:46:27.497	ClickAndDraw XAUUSD,M5: Name : m.Data1680567141
+0	11:46:27.497	ClickAndDraw XAUUSD,M5: initialized
+0	11:46:27.498	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	11:46:27.498	CandleTime XAUUSD,M5: initialized
+1	11:46:27.587	Kill Zone & 90 Min Cycle XAUUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:46:36.292	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 5
+0	11:46:36.310	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+1	11:46:36.670	Kill Zone & 90 Min Cycle XAUUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:48:23.260	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 2
+0	11:48:23.264	Custom indicator Kill Zone & 90 Min Cycle XAUUSD,M5: removed
+0	11:48:23.339	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle XAUUSD,M5: loaded successfully
+0	11:48:23.474	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+1	11:48:23.475	Kill Zone & 90 Min Cycle XAUUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:48:23.477	Kill Zone & 90 Min Cycle GBPUSD,M1: uninit reason 2
+0	11:48:23.478	Custom indicator Kill Zone & 90 Min Cycle GBPUSD,M1: removed
+0	11:48:23.502	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle GBPUSD,M1: loaded successfully
+0	11:48:23.618	Kill Zone & 90 Min Cycle GBPUSD,M1: initialized
+1	11:48:23.618	Kill Zone & 90 Min Cycle GBPUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:48:23.634	Kill Zone & 90 Min Cycle DXY,M5: uninit reason 2
+0	11:48:23.635	Custom indicator Kill Zone & 90 Min Cycle DXY,M5: removed
+0	11:48:23.656	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle DXY,M5: loaded successfully
+0	11:48:23.788	Kill Zone & 90 Min Cycle DXY,M5: initialized
+1	11:48:23.788	Kill Zone & 90 Min Cycle DXY,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:48:26.271	Quick Style XAUUSD,M5: uninit reason 3
+0	11:48:26.277	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	11:48:26.277	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	11:48:26.277	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	11:48:26.278	ICT Asian_Range XAUUSD,M5: deinitialized
+0	11:48:26.278	ICT Asian_Range XAUUSD,M5: uninit reason 3
+0	11:48:26.278	Time Range Separator XAUUSD,M5: uninit reason 3
+0	11:48:26.278	ClickAndDraw XAUUSD,M5: uninit reason 3
+0	11:48:26.278	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	11:48:26.278	CandleTime XAUUSD,M5: uninit reason 3
+0	11:48:26.294	Quick Style XAUUSD,M15: 0
+0	11:48:26.294	Quick Style XAUUSD,M15: 0
+0	11:48:26.294	Quick Style XAUUSD,M15: 1
+0	11:48:26.294	Quick Style XAUUSD,M15: 1
+0	11:48:26.294	Quick Style XAUUSD,M15: 2
+0	11:48:26.295	Quick Style XAUUSD,M15: initialized
+0	11:48:26.295	OHLC Magnet XAUUSD,M15: initialized
+0	11:48:26.295	Watermark Symbol XAUUSD,M15: initialized
+0	11:48:26.297	Trading box Technical analysis XAUUSD,M15: initialized
+0	11:48:26.297	ICT Asian_Range XAUUSD,M15: initialized
+0	11:48:26.297	Time Range Separator XAUUSD,M15: initialized
+0	11:48:26.298	ClickAndDraw XAUUSD,M15: Iteration i : 1456
+0	11:48:26.298	ClickAndDraw XAUUSD,M15: Iteration j : 0
+0	11:48:26.298	ClickAndDraw XAUUSD,M15: Name : m.Data1680567141
+0	11:48:26.298	ClickAndDraw XAUUSD,M15: initialized
+0	11:48:26.299	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	11:48:26.299	CandleTime XAUUSD,M15: initialized
+1	11:48:26.451	Kill Zone & 90 Min Cycle XAUUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:48:27.989	Quick Style XAUUSD,M15: uninit reason 3
+0	11:48:27.993	OHLC Magnet XAUUSD,M15: uninit reason 3
+0	11:48:27.993	Watermark Symbol XAUUSD,M15: uninit reason 3
+0	11:48:27.994	Trading box Technical analysis XAUUSD,M15: uninit reason 3
+0	11:48:27.994	ICT Asian_Range XAUUSD,M15: deinitialized
+0	11:48:27.994	ICT Asian_Range XAUUSD,M15: uninit reason 3
+0	11:48:27.994	Time Range Separator XAUUSD,M15: uninit reason 3
+0	11:48:27.995	ClickAndDraw XAUUSD,M15: uninit reason 3
+0	11:48:27.995	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 3
+0	11:48:27.995	CandleTime XAUUSD,M15: uninit reason 3
+0	11:48:28.007	Quick Style XAUUSD,M5: 0
+0	11:48:28.007	Quick Style XAUUSD,M5: 0
+0	11:48:28.008	Quick Style XAUUSD,M5: 1
+0	11:48:28.008	Quick Style XAUUSD,M5: 1
+0	11:48:28.008	Quick Style XAUUSD,M5: 2
+0	11:48:28.008	Quick Style XAUUSD,M5: initialized
+0	11:48:28.008	OHLC Magnet XAUUSD,M5: initialized
+0	11:48:28.008	Watermark Symbol XAUUSD,M5: initialized
+0	11:48:28.010	Trading box Technical analysis XAUUSD,M5: initialized
+0	11:48:28.010	ICT Asian_Range XAUUSD,M5: initialized
+0	11:48:28.010	Time Range Separator XAUUSD,M5: initialized
+0	11:48:28.011	ClickAndDraw XAUUSD,M5: Iteration i : 1456
+0	11:48:28.011	ClickAndDraw XAUUSD,M5: Iteration j : 0
+0	11:48:28.011	ClickAndDraw XAUUSD,M5: Name : m.Data1680567141
+0	11:48:28.011	ClickAndDraw XAUUSD,M5: initialized
+0	11:48:28.011	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	11:48:28.012	CandleTime XAUUSD,M5: initialized
+1	11:48:28.100	Kill Zone & 90 Min Cycle XAUUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:53:46.387	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 2
+0	11:53:46.391	Custom indicator Kill Zone & 90 Min Cycle XAUUSD,M5: removed
+0	11:53:46.410	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle XAUUSD,M5: loaded successfully
+0	11:53:46.499	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+1	11:53:46.500	Kill Zone & 90 Min Cycle XAUUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:53:46.502	Kill Zone & 90 Min Cycle GBPUSD,M1: uninit reason 2
+0	11:53:46.504	Custom indicator Kill Zone & 90 Min Cycle GBPUSD,M1: removed
+0	11:53:46.519	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle GBPUSD,M1: loaded successfully
+0	11:53:46.606	Kill Zone & 90 Min Cycle GBPUSD,M1: initialized
+1	11:53:46.607	Kill Zone & 90 Min Cycle GBPUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:53:46.608	Kill Zone & 90 Min Cycle DXY,M5: uninit reason 2
+0	11:53:46.612	Custom indicator Kill Zone & 90 Min Cycle DXY,M5: removed
+0	11:53:46.629	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle DXY,M5: loaded successfully
+0	11:53:46.765	Kill Zone & 90 Min Cycle DXY,M5: initialized
+1	11:53:46.765	Kill Zone & 90 Min Cycle DXY,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:53:48.471	Quick Style XAUUSD,M5: uninit reason 3
+0	11:53:48.474	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	11:53:48.474	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	11:53:48.474	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	11:53:48.474	ICT Asian_Range XAUUSD,M5: deinitialized
+0	11:53:48.474	ICT Asian_Range XAUUSD,M5: uninit reason 3
+0	11:53:48.474	Time Range Separator XAUUSD,M5: uninit reason 3
+0	11:53:48.475	ClickAndDraw XAUUSD,M5: uninit reason 3
+0	11:53:48.475	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	11:53:48.475	CandleTime XAUUSD,M5: uninit reason 3
+0	11:53:48.489	Quick Style XAUUSD,M15: 0
+0	11:53:48.490	Quick Style XAUUSD,M15: 0
+0	11:53:48.490	Quick Style XAUUSD,M15: 1
+0	11:53:48.490	Quick Style XAUUSD,M15: 1
+0	11:53:48.490	Quick Style XAUUSD,M15: 2
+0	11:53:48.490	Quick Style XAUUSD,M15: initialized
+0	11:53:48.490	OHLC Magnet XAUUSD,M15: initialized
+0	11:53:48.490	Watermark Symbol XAUUSD,M15: initialized
+0	11:53:48.492	Trading box Technical analysis XAUUSD,M15: initialized
+0	11:53:48.492	ICT Asian_Range XAUUSD,M15: initialized
+0	11:53:48.492	Time Range Separator XAUUSD,M15: initialized
+0	11:53:48.493	ClickAndDraw XAUUSD,M15: Iteration i : 1456
+0	11:53:48.493	ClickAndDraw XAUUSD,M15: Iteration j : 0
+0	11:53:48.493	ClickAndDraw XAUUSD,M15: Name : m.Data1680567141
+0	11:53:48.493	ClickAndDraw XAUUSD,M15: initialized
+0	11:53:48.493	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	11:53:48.494	CandleTime XAUUSD,M15: initialized
+1	11:53:48.591	Kill Zone & 90 Min Cycle XAUUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:53:50.336	Quick Style XAUUSD,M15: uninit reason 3
+0	11:53:50.340	OHLC Magnet XAUUSD,M15: uninit reason 3
+0	11:53:50.340	Watermark Symbol XAUUSD,M15: uninit reason 3
+0	11:53:50.341	Trading box Technical analysis XAUUSD,M15: uninit reason 3
+0	11:53:50.341	ICT Asian_Range XAUUSD,M15: deinitialized
+0	11:53:50.341	ICT Asian_Range XAUUSD,M15: uninit reason 3
+0	11:53:50.341	Time Range Separator XAUUSD,M15: uninit reason 3
+0	11:53:50.341	ClickAndDraw XAUUSD,M15: uninit reason 3
+0	11:53:50.341	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 3
+0	11:53:50.341	CandleTime XAUUSD,M15: uninit reason 3
+0	11:53:50.354	Quick Style XAUUSD,M5: 0
+0	11:53:50.354	Quick Style XAUUSD,M5: 0
+0	11:53:50.354	Quick Style XAUUSD,M5: 1
+0	11:53:50.354	Quick Style XAUUSD,M5: 1
+0	11:53:50.355	Quick Style XAUUSD,M5: 2
+0	11:53:50.355	Quick Style XAUUSD,M5: initialized
+0	11:53:50.355	OHLC Magnet XAUUSD,M5: initialized
+0	11:53:50.355	Watermark Symbol XAUUSD,M5: initialized
+0	11:53:50.357	Trading box Technical analysis XAUUSD,M5: initialized
+0	11:53:50.357	ICT Asian_Range XAUUSD,M5: initialized
+0	11:53:50.357	Time Range Separator XAUUSD,M5: initialized
+0	11:53:50.358	ClickAndDraw XAUUSD,M5: Iteration i : 1456
+0	11:53:50.358	ClickAndDraw XAUUSD,M5: Iteration j : 0
+0	11:53:50.358	ClickAndDraw XAUUSD,M5: Name : m.Data1680567141
+0	11:53:50.358	ClickAndDraw XAUUSD,M5: initialized
+0	11:53:50.358	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	11:53:50.359	CandleTime XAUUSD,M5: initialized
+1	11:53:50.495	Kill Zone & 90 Min Cycle XAUUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:57:28.457	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 2
+0	11:57:28.459	Custom indicator Kill Zone & 90 Min Cycle XAUUSD,M5: removed
+0	11:57:28.474	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle XAUUSD,M5: loaded successfully
+0	11:57:28.564	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+1	11:57:28.565	Kill Zone & 90 Min Cycle XAUUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:57:28.566	Kill Zone & 90 Min Cycle GBPUSD,M1: uninit reason 2
+0	11:57:28.568	Custom indicator Kill Zone & 90 Min Cycle GBPUSD,M1: removed
+0	11:57:28.584	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle GBPUSD,M1: loaded successfully
+0	11:57:28.682	Kill Zone & 90 Min Cycle GBPUSD,M1: initialized
+1	11:57:28.684	Kill Zone & 90 Min Cycle GBPUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:57:28.684	Kill Zone & 90 Min Cycle DXY,M5: uninit reason 2
+0	11:57:28.686	Custom indicator Kill Zone & 90 Min Cycle DXY,M5: removed
+0	11:57:28.706	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle DXY,M5: loaded successfully
+0	11:57:28.851	Kill Zone & 90 Min Cycle DXY,M5: initialized
+1	11:57:28.851	Kill Zone & 90 Min Cycle DXY,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:59:36.023	Quick Style XAUUSD,M5: uninit reason 3
+0	11:59:36.026	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	11:59:36.026	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	11:59:36.027	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	11:59:36.027	ICT Asian_Range XAUUSD,M5: deinitialized
+0	11:59:36.027	ICT Asian_Range XAUUSD,M5: uninit reason 3
+0	11:59:36.027	Time Range Separator XAUUSD,M5: uninit reason 3
+0	11:59:36.027	ClickAndDraw XAUUSD,M5: uninit reason 3
+0	11:59:36.027	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	11:59:36.027	CandleTime XAUUSD,M5: uninit reason 3
+0	11:59:36.038	Quick Style XAUUSD,M15: 0
+0	11:59:36.038	Quick Style XAUUSD,M15: 0
+0	11:59:36.038	Quick Style XAUUSD,M15: 1
+0	11:59:36.038	Quick Style XAUUSD,M15: 1
+0	11:59:36.039	Quick Style XAUUSD,M15: 2
+0	11:59:36.040	Quick Style XAUUSD,M15: initialized
+0	11:59:36.040	OHLC Magnet XAUUSD,M15: initialized
+0	11:59:36.040	Watermark Symbol XAUUSD,M15: initialized
+0	11:59:36.042	Trading box Technical analysis XAUUSD,M15: initialized
+0	11:59:36.042	ICT Asian_Range XAUUSD,M15: initialized
+0	11:59:36.042	Time Range Separator XAUUSD,M15: initialized
+0	11:59:36.043	ClickAndDraw XAUUSD,M15: Iteration i : 1456
+0	11:59:36.043	ClickAndDraw XAUUSD,M15: Iteration j : 0
+0	11:59:36.043	ClickAndDraw XAUUSD,M15: Name : m.Data1680567141
+0	11:59:36.043	ClickAndDraw XAUUSD,M15: initialized
+0	11:59:36.043	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	11:59:36.043	CandleTime XAUUSD,M15: initialized
+1	11:59:36.130	Kill Zone & 90 Min Cycle XAUUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:59:36.727	Quick Style XAUUSD,M15: uninit reason 3
+0	11:59:36.730	OHLC Magnet XAUUSD,M15: uninit reason 3
+0	11:59:36.730	Watermark Symbol XAUUSD,M15: uninit reason 3
+0	11:59:36.730	Trading box Technical analysis XAUUSD,M15: uninit reason 3
+0	11:59:36.730	ICT Asian_Range XAUUSD,M15: deinitialized
+0	11:59:36.730	ICT Asian_Range XAUUSD,M15: uninit reason 3
+0	11:59:36.730	Time Range Separator XAUUSD,M15: uninit reason 3
+0	11:59:36.731	ClickAndDraw XAUUSD,M15: uninit reason 3
+0	11:59:36.731	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 3
+0	11:59:36.731	CandleTime XAUUSD,M15: uninit reason 3
+0	11:59:36.742	Quick Style XAUUSD,M5: 0
+0	11:59:36.743	Quick Style XAUUSD,M5: 0
+0	11:59:36.743	Quick Style XAUUSD,M5: 1
+0	11:59:36.743	Quick Style XAUUSD,M5: 1
+0	11:59:36.743	Quick Style XAUUSD,M5: 2
+0	11:59:36.743	Quick Style XAUUSD,M5: initialized
+0	11:59:36.743	OHLC Magnet XAUUSD,M5: initialized
+0	11:59:36.743	Watermark Symbol XAUUSD,M5: initialized
+0	11:59:36.745	Trading box Technical analysis XAUUSD,M5: initialized
+0	11:59:36.745	ICT Asian_Range XAUUSD,M5: initialized
+0	11:59:36.745	Time Range Separator XAUUSD,M5: initialized
+0	11:59:36.747	ClickAndDraw XAUUSD,M5: Iteration i : 1456
+0	11:59:36.747	ClickAndDraw XAUUSD,M5: Iteration j : 0
+0	11:59:36.747	ClickAndDraw XAUUSD,M5: Name : m.Data1680567141
+0	11:59:36.747	ClickAndDraw XAUUSD,M5: initialized
+0	11:59:36.747	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	11:59:36.747	CandleTime XAUUSD,M5: initialized
+1	11:59:36.820	Kill Zone & 90 Min Cycle XAUUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:59:37.453	Quick Style XAUUSD,M5: uninit reason 3
+0	11:59:37.456	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	11:59:37.456	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	11:59:37.457	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	11:59:37.457	ICT Asian_Range XAUUSD,M5: deinitialized
+0	11:59:37.457	ICT Asian_Range XAUUSD,M5: uninit reason 3
+0	11:59:37.457	Time Range Separator XAUUSD,M5: uninit reason 3
+0	11:59:37.458	ClickAndDraw XAUUSD,M5: uninit reason 3
+0	11:59:37.458	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	11:59:37.458	CandleTime XAUUSD,M5: uninit reason 3
+0	11:59:37.471	Quick Style XAUUSD,M1: 0
+0	11:59:37.471	Quick Style XAUUSD,M1: 0
+0	11:59:37.471	Quick Style XAUUSD,M1: 1
+0	11:59:37.471	Quick Style XAUUSD,M1: 1
+0	11:59:37.471	Quick Style XAUUSD,M1: 2
+0	11:59:37.471	Quick Style XAUUSD,M1: initialized
+0	11:59:37.471	OHLC Magnet XAUUSD,M1: initialized
+0	11:59:37.471	Watermark Symbol XAUUSD,M1: initialized
+0	11:59:37.473	Trading box Technical analysis XAUUSD,M1: initialized
+0	11:59:37.473	ICT Asian_Range XAUUSD,M1: initialized
+0	11:59:37.473	Time Range Separator XAUUSD,M1: initialized
+0	11:59:37.474	ClickAndDraw XAUUSD,M1: Iteration i : 1456
+0	11:59:37.474	ClickAndDraw XAUUSD,M1: Iteration j : 0
+0	11:59:37.474	ClickAndDraw XAUUSD,M1: Name : m.Data1680567141
+0	11:59:37.474	ClickAndDraw XAUUSD,M1: initialized
+0	11:59:37.474	Kill Zone & 90 Min Cycle XAUUSD,M1: initialized
+0	11:59:37.475	CandleTime XAUUSD,M1: initialized
+1	11:59:37.504	Kill Zone & 90 Min Cycle XAUUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:59:43.102	ICT Asian_Range XAUUSD,M1: deinitialized
+0	11:59:43.102	ICT Asian_Range XAUUSD,M1: uninit reason 1
+0	11:59:43.102	Custom indicator ICT Asian_Range XAUUSD,M1: removed
+0	11:59:45.115	Quick Style XAUUSD,M1: uninit reason 3
+0	11:59:45.118	OHLC Magnet XAUUSD,M1: uninit reason 3
+0	11:59:45.118	Watermark Symbol XAUUSD,M1: uninit reason 3
+0	11:59:45.119	Trading box Technical analysis XAUUSD,M1: uninit reason 3
+0	11:59:45.119	Time Range Separator XAUUSD,M1: uninit reason 3
+0	11:59:45.119	ClickAndDraw XAUUSD,M1: uninit reason 3
+0	11:59:45.119	Kill Zone & 90 Min Cycle XAUUSD,M1: uninit reason 3
+0	11:59:45.119	CandleTime XAUUSD,M1: uninit reason 3
+0	11:59:45.129	Quick Style XAUUSD,M5: 0
+0	11:59:45.129	Quick Style XAUUSD,M5: 0
+0	11:59:45.129	Quick Style XAUUSD,M5: 1
+0	11:59:45.130	Quick Style XAUUSD,M5: 1
+0	11:59:45.130	Quick Style XAUUSD,M5: 2
+0	11:59:45.130	Quick Style XAUUSD,M5: initialized
+0	11:59:45.130	OHLC Magnet XAUUSD,M5: initialized
+0	11:59:45.130	Watermark Symbol XAUUSD,M5: initialized
+0	11:59:45.131	Trading box Technical analysis XAUUSD,M5: initialized
+0	11:59:45.132	Time Range Separator XAUUSD,M5: initialized
+0	11:59:45.132	ClickAndDraw XAUUSD,M5: Iteration i : 1456
+0	11:59:45.133	ClickAndDraw XAUUSD,M5: Iteration j : 0
+0	11:59:45.133	ClickAndDraw XAUUSD,M5: Name : m.Data1680567141
+0	11:59:45.133	ClickAndDraw XAUUSD,M5: initialized
+0	11:59:45.133	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	11:59:45.133	CandleTime XAUUSD,M5: initialized
+1	11:59:45.187	Kill Zone & 90 Min Cycle XAUUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:59:45.927	Quick Style XAUUSD,M5: uninit reason 3
+0	11:59:45.930	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	11:59:45.930	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	11:59:45.930	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	11:59:45.930	Time Range Separator XAUUSD,M5: uninit reason 3
+0	11:59:45.931	ClickAndDraw XAUUSD,M5: uninit reason 3
+0	11:59:45.931	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	11:59:45.931	CandleTime XAUUSD,M5: uninit reason 3
+0	11:59:45.941	Quick Style XAUUSD,M1: 0
+0	11:59:45.941	Quick Style XAUUSD,M1: 0
+0	11:59:45.941	Quick Style XAUUSD,M1: 1
+0	11:59:45.941	Quick Style XAUUSD,M1: 1
+0	11:59:45.941	Quick Style XAUUSD,M1: 2
+0	11:59:45.941	Quick Style XAUUSD,M1: initialized
+0	11:59:45.941	OHLC Magnet XAUUSD,M1: initialized
+0	11:59:45.941	Watermark Symbol XAUUSD,M1: initialized
+0	11:59:45.943	Trading box Technical analysis XAUUSD,M1: initialized
+0	11:59:45.943	Time Range Separator XAUUSD,M1: initialized
+0	11:59:45.944	ClickAndDraw XAUUSD,M1: Iteration i : 1456
+0	11:59:45.944	ClickAndDraw XAUUSD,M1: Iteration j : 0
+0	11:59:45.944	ClickAndDraw XAUUSD,M1: Name : m.Data1680567141
+0	11:59:45.944	ClickAndDraw XAUUSD,M1: initialized
+0	11:59:45.944	Kill Zone & 90 Min Cycle XAUUSD,M1: initialized
+0	11:59:45.945	CandleTime XAUUSD,M1: initialized
+1	11:59:45.956	Kill Zone & 90 Min Cycle XAUUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:59:47.019	Quick Style XAUUSD,M1: uninit reason 3
+0	11:59:47.022	OHLC Magnet XAUUSD,M1: uninit reason 3
+0	11:59:47.022	Watermark Symbol XAUUSD,M1: uninit reason 3
+0	11:59:47.023	Trading box Technical analysis XAUUSD,M1: uninit reason 3
+0	11:59:47.023	Time Range Separator XAUUSD,M1: uninit reason 3
+0	11:59:47.023	ClickAndDraw XAUUSD,M1: uninit reason 3
+0	11:59:47.023	Kill Zone & 90 Min Cycle XAUUSD,M1: uninit reason 3
+0	11:59:47.023	CandleTime XAUUSD,M1: uninit reason 3
+0	11:59:47.033	Quick Style XAUUSD,M15: 0
+0	11:59:47.033	Quick Style XAUUSD,M15: 0
+0	11:59:47.033	Quick Style XAUUSD,M15: 1
+0	11:59:47.033	Quick Style XAUUSD,M15: 1
+0	11:59:47.033	Quick Style XAUUSD,M15: 2
+0	11:59:47.034	Quick Style XAUUSD,M15: initialized
+0	11:59:47.034	OHLC Magnet XAUUSD,M15: initialized
+0	11:59:47.034	Watermark Symbol XAUUSD,M15: initialized
+0	11:59:47.035	Trading box Technical analysis XAUUSD,M15: initialized
+0	11:59:47.035	Time Range Separator XAUUSD,M15: initialized
+0	11:59:47.036	ClickAndDraw XAUUSD,M15: Iteration i : 1456
+0	11:59:47.036	ClickAndDraw XAUUSD,M15: Iteration j : 0
+0	11:59:47.036	ClickAndDraw XAUUSD,M15: Name : m.Data1680567141
+0	11:59:47.036	ClickAndDraw XAUUSD,M15: initialized
+0	11:59:47.036	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	11:59:47.037	CandleTime XAUUSD,M15: initialized
+1	11:59:47.112	Kill Zone & 90 Min Cycle XAUUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:59:49.979	Quick Style XAUUSD,M15: uninit reason 3
+0	11:59:49.982	OHLC Magnet XAUUSD,M15: uninit reason 3
+0	11:59:49.982	Watermark Symbol XAUUSD,M15: uninit reason 3
+0	11:59:49.982	Trading box Technical analysis XAUUSD,M15: uninit reason 3
+0	11:59:49.982	Time Range Separator XAUUSD,M15: uninit reason 3
+0	11:59:49.983	ClickAndDraw XAUUSD,M15: uninit reason 3
+0	11:59:49.983	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 3
+0	11:59:49.983	CandleTime XAUUSD,M15: uninit reason 3
+0	11:59:49.993	Quick Style XAUUSD,M5: 0
+0	11:59:49.993	Quick Style XAUUSD,M5: 0
+0	11:59:49.993	Quick Style XAUUSD,M5: 1
+0	11:59:49.993	Quick Style XAUUSD,M5: 1
+0	11:59:49.994	Quick Style XAUUSD,M5: 2
+0	11:59:49.994	Quick Style XAUUSD,M5: initialized
+0	11:59:49.994	OHLC Magnet XAUUSD,M5: initialized
+0	11:59:49.994	Watermark Symbol XAUUSD,M5: initialized
+0	11:59:49.995	Trading box Technical analysis XAUUSD,M5: initialized
+0	11:59:49.995	Time Range Separator XAUUSD,M5: initialized
+0	11:59:49.996	ClickAndDraw XAUUSD,M5: Iteration i : 1456
+0	11:59:49.996	ClickAndDraw XAUUSD,M5: Iteration j : 0
+0	11:59:49.996	ClickAndDraw XAUUSD,M5: Name : m.Data1680567141
+0	11:59:49.996	ClickAndDraw XAUUSD,M5: initialized
+0	11:59:49.997	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	11:59:49.997	CandleTime XAUUSD,M5: initialized
+1	11:59:50.053	Kill Zone & 90 Min Cycle XAUUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:59:50.721	Quick Style XAUUSD,M5: uninit reason 3
+0	11:59:50.725	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	11:59:50.725	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	11:59:50.725	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	11:59:50.725	Time Range Separator XAUUSD,M5: uninit reason 3
+0	11:59:50.725	ClickAndDraw XAUUSD,M5: uninit reason 3
+0	11:59:50.725	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	11:59:50.725	CandleTime XAUUSD,M5: uninit reason 3
+0	11:59:50.735	Quick Style XAUUSD,M1: 0
+0	11:59:50.735	Quick Style XAUUSD,M1: 0
+0	11:59:50.735	Quick Style XAUUSD,M1: 1
+0	11:59:50.735	Quick Style XAUUSD,M1: 1
+0	11:59:50.736	Quick Style XAUUSD,M1: 2
+0	11:59:50.736	Quick Style XAUUSD,M1: initialized
+0	11:59:50.736	OHLC Magnet XAUUSD,M1: initialized
+0	11:59:50.736	Watermark Symbol XAUUSD,M1: initialized
+0	11:59:50.738	Trading box Technical analysis XAUUSD,M1: initialized
+0	11:59:50.738	Time Range Separator XAUUSD,M1: initialized
+0	11:59:50.739	ClickAndDraw XAUUSD,M1: Iteration i : 1456
+0	11:59:50.739	ClickAndDraw XAUUSD,M1: Iteration j : 0
+0	11:59:50.739	ClickAndDraw XAUUSD,M1: Name : m.Data1680567141
+0	11:59:50.739	ClickAndDraw XAUUSD,M1: initialized
+0	11:59:50.739	Kill Zone & 90 Min Cycle XAUUSD,M1: initialized
+0	11:59:50.739	CandleTime XAUUSD,M1: initialized
+1	11:59:50.750	Kill Zone & 90 Min Cycle XAUUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:59:55.016	Quick Style XAUUSD,M1: uninit reason 3
+0	11:59:55.020	OHLC Magnet XAUUSD,M1: uninit reason 3
+0	11:59:55.020	Watermark Symbol XAUUSD,M1: uninit reason 3
+0	11:59:55.021	Trading box Technical analysis XAUUSD,M1: uninit reason 3
+0	11:59:55.021	Time Range Separator XAUUSD,M1: uninit reason 3
+0	11:59:55.021	ClickAndDraw XAUUSD,M1: uninit reason 3
+0	11:59:55.021	Kill Zone & 90 Min Cycle XAUUSD,M1: uninit reason 3
+0	11:59:55.021	CandleTime XAUUSD,M1: uninit reason 3
+0	11:59:55.030	Quick Style XAUUSD,M5: 0
+0	11:59:55.031	Quick Style XAUUSD,M5: 0
+0	11:59:55.031	Quick Style XAUUSD,M5: 1
+0	11:59:55.031	Quick Style XAUUSD,M5: 1
+0	11:59:55.031	Quick Style XAUUSD,M5: 2
+0	11:59:55.031	Quick Style XAUUSD,M5: initialized
+0	11:59:55.031	OHLC Magnet XAUUSD,M5: initialized
+0	11:59:55.031	Watermark Symbol XAUUSD,M5: initialized
+0	11:59:55.033	Trading box Technical analysis XAUUSD,M5: initialized
+0	11:59:55.033	Time Range Separator XAUUSD,M5: initialized
+0	11:59:55.034	ClickAndDraw XAUUSD,M5: Iteration i : 1456
+0	11:59:55.034	ClickAndDraw XAUUSD,M5: Iteration j : 0
+0	11:59:55.034	ClickAndDraw XAUUSD,M5: Name : m.Data1680567141
+0	11:59:55.034	ClickAndDraw XAUUSD,M5: initialized
+0	11:59:55.034	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	11:59:55.035	CandleTime XAUUSD,M5: initialized
+1	11:59:55.088	Kill Zone & 90 Min Cycle XAUUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:59:55.977	Quick Style XAUUSD,M5: uninit reason 3
+0	11:59:55.980	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	11:59:55.980	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	11:59:55.981	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	11:59:55.981	Time Range Separator XAUUSD,M5: uninit reason 3
+0	11:59:55.981	ClickAndDraw XAUUSD,M5: uninit reason 3
+0	11:59:55.981	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	11:59:55.981	CandleTime XAUUSD,M5: uninit reason 3
+0	11:59:55.991	Quick Style XAUUSD,M1: 0
+0	11:59:55.991	Quick Style XAUUSD,M1: 0
+0	11:59:55.992	Quick Style XAUUSD,M1: 1
+0	11:59:55.992	Quick Style XAUUSD,M1: 1
+0	11:59:55.992	Quick Style XAUUSD,M1: 2
+0	11:59:55.992	Quick Style XAUUSD,M1: initialized
+0	11:59:55.992	OHLC Magnet XAUUSD,M1: initialized
+0	11:59:55.992	Watermark Symbol XAUUSD,M1: initialized
+0	11:59:55.994	Trading box Technical analysis XAUUSD,M1: initialized
+0	11:59:55.994	Time Range Separator XAUUSD,M1: initialized
+0	11:59:55.995	ClickAndDraw XAUUSD,M1: Iteration i : 1456
+0	11:59:55.995	ClickAndDraw XAUUSD,M1: Iteration j : 0
+0	11:59:55.995	ClickAndDraw XAUUSD,M1: Name : m.Data1680567141
+0	11:59:55.995	ClickAndDraw XAUUSD,M1: initialized
+0	11:59:55.995	Kill Zone & 90 Min Cycle XAUUSD,M1: initialized
+0	11:59:55.995	CandleTime XAUUSD,M1: initialized
+1	11:59:56.007	Kill Zone & 90 Min Cycle XAUUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:59:57.171	Quick Style XAUUSD,M1: uninit reason 3
+0	11:59:57.175	OHLC Magnet XAUUSD,M1: uninit reason 3
+0	11:59:57.175	Watermark Symbol XAUUSD,M1: uninit reason 3
+0	11:59:57.175	Trading box Technical analysis XAUUSD,M1: uninit reason 3
+0	11:59:57.175	Time Range Separator XAUUSD,M1: uninit reason 3
+0	11:59:57.176	ClickAndDraw XAUUSD,M1: uninit reason 3
+0	11:59:57.176	Kill Zone & 90 Min Cycle XAUUSD,M1: uninit reason 3
+0	11:59:57.176	CandleTime XAUUSD,M1: uninit reason 3
+0	11:59:57.185	Quick Style XAUUSD,M5: 0
+0	11:59:57.185	Quick Style XAUUSD,M5: 0
+0	11:59:57.186	Quick Style XAUUSD,M5: 1
+0	11:59:57.186	Quick Style XAUUSD,M5: 1
+0	11:59:57.186	Quick Style XAUUSD,M5: 2
+0	11:59:57.186	Quick Style XAUUSD,M5: initialized
+0	11:59:57.186	OHLC Magnet XAUUSD,M5: initialized
+0	11:59:57.186	Watermark Symbol XAUUSD,M5: initialized
+0	11:59:57.188	Trading box Technical analysis XAUUSD,M5: initialized
+0	11:59:57.188	Time Range Separator XAUUSD,M5: initialized
+0	11:59:57.189	ClickAndDraw XAUUSD,M5: Iteration i : 1456
+0	11:59:57.189	ClickAndDraw XAUUSD,M5: Iteration j : 0
+0	11:59:57.189	ClickAndDraw XAUUSD,M5: Name : m.Data1680567141
+0	11:59:57.189	ClickAndDraw XAUUSD,M5: initialized
+0	11:59:57.189	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	11:59:57.190	CandleTime XAUUSD,M5: initialized
+1	11:59:57.242	Kill Zone & 90 Min Cycle XAUUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	11:59:59.607	Quick Style XAUUSD,M5: uninit reason 3
+0	11:59:59.628	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	11:59:59.628	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	11:59:59.629	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	11:59:59.629	Time Range Separator XAUUSD,M5: uninit reason 3
+0	11:59:59.629	ClickAndDraw XAUUSD,M5: uninit reason 3
+0	11:59:59.629	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	11:59:59.629	CandleTime XAUUSD,M5: uninit reason 3
+0	11:59:59.645	Quick Style XAUUSD,M1: 0
+0	11:59:59.648	Quick Style XAUUSD,M1: 0
+0	11:59:59.650	Quick Style XAUUSD,M1: 1
+0	11:59:59.652	Quick Style XAUUSD,M1: 1
+0	11:59:59.652	Quick Style XAUUSD,M1: 2
+0	11:59:59.656	Quick Style XAUUSD,M1: initialized
+0	11:59:59.656	OHLC Magnet XAUUSD,M1: initialized
+0	11:59:59.656	Watermark Symbol XAUUSD,M1: initialized
+0	11:59:59.658	Trading box Technical analysis XAUUSD,M1: initialized
+0	11:59:59.658	Time Range Separator XAUUSD,M1: initialized
+0	11:59:59.660	ClickAndDraw XAUUSD,M1: Iteration i : 1456
+0	11:59:59.660	ClickAndDraw XAUUSD,M1: Iteration j : 0
+0	11:59:59.660	ClickAndDraw XAUUSD,M1: Name : m.Data1680567141
+0	11:59:59.660	ClickAndDraw XAUUSD,M1: initialized
+0	11:59:59.660	Kill Zone & 90 Min Cycle XAUUSD,M1: initialized
+0	11:59:59.661	CandleTime XAUUSD,M1: initialized
+1	11:59:59.683	Kill Zone & 90 Min Cycle XAUUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,29)
+0	12:00:00.833	Quick Style XAUUSD,M1: uninit reason 3
+0	12:00:00.836	OHLC Magnet XAUUSD,M1: uninit reason 3
+0	12:00:00.836	Watermark Symbol XAUUSD,M1: uninit reason 3
+0	12:00:00.837	Trading box Technical analysis XAUUSD,M1: uninit reason 3
+0	12:00:00.837	Time Range Separator XAUUSD,M1: uninit reason 3
+0	12:00:00.837	ClickAndDraw XAUUSD,M1: uninit reason 3
+0	12:00:00.837	Kill Zone & 90 Min Cycle XAUUSD,M1: uninit reason 3
+0	12:00:00.837	CandleTime XAUUSD,M1: uninit reason 3
+0	12:00:00.847	Quick Style XAUUSD,M5: 0
+0	12:00:00.847	Quick Style XAUUSD,M5: 0
+0	12:00:00.847	Quick Style XAUUSD,M5: 1
+0	12:00:00.848	Quick Style XAUUSD,M5: 1
+0	12:00:00.848	Quick Style XAUUSD,M5: 2
+0	12:00:00.848	Quick Style XAUUSD,M5: initialized
+0	12:00:00.848	OHLC Magnet XAUUSD,M5: initialized
+0	12:00:00.848	Watermark Symbol XAUUSD,M5: initialized
+0	12:00:00.851	Trading box Technical analysis XAUUSD,M5: initialized
+0	12:00:00.851	Time Range Separator XAUUSD,M5: initialized
+0	12:00:00.852	ClickAndDraw XAUUSD,M5: Iteration i : 1456
+0	12:00:00.852	ClickAndDraw XAUUSD,M5: Iteration j : 0
+0	12:00:00.852	ClickAndDraw XAUUSD,M5: Name : m.Data1680567141
+0	12:00:00.852	ClickAndDraw XAUUSD,M5: initialized
+0	12:00:00.852	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	12:00:00.853	CandleTime XAUUSD,M5: initialized
+1	12:00:00.905	Kill Zone & 90 Min Cycle XAUUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (159,24)
+0	12:00:01.842	Quick Style XAUUSD,M5: uninit reason 3
+0	12:00:01.845	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	12:00:01.845	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	12:00:01.846	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	12:00:01.846	Time Range Separator XAUUSD,M5: uninit reason 3
+0	12:00:01.847	ClickAndDraw XAUUSD,M5: uninit reason 3
+0	12:00:01.847	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	12:00:01.847	CandleTime XAUUSD,M5: uninit reason 3
+0	12:00:01.858	Quick Style XAUUSD,M1: 0
+0	12:00:01.858	Quick Style XAUUSD,M1: 0
+0	12:00:01.858	Quick Style XAUUSD,M1: 1
+0	12:00:01.858	Quick Style XAUUSD,M1: 1
+0	12:00:01.858	Quick Style XAUUSD,M1: 2
+0	12:00:01.859	Quick Style XAUUSD,M1: initialized
+0	12:00:01.859	OHLC Magnet XAUUSD,M1: initialized
+0	12:00:01.859	Watermark Symbol XAUUSD,M1: initialized
+0	12:00:01.860	Trading box Technical analysis XAUUSD,M1: initialized
+0	12:00:01.860	Time Range Separator XAUUSD,M1: initialized
+0	12:00:01.861	ClickAndDraw XAUUSD,M1: Iteration i : 1457
+0	12:00:01.861	ClickAndDraw XAUUSD,M1: Iteration j : 0
+0	12:00:01.861	ClickAndDraw XAUUSD,M1: Name : m.Data1680567141
+0	12:00:01.861	ClickAndDraw XAUUSD,M1: initialized
+0	12:00:01.861	Kill Zone & 90 Min Cycle XAUUSD,M1: initialized
+0	12:00:01.862	CandleTime XAUUSD,M1: initialized
+1	12:00:01.873	Kill Zone & 90 Min Cycle XAUUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (159,24)
+0	12:00:04.269	Quick Style XAUUSD,M1: uninit reason 3
+0	12:00:04.272	OHLC Magnet XAUUSD,M1: uninit reason 3
+0	12:00:04.272	Watermark Symbol XAUUSD,M1: uninit reason 3
+0	12:00:04.273	Trading box Technical analysis XAUUSD,M1: uninit reason 3
+0	12:00:04.273	Time Range Separator XAUUSD,M1: uninit reason 3
+0	12:00:04.273	ClickAndDraw XAUUSD,M1: uninit reason 3
+0	12:00:04.273	Kill Zone & 90 Min Cycle XAUUSD,M1: uninit reason 3
+0	12:00:04.273	CandleTime XAUUSD,M1: uninit reason 3
+0	12:00:04.283	Quick Style XAUUSD,M5: 0
+0	12:00:04.283	Quick Style XAUUSD,M5: 0
+0	12:00:04.284	Quick Style XAUUSD,M5: 1
+0	12:00:04.284	Quick Style XAUUSD,M5: 1
+0	12:00:04.284	Quick Style XAUUSD,M5: 2
+0	12:00:04.284	Quick Style XAUUSD,M5: initialized
+0	12:00:04.284	OHLC Magnet XAUUSD,M5: initialized
+0	12:00:04.284	Watermark Symbol XAUUSD,M5: initialized
+0	12:00:04.286	Trading box Technical analysis XAUUSD,M5: initialized
+0	12:00:04.286	Time Range Separator XAUUSD,M5: initialized
+0	12:00:04.287	ClickAndDraw XAUUSD,M5: Iteration i : 1457
+0	12:00:04.287	ClickAndDraw XAUUSD,M5: Iteration j : 0
+0	12:00:04.287	ClickAndDraw XAUUSD,M5: Name : m.Data1680567141
+0	12:00:04.287	ClickAndDraw XAUUSD,M5: initialized
+0	12:00:04.287	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	12:00:04.288	CandleTime XAUUSD,M5: initialized
+1	12:00:04.341	Kill Zone & 90 Min Cycle XAUUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (159,24)
+0	12:00:05.917	Quick Style XAUUSD,M5: uninit reason 3
+0	12:00:05.920	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	12:00:05.920	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	12:00:05.921	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	12:00:05.921	Time Range Separator XAUUSD,M5: uninit reason 3
+0	12:00:05.921	ClickAndDraw XAUUSD,M5: uninit reason 3
+0	12:00:05.921	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	12:00:05.921	CandleTime XAUUSD,M5: uninit reason 3
+0	12:00:05.931	Quick Style XAUUSD,M1: 0
+0	12:00:05.931	Quick Style XAUUSD,M1: 0
+0	12:00:05.932	Quick Style XAUUSD,M1: 1
+0	12:00:05.932	Quick Style XAUUSD,M1: 1
+0	12:00:05.932	Quick Style XAUUSD,M1: 2
+0	12:00:05.932	Quick Style XAUUSD,M1: initialized
+0	12:00:05.932	OHLC Magnet XAUUSD,M1: initialized
+0	12:00:05.932	Watermark Symbol XAUUSD,M1: initialized
+0	12:00:05.934	Trading box Technical analysis XAUUSD,M1: initialized
+0	12:00:05.934	Time Range Separator XAUUSD,M1: initialized
+0	12:00:05.935	ClickAndDraw XAUUSD,M1: Iteration i : 1457
+0	12:00:05.935	ClickAndDraw XAUUSD,M1: Iteration j : 0
+0	12:00:05.935	ClickAndDraw XAUUSD,M1: Name : m.Data1680567141
+0	12:00:05.935	ClickAndDraw XAUUSD,M1: initialized
+0	12:00:05.935	Kill Zone & 90 Min Cycle XAUUSD,M1: initialized
+0	12:00:05.935	CandleTime XAUUSD,M1: initialized
+1	12:00:05.946	Kill Zone & 90 Min Cycle XAUUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (159,24)
+0	12:00:09.447	Quick Style XAUUSD,M1: uninit reason 3
+0	12:00:09.450	OHLC Magnet XAUUSD,M1: uninit reason 3
+0	12:00:09.450	Watermark Symbol XAUUSD,M1: uninit reason 3
+0	12:00:09.451	Trading box Technical analysis XAUUSD,M1: uninit reason 3
+0	12:00:09.451	Time Range Separator XAUUSD,M1: uninit reason 3
+0	12:00:09.451	ClickAndDraw XAUUSD,M1: uninit reason 3
+0	12:00:09.451	Kill Zone & 90 Min Cycle XAUUSD,M1: uninit reason 3
+0	12:00:09.451	CandleTime XAUUSD,M1: uninit reason 3
+0	12:00:09.461	Quick Style XAUUSD,M5: 0
+0	12:00:09.461	Quick Style XAUUSD,M5: 0
+0	12:00:09.461	Quick Style XAUUSD,M5: 1
+0	12:00:09.461	Quick Style XAUUSD,M5: 1
+0	12:00:09.461	Quick Style XAUUSD,M5: 2
+0	12:00:09.462	Quick Style XAUUSD,M5: initialized
+0	12:00:09.462	OHLC Magnet XAUUSD,M5: initialized
+0	12:00:09.462	Watermark Symbol XAUUSD,M5: initialized
+0	12:00:09.463	Trading box Technical analysis XAUUSD,M5: initialized
+0	12:00:09.463	Time Range Separator XAUUSD,M5: initialized
+0	12:00:09.464	ClickAndDraw XAUUSD,M5: Iteration i : 1457
+0	12:00:09.464	ClickAndDraw XAUUSD,M5: Iteration j : 0
+0	12:00:09.464	ClickAndDraw XAUUSD,M5: Name : m.Data1680567141
+0	12:00:09.464	ClickAndDraw XAUUSD,M5: initialized
+0	12:00:09.465	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	12:00:09.465	CandleTime XAUUSD,M5: initialized
+1	12:00:09.518	Kill Zone & 90 Min Cycle XAUUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (159,24)
+0	12:00:10.414	Quick Style XAUUSD,M5: uninit reason 3
+0	12:00:10.418	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	12:00:10.418	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	12:00:10.418	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	12:00:10.418	Time Range Separator XAUUSD,M5: uninit reason 3
+0	12:00:10.419	ClickAndDraw XAUUSD,M5: uninit reason 3
+0	12:00:10.419	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	12:00:10.419	CandleTime XAUUSD,M5: uninit reason 3
+0	12:00:10.429	Quick Style XAUUSD,M1: 0
+0	12:00:10.429	Quick Style XAUUSD,M1: 0
+0	12:00:10.429	Quick Style XAUUSD,M1: 1
+0	12:00:10.429	Quick Style XAUUSD,M1: 1
+0	12:00:10.429	Quick Style XAUUSD,M1: 2
+0	12:00:10.429	Quick Style XAUUSD,M1: initialized
+0	12:00:10.430	OHLC Magnet XAUUSD,M1: initialized
+0	12:00:10.430	Watermark Symbol XAUUSD,M1: initialized
+0	12:00:10.431	Trading box Technical analysis XAUUSD,M1: initialized
+0	12:00:10.431	Time Range Separator XAUUSD,M1: initialized
+0	12:00:10.432	ClickAndDraw XAUUSD,M1: Iteration i : 1457
+0	12:00:10.432	ClickAndDraw XAUUSD,M1: Iteration j : 0
+0	12:00:10.432	ClickAndDraw XAUUSD,M1: Name : m.Data1680567141
+0	12:00:10.432	ClickAndDraw XAUUSD,M1: initialized
+0	12:00:10.432	Kill Zone & 90 Min Cycle XAUUSD,M1: initialized
+0	12:00:10.433	CandleTime XAUUSD,M1: initialized
+1	12:00:10.444	Kill Zone & 90 Min Cycle XAUUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (159,24)
+0	12:00:13.077	Quick Style XAUUSD,M1: uninit reason 3
+0	12:00:13.082	OHLC Magnet XAUUSD,M1: uninit reason 3
+0	12:00:13.082	Watermark Symbol XAUUSD,M1: uninit reason 3
+0	12:00:13.083	Trading box Technical analysis XAUUSD,M1: uninit reason 3
+0	12:00:13.083	Time Range Separator XAUUSD,M1: uninit reason 3
+0	12:00:13.084	ClickAndDraw XAUUSD,M1: uninit reason 3
+0	12:00:13.084	Kill Zone & 90 Min Cycle XAUUSD,M1: uninit reason 3
+0	12:00:13.084	CandleTime XAUUSD,M1: uninit reason 3
+0	12:00:13.094	Quick Style XAUUSD,M5: 0
+0	12:00:13.094	Quick Style XAUUSD,M5: 0
+0	12:00:13.094	Quick Style XAUUSD,M5: 1
+0	12:00:13.094	Quick Style XAUUSD,M5: 1
+0	12:00:13.094	Quick Style XAUUSD,M5: 2
+0	12:00:13.094	Quick Style XAUUSD,M5: initialized
+0	12:00:13.094	OHLC Magnet XAUUSD,M5: initialized
+0	12:00:13.095	Watermark Symbol XAUUSD,M5: initialized
+0	12:00:13.096	Trading box Technical analysis XAUUSD,M5: initialized
+0	12:00:13.096	Time Range Separator XAUUSD,M5: initialized
+0	12:00:13.097	ClickAndDraw XAUUSD,M5: Iteration i : 1457
+0	12:00:13.097	ClickAndDraw XAUUSD,M5: Iteration j : 0
+0	12:00:13.097	ClickAndDraw XAUUSD,M5: Name : m.Data1680567141
+0	12:00:13.097	ClickAndDraw XAUUSD,M5: initialized
+0	12:00:13.097	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	12:00:13.098	CandleTime XAUUSD,M5: initialized
+1	12:00:13.151	Kill Zone & 90 Min Cycle XAUUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (159,24)
+0	12:03:13.258	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 2
+0	12:03:13.259	Custom indicator Kill Zone & 90 Min Cycle XAUUSD,M5: removed
+0	12:03:13.270	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle XAUUSD,M5: loaded successfully
+0	12:03:13.341	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	12:03:13.638	Kill Zone & 90 Min Cycle GBPUSD,M1: uninit reason 2
+0	12:03:13.640	Custom indicator Kill Zone & 90 Min Cycle GBPUSD,M1: removed
+0	12:03:13.652	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle GBPUSD,M1: loaded successfully
+0	12:03:13.720	Kill Zone & 90 Min Cycle GBPUSD,M1: initialized
+1	12:03:13.720	Kill Zone & 90 Min Cycle GBPUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (433,34)
+0	12:03:13.721	Kill Zone & 90 Min Cycle DXY,M5: uninit reason 2
+0	12:03:13.723	Custom indicator Kill Zone & 90 Min Cycle DXY,M5: removed
+0	12:03:13.735	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle DXY,M5: loaded successfully
+0	12:03:13.803	Kill Zone & 90 Min Cycle DXY,M5: initialized
+1	12:03:13.804	Kill Zone & 90 Min Cycle DXY,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (433,34)
+0	12:03:17.673	Quick Style XAUUSD,M5: uninit reason 3
+0	12:03:17.676	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	12:03:17.676	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	12:03:17.677	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	12:03:17.677	Time Range Separator XAUUSD,M5: uninit reason 3
+0	12:03:17.678	ClickAndDraw XAUUSD,M5: uninit reason 3
+0	12:03:17.678	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	12:03:17.679	CandleTime XAUUSD,M5: uninit reason 3
+0	12:03:17.691	Quick Style XAUUSD,M15: 0
+0	12:03:17.691	Quick Style XAUUSD,M15: 0
+0	12:03:17.691	Quick Style XAUUSD,M15: 1
+0	12:03:17.691	Quick Style XAUUSD,M15: 1
+0	12:03:17.691	Quick Style XAUUSD,M15: 2
+0	12:03:17.691	Quick Style XAUUSD,M15: initialized
+0	12:03:17.691	OHLC Magnet XAUUSD,M15: initialized
+0	12:03:17.692	Watermark Symbol XAUUSD,M15: initialized
+0	12:03:17.693	Trading box Technical analysis XAUUSD,M15: initialized
+0	12:03:17.693	Time Range Separator XAUUSD,M15: initialized
+0	12:03:17.694	ClickAndDraw XAUUSD,M15: Iteration i : 1453
+0	12:03:17.694	ClickAndDraw XAUUSD,M15: Iteration j : 0
+0	12:03:17.694	ClickAndDraw XAUUSD,M15: Name : m.Data1680567141
+0	12:03:17.694	ClickAndDraw XAUUSD,M15: initialized
+0	12:03:17.694	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	12:03:17.695	CandleTime XAUUSD,M15: initialized
+1	12:03:17.775	Kill Zone & 90 Min Cycle XAUUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (145,23)
+0	12:03:18.836	Quick Style XAUUSD,M15: uninit reason 3
+0	12:03:18.840	OHLC Magnet XAUUSD,M15: uninit reason 3
+0	12:03:18.840	Watermark Symbol XAUUSD,M15: uninit reason 3
+0	12:03:18.840	Trading box Technical analysis XAUUSD,M15: uninit reason 3
+0	12:03:18.840	Time Range Separator XAUUSD,M15: uninit reason 3
+0	12:03:18.841	ClickAndDraw XAUUSD,M15: uninit reason 3
+0	12:03:18.841	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 3
+0	12:03:18.841	CandleTime XAUUSD,M15: uninit reason 3
+0	12:03:18.851	Quick Style XAUUSD,M5: 0
+0	12:03:18.851	Quick Style XAUUSD,M5: 0
+0	12:03:18.851	Quick Style XAUUSD,M5: 1
+0	12:03:18.851	Quick Style XAUUSD,M5: 1
+0	12:03:18.852	Quick Style XAUUSD,M5: 2
+0	12:03:18.852	Quick Style XAUUSD,M5: initialized
+0	12:03:18.852	OHLC Magnet XAUUSD,M5: initialized
+0	12:03:18.852	Watermark Symbol XAUUSD,M5: initialized
+0	12:03:18.854	Trading box Technical analysis XAUUSD,M5: initialized
+0	12:03:18.854	Time Range Separator XAUUSD,M5: initialized
+0	12:03:18.855	ClickAndDraw XAUUSD,M5: Iteration i : 1456
+0	12:03:18.855	ClickAndDraw XAUUSD,M5: Iteration j : 0
+0	12:03:18.855	ClickAndDraw XAUUSD,M5: Name : m.Data1680567141
+0	12:03:18.855	ClickAndDraw XAUUSD,M5: initialized
+0	12:03:18.855	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	12:03:18.855	CandleTime XAUUSD,M5: initialized
+0	12:03:29.425	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 5
+0	12:03:29.460	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	12:03:34.570	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 5
+0	12:03:34.594	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	12:03:40.137	Quick Style XAUUSD,M5: uninit reason 3
+0	12:03:40.140	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	12:03:40.140	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	12:03:40.140	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	12:03:40.140	Time Range Separator XAUUSD,M5: uninit reason 3
+0	12:03:40.141	ClickAndDraw XAUUSD,M5: uninit reason 3
+0	12:03:40.141	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	12:03:40.141	CandleTime XAUUSD,M5: uninit reason 3
+0	12:03:40.153	Quick Style XAUUSD,M15: 0
+0	12:03:40.153	Quick Style XAUUSD,M15: 0
+0	12:03:40.153	Quick Style XAUUSD,M15: 1
+0	12:03:40.153	Quick Style XAUUSD,M15: 1
+0	12:03:40.153	Quick Style XAUUSD,M15: 2
+0	12:03:40.154	Quick Style XAUUSD,M15: initialized
+0	12:03:40.154	OHLC Magnet XAUUSD,M15: initialized
+0	12:03:40.154	Watermark Symbol XAUUSD,M15: initialized
+0	12:03:40.155	Trading box Technical analysis XAUUSD,M15: initialized
+0	12:03:40.155	Time Range Separator XAUUSD,M15: initialized
+0	12:03:40.156	ClickAndDraw XAUUSD,M15: Iteration i : 1453
+0	12:03:40.156	ClickAndDraw XAUUSD,M15: Iteration j : 0
+0	12:03:40.156	ClickAndDraw XAUUSD,M15: Name : m.Data1680567141
+0	12:03:40.156	ClickAndDraw XAUUSD,M15: initialized
+0	12:03:40.156	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	12:03:40.157	CandleTime XAUUSD,M15: initialized
+0	12:03:41.895	Quick Style XAUUSD,M15: uninit reason 3
+0	12:03:41.897	OHLC Magnet XAUUSD,M15: uninit reason 3
+0	12:03:41.897	Watermark Symbol XAUUSD,M15: uninit reason 3
+0	12:03:41.898	Trading box Technical analysis XAUUSD,M15: uninit reason 3
+0	12:03:41.898	Time Range Separator XAUUSD,M15: uninit reason 3
+0	12:03:41.898	ClickAndDraw XAUUSD,M15: uninit reason 3
+0	12:03:41.898	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 3
+0	12:03:41.899	CandleTime XAUUSD,M15: uninit reason 3
+0	12:03:41.908	Quick Style XAUUSD,M5: 0
+0	12:03:41.909	Quick Style XAUUSD,M5: 0
+0	12:03:41.909	Quick Style XAUUSD,M5: 1
+0	12:03:41.909	Quick Style XAUUSD,M5: 1
+0	12:03:41.909	Quick Style XAUUSD,M5: 2
+0	12:03:41.909	Quick Style XAUUSD,M5: initialized
+0	12:03:41.909	OHLC Magnet XAUUSD,M5: initialized
+0	12:03:41.909	Watermark Symbol XAUUSD,M5: initialized
+0	12:03:41.911	Trading box Technical analysis XAUUSD,M5: initialized
+0	12:03:41.911	Time Range Separator XAUUSD,M5: initialized
+0	12:03:41.912	ClickAndDraw XAUUSD,M5: Iteration i : 1453
+0	12:03:41.912	ClickAndDraw XAUUSD,M5: Iteration j : 0
+0	12:03:41.912	ClickAndDraw XAUUSD,M5: Name : m.Data1680567141
+0	12:03:41.912	ClickAndDraw XAUUSD,M5: initialized
+0	12:03:41.912	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	12:03:41.912	CandleTime XAUUSD,M5: initialized
+0	12:03:42.770	Quick Style XAUUSD,M5: uninit reason 3
+0	12:03:42.773	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	12:03:42.773	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	12:03:42.774	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	12:03:42.774	Time Range Separator XAUUSD,M5: uninit reason 3
+0	12:03:42.775	ClickAndDraw XAUUSD,M5: uninit reason 3
+0	12:03:42.775	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	12:03:42.775	CandleTime XAUUSD,M5: uninit reason 3
+0	12:03:42.785	Quick Style XAUUSD,M15: 0
+0	12:03:42.785	Quick Style XAUUSD,M15: 0
+0	12:03:42.785	Quick Style XAUUSD,M15: 1
+0	12:03:42.785	Quick Style XAUUSD,M15: 1
+0	12:03:42.785	Quick Style XAUUSD,M15: 2
+0	12:03:42.785	Quick Style XAUUSD,M15: initialized
+0	12:03:42.785	OHLC Magnet XAUUSD,M15: initialized
+0	12:03:42.786	Watermark Symbol XAUUSD,M15: initialized
+0	12:03:42.787	Trading box Technical analysis XAUUSD,M15: initialized
+0	12:03:42.787	Time Range Separator XAUUSD,M15: initialized
+0	12:03:42.788	ClickAndDraw XAUUSD,M15: Iteration i : 1453
+0	12:03:42.788	ClickAndDraw XAUUSD,M15: Iteration j : 0
+0	12:03:42.788	ClickAndDraw XAUUSD,M15: Name : m.Data1680567141
+0	12:03:42.788	ClickAndDraw XAUUSD,M15: initialized
+0	12:03:42.788	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	12:03:42.789	CandleTime XAUUSD,M15: initialized
+0	12:03:43.814	Quick Style XAUUSD,M15: uninit reason 3
+0	12:03:43.818	OHLC Magnet XAUUSD,M15: uninit reason 3
+0	12:03:43.818	Watermark Symbol XAUUSD,M15: uninit reason 3
+0	12:03:43.818	Trading box Technical analysis XAUUSD,M15: uninit reason 3
+0	12:03:43.818	Time Range Separator XAUUSD,M15: uninit reason 3
+0	12:03:43.819	ClickAndDraw XAUUSD,M15: uninit reason 3
+0	12:03:43.819	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 3
+0	12:03:43.819	CandleTime XAUUSD,M15: uninit reason 3
+0	12:03:43.830	Quick Style XAUUSD,M30: 0
+0	12:03:43.830	Quick Style XAUUSD,M30: 0
+0	12:03:43.830	Quick Style XAUUSD,M30: 1
+0	12:03:43.830	Quick Style XAUUSD,M30: 1
+0	12:03:43.830	Quick Style XAUUSD,M30: 2
+0	12:03:43.830	Quick Style XAUUSD,M30: initialized
+0	12:03:43.830	OHLC Magnet XAUUSD,M30: initialized
+0	12:03:43.830	Watermark Symbol XAUUSD,M30: initialized
+0	12:03:43.832	Trading box Technical analysis XAUUSD,M30: initialized
+0	12:03:43.832	Time Range Separator XAUUSD,M30: initialized
+0	12:03:43.833	ClickAndDraw XAUUSD,M30: Iteration i : 1453
+0	12:03:43.833	ClickAndDraw XAUUSD,M30: Iteration j : 0
+0	12:03:43.833	ClickAndDraw XAUUSD,M30: Name : m.Data1680567141
+0	12:03:43.833	ClickAndDraw XAUUSD,M30: initialized
+0	12:03:43.833	Kill Zone & 90 Min Cycle XAUUSD,M30: initialized
+0	12:03:43.833	CandleTime XAUUSD,M30: initialized
+0	12:03:44.409	Quick Style XAUUSD,M30: uninit reason 3
+0	12:03:44.412	OHLC Magnet XAUUSD,M30: uninit reason 3
+0	12:03:44.412	Watermark Symbol XAUUSD,M30: uninit reason 3
+0	12:03:44.413	Trading box Technical analysis XAUUSD,M30: uninit reason 3
+0	12:03:44.413	Time Range Separator XAUUSD,M30: uninit reason 3
+0	12:03:44.413	ClickAndDraw XAUUSD,M30: uninit reason 3
+0	12:03:44.413	Kill Zone & 90 Min Cycle XAUUSD,M30: uninit reason 3
+0	12:03:44.414	CandleTime XAUUSD,M30: uninit reason 3
+0	12:03:44.424	Quick Style XAUUSD,M15: 0
+0	12:03:44.424	Quick Style XAUUSD,M15: 0
+0	12:03:44.424	Quick Style XAUUSD,M15: 1
+0	12:03:44.424	Quick Style XAUUSD,M15: 1
+0	12:03:44.424	Quick Style XAUUSD,M15: 2
+0	12:03:44.424	Quick Style XAUUSD,M15: initialized
+0	12:03:44.424	OHLC Magnet XAUUSD,M15: initialized
+0	12:03:44.424	Watermark Symbol XAUUSD,M15: initialized
+0	12:03:44.426	Trading box Technical analysis XAUUSD,M15: initialized
+0	12:03:44.426	Time Range Separator XAUUSD,M15: initialized
+0	12:03:44.427	ClickAndDraw XAUUSD,M15: Iteration i : 1453
+0	12:03:44.427	ClickAndDraw XAUUSD,M15: Iteration j : 0
+0	12:03:44.427	ClickAndDraw XAUUSD,M15: Name : m.Data1680567141
+0	12:03:44.427	ClickAndDraw XAUUSD,M15: initialized
+0	12:03:44.427	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	12:03:44.427	CandleTime XAUUSD,M15: initialized
+0	12:03:51.848	Quick Style XAUUSD,M15: uninit reason 7
+0	12:03:51.850	OHLC Magnet XAUUSD,M15: uninit reason 7
+0	12:03:51.850	Watermark Symbol XAUUSD,M15: uninit reason 7
+0	12:03:51.851	Trading box Technical analysis XAUUSD,M15: uninit reason 7
+0	12:03:51.851	Time Range Separator XAUUSD,M15: uninit reason 7
+0	12:03:51.852	ClickAndDraw XAUUSD,M15: uninit reason 7
+0	12:03:51.852	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 7
+3	12:03:51.852	Kill Zone & 90 Min Cycle XAUUSD,M15: 19 leaked strings left
+0	12:03:51.852	CandleTime XAUUSD,M15: uninit reason 7
+0	12:03:51.855	Custom indicator Quick Style XAUUSD,M15: removed
+0	12:03:51.856	Custom indicator OHLC Magnet XAUUSD,M15: removed
+0	12:03:51.857	Custom indicator Watermark Symbol XAUUSD,M15: removed
+0	12:03:51.859	Custom indicator Trading box Technical analysis XAUUSD,M15: removed
+0	12:03:51.860	Custom indicator Time Range Separator XAUUSD,M15: removed
+0	12:03:51.862	Custom indicator ClickAndDraw XAUUSD,M15: removed
+0	12:03:51.863	Custom indicator Kill Zone & 90 Min Cycle XAUUSD,M15: removed
+0	12:03:51.865	Custom indicator CandleTime XAUUSD,M15: removed
+0	12:03:51.884	Custom indicator Market\Quick Style XAUUSD,M15: loaded successfully
+0	12:03:51.897	Custom indicator Market\OHLC Magnet XAUUSD,M15: loaded successfully
+0	12:03:51.910	Custom indicator Market\Watermark Symbol XAUUSD,M15: loaded successfully
+0	12:03:51.930	Custom indicator Market\Trading box Technical analysis XAUUSD,M15: loaded successfully
+0	12:03:52.001	Custom indicator Mine\ICT\ICT Asian_Range XAUUSD,M15: loaded successfully
+0	12:03:52.014	Custom indicator Market\Time Range Separator XAUUSD,M15: loaded successfully
+0	12:03:52.025	Custom indicator Mine\My Build\ClickAndDraw XAUUSD,M15: loaded successfully
+0	12:03:52.036	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle XAUUSD,M15: loaded successfully
+0	12:03:52.045	Custom indicator Mine\Background Indicator\CandleTime XAUUSD,M15: loaded successfully
+0	12:03:52.078	Quick Style XAUUSD,M15: 0
+0	12:03:52.078	Quick Style XAUUSD,M15: 0
+0	12:03:52.078	Quick Style XAUUSD,M15: 1
+0	12:03:52.078	Quick Style XAUUSD,M15: 1
+0	12:03:52.078	Quick Style XAUUSD,M15: 2
+0	12:03:52.078	Quick Style XAUUSD,M15: initialized
+0	12:03:52.096	OHLC Magnet XAUUSD,M15: initialized
+0	12:03:52.113	Watermark Symbol XAUUSD,M15: initialized
+0	12:03:52.142	Trading box Technical analysis XAUUSD,M15: initialized
+0	12:03:52.143	ICT Asian_Range XAUUSD,M15: initialized
+0	12:03:52.159	Time Range Separator XAUUSD,M15: initialized
+0	12:03:52.181	ClickAndDraw XAUUSD,M15: Iteration i : 1470
+0	12:03:52.181	ClickAndDraw XAUUSD,M15: Iteration j : 0
+0	12:03:52.181	ClickAndDraw XAUUSD,M15: Name : m.Data1680567141
+0	12:03:52.181	ClickAndDraw XAUUSD,M15: initialized
+0	12:03:52.244	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	12:03:52.260	CandleTime XAUUSD,M15: initialized
+1	12:03:52.351	Kill Zone & 90 Min Cycle XAUUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (433,34)
+0	12:04:01.470	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 5
+0	12:04:01.487	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+1	12:04:01.718	Kill Zone & 90 Min Cycle XAUUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (433,34)
+0	12:04:04.342	Quick Style XAUUSD,M15: uninit reason 3
+0	12:04:04.346	OHLC Magnet XAUUSD,M15: uninit reason 3
+0	12:04:04.346	Watermark Symbol XAUUSD,M15: uninit reason 3
+0	12:04:04.346	Trading box Technical analysis XAUUSD,M15: uninit reason 3
+0	12:04:04.346	ICT Asian_Range XAUUSD,M15: deinitialized
+0	12:04:04.346	ICT Asian_Range XAUUSD,M15: uninit reason 3
+0	12:04:04.346	Time Range Separator XAUUSD,M15: uninit reason 3
+0	12:04:04.347	ClickAndDraw XAUUSD,M15: uninit reason 3
+0	12:04:04.347	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 3
+0	12:04:04.347	CandleTime XAUUSD,M15: uninit reason 3
+0	12:04:04.357	Quick Style XAUUSD,M5: 0
+0	12:04:04.357	Quick Style XAUUSD,M5: 0
+0	12:04:04.357	Quick Style XAUUSD,M5: 1
+0	12:04:04.357	Quick Style XAUUSD,M5: 1
+0	12:04:04.357	Quick Style XAUUSD,M5: 2
+0	12:04:04.357	Quick Style XAUUSD,M5: initialized
+0	12:04:04.357	OHLC Magnet XAUUSD,M5: initialized
+0	12:04:04.358	Watermark Symbol XAUUSD,M5: initialized
+0	12:04:04.359	Trading box Technical analysis XAUUSD,M5: initialized
+0	12:04:04.359	ICT Asian_Range XAUUSD,M5: initialized
+0	12:04:04.359	Time Range Separator XAUUSD,M5: initialized
+0	12:04:04.360	ClickAndDraw XAUUSD,M5: Iteration i : 1477
+0	12:04:04.360	ClickAndDraw XAUUSD,M5: Iteration j : 0
+0	12:04:04.360	ClickAndDraw XAUUSD,M5: Name : m.Data1680567141
+0	12:04:04.360	ClickAndDraw XAUUSD,M5: initialized
+0	12:04:04.360	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	12:04:04.361	CandleTime XAUUSD,M5: initialized
+1	12:04:04.435	Kill Zone & 90 Min Cycle XAUUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (433,34)
+0	12:04:05.014	Quick Style XAUUSD,M5: uninit reason 3
+0	12:04:05.018	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	12:04:05.018	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	12:04:05.018	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	12:04:05.018	ICT Asian_Range XAUUSD,M5: deinitialized
+0	12:04:05.018	ICT Asian_Range XAUUSD,M5: uninit reason 3
+0	12:04:05.018	Time Range Separator XAUUSD,M5: uninit reason 3
+0	12:04:05.019	ClickAndDraw XAUUSD,M5: uninit reason 3
+0	12:04:05.019	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	12:04:05.019	CandleTime XAUUSD,M5: uninit reason 3
+0	12:04:05.028	Quick Style XAUUSD,M15: 0
+0	12:04:05.029	Quick Style XAUUSD,M15: 0
+0	12:04:05.029	Quick Style XAUUSD,M15: 1
+0	12:04:05.029	Quick Style XAUUSD,M15: 1
+0	12:04:05.029	Quick Style XAUUSD,M15: 2
+0	12:04:05.029	Quick Style XAUUSD,M15: initialized
+0	12:04:05.029	OHLC Magnet XAUUSD,M15: initialized
+0	12:04:05.029	Watermark Symbol XAUUSD,M15: initialized
+0	12:04:05.031	Trading box Technical analysis XAUUSD,M15: initialized
+0	12:04:05.031	ICT Asian_Range XAUUSD,M15: initialized
+0	12:04:05.031	Time Range Separator XAUUSD,M15: initialized
+0	12:04:05.032	ClickAndDraw XAUUSD,M15: Iteration i : 1477
+0	12:04:05.032	ClickAndDraw XAUUSD,M15: Iteration j : 0
+0	12:04:05.032	ClickAndDraw XAUUSD,M15: Name : m.Data1680567141
+0	12:04:05.032	ClickAndDraw XAUUSD,M15: initialized
+0	12:04:05.032	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	12:04:05.032	CandleTime XAUUSD,M15: initialized
+1	12:04:05.119	Kill Zone & 90 Min Cycle XAUUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (433,34)
+0	12:04:06.131	Quick Style XAUUSD,M15: uninit reason 3
+0	12:04:06.134	OHLC Magnet XAUUSD,M15: uninit reason 3
+0	12:04:06.134	Watermark Symbol XAUUSD,M15: uninit reason 3
+0	12:04:06.135	Trading box Technical analysis XAUUSD,M15: uninit reason 3
+0	12:04:06.135	ICT Asian_Range XAUUSD,M15: deinitialized
+0	12:04:06.135	ICT Asian_Range XAUUSD,M15: uninit reason 3
+0	12:04:06.135	Time Range Separator XAUUSD,M15: uninit reason 3
+0	12:04:06.135	ClickAndDraw XAUUSD,M15: uninit reason 3
+0	12:04:06.135	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 3
+0	12:04:06.135	CandleTime XAUUSD,M15: uninit reason 3
+0	12:04:06.145	Quick Style XAUUSD,M5: 0
+0	12:04:06.145	Quick Style XAUUSD,M5: 0
+0	12:04:06.145	Quick Style XAUUSD,M5: 1
+0	12:04:06.145	Quick Style XAUUSD,M5: 1
+0	12:04:06.146	Quick Style XAUUSD,M5: 2
+0	12:04:06.146	Quick Style XAUUSD,M5: initialized
+0	12:04:06.146	OHLC Magnet XAUUSD,M5: initialized
+0	12:04:06.146	Watermark Symbol XAUUSD,M5: initialized
+0	12:04:06.148	Trading box Technical analysis XAUUSD,M5: initialized
+0	12:04:06.148	ICT Asian_Range XAUUSD,M5: initialized
+0	12:04:06.148	Time Range Separator XAUUSD,M5: initialized
+0	12:04:06.149	ClickAndDraw XAUUSD,M5: Iteration i : 1477
+0	12:04:06.149	ClickAndDraw XAUUSD,M5: Iteration j : 0
+0	12:04:06.149	ClickAndDraw XAUUSD,M5: Name : m.Data1680567141
+0	12:04:06.149	ClickAndDraw XAUUSD,M5: initialized
+0	12:04:06.149	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	12:04:06.149	CandleTime XAUUSD,M5: initialized
+1	12:04:06.225	Kill Zone & 90 Min Cycle XAUUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (433,34)
+0	12:04:06.615	Quick Style XAUUSD,M5: uninit reason 3
+0	12:04:06.618	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	12:04:06.618	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	12:04:06.619	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	12:04:06.619	ICT Asian_Range XAUUSD,M5: deinitialized
+0	12:04:06.619	ICT Asian_Range XAUUSD,M5: uninit reason 3
+0	12:04:06.619	Time Range Separator XAUUSD,M5: uninit reason 3
+0	12:04:06.619	ClickAndDraw XAUUSD,M5: uninit reason 3
+0	12:04:06.619	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	12:04:06.619	CandleTime XAUUSD,M5: uninit reason 3
+0	12:04:06.628	Quick Style XAUUSD,M15: 0
+0	12:04:06.628	Quick Style XAUUSD,M15: 0
+0	12:04:06.628	Quick Style XAUUSD,M15: 1
+0	12:04:06.628	Quick Style XAUUSD,M15: 1
+0	12:04:06.628	Quick Style XAUUSD,M15: 2
+0	12:04:06.628	Quick Style XAUUSD,M15: initialized
+0	12:04:06.629	OHLC Magnet XAUUSD,M15: initialized
+0	12:04:06.629	Watermark Symbol XAUUSD,M15: initialized
+0	12:04:06.630	Trading box Technical analysis XAUUSD,M15: initialized
+0	12:04:06.630	ICT Asian_Range XAUUSD,M15: initialized
+0	12:04:06.630	Time Range Separator XAUUSD,M15: initialized
+0	12:04:06.631	ClickAndDraw XAUUSD,M15: Iteration i : 1477
+0	12:04:06.631	ClickAndDraw XAUUSD,M15: Iteration j : 0
+0	12:04:06.631	ClickAndDraw XAUUSD,M15: Name : m.Data1680567141
+0	12:04:06.631	ClickAndDraw XAUUSD,M15: initialized
+0	12:04:06.631	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	12:04:06.632	CandleTime XAUUSD,M15: initialized
+1	12:04:06.720	Kill Zone & 90 Min Cycle XAUUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (433,34)
+0	12:04:18.469	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 5
+0	12:04:18.488	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+1	12:04:18.967	Kill Zone & 90 Min Cycle XAUUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (433,34)
+0	12:04:21.115	Quick Style XAUUSD,M15: uninit reason 3
+0	12:04:21.118	OHLC Magnet XAUUSD,M15: uninit reason 3
+0	12:04:21.118	Watermark Symbol XAUUSD,M15: uninit reason 3
+0	12:04:21.119	Trading box Technical analysis XAUUSD,M15: uninit reason 3
+0	12:04:21.119	ICT Asian_Range XAUUSD,M15: deinitialized
+0	12:04:21.119	ICT Asian_Range XAUUSD,M15: uninit reason 3
+0	12:04:21.119	Time Range Separator XAUUSD,M15: uninit reason 3
+0	12:04:21.119	ClickAndDraw XAUUSD,M15: uninit reason 3
+0	12:04:21.119	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 3
+0	12:04:21.119	CandleTime XAUUSD,M15: uninit reason 3
+0	12:04:21.129	Quick Style XAUUSD,M5: 0
+0	12:04:21.129	Quick Style XAUUSD,M5: 0
+0	12:04:21.129	Quick Style XAUUSD,M5: 1
+0	12:04:21.129	Quick Style XAUUSD,M5: 1
+0	12:04:21.129	Quick Style XAUUSD,M5: 2
+0	12:04:21.129	Quick Style XAUUSD,M5: initialized
+0	12:04:21.130	OHLC Magnet XAUUSD,M5: initialized
+0	12:04:21.130	Watermark Symbol XAUUSD,M5: initialized
+0	12:04:21.131	Trading box Technical analysis XAUUSD,M5: initialized
+0	12:04:21.131	ICT Asian_Range XAUUSD,M5: initialized
+0	12:04:21.131	Time Range Separator XAUUSD,M5: initialized
+0	12:04:21.131	ClickAndDraw XAUUSD,M5: Iteration i : 1477
+0	12:04:21.131	ClickAndDraw XAUUSD,M5: Iteration j : 0
+0	12:04:21.131	ClickAndDraw XAUUSD,M5: Name : m.Data1680567141
+0	12:04:21.131	ClickAndDraw XAUUSD,M5: initialized
+0	12:04:21.132	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	12:04:21.132	CandleTime XAUUSD,M5: initialized
+1	12:04:21.207	Kill Zone & 90 Min Cycle XAUUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (433,34)
+0	12:04:22.005	Quick Style XAUUSD,M5: uninit reason 3
+0	12:04:22.008	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	12:04:22.008	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	12:04:22.008	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	12:04:22.008	ICT Asian_Range XAUUSD,M5: deinitialized
+0	12:04:22.008	ICT Asian_Range XAUUSD,M5: uninit reason 3
+0	12:04:22.008	Time Range Separator XAUUSD,M5: uninit reason 3
+0	12:04:22.009	ClickAndDraw XAUUSD,M5: uninit reason 3
+0	12:04:22.009	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	12:04:22.009	CandleTime XAUUSD,M5: uninit reason 3
+0	12:04:22.019	Quick Style XAUUSD,M15: 0
+0	12:04:22.019	Quick Style XAUUSD,M15: 0
+0	12:04:22.019	Quick Style XAUUSD,M15: 1
+0	12:04:22.019	Quick Style XAUUSD,M15: 1
+0	12:04:22.019	Quick Style XAUUSD,M15: 2
+0	12:04:22.019	Quick Style XAUUSD,M15: initialized
+0	12:04:22.019	OHLC Magnet XAUUSD,M15: initialized
+0	12:04:22.020	Watermark Symbol XAUUSD,M15: initialized
+0	12:04:22.021	Trading box Technical analysis XAUUSD,M15: initialized
+0	12:04:22.021	ICT Asian_Range XAUUSD,M15: initialized
+0	12:04:22.021	Time Range Separator XAUUSD,M15: initialized
+0	12:04:22.022	ClickAndDraw XAUUSD,M15: Iteration i : 1477
+0	12:04:22.022	ClickAndDraw XAUUSD,M15: Iteration j : 0
+0	12:04:22.022	ClickAndDraw XAUUSD,M15: Name : m.Data1680567141
+0	12:04:22.022	ClickAndDraw XAUUSD,M15: initialized
+0	12:04:22.022	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	12:04:22.023	CandleTime XAUUSD,M15: initialized
+1	12:04:22.112	Kill Zone & 90 Min Cycle XAUUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (433,34)
+0	12:04:28.861	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 5
+0	12:04:28.876	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+1	12:04:29.711	Kill Zone & 90 Min Cycle XAUUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (433,34)
+0	12:04:31.156	Quick Style XAUUSD,M15: uninit reason 3
+0	12:04:31.160	OHLC Magnet XAUUSD,M15: uninit reason 3
+0	12:04:31.160	Watermark Symbol XAUUSD,M15: uninit reason 3
+0	12:04:31.160	Trading box Technical analysis XAUUSD,M15: uninit reason 3
+0	12:04:31.160	ICT Asian_Range XAUUSD,M15: deinitialized
+0	12:04:31.160	ICT Asian_Range XAUUSD,M15: uninit reason 3
+0	12:04:31.160	Time Range Separator XAUUSD,M15: uninit reason 3
+0	12:04:31.161	ClickAndDraw XAUUSD,M15: uninit reason 3
+0	12:04:31.161	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 3
+0	12:04:31.161	CandleTime XAUUSD,M15: uninit reason 3
+0	12:04:31.171	Quick Style XAUUSD,M5: 0
+0	12:04:31.171	Quick Style XAUUSD,M5: 0
+0	12:04:31.171	Quick Style XAUUSD,M5: 1
+0	12:04:31.171	Quick Style XAUUSD,M5: 1
+0	12:04:31.171	Quick Style XAUUSD,M5: 2
+0	12:04:31.171	Quick Style XAUUSD,M5: initialized
+0	12:04:31.171	OHLC Magnet XAUUSD,M5: initialized
+0	12:04:31.172	Watermark Symbol XAUUSD,M5: initialized
+0	12:04:31.173	Trading box Technical analysis XAUUSD,M5: initialized
+0	12:04:31.173	ICT Asian_Range XAUUSD,M5: initialized
+0	12:04:31.173	Time Range Separator XAUUSD,M5: initialized
+0	12:04:31.174	ClickAndDraw XAUUSD,M5: Iteration i : 1477
+0	12:04:31.174	ClickAndDraw XAUUSD,M5: Iteration j : 0
+0	12:04:31.174	ClickAndDraw XAUUSD,M5: Name : m.Data1680567141
+0	12:04:31.174	ClickAndDraw XAUUSD,M5: initialized
+0	12:04:31.174	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	12:04:31.175	CandleTime XAUUSD,M5: initialized
+1	12:04:31.247	Kill Zone & 90 Min Cycle XAUUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (433,34)
+0	12:04:31.759	Quick Style XAUUSD,M5: uninit reason 3
+0	12:04:31.762	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	12:04:31.762	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	12:04:31.763	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	12:04:31.763	ICT Asian_Range XAUUSD,M5: deinitialized
+0	12:04:31.763	ICT Asian_Range XAUUSD,M5: uninit reason 3
+0	12:04:31.763	Time Range Separator XAUUSD,M5: uninit reason 3
+0	12:04:31.763	ClickAndDraw XAUUSD,M5: uninit reason 3
+0	12:04:31.763	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	12:04:31.763	CandleTime XAUUSD,M5: uninit reason 3
+0	12:04:31.773	Quick Style XAUUSD,M15: 0
+0	12:04:31.773	Quick Style XAUUSD,M15: 0
+0	12:04:31.773	Quick Style XAUUSD,M15: 1
+0	12:04:31.773	Quick Style XAUUSD,M15: 1
+0	12:04:31.773	Quick Style XAUUSD,M15: 2
+0	12:04:31.773	Quick Style XAUUSD,M15: initialized
+0	12:04:31.774	OHLC Magnet XAUUSD,M15: initialized
+0	12:04:31.774	Watermark Symbol XAUUSD,M15: initialized
+0	12:04:31.775	Trading box Technical analysis XAUUSD,M15: initialized
+0	12:04:31.775	ICT Asian_Range XAUUSD,M15: initialized
+0	12:04:31.775	Time Range Separator XAUUSD,M15: initialized
+0	12:04:31.776	ClickAndDraw XAUUSD,M15: Iteration i : 1477
+0	12:04:31.776	ClickAndDraw XAUUSD,M15: Iteration j : 0
+0	12:04:31.776	ClickAndDraw XAUUSD,M15: Name : m.Data1680567141
+0	12:04:31.776	ClickAndDraw XAUUSD,M15: initialized
+0	12:04:31.776	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	12:04:31.777	CandleTime XAUUSD,M15: initialized
+1	12:04:31.862	Kill Zone & 90 Min Cycle XAUUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (433,34)
+0	12:04:44.188	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 5
+0	12:04:44.204	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	12:04:46.681	Quick Style XAUUSD,M15: uninit reason 3
+0	12:04:46.684	OHLC Magnet XAUUSD,M15: uninit reason 3
+0	12:04:46.684	Watermark Symbol XAUUSD,M15: uninit reason 3
+0	12:04:46.685	Trading box Technical analysis XAUUSD,M15: uninit reason 3
+0	12:04:46.685	ICT Asian_Range XAUUSD,M15: deinitialized
+0	12:04:46.685	ICT Asian_Range XAUUSD,M15: uninit reason 3
+0	12:04:46.685	Time Range Separator XAUUSD,M15: uninit reason 3
+0	12:04:46.685	ClickAndDraw XAUUSD,M15: uninit reason 3
+0	12:04:46.685	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 3
+0	12:04:46.686	CandleTime XAUUSD,M15: uninit reason 3
+0	12:04:46.696	Quick Style XAUUSD,M5: 0
+0	12:04:46.696	Quick Style XAUUSD,M5: 0
+0	12:04:46.696	Quick Style XAUUSD,M5: 1
+0	12:04:46.696	Quick Style XAUUSD,M5: 1
+0	12:04:46.696	Quick Style XAUUSD,M5: 2
+0	12:04:46.696	Quick Style XAUUSD,M5: initialized
+0	12:04:46.697	OHLC Magnet XAUUSD,M5: initialized
+0	12:04:46.697	Watermark Symbol XAUUSD,M5: initialized
+0	12:04:46.698	Trading box Technical analysis XAUUSD,M5: initialized
+0	12:04:46.698	ICT Asian_Range XAUUSD,M5: initialized
+0	12:04:46.698	Time Range Separator XAUUSD,M5: initialized
+0	12:04:46.699	ClickAndDraw XAUUSD,M5: Iteration i : 1453
+0	12:04:46.699	ClickAndDraw XAUUSD,M5: Iteration j : 0
+0	12:04:46.699	ClickAndDraw XAUUSD,M5: Name : m.Data1680567141
+0	12:04:46.699	ClickAndDraw XAUUSD,M5: initialized
+0	12:04:46.699	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	12:04:46.700	CandleTime XAUUSD,M5: initialized
+0	12:04:48.265	Quick Style XAUUSD,M5: uninit reason 3
+0	12:04:48.270	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	12:04:48.270	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	12:04:48.271	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	12:04:48.271	ICT Asian_Range XAUUSD,M5: deinitialized
+0	12:04:48.271	ICT Asian_Range XAUUSD,M5: uninit reason 3
+0	12:04:48.271	Time Range Separator XAUUSD,M5: uninit reason 3
+0	12:04:48.271	ClickAndDraw XAUUSD,M5: uninit reason 3
+0	12:04:48.271	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	12:04:48.272	CandleTime XAUUSD,M5: uninit reason 3
+0	12:04:48.287	Quick Style XAUUSD,M15: 0
+0	12:04:48.287	Quick Style XAUUSD,M15: 0
+0	12:04:48.288	Quick Style XAUUSD,M15: 1
+0	12:04:48.288	Quick Style XAUUSD,M15: 1
+0	12:04:48.288	Quick Style XAUUSD,M15: 2
+0	12:04:48.288	Quick Style XAUUSD,M15: initialized
+0	12:04:48.288	OHLC Magnet XAUUSD,M15: initialized
+0	12:04:48.288	Watermark Symbol XAUUSD,M15: initialized
+0	12:04:48.291	Trading box Technical analysis XAUUSD,M15: initialized
+0	12:04:48.292	ICT Asian_Range XAUUSD,M15: initialized
+0	12:04:48.292	Time Range Separator XAUUSD,M15: initialized
+0	12:04:48.294	ClickAndDraw XAUUSD,M15: Iteration i : 1453
+0	12:04:48.294	ClickAndDraw XAUUSD,M15: Iteration j : 0
+0	12:04:48.294	ClickAndDraw XAUUSD,M15: Name : m.Data1680567141
+0	12:04:48.294	ClickAndDraw XAUUSD,M15: initialized
+0	12:04:48.294	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	12:04:48.295	CandleTime XAUUSD,M15: initialized
+0	12:05:07.433	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 5
+0	12:05:07.457	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	12:05:12.139	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 5
+0	12:05:12.157	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	12:05:16.284	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 5
+0	12:05:16.306	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+1	12:05:16.908	Kill Zone & 90 Min Cycle XAUUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (433,34)
+0	12:05:41.311	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 5
+0	12:05:41.328	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	12:05:51.240	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 5
+0	12:05:51.263	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	12:06:10.732	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 5
+0	12:06:10.753	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	12:06:15.363	Quick Style XAUUSD,M15: uninit reason 3
+0	12:06:15.366	OHLC Magnet XAUUSD,M15: uninit reason 3
+0	12:06:15.366	Watermark Symbol XAUUSD,M15: uninit reason 3
+0	12:06:15.366	Trading box Technical analysis XAUUSD,M15: uninit reason 3
+0	12:06:15.366	ICT Asian_Range XAUUSD,M15: deinitialized
+0	12:06:15.366	ICT Asian_Range XAUUSD,M15: uninit reason 3
+0	12:06:15.366	Time Range Separator XAUUSD,M15: uninit reason 3
+0	12:06:15.367	ClickAndDraw XAUUSD,M15: uninit reason 3
+0	12:06:15.367	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 3
+0	12:06:15.367	CandleTime XAUUSD,M15: uninit reason 3
+0	12:06:15.377	Quick Style XAUUSD,M5: 0
+0	12:06:15.377	Quick Style XAUUSD,M5: 0
+0	12:06:15.378	Quick Style XAUUSD,M5: 1
+0	12:06:15.378	Quick Style XAUUSD,M5: 1
+0	12:06:15.378	Quick Style XAUUSD,M5: 2
+0	12:06:15.378	Quick Style XAUUSD,M5: initialized
+0	12:06:15.378	OHLC Magnet XAUUSD,M5: initialized
+0	12:06:15.378	Watermark Symbol XAUUSD,M5: initialized
+0	12:06:15.380	Trading box Technical analysis XAUUSD,M5: initialized
+0	12:06:15.380	ICT Asian_Range XAUUSD,M5: initialized
+0	12:06:15.380	Time Range Separator XAUUSD,M5: initialized
+0	12:06:15.381	ClickAndDraw XAUUSD,M5: Iteration i : 1453
+0	12:06:15.381	ClickAndDraw XAUUSD,M5: Iteration j : 0
+0	12:06:15.381	ClickAndDraw XAUUSD,M5: Name : m.Data1680567141
+0	12:06:15.381	ClickAndDraw XAUUSD,M5: initialized
+0	12:06:15.381	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	12:06:15.381	CandleTime XAUUSD,M5: initialized
+0	12:46:51.566	Quick Style DXY,M5: uninit reason 9
+0	12:46:51.568	OHLC Magnet DXY,M5: uninit reason 9
+0	12:46:51.568	Watermark Symbol DXY,M5: uninit reason 9
+0	12:46:51.568	Trading box Technical analysis DXY,M5: uninit reason 9
+0	12:46:51.568	ICT Asian_Range DXY,M5: deinitialized
+0	12:46:51.568	ICT Asian_Range DXY,M5: uninit reason 9
+0	12:46:51.568	Time Range Separator DXY,M5: uninit reason 9
+0	12:46:51.569	Kill Zone & 90 Min Cycle DXY,M5: uninit reason 9
+0	12:46:51.569	CandleTime DXY,M5: uninit reason 9
+0	12:46:51.569	Quick Style GBPUSD,M1: uninit reason 9
+0	12:46:51.571	OHLC Magnet GBPUSD,M1: uninit reason 9
+0	12:46:51.571	Watermark Symbol GBPUSD,M1: uninit reason 9
+0	12:46:51.571	Trading box Technical analysis GBPUSD,M1: uninit reason 9
+0	12:46:51.571	ICT Asian_Range GBPUSD,M1: deinitialized
+0	12:46:51.571	ICT Asian_Range GBPUSD,M1: uninit reason 9
+0	12:46:51.571	Time Range Separator GBPUSD,M1: uninit reason 9
+0	12:46:51.572	Kill Zone & 90 Min Cycle GBPUSD,M1: uninit reason 9
+0	12:46:51.572	CandleTime GBPUSD,M1: uninit reason 9
+0	12:46:51.572	Quick Style XAUUSD,M5: uninit reason 9
+0	12:46:51.574	OHLC Magnet XAUUSD,M5: uninit reason 9
+0	12:46:51.574	Watermark Symbol XAUUSD,M5: uninit reason 9
+0	12:46:51.575	Trading box Technical analysis XAUUSD,M5: uninit reason 9
+0	12:46:51.575	ICT Asian_Range XAUUSD,M5: deinitialized
+0	12:46:51.575	ICT Asian_Range XAUUSD,M5: uninit reason 9
+0	12:46:51.575	Time Range Separator XAUUSD,M5: uninit reason 9
+0	12:46:51.575	ClickAndDraw XAUUSD,M5: uninit reason 9
+0	12:46:51.575	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 9
+0	12:46:51.576	CandleTime XAUUSD,M5: uninit reason 9
+0	12:46:51.576	Quick Style XAUUSD,M5: uninit reason 9
+0	12:46:51.576	OBdraw251 XAUUSD,M5: uninit reason 9
+0	12:46:51.576	OHLC Magnet XAUUSD,M5: uninit reason 9
+0	12:46:51.576	Watermark Symbol XAUUSD,M5: uninit reason 9
+0	12:46:51.728	Custom indicator Quick Style DXY,M5: removed
+0	12:46:51.732	Custom indicator OHLC Magnet DXY,M5: removed
+0	12:46:51.736	Custom indicator Watermark Symbol DXY,M5: removed
+0	12:46:51.740	Custom indicator Trading box Technical analysis DXY,M5: removed
+0	12:46:51.740	Custom indicator ICT Asian_Range DXY,M5: removed
+0	12:46:51.743	Custom indicator Time Range Separator DXY,M5: removed
+0	12:46:51.746	Custom indicator Kill Zone & 90 Min Cycle DXY,M5: removed
+0	12:46:51.748	Custom indicator CandleTime DXY,M5: removed
+0	12:46:51.755	Custom indicator Quick Style GBPUSD,M1: removed
+0	12:46:51.760	Custom indicator OHLC Magnet GBPUSD,M1: removed
+0	12:46:51.764	Custom indicator Watermark Symbol GBPUSD,M1: removed
+0	12:46:51.766	Custom indicator Trading box Technical analysis GBPUSD,M1: removed
+0	12:46:51.767	Custom indicator ICT Asian_Range GBPUSD,M1: removed
+0	12:46:51.769	Custom indicator Time Range Separator GBPUSD,M1: removed
+0	12:46:51.772	Custom indicator Kill Zone & 90 Min Cycle GBPUSD,M1: removed
+0	12:46:51.774	Custom indicator CandleTime GBPUSD,M1: removed
+0	12:46:51.796	Custom indicator Quick Style XAUUSD,M5: removed
+0	12:46:51.798	Custom indicator OHLC Magnet XAUUSD,M5: removed
+0	12:46:51.799	Custom indicator Watermark Symbol XAUUSD,M5: removed
+0	12:46:51.801	Custom indicator Trading box Technical analysis XAUUSD,M5: removed
+0	12:46:51.801	Custom indicator ICT Asian_Range XAUUSD,M5: removed
+0	12:46:51.803	Custom indicator Time Range Separator XAUUSD,M5: removed
+0	12:46:51.805	Custom indicator ClickAndDraw XAUUSD,M5: removed
+0	12:46:51.808	Custom indicator Kill Zone & 90 Min Cycle XAUUSD,M5: removed
+0	12:46:51.811	Custom indicator CandleTime XAUUSD,M5: removed
+0	12:46:51.826	Custom indicator Quick Style XAUUSD,M5: removed
+0	12:46:51.827	Custom indicator OBdraw251 XAUUSD,M5: removed
+0	12:46:51.830	Custom indicator OHLC Magnet XAUUSD,M5: removed
+0	12:46:51.832	Custom indicator Watermark Symbol XAUUSD,M5: removed

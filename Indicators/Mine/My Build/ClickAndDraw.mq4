@@ -518,5 +518,5 @@ void initObjectPointer() {
 }
 
 void createTrendline() {
-    
+
 }
