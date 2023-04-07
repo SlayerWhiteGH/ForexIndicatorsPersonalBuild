@@ -12,7 +12,7 @@ class Object
 private:
     bool flat;
     bool extend;
-    
+
     long chartId;
 
     string name;
@@ -24,14 +24,14 @@ public:
         name = newName;
     }
     
-    Object(bool create, string newName, ENUM_OBJECT newType) {
+    Object(bool create, string newName, int newType) {
         name = newName;
 
         if (create) 
             ObjectCreate(0, name, newType, 0, 0, 0);
     }
 
-    Object(bool create, string newName, ENUM_OBJECT newType, long newChartId, int newSubWindow) {
+    Object(bool create, string newName, int newType, long newChartId, int newSubWindow) {
         name = newName;
         chartId = newChartId;
 
@@ -46,7 +46,7 @@ public:
             setPrice2(getPrice1());
         }
     }
-    void setExtend(bool status) {
+    void setExtend(bool status, bool high) {
         extend = status;
         if (extend) {
             setTime2(TimeCurrent());
@@ -54,8 +54,17 @@ public:
         else {
             int x1 = iBarShift(Symbol(), Period(), getTime1(), true);
             for (int i = x1 - 1; i >= 0; i--) {
-                if (High[i] > High[x1] || Low[i] < Low[x1]) {
-                    setTime2(Time[i]);
+                if (high) {
+                    if (High[i] > High[x1]) {
+                        setTime2(Time[i]);
+                        break;
+                    }
+                }
+                else {
+                    if (Low[i] < Low[x1]) {
+                        setTime2(Time[i]);
+                        break;
+                    }
                 }
             }
         }
@@ -93,7 +102,7 @@ public:
     void setStyle(ENUM_LINE_STYLE newStyle) {
         ObjectSet(name, OBJPROP_STYLE, newStyle);
     }
-    void setType(ENUM_OBJECT newType) {
+    void setType(int newType) {
         ObjectSet(name, OBJPROP_TYPE, newType);
     }
     void setThickness(int newThickness) {

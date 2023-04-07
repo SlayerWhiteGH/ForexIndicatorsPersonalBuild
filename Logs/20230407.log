@@ -1,0 +1,30 @@
+0	00:46:36.321	Compiling 'Awptic\Awptic'
+0	01:43:17.647	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	01:43:19.294	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	01:43:19.294	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	01:43:19.294	ClickAndDraw GBPUSD,M15: Name : m.Data1680750110
+0	01:43:19.294	ClickAndDraw GBPUSD,M15: initialized
+0	01:45:02.537	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	01:45:02.539	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	01:45:02.552	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	01:45:02.580	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	01:45:02.580	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	01:45:02.580	ClickAndDraw GBPUSD,M15: Name : m.Data1680750110
+0	01:45:02.580	ClickAndDraw GBPUSD,M15: initialized
+1	01:45:08.085	ClickAndDraw GBPUSD,M15: invalid pointer access in 'ClickAndDraw.mq4' (346,9)
+0	01:45:26.607	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	01:45:26.609	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	01:45:26.623	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	01:45:26.650	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	01:45:26.650	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	01:45:26.650	ClickAndDraw GBPUSD,M15: Name : m.Data1680750110
+0	01:45:26.650	ClickAndDraw GBPUSD,M15: initialized
+1	01:45:31.229	ClickAndDraw GBPUSD,M15: invalid pointer access in 'ClickAndDraw.mq4' (346,9)
+0	01:47:14.190	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	01:47:14.192	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	01:47:14.207	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	01:47:14.236	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	01:47:14.236	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	01:47:14.236	ClickAndDraw GBPUSD,M15: Name : m.Data1680750110
+0	01:47:14.236	ClickAndDraw GBPUSD,M15: initialized
+1	01:47:17.109	ClickAndDraw GBPUSD,M15: invalid pointer access in 'ClickAndDraw.mq4' (347,9)

@@ -9,7 +9,9 @@
 #property strict
 #property indicator_chart_window
 
-#include "Object.mqh"
+#include "Hotkeys.mqh"
+
+input 
 
 Object *myObjects[];
 //+------------------------------------------------------------------+
