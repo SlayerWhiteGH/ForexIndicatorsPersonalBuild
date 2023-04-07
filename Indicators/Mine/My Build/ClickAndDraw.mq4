@@ -159,7 +159,7 @@ void OnChartEvent(const int id,         // Event ID
         if (lparam == FlatKey) {
             if (!mDrawRectangle) {
                 setFlat(!mFlat);
-                if (objPointer != NULL) {
+                if (objPointer != NULL && ObjectType(objPointer.getName()) != OBJ_RECTANGLE && objPointer.isSelected()) {
                     objPointer.setFlat(mFlat);
                 }
             }
@@ -206,8 +206,13 @@ void OnChartEvent(const int id,         // Event ID
 
             if (objPointer != NULL) {
                 if (objPointer.isSelected()) {
-                    objPointer.setExtend(mExtendHigh, true);
-                    if (mExtendHigh) {
+                    if (ObjectType(objPointer.getName()) == OBJ_TREND) {
+                        objPointer.setExtend(mExtendHigh);
+                    }
+                    else {
+                        objPointer.setExtend(mExtendHigh, true);
+                    }
+                    if (ObjectType(objPointer.getName()) != OBJ_RECTANGLE && mExtendHigh) {
                         setFlat(true);
                         objPointer.setFlat(true);
                     }
@@ -217,19 +222,13 @@ void OnChartEvent(const int id,         // Event ID
         }
 
         if (lparam == ExtendLowKey) {
-            if (mExtendHigh) {
-                setExtendHigh(false);
-            }
-            setExtendLow(!mExtendLow);
-
-            if (objPointer != NULL) {
+            if (objPointer != NULL && ObjectType(objPointer.getName()) == OBJ_RECTANGLE) {
+                if (mExtendHigh) {
+                    setExtendHigh(false);
+                }
+                setExtendLow(!mExtendLow);
                 if (objPointer.isSelected()) {
                     objPointer.setExtend(mExtendLow, false);
-                    if (mExtendLow) {
-                        setFlat(true);
-                        objPointer.setFlat(true);
-                    }
-                    
                 }
             }
         }
@@ -359,7 +358,8 @@ void createLabel(KEYS_ON_KEYBOARD key) {
                     : key == RectangleKey ? "Rectangle"
                     : key == RayKey ? "Ray"
                     : key == FlatKey ? "Flat"
-                    : key == ExtendHighKey ? "Extend High"
+                    : key == ExtendHighKey ? (objPointer != NULL && ObjectType(objPointer.getName()) == OBJ_TREND 
+                                            ? "Extend" : "Extend High")
                     : key == ExtendLowKey ? "Extend Low"
                     : mStyle == 2 ? "Background"    // StyleKey
                     : "Style";                      // StyleKey
@@ -397,7 +397,8 @@ void deleteLabel(KEYS_ON_KEYBOARD key) {
                     : key == RectangleKey ? "Rectangle"
                     : key == RayKey ? "Ray"
                     : key == FlatKey ? "Flat"
-                    : key == ExtendHighKey ? "Extend High"
+                    : key == ExtendHighKey ? (objPointer != NULL && ObjectType(objPointer.getName()) == OBJ_TREND 
+                                            ? "Extend" : "Extend High")
                     : key == ExtendLowKey ? "Extend Low"
                     : mStyle == 2 ? "Background"
                     : "Style";

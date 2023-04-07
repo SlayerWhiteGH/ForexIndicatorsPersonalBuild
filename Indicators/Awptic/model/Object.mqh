@@ -46,6 +46,29 @@ public:
             setPrice2(getPrice1());
         }
     }
+    void setExtend(bool status) {
+        extend = status;
+        if (extend) {
+            setTime2(TimeCurrent());
+        }
+        else {
+            int x1 = iBarShift(Symbol(), Period(), getTime1(), true);
+            for (int i = x1 - 1; i >= 0; i--) {
+                if (getPrice1() == High[x1]) {
+                    if (High[i] > High[x1]) {
+                        setTime2(Time[i]);
+                        break;
+                    }
+                }
+                if (getPrice1() == Low[x1]) {
+                    if (Low[i] < Low[x1]) {
+                        setTime2(Time[i]);
+                        break;
+                    }
+                }
+            }
+        }
+    }
     void setExtend(bool status, bool high) {
         extend = status;
         if (extend) {
