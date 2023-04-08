@@ -12,13 +12,13 @@ class Object
 private:
     bool flat;
     bool extend;
+    bool inextendBuy;
 
     long chartId;
 
     string name;
 
 public:
-    Object() {}
 
     Object(string newName) {
         name = newName;
@@ -37,6 +37,15 @@ public:
 
         if (create) 
             ObjectCreate(newChartId, name, newType, newSubWindow, 0, 0);
+    }
+
+    void create(int newType) {
+        ObjectCreate(0, name, newType, 0, 0, 0);
+    }
+
+    void create(string newName, int newType) {
+        name = newName;
+        ObjectCreate(0, newName, newType, 0, 0, 0);
     }
 
     // Setter
@@ -69,22 +78,23 @@ public:
             }
         }
     }
-    void setExtend(bool status, bool high) {
+    void setExtendByBuyOrSell(bool status, bool buy) {
         extend = status;
         if (extend) {
             setTime2(TimeCurrent());
         }
         else {
+            inextendBuy = buy;
             int x1 = iBarShift(Symbol(), Period(), getTime1(), true);
             for (int i = x1 - 1; i >= 0; i--) {
-                if (high) {
-                    if (High[i] > High[x1]) {
+                if (buy) {
+                    if (High[i] > getPrice1()) {
                         setTime2(Time[i]);
                         break;
                     }
                 }
                 else {
-                    if (Low[i] < Low[x1]) {
+                    if (Low[i] < getPrice2()) {
                         setTime2(Time[i]);
                         break;
                     }
@@ -122,7 +132,7 @@ public:
     void setPrice2(double newPrice) {
         ObjectSet(name, OBJPROP_PRICE2, newPrice);
     }
-    void setStyle(ENUM_LINE_STYLE newStyle) {
+    void setStyle(int newStyle) {
         ObjectSet(name, OBJPROP_STYLE, newStyle);
     }
     void setType(int newType) {
@@ -160,6 +170,12 @@ public:
     // Getter
     bool isFlat() {
         return flat;
+    }
+    bool isExtend() {
+        return extend;
+    }
+    bool isInextendBuy() {
+        return inextendBuy;
     }
     bool isBackground() {
         return ObjectGet(name, OBJPROP_BACK) == true;

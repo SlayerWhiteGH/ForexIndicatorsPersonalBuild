@@ -36,7 +36,7 @@ extern bool  mExtendLow = false;
 extern bool  mDrawTrendline = false;
 extern bool  mDrawRectangle = false;
 extern bool  mRay = false;
-extern bool  mFlat = false;
+extern bool  mFlat = true;
 extern bool  mDeleteOnExit = false;                 // Delete All Objects On Exit?
 extern bool  rectangleAsBackground = true;          // Rectangle As Background?
 extern color trendlineColor1 = clrRed;              // Trendline Color 1
@@ -67,12 +67,7 @@ Object *myObjects[];
 int init()
 {
 
-    setTrendlineColor(trendlineColor1);
-    setStyle(0, false);
-    setFlat(mFlat);
-    setExtendHigh(mExtendHigh);
-    setExtendLow(mExtendLow);
-    setRay(mRay);
+    setDefaultStates();
     
     for (int i = 0; i < ObjectsTotal(); i++) {
         int type = ObjectType(ObjectName(i));
@@ -80,12 +75,8 @@ int init()
             string name = ObjectName(i);
             increaseMyObjectsSize();
             for (int j = 0; j < ArraySize(myObjects); j++) {
-                printf("Iteration i : " + string(i));
-                printf("Iteration j : " + string(j));
-
                 if (myObjects[j] == NULL) {
                     myObjects[j] = new Object(false, name, type);
-                    printf("Name : " + myObjects[j].getName());
                     break;
                 }
             }
@@ -154,6 +145,9 @@ void OnChartEvent(const int id,         // Event ID
             if (!mDrawRectangle) {
                 setRay(!mRay);
             }
+            if (objPointer != NULL && objPointer.getType() == OBJ_RECTANGLE && objPointer.isSelected()) {
+                setRay(false);
+            }
         }
 
         if (lparam == FlatKey) {
@@ -182,19 +176,26 @@ void OnChartEvent(const int id,         // Event ID
         }
 
         if (lparam == StyleKey) {
-            if (mDrawTrendline || mDrawRectangle) {
-                deleteLabel(StyleKey);
-                if (mDrawTrendline) {
-                    mStyle = mStyle == 0 ? 1
-                                : mStyle == 1 ? 0
-                                : 0;
-                }
-                if (mDrawRectangle) {
-                    rectangleAsBackground = !rectangleAsBackground;
-                    mStyle = 2;
-                }
-                createLabel(StyleKey);
-
+            if (mDrawTrendline) {
+                setStyle(
+                    mStyle == 0 ? 1
+                    : mStyle == 1 ? 0
+                    : 0,
+                    true
+                );
+            }
+            if (mDrawRectangle) {
+                rectangleAsBackground = !rectangleAsBackground;
+                setStyle(2, true);
+            }
+            if (objPointer != NULL && objPointer.getType() == OBJ_TREND && objPointer.isSelected()) {
+                setStyle(
+                    mStyle == 0 ? 1
+                    : mStyle == 1 ? 0
+                    : 0,
+                    false
+                );
+                objPointer.setStyle(mStyle);
             }
         }
 
@@ -210,7 +211,7 @@ void OnChartEvent(const int id,         // Event ID
                         objPointer.setExtend(mExtendHigh);
                     }
                     else {
-                        objPointer.setExtend(mExtendHigh, true);
+                        objPointer.setExtendByBuyOrSell(mExtendHigh, true);
                     }
                     if (ObjectType(objPointer.getName()) != OBJ_RECTANGLE && mExtendHigh) {
                         setFlat(true);
@@ -228,7 +229,7 @@ void OnChartEvent(const int id,         // Event ID
                 }
                 setExtendLow(!mExtendLow);
                 if (objPointer.isSelected()) {
-                    objPointer.setExtend(mExtendLow, false);
+                    objPointer.setExtendByBuyOrSell(mExtendLow, false);
                 }
             }
         }
@@ -241,87 +242,107 @@ void OnChartEvent(const int id,         // Event ID
             int mP = (int)dparam;
             int win = 0;
             if(mCnt == 0) {
-                ChartXYToTimePrice(0, mX, mP, win, mTime, mPrice);
+                if (mDrawRectangle) {
+                    ChartXYToTimePrice(0, mX, mP, win, mTime, mPrice);
+                    int index = iBarShift(Symbol(),Period(),mTime,true);
+                    mPrice = High[index];
+                    mPrice2 = Low[index];
+                    mTime2 = TimeCurrent();
+                }
+                else if (mDrawTrendline) {
+                    ChartXYToTimePrice(0, mX, mP, win, mTime, mPrice);
+                    int index = iBarShift(Symbol(),Period(),mTime,true);
+                    mPrice = (mPrice > Open[index]) ? High[index] : Low[index];
+                }   
                 mCnt++;
             }
-            else {
+            else if (mCnt != 0 && mPrice2 == 0) {
                 ChartXYToTimePrice(0, mX, mP, win, mTime2, mPrice2);
                 mCnt = 0;
             }
 
             if (mPrice > 0 && mPrice2 > 0) {
+                string timeStr = TimeToStr(TimeLocal(), TIME_DATE|TIME_SECONDS);
                 if (mDrawTrendline) {
-                    ObjectCreate("m.Data"+IntegerToString(TimeLocal()), OBJ_TREND, 0, mTime, mPrice, mTime2, mFlat ? mPrice : mPrice2);
-                    ObjectSet("m.Data"+IntegerToString(TimeLocal()), OBJPROP_COLOR, mTrendlineColor);
-                    ObjectSet("m.Data"+IntegerToString(TimeLocal()), OBJPROP_WIDTH, mWid);
-                    ObjectSet("m.Data"+IntegerToString(TimeLocal()), OBJPROP_RAY, mRay);
-                    ObjectSet("m.Data"+IntegerToString(TimeLocal()), OBJPROP_STYLE, mStyle);
-
-                    mDrawTrendline = false;
-                    deleteLabel(TrendlineKey);
-                    deleteLabel(StyleKey);
-                    if (mRay) {
-                        mRay = false;
-                        deleteLabel(RayKey);
-                    }
+                    createTrendline("Trendline " + timeStr);
                 }
                 if (mDrawRectangle) {
-                    ObjectCreate("m.DataR"+IntegerToString(TimeLocal()), OBJ_RECTANGLE, 0, mTime, mPrice, mTime2, mPrice2);
-                    ObjectSet("m.DataR"+IntegerToString(TimeLocal()), OBJPROP_COLOR, rCol);
-                    ObjectSet("m.DataR"+IntegerToString(TimeLocal()), OBJPROP_BACK, rectangleAsBackground);
-
-                    mDrawRectangle = false;
-                    deleteLabel(RectangleKey);
-                    deleteLabel(StyleKey);
+                    createRectangle("Rectangle " + timeStr);
                 }    
                 mPrice = 0;
                 mPrice2 = 0;
+                mCnt = 0;
             }
         }
         else {
             mPrice = 0;
             mPrice2 = 0;    
-        }
-
-        if (objPointer != NULL) {
-            if (!objPointer.isSelected()) {
-                setFlat(true);
-                objPointer.setFlat(true);
-                objPointer = NULL;
-            }
+            mCnt = 0;
         }
     } 
 
     if (id == CHARTEVENT_OBJECT_CLICK) {
         setObjectPointer(sparam);
 
-        // setObjName(sparam);
-        // double currPrice1 = ObjectGet(sparam, OBJPROP_PRICE1);
-        // double currPrice2 = ObjectGet(sparam, OBJPROP_PRICE2);
-        // setObjPrice(currPrice1, currPrice2);
-        // setObjSelected(true);
-        
-        if (ObjectType(sparam) == OBJ_RECTANGLE) {
-            if (mFlat) {
-                setFlat(false);
+        if (objPointer != NULL) {
+            if (objPointer.isSelected()) {
+                setFlat(objPointer.isFlat());
+                setRay(objPointer.isRay());
+                if (objPointer.getType() == OBJ_TREND) {
+                    setExtendHigh(objPointer.isExtend());
+                    setTrendlineColor((color)objPointer.getColor());
+                }
+                if (objPointer.getType() == OBJ_RECTANGLE) {
+                    if (objPointer.isExtend()) {
+                        if (objPointer.isInextendBuy()) {
+                            setExtendHigh(objPointer.isExtend());
+                        }
+                        else {
+                            setExtendLow(objPointer.isExtend());
+                        }
+                    }
+                }
+            }
+            else {
+                setDefaultStates();
+                objPointer = NULL;
             }
         }
+
+        // if (ObjectType(sparam) == OBJ_RECTANGLE) {
+        //     if (mFlat) {
+        //         setFlat(false);
+        //         objPointer.setFlat(false);
+        //     }
+        // }
     }
 
     if (id == CHARTEVENT_OBJECT_DRAG) {
         setObjectPointer(sparam);
         if (objPointer != NULL) {
-            if (mExtendHigh) {
-                objPointer.setExtend(mExtendHigh, true);
+            if (objPointer.getType() == OBJ_TREND) {
+                objPointer.setExtend(objPointer.isExtend());
+                objPointer.setFlat(objPointer.isFlat());
             }
-            else if (mExtendLow) {
-                objPointer.setExtend(mExtendLow, false);
-            }
-            if (mExtendHigh) {
-                objPointer.setFlat(mFlat);
+            else {
+                if (mExtendHigh) {
+                    objPointer.setExtendByBuyOrSell(mExtendHigh, true);
+                }
+                else if (mExtendLow) {
+                    objPointer.setExtendByBuyOrSell(mExtendLow, false);
+                }
             }
         }
     }
+
+    if (id == CHARTEVENT_OBJECT_CREATE) {
+        if (ObjectType(sparam) == OBJ_RECTANGLE || ObjectType(sparam) == OBJ_TREND) {
+            increaseMyObjectsSize();
+            int index = ArraySize(myObjects) - 1;
+            myObjects[index] = new Object(sparam);
+        }
+    }
+
     return;
 }
 
@@ -359,8 +380,8 @@ void createLabel(KEYS_ON_KEYBOARD key) {
                     : key == RayKey ? "Ray"
                     : key == FlatKey ? "Flat"
                     : key == ExtendHighKey ? (objPointer != NULL && ObjectType(objPointer.getName()) == OBJ_TREND 
-                                            ? "Extend" : "Extend High")
-                    : key == ExtendLowKey ? "Extend Low"
+                                            ? "Extend" : "Engulf Supply")
+                    : key == ExtendLowKey ? "Engulf Demand"
                     : mStyle == 2 ? "Background"    // StyleKey
                     : "Style";                      // StyleKey
     int yDistance = key == StyleKey ? 0
@@ -398,8 +419,8 @@ void deleteLabel(KEYS_ON_KEYBOARD key) {
                     : key == RayKey ? "Ray"
                     : key == FlatKey ? "Flat"
                     : key == ExtendHighKey ? (objPointer != NULL && ObjectType(objPointer.getName()) == OBJ_TREND 
-                                            ? "Extend" : "Extend High")
-                    : key == ExtendLowKey ? "Extend Low"
+                                            ? "Extend" : "Engulf Supply")
+                    : key == ExtendLowKey ? "Engulf Demand"
                     : mStyle == 2 ? "Background"
                     : "Style";
 
@@ -518,6 +539,56 @@ void initObjectPointer() {
     }
 }
 
-void createTrendline() {
+void createTrendline(string name) {
+    ResetLastError();
 
+    printf("Obj Name : " + name);
+
+    increaseMyObjectsSize();
+    int index = ArraySize(myObjects) - 1;
+    myObjects[index] = new Object(name);
+    objPointer = myObjects[index];
+    objPointer.create(OBJ_TREND);
+    objPointer.setTime1(mTime);
+    objPointer.setTime2(mTime2);
+    objPointer.setPrice1(mPrice);
+    objPointer.setPrice2(mFlat ? mPrice : mPrice2);
+    objPointer.setColor(mTrendlineColor);
+    objPointer.setStyle(mStyle);
+    objPointer.setWidth(mWid);
+    objPointer.setRay(mRay);
+
+    objPointer = NULL;
+
+    setDrawTrendline(false);
+}
+
+void createRectangle(string name) {
+
+    printf("Obj Name : " + name);
+    
+    increaseMyObjectsSize();
+    int index = ArraySize(myObjects) - 1;
+    myObjects[index] = new Object(name);
+    objPointer = myObjects[index];
+    objPointer.create(OBJ_RECTANGLE);
+    objPointer.setTime1(mTime);
+    objPointer.setTime2(mTime2);
+    objPointer.setPrice1(mPrice);
+    objPointer.setPrice2(mPrice2);
+    objPointer.setColor(rCol);
+    objPointer.setBackground(rectangleAsBackground);
+
+    objPointer = NULL;
+
+    setDrawRectangle(false);
+}
+
+void setDefaultStates() {
+    setTrendlineColor(trendlineColor1);
+    setStyle(0, false);
+    setFlat(true);
+    setExtendHigh(false);
+    setExtendLow(false);
+    setRay(false);
 }
