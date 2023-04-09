@@ -18,13 +18,17 @@ input int fontSize               = 7;                   // Text Font Size
 
 input string Options               = "Options";
 input int lookback               = 30;                  // Amount of Days To Lookback
-input bool ShowAll               = FALSE;               // Show All Day  
+input bool ShowAll               = FALSE;               // Show All Day (Kill Zone)
+input bool ShowAll2Hr            = FALSE;               // Show 2 Hours Cycle
+input bool ShowKillZone          = FALSE;               // Show Today KillZone
+input bool Show2Hr               = TRUE;                // Show Today 2 Hours Cycle  
 input bool ShowLondonNewYork     = TRUE;                // Show London & NY Opening Price
 
 input string Colors               = "Colors";
 input ENUM_LINE_STYLE lineStyle  = STYLE_DOT;           // VLine Style   
 input color clrSeparator         = clrWhite;            // VLine Color   
-input color clr90min             = clrBlack;            // 90 Min Cycle Color        
+input color clr90min             = clrBlack;            // 90 Min Cycle Color
+input color clr2Hr               = clrBlack;            // 2 Hours Cycle Color     
 input color clrAsia              = clrLightSalmon;      // Asia Color    
 input color clrLondonKz          = clrBlue;             // London Color  
 input color clrNyKz              = clrMaroon;           // New York Color
@@ -40,8 +44,10 @@ string asiaOpen = "Asia Open";
 string mop = "MOP";
 string london[] = {"2 AM - London", "5 AM - London", "London Close", "13.00 PM"};
 string newYork[] = {"7 AM - NY Open", "8.30 AM", "10 AM - NY"};
-string ninetyMinutesCycle[] = {"2.00 AM", "3.30 AM", "5.00 AM", "7.00 AM", "8.30 AM", "10.00 AM", "11.30 AM"};
-string iName    = "KZ&90MC";
+string ninetyMinutesCycle[] = {"3.30 AM", "8.30 AM", "11.30 AM"};
+string twoHoursCycle[] = {"2 AM", "4 AM", "6 AM", "8 AM", "10 AM", "12 AM"};
+
+string iName    = "KZ&Cycle";
 string objName;
 
 int startIndex;
@@ -116,18 +122,18 @@ int OnCalculate(const int rates_total,
     if (isValidTimeframe()) {
         double lowestYPos = getLowestYPos();
 
-        // VLine Separator
+        // Today VLine Separator
         objName = "VL " + getDayName(getCurrentTime());
         if (!findObject(objName)) {
             Sett(VLineCreate(objName, getDateTimeSeparator(), clrSeparator, lineStyle));
         }
-        // VLine Text Separator
+        // Today VLine Text Separator
         objName = "VLT " + getDayName(getCurrentTime());
         if (!findObject(objName)) {
             Sett(Text(objName, getDateTimeSeparator(), lowestYPos, getDayName(getCurrentTime()), fontSize, clrSeparator, textAngle));
         }
 
-        // Ini 1 hari Asia Open
+        // Today Asia Open
         objName = "TT " + asiaOpen + " " + string(getDateTimeAsiaOpen());
         startIndex = getBarIndex(getDateTimeAsiaOpen());
         stopIndex = getBarIndex(getDateTimeSeparator());
@@ -147,113 +153,189 @@ int OnCalculate(const int rates_total,
             trendBuffer[i] = tmpTrendValue;
         }
 
-        // 3.30 AM VLine
-        objName = "VL " + ninetyMinutesCycle[1];
-        if (!findObject(objName)){
-            Sett(VLineCreate(objName, getDateTime330AM(), clr90min, 2, 1));
-        }
-        // 3.30 AM Text
-        objName = "VLT " + ninetyMinutesCycle[1];
-        if (!findObject(objName)) {
-            Sett(Text(objName, getDateTime330AM(), lowestYPos, ninetyMinutesCycle[1], 7, clr90min, textAngle));
+        // Today Kill Zone
+        if (ShowKillZone) {
+            // 3.30 AM VLine
+            objName = "VL " + ninetyMinutesCycle[0];
+            if (!findObject(objName)){
+                Sett(VLineCreate(objName, getDateTime330AM(), clr90min, 2, 1));
+            }
+            // 3.30 AM Text
+            objName = "VLT " + ninetyMinutesCycle[0];
+            if (!findObject(objName)) {
+                Sett(Text(objName, getDateTime330AM(), lowestYPos, ninetyMinutesCycle[0], 7, clr90min, textAngle));
+            }
+
+            // 8.30 AM VLine
+            objName = "VL " + ninetyMinutesCycle[1];
+            if (!findObject(objName)){
+                Sett(VLineCreate(objName, getDateTime830AM(), clr90min, 2, 1));
+            }
+            // 8.30 AM Text
+            objName = "VLT " + ninetyMinutesCycle[1];
+            if (!findObject(objName)) {
+                Sett(Text(objName, getDateTime830AM(), lowestYPos, ninetyMinutesCycle[1], 7, clr90min, textAngle));
+            }
+
+            // 11.30 AM VLine
+            objName = "VL " + ninetyMinutesCycle[2];
+            if (!findObject(objName)){
+                Sett(VLineCreate(objName, getDateTime1130AM(), clr90min, 2, 1));
+            }
+            // 11.30 AM Text
+            objName = "VLT " + ninetyMinutesCycle[2];
+            if (!findObject(objName)) {
+                Sett(Text(objName, getDateTime1130AM(), lowestYPos, ninetyMinutesCycle[2], 7, clr90min, textAngle));
+            }
+
+            // London Session 1 Start VLine
+            objName = "VL " + london[0];
+            if (!findObject(objName)){
+                Sett(VLineCreate(objName, getDateTimeLondonSession1Start(), clrLondonKz, 2, 1));
+            }
+            // London Session 1 Start Text
+            objName = "VLT " + london[0];
+            if (!findObject(objName)) {
+                Sett(Text(objName, getDateTimeLondonSession1Start(), lowestYPos, london[0], fontSize, clrLondonKz, textAngle));
+            }
+            
+            // London Session 1 Stop Vline
+            objName = "VL " + london[1];
+            if (!findObject(objName)) {
+                Sett(VLineCreate(objName, getDateTimeLondonSession1Stop(), clrLondonKz, 2, 1));
+            }
+            // London Session 1 Stop Text
+            objName = "VLT " + london[1];
+            if (!findObject(objName)) {
+                Sett(Text(objName, getDateTimeLondonSession1Stop(), lowestYPos, london[1], fontSize, clrLondonKz, textAngle));
+            }
+
+            // NewYork Start VLine
+            objName = "VL " + newYork[0];
+            if (!findObject(objName)) {
+                Sett(VLineCreate(objName, getDateTimeNewYorkStart(), clrNyKz, 2, 1));
+            }
+            // NewYork Start Text
+            objName = "VLT " + newYork[0];
+            if (!findObject(objName)) {
+                Sett(Text(objName, getDateTimeNewYorkStart(), lowestYPos, newYork[0], fontSize, clrNyKz, textAngle));
+            }
+
+            // NewYork Stop / London Sessian 2 Start Vline
+            objName = "VL " + newYork[2];
+            if (!findObject(objName)) {
+                Sett(VLineCreate(objName, getDateTimeNewYorkStop(), clrNyKz, 2, 1));
+            }
+            // NewYork Stop / London Sessian 2 Start Text
+            objName = "VLT " + newYork[2];
+            if (!findObject(objName)) {
+                Sett(Text(objName, getDateTimeNewYorkStop(), lowestYPos, newYork[2] + " / " + london[2], fontSize, clrNyKz, textAngle));
+            }
+
+            // London Session 2 Stop Vline
+            objName = "VL " + london[3];
+            if (!findObject(objName)) {
+                Sett(VLineCreate(objName, getDateTimeLondonSession2Stop(), clrLondonKz, 2, 1));
+            }
+            // London Session 2 Stop Text
+            objName = "VLT " + london[3];
+            if (!findObject(objName)) {
+                Sett(Text(objName, getDateTimeLondonSession2Stop(), lowestYPos, london[3], fontSize, clrLondonKz, textAngle));
+            }
+
         }
 
-        // 8.30 AM VLine
-        objName = "VL " + ninetyMinutesCycle[4];
-        if (!findObject(objName)){
-            Sett(VLineCreate(objName, getDateTime830AM(), clr90min, 2, 1));
-        }
-        // 8.30 AM Text
-        objName = "VLT " + ninetyMinutesCycle[4];
-        if (!findObject(objName)) {
-            Sett(Text(objName, getDateTime830AM(), lowestYPos, ninetyMinutesCycle[4], 7, clr90min, textAngle));
+        // Today 2 Hours Cycle
+        if (Show2Hr) {
+
+            // 2 AM VLine
+            objName = "VL " + twoHoursCycle[0];
+            if (!findObject(objName)){
+                Sett(VLineCreate(objName, getDateTime2AM(), clr2Hr, 2, 1));
+            }
+            // 2 AM Text
+            objName = "VLT " + twoHoursCycle[0];
+            if (!findObject(objName)) {
+                Sett(Text(objName, getDateTime2AM(), lowestYPos, twoHoursCycle[0], 7, clr2Hr, textAngle));
+            }
+
+            // 4 AM VLine
+            objName = "VL " + twoHoursCycle[1];
+            if (!findObject(objName)){
+                Sett(VLineCreate(objName, getDateTime4AM(), clr2Hr, 2, 1));
+            }
+            // 4 AM Text
+            objName = "VLT " + twoHoursCycle[1];
+            if (!findObject(objName)) {
+                Sett(Text(objName, getDateTime4AM(), lowestYPos, twoHoursCycle[1], 7, clr2Hr, textAngle));
+            }
+
+            // 6 AM VLine
+            objName = "VL " + twoHoursCycle[2];
+            if (!findObject(objName)){
+                Sett(VLineCreate(objName, getDateTime6AM(), clr2Hr, 2, 1));
+            }
+            // 6 AM Text
+            objName = "VLT " + twoHoursCycle[2];
+            if (!findObject(objName)) {
+                Sett(Text(objName, getDateTime6AM(), lowestYPos, twoHoursCycle[2], 7, clr2Hr, textAngle));
+            }
+
+            // 8 AM VLine
+            objName = "VL " + twoHoursCycle[3];
+            if (!findObject(objName)){
+                Sett(VLineCreate(objName, getDateTime8AM(), clr2Hr, 2, 1));
+            }
+            // 8 AM Text
+            objName = "VLT " + twoHoursCycle[3];
+            if (!findObject(objName)) {
+                Sett(Text(objName, getDateTime8AM(), lowestYPos, twoHoursCycle[3], 7, clr2Hr, textAngle));
+            }
+
+            // 10 AM VLine
+            objName = "VL " + twoHoursCycle[4];
+            if (!findObject(objName)){
+                Sett(VLineCreate(objName, getDateTime10AM(), clr2Hr, 2, 1));
+            }
+            // 10 AM Text
+            objName = "VLT " + twoHoursCycle[4];
+            if (!findObject(objName)) {
+                Sett(Text(objName, getDateTime10AM(), lowestYPos, twoHoursCycle[4], 7, clr2Hr, textAngle));
+            }
+
+            // 12 AM VLine
+            objName = "VL " + twoHoursCycle[5];
+            if (!findObject(objName)){
+                Sett(VLineCreate(objName, getDateTime12AM(), clr2Hr, 2, 1));
+            }
+            // 12 AM Text
+            objName = "VLT " + twoHoursCycle[5];
+            if (!findObject(objName)) {
+                Sett(Text(objName, getDateTime12AM(), lowestYPos, twoHoursCycle[5], 7, clr2Hr, textAngle));
+            }
+
         }
 
-        // 11.30 AM VLine
-        objName = "VL " + ninetyMinutesCycle[6];
-        if (!findObject(objName)){
-            Sett(VLineCreate(objName, getDateTime1130AM(), clr90min, 2, 1));
-        }
-        // 11.30 AM Text
-        objName = "VLT " + ninetyMinutesCycle[6];
-        if (!findObject(objName)) {
-            Sett(Text(objName, getDateTime1130AM(), lowestYPos, ninetyMinutesCycle[6], 7, clr90min, textAngle));
-        }
-
-        // London Session 1 Start VLine
-        objName = "VL " + london[0];
-        if (!findObject(objName)){
-            Sett(VLineCreate(objName, getDateTimeLondonSession1Start(), clrLondonKz, 2, 1));
-        }
-        // London Session 1 Start Text
-        objName = "VLT " + london[0];
-        if (!findObject(objName)) {
-            Sett(Text(objName, getDateTimeLondonSession1Start(), lowestYPos, london[0], fontSize, clrLondonKz, textAngle));
-        }
-        
-        // London Session 1 Stop Vline
-        objName = "VL " + london[1];
-        if (!findObject(objName)) {
-            Sett(VLineCreate(objName, getDateTimeLondonSession1Stop(), clrLondonKz, 2, 1));
-        }
-        // London Session 1 Stop Text
-        objName = "VLT " + london[1];
-        if (!findObject(objName)) {
-            Sett(Text(objName, getDateTimeLondonSession1Stop(), lowestYPos, london[1], fontSize, clrLondonKz, textAngle));
-        }
-
-        // NewYork Start VLine
-        objName = "VL " + newYork[0];
-        if (!findObject(objName)) {
-            Sett(VLineCreate(objName, getDateTimeNewYorkStart(), clrNyKz, 2, 1));
-        }
-        // NewYork Start Text
-        objName = "VLT " + newYork[0];
-        if (!findObject(objName)) {
-            Sett(Text(objName, getDateTimeNewYorkStart(), lowestYPos, newYork[0], fontSize, clrNyKz, textAngle));
-        }
-
-        // NewYork Stop / London Sessian 2 Start Vline
-        objName = "VL " + newYork[2];
-        if (!findObject(objName)) {
-            Sett(VLineCreate(objName, getDateTimeNewYorkStop(), clrNyKz, 2, 1));
-        }
-        // NewYork Stop / London Sessian 2 Start Text
-        objName = "VLT " + newYork[2];
-        if (!findObject(objName)) {
-            Sett(Text(objName, getDateTimeNewYorkStop(), lowestYPos, newYork[2] + " / " + london[2], fontSize, clrNyKz, textAngle));
-        }
-
-        // London Session 2 Stop Vline
-        objName = "VL " + london[3];
-        if (!findObject(objName)) {
-            Sett(VLineCreate(objName, getDateTimeLondonSession2Stop(), clrLondonKz, 2, 1));
-        }
-        // London Session 2 Stop Text
-        objName = "VLT " + london[3];
-        if (!findObject(objName)) {
-            Sett(Text(objName, getDateTimeLondonSession2Stop(), lowestYPos, london[3], fontSize, clrLondonKz, textAngle));
-        }
-
-        // London and New York Trendlines
+        // Today London and New York Trendlines
         if (ShowLondonNewYork) {
             // Ini 1 hari London (hari ini)
-            startIndex = getBarIndex(getDateTimeLondonSession1Start());
-            stopIndex = getBarIndex(getDateTimeLondonSession1Stop());
+            objName = "TT " + ((Show2Hr == true)?twoHoursCycle[0]:london[0]) + " " + string(getDateTime2AM());
+            startIndex = getBarIndex(getDateTime2AM());
+            stopIndex = getBarIndex((Show2Hr == true)?getDateTime12AM():getDateTimeLondonSession1Stop());
             tmpLondonValue = open[startIndex];
-            objName = "TT " + london[0] + " " + string(getDateTimeLondonSession1Start());
             if (!findObject(objName)) {
-                Sett(Text(objName, getDateTimeLondonSession1Start(), tmpLondonValue, london[0], fontSize, clrLondonKz, 0, "Arial"));
+                Sett(Text(objName, getDateTime2AM(), tmpLondonValue, ((Show2Hr == true)?twoHoursCycle[0]:london[0]), fontSize, clrLondonKz, 0, "Arial"));
             }
-            for (int i = startIndex; i >= (stopIndex == NULL ? 0 : stopIndex); i--) {
+            for (int i = startIndex; i > (stopIndex == NULL ? 0 : stopIndex); i--) {
                 londonBuffer[i] = tmpLondonValue;
             }
+        
 
             // Ini 1 hari New York (hari ini)
+            objName = "TT " + newYork[0] + " " + string(getDateTimeNewYorkStart());
             startIndex = getBarIndex(getDateTimeNewYorkStart());
             stopIndex = getBarIndex(getDateTimeNewYorkStop());
             tmpNyValue = open[startIndex];
-            objName = "TT " + newYork[0] + " " + string(getDateTimeNewYorkStart());
             if (!findObject(objName)) {
                 Sett(Text(objName, getDateTimeNewYorkStart(), tmpNyValue, newYork[0], fontSize, clrNyKz, 0, "Arial"));
             }
@@ -262,7 +344,7 @@ int OnCalculate(const int rates_total,
             }
         }
 
-        if (ShowAll) {
+        if (ShowAll || ShowAll2Hr) {
             datetime dtStop;
             for (int i = 1; i <= lookback; i++) {
 
@@ -305,7 +387,7 @@ int OnCalculate(const int rates_total,
 
                 // Trendline Text Separator/MOP
                 dt = getDateTimeSeparator() - (oneDay * i);
-                dtStop = getDateTimeSeparator() - (oneDay * i) + oneDay;
+                dtStop = getDateTimeAsiaOpen() - (oneDay * i) + oneDay;
                 if (!currentTimeIsWeekend(dt)) {
                     startIndex = getBarIndex(dt);
                     stopIndex = getBarIndex(dtStop);
@@ -325,10 +407,9 @@ int OnCalculate(const int rates_total,
                     }
                 }
 
-
                 // London Buffer
                 dt = getDateTimeLondonSession1Start() - (oneDay * i);
-                dtStop = getDateTimeLondonSession1Stop() - (oneDay * i);
+                dtStop = (Show2Hr == true?getDateTime12AM():getDateTimeLondonSession1Stop()) - (oneDay * i);
                 if (!currentTimeIsWeekend(dt)) {
                     startIndex = getBarIndex(dt);
                     stopIndex = getBarIndex(dtStop);
@@ -371,18 +452,23 @@ int OnCalculate(const int rates_total,
                     }    
                 }
 
+            }
+        }
+
+        if (ShowAll) {
+            for (int i = 1; i <= lookback; i++) {
                 // Datetime 3.30 AM
                 dt = getDateTime330AM() - (oneDay * i);
                 if (!currentTimeIsWeekend(dt)) {
                     // 3.30 AM VLine
-                    objName = "VL " + ninetyMinutesCycle[1] + " " + string(dt);
+                    objName = "VL " + ninetyMinutesCycle[0] + " " + string(dt);
                     if (!findObject(objName)){
                         Sett(VLineCreate(objName, dt, clr90min, 2, 1));
                     }
                     // 3.30 AM Text
-                    objName = "VLT " + ninetyMinutesCycle[1] + " " + string(dt);
+                    objName = "VLT " + ninetyMinutesCycle[0] + " " + string(dt);
                     if (!findObject(objName)) {
-                        Sett(Text(objName, dt, lowestYPos, ninetyMinutesCycle[1], fontSize, clr90min, textAngle));
+                        Sett(Text(objName, dt, lowestYPos, ninetyMinutesCycle[0], fontSize, clr90min, textAngle));
                     }
                 }
 
@@ -390,14 +476,14 @@ int OnCalculate(const int rates_total,
                 dt = getDateTime830AM() - (oneDay * i);
                 if (!currentTimeIsWeekend(dt)) {
                     // 8.30 AM VLine
-                    objName = "VL " + ninetyMinutesCycle[4] + " " + string(dt);
+                    objName = "VL " + ninetyMinutesCycle[1] + " " + string(dt);
                     if (!findObject(objName)){
                         Sett(VLineCreate(objName, dt, clr90min, 2, 1));
                     }
                     // 8.30 AM Text
-                    objName = "VLT " + ninetyMinutesCycle[4] + " " + string(dt);
+                    objName = "VLT " + ninetyMinutesCycle[1] + " " + string(dt);
                     if (!findObject(objName)) {
-                        Sett(Text(objName, dt, lowestYPos, ninetyMinutesCycle[4], fontSize, clr90min, textAngle));
+                        Sett(Text(objName, dt, lowestYPos, ninetyMinutesCycle[1], fontSize, clr90min, textAngle));
                     }
                 }
 
@@ -405,14 +491,14 @@ int OnCalculate(const int rates_total,
                 dt = getDateTime1130AM() - (oneDay * i);
                 if (!currentTimeIsWeekend(dt)) {
                     // 11.30 AM VLine
-                    objName = "VL " + ninetyMinutesCycle[6] + " " + string(dt);
+                    objName = "VL " + ninetyMinutesCycle[2] + " " + string(dt);
                     if (!findObject(objName)){
                         Sett(VLineCreate(objName, dt, clr90min, 2, 1));
                     }
                     // 11.30 AM Text
-                    objName = "VLT " + ninetyMinutesCycle[6] + " " + string(dt);
+                    objName = "VLT " + ninetyMinutesCycle[2] + " " + string(dt);
                     if (!findObject(objName)) {
-                        Sett(Text(objName, dt, lowestYPos, ninetyMinutesCycle[6], fontSize, clr90min, textAngle));
+                        Sett(Text(objName, dt, lowestYPos, ninetyMinutesCycle[2], fontSize, clr90min, textAngle));
                     }
                 }
 
@@ -508,6 +594,102 @@ int OnCalculate(const int rates_total,
 
             }
         }
+   
+        if (ShowAll2Hr) {
+            for (int i = 1; i <= lookback; i++) {
+                // Datetime 2 AM
+                dt = getDateTime2AM() - (oneDay * i);
+                if (!currentTimeIsWeekend(dt)) {
+                    // 2 AM VLine
+                    objName = "VL " + twoHoursCycle[0] + " " + string(dt);
+                    if (!findObject(objName)){
+                        Sett(VLineCreate(objName, dt, clr2Hr, 2, 1));
+                    }
+                    // 2 AM Text
+                    objName = "VLT " + twoHoursCycle[0] + " " + string(dt);
+                    if (!findObject(objName)) {
+                        Sett(Text(objName, dt, lowestYPos, twoHoursCycle[0], fontSize, clr2Hr, textAngle));
+                    }
+                }
+
+                // Datetime 4 AM
+                dt = getDateTime4AM() - (oneDay * i);
+                if (!currentTimeIsWeekend(dt)) {
+                    // 4 AM VLine
+                    objName = "VL " + twoHoursCycle[1] + " " + string(dt);
+                    if (!findObject(objName)){
+                        Sett(VLineCreate(objName, dt, clr2Hr, 2, 1));
+                    }
+                    // 4 AM Text
+                    objName = "VLT " + twoHoursCycle[1] + " " + string(dt);
+                    if (!findObject(objName)) {
+                        Sett(Text(objName, dt, lowestYPos, twoHoursCycle[1], fontSize, clr2Hr, textAngle));
+                    }
+                }
+
+                // Datetime 6 AM
+                dt = getDateTime6AM() - (oneDay * i);
+                if (!currentTimeIsWeekend(dt)) {
+                    // 6 AM VLine
+                    objName = "VL " + twoHoursCycle[2] + " " + string(dt);
+                    if (!findObject(objName)){
+                        Sett(VLineCreate(objName, dt, clr2Hr, 2, 1));
+                    }
+                    // 6 AM Text
+                    objName = "VLT " + twoHoursCycle[2] + " " + string(dt);
+                    if (!findObject(objName)) {
+                        Sett(Text(objName, dt, lowestYPos, twoHoursCycle[2], fontSize, clr2Hr, textAngle));
+                    }
+                }                
+
+                // Datetime 8 AM
+                dt = getDateTime8AM() - (oneDay * i);
+                if (!currentTimeIsWeekend(dt)) {
+                    // 8 AM VLine
+                    objName = "VL " + twoHoursCycle[3] + " " + string(dt);
+                    if (!findObject(objName)){
+                        Sett(VLineCreate(objName, dt, clr2Hr, 2, 1));
+                    }
+                    // 8 AM Text
+                    objName = "VLT " + twoHoursCycle[3] + " " + string(dt);
+                    if (!findObject(objName)) {
+                        Sett(Text(objName, dt, lowestYPos, twoHoursCycle[3], fontSize, clr2Hr, textAngle));
+                    }
+                }
+
+                // Datetime 10 AM
+                dt = getDateTime10AM() - (oneDay * i);
+                if (!currentTimeIsWeekend(dt)) {
+                    // 10 AM VLine
+                    objName = "VL " + twoHoursCycle[4] + " " + string(dt);
+                    if (!findObject(objName)){
+                        Sett(VLineCreate(objName, dt, clr2Hr, 2, 1));
+                    }
+                    // 10 AM Text
+                    objName = "VLT " + twoHoursCycle[4] + " " + string(dt);
+                    if (!findObject(objName)) {
+                        Sett(Text(objName, dt, lowestYPos, twoHoursCycle[4], fontSize, clr2Hr, textAngle));
+                    }
+                }
+
+                // Datetime 12 AM
+                dt = getDateTime12AM() - (oneDay * i);
+                if (!currentTimeIsWeekend(dt)) {
+                    // 12 AM VLine
+                    objName = "VL " + twoHoursCycle[5] + " " + string(dt);
+                    if (!findObject(objName)){
+                        Sett(VLineCreate(objName, dt, clr2Hr, 2, 1));
+                    }
+                    // 12 AM Text
+                    objName = "VLT " + twoHoursCycle[5] + " " + string(dt);
+                    if (!findObject(objName)) {
+                        Sett(Text(objName, dt, lowestYPos, twoHoursCycle[5], fontSize, clr2Hr, textAngle));
+                    }
+                }                
+
+            }
+        }
+
     }
 
     else {
@@ -585,6 +767,24 @@ datetime getDateTimeNewYorkStop() {
 }
 datetime getDateTimeLondonSession2Stop() {    
     return StrToTime(string(TimeYear(TimeCurrent())) + "." + string(TimeMonth(TimeCurrent())) + "." + string(TimeDay(TimeCurrent())) + (HourTime + 13 >= 10 ? " " + string(HourTime + 13) : " 0" + string(HourTime + 13)) + ":00:00");
+}
+datetime getDateTime2AM() {
+    return StrToTime(string(TimeYear(TimeCurrent())) + "." + string(TimeMonth(TimeCurrent())) + "." + string(TimeDay(TimeCurrent())) + (HourTime + 2 >= 10 ? " " + string(HourTime + 2) : " 0" + string(HourTime + 2)) + ":00:00");
+}
+datetime getDateTime4AM() {
+    return StrToTime(string(TimeYear(TimeCurrent())) + "." + string(TimeMonth(TimeCurrent())) + "." + string(TimeDay(TimeCurrent())) + (HourTime + 4 >= 10 ? " " + string(HourTime + 4) : " 0" + string(HourTime + 4)) + ":00:00");
+}
+datetime getDateTime6AM() {
+    return StrToTime(string(TimeYear(TimeCurrent())) + "." + string(TimeMonth(TimeCurrent())) + "." + string(TimeDay(TimeCurrent())) + (HourTime + 6 >= 10 ? " " + string(HourTime + 6) : " 0" + string(HourTime + 6)) + ":00:00");
+}
+datetime getDateTime8AM() {
+    return StrToTime(string(TimeYear(TimeCurrent())) + "." + string(TimeMonth(TimeCurrent())) + "." + string(TimeDay(TimeCurrent())) + (HourTime + 8 >= 10 ? " " + string(HourTime + 8) : " 0" + string(HourTime + 8)) + ":00:00");
+}
+datetime getDateTime10AM() {
+    return StrToTime(string(TimeYear(TimeCurrent())) + "." + string(TimeMonth(TimeCurrent())) + "." + string(TimeDay(TimeCurrent())) + (HourTime + 10 >= 10 ? " " + string(HourTime + 10) : " 0" + string(HourTime + 10)) + ":00:00");
+}
+datetime getDateTime12AM() {
+    return StrToTime(string(TimeYear(TimeCurrent())) + "." + string(TimeMonth(TimeCurrent())) + "." + string(TimeDay(TimeCurrent())) + (HourTime + 12 >= 10 ? " " + string(HourTime + 12) : " 0" + string(HourTime + 12)) + ":00:00");
 }
 //+--------------------
 
