@@ -12,7 +12,8 @@ class Object
 private:
     bool flat;
     bool extend;
-    bool inextendBuy;
+    bool engulfBuy;
+    bool extendSwitch;
 
     long chartId;
 
@@ -55,48 +56,56 @@ public:
             setPrice2(getPrice1());
         }
     }
+    void setExtendSwitch(bool status) {
+        extendSwitch = status;
+    }
+
     void setExtend(bool status) {
-        extend = status;
-        if (extend) {
-            setTime2(TimeCurrent());
-        }
-        else {
-            int x1 = iBarShift(Symbol(), Period(), getTime1(), true);
-            for (int i = x1 - 1; i >= 0; i--) {
-                if (getPrice1() == High[x1]) {
-                    if (High[i] > High[x1]) {
-                        setTime2(Time[i]);
-                        break;
+        if (isExtendSwitch()) {
+            extend = status;
+            if (extend) {
+                setTime2(TimeCurrent());
+            }
+            else {
+                int x1 = iBarShift(Symbol(), Period(), getTime1(), true);
+                for (int i = x1 - 1; i >= 0; i--) {
+                    if (getPrice1() == High[x1]) {
+                        if (High[i] > High[x1]) {
+                            setTime2(Time[i]);
+                            break;
+                        }
                     }
-                }
-                if (getPrice1() == Low[x1]) {
-                    if (Low[i] < Low[x1]) {
-                        setTime2(Time[i]);
-                        break;
+                    if (getPrice1() == Low[x1]) {
+                        if (Low[i] < Low[x1]) {
+                            setTime2(Time[i]);
+                            break;
+                        }
                     }
                 }
             }
         }
     }
     void setExtendByBuyOrSell(bool status, bool buy) {
-        extend = status;
-        if (extend) {
-            setTime2(TimeCurrent());
-        }
-        else {
-            inextendBuy = buy;
-            int x1 = iBarShift(Symbol(), Period(), getTime1(), true);
-            for (int i = x1 - 1; i >= 0; i--) {
-                if (buy) {
-                    if (High[i] > getPrice1()) {
-                        setTime2(Time[i]);
-                        break;
+        if (isExtendSwitch()) {
+            extend = status;
+            if (extend) {
+                setTime2(TimeCurrent());
+            }
+            else {
+                engulfBuy = buy;
+                int x1 = iBarShift(Symbol(), Period(), getTime1(), true);
+                for (int i = x1 - 1; i >= 0; i--) {
+                    if (buy) {
+                        if (High[i] > getPrice1()) {
+                            setTime2(Time[i]);
+                            break;
+                        }
                     }
-                }
-                else {
-                    if (Low[i] < getPrice2()) {
-                        setTime2(Time[i]);
-                        break;
+                    else {
+                        if (Low[i] < getPrice2()) {
+                            setTime2(Time[i]);
+                            break;
+                        }
                     }
                 }
             }
@@ -171,11 +180,14 @@ public:
     bool isFlat() {
         return flat;
     }
+    bool isExtendSwitch() {
+        return extendSwitch;
+    }
     bool isExtend() {
         return extend;
     }
-    bool isInextendBuy() {
-        return inextendBuy;
+    bool isEngulfBuy() {
+        return engulfBuy;
     }
     bool isBackground() {
         return ObjectGet(name, OBJPROP_BACK) == true;

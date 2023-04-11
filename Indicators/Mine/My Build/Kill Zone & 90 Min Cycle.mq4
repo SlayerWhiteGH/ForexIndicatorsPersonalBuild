@@ -134,23 +134,30 @@ int OnCalculate(const int rates_total,
         }
 
         // Today Asia Open
-        objName = "TT " + asiaOpen + " " + string(getDateTimeAsiaOpen());
-        startIndex = getBarIndex(getDateTimeAsiaOpen());
-        stopIndex = getBarIndex(getDateTimeSeparator());
-        tmpAsiaValue = open[startIndex];
-        Sett(Text(objName, getDateTimeAsiaOpen(), tmpAsiaValue, asiaOpen, fontSize, clrAsia));
-        for (int i = startIndex; i >= (stopIndex == NULL ? 0 : stopIndex); i--) {
-            asiaBuffer[i] = tmpAsiaValue;
+        if (TimeCurrent() >= getDateTimeAsiaOpen()) {
+            objName = "TT " + asiaOpen + " " + string(getDateTimeAsiaOpen());
+            startIndex = getBarIndex(getDateTimeAsiaOpen());
+            stopIndex = getBarIndex(getDateTimeSeparator());
+            tmpAsiaValue = open[startIndex];
+            if (!findObject(objName)) {
+                Sett(Text(objName, getDateTimeAsiaOpen(), tmpAsiaValue, asiaOpen, fontSize, clrAsia));
+                for (int i = startIndex; i >= (stopIndex != -1 ? stopIndex : 0); i--) {
+                    asiaBuffer[i] = tmpAsiaValue;
+                }
+            }
         }
+        
 
         // Ini 1 hari MOP
-        objName = "TT " + mop + " " + string(getDateTimeSeparator());
-        startIndex = getBarIndex(getDateTimeSeparator());
-        stopIndex = 0;
-        tmpTrendValue = open[startIndex];
-        Sett(Text(objName, getDateTimeSeparator(), tmpTrendValue, mop, fontSize, clrSeparator));
-        for (int i = startIndex; i >= stopIndex; i--) {
-            trendBuffer[i] = tmpTrendValue;
+        if (TimeCurrent() >= getDateTimeSeparator()) {
+            objName = "TT " + mop + " " + string(getDateTimeSeparator());
+            startIndex = getBarIndex(getDateTimeSeparator());
+            stopIndex = (getCurrentTime() < getDateTimeSeparator()) ? 0 : getBarIndex(getDateTimeAsiaOpen());
+            tmpTrendValue = open[startIndex];
+            Sett(Text(objName, getDateTimeSeparator(), tmpTrendValue, mop, fontSize, clrSeparator));
+            for (int i = startIndex; i >= stopIndex; i--) {
+                trendBuffer[i] = tmpTrendValue;
+            }
         }
 
         // Today Kill Zone
@@ -319,28 +326,32 @@ int OnCalculate(const int rates_total,
         // Today London and New York Trendlines
         if (ShowLondonNewYork) {
             // Ini 1 hari London (hari ini)
-            objName = "TT " + ((Show2Hr == true)?twoHoursCycle[0]:london[0]) + " " + string(getDateTime2AM());
-            startIndex = getBarIndex(getDateTime2AM());
-            stopIndex = getBarIndex((Show2Hr == true)?getDateTime12AM():getDateTimeLondonSession1Stop());
-            tmpLondonValue = open[startIndex];
-            if (!findObject(objName)) {
-                Sett(Text(objName, getDateTime2AM(), tmpLondonValue, ((Show2Hr == true)?twoHoursCycle[0]:london[0]), fontSize, clrLondonKz, 0, "Arial"));
-            }
-            for (int i = startIndex; i > (stopIndex == NULL ? 0 : stopIndex); i--) {
-                londonBuffer[i] = tmpLondonValue;
+            if (TimeCurrent() >= getDateTime2AM()) {
+                objName = "TT " + ((Show2Hr == true)?twoHoursCycle[0]:london[0]) + " " + string(getDateTime2AM());
+                startIndex = getBarIndex(getDateTime2AM());
+                stopIndex = getBarIndex((Show2Hr == true)?getDateTime12AM():getDateTimeLondonSession1Stop());
+                tmpLondonValue = open[startIndex];
+                if (!findObject(objName)) {
+                    Sett(Text(objName, getDateTime2AM(), tmpLondonValue, ((Show2Hr == true)?twoHoursCycle[0]:london[0]), fontSize, clrLondonKz, 0, "Arial"));
+                }
+                for (int i = startIndex; i >= (stopIndex != -1 ? stopIndex : 0); i--) {
+                    londonBuffer[i] = tmpLondonValue;
+                }
             }
         
 
             // Ini 1 hari New York (hari ini)
-            objName = "TT " + newYork[0] + " " + string(getDateTimeNewYorkStart());
-            startIndex = getBarIndex(getDateTimeNewYorkStart());
-            stopIndex = getBarIndex(getDateTimeNewYorkStop());
-            tmpNyValue = open[startIndex];
-            if (!findObject(objName)) {
-                Sett(Text(objName, getDateTimeNewYorkStart(), tmpNyValue, newYork[0], fontSize, clrNyKz, 0, "Arial"));
-            }
-            for (int i = startIndex; i > (stopIndex == NULL ? 0 : stopIndex); i--) {
-                nyBuffer[i] = tmpNyValue;
+            if (TimeCurrent() >= getDateTimeNewYorkStart()) {
+                objName = "TT " + newYork[0] + " " + string(getDateTimeNewYorkStart());
+                startIndex = getBarIndex(getDateTimeNewYorkStart());
+                stopIndex = getBarIndex(getDateTimeNewYorkStop());
+                tmpNyValue = open[startIndex];
+                if (!findObject(objName)) {
+                    Sett(Text(objName, getDateTimeNewYorkStart(), tmpNyValue, newYork[0], fontSize, clrNyKz, 0, "Arial"));
+                }
+                for (int i = startIndex; i >= (stopIndex != -1 ? stopIndex : 0); i--) {
+                    nyBuffer[i] = tmpNyValue;
+                }
             }
         }
 

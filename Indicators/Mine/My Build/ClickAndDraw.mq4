@@ -9,14 +9,46 @@
 // #include "../../Awptic/Hotkeys.mqh"
 
 enum KEYS_ON_KEYBOARD {
-  _A = 65/*A*/,  _B = 66/*B*/,  _C = 67/*C*/,  _D = 68/*D*/,  _E = 69/*E*/,
-  _F = 70/*F*/,  _G = 71/*G*/,  _H = 72/*H*/,  _I = 73/*I*/,  _J = 74/*J*/,
-  _K = 75/*K*/,  _L = 76/*L*/,  _M = 77/*M*/,  _N = 78/*N*/,  _O = 79/*O*/,
-  _P = 80/*P*/,  _Q = 81/*Q*/,  _R = 82/*R*/,  _S = 83/*S*/,  _T = 84/*T*/,
-  _U = 85/*U*/,  _V = 86/*V*/,  _W = 87/*W*/,  _X = 88/*X*/,  _Y = 89/*Y*/, 
-  _Z = 90/*Z*/, _One = 49/*1*/, _Two = 50/*2*/, _Three = 51/*3*/, _Four = 52/*4*/
+    _Zero   = 48    /*0*/,
+    _One    = 49    /*1*/,
+    _Two    = 50    /*2*/,
+    _Three  = 51    /*3*/,
+    _Four   = 52    /*4*/,
+    _Five   = 53    /*5*/,
+    _Six    = 54    /*6*/,
+    _Seven  = 55    /*7*/,
+    _Eight  = 56    /*8*/,
+    _Nine   = 57    /*9*/,
+    
+    _A      = 65    /*A*/,
+    _B      = 66    /*B*/,
+    _C      = 67    /*C*/,
+    _D      = 68    /*D*/,
+    _E      = 69    /*E*/,
+    _F      = 70    /*F*/,
+    _G      = 71    /*G*/,
+    _H      = 72    /*H*/,
+    _I      = 73    /*I*/,
+    _J      = 74    /*J*/,
+    _K      = 75    /*K*/,
+    _L      = 76    /*L*/,
+    _M      = 77    /*M*/,
+    _N      = 78    /*N*/,
+    _O      = 79    /*O*/,
+    _P      = 80    /*P*/,
+    _Q      = 81    /*Q*/,
+    _R      = 82    /*R*/,
+    _S      = 83    /*S*/,
+    _T      = 84    /*T*/,
+    _U      = 85    /*U*/,
+    _V      = 86    /*V*/,
+    _W      = 87    /*W*/,
+    _X      = 88    /*X*/,
+    _Y      = 89    /*Y*/, 
+    _Z      = 90    /*Z*/
 };
 
+input KEYS_ON_KEYBOARD ExtendSwitcherKey = _C;
 input KEYS_ON_KEYBOARD ExtendHighKey = _X;
 input KEYS_ON_KEYBOARD ExtendLowKey = _Z;
 input KEYS_ON_KEYBOARD TrendlineKey = _Q;
@@ -31,6 +63,7 @@ input KEYS_ON_KEYBOARD StyleKey = _Four;
 
 extern int   mWid = 1;
 extern color rCol = C'70,70,70'; 
+extern bool  mExtendSwitch = false;
 extern bool  mExtendHigh = false;
 extern bool  mExtendLow = false;      
 extern bool  mDrawTrendline = false;
@@ -69,20 +102,7 @@ int init()
 
     setDefaultStates();
     
-    for (int i = 0; i < ObjectsTotal(); i++) {
-        int type = ObjectType(ObjectName(i));
-        if (type == OBJ_TREND || type == OBJ_RECTANGLE) {
-            string name = ObjectName(i);
-            increaseMyObjectsSize();
-            for (int j = 0; j < ArraySize(myObjects); j++) {
-                if (myObjects[j] == NULL) {
-                    myObjects[j] = new Object(false, name, type);
-                    break;
-                }
-            }
-        }
-    }
-
+    addObjectsToMyObjects();
     initObjectPointer();
 
     return(0);
@@ -101,14 +121,9 @@ int deinit()
         if(StringSubstr(mObj, 0, 2) == "m.")
             ObjectDelete(mObj);
         }
-
     }
 
-    for (int i = 0; i < ArraySize(myObjects); i++) {
-        delete myObjects[i];
-    }
-
-    ArrayFree(myObjects);
+    resetMyObjects();
 
     return(0);
 }
@@ -244,15 +259,19 @@ void OnChartEvent(const int id,         // Event ID
             if(mCnt == 0) {
                 if (mDrawRectangle) {
                     ChartXYToTimePrice(0, mX, mP, win, mTime, mPrice);
-                    int index = iBarShift(Symbol(),Period(),mTime,true);
-                    mPrice = High[index];
-                    mPrice2 = Low[index];
-                    mTime2 = TimeCurrent();
+                    if (mPrice > 0) {
+                        int index = iBarShift(Symbol(),Period(),mTime,true);
+                        mPrice = High[index];
+                        mPrice2 = Low[index];
+                        mTime2 = TimeCurrent();
+                    }
                 }
                 else if (mDrawTrendline) {
                     ChartXYToTimePrice(0, mX, mP, win, mTime, mPrice);
-                    int index = iBarShift(Symbol(),Period(),mTime,true);
-                    mPrice = (mPrice > Open[index]) ? High[index] : Low[index];
+                    if (mPrice > 0) {
+                        int index = iBarShift(Symbol(),Period(),mTime,true);
+                        mPrice = (mPrice > Open[index]) ? High[index] : Low[index];
+                    }
                 }   
                 mCnt++;
             }
@@ -294,7 +313,7 @@ void OnChartEvent(const int id,         // Event ID
                 }
                 if (objPointer.getType() == OBJ_RECTANGLE) {
                     if (objPointer.isExtend()) {
-                        if (objPointer.isInextendBuy()) {
+                        if (objPointer.isEngulfBuy()) {
                             setExtendHigh(objPointer.isExtend());
                         }
                         else {
@@ -308,13 +327,6 @@ void OnChartEvent(const int id,         // Event ID
                 objPointer = NULL;
             }
         }
-
-        // if (ObjectType(sparam) == OBJ_RECTANGLE) {
-        //     if (mFlat) {
-        //         setFlat(false);
-        //         objPointer.setFlat(false);
-        //     }
-        // }
     }
 
     if (id == CHARTEVENT_OBJECT_DRAG) {
@@ -336,11 +348,17 @@ void OnChartEvent(const int id,         // Event ID
     }
 
     if (id == CHARTEVENT_OBJECT_CREATE) {
-        if (ObjectType(sparam) == OBJ_RECTANGLE || ObjectType(sparam) == OBJ_TREND) {
+        if (!findObjectInObjPointer(sparam) && (ObjectType(sparam) == OBJ_RECTANGLE || ObjectType(sparam) == OBJ_TREND)) {
             increaseMyObjectsSize();
             int index = ArraySize(myObjects) - 1;
             myObjects[index] = new Object(sparam);
         }
+    }
+
+    if (id == CHARTEVENT_OBJECT_DELETE) {
+        resetMyObjects();
+        setDefaultStates();
+        addObjectsToMyObjects();
     }
 
     return;
@@ -384,6 +402,12 @@ void createLabel(KEYS_ON_KEYBOARD key) {
                     : key == ExtendLowKey ? "Engulf Demand"
                     : mStyle == 2 ? "Background"    // StyleKey
                     : "Style";                      // StyleKey
+
+    string status = key == TrendlineKey ? "ON"
+                    : key == RectangleKey ? "ON"
+                    : key == RayKey ? "ON"
+                    : "OFF";
+
     int yDistance = key == StyleKey ? 0
                     : key == TrendlineKey ? 20
                     : key == RectangleKey ? 20
@@ -427,10 +451,6 @@ void deleteLabel(KEYS_ON_KEYBOARD key) {
     ObjectDelete(name + " Label");
 }
 
-void increaseMyObjectsSize() {
-    ArrayResize(myObjects, ArraySize(myObjects) + 1);
-}
-
 void setFlat(bool isFlat) {
     mFlat = isFlat;
     if (isFlat) {
@@ -448,6 +468,16 @@ void setRay(bool isRay) {
     }
     else {
         deleteLabel(RayKey);
+    }
+}
+
+void setExtendSwitch(bool status) {
+    mExtendSwitch = status;
+    if (mExtendSwitch) {
+        createLabel(ExtendSwitcherKey);
+    }
+    else {
+        deleteLabel(ExtendSwitcherKey);
     }
 }
 
@@ -530,6 +560,15 @@ void setObjectPointer(string name) {
     }
 }
 
+bool findObjectInObjPointer(string name) {
+    for (int i = 0; i < ArraySize(myObjects); i++) {
+        if (name == myObjects[i].getName()) {
+            return true;
+        }
+    }
+    return false;
+}
+
 void initObjectPointer() {
     for (int i = 0; i < ArraySize(myObjects); i++) {
         if (myObjects[i].isSelected()) {
@@ -537,6 +576,34 @@ void initObjectPointer() {
             break;
         }
     }
+}
+
+void addObjectsToMyObjects() {
+    for (int i = 0; i < ObjectsTotal(); i++) {
+        int type = ObjectType(ObjectName(i));
+        if (type == OBJ_TREND || type == OBJ_RECTANGLE) {
+            string name = ObjectName(i);
+            increaseMyObjectsSize();
+            for (int j = 0; j < ArraySize(myObjects); j++) {
+                if (myObjects[j] == NULL) {
+                    myObjects[j] = new Object(false, name, type);
+                    break;
+                }
+            }
+        }
+    }
+}
+
+void resetMyObjects() {
+    for (int i = 0; i < ArraySize(myObjects); i++) {
+        delete myObjects[i];
+    }
+
+    ArrayFree(myObjects);
+}
+
+void increaseMyObjectsSize() {
+    ArrayResize(myObjects, ArraySize(myObjects) + 1);
 }
 
 void createTrendline(string name) {
