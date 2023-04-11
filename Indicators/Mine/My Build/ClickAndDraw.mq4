@@ -6,7 +6,6 @@
 #property indicator_chart_window
 
 #include "../../Awptic/model/Object.mqh"
-// #include "../../Awptic/Hotkeys.mqh"
 
 enum KEYS_ON_KEYBOARD {
     _Zero   = 48    /*0*/,
@@ -103,7 +102,16 @@ int init()
     setDefaultStates();
     
     addObjectsToMyObjects();
-    initObjectPointer();
+    if (ArraySize(myObjects) > 0) {
+        initObjectPointer();
+        for (int i = 0; i < ArraySize(myObjects); i++) {
+            printf("myObjects[" + string(i) + "] : " + myObjects[i].getName());
+        }
+        if (objPointer != NULL) {
+            printf("objPointer Name : " + objPointer.getName());
+        }
+    }
+    
 
     return(0);
 }
@@ -117,9 +125,9 @@ int deinit()
     {
         for(int i = ObjectsTotal() - 1; i >= 0; i--)
         {
-        mObj = ObjectName(i);
-        if(StringSubstr(mObj, 0, 2) == "m.")
-            ObjectDelete(mObj);
+            mObj = ObjectName(i);
+            if(StringSubstr(mObj, 0, 2) == "m.")
+                ObjectDelete(mObj);
         }
     }
 
@@ -160,7 +168,7 @@ void OnChartEvent(const int id,         // Event ID
             if (!mDrawRectangle) {
                 setRay(!mRay);
             }
-            if (objPointer != NULL && objPointer.getType() == OBJ_RECTANGLE && objPointer.isSelected()) {
+            if (objPointer != NULL && objPointer.getType() != OBJ_RECTANGLE && objPointer.isSelected()) {
                 setRay(false);
             }
         }
@@ -215,36 +223,49 @@ void OnChartEvent(const int id,         // Event ID
         }
 
         if (lparam == ExtendHighKey) {
-            if (mExtendLow) {
-                setExtendLow(false);
-            }
-            setExtendHigh(!mExtendHigh);
+            if (mExtendSwitch) {
+                if (mExtendLow) {
+                    setExtendLow(false);
+                }
+                setExtendHigh(!mExtendHigh);
 
-            if (objPointer != NULL) {
-                if (objPointer.isSelected()) {
-                    if (ObjectType(objPointer.getName()) == OBJ_TREND) {
-                        objPointer.setExtend(mExtendHigh);
+                if (objPointer != NULL) {
+                    if (objPointer.isSelected()) {
+                        if (ObjectType(objPointer.getName()) == OBJ_TREND) {
+                            objPointer.setExtend(mExtendHigh);
+                        }
+                        else {
+                            objPointer.setExtendByBuyOrSell(mExtendHigh, true);
+                        }
+                        if (ObjectType(objPointer.getName()) != OBJ_RECTANGLE && mExtendHigh) {
+                            setFlat(true);
+                            objPointer.setFlat(true);
+                        }
+                        
                     }
-                    else {
-                        objPointer.setExtendByBuyOrSell(mExtendHigh, true);
-                    }
-                    if (ObjectType(objPointer.getName()) != OBJ_RECTANGLE && mExtendHigh) {
-                        setFlat(true);
-                        objPointer.setFlat(true);
-                    }
-                    
                 }
             }
         }
 
         if (lparam == ExtendLowKey) {
-            if (objPointer != NULL && ObjectType(objPointer.getName()) == OBJ_RECTANGLE) {
-                if (mExtendHigh) {
-                    setExtendHigh(false);
+            if (mExtendSwitch) {
+                if (objPointer != NULL && ObjectType(objPointer.getName()) == OBJ_RECTANGLE) {
+                    if (mExtendHigh) {
+                        setExtendHigh(false);
+                    }
+                    setExtendLow(!mExtendLow);
+                    if (objPointer.isSelected()) {
+                        objPointer.setExtendByBuyOrSell(mExtendLow, false);
+                    }
                 }
-                setExtendLow(!mExtendLow);
+            }
+        }
+
+        if (lparam == ExtendSwitcherKey) {
+            setExtendSwitch(!mExtendSwitch);
+            if (objPointer != NULL) {
                 if (objPointer.isSelected()) {
-                    objPointer.setExtendByBuyOrSell(mExtendLow, false);
+                    objPointer.setExtendSwitch(mExtendSwitch);
                 }
             }
         }
@@ -364,71 +385,51 @@ void OnChartEvent(const int id,         // Event ID
     return;
 }
 
-datetime getHighEngulf(long waktu) {
-    datetime firstEngulf = 0;
-    int indexX1 = iBarShift(Symbol(), Period(), waktu, true);
-    for (int i = indexX1 - 1 ; i >= 0 ; i--) {
-        if (High[i] > High[indexX1]) {
-            firstEngulf = Time[i];
-        }
-    }
-    return firstEngulf;
-}
-
-void setExtendHigh(string name) {
-    ObjectSet(name, OBJPROP_TIME2, TimeCurrent());
-}
-
-void setObjName(string name) {
-    objName = name;
-}
-
-void setObjPrice(double price1, double price2) {
-    objLastPrice1 = price1;
-    objLastPrice2 = price2;
-}
-
-void setObjSelected(bool isSelected) {
-    objSelected = isSelected;
-}
-
 void createLabel(KEYS_ON_KEYBOARD key) {
     string name = key == TrendlineKey ? "Trendline"
                     : key == RectangleKey ? "Rectangle"
                     : key == RayKey ? "Ray"
                     : key == FlatKey ? "Flat"
-                    : key == ExtendHighKey ? (objPointer != NULL && ObjectType(objPointer.getName()) == OBJ_TREND 
-                                            ? "Extend" : "Engulf Supply")
+                    : key == ExtendHighKey ? "Engulf Supply"
                     : key == ExtendLowKey ? "Engulf Demand"
-                    : mStyle == 2 ? "Background"    // StyleKey
-                    : "Style";                      // StyleKey
+
+                    : key == StyleKey ? (
+                        mStyle == 0 ? "Style" 
+                        : mStyle == 1 ? "Style" 
+                        : rectangleAsBackground ? "Background" 
+                        : "Unidentified"
+                    )                 
+                    : key == ExtendSwitcherKey ? "Extend Switch"
+                    : "Unidentified";
 
     string status = key == TrendlineKey ? "ON"
                     : key == RectangleKey ? "ON"
                     : key == RayKey ? "ON"
-                    : "OFF";
+                    : key == FlatKey ? "OFF"
+                    : key == ExtendSwitcherKey? "ON"
+                    : key == StyleKey ? (
+                        mStyle == 0 ? "Solid" 
+                        : mStyle == 1 ? "Dash" 
+                        : rectangleAsBackground ? "ON" 
+                        : " : OFF"
+                    )
+                    : key == ExtendHighKey ? "ON"
+                    : key == ExtendLowKey ? "ON"
+                    : "Unidentified";
 
     int yDistance = key == StyleKey ? 0
                     : key == TrendlineKey ? 20
                     : key == RectangleKey ? 20
                     : key == RayKey ? 60
-                    : key == ExtendHighKey ? 80
-                    : key == ExtendLowKey ? 80
+                    : key == ExtendSwitcherKey ? 80
+                    : key == ExtendHighKey ? 100
+                    : key == ExtendLowKey ? 100
                     : 40;
     
     ObjectCreate(name + " Label", OBJ_LABEL, 0, 0, 0);
     ObjectSetText(
         name + " Label", 
-        name + (
-            key == StyleKey ? (
-                mStyle == 0 ? " : Solid" 
-                : mStyle == 1 ? " : Dash" 
-                : rectangleAsBackground ? " : ON" 
-                : " : OFF"
-            ) 
-            : key == FlatKey ? " : OFF"
-            : " : ON"
-        ), TextFontSize, TextFont, TextColor);
+        name + " : " + status, TextFontSize, TextFont, TextColor);
     ObjectSet(name + " Label", OBJPROP_CORNER, 3);
     ObjectSet(name + " Label", OBJPROP_XDISTANCE, 15);
     ObjectSet(name + " Label", OBJPROP_YDISTANCE, yDistance);
@@ -442,11 +443,16 @@ void deleteLabel(KEYS_ON_KEYBOARD key) {
                     : key == RectangleKey ? "Rectangle"
                     : key == RayKey ? "Ray"
                     : key == FlatKey ? "Flat"
-                    : key == ExtendHighKey ? (objPointer != NULL && ObjectType(objPointer.getName()) == OBJ_TREND 
-                                            ? "Extend" : "Engulf Supply")
+                    : key == ExtendHighKey ? "Engulf Supply"
                     : key == ExtendLowKey ? "Engulf Demand"
-                    : mStyle == 2 ? "Background"
-                    : "Style";
+                    : key == StyleKey ? (
+                        mStyle == 0 ? "Style" 
+                        : mStyle == 1 ? "Style"
+                        : rectangleAsBackground ? "Background" 
+                        : "Unidentified"
+                    )                 
+                    : key == ExtendSwitcherKey ? "Extend Switch"
+                    : "Unidentified";
 
     ObjectDelete(name + " Label");
 }
@@ -546,13 +552,14 @@ void setDrawRectangle(bool isDrawRectangle) {
     }
     else {
         deleteLabel(RectangleKey);
-        setStyle(mStyle, false);
+        setStyle(2, false);
         setFlat(true);
     }
 }
 
 void setObjectPointer(string name) {
     for (int i = 0; i < ArraySize(myObjects); i++) {
+        printf("iteration : " + string(i));
         if (name == myObjects[i].getName()) {
             objPointer = myObjects[i];
             break;
@@ -584,12 +591,8 @@ void addObjectsToMyObjects() {
         if (type == OBJ_TREND || type == OBJ_RECTANGLE) {
             string name = ObjectName(i);
             increaseMyObjectsSize();
-            for (int j = 0; j < ArraySize(myObjects); j++) {
-                if (myObjects[j] == NULL) {
-                    myObjects[j] = new Object(false, name, type);
-                    break;
-                }
-            }
+            int index = ArraySize(myObjects) - 1;
+            myObjects[index] = new Object(false, name, type);
         }
     }
 }
@@ -598,7 +601,6 @@ void resetMyObjects() {
     for (int i = 0; i < ArraySize(myObjects); i++) {
         delete myObjects[i];
     }
-
     ArrayFree(myObjects);
 }
 
@@ -608,8 +610,6 @@ void increaseMyObjectsSize() {
 
 void createTrendline(string name) {
     ResetLastError();
-
-    printf("Obj Name : " + name);
 
     increaseMyObjectsSize();
     int index = ArraySize(myObjects) - 1;
@@ -631,8 +631,6 @@ void createTrendline(string name) {
 }
 
 void createRectangle(string name) {
-
-    printf("Obj Name : " + name);
     
     increaseMyObjectsSize();
     int index = ArraySize(myObjects) - 1;
