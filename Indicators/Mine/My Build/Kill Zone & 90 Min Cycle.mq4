@@ -383,7 +383,7 @@ int OnCalculate(const int rates_total,
                     //tmpAsiaValue = open[startIndex];
 
                     if (startIndex >= 0 && stopIndex >= 0 && startIndex < ArraySize(asiaBuffer) && stopIndex < ArraySize(asiaBuffer)) {
-                    tmpAsiaValue = open[startIndex];
+                        tmpAsiaValue = open[startIndex];
 
                         objName = "TT " + asiaOpen + " " + string(dt);
                         if (!findObject(objName)) {
@@ -392,6 +392,9 @@ int OnCalculate(const int rates_total,
 
                         for (int j = startIndex; j >= stopIndex; j--) {
                             asiaBuffer[j] = tmpAsiaValue;
+                            if (j == stopIndex) {
+                                asiaBuffer[j-1] = 0;
+                            }
                         }
                     }
                 }
@@ -405,15 +408,18 @@ int OnCalculate(const int rates_total,
                     //tmpTrendValue = open[startIndex];
 
                     if (startIndex >= 0 && stopIndex >= 0 && startIndex < ArraySize(trendBuffer) && stopIndex < ArraySize(trendBuffer)) {
-                    tmpTrendValue = open[startIndex];
+                        tmpTrendValue = open[startIndex];
                     
                         objName = "TT " + mop + " " + string(dt);
                         if (!findObject(objName)) {
                             Sett(Text(objName, dt, tmpTrendValue, mop, fontSize, clrSeparator));
                         }
                         
-                        for (int j = startIndex; j > stopIndex; j--) {
+                        for (int j = startIndex; j >= stopIndex; j--) {
                             trendBuffer[j] = tmpTrendValue;
+                            if (j == stopIndex) {
+                                trendBuffer[j-1] = 0;
+                            }
                         }
                     }
                 }

@@ -104,12 +104,6 @@ int init()
     addObjectsToMyObjects();
     if (ArraySize(myObjects) > 0) {
         initObjectPointer();
-        for (int i = 0; i < ArraySize(myObjects); i++) {
-            printf("myObjects[" + string(i) + "] : " + myObjects[i].getName());
-        }
-        if (objPointer != NULL) {
-            printf("objPointer Name : " + objPointer.getName());
-        }
     }
     
 
@@ -559,7 +553,6 @@ void setDrawRectangle(bool isDrawRectangle) {
 
 void setObjectPointer(string name) {
     for (int i = 0; i < ArraySize(myObjects); i++) {
-        printf("iteration : " + string(i));
         if (name == myObjects[i].getName()) {
             objPointer = myObjects[i];
             break;
