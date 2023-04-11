@@ -1144,3 +1144,22 @@
 3	23:42:35.453	cannot load 'C:\MT4 Portable\MQL4\indicators\Market\OHLC Magnet.ex4'
 3	23:42:35.455	cannot open file 'C:\MT4 Portable\MQL4\indicators\Market\Watermark Symbol.ex4' [2]
 3	23:42:35.461	cannot load 'C:\MT4 Portable\MQL4\indicators\Market\Show Pips.ex4'
+0	23:42:35.480	OBdraw251 GBPUSD,M15: initialized
+0	23:42:48.577	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	23:42:50.281	ClickAndDraw GBPUSD,M15: initialized
+0	23:52:54.312	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	23:52:54.314	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	23:52:54.328	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	23:52:54.355	ClickAndDraw GBPUSD,M15: MQL BUILD : 2403
+0	23:52:54.355	ClickAndDraw GBPUSD,M15: initialized
+0	23:53:01.554	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	23:53:01.556	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	23:53:01.569	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	23:53:01.595	ClickAndDraw GBPUSD,M15: MQL BUILD : 2403
+0	23:53:01.595	ClickAndDraw GBPUSD,M15: initialized
+0	23:53:25.560	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	23:53:25.561	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	23:53:25.576	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	23:53:25.602	ClickAndDraw GBPUSD,M15: MQL BUILD : 2403
+0	23:53:25.602	ClickAndDraw GBPUSD,M15: MQL4 BUILD : 2403
+0	23:53:25.602	ClickAndDraw GBPUSD,M15: initialized

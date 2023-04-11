@@ -98,8 +98,6 @@ Object *myObjects[];
 //+------------------------------------------------------------------+
 int init()
 {
-    printf("MQL BUILD : " + string(__MQLBUILD__));
-    printf("MQL4 BUILD : " + string(__MQL4BUILD__));
 
     setDefaultStates();
     
@@ -107,7 +105,6 @@ int init()
     if (ArraySize(myObjects) > 0) {
         initObjectPointer();
     }
-    
 
     return(0);
 }
@@ -324,6 +321,7 @@ void OnChartEvent(const int id,         // Event ID
             if (objPointer.isSelected()) {
                 setFlat(objPointer.isFlat());
                 setRay(objPointer.isRay());
+                setExtendSwitch(objPointer.isExtendSwitch());
                 if (objPointer.getType() == OBJ_TREND) {
                     setExtendHigh(objPointer.isExtend());
                     setTrendlineColor((color)objPointer.getColor());
@@ -480,6 +478,8 @@ void setExtendSwitch(bool status) {
     }
     else {
         deleteLabel(ExtendSwitcherKey);
+        if (mExtendHigh) setExtendHigh(false);
+        if (mExtendLow) setExtendLow(false);
     }
 }
 
