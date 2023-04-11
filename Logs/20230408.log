@@ -631,3 +631,1031 @@
 0	00:26:52.358	ClickAndDraw GBPUSD,M5: uninit reason 9
 0	00:26:52.406	Custom indicator OBdraw251 GBPUSD,M5: removed
 0	00:26:52.408	Custom indicator ClickAndDraw GBPUSD,M5: removed
+0	04:02:56.369	Compiling 'ClickAndDraw'
+0	04:03:00.146	Custom indicator Mine\ICT\OBdraw251 GBPUSD,M5: loaded successfully
+0	04:03:00.159	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M5: loaded successfully
+0	04:03:00.215	OBdraw251 GBPUSD,M5: initialized
+0	04:03:00.243	ClickAndDraw GBPUSD,M5: Iteration i : 108
+0	04:03:00.243	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	04:03:00.243	ClickAndDraw GBPUSD,M5: Name : Trendline 2023.04.07 17:21:30
+0	04:03:00.243	ClickAndDraw GBPUSD,M5: Iteration i : 109
+0	04:03:00.243	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	04:03:00.243	ClickAndDraw GBPUSD,M5: Iteration i : 109
+0	04:03:00.243	ClickAndDraw GBPUSD,M5: Iteration j : 1
+0	04:03:00.243	ClickAndDraw GBPUSD,M5: Name : Trendline 2023.04.07 17:23:58
+0	04:03:00.243	ClickAndDraw GBPUSD,M5: initialized
+0	04:04:37.493	ClickAndDraw GBPUSD,M5: uninit reason 2
+0	04:04:37.495	Custom indicator ClickAndDraw GBPUSD,M5: removed
+0	04:04:37.508	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M5: loaded successfully
+0	04:04:37.535	ClickAndDraw GBPUSD,M5: Iteration i : 108
+0	04:04:37.535	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	04:04:37.535	ClickAndDraw GBPUSD,M5: Name : Trendline 2023.04.07 17:21:30
+0	04:04:37.535	ClickAndDraw GBPUSD,M5: Iteration i : 109
+0	04:04:37.535	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	04:04:37.535	ClickAndDraw GBPUSD,M5: Iteration i : 109
+0	04:04:37.535	ClickAndDraw GBPUSD,M5: Iteration j : 1
+0	04:04:37.535	ClickAndDraw GBPUSD,M5: Name : Trendline 2023.04.07 17:23:58
+0	04:04:37.535	ClickAndDraw GBPUSD,M5: initialized
+0	04:12:15.533	ClickAndDraw GBPUSD,M5: uninit reason 2
+0	04:12:15.535	Custom indicator ClickAndDraw GBPUSD,M5: removed
+0	04:12:15.550	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M5: loaded successfully
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Iteration i : 1
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Name : OBDrawB1680848700
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Iteration i : 2
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Iteration i : 2
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Iteration j : 1
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Name : OBDrawB1680872700
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Iteration i : 110
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Iteration i : 110
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Iteration j : 1
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Iteration i : 110
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Iteration j : 2
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Name : Trendline 2023.04.07 17:21:30
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Iteration i : 111
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Iteration i : 111
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Iteration j : 1
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Iteration i : 111
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Iteration j : 2
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Iteration i : 111
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Iteration j : 3
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Name : Trendline 2023.04.07 17:23:58
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Iteration i : 112
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Iteration i : 112
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Iteration j : 1
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Iteration i : 112
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Iteration j : 2
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Iteration i : 112
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Iteration j : 3
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Iteration i : 112
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Iteration j : 4
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: Name : Trendline 2023.04.07 20:58:59
+0	04:12:15.576	ClickAndDraw GBPUSD,M5: initialized
+0	04:20:01.829	ClickAndDraw GBPUSD,M5: uninit reason 2
+0	04:20:01.831	Custom indicator ClickAndDraw GBPUSD,M5: removed
+0	04:20:01.844	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M5: loaded successfully
+0	04:20:01.870	ClickAndDraw GBPUSD,M5: Iteration i : 1
+0	04:20:01.870	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	04:20:01.870	ClickAndDraw GBPUSD,M5: Name : OBDrawB1680848700
+0	04:20:01.870	ClickAndDraw GBPUSD,M5: Iteration i : 2
+0	04:20:01.870	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	04:20:01.870	ClickAndDraw GBPUSD,M5: Iteration i : 2
+0	04:20:01.870	ClickAndDraw GBPUSD,M5: Iteration j : 1
+0	04:20:01.870	ClickAndDraw GBPUSD,M5: Name : OBDrawB1680872700
+0	04:20:01.870	ClickAndDraw GBPUSD,M5: Iteration i : 3
+0	04:20:01.870	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	04:20:01.870	ClickAndDraw GBPUSD,M5: Iteration i : 3
+0	04:20:01.870	ClickAndDraw GBPUSD,M5: Iteration j : 1
+0	04:20:01.870	ClickAndDraw GBPUSD,M5: Iteration i : 3
+0	04:20:01.870	ClickAndDraw GBPUSD,M5: Iteration j : 2
+0	04:20:01.870	ClickAndDraw GBPUSD,M5: Name : OBDrawB1680873300
+0	04:20:01.870	ClickAndDraw GBPUSD,M5: Iteration i : 4
+0	04:20:01.870	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	04:20:01.870	ClickAndDraw GBPUSD,M5: Iteration i : 4
+0	04:20:01.870	ClickAndDraw GBPUSD,M5: Iteration j : 1
+0	04:20:01.870	ClickAndDraw GBPUSD,M5: Iteration i : 4
+0	04:20:01.870	ClickAndDraw GBPUSD,M5: Iteration j : 2
+0	04:20:01.870	ClickAndDraw GBPUSD,M5: Iteration i : 4
+0	04:20:01.870	ClickAndDraw GBPUSD,M5: Iteration j : 3
+0	04:20:01.870	ClickAndDraw GBPUSD,M5: Name : OBDrawB1680883800
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration i : 111
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration i : 111
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration j : 1
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration i : 111
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration j : 2
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration i : 111
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration j : 3
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration i : 111
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration j : 4
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Name : Rectangle 2023.04.07 20:58:59
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration i : 113
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration i : 113
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration j : 1
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration i : 113
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration j : 2
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration i : 113
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration j : 3
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration i : 113
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration j : 4
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration i : 113
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration j : 5
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Name : Trendline 2023.04.07 17:21:30
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration i : 114
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration i : 114
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration j : 1
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration i : 114
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration j : 2
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration i : 114
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration j : 3
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration i : 114
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration j : 4
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration i : 114
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration j : 5
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration i : 114
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration j : 6
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Name : Trendline 2023.04.07 17:23:58
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration i : 115
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration i : 115
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration j : 1
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration i : 115
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration j : 2
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration i : 115
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration j : 3
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration i : 115
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration j : 4
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration i : 115
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration j : 5
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration i : 115
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration j : 6
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration i : 115
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Iteration j : 7
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: Name : Trendline 2023.04.07 20:58:59
+0	04:20:01.871	ClickAndDraw GBPUSD,M5: initialized
+0	04:20:43.937	ClickAndDraw GBPUSD,M5: uninit reason 2
+0	04:20:43.939	Custom indicator ClickAndDraw GBPUSD,M5: removed
+0	04:20:43.952	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M5: loaded successfully
+0	04:20:43.979	ClickAndDraw GBPUSD,M5: Iteration i : 107
+0	04:20:43.979	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	04:20:43.979	ClickAndDraw GBPUSD,M5: Name : Rectangle 2023.04.07 20:58:59
+0	04:20:43.979	ClickAndDraw GBPUSD,M5: initialized
+0	04:22:29.917	ClickAndDraw GBPUSD,M5: uninit reason 2
+0	04:22:29.919	Custom indicator ClickAndDraw GBPUSD,M5: removed
+0	04:22:29.932	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M5: loaded successfully
+0	04:22:29.958	ClickAndDraw GBPUSD,M5: Iteration i : 108
+0	04:22:29.958	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	04:22:29.958	ClickAndDraw GBPUSD,M5: Name : Rectangle 2023.04.07 20:58:59
+0	04:22:29.958	ClickAndDraw GBPUSD,M5: initialized
+0	04:22:44.960	ClickAndDraw GBPUSD,M5: uninit reason 2
+0	04:22:44.962	Custom indicator ClickAndDraw GBPUSD,M5: removed
+0	04:22:44.976	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M5: loaded successfully
+0	04:22:45.003	ClickAndDraw GBPUSD,M5: Iteration i : 107
+0	04:22:45.003	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	04:22:45.003	ClickAndDraw GBPUSD,M5: Name : Rectangle 2023.04.07 20:58:59
+0	04:22:45.003	ClickAndDraw GBPUSD,M5: initialized
+0	04:31:01.496	ClickAndDraw GBPUSD,M5: uninit reason 2
+0	04:31:01.497	Custom indicator ClickAndDraw GBPUSD,M5: removed
+0	04:31:01.511	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M5: loaded successfully
+0	04:31:01.536	ClickAndDraw GBPUSD,M5: Iteration i : 107
+0	04:31:01.536	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	04:31:01.536	ClickAndDraw GBPUSD,M5: Name : Rectangle 2023.04.07 20:58:59
+0	04:31:01.536	ClickAndDraw GBPUSD,M5: Iteration i : 109
+0	04:31:01.536	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	04:31:01.536	ClickAndDraw GBPUSD,M5: Iteration i : 109
+0	04:31:01.536	ClickAndDraw GBPUSD,M5: Iteration j : 1
+0	04:31:01.536	ClickAndDraw GBPUSD,M5: Name : Trendline 2023.04.07 20:58:59
+0	04:31:01.536	ClickAndDraw GBPUSD,M5: initialized
+0	04:32:25.452	ClickAndDraw GBPUSD,M5: uninit reason 2
+0	04:32:25.454	Custom indicator ClickAndDraw GBPUSD,M5: removed
+0	04:32:25.468	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M5: loaded successfully
+0	04:32:25.493	ClickAndDraw GBPUSD,M5: Iteration i : 108
+0	04:32:25.493	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	04:32:25.493	ClickAndDraw GBPUSD,M5: Name : Trendline 2023.04.07 20:58:59
+0	04:32:25.493	ClickAndDraw GBPUSD,M5: initialized
+0	04:34:12.882	ClickAndDraw GBPUSD,M5: uninit reason 2
+0	04:34:12.883	Custom indicator ClickAndDraw GBPUSD,M5: removed
+0	04:34:12.897	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M5: loaded successfully
+0	04:34:12.922	ClickAndDraw GBPUSD,M5: Iteration i : 108
+0	04:34:12.922	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	04:34:12.922	ClickAndDraw GBPUSD,M5: Name : Trendline 2023.04.07 20:58:59
+0	04:34:12.922	ClickAndDraw GBPUSD,M5: initialized
+0	04:34:54.334	ClickAndDraw GBPUSD,M5: uninit reason 2
+0	04:34:54.336	Custom indicator ClickAndDraw GBPUSD,M5: removed
+0	04:34:54.349	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M5: loaded successfully
+0	04:34:54.374	ClickAndDraw GBPUSD,M5: Iteration i : 107
+0	04:34:54.374	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	04:34:54.374	ClickAndDraw GBPUSD,M5: Name : Rectangle 2023.04.07 20:58:59
+0	04:34:54.374	ClickAndDraw GBPUSD,M5: Iteration i : 109
+0	04:34:54.374	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	04:34:54.374	ClickAndDraw GBPUSD,M5: Iteration i : 109
+0	04:34:54.374	ClickAndDraw GBPUSD,M5: Iteration j : 1
+0	04:34:54.374	ClickAndDraw GBPUSD,M5: Name : Trendline 2023.04.07 20:58:59
+0	04:34:54.374	ClickAndDraw GBPUSD,M5: initialized
+0	04:34:58.426	ClickAndDraw GBPUSD,M5: uninit reason 2
+0	04:34:58.428	Custom indicator ClickAndDraw GBPUSD,M5: removed
+0	04:34:58.441	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M5: loaded successfully
+0	04:34:58.465	ClickAndDraw GBPUSD,M5: Iteration i : 107
+0	04:34:58.465	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	04:34:58.465	ClickAndDraw GBPUSD,M5: Name : Rectangle 2023.04.07 20:58:59
+0	04:34:58.465	ClickAndDraw GBPUSD,M5: Iteration i : 109
+0	04:34:58.465	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	04:34:58.465	ClickAndDraw GBPUSD,M5: Iteration i : 109
+0	04:34:58.465	ClickAndDraw GBPUSD,M5: Iteration j : 1
+0	04:34:58.465	ClickAndDraw GBPUSD,M5: Name : Trendline 2023.04.07 20:58:59
+0	04:34:58.465	ClickAndDraw GBPUSD,M5: initialized
+0	04:35:25.049	ClickAndDraw GBPUSD,M5: uninit reason 2
+0	04:35:25.051	Custom indicator ClickAndDraw GBPUSD,M5: removed
+0	04:35:25.064	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M5: loaded successfully
+0	04:35:25.092	ClickAndDraw GBPUSD,M5: Iteration i : 107
+0	04:35:25.092	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	04:35:25.092	ClickAndDraw GBPUSD,M5: Name : Rectangle 2023.04.07 20:58:59
+0	04:35:25.092	ClickAndDraw GBPUSD,M5: Iteration i : 109
+0	04:35:25.092	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	04:35:25.092	ClickAndDraw GBPUSD,M5: Iteration i : 109
+0	04:35:25.092	ClickAndDraw GBPUSD,M5: Iteration j : 1
+0	04:35:25.092	ClickAndDraw GBPUSD,M5: Name : Trendline 2023.04.07 20:58:59
+0	04:35:25.092	ClickAndDraw GBPUSD,M5: initialized
+0	04:37:34.107	ClickAndDraw GBPUSD,M5: uninit reason 2
+0	04:37:34.109	Custom indicator ClickAndDraw GBPUSD,M5: removed
+0	04:37:34.123	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M5: loaded successfully
+0	04:37:34.148	ClickAndDraw GBPUSD,M5: Iteration i : 107
+0	04:37:34.148	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	04:37:34.148	ClickAndDraw GBPUSD,M5: Name : Rectangle 2023.04.07 20:58:59
+0	04:37:34.148	ClickAndDraw GBPUSD,M5: Iteration i : 109
+0	04:37:34.148	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	04:37:34.148	ClickAndDraw GBPUSD,M5: Iteration i : 109
+0	04:37:34.148	ClickAndDraw GBPUSD,M5: Iteration j : 1
+0	04:37:34.148	ClickAndDraw GBPUSD,M5: Name : Trendline 2023.04.07 20:58:59
+0	04:37:34.148	ClickAndDraw GBPUSD,M5: initialized
+0	05:53:27.503	ClickAndDraw GBPUSD,M5: uninit reason 2
+0	05:53:27.505	Custom indicator ClickAndDraw GBPUSD,M5: removed
+0	05:53:27.518	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M5: loaded successfully
+0	05:53:27.543	ClickAndDraw GBPUSD,M5: Iteration i : 107
+0	05:53:27.543	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	05:53:27.543	ClickAndDraw GBPUSD,M5: Name : Rectangle 1680901139
+0	05:53:27.543	ClickAndDraw GBPUSD,M5: initialized
+0	05:53:53.241	ClickAndDraw GBPUSD,M5: uninit reason 5
+0	05:53:53.254	ClickAndDraw GBPUSD,M5: Iteration i : 107
+0	05:53:53.254	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	05:53:53.254	ClickAndDraw GBPUSD,M5: Name : Rectangle 2023.04.07 20:58:59
+0	05:53:53.254	ClickAndDraw GBPUSD,M5: initialized
+0	05:54:27.040	OBdraw251 GBPUSD,M5: uninit reason 1
+0	05:54:27.042	Custom indicator OBdraw251 GBPUSD,M5: removed
+0	05:54:44.025	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	05:54:44.038	ClickAndDraw GBPUSD,M15: Iteration i : 107
+0	05:54:44.038	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	05:54:44.038	ClickAndDraw GBPUSD,M15: Name : Rectangle 2023.04.07 20:58:59
+0	05:54:44.038	ClickAndDraw GBPUSD,M15: initialized
+0	05:55:57.041	ClickAndDraw GBPUSD,M15: uninit reason 3
+0	05:55:57.045	ClickAndDraw GBPUSD,M5: Iteration i : 107
+0	05:55:57.045	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	05:55:57.045	ClickAndDraw GBPUSD,M5: Name : Rectangle 2023.04.07 20:58:59
+0	05:55:57.045	ClickAndDraw GBPUSD,M5: initialized
+0	05:56:16.477	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	05:56:16.501	ClickAndDraw GBPUSD,M1: Iteration i : 107
+0	05:56:16.501	ClickAndDraw GBPUSD,M1: Iteration j : 0
+0	05:56:16.501	ClickAndDraw GBPUSD,M1: Name : Rectangle 2023.04.07 20:58:59
+0	05:56:16.501	ClickAndDraw GBPUSD,M1: initialized
+0	05:56:17.137	ClickAndDraw GBPUSD,M1: uninit reason 3
+0	05:56:17.138	ClickAndDraw GBPUSD,M5: Iteration i : 107
+0	05:56:17.138	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	05:56:17.138	ClickAndDraw GBPUSD,M5: Name : Rectangle 2023.04.07 20:58:59
+0	05:56:17.138	ClickAndDraw GBPUSD,M5: initialized
+0	05:56:22.605	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	05:56:22.606	ClickAndDraw GBPUSD,M1: Iteration i : 107
+0	05:56:22.606	ClickAndDraw GBPUSD,M1: Iteration j : 0
+0	05:56:22.606	ClickAndDraw GBPUSD,M1: Name : Rectangle 2023.04.07 20:58:59
+0	05:56:22.606	ClickAndDraw GBPUSD,M1: initialized
+0	05:56:23.273	ClickAndDraw GBPUSD,M1: uninit reason 3
+0	05:56:23.274	ClickAndDraw GBPUSD,M15: Iteration i : 107
+0	05:56:23.274	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	05:56:23.274	ClickAndDraw GBPUSD,M15: Name : Rectangle 2023.04.07 20:58:59
+0	05:56:23.274	ClickAndDraw GBPUSD,M15: initialized
+0	05:56:29.128	ClickAndDraw GBPUSD,M15: uninit reason 3
+0	05:56:29.129	ClickAndDraw GBPUSD,M5: Iteration i : 107
+0	05:56:29.129	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	05:56:29.129	ClickAndDraw GBPUSD,M5: Name : Rectangle 2023.04.07 20:58:59
+0	05:56:29.129	ClickAndDraw GBPUSD,M5: initialized
+0	05:56:30.417	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	05:56:30.417	ClickAndDraw GBPUSD,M15: Iteration i : 107
+0	05:56:30.417	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	05:56:30.417	ClickAndDraw GBPUSD,M15: Name : Rectangle 2023.04.07 20:58:59
+0	05:56:30.417	ClickAndDraw GBPUSD,M15: initialized
+0	06:07:34.471	ClickAndDraw GBPUSD,M15: uninit reason 3
+0	06:07:34.472	ClickAndDraw GBPUSD,M5: Iteration i : 107
+0	06:07:34.472	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	06:07:34.472	ClickAndDraw GBPUSD,M5: Name : Rectangle 2023.04.07 20:58:59
+0	06:07:34.472	ClickAndDraw GBPUSD,M5: Iteration i : 109
+0	06:07:34.472	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	06:07:34.472	ClickAndDraw GBPUSD,M5: Iteration i : 109
+0	06:07:34.472	ClickAndDraw GBPUSD,M5: Iteration j : 1
+0	06:07:34.472	ClickAndDraw GBPUSD,M5: Name : Trendline 2023.04.07 20:58:59
+0	06:07:34.472	ClickAndDraw GBPUSD,M5: initialized
+0	06:07:42.935	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	06:07:42.944	ClickAndDraw GBPUSD,M30: Iteration i : 107
+0	06:07:42.944	ClickAndDraw GBPUSD,M30: Iteration j : 0
+0	06:07:42.944	ClickAndDraw GBPUSD,M30: Name : Rectangle 2023.04.07 20:58:59
+0	06:07:42.944	ClickAndDraw GBPUSD,M30: Iteration i : 109
+0	06:07:42.944	ClickAndDraw GBPUSD,M30: Iteration j : 0
+0	06:07:42.944	ClickAndDraw GBPUSD,M30: Iteration i : 109
+0	06:07:42.944	ClickAndDraw GBPUSD,M30: Iteration j : 1
+0	06:07:42.944	ClickAndDraw GBPUSD,M30: Name : Trendline 2023.04.07 20:58:59
+0	06:07:42.944	ClickAndDraw GBPUSD,M30: initialized
+0	06:07:49.182	ClickAndDraw GBPUSD,M30: uninit reason 3
+0	06:07:49.184	ClickAndDraw GBPUSD,M15: initialized
+0	06:07:51.558	ClickAndDraw GBPUSD,M15: uninit reason 3
+0	06:07:51.559	ClickAndDraw GBPUSD,M5: initialized
+0	06:08:04.906	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	06:08:04.908	ClickAndDraw GBPUSD,M15: Iteration i : 107
+0	06:08:04.908	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	06:08:04.908	ClickAndDraw GBPUSD,M15: Name : Rectangle 2023.04.07 20:58:59
+0	06:08:04.908	ClickAndDraw GBPUSD,M15: initialized
+0	06:08:07.938	ClickAndDraw GBPUSD,M15: uninit reason 3
+0	06:08:07.939	ClickAndDraw GBPUSD,M30: Iteration i : 107
+0	06:08:07.939	ClickAndDraw GBPUSD,M30: Iteration j : 0
+0	06:08:07.939	ClickAndDraw GBPUSD,M30: Name : Rectangle 2023.04.07 20:58:59
+0	06:08:07.939	ClickAndDraw GBPUSD,M30: initialized
+0	06:08:09.262	ClickAndDraw GBPUSD,M30: uninit reason 3
+0	06:08:09.262	ClickAndDraw GBPUSD,M15: Iteration i : 107
+0	06:08:09.262	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	06:08:09.262	ClickAndDraw GBPUSD,M15: Name : Rectangle 2023.04.07 20:58:59
+0	06:08:09.262	ClickAndDraw GBPUSD,M15: initialized
+0	06:08:13.094	ClickAndDraw GBPUSD,M15: uninit reason 3
+0	06:08:13.094	ClickAndDraw GBPUSD,M30: Iteration i : 107
+0	06:08:13.094	ClickAndDraw GBPUSD,M30: Iteration j : 0
+0	06:08:13.094	ClickAndDraw GBPUSD,M30: Name : Rectangle 2023.04.07 20:58:59
+0	06:08:13.094	ClickAndDraw GBPUSD,M30: initialized
+0	06:08:16.854	ClickAndDraw GBPUSD,M30: uninit reason 3
+0	06:08:16.855	ClickAndDraw GBPUSD,M15: Iteration i : 107
+0	06:08:16.855	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	06:08:16.855	ClickAndDraw GBPUSD,M15: Name : Rectangle 2023.04.07 20:58:59
+0	06:08:16.855	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	06:08:16.855	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	06:08:16.855	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	06:08:16.855	ClickAndDraw GBPUSD,M15: Iteration j : 1
+0	06:08:16.855	ClickAndDraw GBPUSD,M15: Name : Trendline 2023.04.07 20:58:59
+0	06:08:16.855	ClickAndDraw GBPUSD,M15: initialized
+0	06:09:24.874	ClickAndDraw GBPUSD,M15: uninit reason 3
+0	06:09:24.875	ClickAndDraw GBPUSD,M30: Iteration i : 107
+0	06:09:24.875	ClickAndDraw GBPUSD,M30: Iteration j : 0
+0	06:09:24.875	ClickAndDraw GBPUSD,M30: Name : Rectangle 2023.04.07 20:58:59
+0	06:09:24.875	ClickAndDraw GBPUSD,M30: Iteration i : 109
+0	06:09:24.875	ClickAndDraw GBPUSD,M30: Iteration j : 0
+0	06:09:24.875	ClickAndDraw GBPUSD,M30: Iteration i : 109
+0	06:09:24.875	ClickAndDraw GBPUSD,M30: Iteration j : 1
+0	06:09:24.875	ClickAndDraw GBPUSD,M30: Name : Trendline 2023.04.07 20:58:59
+0	06:09:24.875	ClickAndDraw GBPUSD,M30: Iteration i : 110
+0	06:09:24.875	ClickAndDraw GBPUSD,M30: Iteration j : 0
+0	06:09:24.875	ClickAndDraw GBPUSD,M30: Iteration i : 110
+0	06:09:24.875	ClickAndDraw GBPUSD,M30: Iteration j : 1
+0	06:09:24.875	ClickAndDraw GBPUSD,M30: Iteration i : 110
+0	06:09:24.875	ClickAndDraw GBPUSD,M30: Iteration j : 2
+0	06:09:24.875	ClickAndDraw GBPUSD,M30: Name : Trendline 41634
+0	06:09:24.875	ClickAndDraw GBPUSD,M30: initialized
+0	06:09:42.018	ClickAndDraw GBPUSD,M30: uninit reason 3
+0	06:09:42.020	ClickAndDraw GBPUSD,M15: Iteration i : 107
+0	06:09:42.020	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	06:09:42.020	ClickAndDraw GBPUSD,M15: Name : Rectangle 2023.04.07 20:58:59
+0	06:09:42.020	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	06:09:42.020	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	06:09:42.020	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	06:09:42.020	ClickAndDraw GBPUSD,M15: Iteration j : 1
+0	06:09:42.020	ClickAndDraw GBPUSD,M15: Name : Trendline 2023.04.07 20:58:59
+0	06:09:42.020	ClickAndDraw GBPUSD,M15: Iteration i : 110
+0	06:09:42.020	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	06:09:42.020	ClickAndDraw GBPUSD,M15: Iteration i : 110
+0	06:09:42.020	ClickAndDraw GBPUSD,M15: Iteration j : 1
+0	06:09:42.020	ClickAndDraw GBPUSD,M15: Iteration i : 110
+0	06:09:42.020	ClickAndDraw GBPUSD,M15: Iteration j : 2
+0	06:09:42.020	ClickAndDraw GBPUSD,M15: Name : Trendline 41634
+0	06:09:42.020	ClickAndDraw GBPUSD,M15: initialized
+0	06:13:36.338	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	06:13:36.340	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	06:13:36.354	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	06:13:36.381	ClickAndDraw GBPUSD,M15: Iteration i : 107
+0	06:13:36.381	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	06:13:36.381	ClickAndDraw GBPUSD,M15: Name : Rectangle 2023.04.07 20:58:59
+0	06:13:36.381	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	06:13:36.381	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	06:13:36.381	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	06:13:36.381	ClickAndDraw GBPUSD,M15: Iteration j : 1
+0	06:13:36.381	ClickAndDraw GBPUSD,M15: Name : Trendline 2023.04.07 20:58:59
+0	06:13:36.381	ClickAndDraw GBPUSD,M15: Iteration i : 110
+0	06:13:36.381	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	06:13:36.381	ClickAndDraw GBPUSD,M15: Iteration i : 110
+0	06:13:36.381	ClickAndDraw GBPUSD,M15: Iteration j : 1
+0	06:13:36.381	ClickAndDraw GBPUSD,M15: Iteration i : 110
+0	06:13:36.381	ClickAndDraw GBPUSD,M15: Iteration j : 2
+0	06:13:36.381	ClickAndDraw GBPUSD,M15: Name : Trendline 41634
+0	06:13:36.381	ClickAndDraw GBPUSD,M15: initialized
+0	06:15:03.919	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	06:15:03.921	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	06:15:03.934	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	06:15:03.961	ClickAndDraw GBPUSD,M15: Iteration i : 107
+0	06:15:03.961	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	06:15:03.961	ClickAndDraw GBPUSD,M15: Name : Rectangle 2023.04.07 20:58:59
+0	06:15:03.961	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	06:15:03.961	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	06:15:03.961	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	06:15:03.961	ClickAndDraw GBPUSD,M15: Iteration j : 1
+0	06:15:03.961	ClickAndDraw GBPUSD,M15: Name : Trendline 2023.04.07 20:58:59
+0	06:15:03.961	ClickAndDraw GBPUSD,M15: Iteration i : 110
+0	06:15:03.961	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	06:15:03.961	ClickAndDraw GBPUSD,M15: Iteration i : 110
+0	06:15:03.961	ClickAndDraw GBPUSD,M15: Iteration j : 1
+0	06:15:03.961	ClickAndDraw GBPUSD,M15: Iteration i : 110
+0	06:15:03.961	ClickAndDraw GBPUSD,M15: Iteration j : 2
+0	06:15:03.961	ClickAndDraw GBPUSD,M15: Name : Trendline 41634
+0	06:15:03.961	ClickAndDraw GBPUSD,M15: initialized
+0	06:15:53.413	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	06:15:53.415	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	06:15:53.428	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	06:15:53.455	ClickAndDraw GBPUSD,M15: Iteration i : 107
+0	06:15:53.455	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	06:15:53.455	ClickAndDraw GBPUSD,M15: Name : Rectangle 2023.04.07 20:58:59
+0	06:15:53.455	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	06:15:53.455	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	06:15:53.455	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	06:15:53.455	ClickAndDraw GBPUSD,M15: Iteration j : 1
+0	06:15:53.455	ClickAndDraw GBPUSD,M15: Name : Trendline 2023.04.07 20:58:59
+0	06:15:53.455	ClickAndDraw GBPUSD,M15: Iteration i : 110
+0	06:15:53.455	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	06:15:53.455	ClickAndDraw GBPUSD,M15: Iteration i : 110
+0	06:15:53.455	ClickAndDraw GBPUSD,M15: Iteration j : 1
+0	06:15:53.455	ClickAndDraw GBPUSD,M15: Iteration i : 110
+0	06:15:53.455	ClickAndDraw GBPUSD,M15: Iteration j : 2
+0	06:15:53.455	ClickAndDraw GBPUSD,M15: Name : Trendline 41634
+0	06:15:53.455	ClickAndDraw GBPUSD,M15: initialized
+0	06:16:20.883	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	06:16:20.885	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	06:16:20.898	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	06:16:20.924	ClickAndDraw GBPUSD,M15: Iteration i : 107
+0	06:16:20.924	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	06:16:20.924	ClickAndDraw GBPUSD,M15: Name : Rectangle 2023.04.07 20:58:59
+0	06:16:20.924	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	06:16:20.924	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	06:16:20.924	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	06:16:20.924	ClickAndDraw GBPUSD,M15: Iteration j : 1
+0	06:16:20.924	ClickAndDraw GBPUSD,M15: Name : Trendline 2023.04.07 20:58:59
+0	06:16:20.924	ClickAndDraw GBPUSD,M15: Iteration i : 110
+0	06:16:20.924	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	06:16:20.924	ClickAndDraw GBPUSD,M15: Iteration i : 110
+0	06:16:20.924	ClickAndDraw GBPUSD,M15: Iteration j : 1
+0	06:16:20.924	ClickAndDraw GBPUSD,M15: Iteration i : 110
+0	06:16:20.924	ClickAndDraw GBPUSD,M15: Iteration j : 2
+0	06:16:20.924	ClickAndDraw GBPUSD,M15: Name : Trendline 41634
+0	06:16:20.924	ClickAndDraw GBPUSD,M15: initialized
+0	06:19:58.106	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	06:19:58.108	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	06:19:58.121	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	06:19:58.146	ClickAndDraw GBPUSD,M15: initialized
+1	06:20:01.079	ClickAndDraw GBPUSD,M15: array out of range in 'ClickAndDraw.mq4' (541,14)
+0	06:20:33.899	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	06:20:33.900	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	06:20:33.914	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	06:20:33.939	ClickAndDraw GBPUSD,M15: Iteration i : 108
+0	06:20:33.939	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	06:20:33.939	ClickAndDraw GBPUSD,M15: Name : Rectangle 2023.04.07 20:58:59
+0	06:20:33.939	ClickAndDraw GBPUSD,M15: Iteration i : 111
+0	06:20:33.939	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	06:20:33.939	ClickAndDraw GBPUSD,M15: Iteration i : 111
+0	06:20:33.939	ClickAndDraw GBPUSD,M15: Iteration j : 1
+0	06:20:33.939	ClickAndDraw GBPUSD,M15: Name : Trendline 2023.04.07 20:58:59
+0	06:20:33.939	ClickAndDraw GBPUSD,M15: Iteration i : 112
+0	06:20:33.939	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	06:20:33.939	ClickAndDraw GBPUSD,M15: Iteration i : 112
+0	06:20:33.939	ClickAndDraw GBPUSD,M15: Iteration j : 1
+0	06:20:33.939	ClickAndDraw GBPUSD,M15: Iteration i : 112
+0	06:20:33.939	ClickAndDraw GBPUSD,M15: Iteration j : 2
+0	06:20:33.939	ClickAndDraw GBPUSD,M15: Name : Trendline 41634
+0	06:20:33.939	ClickAndDraw GBPUSD,M15: initialized
+0	06:21:01.524	ClickAndDraw GBPUSD,M15: uninit reason 2
+3	06:21:01.524	ClickAndDraw GBPUSD,M15: 5 undeleted objects left
+3	06:21:01.524	ClickAndDraw GBPUSD,M15: 5 objects of type Object left
+3	06:21:01.524	ClickAndDraw GBPUSD,M15: 5 leaked strings left
+3	06:21:01.524	ClickAndDraw GBPUSD,M15: 220 bytes of leaked memory
+0	06:21:01.526	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	06:21:01.539	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	06:21:01.564	ClickAndDraw GBPUSD,M15: initialized
+1	06:21:04.403	ClickAndDraw GBPUSD,M15: array out of range in 'ClickAndDraw.mq4' (541,14)
+0	06:21:32.927	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	06:21:32.929	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	06:21:32.943	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	06:21:32.969	ClickAndDraw GBPUSD,M15: initialized
+1	06:21:34.463	ClickAndDraw GBPUSD,M15: array out of range in 'ClickAndDraw.mq4' (541,14)
+0	06:22:47.540	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	06:22:47.542	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	06:22:47.555	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	06:22:47.580	ClickAndDraw GBPUSD,M15: Iteration i : 108
+0	06:22:47.580	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	06:22:47.580	ClickAndDraw GBPUSD,M15: Name : Rectangle 2023.04.07 20:58:59
+0	06:22:47.580	ClickAndDraw GBPUSD,M15: Iteration i : 111
+0	06:22:47.580	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	06:22:47.580	ClickAndDraw GBPUSD,M15: Iteration i : 111
+0	06:22:47.580	ClickAndDraw GBPUSD,M15: Iteration j : 1
+0	06:22:47.580	ClickAndDraw GBPUSD,M15: Name : Trendline 2023.04.07 20:58:59
+0	06:22:47.580	ClickAndDraw GBPUSD,M15: Iteration i : 112
+0	06:22:47.580	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	06:22:47.580	ClickAndDraw GBPUSD,M15: Iteration i : 112
+0	06:22:47.580	ClickAndDraw GBPUSD,M15: Iteration j : 1
+0	06:22:47.580	ClickAndDraw GBPUSD,M15: Iteration i : 112
+0	06:22:47.580	ClickAndDraw GBPUSD,M15: Iteration j : 2
+0	06:22:47.580	ClickAndDraw GBPUSD,M15: Name : Trendline 41634
+0	06:22:47.580	ClickAndDraw GBPUSD,M15: initialized
+0	06:24:16.674	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	06:24:16.676	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	06:24:16.689	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	06:24:16.715	ClickAndDraw GBPUSD,M15: Iteration i : 107
+0	06:24:16.715	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	06:24:16.715	ClickAndDraw GBPUSD,M15: Name : Rectangle 2023.04.07 20:58:59
+0	06:24:16.715	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	06:24:16.715	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	06:24:16.715	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	06:24:16.715	ClickAndDraw GBPUSD,M15: Iteration j : 1
+0	06:24:16.715	ClickAndDraw GBPUSD,M15: Name : Trendline 2023.04.07 20:58:59
+0	06:24:16.715	ClickAndDraw GBPUSD,M15: Iteration i : 110
+0	06:24:16.715	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	06:24:16.715	ClickAndDraw GBPUSD,M15: Iteration i : 110
+0	06:24:16.715	ClickAndDraw GBPUSD,M15: Iteration j : 1
+0	06:24:16.715	ClickAndDraw GBPUSD,M15: Iteration i : 110
+0	06:24:16.715	ClickAndDraw GBPUSD,M15: Iteration j : 2
+0	06:24:16.715	ClickAndDraw GBPUSD,M15: Name : Trendline 41634
+0	06:24:16.715	ClickAndDraw GBPUSD,M15: initialized
+0	06:46:40.072	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	06:46:40.074	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	06:46:40.088	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	06:46:40.115	ClickAndDraw GBPUSD,M15: Iteration i : 107
+0	06:46:40.115	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	06:46:40.115	ClickAndDraw GBPUSD,M15: Name : Rectangle 2023.04.07 20:58:59
+0	06:46:40.115	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	06:46:40.115	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	06:46:40.115	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	06:46:40.115	ClickAndDraw GBPUSD,M15: Iteration j : 1
+0	06:46:40.115	ClickAndDraw GBPUSD,M15: Name : Trendline 2023.04.07 20:58:59
+0	06:46:40.115	ClickAndDraw GBPUSD,M15: Iteration i : 110
+0	06:46:40.115	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	06:46:40.115	ClickAndDraw GBPUSD,M15: Iteration i : 110
+0	06:46:40.115	ClickAndDraw GBPUSD,M15: Iteration j : 1
+0	06:46:40.115	ClickAndDraw GBPUSD,M15: Iteration i : 110
+0	06:46:40.115	ClickAndDraw GBPUSD,M15: Iteration j : 2
+0	06:46:40.115	ClickAndDraw GBPUSD,M15: Name : Trendline 41634
+0	06:46:40.115	ClickAndDraw GBPUSD,M15: initialized
+0	06:46:54.995	ClickAndDraw GBPUSD,M15: uninit reason 3
+0	06:46:54.996	ClickAndDraw GBPUSD,M30: Iteration i : 107
+0	06:46:54.996	ClickAndDraw GBPUSD,M30: Iteration j : 0
+0	06:46:54.996	ClickAndDraw GBPUSD,M30: Name : Rectangle 2023.04.07 20:58:59
+0	06:46:54.996	ClickAndDraw GBPUSD,M30: Iteration i : 109
+0	06:46:54.996	ClickAndDraw GBPUSD,M30: Iteration j : 0
+0	06:46:54.996	ClickAndDraw GBPUSD,M30: Iteration i : 109
+0	06:46:54.996	ClickAndDraw GBPUSD,M30: Iteration j : 1
+0	06:46:54.996	ClickAndDraw GBPUSD,M30: Name : Trendline 2023.04.07 20:58:59
+0	06:46:54.996	ClickAndDraw GBPUSD,M30: Iteration i : 110
+0	06:46:54.996	ClickAndDraw GBPUSD,M30: Iteration j : 0
+0	06:46:54.996	ClickAndDraw GBPUSD,M30: Iteration i : 110
+0	06:46:54.996	ClickAndDraw GBPUSD,M30: Iteration j : 1
+0	06:46:54.996	ClickAndDraw GBPUSD,M30: Iteration i : 110
+0	06:46:54.996	ClickAndDraw GBPUSD,M30: Iteration j : 2
+0	06:46:54.996	ClickAndDraw GBPUSD,M30: Name : Trendline 41634
+0	06:46:54.996	ClickAndDraw GBPUSD,M30: initialized
+0	06:54:44.238	ClickAndDraw GBPUSD,M30: uninit reason 2
+0	06:54:44.240	Custom indicator ClickAndDraw GBPUSD,M30: removed
+0	06:54:44.253	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M30: loaded successfully
+0	06:54:44.278	ClickAndDraw GBPUSD,M30: Iteration i : 107
+0	06:54:44.278	ClickAndDraw GBPUSD,M30: Iteration j : 0
+0	06:54:44.278	ClickAndDraw GBPUSD,M30: Name : Rectangle 2023.04.07 20:58:59
+0	06:54:44.278	ClickAndDraw GBPUSD,M30: Iteration i : 109
+0	06:54:44.278	ClickAndDraw GBPUSD,M30: Iteration j : 0
+0	06:54:44.278	ClickAndDraw GBPUSD,M30: Iteration i : 109
+0	06:54:44.278	ClickAndDraw GBPUSD,M30: Iteration j : 1
+0	06:54:44.278	ClickAndDraw GBPUSD,M30: Name : Trendline 2023.04.07 20:58:59
+0	06:54:44.278	ClickAndDraw GBPUSD,M30: Iteration i : 110
+0	06:54:44.278	ClickAndDraw GBPUSD,M30: Iteration j : 0
+0	06:54:44.278	ClickAndDraw GBPUSD,M30: Iteration i : 110
+0	06:54:44.278	ClickAndDraw GBPUSD,M30: Iteration j : 1
+0	06:54:44.278	ClickAndDraw GBPUSD,M30: Iteration i : 110
+0	06:54:44.278	ClickAndDraw GBPUSD,M30: Iteration j : 2
+0	06:54:44.278	ClickAndDraw GBPUSD,M30: Name : Trendline 41634
+0	06:54:44.278	ClickAndDraw GBPUSD,M30: initialized
+0	06:55:26.671	ClickAndDraw GBPUSD,M30: uninit reason 2
+0	06:55:26.673	Custom indicator ClickAndDraw GBPUSD,M30: removed
+0	06:55:26.686	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M30: loaded successfully
+0	06:55:26.714	ClickAndDraw GBPUSD,M30: Iteration i : 107
+0	06:55:26.714	ClickAndDraw GBPUSD,M30: Iteration j : 0
+0	06:55:26.714	ClickAndDraw GBPUSD,M30: Name : Rectangle 2023.04.07 20:58:59
+0	06:55:26.714	ClickAndDraw GBPUSD,M30: Iteration i : 109
+0	06:55:26.714	ClickAndDraw GBPUSD,M30: Iteration j : 0
+0	06:55:26.714	ClickAndDraw GBPUSD,M30: Iteration i : 109
+0	06:55:26.714	ClickAndDraw GBPUSD,M30: Iteration j : 1
+0	06:55:26.714	ClickAndDraw GBPUSD,M30: Name : Trendline 2023.04.07 20:58:59
+0	06:55:26.714	ClickAndDraw GBPUSD,M30: Iteration i : 110
+0	06:55:26.714	ClickAndDraw GBPUSD,M30: Iteration j : 0
+0	06:55:26.714	ClickAndDraw GBPUSD,M30: Iteration i : 110
+0	06:55:26.714	ClickAndDraw GBPUSD,M30: Iteration j : 1
+0	06:55:26.714	ClickAndDraw GBPUSD,M30: Iteration i : 110
+0	06:55:26.714	ClickAndDraw GBPUSD,M30: Iteration j : 2
+0	06:55:26.714	ClickAndDraw GBPUSD,M30: Name : Trendline 41634
+0	06:55:26.714	ClickAndDraw GBPUSD,M30: initialized
+0	06:59:13.612	ClickAndDraw GBPUSD,M30: uninit reason 2
+0	06:59:13.614	Custom indicator ClickAndDraw GBPUSD,M30: removed
+0	06:59:13.628	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M30: loaded successfully
+0	06:59:13.654	ClickAndDraw GBPUSD,M30: Iteration i : 107
+0	06:59:13.654	ClickAndDraw GBPUSD,M30: Iteration j : 0
+0	06:59:13.654	ClickAndDraw GBPUSD,M30: Name : Rectangle 2023.04.07 20:58:59
+0	06:59:13.654	ClickAndDraw GBPUSD,M30: Iteration i : 109
+0	06:59:13.654	ClickAndDraw GBPUSD,M30: Iteration j : 0
+0	06:59:13.654	ClickAndDraw GBPUSD,M30: Iteration i : 109
+0	06:59:13.654	ClickAndDraw GBPUSD,M30: Iteration j : 1
+0	06:59:13.654	ClickAndDraw GBPUSD,M30: Name : Trendline 2023.04.07 20:58:59
+0	06:59:13.654	ClickAndDraw GBPUSD,M30: Iteration i : 110
+0	06:59:13.654	ClickAndDraw GBPUSD,M30: Iteration j : 0
+0	06:59:13.654	ClickAndDraw GBPUSD,M30: Iteration i : 110
+0	06:59:13.654	ClickAndDraw GBPUSD,M30: Iteration j : 1
+0	06:59:13.654	ClickAndDraw GBPUSD,M30: Iteration i : 110
+0	06:59:13.654	ClickAndDraw GBPUSD,M30: Iteration j : 2
+0	06:59:13.654	ClickAndDraw GBPUSD,M30: Name : Trendline 41634
+0	06:59:13.654	ClickAndDraw GBPUSD,M30: initialized
+0	07:03:06.120	ClickAndDraw GBPUSD,M30: uninit reason 2
+0	07:03:06.121	Custom indicator ClickAndDraw GBPUSD,M30: removed
+0	07:03:06.135	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M30: loaded successfully
+0	07:03:06.160	ClickAndDraw GBPUSD,M30: Iteration i : 108
+0	07:03:06.160	ClickAndDraw GBPUSD,M30: Iteration j : 0
+0	07:03:06.160	ClickAndDraw GBPUSD,M30: Name : Rectangle 2023.04.07 20:58:59
+0	07:03:06.160	ClickAndDraw GBPUSD,M30: Iteration i : 110
+0	07:03:06.160	ClickAndDraw GBPUSD,M30: Iteration j : 0
+0	07:03:06.160	ClickAndDraw GBPUSD,M30: Iteration i : 110
+0	07:03:06.160	ClickAndDraw GBPUSD,M30: Iteration j : 1
+0	07:03:06.160	ClickAndDraw GBPUSD,M30: Name : Trendline 2023.04.07 20:58:59
+0	07:03:06.160	ClickAndDraw GBPUSD,M30: Iteration i : 111
+0	07:03:06.160	ClickAndDraw GBPUSD,M30: Iteration j : 0
+0	07:03:06.160	ClickAndDraw GBPUSD,M30: Iteration i : 111
+0	07:03:06.160	ClickAndDraw GBPUSD,M30: Iteration j : 1
+0	07:03:06.160	ClickAndDraw GBPUSD,M30: Iteration i : 111
+0	07:03:06.160	ClickAndDraw GBPUSD,M30: Iteration j : 2
+0	07:03:06.160	ClickAndDraw GBPUSD,M30: Name : Trendline 41634
+0	07:03:06.160	ClickAndDraw GBPUSD,M30: initialized
+0	07:03:17.308	ClickAndDraw GBPUSD,M30: uninit reason 3
+0	07:03:17.310	ClickAndDraw GBPUSD,M5: Iteration i : 108
+0	07:03:17.310	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	07:03:17.310	ClickAndDraw GBPUSD,M5: Name : Rectangle 2023.04.07 20:58:59
+0	07:03:17.310	ClickAndDraw GBPUSD,M5: Iteration i : 110
+0	07:03:17.310	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	07:03:17.310	ClickAndDraw GBPUSD,M5: Iteration i : 110
+0	07:03:17.310	ClickAndDraw GBPUSD,M5: Iteration j : 1
+0	07:03:17.310	ClickAndDraw GBPUSD,M5: Name : Trendline 2023.04.07 20:58:59
+0	07:03:17.310	ClickAndDraw GBPUSD,M5: Iteration i : 111
+0	07:03:17.310	ClickAndDraw GBPUSD,M5: Iteration j : 0
+0	07:03:17.310	ClickAndDraw GBPUSD,M5: Iteration i : 111
+0	07:03:17.310	ClickAndDraw GBPUSD,M5: Iteration j : 1
+0	07:03:17.310	ClickAndDraw GBPUSD,M5: Iteration i : 111
+0	07:03:17.310	ClickAndDraw GBPUSD,M5: Iteration j : 2
+0	07:03:17.310	ClickAndDraw GBPUSD,M5: Name : Trendline 41634
+0	07:03:17.310	ClickAndDraw GBPUSD,M5: initialized
+0	07:03:18.563	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	07:03:18.565	ClickAndDraw GBPUSD,M15: Iteration i : 108
+0	07:03:18.565	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	07:03:18.565	ClickAndDraw GBPUSD,M15: Name : Rectangle 2023.04.07 20:58:59
+0	07:03:18.565	ClickAndDraw GBPUSD,M15: Iteration i : 110
+0	07:03:18.565	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	07:03:18.565	ClickAndDraw GBPUSD,M15: Iteration i : 110
+0	07:03:18.565	ClickAndDraw GBPUSD,M15: Iteration j : 1
+0	07:03:18.565	ClickAndDraw GBPUSD,M15: Name : Trendline 2023.04.07 20:58:59
+0	07:03:18.565	ClickAndDraw GBPUSD,M15: Iteration i : 111
+0	07:03:18.565	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	07:03:18.565	ClickAndDraw GBPUSD,M15: Iteration i : 111
+0	07:03:18.565	ClickAndDraw GBPUSD,M15: Iteration j : 1
+0	07:03:18.565	ClickAndDraw GBPUSD,M15: Iteration i : 111
+0	07:03:18.565	ClickAndDraw GBPUSD,M15: Iteration j : 2
+0	07:03:18.565	ClickAndDraw GBPUSD,M15: Name : Trendline 41634
+0	07:03:18.565	ClickAndDraw GBPUSD,M15: initialized
+0	07:04:32.094	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	07:04:32.096	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	07:04:32.109	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	07:04:32.134	ClickAndDraw GBPUSD,M15: Iteration i : 107
+0	07:04:32.134	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	07:04:32.134	ClickAndDraw GBPUSD,M15: Name : Rectangle 2023.04.07 20:58:59
+0	07:04:32.134	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	07:04:32.134	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	07:04:32.134	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	07:04:32.134	ClickAndDraw GBPUSD,M15: Iteration j : 1
+0	07:04:32.134	ClickAndDraw GBPUSD,M15: Name : Trendline 2023.04.07 20:58:59
+0	07:04:32.134	ClickAndDraw GBPUSD,M15: initialized
+0	07:06:07.989	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	07:06:07.991	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	07:06:08.004	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	07:06:08.031	ClickAndDraw GBPUSD,M15: Iteration i : 107
+0	07:06:08.031	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	07:06:08.031	ClickAndDraw GBPUSD,M15: Name : Rectangle 2023.04.07 20:58:59
+0	07:06:08.031	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	07:06:08.031	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	07:06:08.031	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	07:06:08.031	ClickAndDraw GBPUSD,M15: Iteration j : 1
+0	07:06:08.031	ClickAndDraw GBPUSD,M15: Name : Trendline 2023.04.07 20:58:59
+0	07:06:08.031	ClickAndDraw GBPUSD,M15: initialized
+0	07:06:27.639	ClickAndDraw GBPUSD,M15: uninit reason 5
+0	07:06:27.651	ClickAndDraw GBPUSD,M15: initialized
+0	07:06:31.903	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	07:06:31.905	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	07:06:31.918	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	07:06:31.943	ClickAndDraw GBPUSD,M15: initialized
+0	07:08:43.772	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	07:08:43.774	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	07:08:43.789	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	07:08:43.818	ClickAndDraw GBPUSD,M15: Iteration i : 108
+0	07:08:43.818	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	07:08:43.818	ClickAndDraw GBPUSD,M15: Name : Rectangle 2023.04.07 20:58:59
+0	07:08:43.818	ClickAndDraw GBPUSD,M15: Iteration i : 110
+0	07:08:43.818	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	07:08:43.818	ClickAndDraw GBPUSD,M15: Iteration i : 110
+0	07:08:43.818	ClickAndDraw GBPUSD,M15: Iteration j : 1
+0	07:08:43.818	ClickAndDraw GBPUSD,M15: Name : Trendline 2023.04.07 20:58:59
+0	07:08:43.818	ClickAndDraw GBPUSD,M15: initialized
+0	07:11:07.836	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	07:11:07.837	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	07:11:07.851	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	07:11:07.879	ClickAndDraw GBPUSD,M15: Iteration i : 107
+0	07:11:07.879	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	07:11:07.879	ClickAndDraw GBPUSD,M15: Name : Rectangle 2023.04.07 20:58:59
+0	07:11:07.879	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	07:11:07.879	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	07:11:07.879	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	07:11:07.879	ClickAndDraw GBPUSD,M15: Iteration j : 1
+0	07:11:07.879	ClickAndDraw GBPUSD,M15: Name : Trendline 2023.04.07 20:58:59
+0	07:11:07.879	ClickAndDraw GBPUSD,M15: initialized
+0	07:15:57.382	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	07:15:57.384	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	07:15:57.397	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	07:15:57.425	ClickAndDraw GBPUSD,M15: Iteration i : 107
+0	07:15:57.425	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	07:15:57.425	ClickAndDraw GBPUSD,M15: Name : Rectangle 2023.04.07 20:58:59
+0	07:15:57.425	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	07:15:57.425	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	07:15:57.425	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	07:15:57.425	ClickAndDraw GBPUSD,M15: Iteration j : 1
+0	07:15:57.425	ClickAndDraw GBPUSD,M15: Name : Trendline 2023.04.07 20:58:59
+0	07:15:57.425	ClickAndDraw GBPUSD,M15: initialized
+0	07:18:42.424	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	07:18:42.426	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	07:18:42.440	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	07:18:42.469	ClickAndDraw GBPUSD,M15: Iteration i : 108
+0	07:18:42.469	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	07:18:42.469	ClickAndDraw GBPUSD,M15: Name : Rectangle 2023.04.07 20:58:59
+0	07:18:42.469	ClickAndDraw GBPUSD,M15: initialized
+0	08:28:48.186	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	08:28:48.188	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	08:28:48.201	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	08:28:48.227	ClickAndDraw GBPUSD,M15: Iteration i : 107
+0	08:28:48.227	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	08:28:48.227	ClickAndDraw GBPUSD,M15: Name : Rectangle 2023.04.07 20:58:59
+0	08:28:48.227	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	08:28:48.227	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	08:28:48.227	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	08:28:48.227	ClickAndDraw GBPUSD,M15: Iteration j : 1
+0	08:28:48.227	ClickAndDraw GBPUSD,M15: Name : Trendline 2023.04.07 20:58:59
+0	08:28:48.227	ClickAndDraw GBPUSD,M15: initialized
+0	08:32:15.861	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	08:32:15.863	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	08:32:15.876	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	08:32:15.901	ClickAndDraw GBPUSD,M15: Iteration i : 107
+0	08:32:15.901	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	08:32:15.901	ClickAndDraw GBPUSD,M15: Name : Rectangle 2023.04.07 20:58:59
+0	08:32:15.901	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	08:32:15.901	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	08:32:15.901	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	08:32:15.901	ClickAndDraw GBPUSD,M15: Iteration j : 1
+0	08:32:15.901	ClickAndDraw GBPUSD,M15: Name : Trendline 2023.04.07 20:58:59
+0	08:32:15.901	ClickAndDraw GBPUSD,M15: initialized
+0	08:32:23.617	ClickAndDraw GBPUSD,M15: Obj Name : Trendline 2023.04.07 20:58:59
+0	08:32:30.838	ClickAndDraw GBPUSD,M15: Obj Name : Trendline 2023.04.07 20:58:59
+0	08:32:44.745	ClickAndDraw GBPUSD,M15: Obj Name : Trendline 2023.04.07 20:58:59
+0	08:32:46.105	ClickAndDraw GBPUSD,M15: Obj Name : Trendline 2023.04.07 20:58:59
+0	08:33:30.685	ClickAndDraw GBPUSD,M15: Obj Name : Trendline 2023.04.07 20:58:59
+0	08:33:37.839	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	08:33:37.842	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	08:33:37.855	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	08:33:37.883	ClickAndDraw GBPUSD,M15: Iteration i : 107
+0	08:33:37.883	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	08:33:37.883	ClickAndDraw GBPUSD,M15: Name : Rectangle 2023.04.07 20:58:59
+0	08:33:37.883	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	08:33:37.883	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	08:33:37.883	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	08:33:37.883	ClickAndDraw GBPUSD,M15: Iteration j : 1
+0	08:33:37.883	ClickAndDraw GBPUSD,M15: Name : Trendline 2023.04.07 20:58:59
+0	08:33:37.883	ClickAndDraw GBPUSD,M15: initialized
+0	08:33:39.241	ClickAndDraw GBPUSD,M15: Obj Name : Trendline 2023.04.07 20:58:59
+0	08:33:43.265	ClickAndDraw GBPUSD,M15: Obj Name : Trendline 2023.04.07 20:58:59
+0	08:34:26.037	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	08:34:26.040	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	08:34:26.053	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	08:34:26.080	ClickAndDraw GBPUSD,M15: Iteration i : 107
+0	08:34:26.080	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	08:34:26.080	ClickAndDraw GBPUSD,M15: Name : Rectangle 2023.04.07 20:58:59
+0	08:34:26.080	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	08:34:26.080	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	08:34:26.080	ClickAndDraw GBPUSD,M15: Iteration i : 109
+0	08:34:26.080	ClickAndDraw GBPUSD,M15: Iteration j : 1
+0	08:34:26.080	ClickAndDraw GBPUSD,M15: Name : Trendline 2023.04.07 20:58:59
+0	08:34:26.080	ClickAndDraw GBPUSD,M15: initialized
+0	08:34:29.137	ClickAndDraw GBPUSD,M15: Obj Name : Trendline 2023.04.08 08:34:29
+0	08:34:34.237	ClickAndDraw GBPUSD,M15: Obj Name : Trendline 2023.04.08 08:34:34
+0	08:34:38.057	ClickAndDraw GBPUSD,M15: Obj Name : Rectangle 2023.04.08 08:34:38
+0	08:35:05.083	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	08:35:05.085	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	08:35:05.099	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	08:35:05.126	ClickAndDraw GBPUSD,M15: initialized
+0	08:35:11.065	ClickAndDraw GBPUSD,M15: Obj Name : Trendline 2023.04.08 08:35:11
+0	08:35:14.729	ClickAndDraw GBPUSD,M15: Obj Name : Trendline 2023.04.08 08:35:14
+0	08:35:29.144	ClickAndDraw GBPUSD,M15: Obj Name : Trendline 2023.04.08 08:35:29
+0	08:40:27.819	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	08:40:27.821	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	08:40:27.833	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	08:40:27.858	ClickAndDraw GBPUSD,M15: Iteration i : 108
+0	08:40:27.858	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	08:40:27.858	ClickAndDraw GBPUSD,M15: Name : Trendline 2023.04.08 08:35:29
+0	08:40:27.858	ClickAndDraw GBPUSD,M15: initialized
+0	08:42:13.322	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	08:42:13.324	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	08:42:13.338	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	08:42:13.363	ClickAndDraw GBPUSD,M15: Iteration i : 108
+0	08:42:13.363	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	08:42:13.363	ClickAndDraw GBPUSD,M15: Name : Trendline 2023.04.08 08:35:29
+0	08:42:13.363	ClickAndDraw GBPUSD,M15: initialized
+0	08:46:05.991	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	08:46:05.993	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	08:46:06.008	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	08:46:06.037	ClickAndDraw GBPUSD,M15: Iteration i : 108
+0	08:46:06.037	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	08:46:06.037	ClickAndDraw GBPUSD,M15: Name : Trendline 2023.04.08 08:35:29
+0	08:46:06.037	ClickAndDraw GBPUSD,M15: initialized
+0	08:48:05.762	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	08:48:05.764	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	08:48:05.778	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	08:48:05.805	ClickAndDraw GBPUSD,M15: Iteration i : 108
+0	08:48:05.805	ClickAndDraw GBPUSD,M15: Iteration j : 0
+0	08:48:05.805	ClickAndDraw GBPUSD,M15: Name : Trendline 2023.04.08 08:35:29
+0	08:48:05.805	ClickAndDraw GBPUSD,M15: initialized
+0	08:51:36.184	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	08:51:36.186	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	08:51:36.200	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	08:51:36.227	ClickAndDraw GBPUSD,M15: initialized
+0	08:51:42.722	ClickAndDraw GBPUSD,M15: DRAG
+0	08:51:42.722	ClickAndDraw GBPUSD,M15: objPointer : false
+0	08:51:42.722	ClickAndDraw GBPUSD,M15: mFlat : false
+0	08:51:42.898	ClickAndDraw GBPUSD,M15: CHART_CLICK
+0	08:51:42.898	ClickAndDraw GBPUSD,M15: objPointer : false
+0	08:51:42.898	ClickAndDraw GBPUSD,M15: mFlat : false
+0	08:51:51.897	ClickAndDraw GBPUSD,M15: CHART_CLICK
+0	08:51:51.897	ClickAndDraw GBPUSD,M15: objPointer : true
+0	08:51:51.897	ClickAndDraw GBPUSD,M15: mFlat : true
+0	08:53:07.602	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	08:53:07.604	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	08:53:07.617	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	08:53:07.643	ClickAndDraw GBPUSD,M15: initialized
+0	08:53:14.001	ClickAndDraw GBPUSD,M15: DRAG
+0	08:53:14.001	ClickAndDraw GBPUSD,M15: objPointer : false
+0	08:53:14.001	ClickAndDraw GBPUSD,M15: mFlat : false
+0	08:53:15.245	ClickAndDraw GBPUSD,M15: DRAG
+0	08:53:15.245	ClickAndDraw GBPUSD,M15: objPointer : false
+0	08:53:15.245	ClickAndDraw GBPUSD,M15: mFlat : false
+0	08:53:26.965	ClickAndDraw GBPUSD,M15: DRAG
+0	08:53:26.965	ClickAndDraw GBPUSD,M15: objPointer : true
+0	08:53:26.965	ClickAndDraw GBPUSD,M15: mFlat : true
+0	08:53:29.905	ClickAndDraw GBPUSD,M15: DRAG
+0	08:53:29.905	ClickAndDraw GBPUSD,M15: objPointer : true
+0	08:53:29.905	ClickAndDraw GBPUSD,M15: mFlat : true
+0	08:53:31.205	ClickAndDraw GBPUSD,M15: DRAG
+0	08:53:31.205	ClickAndDraw GBPUSD,M15: objPointer : true
+0	08:53:31.205	ClickAndDraw GBPUSD,M15: mFlat : true
+0	08:53:32.303	ClickAndDraw GBPUSD,M15: DRAG
+0	08:53:32.303	ClickAndDraw GBPUSD,M15: objPointer : true
+0	08:53:32.303	ClickAndDraw GBPUSD,M15: mFlat : true
+0	08:53:35.493	ClickAndDraw GBPUSD,M15: DRAG
+0	08:53:35.493	ClickAndDraw GBPUSD,M15: objPointer : true
+0	08:53:35.493	ClickAndDraw GBPUSD,M15: mFlat : true
+0	08:53:49.757	ClickAndDraw GBPUSD,M15: DRAG
+0	08:53:49.757	ClickAndDraw GBPUSD,M15: objPointer : true
+0	08:53:49.757	ClickAndDraw GBPUSD,M15: mFlat : true
+0	08:53:51.889	ClickAndDraw GBPUSD,M15: DRAG
+0	08:53:51.889	ClickAndDraw GBPUSD,M15: objPointer : false
+0	08:53:51.889	ClickAndDraw GBPUSD,M15: mFlat : false
+0	08:53:55.337	ClickAndDraw GBPUSD,M15: DRAG
+0	08:53:55.337	ClickAndDraw GBPUSD,M15: objPointer : false
+0	08:53:55.337	ClickAndDraw GBPUSD,M15: mFlat : false
+0	08:54:26.273	ClickAndDraw GBPUSD,M15: DRAG
+0	08:54:26.273	ClickAndDraw GBPUSD,M15: objPointer : true
+0	08:54:26.273	ClickAndDraw GBPUSD,M15: mFlat : true
+0	08:54:28.356	ClickAndDraw GBPUSD,M15: DRAG
+0	08:54:28.356	ClickAndDraw GBPUSD,M15: objPointer : false
+0	08:54:28.356	ClickAndDraw GBPUSD,M15: mFlat : false
+0	08:54:29.840	ClickAndDraw GBPUSD,M15: DRAG
+0	08:54:29.840	ClickAndDraw GBPUSD,M15: objPointer : false
+0	08:54:29.840	ClickAndDraw GBPUSD,M15: mFlat : false
+0	08:54:31.376	ClickAndDraw GBPUSD,M15: DRAG
+0	08:54:31.376	ClickAndDraw GBPUSD,M15: objPointer : false
+0	08:54:31.376	ClickAndDraw GBPUSD,M15: mFlat : true
+0	08:54:48.596	ClickAndDraw GBPUSD,M15: DRAG
+0	08:54:48.596	ClickAndDraw GBPUSD,M15: objPointer : false
+0	08:54:48.596	ClickAndDraw GBPUSD,M15: mFlat : true
+0	08:54:54.745	ClickAndDraw GBPUSD,M15: Obj Name : Trendline 2023.04.08 08:54:54
+0	08:55:11.996	ClickAndDraw GBPUSD,M15: DRAG
+0	08:55:11.996	ClickAndDraw GBPUSD,M15: objPointer : false
+0	08:55:11.996	ClickAndDraw GBPUSD,M15: mFlat : true
+0	08:55:16.673	ClickAndDraw GBPUSD,M15: DRAG
+0	08:55:16.673	ClickAndDraw GBPUSD,M15: objPointer : false
+0	08:55:16.673	ClickAndDraw GBPUSD,M15: mFlat : true
+0	08:57:13.712	ClickAndDraw GBPUSD,M15: DRAG
+0	08:57:13.712	ClickAndDraw GBPUSD,M15: objPointer : false
+0	08:57:13.712	ClickAndDraw GBPUSD,M15: mFlat : true
+0	08:57:14.487	ClickAndDraw GBPUSD,M15: DRAG
+0	08:57:14.487	ClickAndDraw GBPUSD,M15: objPointer : false
+0	08:57:14.487	ClickAndDraw GBPUSD,M15: mFlat : true
+0	08:57:17.288	ClickAndDraw GBPUSD,M15: DRAG
+0	08:57:17.288	ClickAndDraw GBPUSD,M15: objPointer : false
+0	08:57:17.288	ClickAndDraw GBPUSD,M15: mFlat : true
+0	08:57:18.121	ClickAndDraw GBPUSD,M15: DRAG
+0	08:57:18.121	ClickAndDraw GBPUSD,M15: objPointer : false
+0	08:57:18.121	ClickAndDraw GBPUSD,M15: mFlat : true
+0	09:16:40.476	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	09:16:40.478	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	09:16:40.491	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	09:16:40.519	ClickAndDraw GBPUSD,M15: initialized
+0	09:18:06.478	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	09:18:06.479	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	09:18:06.494	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	09:18:06.523	ClickAndDraw GBPUSD,M15: initialized
+0	09:19:32.300	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	09:19:32.301	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	09:19:32.315	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	09:19:32.345	ClickAndDraw GBPUSD,M15: initialized
+0	09:20:14.987	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	09:20:14.989	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	09:20:15.003	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	09:20:15.032	ClickAndDraw GBPUSD,M15: initialized
+0	09:22:30.875	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	09:22:30.877	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	09:22:30.890	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	09:22:30.917	ClickAndDraw GBPUSD,M15: initialized
+0	09:22:33.383	ClickAndDraw GBPUSD,M15: works
+0	09:22:35.092	ClickAndDraw GBPUSD,M15: works
+0	09:22:37.675	ClickAndDraw GBPUSD,M15: works
+0	09:22:39.439	ClickAndDraw GBPUSD,M15: works
+0	09:22:48.308	ClickAndDraw GBPUSD,M15: works
+0	09:23:00.088	ClickAndDraw GBPUSD,M15: works
+0	09:23:04.147	ClickAndDraw GBPUSD,M15: works
+0	09:23:07.111	ClickAndDraw GBPUSD,M15: works
+0	09:23:43.111	ClickAndDraw GBPUSD,M15: works
+0	09:23:45.019	ClickAndDraw GBPUSD,M15: works
+0	09:23:46.347	ClickAndDraw GBPUSD,M15: works
+0	09:23:46.715	ClickAndDraw GBPUSD,M15: works
+0	09:23:50.124	ClickAndDraw GBPUSD,M15: works
+0	09:23:50.640	ClickAndDraw GBPUSD,M15: works
+0	09:23:54.099	ClickAndDraw GBPUSD,M15: works
+0	09:23:55.035	ClickAndDraw GBPUSD,M15: works
+0	09:23:56.051	ClickAndDraw GBPUSD,M15: works
+0	09:23:56.839	ClickAndDraw GBPUSD,M15: works
+0	09:24:04.939	ClickAndDraw GBPUSD,M15: works
+0	09:24:06.111	ClickAndDraw GBPUSD,M15: works
+0	09:24:07.099	ClickAndDraw GBPUSD,M15: works
+0	09:24:07.719	ClickAndDraw GBPUSD,M15: works
+0	09:24:12.935	ClickAndDraw GBPUSD,M15: works
+0	09:24:13.707	ClickAndDraw GBPUSD,M15: works
+0	09:24:15.631	ClickAndDraw GBPUSD,M15: works
+0	09:24:26.655	ClickAndDraw GBPUSD,M15: works
+0	09:24:27.907	ClickAndDraw GBPUSD,M15: works
+0	09:24:28.491	ClickAndDraw GBPUSD,M15: works
+0	09:24:29.215	ClickAndDraw GBPUSD,M15: works
+0	09:25:02.394	ClickAndDraw GBPUSD,M15: works
+0	09:26:06.267	ClickAndDraw GBPUSD,M15: works
+0	09:26:15.571	ClickAndDraw GBPUSD,M15: works
+0	09:26:16.554	ClickAndDraw GBPUSD,M15: works
+0	09:26:17.566	ClickAndDraw GBPUSD,M15: works
+0	09:26:18.367	ClickAndDraw GBPUSD,M15: works
+0	09:26:19.334	ClickAndDraw GBPUSD,M15: works
+0	09:26:19.751	ClickAndDraw GBPUSD,M15: works
+0	09:26:21.575	ClickAndDraw GBPUSD,M15: works
+0	09:27:02.942	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	09:27:02.943	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	09:27:02.957	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	09:27:02.983	ClickAndDraw GBPUSD,M15: initialized
+0	09:27:16.687	ClickAndDraw GBPUSD,M15: Obj Name : Rectangle 2023.04.08 09:27:16
+0	09:30:03.282	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	09:30:03.284	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	09:30:03.301	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	09:30:03.331	ClickAndDraw GBPUSD,M15: initialized
+0	09:30:30.279	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	09:30:30.280	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	09:30:30.294	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	09:30:30.319	ClickAndDraw GBPUSD,M15: initialized
+0	09:32:03.955	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	09:32:03.957	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	09:32:03.970	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	09:32:03.999	ClickAndDraw GBPUSD,M15: initialized
+0	09:32:43.453	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	09:32:43.455	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	09:32:43.468	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	09:32:43.496	ClickAndDraw GBPUSD,M15: initialized
+0	09:32:50.725	ClickAndDraw GBPUSD,M15: Obj Name : Trendline 2023.04.08 09:32:50
+0	09:33:03.625	ClickAndDraw GBPUSD,M15: Obj Name : Rectangle 2023.04.08 09:33:03
+0	09:39:49.985	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	09:39:49.987	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	09:39:50.001	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	09:39:50.030	ClickAndDraw GBPUSD,M15: initialized
+0	09:40:17.350	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	09:40:17.352	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	09:40:17.365	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	09:40:17.393	ClickAndDraw GBPUSD,M15: initialized
+0	09:40:44.120	ClickAndDraw GBPUSD,M15: uninit reason 9
+0	09:40:44.182	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	10:00:55.867	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	10:00:55.923	ClickAndDraw GBPUSD,M15: initialized
+0	10:01:03.530	ClickAndDraw GBPUSD,M15: Obj Name : Trendline 2023.04.08 10:01:03
+0	10:01:06.406	ClickAndDraw GBPUSD,M15: Obj Name : Trendline 2023.04.08 10:01:06
+0	10:01:07.230	ClickAndDraw GBPUSD,M15: Obj Name : Rectangle 2023.04.08 10:01:07
+0	10:02:00.596	ClickAndDraw GBPUSD,M15: uninit reason 9
+0	10:02:00.668	Custom indicator ClickAndDraw GBPUSD,M15: removed

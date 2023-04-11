@@ -1,0 +1,411 @@
+0	07:08:07.704	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	07:08:07.753	ClickAndDraw GBPUSD,M15: initialized
+0	07:09:57.653	Compiling 'Awptic\Awptic'
+0	07:09:58.036	Compiling 'Mine\BBMA MA Trick\Original\!BBMA OA v1'
+0	07:09:58.539	Compiling 'Mine\BBMA MA Trick\Original\!BBMA Periode 40'
+0	07:09:58.935	Compiling 'Mine\My Build\Kill Zone & 90 Min Cycle'
+0	07:09:59.648	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	07:09:59.650	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	07:09:59.664	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	07:09:59.693	ClickAndDraw GBPUSD,M15: initialized
+0	07:10:02.317	ClickAndDraw GBPUSD,M15: uninit reason 7
+0	07:10:02.319	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	07:10:02.408	Custom indicator Mine\ICT\ICT Asian_Range GBPUSD,M15: loaded successfully
+0	07:10:02.423	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	07:10:02.436	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle GBPUSD,M15: loaded successfully
+0	07:10:02.447	Custom indicator Mine\Background Indicator\CandleTime GBPUSD,M15: loaded successfully
+0	07:10:02.449	ICT Asian_Range GBPUSD,M15: initialized
+0	07:10:02.478	ClickAndDraw GBPUSD,M15: initialized
+0	07:10:02.558	Kill Zone & 90 Min Cycle GBPUSD,M15: initialized
+0	07:10:02.577	CandleTime GBPUSD,M15: initialized
+1	07:10:02.587	Kill Zone & 90 Min Cycle GBPUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (140,28)
+0	09:18:22.540	ICT Asian_Range GBPUSD,M15: deinitialized
+0	09:18:22.540	ICT Asian_Range GBPUSD,M15: uninit reason 7
+0	09:18:22.540	ClickAndDraw GBPUSD,M15: uninit reason 7
+0	09:18:22.540	Kill Zone & 90 Min Cycle GBPUSD,M15: uninit reason 7
+0	09:18:22.540	CandleTime GBPUSD,M15: uninit reason 7
+0	09:18:22.540	Custom indicator ICT Asian_Range GBPUSD,M15: removed
+0	09:18:22.542	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	09:18:22.544	Custom indicator Kill Zone & 90 Min Cycle GBPUSD,M15: removed
+0	09:18:22.545	Custom indicator CandleTime GBPUSD,M15: removed
+0	09:18:22.631	Custom indicator Mine\ICT\ICT Asian_Range GBPUSD,M15: loaded successfully
+0	09:18:22.646	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	09:18:22.660	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle GBPUSD,M15: loaded successfully
+0	09:18:22.671	Custom indicator Mine\Background Indicator\CandleTime GBPUSD,M15: loaded successfully
+0	09:18:22.672	ICT Asian_Range GBPUSD,M15: initialized
+0	09:18:22.701	ClickAndDraw GBPUSD,M15: initialized
+0	09:18:22.781	Kill Zone & 90 Min Cycle GBPUSD,M15: initialized
+0	09:18:22.799	CandleTime GBPUSD,M15: initialized
+1	09:18:22.810	Kill Zone & 90 Min Cycle GBPUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (143,23)
+0	09:18:56.658	Kill Zone & 90 Min Cycle GBPUSD,M15: uninit reason 5
+0	09:18:56.670	Kill Zone & 90 Min Cycle GBPUSD,M15: initialized
+1	09:18:58.519	Kill Zone & 90 Min Cycle GBPUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (143,23)
+0	09:19:00.514	ICT Asian_Range GBPUSD,M15: deinitialized
+0	09:19:00.514	ICT Asian_Range GBPUSD,M15: uninit reason 3
+0	09:19:00.514	ClickAndDraw GBPUSD,M15: uninit reason 3
+0	09:19:00.514	Kill Zone & 90 Min Cycle GBPUSD,M15: uninit reason 3
+0	09:19:00.514	CandleTime GBPUSD,M15: uninit reason 3
+0	09:19:00.523	ICT Asian_Range GBPUSD,M30: initialized
+0	09:19:00.523	ClickAndDraw GBPUSD,M30: initialized
+0	09:19:00.523	Kill Zone & 90 Min Cycle GBPUSD,M30: initialized
+0	09:19:00.523	CandleTime GBPUSD,M30: initialized
+0	09:19:00.934	ICT Asian_Range GBPUSD,M30: deinitialized
+0	09:19:00.934	ICT Asian_Range GBPUSD,M30: uninit reason 3
+0	09:19:00.934	ClickAndDraw GBPUSD,M30: uninit reason 3
+0	09:19:00.934	Kill Zone & 90 Min Cycle GBPUSD,M30: uninit reason 3
+0	09:19:00.934	CandleTime GBPUSD,M30: uninit reason 3
+0	09:19:00.952	ICT Asian_Range GBPUSD,M5: initialized
+0	09:19:00.952	ClickAndDraw GBPUSD,M5: initialized
+0	09:19:00.952	Kill Zone & 90 Min Cycle GBPUSD,M5: initialized
+0	09:19:00.952	CandleTime GBPUSD,M5: initialized
+1	09:19:00.971	Kill Zone & 90 Min Cycle GBPUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (140,28)
+0	09:19:02.086	ICT Asian_Range GBPUSD,M5: deinitialized
+0	09:19:02.086	ICT Asian_Range GBPUSD,M5: uninit reason 3
+0	09:19:02.086	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	09:19:02.086	Kill Zone & 90 Min Cycle GBPUSD,M5: uninit reason 3
+0	09:19:02.086	CandleTime GBPUSD,M5: uninit reason 3
+0	09:19:02.086	ICT Asian_Range GBPUSD,M15: initialized
+0	09:19:02.086	ClickAndDraw GBPUSD,M15: initialized
+0	09:19:02.086	Kill Zone & 90 Min Cycle GBPUSD,M15: initialized
+0	09:19:02.087	CandleTime GBPUSD,M15: initialized
+1	09:19:02.096	Kill Zone & 90 Min Cycle GBPUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (143,23)
+0	09:19:02.615	ICT Asian_Range GBPUSD,M15: deinitialized
+0	09:19:02.615	ICT Asian_Range GBPUSD,M15: uninit reason 3
+0	09:19:02.615	ClickAndDraw GBPUSD,M15: uninit reason 3
+0	09:19:02.615	Kill Zone & 90 Min Cycle GBPUSD,M15: uninit reason 3
+0	09:19:02.615	CandleTime GBPUSD,M15: uninit reason 3
+0	09:19:02.616	ICT Asian_Range GBPUSD,M5: initialized
+0	09:19:02.616	ClickAndDraw GBPUSD,M5: initialized
+0	09:19:02.616	Kill Zone & 90 Min Cycle GBPUSD,M5: initialized
+0	09:19:02.617	CandleTime GBPUSD,M5: initialized
+1	09:19:02.633	Kill Zone & 90 Min Cycle GBPUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (143,23)
+0	09:19:03.906	ICT Asian_Range GBPUSD,M5: deinitialized
+0	09:19:03.906	ICT Asian_Range GBPUSD,M5: uninit reason 3
+0	09:19:03.906	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	09:19:03.906	Kill Zone & 90 Min Cycle GBPUSD,M5: uninit reason 3
+0	09:19:03.906	CandleTime GBPUSD,M5: uninit reason 3
+0	09:19:03.930	ICT Asian_Range GBPUSD,M1: initialized
+0	09:19:03.930	ClickAndDraw GBPUSD,M1: initialized
+0	09:19:03.930	Kill Zone & 90 Min Cycle GBPUSD,M1: initialized
+0	09:19:03.931	CandleTime GBPUSD,M1: initialized
+1	09:19:03.951	Kill Zone & 90 Min Cycle GBPUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (140,28)
+0	09:19:04.767	ICT Asian_Range GBPUSD,M1: deinitialized
+0	09:19:04.767	ICT Asian_Range GBPUSD,M1: uninit reason 3
+0	09:19:04.767	ClickAndDraw GBPUSD,M1: uninit reason 3
+0	09:19:04.767	Kill Zone & 90 Min Cycle GBPUSD,M1: uninit reason 3
+0	09:19:04.767	CandleTime GBPUSD,M1: uninit reason 3
+0	09:19:04.767	ICT Asian_Range GBPUSD,M5: initialized
+0	09:19:04.767	ClickAndDraw GBPUSD,M5: initialized
+0	09:19:04.767	Kill Zone & 90 Min Cycle GBPUSD,M5: initialized
+0	09:19:04.768	CandleTime GBPUSD,M5: initialized
+1	09:19:04.785	Kill Zone & 90 Min Cycle GBPUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (143,23)
+0	09:19:18.665	Kill Zone & 90 Min Cycle GBPUSD,M5: uninit reason 5
+0	09:19:18.677	Kill Zone & 90 Min Cycle GBPUSD,M5: initialized
+1	09:19:18.826	Kill Zone & 90 Min Cycle GBPUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (143,23)
+0	09:19:23.310	ICT Asian_Range GBPUSD,M5: deinitialized
+0	09:19:23.310	ICT Asian_Range GBPUSD,M5: uninit reason 3
+0	09:19:23.310	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	09:19:23.310	Kill Zone & 90 Min Cycle GBPUSD,M5: uninit reason 3
+0	09:19:23.310	CandleTime GBPUSD,M5: uninit reason 3
+0	09:19:23.310	ICT Asian_Range GBPUSD,M15: initialized
+0	09:19:23.311	ClickAndDraw GBPUSD,M15: initialized
+0	09:19:23.311	Kill Zone & 90 Min Cycle GBPUSD,M15: initialized
+0	09:19:23.311	CandleTime GBPUSD,M15: initialized
+1	09:19:23.321	Kill Zone & 90 Min Cycle GBPUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (143,23)
+0	09:19:24.126	ICT Asian_Range GBPUSD,M15: deinitialized
+0	09:19:24.126	ICT Asian_Range GBPUSD,M15: uninit reason 3
+0	09:19:24.126	ClickAndDraw GBPUSD,M15: uninit reason 3
+0	09:19:24.126	Kill Zone & 90 Min Cycle GBPUSD,M15: uninit reason 3
+0	09:19:24.126	CandleTime GBPUSD,M15: uninit reason 3
+0	09:19:24.127	ICT Asian_Range GBPUSD,M5: initialized
+0	09:19:24.127	ClickAndDraw GBPUSD,M5: initialized
+0	09:19:24.127	Kill Zone & 90 Min Cycle GBPUSD,M5: initialized
+0	09:19:24.127	CandleTime GBPUSD,M5: initialized
+1	09:19:24.144	Kill Zone & 90 Min Cycle GBPUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (143,23)
+0	09:19:30.870	ICT Asian_Range GBPUSD,M5: deinitialized
+0	09:19:30.870	ICT Asian_Range GBPUSD,M5: uninit reason 3
+0	09:19:30.870	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	09:19:30.870	Kill Zone & 90 Min Cycle GBPUSD,M5: uninit reason 3
+0	09:19:30.870	CandleTime GBPUSD,M5: uninit reason 3
+0	09:19:30.870	ICT Asian_Range GBPUSD,M15: initialized
+0	09:19:30.870	ClickAndDraw GBPUSD,M15: initialized
+0	09:19:30.871	Kill Zone & 90 Min Cycle GBPUSD,M15: initialized
+0	09:19:30.871	CandleTime GBPUSD,M15: initialized
+1	09:19:30.881	Kill Zone & 90 Min Cycle GBPUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (143,23)
+0	09:19:32.174	ICT Asian_Range GBPUSD,M15: deinitialized
+0	09:19:32.174	ICT Asian_Range GBPUSD,M15: uninit reason 3
+0	09:19:32.174	ClickAndDraw GBPUSD,M15: uninit reason 3
+0	09:19:32.174	Kill Zone & 90 Min Cycle GBPUSD,M15: uninit reason 3
+0	09:19:32.174	CandleTime GBPUSD,M15: uninit reason 3
+0	09:19:32.175	ICT Asian_Range GBPUSD,M5: initialized
+0	09:19:32.175	ClickAndDraw GBPUSD,M5: initialized
+0	09:19:32.175	Kill Zone & 90 Min Cycle GBPUSD,M5: initialized
+0	09:19:32.176	CandleTime GBPUSD,M5: initialized
+1	09:19:32.193	Kill Zone & 90 Min Cycle GBPUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (143,23)
+0	09:20:29.954	Kill Zone & 90 Min Cycle GBPUSD,M5: uninit reason 5
+0	09:20:29.966	Kill Zone & 90 Min Cycle GBPUSD,M5: initialized
+1	09:20:30.996	Kill Zone & 90 Min Cycle GBPUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (143,23)
+0	09:20:33.890	ICT Asian_Range GBPUSD,M5: deinitialized
+0	09:20:33.890	ICT Asian_Range GBPUSD,M5: uninit reason 3
+0	09:20:33.890	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	09:20:33.890	Kill Zone & 90 Min Cycle GBPUSD,M5: uninit reason 3
+0	09:20:33.890	CandleTime GBPUSD,M5: uninit reason 3
+0	09:20:33.890	ICT Asian_Range GBPUSD,M15: initialized
+0	09:20:33.890	ClickAndDraw GBPUSD,M15: initialized
+0	09:20:33.891	Kill Zone & 90 Min Cycle GBPUSD,M15: initialized
+0	09:20:33.891	CandleTime GBPUSD,M15: initialized
+1	09:20:33.901	Kill Zone & 90 Min Cycle GBPUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (143,23)
+0	09:20:34.618	ICT Asian_Range GBPUSD,M15: deinitialized
+0	09:20:34.618	ICT Asian_Range GBPUSD,M15: uninit reason 3
+0	09:20:34.618	ClickAndDraw GBPUSD,M15: uninit reason 3
+0	09:20:34.618	Kill Zone & 90 Min Cycle GBPUSD,M15: uninit reason 3
+0	09:20:34.618	CandleTime GBPUSD,M15: uninit reason 3
+0	09:20:34.619	ICT Asian_Range GBPUSD,M5: initialized
+0	09:20:34.619	ClickAndDraw GBPUSD,M5: initialized
+0	09:20:34.619	Kill Zone & 90 Min Cycle GBPUSD,M5: initialized
+0	09:20:34.619	CandleTime GBPUSD,M5: initialized
+1	09:20:34.636	Kill Zone & 90 Min Cycle GBPUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (143,23)
+0	09:20:50.750	ICT Asian_Range GBPUSD,M5: deinitialized
+0	09:20:50.750	ICT Asian_Range GBPUSD,M5: uninit reason 3
+0	09:20:50.750	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	09:20:50.750	Kill Zone & 90 Min Cycle GBPUSD,M5: uninit reason 3
+0	09:20:50.750	CandleTime GBPUSD,M5: uninit reason 3
+0	09:20:50.750	ICT Asian_Range GBPUSD,M15: initialized
+0	09:20:50.750	ClickAndDraw GBPUSD,M15: initialized
+0	09:20:50.750	Kill Zone & 90 Min Cycle GBPUSD,M15: initialized
+0	09:20:50.751	CandleTime GBPUSD,M15: initialized
+1	09:20:50.760	Kill Zone & 90 Min Cycle GBPUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (143,23)
+0	09:20:51.670	ICT Asian_Range GBPUSD,M15: deinitialized
+0	09:20:51.670	ICT Asian_Range GBPUSD,M15: uninit reason 3
+0	09:20:51.670	ClickAndDraw GBPUSD,M15: uninit reason 3
+0	09:20:51.670	Kill Zone & 90 Min Cycle GBPUSD,M15: uninit reason 3
+0	09:20:51.670	CandleTime GBPUSD,M15: uninit reason 3
+0	09:20:51.672	ICT Asian_Range GBPUSD,M1: initialized
+0	09:20:51.673	ClickAndDraw GBPUSD,M1: initialized
+0	09:20:51.673	Kill Zone & 90 Min Cycle GBPUSD,M1: initialized
+0	09:20:51.673	CandleTime GBPUSD,M1: initialized
+1	09:20:51.692	Kill Zone & 90 Min Cycle GBPUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (143,23)
+0	09:22:42.517	Kill Zone & 90 Min Cycle GBPUSD,M1: uninit reason 2
+0	09:22:42.518	Custom indicator Kill Zone & 90 Min Cycle GBPUSD,M1: removed
+0	09:22:42.533	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle GBPUSD,M1: loaded successfully
+0	09:22:42.613	Kill Zone & 90 Min Cycle GBPUSD,M1: initialized
+1	09:22:42.614	Kill Zone & 90 Min Cycle GBPUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (144,23)
+0	09:22:45.438	ICT Asian_Range GBPUSD,M1: deinitialized
+0	09:22:45.438	ICT Asian_Range GBPUSD,M1: uninit reason 3
+0	09:22:45.438	ClickAndDraw GBPUSD,M1: uninit reason 3
+0	09:22:45.438	Kill Zone & 90 Min Cycle GBPUSD,M1: uninit reason 3
+0	09:22:45.438	CandleTime GBPUSD,M1: uninit reason 3
+0	09:22:45.438	ICT Asian_Range GBPUSD,M15: initialized
+0	09:22:45.438	ClickAndDraw GBPUSD,M15: initialized
+0	09:22:45.438	Kill Zone & 90 Min Cycle GBPUSD,M15: initialized
+0	09:22:45.439	CandleTime GBPUSD,M15: initialized
+1	09:22:45.448	Kill Zone & 90 Min Cycle GBPUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (144,23)
+0	09:22:46.254	ICT Asian_Range GBPUSD,M15: deinitialized
+0	09:22:46.254	ICT Asian_Range GBPUSD,M15: uninit reason 3
+0	09:22:46.254	ClickAndDraw GBPUSD,M15: uninit reason 3
+0	09:22:46.254	Kill Zone & 90 Min Cycle GBPUSD,M15: uninit reason 3
+0	09:22:46.254	CandleTime GBPUSD,M15: uninit reason 3
+0	09:22:46.257	ICT Asian_Range GBPUSD,M5: initialized
+0	09:22:46.257	ClickAndDraw GBPUSD,M5: initialized
+0	09:22:46.257	Kill Zone & 90 Min Cycle GBPUSD,M5: initialized
+0	09:22:46.257	CandleTime GBPUSD,M5: initialized
+1	09:22:46.274	Kill Zone & 90 Min Cycle GBPUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (144,23)
+0	09:22:54.108	Kill Zone & 90 Min Cycle GBPUSD,M5: uninit reason 1
+0	09:22:54.111	Custom indicator Kill Zone & 90 Min Cycle GBPUSD,M5: removed
+0	09:23:00.871	ICT Asian_Range GBPUSD,M5: deinitialized
+0	09:23:00.871	ICT Asian_Range GBPUSD,M5: uninit reason 7
+0	09:23:00.871	ClickAndDraw GBPUSD,M5: uninit reason 7
+0	09:23:00.871	CandleTime GBPUSD,M5: uninit reason 7
+0	09:23:00.871	Custom indicator ICT Asian_Range GBPUSD,M5: removed
+0	09:23:00.873	Custom indicator ClickAndDraw GBPUSD,M5: removed
+0	09:23:00.875	Custom indicator CandleTime GBPUSD,M5: removed
+3	09:23:00.887	cannot load 'C:\MT4 Portable\MQL4\indicators\Market\Quick Style.ex4'
+0	09:23:00.901	Custom indicator Mine\ICT\OBdraw251 GBPUSD,M5: loaded successfully
+3	09:23:00.907	cannot load 'C:\MT4 Portable\MQL4\indicators\Market\OHLC Magnet.ex4'
+3	09:23:00.914	cannot load 'C:\MT4 Portable\MQL4\indicators\Market\Watermark Symbol.ex4'
+3	09:23:00.922	cannot load 'C:\MT4 Portable\MQL4\indicators\Market\Show Pips.ex4'
+0	09:23:00.941	OBdraw251 GBPUSD,M5: initialized
+0	09:23:02.973	OBdraw251 GBPUSD,M5: uninit reason 7
+0	09:23:02.974	Custom indicator OBdraw251 GBPUSD,M5: removed
+0	09:23:03.059	Custom indicator Mine\ICT\ICT Asian_Range GBPUSD,M5: loaded successfully
+0	09:23:03.073	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M5: loaded successfully
+0	09:23:03.088	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle GBPUSD,M5: loaded successfully
+0	09:23:03.099	Custom indicator Mine\Background Indicator\CandleTime GBPUSD,M5: loaded successfully
+0	09:23:03.099	ICT Asian_Range GBPUSD,M5: initialized
+0	09:23:03.129	ClickAndDraw GBPUSD,M5: initialized
+0	09:23:03.211	Kill Zone & 90 Min Cycle GBPUSD,M5: initialized
+0	09:23:03.230	CandleTime GBPUSD,M5: initialized
+1	09:23:03.248	Kill Zone & 90 Min Cycle GBPUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (144,23)
+0	09:23:06.144	ICT Asian_Range GBPUSD,M5: deinitialized
+0	09:23:06.144	ICT Asian_Range GBPUSD,M5: uninit reason 7
+0	09:23:06.144	ClickAndDraw GBPUSD,M5: uninit reason 7
+0	09:23:06.144	Kill Zone & 90 Min Cycle GBPUSD,M5: uninit reason 7
+0	09:23:06.144	CandleTime GBPUSD,M5: uninit reason 7
+0	09:23:06.144	Custom indicator ICT Asian_Range GBPUSD,M5: removed
+0	09:23:06.146	Custom indicator ClickAndDraw GBPUSD,M5: removed
+0	09:23:06.148	Custom indicator Kill Zone & 90 Min Cycle GBPUSD,M5: removed
+0	09:23:06.149	Custom indicator CandleTime GBPUSD,M5: removed
+3	09:23:06.157	cannot load 'C:\MT4 Portable\MQL4\indicators\Market\Quick Style.ex4'
+0	09:23:06.171	Custom indicator Mine\ICT\OBdraw251 GBPUSD,M5: loaded successfully
+3	09:23:06.177	cannot load 'C:\MT4 Portable\MQL4\indicators\Market\OHLC Magnet.ex4'
+3	09:23:06.184	cannot load 'C:\MT4 Portable\MQL4\indicators\Market\Watermark Symbol.ex4'
+3	09:23:06.192	cannot load 'C:\MT4 Portable\MQL4\indicators\Market\Show Pips.ex4'
+0	09:23:06.211	OBdraw251 GBPUSD,M5: initialized
+0	09:23:11.751	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M5: loaded successfully
+0	09:23:34.629	ClickAndDraw GBPUSD,M5: initialized
+0	09:23:44.076	ClickAndDraw GBPUSD,M5: Obj Name : Rectangle 2023.04.10 09:23:44
+0	09:23:57.104	ClickAndDraw GBPUSD,M5: Obj Name : Rectangle 2023.04.10 09:23:57
+0	09:24:14.116	OBdraw251 GBPUSD,M5: uninit reason 1
+0	09:24:14.118	Custom indicator OBdraw251 GBPUSD,M5: removed
+0	09:24:17.004	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle GBPUSD,M5: loaded successfully
+0	09:24:23.222	Kill Zone & 90 Min Cycle GBPUSD,M5: initialized
+1	09:24:23.223	Kill Zone & 90 Min Cycle GBPUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (144,23)
+0	09:24:44.717	Kill Zone & 90 Min Cycle GBPUSD,M5: uninit reason 5
+0	09:24:44.730	Kill Zone & 90 Min Cycle GBPUSD,M5: initialized
+1	09:24:47.150	Kill Zone & 90 Min Cycle GBPUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (144,23)
+0	09:24:54.964	Kill Zone & 90 Min Cycle GBPUSD,M5: uninit reason 5
+0	09:24:54.977	Kill Zone & 90 Min Cycle GBPUSD,M5: initialized
+1	09:24:56.109	Kill Zone & 90 Min Cycle GBPUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (144,23)
+0	09:24:58.422	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	09:24:58.422	Kill Zone & 90 Min Cycle GBPUSD,M5: uninit reason 3
+0	09:24:58.423	ClickAndDraw GBPUSD,M30: initialized
+0	09:24:58.423	Kill Zone & 90 Min Cycle GBPUSD,M30: initialized
+0	09:25:00.405	ClickAndDraw GBPUSD,M30: uninit reason 3
+0	09:25:00.405	Kill Zone & 90 Min Cycle GBPUSD,M30: uninit reason 3
+0	09:25:00.406	ClickAndDraw GBPUSD,M5: initialized
+0	09:25:00.406	Kill Zone & 90 Min Cycle GBPUSD,M5: initialized
+1	09:25:00.407	Kill Zone & 90 Min Cycle GBPUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (144,23)
+0	09:25:01.745	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	09:25:01.745	Kill Zone & 90 Min Cycle GBPUSD,M5: uninit reason 3
+0	09:25:01.748	ClickAndDraw GBPUSD,M1: initialized
+0	09:25:01.748	Kill Zone & 90 Min Cycle GBPUSD,M1: initialized
+1	09:25:01.749	Kill Zone & 90 Min Cycle GBPUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (144,23)
+0	09:25:03.061	ClickAndDraw GBPUSD,M1: uninit reason 3
+0	09:25:03.061	Kill Zone & 90 Min Cycle GBPUSD,M1: uninit reason 3
+0	09:25:03.061	ClickAndDraw GBPUSD,M15: initialized
+0	09:25:03.062	Kill Zone & 90 Min Cycle GBPUSD,M15: initialized
+1	09:25:03.062	Kill Zone & 90 Min Cycle GBPUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (144,23)
+0	09:25:03.524	ClickAndDraw GBPUSD,M15: uninit reason 3
+0	09:25:03.525	Kill Zone & 90 Min Cycle GBPUSD,M15: uninit reason 3
+0	09:25:03.525	ClickAndDraw GBPUSD,M30: initialized
+0	09:25:03.525	Kill Zone & 90 Min Cycle GBPUSD,M30: initialized
+0	09:25:04.873	ClickAndDraw GBPUSD,M30: uninit reason 3
+0	09:25:04.873	Kill Zone & 90 Min Cycle GBPUSD,M30: uninit reason 3
+0	09:25:04.873	ClickAndDraw GBPUSD,M5: initialized
+0	09:25:04.874	Kill Zone & 90 Min Cycle GBPUSD,M5: initialized
+1	09:25:04.874	Kill Zone & 90 Min Cycle GBPUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (144,23)
+0	09:25:05.785	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	09:25:05.785	Kill Zone & 90 Min Cycle GBPUSD,M5: uninit reason 3
+0	09:25:05.786	ClickAndDraw GBPUSD,M1: initialized
+0	09:25:05.786	Kill Zone & 90 Min Cycle GBPUSD,M1: initialized
+1	09:25:05.786	Kill Zone & 90 Min Cycle GBPUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (144,23)
+0	09:27:01.308	Kill Zone & 90 Min Cycle GBPUSD,M1: uninit reason 2
+0	09:27:01.310	Custom indicator Kill Zone & 90 Min Cycle GBPUSD,M1: removed
+0	09:27:01.325	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle GBPUSD,M1: loaded successfully
+0	09:27:01.408	Kill Zone & 90 Min Cycle GBPUSD,M1: initialized
+1	09:27:01.409	Kill Zone & 90 Min Cycle GBPUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (145,27)
+0	09:27:05.212	ClickAndDraw GBPUSD,M1: uninit reason 3
+0	09:27:05.213	Kill Zone & 90 Min Cycle GBPUSD,M1: uninit reason 3
+0	09:27:05.213	ClickAndDraw GBPUSD,M5: initialized
+0	09:27:05.214	Kill Zone & 90 Min Cycle GBPUSD,M5: initialized
+1	09:27:05.214	Kill Zone & 90 Min Cycle GBPUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (145,27)
+0	09:27:06.844	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	09:27:06.844	Kill Zone & 90 Min Cycle GBPUSD,M5: uninit reason 3
+0	09:27:06.844	ClickAndDraw GBPUSD,M15: initialized
+0	09:27:06.845	Kill Zone & 90 Min Cycle GBPUSD,M15: initialized
+1	09:27:06.845	Kill Zone & 90 Min Cycle GBPUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (145,27)
+0	09:27:08.856	ClickAndDraw GBPUSD,M15: uninit reason 3
+0	09:27:08.856	Kill Zone & 90 Min Cycle GBPUSD,M15: uninit reason 3
+0	09:27:08.857	ClickAndDraw GBPUSD,M5: initialized
+0	09:27:08.857	Kill Zone & 90 Min Cycle GBPUSD,M5: initialized
+1	09:27:08.858	Kill Zone & 90 Min Cycle GBPUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (145,27)
+0	09:33:37.220	Kill Zone & 90 Min Cycle GBPUSD,M5: uninit reason 2
+0	09:33:37.221	Custom indicator Kill Zone & 90 Min Cycle GBPUSD,M5: removed
+0	09:33:37.235	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle GBPUSD,M5: loaded successfully
+0	09:33:37.317	Kill Zone & 90 Min Cycle GBPUSD,M5: initialized
+1	09:33:37.318	Kill Zone & 90 Min Cycle GBPUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (144,27)
+0	09:33:40.599	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	09:33:40.599	Kill Zone & 90 Min Cycle GBPUSD,M5: uninit reason 3
+0	09:33:40.599	ClickAndDraw GBPUSD,M15: initialized
+0	09:33:40.599	Kill Zone & 90 Min Cycle GBPUSD,M15: initialized
+1	09:33:40.600	Kill Zone & 90 Min Cycle GBPUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (144,27)
+0	09:33:42.303	ClickAndDraw GBPUSD,M15: uninit reason 3
+0	09:33:42.303	Kill Zone & 90 Min Cycle GBPUSD,M15: uninit reason 3
+0	09:33:42.304	ClickAndDraw GBPUSD,M5: initialized
+0	09:33:42.304	Kill Zone & 90 Min Cycle GBPUSD,M5: initialized
+1	09:33:42.305	Kill Zone & 90 Min Cycle GBPUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (144,27)
+0	09:33:42.959	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	09:33:42.959	Kill Zone & 90 Min Cycle GBPUSD,M5: uninit reason 3
+0	09:33:42.962	ClickAndDraw GBPUSD,M1: initialized
+0	09:33:42.962	Kill Zone & 90 Min Cycle GBPUSD,M1: initialized
+1	09:33:42.963	Kill Zone & 90 Min Cycle GBPUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (144,27)
+0	09:33:44.258	ClickAndDraw GBPUSD,M1: uninit reason 3
+0	09:33:44.258	Kill Zone & 90 Min Cycle GBPUSD,M1: uninit reason 3
+0	09:33:44.259	ClickAndDraw GBPUSD,M5: initialized
+0	09:33:44.259	Kill Zone & 90 Min Cycle GBPUSD,M5: initialized
+1	09:33:44.260	Kill Zone & 90 Min Cycle GBPUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (144,27)
+0	09:33:45.595	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	09:33:45.595	Kill Zone & 90 Min Cycle GBPUSD,M5: uninit reason 3
+0	09:33:45.596	ClickAndDraw GBPUSD,M15: initialized
+0	09:33:45.596	Kill Zone & 90 Min Cycle GBPUSD,M15: initialized
+1	09:33:45.597	Kill Zone & 90 Min Cycle GBPUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (144,27)
+0	09:33:47.155	ClickAndDraw GBPUSD,M15: uninit reason 3
+0	09:33:47.155	Kill Zone & 90 Min Cycle GBPUSD,M15: uninit reason 3
+0	09:33:47.156	ClickAndDraw GBPUSD,M5: initialized
+0	09:33:47.156	Kill Zone & 90 Min Cycle GBPUSD,M5: initialized
+1	09:33:47.157	Kill Zone & 90 Min Cycle GBPUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (144,27)
+0	09:35:14.765	Kill Zone & 90 Min Cycle GBPUSD,M5: uninit reason 2
+0	09:35:14.766	Custom indicator Kill Zone & 90 Min Cycle GBPUSD,M5: removed
+0	09:35:14.780	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle GBPUSD,M5: loaded successfully
+0	09:35:14.861	Kill Zone & 90 Min Cycle GBPUSD,M5: initialized
+1	09:35:14.861	Kill Zone & 90 Min Cycle GBPUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (144,27)
+0	09:35:18.368	ClickAndDraw GBPUSD,M5: uninit reason 9
+0	09:35:18.368	Kill Zone & 90 Min Cycle GBPUSD,M5: uninit reason 9
+0	09:35:18.465	Custom indicator ClickAndDraw GBPUSD,M5: removed
+0	09:35:18.467	Custom indicator Kill Zone & 90 Min Cycle GBPUSD,M5: removed
+0	18:09:13.061	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M5: loaded successfully
+0	18:09:13.076	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle GBPUSD,M5: loaded successfully
+0	18:09:13.138	ClickAndDraw GBPUSD,M5: initialized
+0	18:09:13.222	Kill Zone & 90 Min Cycle GBPUSD,M5: initialized
+1	18:09:13.224	Kill Zone & 90 Min Cycle GBPUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (144,27)
+0	18:09:20.192	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	18:09:20.192	Kill Zone & 90 Min Cycle GBPUSD,M5: uninit reason 3
+0	18:09:20.204	ClickAndDraw GBPUSD,M15: initialized
+0	18:09:20.204	Kill Zone & 90 Min Cycle GBPUSD,M15: initialized
+1	18:09:20.204	Kill Zone & 90 Min Cycle GBPUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (144,27)
+0	18:09:21.012	ClickAndDraw GBPUSD,M15: uninit reason 3
+0	18:09:21.012	Kill Zone & 90 Min Cycle GBPUSD,M15: uninit reason 3
+0	18:09:21.013	ClickAndDraw GBPUSD,M5: initialized
+0	18:09:21.013	Kill Zone & 90 Min Cycle GBPUSD,M5: initialized
+1	18:09:21.014	Kill Zone & 90 Min Cycle GBPUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (341,30)
+0	18:09:23.093	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	18:09:23.093	Kill Zone & 90 Min Cycle GBPUSD,M5: uninit reason 3
+0	18:09:23.108	ClickAndDraw GBPUSD,M30: initialized
+0	18:09:23.109	Kill Zone & 90 Min Cycle GBPUSD,M30: initialized
+0	18:09:23.564	ClickAndDraw GBPUSD,M30: uninit reason 3
+0	18:09:23.564	Kill Zone & 90 Min Cycle GBPUSD,M30: uninit reason 3
+0	18:09:23.565	ClickAndDraw GBPUSD,M15: initialized
+0	18:09:23.565	Kill Zone & 90 Min Cycle GBPUSD,M15: initialized
+1	18:09:23.566	Kill Zone & 90 Min Cycle GBPUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (341,30)
+0	18:09:24.140	ClickAndDraw GBPUSD,M15: uninit reason 3
+0	18:09:24.140	Kill Zone & 90 Min Cycle GBPUSD,M15: uninit reason 3
+0	18:09:24.140	ClickAndDraw GBPUSD,M5: initialized
+0	18:09:24.141	Kill Zone & 90 Min Cycle GBPUSD,M5: initialized
+1	18:09:24.141	Kill Zone & 90 Min Cycle GBPUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (341,30)
+0	21:36:28.471	Custom indicator Mine\BBMA MA Trick\Original\!BBMA OA v1 GBPUSD,M5: loaded successfully
+0	21:36:29.576	!BBMA OA v1 GBPUSD,M5: initialized
+0	21:36:42.145	!BBMA OA v1 GBPUSD,M5: uninit reason 5
+0	21:36:42.171	!BBMA OA v1 GBPUSD,M5: initialized
+0	21:36:51.621	ClickAndDraw GBPUSD,M5: uninit reason 3
+0	21:36:51.621	Kill Zone & 90 Min Cycle GBPUSD,M5: uninit reason 3
+0	21:36:51.621	!BBMA OA v1 GBPUSD,M5: uninit reason 3
+0	21:36:51.635	ClickAndDraw GBPUSD,M15: initialized
+0	21:36:51.636	Kill Zone & 90 Min Cycle GBPUSD,M15: initialized
+0	21:36:51.637	!BBMA OA v1 GBPUSD,M15: initialized
+1	21:36:51.645	Kill Zone & 90 Min Cycle GBPUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (341,30)
+0	21:36:57.256	ClickAndDraw GBPUSD,M15: uninit reason 3
+0	21:36:57.257	Kill Zone & 90 Min Cycle GBPUSD,M15: uninit reason 3
+0	21:36:57.257	!BBMA OA v1 GBPUSD,M15: uninit reason 3
+0	21:36:57.269	ClickAndDraw GBPUSD,M30: initialized
+0	21:36:57.269	Kill Zone & 90 Min Cycle GBPUSD,M30: initialized
+0	21:36:57.270	!BBMA OA v1 GBPUSD,M30: initialized

@@ -98,6 +98,8 @@ Object *myObjects[];
 //+------------------------------------------------------------------+
 int init()
 {
+    printf("MQL BUILD : " + string(__MQLBUILD__));
+    printf("MQL4 BUILD : " + string(__MQL4BUILD__));
 
     setDefaultStates();
     
