@@ -40,7 +40,6 @@ string iName="Assian Session Level";
 int OnInit() {
 
     
-    
     SetIndexBuffer(0, HighBuffer);
     SetIndexStyle (0, DRAW_LINE,STYLE_DASH,1,clevelr);
     SetIndexLabel (0, "Highest");
@@ -73,6 +72,7 @@ int OnInit() {
     SetIndexStyle (7, DRAW_LINE,STYLE_DASH,1,clevels);
     SetIndexLabel (7, "Level 3");
 
+
     return 0;
 }
 
@@ -103,26 +103,46 @@ int OnCalculate(const int rates_total,
                 const int &spread[])
 {
     
-    int Day = TimeDay(TimeCurrent());
+    int Day = TimeDay(TimeCurrent()) - lookback + 1;
 
-    for (int i = lookback; i >= 0; i--){
-        if (i < lookback) Day--;
+    for (int i = lookback; i > 0; i--){
+        if (i < lookback) Day++;
         datetime dtStart = getDateTimeFromDay(Day, StartTime);
+        datetime tes = getDateTimeFromDay(11, StartTime);
         datetime dtStop = getDateTimeFromDay(Day, EndTime);
         int IndexStart = getBarIndex(dtStart);
-        int IndexStop = getBarIndex(dtStop);
-        int barCount = IndexStart - IndexStop;
-        int highest = iHighest(Symbol(), Period(), MODE_HIGH, barCount, IndexStart);
 
-        printf("highest : " + highest);
-        //Highest, Lowest & Range
-        for (int j = IndexStart; j >= IndexStop; j--) {
-            printf("j : " + j);
+        if (barExists(IndexStart)) {
+            int IndexStop = getBarIndex(dtStop);
+            if (!barExists(IndexStop)) IndexStop = 0;
 
+            int barCount = IndexStart - IndexStop;
+            int highestIndex = iHighest(Symbol(), Period(), MODE_HIGH, barCount, IndexStop);
+            int lowestIndex = iLowest(Symbol(), Period(), MODE_LOW, barCount, IndexStop);
+            double range = (high[highestIndex] - Low[lowestIndex]);
+
+            //Highest, Lowest & Range
+            for (int j = IndexStart; j >= IndexStop; j--) {
+                HighBuffer[j] = high[highestIndex];
+                LowBuffer[j] = low[lowestIndex];
+                
+                if (showlevel) {
+                    HighBuffer1[j] = range + high[highestIndex];
+                    LowBuffer1[j] = low[lowestIndex] - range;
+                    HighBuffer2[j] = 2 * range + high[highestIndex];
+                    LowBuffer2[j] = low[lowestIndex] - range * 2;
+                    HighBuffer3[j] = 3 * range + high[highestIndex];
+                    LowBuffer3[j] = low[lowestIndex] - range * 3;
+                }
+                else {
+                    HighBuffer1[j] = LowBuffer1[j] = HighBuffer2[j] = LowBuffer2[j] = HighBuffer3[j] = LowBuffer3[j] = EMPTY_VALUE;
+                }
+            }
         }
-        if (!isWithinTimeline(i)){
-            HighBuffer1[i] = LowBuffer1[i] = HighBuffer2[i] = LowBuffer2[i] = HighBuffer3[i] = LowBuffer3[i] = EMPTY_VALUE;
-        }
+
+        // if (!isWithinTimeline(i)){
+        //     HighBuffer1[i] = LowBuffer1[i] = HighBuffer2[i] = LowBuffer2[i] = HighBuffer3[i] = LowBuffer3[i] = EMPTY_VALUE;
+        // }
 
         // if (isStartTime(i)){
 
@@ -137,25 +157,23 @@ int OnCalculate(const int rates_total,
 
 
         //         if (TimeHour(time[j]) >= StartTime && TimeHour(time[j]) < EndTime){
-        //             HighBuffer[j] = high[highest];
-        //             LowBuffer[j] = low[lowest];
-        //             if (showlevel){
-        //                 HighBuffer1[j] = range + high[highest];
-        //                 LowBuffer1[j] = low[lowest] - range;
-        //                 HighBuffer2[j] = 2 * range + high[highest];
-        //                 LowBuffer2[j] = low[lowest] - range * 2;
-        //                 HighBuffer3[j] = 3 * range + high[highest];
-        //                 LowBuffer3[j] = low[lowest] - range * 3;
-        //             }else{
-        //                 HighBuffer1[j] = LowBuffer1[j] = HighBuffer2[j] = LowBuffer2[j] = HighBuffer3[j] = LowBuffer3[j] = EMPTY_VALUE;
-        //             }
+                    // HighBuffer[j] = high[highest];
+                    // LowBuffer[j] = low[lowest];
+                    // if (showlevel){
+                    //     HighBuffer1[j] = range + high[highest];
+                    //     LowBuffer1[j] = low[lowest] - range;
+                    //     HighBuffer2[j] = 2 * range + high[highest];
+                    //     LowBuffer2[j] = low[lowest] - range * 2;
+                    //     HighBuffer3[j] = 3 * range + high[highest];
+                    //     LowBuffer3[j] = low[lowest] - range * 3;
+                    // }else{
+                    //     HighBuffer1[j] = LowBuffer1[j] = HighBuffer2[j] = LowBuffer2[j] = HighBuffer3[j] = LowBuffer3[j] = EMPTY_VALUE;
+                    // }
         //         }
         //     startingPoint = 0;
         //     iterator = 0;
         // }
     }
-
-
 
     return 0;
 }
@@ -169,7 +187,15 @@ datetime getCurrentDay() {
 }
 
 datetime getDateTimeFromDay(int Day, int Hour) {
-    return StrToTime(string(TimeYear(TimeCurrent())) + "." + string(TimeMonth(TimeCurrent())) + "." + Day >= 10 ? Day : ("0" + string(Day)) + (Hour >= 10 ? (" " + string(Hour)) : (" 0" + string(Hour))) + ":00:00");
+    return StrToTime(
+        string(TimeYear(TimeCurrent()))
+        + "."
+        + string(TimeMonth(TimeCurrent()))
+        + "."
+        + (Day >= 10 ? string(Day) : ("0" + string(Day)))
+        + (Hour >= 10 ? (" " + string(Hour)) : (" 0" + string(Hour)))
+        + ":00:00"
+    );
 }
 
 int getBarIndex(datetime waktu) {
@@ -189,5 +215,9 @@ bool isStartTime(int index) {
 bool isWithinTimeline(int index) {
   //printf("Timeline : " + TimeHour(Time[index]));
    return TimeHour(Time[index]) >= StartTime && TimeHour(Time[index]) < EndTime;
+}
+
+bool barExists(int barIndex) {
+    return barIndex != -1;
 }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
