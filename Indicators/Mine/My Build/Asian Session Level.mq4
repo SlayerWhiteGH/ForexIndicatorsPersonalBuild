@@ -13,6 +13,7 @@
 #property indicator_chart_window
 #property indicator_buffers 8
 
+
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 input int lookback         = 5;        //LookBack
@@ -38,7 +39,6 @@ string iName="Assian Session Level";
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 int OnInit() {
-
     
     SetIndexBuffer(0, HighBuffer);
     SetIndexStyle (0, DRAW_LINE,STYLE_DASH,1,clevelr);
@@ -103,17 +103,26 @@ int OnCalculate(const int rates_total,
                 const int &spread[])
 {
     
-    int Day = TimeDay(TimeCurrent()) - lookback + 1;
-
+    int Day = TimeDay(TimeCurrent()) - lookback;
+    
     for (int i = lookback; i > 0; i--){
-        if (i < lookback) Day++;
-        datetime dtStart = getDateTimeFromDay(Day, StartTime);
-        datetime tes = getDateTimeFromDay(11, StartTime);
-        datetime dtStop = getDateTimeFromDay(Day, EndTime);
-        int IndexStart = getBarIndex(dtStart);
+    datetime dtStart, dtStop;
+        int currentDayOfWeek = TimeDayOfWeek(TimeCurrent());
+        if (currentTimeIsWeekend(TimeCurrent())) {
+           continue;
+        }
+        Day++;
+        if (EndTime <= StartTime) {
+            dtStart = getDateTimeFromDay(Day-1, StartTime);
+            dtStop = getDateTimeFromDay(Day, EndTime);
+        } else {
+            dtStart = getDateTimeFromDay(Day, StartTime);
+            dtStop = getDateTimeFromDay(Day, EndTime);
+        }
 
+        int IndexStart = getBarIndex(dtStart);
         if (barExists(IndexStart)) {
-            int IndexStop = getBarIndex(dtStop);
+            int IndexStop = getBarIndex(dtStop) + 2;
             if (!barExists(IndexStop)) IndexStop = 0;
 
             int barCount = IndexStart - IndexStop;
@@ -139,40 +148,7 @@ int OnCalculate(const int rates_total,
                 }
             }
         }
-
-        // if (!isWithinTimeline(i)){
-        //     HighBuffer1[i] = LowBuffer1[i] = HighBuffer2[i] = LowBuffer2[i] = HighBuffer3[i] = LowBuffer3[i] = EMPTY_VALUE;
-        // }
-
-        // if (isStartTime(i)){
-
-        // }
-        // if (isWithinTimeline(i)){
-
-        // }
-        // if (isEndTime(i)){
-        //     int highest = iHighest(Symbol(), Period(), MODE_HIGH, iterator, i);
-        //     int lowest = iLowest(Symbol(), Period(), MODE_LOW, iterator, i);
-        //     double range = (high[highest] - low[lowest]);
-
-
-        //         if (TimeHour(time[j]) >= StartTime && TimeHour(time[j]) < EndTime){
-                    // HighBuffer[j] = high[highest];
-                    // LowBuffer[j] = low[lowest];
-                    // if (showlevel){
-                    //     HighBuffer1[j] = range + high[highest];
-                    //     LowBuffer1[j] = low[lowest] - range;
-                    //     HighBuffer2[j] = 2 * range + high[highest];
-                    //     LowBuffer2[j] = low[lowest] - range * 2;
-                    //     HighBuffer3[j] = 3 * range + high[highest];
-                    //     LowBuffer3[j] = low[lowest] - range * 3;
-                    // }else{
-                    //     HighBuffer1[j] = LowBuffer1[j] = HighBuffer2[j] = LowBuffer2[j] = HighBuffer3[j] = LowBuffer3[j] = EMPTY_VALUE;
-                    // }
-        //         }
-        //     startingPoint = 0;
-        //     iterator = 0;
-        // }
+        
     }
 
     return 0;
@@ -180,6 +156,10 @@ int OnCalculate(const int rates_total,
 
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+bool currentTimeIsWeekend(datetime dateTime) {
+    return TimeDayOfWeek(dateTime) == 0 || TimeDayOfWeek(dateTime) == 6;
+}
+
 datetime getCurrentDay() {
     string dateCurrent = TimeToStr(TimeCurrent(), TIME_DATE);
     string time = " 00:00:00";

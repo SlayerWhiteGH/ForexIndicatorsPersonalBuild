@@ -21,7 +21,6 @@ enum eModeLine       {_0L/*Solid*/,_1L/*Dash*/,_2L/*Dot*/,_3L/*Dash Dot*/,_4L/*D
 
 
 input bool     iOn               = true;           //Indicator On  
-input bool bbmaoa                = true;          //Show BBMA OA
 input bool showmathead           = false;          //Show Header
 input bool xlsma                 = false;          //LSMA MODE
 input bool offmat                = false;          //Hide MAT
@@ -54,7 +53,6 @@ input eModeBB  s5ModeBB          = _DisableBB;     //BB TF ACUAN 05
 input string           _MODEENTRY= "--- TF ENTRY ---";//_______________________00
 input ENUM_MA_METHOD
                modeMA            = MODE_SMA;       //---------- MA Method ----------
-input bool Entry0                = false;          //TF ENTRY
 input bool Entry1                = false;          //TF KONFIRMASI 1
 input bool Entry2                = false;           //TF KONFIRMASI 2
 
@@ -71,16 +69,9 @@ input bool acuan07               = false;          //TF ACUAN 07
           
 input string                _LWMA= "--- LWMA HiLo SETTING ---";//_______________________00 
 input bool lwma510               = false;          //MODE 5/10
-input bool lwma5                 = false;          //HiLo LWMA 5
-input bool lwma10                = false;          //HiLo LWMA 10
-input bool tfshadow              = false;          //Shadow
-input color    clLWSMA1          = clrDimGray,        //LWMA 5
-               clLWSMA2          = clrDimGray;        //LWMA 10 
+input color    clHigh            = clrRed,        //Resistance
+               clLow             = clrBlue;        //Support
 input color    clsdw             = "50,50,50";        //Shadow                
-input bool lwma3                 = false;          //HiLo LWMA TF Active
-input bool lwma4                 = false;          //HiLo LWMA TFX 
-input color    clLWSMA30         = clrNONE,        //LWMA TF Active
-               clLWSMA40         = clrNONE;        //LWMA TFX  
 
 
 input string              _cENTRY= "--- COLOR TF ENTRY ---";//_______________________00             
@@ -97,8 +88,8 @@ input color    clSMA2            = clrNONE,//-------- MID
 input string             _cACTIVE= "--- COLOR TF ACTIVE ---";//_______________________00               
 input color    clSMA3            = clrNONE,//-------- MID
                clSMAT3           = clrNONE,//-------- MA TRICK
-               clSDP3            = C'43,43,255',//-------- SD +
-               clSDM3            = C'43,43,255';//-------- SD -  
+               clSDP3            = clrGreen,//-------- SD +
+               clSDM3            = clrGreen;//-------- SD -  
 input string              _acuan1= "--- COLOR TF ACUAN 01 ---";//_______________________00                 
 input color    clSMA4            = clrNONE,//-------- MID
                clSMAT4           = clrNONE,//-------- MA TRICK
@@ -136,11 +127,10 @@ input color    clSMA10           = clrNONE,//-------- MID
 
 
 string iName; 
-int    iP0,iP1,iP2,iP3,iP4,iP5,iP6,iP7,iP8,iP9,iP10,iP11,iP12,
+int    iP1,iP2,iP3,iP4,iP5,iP6,iP7,iP8,iP9,iP10,iP11,iP12,
        tP0,tP1,tP2,tP3,tP4,tP5,tP6,tP7,tP8,tP9,tP10,tP11,tP12,
-       lP1,lP2,mP1,mP2;
+       lP1,lP2;
 double 
-SMA00[],SDP00[],SDM00[],SDP000[],SDM000[],SMAT00[],
 SMA01[],SDP01[],SDM01[],SDP012[],SDM012[],SMAT01[],
 SMA02[],SDP02[],SDM02[],SDP022[],SDM022[],SMAT02[],
 SMA03[],SDP03[],SDM03[],SDP032[],SDM032[],SMAT03[],
@@ -151,13 +141,11 @@ SMA07[],SDP07[],SDM07[],SDP072[],SDM072[],SMAT07[],
 SMA08[],SDP08[],SDM08[],SDP082[],SDM082[],SMAT08[],
 SMA09[],SDP09[],SDM09[],SDP092[],SDM092[],SMAT09[],
 SMA10[],SDP10[],SDM10[],SDP102[],SDM102[],SMAT10[],
-MARS01[],MARS02[],
-
-HLWMASH01[],LLWMASH01[],HLWMASH02[],LLWMASH02[],
-HLWMASH03[],LLWMASH03[],HLWMASH04[],LLWMASH04[],
 
 HLWMA01[],LLWMA01[],HLWMA02[],LLWMA02[],
-HLWMA03[],LLWMA03[],HLWMA04[],LLWMA04[],
+ShadowHigh01[],ShadowHigh02[],ShadowHigh03[],ShadowHigh04[],
+ShadowLow01[],ShadowLow02[],ShadowLow03[],ShadowLow04[],
+
 sSDP03[],sSDM03[],sSDP032[],sSDM032[],
 sSDP04[],sSDM04[],sSDP042[],sSDM042[],
 sSDP05[],sSDM05[],sSDP052[],sSDM052[],
@@ -248,8 +236,7 @@ if(WindowExpertName()!="!BBMA MATrick N.G 2022 v1"){
       
    iName="!BBMA MATrick N.G 2022";   
     
-   //SMA
-   iP0=StrToInteger(getPer(94,0,1));     
+   //SMA  
    iP1=StrToInteger(getPer(95,0,1));
    iP2=StrToInteger(getPer(96,0,1));
    iP3=StrToInteger(getPer(97,0,1));
@@ -263,7 +250,6 @@ if(WindowExpertName()!="!BBMA MATrick N.G 2022 v1"){
 
    
    //MATREND
-   tP0=StrToInteger(getPer(114,0,1));
    tP1=StrToInteger(getPer(115,0,1)); 
    tP2=StrToInteger(getPer(116,0,1));
    tP3=StrToInteger(getPer(117,0,1));
@@ -276,54 +262,52 @@ if(WindowExpertName()!="!BBMA MATrick N.G 2022 v1"){
    tP10=StrToInteger(getPer(124,0,1));
       
    //LWMA   
-   lP1=StrToInteger(getPer((lwma510==true)?125:95,0,1));
-   lP2=StrToInteger(getPer((lwma510==true)?126:96,0,1));
+   lP1=StrToInteger(getPer(125,0,1));
+   lP2=StrToInteger(getPer(126,0,1));
    
  
-   IndicatorBuffers(83);
+   IndicatorBuffers(80);
  
    //LWMA SHADOW
-   SetIndexBuffer(82,LLWMASH04); SetIndexStyle(82,0,0,2,getClr(102,0,true,clLWSMA30)); SetIndexLabel(82,getPer(98,0,0,false));
-   SetIndexBuffer(81,HLWMASH04); SetIndexStyle(81,0,0,2,getClr(102,0,true,clLWSMA30)); SetIndexLabel(81,getPer(98,0,0,false));
-   SetIndexBuffer(80,LLWMASH03); SetIndexStyle(80,0,0,2,getClr(101,0,true,clLWSMA30)); SetIndexLabel(80,getPer(97,0,0,false));  
-   SetIndexBuffer(79,HLWMASH03); SetIndexStyle(79,0,0,2,getClr(101,0,true,clLWSMA30)); SetIndexLabel(79,getPer(97,0,0,false));
+   SetIndexBuffer(79,ShadowLow04); SetIndexStyle(79,0,2,1,getClr(0,0,true,clsdw)); 
+   SetIndexBuffer(78,ShadowLow03); SetIndexStyle(78,0,2,1,getClr(0,0,true,clsdw)); 
+   SetIndexBuffer(77,ShadowLow02); SetIndexStyle(77,0,2,1,getClr(0,0,true,clsdw));   
+   SetIndexBuffer(76,ShadowLow01); SetIndexStyle(76,0,2,1,getClr(0,0,true,clsdw)); 
+
+   SetIndexBuffer(75,ShadowHigh04); SetIndexStyle(75,0,2,1,getClr(0,0,true,clsdw)); 
+   SetIndexBuffer(74,ShadowHigh03); SetIndexStyle(74,0,2,1,getClr(0,0,true,clsdw)); 
+   SetIndexBuffer(73,ShadowHigh02); SetIndexStyle(73,0,2,1,getClr(0,0,true,clsdw));   
+   SetIndexBuffer(72,ShadowHigh01); SetIndexStyle(72,0,2,1,getClr(0,0,true,clsdw)); 
  
    //MATREND
-   SetIndexBuffer(77,SMAT10);SetIndexStyle(77,0,linemode,1,getClr(124,0,true,clSMAT10));SetIndexLabel(77,"MaTrick " +getPer(124,0,0,false)+"");  //ACUAN 7
-   SetIndexBuffer(76,SMAT09);SetIndexStyle(76,0,linemode,1,getClr(123,0,true,clSMAT9)); SetIndexLabel(76,"MaTrick " +getPer(123,0,0,false)+"");  //ACUAN 6
-   SetIndexBuffer(75,SMAT08);SetIndexStyle(75,0,linemode,1,getClr(122,0,true,clSMAT8)); SetIndexLabel(75,"MaTrick " +getPer(122,0,0,false)+"");  //ACUAN 5
-   SetIndexBuffer(74,SMAT07);SetIndexStyle(74,0,linemode,1,getClr(121,0,true,clSMAT7)); SetIndexLabel(74,"MaTrick " +getPer(121,0,0,false)+"");  //ACUAN 4
-   SetIndexBuffer(73,SMAT06);SetIndexStyle(73,0,linemode,1,getClr(120,0,true,clSMAT6)); SetIndexLabel(73,"MaTrick " +getPer(120,0,0,false)+"");  //ACUAN 3
-   SetIndexBuffer(72,SMAT05);SetIndexStyle(72,0,linemode,1,getClr(119,0,true,clSMAT5)); SetIndexLabel(72,"MaTrick " +getPer(119,0,0,false)+"");  //ACUAN 2
-   SetIndexBuffer(71,SMAT04);SetIndexStyle(71,0,linemode,1,getClr(118,0,true,clSMAT4)); SetIndexLabel(71,"MaTrick " +getPer(118,0,0,false)+"");  //ACUAN 1
-   SetIndexBuffer(70,SMAT03);SetIndexStyle(70,0,linemode,1,getClr(117,0,true,clSMAT3)); SetIndexLabel(70,"MaTrick " +getPer(117,0,0,false)+"");  //ACTIVE
-   SetIndexBuffer(69,SMAT02);SetIndexStyle(69,0,linemode,1,getClr(116,0,true,clSMAT2)); SetIndexLabel(69,"MaTrick " +getPer(116,0,0,false)+"");  //TF KONFIRMASI 2
-   SetIndexBuffer(68,SMAT01);SetIndexStyle(68,0,linemode,1,getClr(115,0,true,clSMAT1)); SetIndexLabel(68,"MaTrick " +getPer(115,0,0,false)+"");  //TF KONFIRMASI 1
-   SetIndexBuffer(67,SMAT00);SetIndexStyle(67,0,linemode,1,getClr(114,0,true,clSMAT1)); SetIndexLabel(67,"MaTrick " +getPer(114,0,0,false)+"");  //TF ENTRY
-   
+   SetIndexBuffer(71,SMAT10);SetIndexStyle(71,0,linemode,1,getClr(124,0,true,clSMAT10));SetIndexLabel(71,"MaTrick " +getPer(124,0,0,false)+"");  //ACUAN 7
+   SetIndexBuffer(70,SMAT09);SetIndexStyle(70,0,linemode,1,getClr(123,0,true,clSMAT9)); SetIndexLabel(70,"MaTrick " +getPer(123,0,0,false)+"");  //ACUAN 6
+   SetIndexBuffer(69,SMAT08);SetIndexStyle(69,0,linemode,1,getClr(122,0,true,clSMAT8)); SetIndexLabel(69,"MaTrick " +getPer(122,0,0,false)+"");  //ACUAN 5
+   SetIndexBuffer(68,SMAT07);SetIndexStyle(68,0,linemode,1,getClr(121,0,true,clSMAT7)); SetIndexLabel(68,"MaTrick " +getPer(121,0,0,false)+"");  //ACUAN 4
+   SetIndexBuffer(67,SMAT06);SetIndexStyle(67,0,linemode,1,getClr(120,0,true,clSMAT6)); SetIndexLabel(67,"MaTrick " +getPer(120,0,0,false)+"");  //ACUAN 3
+   SetIndexBuffer(66,SMAT05);SetIndexStyle(66,0,linemode,1,getClr(119,0,true,clSMAT5)); SetIndexLabel(66,"MaTrick " +getPer(119,0,0,false)+"");  //ACUAN 2
+   SetIndexBuffer(65,SMAT04);SetIndexStyle(65,0,linemode,1,getClr(118,0,true,clSMAT4)); SetIndexLabel(65,"MaTrick " +getPer(118,0,0,false)+"");  //ACUAN 1
+   SetIndexBuffer(64,SMAT03);SetIndexStyle(64,0,linemode,1,getClr(117,0,true,clSMAT3)); SetIndexLabel(64,"MaTrick " +getPer(117,0,0,false)+"");  //ACTIVE
+   SetIndexBuffer(63,SMAT02);SetIndexStyle(63,0,linemode,1,getClr(116,0,true,clSMAT2)); SetIndexLabel(63,"MaTrick " +getPer(116,0,0,false)+"");  //TF KONFIRMASI 2
+   SetIndexBuffer(62,SMAT01);SetIndexStyle(62,0,linemode,1,getClr(115,0,true,clSMAT1)); SetIndexLabel(62,"MaTrick " +getPer(115,0,0,false)+"");  //TF KONFIRMASI 1
+
    //MID BB
-   SetIndexBuffer(66,SMA10); SetIndexStyle(66,0,0,1,getClr(104,0,true,clSMA10)); SetIndexLabel(66,"MidBB " +getPer(104,0,0,false)+"");   //ACUAN 7
-   SetIndexBuffer(65,SMA09); SetIndexStyle(65,0,0,1,getClr(103,0,true,clSMA9));  SetIndexLabel(65,"MidBB " +getPer(103,0,0,false)+"");   //ACUAN 6
-   SetIndexBuffer(64,SMA08); SetIndexStyle(64,0,0,(s5ModeBB==_DisableBB)?1:2,getClr(102,0,true,clSMA8));  SetIndexLabel(64,"MidBB " +getPer(102,0,0,false)+"");   //ACUAN 5
-   SetIndexBuffer(63,SMA07); SetIndexStyle(63,0,0,(s4ModeBB==_DisableBB)?1:2,getClr(101,0,true,clSMA7));  SetIndexLabel(63,"MidBB " +getPer(101,0,0,false)+"");   //ACUAN 4
-   SetIndexBuffer(62,SMA06); SetIndexStyle(62,0,0,(s3ModeBB==_DisableBB)?1:2,getClr(100,0,true,clSMA6));  SetIndexLabel(62,"MidBB " +getPer(100,0,0,false)+"");   //ACUAN 3
-   SetIndexBuffer(61,SMA05); SetIndexStyle(61,0,0,(s2ModeBB==_DisableBB)?1:2,getClr(99,0,true,clSMA5));   SetIndexLabel(61,"MidBB " +getPer(99,0,0,false)+"");   //ACUAN 2
-   SetIndexBuffer(60,SMA04); SetIndexStyle(60,0,0,(s1ModeBB==_DisableBB)?1:2,getClr(98,0,true,clSMA4));   SetIndexLabel(60,"MidBB " +getPer(98,0,0,false)+"");   //ACUAN 1
-   SetIndexBuffer(59,SMA03); SetIndexStyle(59,0,0,(s0ModeBB==_DisableBB)?1:2,getClr(97,0,true,clSMA3));   SetIndexLabel(59,"MidBB " +getPer(97,0,0,false)+"");   //ACTIVE
-   SetIndexBuffer(58,SMA02); SetIndexStyle(58,0,0,1,getClr(96,0,true,clSMA2));   SetIndexLabel(58,"MidBB " +getPer(96,0,0,false)+"");   //TF KONFIRMASI 2
-   SetIndexBuffer(57,SMA01); SetIndexStyle(57,0,0,1,getClr(95,0,true,clSMA1));   SetIndexLabel(57,"MidBB " +getPer(95,0,0,false)+"");   //TF KONFIRMASI 1
-   SetIndexBuffer(56,SMA00); SetIndexStyle(56,0,0,1,getClr(94,0,true,clSMA0));   SetIndexLabel(56,"MidBB " +getPer(94,0,0,false)+"");   //TF ENTRY
+   SetIndexBuffer(61,SMA10); SetIndexStyle(61,0,0,1,getClr(104,0,true,clSMA10)); SetIndexLabel(61,"MidBB " +getPer(104,0,0,false)+"");   //ACUAN 7
+   SetIndexBuffer(60,SMA09); SetIndexStyle(60,0,0,1,getClr(103,0,true,clSMA9));  SetIndexLabel(60,"MidBB " +getPer(103,0,0,false)+"");   //ACUAN 6
+   SetIndexBuffer(59,SMA08); SetIndexStyle(59,0,0,(s5ModeBB==_DisableBB)?1:2,getClr(102,0,true,clSMA8));  SetIndexLabel(59,"MidBB " +getPer(102,0,0,false)+"");   //ACUAN 5
+   SetIndexBuffer(58,SMA07); SetIndexStyle(58,0,0,(s4ModeBB==_DisableBB)?1:2,getClr(101,0,true,clSMA7));  SetIndexLabel(58,"MidBB " +getPer(101,0,0,false)+"");   //ACUAN 4
+   SetIndexBuffer(57,SMA06); SetIndexStyle(57,0,0,(s3ModeBB==_DisableBB)?1:2,getClr(100,0,true,clSMA6));  SetIndexLabel(57,"MidBB " +getPer(100,0,0,false)+"");   //ACUAN 3
+   SetIndexBuffer(56,SMA05); SetIndexStyle(56,0,0,(s2ModeBB==_DisableBB)?1:2,getClr(99,0,true,clSMA5));   SetIndexLabel(56,"MidBB " +getPer(99,0,0,false)+"");   //ACUAN 2
+   SetIndexBuffer(55,SMA04); SetIndexStyle(55,0,0,(s1ModeBB==_DisableBB)?1:2,getClr(98,0,true,clSMA4));   SetIndexLabel(55,"MidBB " +getPer(98,0,0,false)+"");   //ACUAN 1
+   SetIndexBuffer(54,SMA03); SetIndexStyle(54,0,0,(s0ModeBB==_DisableBB)?1:2,getClr(97,0,true,clSMA3));   SetIndexLabel(54,"MidBB " +getPer(97,0,0,false)+"");   //ACTIVE
+   SetIndexBuffer(53,SMA02); SetIndexStyle(53,0,0,1,getClr(96,0,true,clSMA2));   SetIndexLabel(53,"MidBB " +getPer(96,0,0,false)+"");   //TF KONFIRMASI 2
+   SetIndexBuffer(52,SMA01); SetIndexStyle(52,0,0,1,getClr(95,0,true,clSMA1));   SetIndexLabel(52,"MidBB " +getPer(95,0,0,false)+"");   //TF KONFIRMASI 1
 
    //LWMA HIGH LOW
-   SetIndexBuffer(55,LLWMASH02); SetIndexStyle(55,0,0,2,getClr(102,0,true,clLWSMA30)); SetIndexLabel(55,getPer(98,0,0,false));
-   SetIndexBuffer(54,HLWMASH02); SetIndexStyle(54,0,0,2,getClr(102,0,true,clLWSMA30)); SetIndexLabel(54,getPer(98,0,0,false));
-   SetIndexBuffer(53,LLWMASH01); SetIndexStyle(53,0,0,2,getClr(101,0,true,clLWSMA30)); SetIndexLabel(53,getPer(97,0,0,false));  
-   SetIndexBuffer(52,HLWMASH01); SetIndexStyle(52,0,0,2,getClr(101,0,true,clLWSMA30)); SetIndexLabel(52,getPer(97,0,0,false));
-  
-   SetIndexBuffer(51,LLWMA02); SetIndexStyle(51,0,0,1,getClr(96,0,true,clLWSMA2)); SetIndexLabel(51,getPer(96,0,0,false));
-   SetIndexBuffer(50,HLWMA02); SetIndexStyle(50,0,0,1,getClr(96,0,true,clLWSMA2)); SetIndexLabel(50,getPer(96,0,0,false));
-   SetIndexBuffer(49,LLWMA01); SetIndexStyle(49,0,0,1,getClr(95,0,true,clLWSMA1)); SetIndexLabel(49,getPer(95,0,0,false));
-   SetIndexBuffer(48,HLWMA01); SetIndexStyle(48,0,0,1,getClr(95,0,true,clLWSMA1)); SetIndexLabel(48,getPer(95,0,0,false));
+   SetIndexBuffer(51,LLWMA02); SetIndexStyle(51,0,0,2,getClr(96,0,true,clLow)); SetIndexLabel(51,getPer(96,0,0,false));
+   SetIndexBuffer(50,HLWMA02); SetIndexStyle(50,0,0,2,getClr(96,0,true,clHigh)); SetIndexLabel(50,getPer(96,0,0,false));
+   SetIndexBuffer(49,LLWMA01); SetIndexStyle(49,0,0,2,getClr(95,0,true,clLow)); SetIndexLabel(49,getPer(95,0,0,false));
+   SetIndexBuffer(48,HLWMA01); SetIndexStyle(48,0,0,2,getClr(95,0,true,clHigh)); SetIndexLabel(48,getPer(95,0,0,false));
    
    //BB TF ACTIVE
    SetIndexBuffer(47,SDP03); SetIndexStyle(47,BB1_enable?0:12,0,2,getClr(97,0,true,clSDP3)); SetIndexLabel(47,"BB20UPR_SD 1_" +getPer(97,0,0,false)+"");
@@ -353,8 +337,8 @@ if(WindowExpertName()!="!BBMA MATrick N.G 2022 v1"){
    SetIndexBuffer(29,SDP052); SetIndexStyle(29,bBB2_enable?0:12,linemode2,1,getClr(99,0,true,clSDP5)); SetIndexLabel(29,"BB20UPR_SD 2_" +getPer(99,0,0,false)+"");
    SetIndexBuffer(28,SDM052); SetIndexStyle(28,bBB2_enable?0:12,linemode2,1,getClr(99,0,true,clSDM5)); SetIndexLabel(28,"BB20LWR_SD 2_" +getPer(99,0,0,false)+"");
  
-   SetIndexBuffer(27,sSDP05); SetIndexStyle(27,bBBF_enable?0:12,linemode1,1,getClr(99,0,true,clSDP5)); SetIndexLabel(27,"BB20UPR_SD 1_" +getPer(99,0,0,false)+"");
-   SetIndexBuffer(26,sSDM05); SetIndexStyle(26,bBBF_enable?0:12,linemode1,1,getClr(99,0,true,clSDM5)); SetIndexLabel(26,"BB20LWR_SD 1_" +getPer(99,0,0,false)+"");
+   SetIndexBuffer(27,sSDP05);  SetIndexStyle(27,bBBF_enable?0:12,linemode1,1,getClr(99,0,true,clSDP5)); SetIndexLabel(27,"BB20UPR_SD 1_" +getPer(99,0,0,false)+"");
+   SetIndexBuffer(26,sSDM05);  SetIndexStyle(26,bBBF_enable?0:12,linemode1,1,getClr(99,0,true,clSDM5)); SetIndexLabel(26,"BB20LWR_SD 1_" +getPer(99,0,0,false)+"");
    SetIndexBuffer(25,sSDP052); SetIndexStyle(25,bBBF_enable?0:12,linemode2,1,getClr(99,0,true,clSDP5)); SetIndexLabel(25,"BB20UPR_SD 2_" +getPer(99,0,0,false)+"");
    SetIndexBuffer(24,sSDM052); SetIndexStyle(24,bBBF_enable?0:12,linemode2,1,getClr(99,0,true,clSDM5)); SetIndexLabel(24,"BB20LWR_SD 2_" +getPer(99,0,0,false)+"");
      
@@ -376,8 +360,8 @@ if(WindowExpertName()!="!BBMA MATrick N.G 2022 v1"){
    
    SetIndexBuffer(11,sSDP07); SetIndexStyle(11,b3BBF_enable?0:12,linemode1,1,getClr(101,0,true,clSDP7)); SetIndexLabel(11,"BB20UPR_SD 1_" +getPer(101,0,0,false)+"");
    SetIndexBuffer(10,sSDM07); SetIndexStyle(10,b3BBF_enable?0:12,linemode1,1,getClr(101,0,true,clSDM7)); SetIndexLabel(10,"BB20LWR_SD 1_" +getPer(101,0,0,false)+"");
-   SetIndexBuffer(9,sSDP072);SetIndexStyle(9,b3BBF_enable?0:12,linemode2,1,getClr(101,0,true,clSDP7)); SetIndexLabel(9,"BB20UPR_SD 2_" +getPer(101,0,0,false)+"");
-   SetIndexBuffer(8,sSDM072);SetIndexStyle(8,b3BBF_enable?0:12,linemode2,1,getClr(101,0,true,clSDM7)); SetIndexLabel(8,"BB20LWR_SD 2_" +getPer(101,0,0,false)+"");
+   SetIndexBuffer(9,sSDP072); SetIndexStyle(9,b3BBF_enable?0:12,linemode2,1,getClr(101,0,true,clSDP7)); SetIndexLabel(9,"BB20UPR_SD 2_" +getPer(101,0,0,false)+"");
+   SetIndexBuffer(8,sSDM072); SetIndexStyle(8,b3BBF_enable?0:12,linemode2,1,getClr(101,0,true,clSDM7)); SetIndexLabel(8,"BB20LWR_SD 2_" +getPer(101,0,0,false)+"");
    
    SetIndexBuffer(7,SDP08); SetIndexStyle(7,b4BB1_enable?0:12,linemode1,1,getClr(102,0,true,clSDP8)); SetIndexLabel(7,"BB20UPR_SD 1_" +getPer(102,0,0,false)+"");
    SetIndexBuffer(6,SDM08); SetIndexStyle(6,b4BB1_enable?0:12,linemode1,1,getClr(102,0,true,clSDP8)); SetIndexLabel(6,"BB20LWR_SD 1_" +getPer(102,0,0,false)+"");
@@ -429,11 +413,7 @@ int OnCalculate(const int rates_total,const int prev_calculated,const datetime &
    if(!iOn) return(0);
       
    showmathead?cLabel(0,"Header1",600,10,CORNER_RIGHT_UPPER,"PATIENCE | DICIPLINE | CONFIDENCE | FOCUS | GRATEFUL","Lucida Console",10,clrDarkGray,0):EMPTY_VALUE;
-   
-   showmathead?cLabel(0,"Header2",5,50,CORNER_RIGHT_LOWER,"London  Open  07.00 - 10.00","Lucida Console",8,clrDarkGray,0):EMPTY_VALUE;
-   showmathead?cLabel(0,"Header3",5,70,CORNER_RIGHT_LOWER,"NewYork Open  12.00 - 15.00","Lucida Console",8,clrDarkGray,0):EMPTY_VALUE;
-   showmathead?cLabel(0,"Header4",5,90,CORNER_RIGHT_LOWER,"London  Close 15.00 - 17.00","Lucida Console",8,clrDarkGray,0):EMPTY_VALUE;
-   
+
       
    for(int j=0; j<9; j++)
       SetIndexDrawBegin(j,DrawBegin(Bars,j<=2?iP3:j>=3&&j<=5?iP2:iP1));
@@ -441,101 +421,108 @@ int OnCalculate(const int rates_total,const int prev_calculated,const datetime &
    for(int i=0; i<MathMin(Bars-IndicatorCounted(),Bars-1); i++){
      
       //SMA/MIDBB
-      SMA00[i] = (bbmaoa==true)?EMPTY_VALUE:Entry0?iMA(_Symbol,_Period,iP0,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
-      SMA01[i] = (bbmaoa==true)?EMPTY_VALUE:Entry1?iMA(_Symbol,_Period,iP1,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
-      SMA02[i] = (bbmaoa==true)?EMPTY_VALUE:Entry2?iMA(_Symbol,_Period,iP2,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
+      SMA01[i] = lwma510?EMPTY_VALUE:Entry1?iMA(_Symbol,_Period,iP1,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
+      SMA02[i] = lwma510?EMPTY_VALUE:Entry2?iMA(_Symbol,_Period,iP2,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
       
-      SMA03[i]  = tfactive?iMA(_Symbol,_Period,(bbmaoa==true)?iP4:iP3,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
-      SDP03[i]  = (bbmaoa==true)?SMA03[i]+getSMA(iP4,i,vDev1):BB1_enable?SMA03[i]+getSMA(iP3,i,vDev1):EMPTY_VALUE;
-      SDM03[i]  = (bbmaoa==true)?SMA03[i]-getSMA(iP4,i,vDev1):BB1_enable?SMA03[i]-getSMA(iP3,i,vDev1):EMPTY_VALUE;
-      SDP032[i] = (bbmaoa==true)?SMA03[i]+getSMA(iP4,i,vDev2):BB2_enable?SMA03[i]+getSMA(iP3,i,vDev2):EMPTY_VALUE;
-      SDM032[i] = (bbmaoa==true)?SMA03[i]-getSMA(iP4,i,vDev2):BB2_enable?SMA03[i]-getSMA(iP3,i,vDev2):EMPTY_VALUE;
+      SMA03[i]  = tfactive?iMA(_Symbol,_Period,iP3,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
+      SDP03[i]  = BB1_enable?SMA03[i]+getSMA(iP3,i,vDev1):EMPTY_VALUE;
+      SDM03[i]  = BB1_enable?SMA03[i]-getSMA(iP3,i,vDev1):EMPTY_VALUE;
+      SDP032[i] = BB2_enable?SMA03[i]+getSMA(iP3,i,vDev2):EMPTY_VALUE;
+      SDM032[i] = BB2_enable?SMA03[i]-getSMA(iP3,i,vDev2):EMPTY_VALUE;
       
-      sSDP03[i]  = (bbmaoa==true)?SMA03[i]+getSMA(iP4,i,vDev1):BBF_enable?SMA03[i]+getSMA(iP3,i,vDev1):EMPTY_VALUE;
-      sSDM03[i]  = (bbmaoa==true)?SMA03[i]-getSMA(iP4,i,vDev1):BBF_enable?SMA03[i]-getSMA(iP3,i,vDev1):EMPTY_VALUE;
-      sSDP032[i] = (bbmaoa==true)?SMA03[i]+getSMA(iP4,i,vDev2):BBF_enable?SMA03[i]+getSMA(iP3,i,vDev2):EMPTY_VALUE;
-      sSDM032[i] = (bbmaoa==true)?SMA03[i]-getSMA(iP4,i,vDev2):BBF_enable?SMA03[i]-getSMA(iP3,i,vDev2):EMPTY_VALUE;
+      sSDP03[i]  = BBF_enable?SMA03[i]+getSMA(iP3,i,vDev1):EMPTY_VALUE;
+      sSDM03[i]  = BBF_enable?SMA03[i]-getSMA(iP3,i,vDev1):EMPTY_VALUE;
+      sSDP032[i] = BBF_enable?SMA03[i]+getSMA(iP3,i,vDev2):EMPTY_VALUE;
+      sSDM032[i] = BBF_enable?SMA03[i]-getSMA(iP3,i,vDev2):EMPTY_VALUE;
       
-      SMA04[i]  = acuan01?iMA(_Symbol,_Period,(bbmaoa==true)?iP5:iP4,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
-      SDP04[i]  = (bbmaoa==true)?EMPTY_VALUE:XBB1_enable?SMA04[i]+getSMA(iP4,i,vDev1):EMPTY_VALUE;
-      SDM04[i]  = (bbmaoa==true)?EMPTY_VALUE:XBB1_enable?SMA04[i]-getSMA(iP4,i,vDev1):EMPTY_VALUE;
-      SDP042[i] = (bbmaoa==true)?EMPTY_VALUE:XBB2_enable?SMA04[i]+getSMA(iP4,i,vDev2):EMPTY_VALUE;
-      SDM042[i] = (bbmaoa==true)?EMPTY_VALUE:XBB2_enable?SMA04[i]-getSMA(iP4,i,vDev2):EMPTY_VALUE;
+      SMA04[i]  = acuan01?iMA(_Symbol,_Period,iP4,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
+      SDP04[i]  = XBB1_enable?SMA04[i]+getSMA(iP4,i,vDev1):EMPTY_VALUE;
+      SDM04[i]  = XBB1_enable?SMA04[i]-getSMA(iP4,i,vDev1):EMPTY_VALUE;
+      SDP042[i] = XBB2_enable?SMA04[i]+getSMA(iP4,i,vDev2):EMPTY_VALUE;
+      SDM042[i] = XBB2_enable?SMA04[i]-getSMA(iP4,i,vDev2):EMPTY_VALUE;
       
-      sSDP04[i]  = (bbmaoa==true)?EMPTY_VALUE:XBBF_enable?SMA04[i]+getSMA(iP4,i,vDev1):EMPTY_VALUE;
-      sSDM04[i]  = (bbmaoa==true)?EMPTY_VALUE:XBBF_enable?SMA04[i]-getSMA(iP4,i,vDev1):EMPTY_VALUE;
-      sSDP042[i] = (bbmaoa==true)?EMPTY_VALUE:XBBF_enable?SMA04[i]+getSMA(iP4,i,vDev2):EMPTY_VALUE;
-      sSDM042[i] = (bbmaoa==true)?EMPTY_VALUE:XBBF_enable?SMA04[i]-getSMA(iP4,i,vDev2):EMPTY_VALUE; 
+      sSDP04[i]  = XBBF_enable?SMA04[i]+getSMA(iP4,i,vDev1):EMPTY_VALUE;
+      sSDM04[i]  = XBBF_enable?SMA04[i]-getSMA(iP4,i,vDev1):EMPTY_VALUE;
+      sSDP042[i] = XBBF_enable?SMA04[i]+getSMA(iP4,i,vDev2):EMPTY_VALUE;
+      sSDM042[i] = XBBF_enable?SMA04[i]-getSMA(iP4,i,vDev2):EMPTY_VALUE; 
          
-      SMA05[i]  = acuan02?iMA(_Symbol,_Period,(bbmaoa==true)?iP6:iP5,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
-      SDP05[i]  = (bbmaoa==true)?EMPTY_VALUE:bBB1_enable?SMA05[i]+getSMA(iP5,i,vDev1):EMPTY_VALUE;
-      SDM05[i]  = (bbmaoa==true)?EMPTY_VALUE:bBB1_enable?SMA05[i]-getSMA(iP5,i,vDev1):EMPTY_VALUE;
-      SDP052[i] = (bbmaoa==true)?EMPTY_VALUE:bBB2_enable?SMA05[i]+getSMA(iP5,i,vDev2):EMPTY_VALUE;
-      SDM052[i] = (bbmaoa==true)?EMPTY_VALUE:bBB2_enable?SMA05[i]-getSMA(iP5,i,vDev2):EMPTY_VALUE;
+      SMA05[i]  = acuan02?iMA(_Symbol,_Period,iP5,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
+      SDP05[i]  = bBB1_enable?SMA05[i]+getSMA(iP5,i,vDev1):EMPTY_VALUE;
+      SDM05[i]  = bBB1_enable?SMA05[i]-getSMA(iP5,i,vDev1):EMPTY_VALUE;
+      SDP052[i] = bBB2_enable?SMA05[i]+getSMA(iP5,i,vDev2):EMPTY_VALUE;
+      SDM052[i] = bBB2_enable?SMA05[i]-getSMA(iP5,i,vDev2):EMPTY_VALUE;
       
-      sSDP05[i]  = (bbmaoa==true)?EMPTY_VALUE:bBBF_enable?SMA05[i]+getSMA(iP5,i,vDev1):EMPTY_VALUE;
-      sSDM05[i]  = (bbmaoa==true)?EMPTY_VALUE:bBBF_enable?SMA05[i]-getSMA(iP5,i,vDev1):EMPTY_VALUE;
-      sSDP052[i] = (bbmaoa==true)?EMPTY_VALUE:bBBF_enable?SMA05[i]+getSMA(iP5,i,vDev2):EMPTY_VALUE;
-      sSDM052[i] = (bbmaoa==true)?EMPTY_VALUE:bBBF_enable?SMA05[i]-getSMA(iP5,i,vDev2):EMPTY_VALUE;
+      sSDP05[i]  = bBBF_enable?SMA05[i]+getSMA(iP5,i,vDev1):EMPTY_VALUE;
+      sSDM05[i]  = bBBF_enable?SMA05[i]-getSMA(iP5,i,vDev1):EMPTY_VALUE;
+      sSDP052[i] = bBBF_enable?SMA05[i]+getSMA(iP5,i,vDev2):EMPTY_VALUE;
+      sSDM052[i] = bBBF_enable?SMA05[i]-getSMA(iP5,i,vDev2):EMPTY_VALUE;
            
-      SMA06[i]  = (bbmaoa==true)?EMPTY_VALUE:acuan03?iMA(_Symbol,_Period,iP6,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
-      SDP06[i]  = (bbmaoa==true)?EMPTY_VALUE:b2BB1_enable?SMA06[i]+getSMA(iP6,i,vDev1):EMPTY_VALUE;
-      SDM06[i]  = (bbmaoa==true)?EMPTY_VALUE:b2BB1_enable?SMA06[i]-getSMA(iP6,i,vDev1):EMPTY_VALUE;
-      SDP062[i] = (bbmaoa==true)?EMPTY_VALUE:b2BB2_enable?SMA06[i]+getSMA(iP6,i,vDev2):EMPTY_VALUE;
-      SDM062[i] = (bbmaoa==true)?EMPTY_VALUE:b2BB2_enable?SMA06[i]-getSMA(iP6,i,vDev2):EMPTY_VALUE;
+      SMA06[i]  = acuan03?iMA(_Symbol,_Period,iP6,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
+      SDP06[i]  = b2BB1_enable?SMA06[i]+getSMA(iP6,i,vDev1):EMPTY_VALUE;
+      SDM06[i]  = b2BB1_enable?SMA06[i]-getSMA(iP6,i,vDev1):EMPTY_VALUE;
+      SDP062[i] = b2BB2_enable?SMA06[i]+getSMA(iP6,i,vDev2):EMPTY_VALUE;
+      SDM062[i] = b2BB2_enable?SMA06[i]-getSMA(iP6,i,vDev2):EMPTY_VALUE;
       
-      sSDP06[i]  = (bbmaoa==true)?EMPTY_VALUE:b2BBF_enable?SMA06[i]+getSMA(iP6,i,vDev1):EMPTY_VALUE;
-      sSDM06[i]  = (bbmaoa==true)?EMPTY_VALUE:b2BBF_enable?SMA06[i]-getSMA(iP6,i,vDev1):EMPTY_VALUE;
-      sSDP062[i] = (bbmaoa==true)?EMPTY_VALUE:b2BBF_enable?SMA06[i]+getSMA(iP6,i,vDev2):EMPTY_VALUE;
-      sSDM062[i] = (bbmaoa==true)?EMPTY_VALUE:b2BBF_enable?SMA06[i]-getSMA(iP6,i,vDev2):EMPTY_VALUE;
+      sSDP06[i]  = b2BBF_enable?SMA06[i]+getSMA(iP6,i,vDev1):EMPTY_VALUE;
+      sSDM06[i]  = b2BBF_enable?SMA06[i]-getSMA(iP6,i,vDev1):EMPTY_VALUE;
+      sSDP062[i] = b2BBF_enable?SMA06[i]+getSMA(iP6,i,vDev2):EMPTY_VALUE;
+      sSDM062[i] = b2BBF_enable?SMA06[i]-getSMA(iP6,i,vDev2):EMPTY_VALUE;
       
-      SMA07[i]  = (bbmaoa==true)?EMPTY_VALUE:acuan04?iMA(_Symbol,_Period,iP7,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
-      SDP07[i]  = (bbmaoa==true)?EMPTY_VALUE:b3BB1_enable?SMA07[i]+getSMA(iP7,i,vDev1):EMPTY_VALUE;
-      SDM07[i]  = (bbmaoa==true)?EMPTY_VALUE:b3BB1_enable?SMA07[i]-getSMA(iP7,i,vDev1):EMPTY_VALUE;
-      SDP072[i] = (bbmaoa==true)?EMPTY_VALUE:b3BB2_enable?SMA07[i]+getSMA(iP7,i,vDev2):EMPTY_VALUE;
-      SDM072[i] = (bbmaoa==true)?EMPTY_VALUE:b3BB2_enable?SMA07[i]-getSMA(iP7,i,vDev2):EMPTY_VALUE;
+      SMA07[i]  = acuan04?iMA(_Symbol,_Period,iP7,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
+      SDP07[i]  = b3BB1_enable?SMA07[i]+getSMA(iP7,i,vDev1):EMPTY_VALUE;
+      SDM07[i]  = b3BB1_enable?SMA07[i]-getSMA(iP7,i,vDev1):EMPTY_VALUE;
+      SDP072[i] = b3BB2_enable?SMA07[i]+getSMA(iP7,i,vDev2):EMPTY_VALUE;
+      SDM072[i] = b3BB2_enable?SMA07[i]-getSMA(iP7,i,vDev2):EMPTY_VALUE;
       
-      sSDP07[i]  = (bbmaoa==true)?EMPTY_VALUE:b3BBF_enable?SMA07[i]+getSMA(iP7,i,vDev1):EMPTY_VALUE;
-      sSDM07[i]  = (bbmaoa==true)?EMPTY_VALUE:b3BBF_enable?SMA07[i]-getSMA(iP7,i,vDev1):EMPTY_VALUE;
-      sSDP072[i] = (bbmaoa==true)?EMPTY_VALUE:b3BBF_enable?SMA07[i]+getSMA(iP7,i,vDev2):EMPTY_VALUE;
-      sSDM072[i] = (bbmaoa==true)?EMPTY_VALUE:b3BBF_enable?SMA07[i]-getSMA(iP7,i,vDev2):EMPTY_VALUE;
+      sSDP07[i]  = b3BBF_enable?SMA07[i]+getSMA(iP7,i,vDev1):EMPTY_VALUE;
+      sSDM07[i]  = b3BBF_enable?SMA07[i]-getSMA(iP7,i,vDev1):EMPTY_VALUE;
+      sSDP072[i] = b3BBF_enable?SMA07[i]+getSMA(iP7,i,vDev2):EMPTY_VALUE;
+      sSDM072[i] = b3BBF_enable?SMA07[i]-getSMA(iP7,i,vDev2):EMPTY_VALUE;
       
-      SMA08[i]  = (bbmaoa==true)?EMPTY_VALUE:acuan05?iMA(_Symbol,_Period,iP8,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
-      SDP08[i]  = (bbmaoa==true)?EMPTY_VALUE:b4BB1_enable?SMA08[i]+getSMA(iP8,i,vDev1):EMPTY_VALUE;
-      SDM08[i]  = (bbmaoa==true)?EMPTY_VALUE:b4BB1_enable?SMA08[i]-getSMA(iP8,i,vDev1):EMPTY_VALUE;
-      SDP082[i] = (bbmaoa==true)?EMPTY_VALUE:b4BB2_enable?SMA08[i]+getSMA(iP8,i,vDev2):EMPTY_VALUE;
-      SDM082[i] = (bbmaoa==true)?EMPTY_VALUE:b4BB2_enable?SMA08[i]-getSMA(iP8,i,vDev2):EMPTY_VALUE;
+      SMA08[i]  = acuan05?iMA(_Symbol,_Period,iP8,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
+      SDP08[i]  = b4BB1_enable?SMA08[i]+getSMA(iP8,i,vDev1):EMPTY_VALUE;
+      SDM08[i]  = b4BB1_enable?SMA08[i]-getSMA(iP8,i,vDev1):EMPTY_VALUE;
+      SDP082[i] = b4BB2_enable?SMA08[i]+getSMA(iP8,i,vDev2):EMPTY_VALUE;
+      SDM082[i] = b4BB2_enable?SMA08[i]-getSMA(iP8,i,vDev2):EMPTY_VALUE;
       
-      sSDP08[i]  = (bbmaoa==true)?EMPTY_VALUE:b4BBF_enable?SMA08[i]+getSMA(iP8,i,vDev1):EMPTY_VALUE;
-      sSDM08[i]  = (bbmaoa==true)?EMPTY_VALUE:b4BBF_enable?SMA08[i]-getSMA(iP8,i,vDev1):EMPTY_VALUE;
-      sSDP082[i] = (bbmaoa==true)?EMPTY_VALUE:b4BBF_enable?SMA08[i]+getSMA(iP8,i,vDev2):EMPTY_VALUE;
-      sSDM082[i] = (bbmaoa==true)?EMPTY_VALUE:b4BBF_enable?SMA08[i]-getSMA(iP8,i,vDev2):EMPTY_VALUE;
+      sSDP08[i]  = b4BBF_enable?SMA08[i]+getSMA(iP8,i,vDev1):EMPTY_VALUE;
+      sSDM08[i]  = b4BBF_enable?SMA08[i]-getSMA(iP8,i,vDev1):EMPTY_VALUE;
+      sSDP082[i] = b4BBF_enable?SMA08[i]+getSMA(iP8,i,vDev2):EMPTY_VALUE;
+      sSDM082[i] = b4BBF_enable?SMA08[i]-getSMA(iP8,i,vDev2):EMPTY_VALUE;
          
-      SMA09[i]  = (bbmaoa==true)?EMPTY_VALUE:acuan06?iMA(_Symbol,_Period,iP9,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
-      SMA10[i]  = (bbmaoa==true)?EMPTY_VALUE:acuan07?iMA(_Symbol,_Period,iP10,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
+      SMA09[i]  = acuan06?iMA(_Symbol,_Period,iP9,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
+      SMA10[i]  = acuan07?iMA(_Symbol,_Period,iP10,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
       
-      //EMA01[i] = bbmaoa?iMA(_Symbol,_Period,80,0,MODE_SMA,PRICE_CLOSE,i):EMPTY_VALUE;
       
       //MATREND
-      SMAT00[i] = (offmat==true)?EMPTY_VALUE:(bbmaoa==true)?EMPTY_VALUE:Entry0?  (3*iMA(_Symbol,_Period,tP0,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP0,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE;   
-      SMAT01[i] = (offmat==true)?EMPTY_VALUE:(bbmaoa==true)?EMPTY_VALUE:Entry1?  (3*iMA(_Symbol,_Period,tP1,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP1,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
-      SMAT02[i] = (offmat==true)?EMPTY_VALUE:(bbmaoa==true)?EMPTY_VALUE:Entry2?  (3*iMA(_Symbol,_Period,tP2,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP2,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
-      SMAT03[i] = (offmat==true)?EMPTY_VALUE:tfactive?(3*iMA(_Symbol,_Period,(bbmaoa==true)?tP4:tP3,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,(bbmaoa==true)?tP4:tP3,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
-      SMAT04[i] = (offmat==true)?EMPTY_VALUE:acuan01? (3*iMA(_Symbol,_Period,(bbmaoa==true)?tP5:tP4,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,(bbmaoa==true)?tP5:tP4,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
-      SMAT05[i] = (offmat==true)?EMPTY_VALUE:acuan02? (3*iMA(_Symbol,_Period,(bbmaoa==true)?tP6:tP5,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,(bbmaoa==true)?tP6:tP5,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
-      SMAT06[i] = (offmat==true)?EMPTY_VALUE:(bbmaoa==true)?EMPTY_VALUE:acuan03? (3*iMA(_Symbol,_Period,tP6,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP6,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
-      SMAT07[i] = (offmat==true)?EMPTY_VALUE:(bbmaoa==true)?EMPTY_VALUE:acuan04? (3*iMA(_Symbol,_Period,tP7,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP7,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
-      SMAT08[i] = (offmat==true)?EMPTY_VALUE:(bbmaoa==true)?EMPTY_VALUE:acuan05? (3*iMA(_Symbol,_Period,tP8,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP8,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
-      SMAT09[i] = (offmat==true)?EMPTY_VALUE:(bbmaoa==true)?EMPTY_VALUE:acuan06? (3*iMA(_Symbol,_Period,tP9,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP9,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
-      SMAT10[i] = (offmat==true)?EMPTY_VALUE:(bbmaoa==true)?EMPTY_VALUE:acuan07? (3*iMA(_Symbol,_Period,tP10,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP10,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE;
+      SMAT01[i] = (offmat==true)?EMPTY_VALUE:lwma510?EMPTY_VALUE:Entry1?  (3*iMA(_Symbol,_Period,tP1,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP1,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
+      SMAT02[i] = (offmat==true)?EMPTY_VALUE:lwma510?EMPTY_VALUE:Entry2?  (3*iMA(_Symbol,_Period,tP2,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP2,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
+      SMAT03[i] = (offmat==true)?EMPTY_VALUE:tfactive?(3*iMA(_Symbol,_Period,tP3,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP3,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
+      SMAT04[i] = (offmat==true)?EMPTY_VALUE:acuan01? (3*iMA(_Symbol,_Period,tP4,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP4,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
+      SMAT05[i] = (offmat==true)?EMPTY_VALUE:acuan02? (3*iMA(_Symbol,_Period,tP5,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP5,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
+      SMAT06[i] = (offmat==true)?EMPTY_VALUE:acuan03? (3*iMA(_Symbol,_Period,tP6,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP6,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
+      SMAT07[i] = (offmat==true)?EMPTY_VALUE:acuan04? (3*iMA(_Symbol,_Period,tP7,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP7,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
+      SMAT08[i] = (offmat==true)?EMPTY_VALUE:acuan05? (3*iMA(_Symbol,_Period,tP8,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP8,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
+      SMAT09[i] = (offmat==true)?EMPTY_VALUE:acuan06? (3*iMA(_Symbol,_Period,tP9,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP9,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
+      SMAT10[i] = (offmat==true)?EMPTY_VALUE:acuan07? (3*iMA(_Symbol,_Period,tP10,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP10,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE;
       
       //LWMA HILO
-      HLWMA01[i] = lwma5?iMA(_Symbol,_Period,lP1,0,MODE_LWMA,PRICE_HIGH,i):bbmaoa?iMA(_Symbol,_Period,10,0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
-      LLWMA01[i] = lwma5?iMA(_Symbol,_Period,lP1,0,MODE_LWMA,PRICE_LOW,i):bbmaoa?iMA(_Symbol,_Period,10,0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
-      HLWMA02[i] = lwma10?iMA(_Symbol,_Period,lP2,0,MODE_LWMA,PRICE_HIGH,i):bbmaoa?iMA(_Symbol,_Period,20,0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
-      LLWMA02[i] = lwma10?iMA(_Symbol,_Period,lP2,0,MODE_LWMA,PRICE_LOW,i):bbmaoa?iMA(_Symbol,_Period,20,0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
+      HLWMA01[i] = lwma510?iMA(_Symbol,_Period,iP1,0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
+      LLWMA01[i] = lwma510?iMA(_Symbol,_Period,iP1,0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
+      HLWMA02[i] = lwma510?iMA(_Symbol,_Period,iP2,0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
+      LLWMA02[i] = lwma510?iMA(_Symbol,_Period,iP2,0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
       
-  
+      ShadowHigh01[i] = lwma510?iMA(_Symbol,_Period,iP1 + 1,0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
+      ShadowHigh02[i] = lwma510?iMA(_Symbol,_Period,iP1 + 2,0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
+      ShadowHigh03[i] = lwma510?iMA(_Symbol,_Period,iP1 + 3,0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
+      ShadowHigh04[i] = lwma510?iMA(_Symbol,_Period,iP1 + 4,0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
+      
+      ShadowLow01[i] = lwma510?iMA(_Symbol,_Period,iP1 + 1,0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
+      ShadowLow02[i] = lwma510?iMA(_Symbol,_Period,iP1 + 2,0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
+      ShadowLow03[i] = lwma510?iMA(_Symbol,_Period,iP1 + 3,0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
+      ShadowLow04[i] = lwma510?iMA(_Symbol,_Period,iP1 + 4,0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
+
+
     }
 
     
@@ -609,19 +596,8 @@ string getPer(int enumPer,int manPer,int modeRes=0,bool mClr=true){
            
            
            
-      case 94: switch(_Period){
-                  case  PERIOD_M1 : strPer= "";    intPer=          NULL;   clrPer=mClr?C'000,255,000':C'000,155,000';  break;/*TF Entry 1 / PERIOD 20*/
-                  case  PERIOD_M5 : strPer= "";    intPer=          NULL;   clrPer=mClr?C'255,255,255':C'155,155,155';  break;  
-                  case  PERIOD_M15: strPer= "M1";  intPer=        0.9*mn;   clrPer=mClr?C'255,255,255':C'155,155,155';  break;
-                  case  PERIOD_M30: strPer= "M2";  intPer=        1.8*mn;   clrPer=mClr?C'173,255,047':C'073,155,000';  break;
-                  case  PERIOD_H1 : strPer= "M5";  intPer=       3.75*mn;   clrPer=mClr?C'238,130,238':C'221,160,221';  break;
-                  case  PERIOD_H4 : strPer= "M30"; intPer=         30*mn;   clrPer=mClr?C'255,255,000':C'190,190,000';  break;
-                  case  PERIOD_D1 : strPer= "H4";  intPer=          4*hr;   clrPer=mClr?C'000,255,000':C'000,070,000';  break;
-                  case  PERIOD_W1 : strPer= "H12"; intPer=         12*hr;   clrPer=mClr?C'255,140,000':C'255,140,000';  break;
-                  case  PERIOD_MN1: strPer= "D3";  intPer=        2.5*dy;   clrPer=mClr?C'255,020,147':C'255,020,147';  break;
-               } break;
       case 95: switch(_Period){
-                  case  PERIOD_M1 : strPer= "S15"; intPer=          NULL;   clrPer=mClr?C'000,255,000':C'000,155,000';  break;/*TF Entry 1 / PERIOD 20*/
+                  case  PERIOD_M1 : strPer= "S15"; intPer=      0.225*mn;   clrPer=mClr?C'000,255,000':C'000,155,000';  break;/*TF Entry 1 / PERIOD 20*/
                   case  PERIOD_M5 : strPer= "M1";  intPer=        0.9*mn;   clrPer=mClr?C'255,255,255':C'155,155,155';  break; 
                   case  PERIOD_M15: strPer= "M5";  intPer=       3.75*mn;   clrPer=mClr?C'238,130,238':C'221,160,221';  break;
                   case  PERIOD_M30: strPer= "M8";  intPer=        7.5*mn;   clrPer=mClr?C'255,140,000':C'155,040,000';  break;
@@ -727,19 +703,8 @@ string getPer(int enumPer,int manPer,int modeRes=0,bool mClr=true){
 //==========================================================================================================================================================================                 
                  
                  
-      case 114: switch(_Period){
-                  case  PERIOD_M1 : strPer= "";    intPer=          NULL;   clrPer=mClr?C'000,255,000':C'000,155,000';  break;/*TF Entry 1 / PERIOD 20*/
-                  case  PERIOD_M5 : strPer= "";    intPer=          NULL;   clrPer=mClr?C'255,255,255':C'155,155,155';  break;  
-                  case  PERIOD_M15: strPer= "M1";  intPer=        0.9*mn*2;   clrPer=mClr?C'255,255,255':C'155,155,155';  break;  
-                  case  PERIOD_M30: strPer= "M2";  intPer=        1.8*mn*2;   clrPer=mClr?C'173,255,047':C'073,155,000';  break;
-                  case  PERIOD_H1 : strPer= "M5";  intPer=       3.75*mn*2;   clrPer=mClr?C'238,130,238':C'221,160,221';  break;
-                  case  PERIOD_H4 : strPer= "M30"; intPer=         30*mn*2;   clrPer=mClr?C'255,255,000':C'190,190,000';  break;
-                  case  PERIOD_D1 : strPer= "H4";  intPer=          4*hr*2;   clrPer=mClr?C'000,255,000':C'000,070,000';  break;
-                  case  PERIOD_W1 : strPer= "H12"; intPer=         12*hr*2;   clrPer=mClr?C'255,140,000':C'255,140,000';  break;
-                  case  PERIOD_MN1: strPer= "D3";  intPer=        2.5*dy*2;   clrPer=mClr?C'255,020,147':C'255,020,147';  break;
-               } break;
       case 115: switch(_Period){
-                  case  PERIOD_M1 : strPer= "S15"; intPer=          NULL;   clrPer=mClr?C'000,255,000':C'000,155,000';  break;/*TF Entry 1 / PERIOD 20*/
+                  case  PERIOD_M1 : strPer= "S15"; intPer=      0.225*mn*2;   clrPer=mClr?C'000,255,000':C'000,155,000';  break;/*TF Entry 1 / PERIOD 20*/
                   case  PERIOD_M5 : strPer= "M1";  intPer=        0.9*mn*2;   clrPer=mClr?C'255,255,255':C'155,155,155';  break;  
                   case  PERIOD_M15: strPer= "M5";  intPer=       3.75*mn*2;   clrPer=mClr?C'238,130,238':C'221,160,221';  break;
                   case  PERIOD_M30: strPer= "M8";  intPer=        7.5*mn*2;   clrPer=mClr?C'255,140,000':C'155,040,000';  break;

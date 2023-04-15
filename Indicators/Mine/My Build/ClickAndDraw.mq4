@@ -88,9 +88,9 @@ string objName;
 bool objSelected;
 double objLastPrice1;
 double objLastPrice2;
-Object *objPointer;
+Object* objPointer;
 
-Object *myObjects[];
+Object* myObjects[];
 
 #define TextFont "Arial"
 
@@ -363,7 +363,9 @@ void OnChartEvent(const int id,         // Event ID
     }
 
     if (id == CHARTEVENT_OBJECT_CREATE) {
+        printf("out : " + sparam);
         if (!findObjectInObjPointer(sparam) && (ObjectType(sparam) == OBJ_RECTANGLE || ObjectType(sparam) == OBJ_TREND)) {
+            printf("in : " + sparam);
             increaseMyObjectsSize();
             int index = ArraySize(myObjects) - 1;
             myObjects[index] = new Object(sparam);
