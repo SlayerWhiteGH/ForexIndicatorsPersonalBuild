@@ -103,21 +103,63 @@ int OnCalculate(const int rates_total,
                 const int &spread[])
 {
     
-    int Day = TimeDay(TimeCurrent()) - lookback;
+    int year = TimeYear(TimeCurrent());
+    int month = TimeMonth(TimeCurrent());
+    int day = TimeDay(TimeCurrent());
     
     for (int i = lookback; i > 0; i--){
-    datetime dtStart, dtStop;
-        int currentDayOfWeek = TimeDayOfWeek(TimeCurrent());
-        if (currentTimeIsWeekend(TimeCurrent())) {
-           continue;
+        datetime dtStart, dtStop;
+
+        if (day == 0) {
+            month--;
+            if (month == 0) {
+                year--;
+                month = 12;
+            }
+
+            day = getLastDayOfMonth(year, month);
         }
-        Day++;
+
         if (EndTime <= StartTime) {
-            dtStart = getDateTimeFromDay(Day-1, StartTime);
-            dtStop = getDateTimeFromDay(Day, EndTime);
+            if (day - 1 == 0) {
+                int tmpMonth = (month - 1 == 0) ? 12 : month - 1;
+                int tmpYear = (tmpMonth == 12) ? year - 1 : year;
+                int tmpDay = getLastDayOfMonth(tmpYear, tmpMonth);
+
+                dtStart = getDateTime(tmpYear, tmpMonth, tmpDay, StartTime);
+            }
+            else {
+                dtStart = getDateTime(year, month, day - 1, StartTime);
+            }
+
+            dtStop = getDateTime(year, month, day, EndTime);
         } else {
-            dtStart = getDateTimeFromDay(Day, StartTime);
-            dtStop = getDateTimeFromDay(Day, EndTime);
+            dtStart = getDateTime(year, month, day, StartTime);
+            dtStop = getDateTime(year, month, day, EndTime);
+        }
+
+        if (timeIsWeekend(dtStart) && timeIsWeekend(dtStop)) {
+            i++;
+            day--;
+            continue;
+        }
+        if (timeIsWeekend(dtStart) && !timeIsWeekend(dtStop)) {
+            i++;
+            day--;
+            continue;
+        }
+        if (!timeIsWeekend(dtStart) && timeIsWeekend(dtStop)) {
+            if (day + 2 > getLastDayOfMonth(year, month)) {
+                tmpDay = day + 2 - getLastDayOfMonth(year, month);
+                tmpMonth = month == 12 ? 1 : month + 1;
+                tmpYear = month == 1 ? year + 1 : year;
+
+            
+                dtStop = getDateTime(tmpYear, tmpMonth, tmpDay, EndTime);
+            }
+            else {
+                dtStop = getDateTime(year, month, day + 2, EndTime);
+            }
         }
 
         int IndexStart = getBarIndex(dtStart);
@@ -148,6 +190,8 @@ int OnCalculate(const int rates_total,
                 }
             }
         }
+
+        day--;
         
     }
 
@@ -156,7 +200,7 @@ int OnCalculate(const int rates_total,
 
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-bool currentTimeIsWeekend(datetime dateTime) {
+bool timeIsWeekend(datetime dateTime) {
     return TimeDayOfWeek(dateTime) == 0 || TimeDayOfWeek(dateTime) == 6;
 }
 
@@ -166,16 +210,31 @@ datetime getCurrentDay() {
     return StrToTime(dateCurrent + time);
 }
 
-datetime getDateTimeFromDay(int Day, int Hour) {
+datetime getDateTime(int year, int month, int day, int hour) {
     return StrToTime(
-        string(TimeYear(TimeCurrent()))
+        year
         + "."
-        + string(TimeMonth(TimeCurrent()))
+        + (month >= 10 ? string(month) : ("0" + string(month)))
         + "."
-        + (Day >= 10 ? string(Day) : ("0" + string(Day)))
-        + (Hour >= 10 ? (" " + string(Hour)) : (" 0" + string(Hour)))
+        + (day >= 10 ? string(day) : ("0" + string(day)))
+        + (hour >= 10 ? (" " + string(hour)) : (" 0" + string(hour)))
         + ":00:00"
     );
+}
+
+int getLastDayOfMonth(int year, int month) {
+    return month == 1 ? 31
+            : month == 2 ? (isLeapYear(year) ? 29 : 28)
+            : month == 3 ? 31
+            : month == 4 ? 30
+            : month == 5 ? 31
+            : month == 6 ? 30
+            : month == 7 ? 31
+            : month == 8 ? 31
+            : month == 9 ? 30
+            : month == 10 ? 31
+            : month == 11 ? 30
+            : 31;
 }
 
 int getBarIndex(datetime waktu) {
@@ -199,5 +258,26 @@ bool isWithinTimeline(int index) {
 
 bool barExists(int barIndex) {
     return barIndex != -1;
+}
+
+bool isLeapYear(int year) {
+    if (year % 100 == 0) {
+        return year % 400 == 0;
+    }
+    else {
+        return year % 4 == 0;
+    }
+}
+
+void calculateDate(int year, int month, int day) {
+    if (day == 0) {
+        month--;
+        if (month == 0) {
+            year--;
+            month = 12;
+        }
+
+        day = getLastDayOfMonth(year, month);
+    }
 }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
