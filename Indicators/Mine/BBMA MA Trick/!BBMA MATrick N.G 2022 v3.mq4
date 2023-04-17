@@ -154,6 +154,8 @@ double vDev2  = 2.0;//Deviation
 #define shD2 3
 #define shMAT 4
 
+bool iOn = true; 
+
 bool BB1_enable = s0ModeBB==_shSD1,
      BB2_enable = s0ModeBB==_shSD2,
      BBF_enable = s0ModeBB==_shFSD,
@@ -196,25 +198,6 @@ bool BB1_enable = s0ModeBB==_shSD1,
      line13_enable = linemode1==_3L,
      line14_enable = linemode1==_4L;
      
-int Handle,isOn;
-string NamaFile;
-void SetFile(int Mode){
-   switch(Mode){
-      case  0: Handle = FileOpen(NamaFile,FILE_BIN|FILE_READ);
-               if(Handle>=1){
-                  isOn = FileReadInteger(Handle,LONG_VALUE);
-                  FileClose(Handle);
-               }
-               else isOn=1;
-               break;
-      case  1: Handle = FileOpen(NamaFile,FILE_BIN|FILE_WRITE);
-               if(Handle>=1){
-                  FileWriteInteger(Handle,isOn,LONG_VALUE);
-                  FileClose(Handle);
-               }
-               break;
-   }
-}
 //+==================================================================+
 //| Custom indicator initialization function                         |
 //+==================================================================+ 
@@ -386,22 +369,13 @@ int OnInit() {
    SetIndexBuffer(0,sSDM082);SetIndexStyle(0,isOn&&b4BBF_enable?0:12,linemode2,1,getClr(102,0,(colormode==false?true:false),clSDM8)); SetIndexLabel(0,"BB20LWR_SD 2_" +getPer(102,0,0,false)+"");
    return(INIT_SUCCEEDED);
 }
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-color    clMainBG = C'15,15,15';
-string strOnOff[]={"St Title"};
-void DrawOnOff(){
-   ENUM_BASE_CORNER Cr=corner;
-   int xD=button_x,xY=button_y,
-       setPosX = Cr==0||Cr==2?5:95,
-       setPosY = Cr==0||Cr==2?23:23;
-   Sett(cButton(0,strOnOff[0],0,setPosX+xD,setPosY+xY,50,18,corner,"PA "+(isOn?"OFF":"ON"),"Lucida Console",8,clrWhite,clMainBG,clrDodgerBlue,0,0,0,1,1));   
-}
 //+==================================================================+
 //| Custom indicator deinitialization function                       |
 //+==================================================================+
 void OnDeinit(const int reason){
    objDelete();
 	Comment("");
+   
 }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 void objDelete(string inpStr=""){
@@ -426,6 +400,55 @@ double getSMA(int inpPer,int shift=0,double StDev=1){
 	}//R/inpPer //SMA
    return((MathSqrt(((inpPer*S)-(R*R))/(inpPer*inpPer))*StDev));
 }
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+int Handle,isOn;
+string NamaFile;
+void SetFile(int Mode){
+   switch(Mode){
+      case  0: Handle = FileOpen(NamaFile,FILE_BIN|FILE_READ);
+               if(Handle>=1){
+                  isOn = FileReadInteger(Handle,LONG_VALUE);
+                  FileClose(Handle);
+               }
+               else isOn = 1; 
+               break;
+      case  1: Handle = FileOpen(NamaFile,FILE_BIN|FILE_WRITE);
+               if(Handle>=1){
+                  FileWriteInteger(Handle,isOn,LONG_VALUE);
+                  FileClose(Handle);
+               }
+               break;
+   }
+}
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+color    clMainBG = C'15,15,15';
+string strOnOff[]={"St Title"};
+void DrawOnOff(){
+   ENUM_BASE_CORNER Cr=corner;
+   int xD=button_x,xY=button_y,
+       setPosX = Cr == 0||Cr == 2 ? 5 : 95,
+       setPosY = Cr == 0||Cr == 2 ? 23 : 23;
+   Sett(cButton(0, strOnOff[0], 0, setPosX+xD, setPosY+xY, 50, 18, corner,"PA "+(isOn?"OFF":"ON"),"Lucida Console",8,clrWhite,clMainBG,clrDodgerBlue,0,0,0,1,1));
+}
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+void OnChartEvent(const int id,const long &lparam,const double &dparam,const string &sparam){
+   if(id==CHARTEVENT_OBJECT_CLICK){      
+      if(sparam==iName+strOnOff[0]){
+         if(Selected(strOnOff[0])){
+            ObjectSetInteger(0, iName + strOnOff[0], OBJPROP_STATE, 0);
+            SetFile(0);
+            isOn = !isOn;
+            if (isOn){
+               DrawOnOff();
+            } else {
+               objDelete();
+            }
+            SetFile(1);
+         }
+      }
+   }
+   ChartRedraw();
+}
 //+==================================================================+
 //| Custom indicator iteration function                              |
 //+==================================================================+
@@ -433,35 +456,13 @@ int OnCalculate(const int rates_total,const int prev_calculated,const datetime &
                 const double &open[],const double &high[],const double &low[],const double &close[],
                 const long &tick_volume[],const long &volume[],const int &spread[]){
    SetFile(0);
+   if (!iOn) return (0);
    DrawOnOff();
-   SetStyle();
-   
-   //showmathead?cLabel(0,"Header1",5,1,CORNER_RIGHT_UPPER,"__MATr3ndLOgic SysT3m__  ","Calibri",9,clrWhite,0):EMPTY_VALUE;
-   //showmathead?cLabel(0,"Header2",4,11,CORNER_RIGHT_UPPER,"------------------40------------------","Calibri",9,clrYellowGreen,0):EMPTY_VALUE;
-   //showmathead?cLabel(0,"Header3",130,3,CORNER_RIGHT_UPPER,"Shown MTF >>                            ","Calibri",8,clrYellowGreen,0):EMPTY_VALUE;
-   
-   //showmathead?cLabel(0,"Header1",600,10,CORNER_RIGHT_UPPER,"PATIENCE | DICIPLINE | CONFIDENCE | FOCUS | GRATEFUL","Lucida Console",10,clrDarkGray,0):EMPTY_VALUE;
-
-   //showmathead?cLabel(0,"Header2",5,50,CORNER_RIGHT_LOWER,"H4 / H1  - BOS                    ","Lucida Console",8,clrSilver,0):EMPTY_VALUE;
-   //showmathead?cLabel(0,"Header3",5,30,CORNER_RIGHT_LOWER,"H1 / M15 - RAID SH/SMS + BOS + RTO","Lucida Console",8,clrSilver,0):EMPTY_VALUE;
-   //showmathead?cLabel(0,"Header4",5,10,CORNER_RIGHT_LOWER,"M5 / M1  - BOS                    ","Lucida Console",8,clrSilver,0):EMPTY_VALUE;
+   ChartRedraw();
    
    showmathead?cLabel(0,"Header5",5,30,CORNER_RIGHT_UPPER,"London  Open  KZ 13.00 - 16.00","Lucida Console",8,clrWhiteSmoke,0):EMPTY_VALUE;
    showmathead?cLabel(0,"Header6",5,50,CORNER_RIGHT_UPPER,"NewYork Open  KZ 18.00 - 20.00","Lucida Console",8,clrWhiteSmoke,0):EMPTY_VALUE;
    showmathead?cLabel(0,"Header7",5,70,CORNER_RIGHT_UPPER,"London  Close KZ 22.00 - 24.00","Lucida Console",8,clrWhiteSmoke,0):EMPTY_VALUE;
-   
-   //Market Structre Weekly TF
-   //BOS happen > trading ranged is created
-   //Discount and premium after ranged is created
-   //in trading range it has Internal Liquidity
-   //Everything inside trading range is internal liquidity
-   //HH/LL that created means it take external range liquidity
-   //
-   //where is bos? where is trading range?
-   //where is POI? 
-   //where is internal structure in trading range? wait choch internal structure in POI!
-   //
-
 
    for(int i=0; i<MathMin(Bars-IndicatorCounted(),Bars-1); i++){
       //SMA/MIDBB
@@ -573,131 +574,7 @@ int OnCalculate(const int rates_total,const int prev_calculated,const datetime &
    
    return(rates_total);
 }
-//-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-void SetStyle(){
-   //LWMA SHADOW
-      //LWMA HIGH LOW
-   SetIndexStyle(82,isOn?0:12,2,1,getClr(102,0,(colormode==false?true:false),clLWSMA30));
-   SetIndexStyle(81,isOn?0:12,2,1,getClr(102,0,(colormode==false?true:false),clLWSMA30));
-   SetIndexStyle(80,isOn?0:12,2,1,getClr(101,0,(colormode==false?true:false),clLWSMA30));
-   SetIndexStyle(79,isOn?0:12,2,1,getClr(101,0,(colormode==false?true:false),clLWSMA30));
-   //EMA50a
-   SetIndexStyle(78,isOn?0:12,0,1,getClr(118,0,(colormode==false?true:false),clSMAT4));
-   //MATREND
-   SetIndexStyle(77,isOn?0:12,linemode,1,(bbmaoa==true)?clrNONE:getClr(124,0,(colormode==false?true:false),clSMAT10));
-   SetIndexStyle(76,isOn?0:12,linemode,1,(bbmaoa==true)?clrNONE:getClr(123,0,(colormode==false?true:false),clSMAT9));
-   SetIndexStyle(75,isOn?0:12,linemode,1,(bbmaoa==true)?clrNONE:getClr(122,0,(colormode==false?true:false),clSMAT8));
-   SetIndexStyle(74,isOn?0:12,linemode,1,(bbmaoa==true)?clrNONE:getClr(121,0,(colormode==false?true:false),clSMAT7));
-   SetIndexStyle(73,isOn?0:12,linemode,1,(bbmaoa==true)?clrNONE:getClr(120,0,(colormode==false?true:false),clSMAT6));
-   SetIndexStyle(72,isOn?0:12,linemode,1,(bbmaoa==true)?clrNONE:getClr(119,0,(colormode==false?true:false),clSMAT5));
-   SetIndexStyle(71,isOn?0:12,linemode,1,(bbmaoa==true)?clrNONE:getClr(118,0,(colormode==false?true:false),clSMAT4));
-   SetIndexStyle(70,isOn?0:12,linemode,1,getClr(117,0,(colormode==false?true:false),clSMAT3));
-   SetIndexStyle(69,isOn?0:12,linemode,1,(bbmaoa==true)?clrNONE:getClr(116,0,(colormode==false?true:false),clSMAT2));
-   SetIndexStyle(68,isOn?0:12,linemode,1,(bbmaoa==true)?clrNONE:getClr(115,0,(colormode==false?true:false),clSMAT1));
-   SetIndexStyle(67,isOn?0:12,linemode,1,(bbmaoa==true)?clrNONE:getClr(114,0,(colormode==false?true:false),clSMAT1));
-   //MID BB
-   SetIndexStyle(66,isOn?0:12,0,1,(bbmaoa==true)?clrNONE:getClr(104,0,(colormode==false?true:false),clSMA10));
-   SetIndexStyle(65,isOn?0:12,0,1,(bbmaoa==true)?clrNONE:getClr(103,0,(colormode==false?true:false),clSMA9));
-   SetIndexStyle(64,isOn?0:12,0,1,(bbmaoa==true)?clrNONE:getClr(102,0,(colormode==false?true:false),clSMA8));
-   SetIndexStyle(63,isOn?0:12,0,1,(bbmaoa==true)?clrNONE:getClr(101,0,(colormode==false?true:false),clSMA7));
-   SetIndexStyle(62,isOn?0:12,0,1,(bbmaoa==true)?clrNONE:getClr(100,0,(colormode==false?true:false),clSMA6));
-   SetIndexStyle(61,isOn?0:12,0,1,(bbmaoa==true)?clrNONE:getClr(99,0,(colormode==false?true:false),clSMA5));
-   SetIndexStyle(60,isOn?0:12,0,1,(bbmaoa==true)?clrNONE:getClr(98,0,(colormode==false?true:false),clSMA4));
-   SetIndexStyle(59,isOn?0:12,0,2,getClr(97,0,(colormode==false?true:false),clSMA3));
-   SetIndexStyle(58,isOn?0:12,0,1,(bbmaoa==true)?clrNONE:getClr(96,0,(colormode==false?true:false),clSMA2));
-   SetIndexStyle(57,isOn?0:12,0,1,(bbmaoa==true)?clrNONE:getClr(95,0,(colormode==false?true:false),clSMA1));
-   SetIndexStyle(56,isOn?0:12,0,1,(bbmaoa==true)?clrNONE:getClr(94,0,(colormode==false?true:false),clSMA0));   
-   //LWMA HIGH LOW
-   SetIndexStyle(55,isOn?0:12,2,1,getClr(102,0,(colormode==false?true:false),clLWSMA30));
-   SetIndexStyle(54,isOn?0:12,2,1,getClr(101,0,(colormode==false?true:false),clLWSMA30));
-   SetIndexStyle(53,isOn?0:12,2,1,getClr(102,0,(colormode==false?true:false),clLWSMA30));
-   SetIndexStyle(52,isOn?0:12,2,1,getClr(101,0,(colormode==false?true:false),clLWSMA30));
-   
-   SetIndexStyle(51,isOn?0:12,0,1,getClr(96,0,(colormode==false?true:false),clLWSMA2));
-   SetIndexStyle(50,isOn?0:12,0,1,getClr(96,0,(colormode==false?true:false),clLWSMA1));
-   SetIndexStyle(49,isOn?0:12,0,1,getClr(95,0,(colormode==false?true:false),clLWSMA2));
-   SetIndexStyle(48,isOn?0:12,0,1,getClr(95,0,(colormode==false?true:false),clLWSMA1));
-   
-   //BB TF ACTIVE   
-   SetIndexStyle(47,isOn&&BB1_enable?0:12,0,2,getClr(97,0,(colormode==false?true:false),clSDP3));
-   SetIndexStyle(46,isOn&&BB1_enable?0:12,0,2,getClr(97,0,(colormode==false?true:false),clSDM3));
-   SetIndexStyle(45,isOn&&BB2_enable?0:12,0,2,getClr(97,0,(colormode==false?true:false),clSDP3));
-   SetIndexStyle(44,isOn&&BB2_enable?0:12,0,2,getClr(97,0,(colormode==false?true:false),clSDM3));
-   
-   SetIndexStyle(43,isOn&&BBF_enable?0:12,0,2,getClr(97,0,(colormode==false?true:false),clSDP3));
-   SetIndexStyle(42,isOn&&BBF_enable?0:12,0,2,getClr(97,0,(colormode==false?true:false),clSDM3));
-   SetIndexStyle(41,isOn&&BBF_enable?0:12,0,2,getClr(97,0,(colormode==false?true:false),clSDP3));
-   SetIndexStyle(40,isOn&&BBF_enable?0:12,0,2,getClr(97,0,(colormode==false?true:false),clSDM3));
-   
-   //BB TFX
-   SetIndexStyle(39,isOn&&XBB1_enable?0:12,linemode1,1,getClr(98,0,(colormode==false?true:false),clSDP4));
-   SetIndexStyle(38,isOn&&XBB1_enable?0:12,linemode1,1,getClr(98,0,(colormode==false?true:false),clSDM4));
-   SetIndexStyle(37,isOn&&XBB2_enable?0:12,linemode2,1,getClr(98,0,(colormode==false?true:false),clSDP4));
-   SetIndexStyle(36,isOn&&XBB2_enable?0:12,linemode2,1,getClr(98,0,(colormode==false?true:false),clSDM4));
-   
-   SetIndexStyle(35,isOn&&XBBF_enable?0:12,linemode1,1,getClr(98,0,(colormode==false?true:false),clSDP4));
-   SetIndexStyle(34,isOn&&XBBF_enable?0:12,linemode1,1,getClr(98,0,(colormode==false?true:false),clSDM4));
-   SetIndexStyle(33,isOn&&XBBF_enable?0:12,linemode2,1,getClr(98,0,(colormode==false?true:false),clSDP4));
-   SetIndexStyle(32,isOn&&XBBF_enable?0:12,linemode2,1,getClr(98,0,(colormode==false?true:false),clSDM4));
-   
-   //BB TF UPWARD
-   SetIndexStyle(31,isOn&&bBB1_enable?0:12,linemode1,1,getClr(99,0,(colormode==false?true:false),clSDP5));
-   SetIndexStyle(30,isOn&&bBB1_enable?0:12,linemode1,1,getClr(99,0,(colormode==false?true:false),clSDM5));
-   SetIndexStyle(29,isOn&&bBB2_enable?0:12,linemode2,1,getClr(99,0,(colormode==false?true:false),clSDP5));
-   SetIndexStyle(28,isOn&&bBB2_enable?0:12,linemode2,1,getClr(99,0,(colormode==false?true:false),clSDM5));
-   
-   SetIndexStyle(27,isOn&&bBBF_enable?0:12,linemode1,1,getClr(99,0,(colormode==false?true:false),clSDP5));
-   SetIndexStyle(26,isOn&&bBBF_enable?0:12,linemode1,1,getClr(99,0,(colormode==false?true:false),clSDM5));
-   SetIndexStyle(25,isOn&&bBBF_enable?0:12,linemode2,1,getClr(99,0,(colormode==false?true:false),clSDP5));
-   SetIndexStyle(24,isOn&&bBBF_enable?0:12,linemode2,1,getClr(99,0,(colormode==false?true:false),clSDM5));
-   
-   //BB TF 2 UPWARD
-   SetIndexStyle(23,isOn&&b2BB1_enable?0:12,linemode1,1,getClr(100,0,(colormode==false?true:false),clSDP6));
-   SetIndexStyle(22,isOn&&b2BB1_enable?0:12,linemode1,1,getClr(100,0,(colormode==false?true:false),clSDP6));
-   SetIndexStyle(21,isOn&&b2BB2_enable?0:12,linemode2,1,getClr(100,0,(colormode==false?true:false),clSDP6));
-   SetIndexStyle(20,isOn&&b2BB2_enable?0:12,linemode2,1,getClr(100,0,(colormode==false?true:false),clSDP6));
-   
-   SetIndexStyle(19,isOn&&b2BBF_enable?0:12,linemode1,1,getClr(100,0,(colormode==false?true:false),clSDP6));
-   SetIndexStyle(18,isOn&&b2BBF_enable?0:12,linemode1,1,getClr(100,0,(colormode==false?true:false),clSDM6));
-   SetIndexStyle(17,isOn&&b2BBF_enable?0:12,linemode2,1,getClr(100,0,(colormode==false?true:false),clSDP6));
-   SetIndexStyle(16,isOn&&b2BBF_enable?0:12,linemode2,1,getClr(100,0,(colormode==false?true:false),clSDM6));
-   
-   SetIndexStyle(15,isOn&&b3BB1_enable?0:12,linemode1,1,getClr(101,0,(colormode==false?true:false),clSDP7));
-   SetIndexStyle(14,isOn&&b3BB1_enable?0:12,linemode1,1,getClr(101,0,(colormode==false?true:false),clSDP7));
-   SetIndexStyle(13,isOn&&b3BB2_enable?0:12,linemode2,1,getClr(101,0,(colormode==false?true:false),clSDP7));
-   SetIndexStyle(12,isOn&&b3BB2_enable?0:12,linemode2,1,getClr(101,0,(colormode==false?true:false),clSDP7));
-   
-   SetIndexStyle(11,isOn&&b3BBF_enable?0:12,linemode1,1,getClr(101,0,(colormode==false?true:false),clSDP7));
-   SetIndexStyle(10,isOn&&b3BBF_enable?0:12,linemode1,1,getClr(101,0,(colormode==false?true:false),clSDM7));
-   SetIndexStyle(9,isOn&&b3BBF_enable?0:12,linemode2,1,getClr(101,0,(colormode==false?true:false),clSDP7));
-   SetIndexStyle(8,isOn&&b3BBF_enable?0:12,linemode2,1,getClr(101,0,(colormode==false?true:false),clSDM7));
-   
-   SetIndexStyle(7,isOn&&b4BB1_enable?0:12,linemode1,1,getClr(102,0,(colormode==false?true:false),clSDP8));
-   SetIndexStyle(6,isOn&&b4BB1_enable?0:12,linemode1,1,getClr(102,0,(colormode==false?true:false),clSDP8));
-   SetIndexStyle(5,isOn&&b4BB2_enable?0:12,linemode2,1,getClr(102,0,(colormode==false?true:false),clSDP8));
-   SetIndexStyle(4,isOn&&b4BB2_enable?0:12,linemode2,1,getClr(102,0,(colormode==false?true:false),clSDP8));
-   
-   SetIndexStyle(3,isOn&&b4BBF_enable?0:12,linemode1,1,getClr(102,0,(colormode==false?true:false),clSDP8));
-   SetIndexStyle(2,isOn&&b4BBF_enable?0:12,linemode1,1,getClr(102,0,(colormode==false?true:false),clSDM8));
-   SetIndexStyle(1,isOn&&b4BBF_enable?0:12,linemode2,1,getClr(102,0,(colormode==false?true:false),clSDP8));
-   SetIndexStyle(0,isOn&&b4BBF_enable?0:12,linemode2,1,getClr(102,0,(colormode==false?true:false),clSDM8));
-}
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-void OnChartEvent(const int id,const long &lparam,const double &dparam,const string &sparam){
-   if(id==CHARTEVENT_OBJECT_CLICK){      
-      if(sparam==iName+strOnOff[0]){
-         if(Selected(strOnOff[0])){
-            ObjectSetInteger(0,iName+strOnOff[0],OBJPROP_STATE,0);
-            SetFile(0);
-            isOn = isOn==0?1:0;
-            DrawOnOff();
-            SetStyle();
-            SetFile(1);
-         }
-      }
-   }
-   ChartRedraw();
-}
+
 //-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 color  getClr(int enumPer,int manPer,bool clrLight=true,color inpClr=clrNONE){
    return(inpClr==clrNONE||inpClr==2147483647?StringToColor(getPer(enumPer,manPer,2,clrLight)):inpClr);

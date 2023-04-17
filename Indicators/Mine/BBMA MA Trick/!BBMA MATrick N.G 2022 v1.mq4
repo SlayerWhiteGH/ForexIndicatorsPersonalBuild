@@ -321,15 +321,15 @@ if(WindowExpertName()!="!BBMA MATrick N.G 2022 v1"){
    SetIndexBuffer(40,sSDM032);SetIndexStyle(40,BBF_enable?0:12,0,2,getClr(97,0,true,clSDM3)); SetIndexLabel(40,"BB20LWR_SD 2_" +getPer(97,0,0,false)+"");
         
    //BB TFX
-   SetIndexBuffer(39,SDP04);  SetIndexStyle(39,XBB1_enable?0:12,linemode1,1,getClr(98,0,true,clSDP4)); SetIndexLabel(39,"BB20UPR_SD 1_" +getPer(98,0,0,false)+"");
-   SetIndexBuffer(38,SDM04);  SetIndexStyle(38,XBB1_enable?0:12,linemode1,1,getClr(98,0,true,clSDM4)); SetIndexLabel(38,"BB20LWR_SD 1_" +getPer(98,0,0,false)+"");
-   SetIndexBuffer(37,SDP042); SetIndexStyle(37,XBB2_enable?0:12,linemode2,1,getClr(98,0,true,clSDP4)); SetIndexLabel(37,"BB20UPR_SD 2_" +getPer(98,0,0,false)+"");
-   SetIndexBuffer(36,SDM042); SetIndexStyle(36,XBB2_enable?0:12,linemode2,1,getClr(98,0,true,clSDM4)); SetIndexLabel(36,"BB20LWR_SD 2_" +getPer(98,0,0,false)+"");
+   SetIndexBuffer(39,SDP04);  SetIndexStyle(39,XBB1_enable?0:12,linemode1,2,getClr(98,0,true,clSDP4)); SetIndexLabel(39,"BB20UPR_SD 1_" +getPer(98,0,0,false)+"");
+   SetIndexBuffer(38,SDM04);  SetIndexStyle(38,XBB1_enable?0:12,linemode1,2,getClr(98,0,true,clSDM4)); SetIndexLabel(38,"BB20LWR_SD 1_" +getPer(98,0,0,false)+"");
+   SetIndexBuffer(37,SDP042); SetIndexStyle(37,XBB2_enable?0:12,linemode2,2,getClr(98,0,true,clSDP4)); SetIndexLabel(37,"BB20UPR_SD 2_" +getPer(98,0,0,false)+"");
+   SetIndexBuffer(36,SDM042); SetIndexStyle(36,XBB2_enable?0:12,linemode2,2,getClr(98,0,true,clSDM4)); SetIndexLabel(36,"BB20LWR_SD 2_" +getPer(98,0,0,false)+"");
 
-   SetIndexBuffer(35,sSDP04); SetIndexStyle(35,XBBF_enable?0:12,linemode1,1,getClr(98,0,true,clSDP4)); SetIndexLabel(35,"BB20UPR_SD 1_" +getPer(98,0,0,false)+"");
-   SetIndexBuffer(34,sSDM04); SetIndexStyle(34,XBBF_enable?0:12,linemode1,1,getClr(98,0,true,clSDM4)); SetIndexLabel(34,"BB20LWR_SD 1_" +getPer(98,0,0,false)+"");
-   SetIndexBuffer(33,sSDP042);SetIndexStyle(33,XBBF_enable?0:12,linemode2,1,getClr(98,0,true,clSDP4)); SetIndexLabel(33,"BB20UPR_SD 2_" +getPer(98,0,0,false)+"");
-   SetIndexBuffer(32,sSDM042);SetIndexStyle(32,XBBF_enable?0:12,linemode2,1,getClr(98,0,true,clSDM4)); SetIndexLabel(32,"BB20LWR_SD 2_" +getPer(98,0,0,false)+"");
+   SetIndexBuffer(35,sSDP04); SetIndexStyle(35,XBBF_enable?0:12,linemode1,2,getClr(98,0,true,clSDP4)); SetIndexLabel(35,"BB20UPR_SD 1_" +getPer(98,0,0,false)+"");
+   SetIndexBuffer(34,sSDM04); SetIndexStyle(34,XBBF_enable?0:12,linemode1,2,getClr(98,0,true,clSDM4)); SetIndexLabel(34,"BB20LWR_SD 1_" +getPer(98,0,0,false)+"");
+   SetIndexBuffer(33,sSDP042);SetIndexStyle(33,XBBF_enable?0:12,linemode2,2,getClr(98,0,true,clSDP4)); SetIndexLabel(33,"BB20UPR_SD 2_" +getPer(98,0,0,false)+"");
+   SetIndexBuffer(32,sSDM042);SetIndexStyle(32,XBBF_enable?0:12,linemode2,2,getClr(98,0,true,clSDM4)); SetIndexLabel(32,"BB20LWR_SD 2_" +getPer(98,0,0,false)+"");
    
    //BB TF UPWARD
    SetIndexBuffer(31,SDP05);  SetIndexStyle(31,bBB1_enable?0:12,linemode1,1,getClr(99,0,true,clSDP5)); SetIndexLabel(31,"BB20UPR_SD 1_" +getPer(99,0,0,false)+"");
@@ -507,20 +507,20 @@ int OnCalculate(const int rates_total,const int prev_calculated,const datetime &
       SMAT10[i] = (offmat==true)?EMPTY_VALUE:acuan07? (3*iMA(_Symbol,_Period,tP10,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP10,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE;
       
       //LWMA HILO
-      HLWMA01[i] = lwma510?iMA(_Symbol,_Period,iP1,0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
-      LLWMA01[i] = lwma510?iMA(_Symbol,_Period,iP1,0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
-      HLWMA02[i] = lwma510?iMA(_Symbol,_Period,iP2,0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
-      LLWMA02[i] = lwma510?iMA(_Symbol,_Period,iP2,0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
+      HLWMA01[i] = lwma510?iMA(_Symbol,_Period,(s1ModeBB == _shSD2 ? iP2 : iP1),0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
+      LLWMA01[i] = lwma510?iMA(_Symbol,_Period,(s1ModeBB == _shSD2 ? iP2 : iP1),0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
+      HLWMA02[i] = lwma510?iMA(_Symbol,_Period,(s1ModeBB == _shSD2 ? iP3 : iP2),0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
+      LLWMA02[i] = lwma510?iMA(_Symbol,_Period,(s1ModeBB == _shSD2 ? iP3 : iP2),0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
       
-      ShadowHigh01[i] = lwma510?iMA(_Symbol,_Period,iP1 + 1,0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
-      ShadowHigh02[i] = lwma510?iMA(_Symbol,_Period,iP1 + 2,0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
-      ShadowHigh03[i] = lwma510?iMA(_Symbol,_Period,iP1 + 3,0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
-      ShadowHigh04[i] = lwma510?iMA(_Symbol,_Period,iP1 + 4,0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
+      ShadowHigh01[i] = lwma510?iMA(_Symbol,_Period,(s1ModeBB == _shSD2 ? iP2 + 1 : iP1 + 1),0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
+      ShadowHigh02[i] = lwma510?iMA(_Symbol,_Period,(s1ModeBB == _shSD2 ? iP2 + 3 : iP1 + 2),0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
+      ShadowHigh03[i] = lwma510?iMA(_Symbol,_Period,(s1ModeBB == _shSD2 ? iP2 + 5 : iP1 + 3),0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
+      ShadowHigh04[i] = lwma510?iMA(_Symbol,_Period,(s1ModeBB == _shSD2 ? iP2 + 7 : iP1 + 4),0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
       
-      ShadowLow01[i] = lwma510?iMA(_Symbol,_Period,iP1 + 1,0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
-      ShadowLow02[i] = lwma510?iMA(_Symbol,_Period,iP1 + 2,0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
-      ShadowLow03[i] = lwma510?iMA(_Symbol,_Period,iP1 + 3,0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
-      ShadowLow04[i] = lwma510?iMA(_Symbol,_Period,iP1 + 4,0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
+      ShadowLow01[i] = lwma510?iMA(_Symbol,_Period,(s1ModeBB == _shSD2 ? iP2 + 1 : iP1 + 1),0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
+      ShadowLow02[i] = lwma510?iMA(_Symbol,_Period,(s1ModeBB == _shSD2 ? iP2 + 3 : iP1 + 2),0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
+      ShadowLow03[i] = lwma510?iMA(_Symbol,_Period,(s1ModeBB == _shSD2 ? iP2 + 5 : iP1 + 3),0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
+      ShadowLow04[i] = lwma510?iMA(_Symbol,_Period,(s1ModeBB == _shSD2 ? iP2 + 7 : iP1 + 4),0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
 
 
     }
