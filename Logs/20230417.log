@@ -1,0 +1,7 @@
+0	13:16:47.466	OBdraw251 GBPUSD,M15: uninit reason 9
+0	13:16:47.466	ClickAndDraw GBPUSD,M15: uninit reason 9
+0	13:16:47.466	Ouro Drawing GBPUSD,M15: uninit reason 9
+1	13:16:47.467	Ouro Drawing GBPUSD,M15: invalid pointer access in 'Ouro Drawing.mq4' (407,7)
+0	13:16:47.518	Custom indicator OBdraw251 GBPUSD,M15: removed
+0	13:16:47.519	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	13:16:47.521	Custom indicator Ouro Drawing GBPUSD,M15: removed

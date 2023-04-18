@@ -1,0 +1,10 @@
+0	19:55:40.730	Custom indicator Mine\ICT\OBdraw251 GBPUSD,M15: loaded successfully
+0	19:55:40.746	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	19:55:40.780	OBdraw251 GBPUSD,M15: initialized
+0	19:55:40.809	ClickAndDraw GBPUSD,M15: initialized
+0	19:56:00.947	ClickAndDraw GBPUSD,M15: uninit reason 5
+0	19:56:00.960	ClickAndDraw GBPUSD,M15: initialized
+0	20:49:34.265	OBdraw251 GBPUSD,M15: uninit reason 9
+0	20:49:34.265	ClickAndDraw GBPUSD,M15: uninit reason 9
+0	20:49:34.328	Custom indicator OBdraw251 GBPUSD,M15: removed
+0	20:49:34.330	Custom indicator ClickAndDraw GBPUSD,M15: removed

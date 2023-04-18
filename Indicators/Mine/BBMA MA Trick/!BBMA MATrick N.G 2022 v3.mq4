@@ -224,6 +224,7 @@ int OnInit() {
    iName="!BBMA MATrick N.G 2022";   
    NamaFile = "tmp\\MATrick OA-"+_Symbol;
    SetFile(0);
+   
    DrawOnOff();
    
    IndicatorObjPrefix = "__" + iName + "__";   
@@ -410,7 +411,9 @@ void SetFile(int Mode){
                   isOn = FileReadInteger(Handle,LONG_VALUE);
                   FileClose(Handle);
                }
-               else isOn = 1; 
+               else {
+                  isOn = 1;
+               }
                break;
       case  1: Handle = FileOpen(NamaFile,FILE_BIN|FILE_WRITE);
                if(Handle>=1){
@@ -436,13 +439,9 @@ void OnChartEvent(const int id,const long &lparam,const double &dparam,const str
       if(sparam==iName+strOnOff[0]){
          if(Selected(strOnOff[0])){
             ObjectSetInteger(0, iName + strOnOff[0], OBJPROP_STATE, 0);
-            SetFile(0);
             isOn = !isOn;
-            if (isOn){
-               DrawOnOff();
-            } else {
-               objDelete();
-            }
+            DrawOnOff();
+            setBufferValues();
             SetFile(1);
          }
       }
@@ -456,7 +455,7 @@ int OnCalculate(const int rates_total,const int prev_calculated,const datetime &
                 const double &open[],const double &high[],const double &low[],const double &close[],
                 const long &tick_volume[],const long &volume[],const int &spread[]){
    SetFile(0);
-   if (!iOn) return (0);
+   if (!isOn) return (0);
    DrawOnOff();
    ChartRedraw();
    
@@ -464,115 +463,229 @@ int OnCalculate(const int rates_total,const int prev_calculated,const datetime &
    showmathead?cLabel(0,"Header6",5,50,CORNER_RIGHT_UPPER,"NewYork Open  KZ 18.00 - 20.00","Lucida Console",8,clrWhiteSmoke,0):EMPTY_VALUE;
    showmathead?cLabel(0,"Header7",5,70,CORNER_RIGHT_UPPER,"London  Close KZ 22.00 - 24.00","Lucida Console",8,clrWhiteSmoke,0):EMPTY_VALUE;
 
-   for(int i=0; i<MathMin(Bars-IndicatorCounted(),Bars-1); i++){
-      //SMA/MIDBB
-      SMA00[i] = Entry0?iMA(_Symbol,_Period,iP0,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
-      SMA01[i] = Entry1?iMA(_Symbol,_Period,iP1,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
-      SMA02[i] = Entry2?iMA(_Symbol,_Period,iP2,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
-      
-      SMA03[i] = tfactive?iMA(_Symbol,_Period,iP3,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
-      SDP03[i] = BB1_enable?SMA03[i]+getSMA(iP3,i,vDev1):EMPTY_VALUE;
-      SDM03[i] = BB1_enable?SMA03[i]-getSMA(iP3,i,vDev1):EMPTY_VALUE;
-      SDP032[i] = BB2_enable?SMA03[i]+getSMA(iP3,i,vDev2):EMPTY_VALUE;
-      SDM032[i] = BB2_enable?SMA03[i]-getSMA(iP3,i,vDev2):EMPTY_VALUE;
-      
-      sSDP03[i] = BBF_enable?SMA03[i]+getSMA(iP3,i,vDev1):EMPTY_VALUE;
-      sSDM03[i] = BBF_enable?SMA03[i]-getSMA(iP3,i,vDev1):EMPTY_VALUE;
-      sSDP032[i] = BBF_enable?SMA03[i]+getSMA(iP3,i,vDev2):EMPTY_VALUE;
-      sSDM032[i] = BBF_enable?SMA03[i]-getSMA(iP3,i,vDev2):EMPTY_VALUE;
-      
-      SMA04[i] = acuan01?iMA(_Symbol,_Period,iP4,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
-      SDP04[i]  = XBB1_enable?SMA04[i]+getSMA(iP4,i,vDev1):EMPTY_VALUE;
-      SDM04[i]  = XBB1_enable?SMA04[i]-getSMA(iP4,i,vDev1):EMPTY_VALUE;
-      SDP042[i] = XBB2_enable?SMA04[i]+getSMA(iP4,i,vDev2):EMPTY_VALUE;
-      SDM042[i] = XBB2_enable?SMA04[i]-getSMA(iP4,i,vDev2):EMPTY_VALUE;
-      
-      sSDP04[i]  = XBBF_enable?SMA04[i]+getSMA(iP4,i,vDev1):EMPTY_VALUE;
-      sSDM04[i]  = XBBF_enable?SMA04[i]-getSMA(iP4,i,vDev1):EMPTY_VALUE;
-      sSDP042[i] = XBBF_enable?SMA04[i]+getSMA(iP4,i,vDev2):EMPTY_VALUE;
-      sSDM042[i] = XBBF_enable?SMA04[i]-getSMA(iP4,i,vDev2):EMPTY_VALUE; 
-         
-      SMA05[i] = acuan02?iMA(_Symbol,_Period,iP5,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
-      SDP05[i] = bBB1_enable?SMA05[i]+getSMA(iP5,i,vDev1):EMPTY_VALUE;
-      SDM05[i] = bBB1_enable?SMA05[i]-getSMA(iP5,i,vDev1):EMPTY_VALUE;
-      SDP052[i] = bBB2_enable?SMA05[i]+getSMA(iP5,i,vDev2):EMPTY_VALUE;
-      SDM052[i] = bBB2_enable?SMA05[i]-getSMA(iP5,i,vDev2):EMPTY_VALUE;
-      
-      sSDP05[i] = bBBF_enable?SMA05[i]+getSMA(iP5,i,vDev1):EMPTY_VALUE;
-      sSDM05[i] = bBBF_enable?SMA05[i]-getSMA(iP5,i,vDev1):EMPTY_VALUE;
-      sSDP052[i] = bBBF_enable?SMA05[i]+getSMA(iP5,i,vDev2):EMPTY_VALUE;
-      sSDM052[i] = bBBF_enable?SMA05[i]-getSMA(iP5,i,vDev2):EMPTY_VALUE;
-           
-      SMA06[i] = acuan03?iMA(_Symbol,_Period,iP6,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
-      SDP06[i]  = b2BB1_enable?SMA06[i]+getSMA(iP6,i,vDev1):EMPTY_VALUE;
-      SDM06[i]  = b2BB1_enable?SMA06[i]-getSMA(iP6,i,vDev1):EMPTY_VALUE;
-      SDP062[i] = b2BB2_enable?SMA06[i]+getSMA(iP6,i,vDev2):EMPTY_VALUE;
-      SDM062[i] = b2BB2_enable?SMA06[i]-getSMA(iP6,i,vDev2):EMPTY_VALUE;
-      
-      sSDP06[i]  = b2BBF_enable?SMA06[i]+getSMA(iP6,i,vDev1):EMPTY_VALUE;
-      sSDM06[i]  = b2BBF_enable?SMA06[i]-getSMA(iP6,i,vDev1):EMPTY_VALUE;
-      sSDP062[i] = b2BBF_enable?SMA06[i]+getSMA(iP6,i,vDev2):EMPTY_VALUE;
-      sSDM062[i] = b2BBF_enable?SMA06[i]-getSMA(iP6,i,vDev2):EMPTY_VALUE;
-      
-      SMA07[i]  = acuan04?iMA(_Symbol,_Period,iP7,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
-      SDP07[i]  = b3BB1_enable?SMA07[i]+getSMA(iP7,i,vDev1):EMPTY_VALUE;
-      SDM07[i]  = b3BB1_enable?SMA07[i]-getSMA(iP7,i,vDev1):EMPTY_VALUE;
-      SDP072[i] = b3BB2_enable?SMA07[i]+getSMA(iP7,i,vDev2):EMPTY_VALUE;
-      SDM072[i] = b3BB2_enable?SMA07[i]-getSMA(iP7,i,vDev2):EMPTY_VALUE;
-      
-      sSDP07[i]  = b3BBF_enable?SMA07[i]+getSMA(iP7,i,vDev1):EMPTY_VALUE;
-      sSDM07[i]  = b3BBF_enable?SMA07[i]-getSMA(iP7,i,vDev1):EMPTY_VALUE;
-      sSDP072[i] = b3BBF_enable?SMA07[i]+getSMA(iP7,i,vDev2):EMPTY_VALUE;
-      sSDM072[i] = b3BBF_enable?SMA07[i]-getSMA(iP7,i,vDev2):EMPTY_VALUE;
-      
-      SMA08[i]  = acuan05?iMA(_Symbol,_Period,iP8,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
-      SDP08[i]  = b4BB1_enable?SMA08[i]+getSMA(iP8,i,vDev1):EMPTY_VALUE;
-      SDM08[i]  = b4BB1_enable?SMA08[i]-getSMA(iP8,i,vDev1):EMPTY_VALUE;
-      SDP082[i] = b4BB2_enable?SMA08[i]+getSMA(iP8,i,vDev2):EMPTY_VALUE;
-      SDM082[i] = b4BB2_enable?SMA08[i]-getSMA(iP8,i,vDev2):EMPTY_VALUE;
-      
-      sSDP08[i]  = b4BBF_enable?SMA08[i]+getSMA(iP8,i,vDev1):EMPTY_VALUE;
-      sSDM08[i]  = b4BBF_enable?SMA08[i]-getSMA(iP8,i,vDev1):EMPTY_VALUE;
-      sSDP082[i] = b4BBF_enable?SMA08[i]+getSMA(iP8,i,vDev2):EMPTY_VALUE;
-      sSDM082[i] = b4BBF_enable?SMA08[i]-getSMA(iP8,i,vDev2):EMPTY_VALUE;
-         
-      SMA09[i]  = acuan06?iMA(_Symbol,_Period,iP9,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
-      SMA10[i]  = acuan07?iMA(_Symbol,_Period,iP10,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
-      
-      EMA01[i] = bbmaoa?iMA(_Symbol,_Period,50,0,MODE_EMA,PRICE_CLOSE,i):EMPTY_VALUE;
-      
-      //MATREND
-      SMAT00[i] = Entry0?  (3*iMA(_Symbol,_Period,tP0,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP0,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE;   
-      SMAT01[i] = Entry1?  (3*iMA(_Symbol,_Period,tP1,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP1,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
-      SMAT02[i] = Entry2?  (3*iMA(_Symbol,_Period,tP2,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP2,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
-      SMAT03[i] = tfactive?(3*iMA(_Symbol,_Period,tP3,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP3,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
-      SMAT04[i] = acuan01? (3*iMA(_Symbol,_Period,tP4,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP4,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
-      SMAT05[i] = acuan02? (3*iMA(_Symbol,_Period,tP5,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP5,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
-      SMAT06[i] = acuan03? (3*iMA(_Symbol,_Period,tP6,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP6,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
-      SMAT07[i] = acuan04? (3*iMA(_Symbol,_Period,tP7,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP7,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
-      SMAT08[i] = acuan05? (3*iMA(_Symbol,_Period,tP8,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP8,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
-      SMAT09[i] = acuan06? (3*iMA(_Symbol,_Period,tP9,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP9,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
-      SMAT10[i] = acuan07? (3*iMA(_Symbol,_Period,tP10,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP10,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE;
-      
-      //LWMA HILO
-      HLWMA01[i] = lwma5?iMA(_Symbol,_Period,(p40==true)?10:lP1,0,MODE_LWMA,PRICE_HIGH,i): bbmaoa?iMA(_Symbol,_Period,lP1,0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
-      LLWMA01[i] = lwma5?iMA(_Symbol,_Period,(p40==true)?10:lP1,0,MODE_LWMA,PRICE_LOW,i):  bbmaoa?iMA(_Symbol,_Period,lP1,0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
-      HLWMA02[i] = lwma10?iMA(_Symbol,_Period,(p40==true)?20:lP2,0,MODE_LWMA,PRICE_HIGH,i):bbmaoa?iMA(_Symbol,_Period,lP2,0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
-      LLWMA02[i] = lwma10?iMA(_Symbol,_Period,(p40==true)?20:lP2,0,MODE_LWMA,PRICE_LOW,i): bbmaoa?iMA(_Symbol,_Period,lP2,0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
-      
-      HLWMASH01[i] = shadow?iMA(_Symbol,_Period,6,0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
-      HLWMASH02[i] = shadow?iMA(_Symbol,_Period,7,0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
-      HLWMASH03[i] = shadow?iMA(_Symbol,_Period,8,0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
-      HLWMASH04[i] = shadow?iMA(_Symbol,_Period,9,0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
-      
-      LLWMASH01[i] = shadow?iMA(_Symbol,_Period,6,0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
-      LLWMASH02[i] = shadow?iMA(_Symbol,_Period,7,0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
-      LLWMASH03[i] = shadow?iMA(_Symbol,_Period,8,0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
-      LLWMASH04[i] = shadow?iMA(_Symbol,_Period,9,0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
-      
-   }
+   setBufferValues();
    
    return(rates_total);
+}
+
+void setBufferValues() {
+    if (isOn) {
+        for(int i=0; i<MathMin(IndicatorCounted(),Bars-1); i++){
+            //SMA/MIDBB
+            SMA00[i] = Entry0?iMA(_Symbol,_Period,iP0,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
+            SMA01[i] = Entry1?iMA(_Symbol,_Period,iP1,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
+            SMA02[i] = Entry2?iMA(_Symbol,_Period,iP2,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
+            
+            SMA03[i] = tfactive?iMA(_Symbol,_Period,iP3,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
+            SDP03[i] = BB1_enable?SMA03[i]+getSMA(iP3,i,vDev1):EMPTY_VALUE;
+            SDM03[i] = BB1_enable?SMA03[i]-getSMA(iP3,i,vDev1):EMPTY_VALUE;
+            SDP032[i] = BB2_enable?SMA03[i]+getSMA(iP3,i,vDev2):EMPTY_VALUE;
+            SDM032[i] = BB2_enable?SMA03[i]-getSMA(iP3,i,vDev2):EMPTY_VALUE;
+            
+            sSDP03[i] = BBF_enable?SMA03[i]+getSMA(iP3,i,vDev1):EMPTY_VALUE;
+            sSDM03[i] = BBF_enable?SMA03[i]-getSMA(iP3,i,vDev1):EMPTY_VALUE;
+            sSDP032[i] = BBF_enable?SMA03[i]+getSMA(iP3,i,vDev2):EMPTY_VALUE;
+            sSDM032[i] = BBF_enable?SMA03[i]-getSMA(iP3,i,vDev2):EMPTY_VALUE;
+            
+            SMA04[i] = acuan01?iMA(_Symbol,_Period,iP4,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
+            SDP04[i]  = XBB1_enable?SMA04[i]+getSMA(iP4,i,vDev1):EMPTY_VALUE;
+            SDM04[i]  = XBB1_enable?SMA04[i]-getSMA(iP4,i,vDev1):EMPTY_VALUE;
+            SDP042[i] = XBB2_enable?SMA04[i]+getSMA(iP4,i,vDev2):EMPTY_VALUE;
+            SDM042[i] = XBB2_enable?SMA04[i]-getSMA(iP4,i,vDev2):EMPTY_VALUE;
+            
+            sSDP04[i]  = XBBF_enable?SMA04[i]+getSMA(iP4,i,vDev1):EMPTY_VALUE;
+            sSDM04[i]  = XBBF_enable?SMA04[i]-getSMA(iP4,i,vDev1):EMPTY_VALUE;
+            sSDP042[i] = XBBF_enable?SMA04[i]+getSMA(iP4,i,vDev2):EMPTY_VALUE;
+            sSDM042[i] = XBBF_enable?SMA04[i]-getSMA(iP4,i,vDev2):EMPTY_VALUE; 
+                
+            SMA05[i] = acuan02?iMA(_Symbol,_Period,iP5,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
+            SDP05[i] = bBB1_enable?SMA05[i]+getSMA(iP5,i,vDev1):EMPTY_VALUE;
+            SDM05[i] = bBB1_enable?SMA05[i]-getSMA(iP5,i,vDev1):EMPTY_VALUE;
+            SDP052[i] = bBB2_enable?SMA05[i]+getSMA(iP5,i,vDev2):EMPTY_VALUE;
+            SDM052[i] = bBB2_enable?SMA05[i]-getSMA(iP5,i,vDev2):EMPTY_VALUE;
+            
+            sSDP05[i] = bBBF_enable?SMA05[i]+getSMA(iP5,i,vDev1):EMPTY_VALUE;
+            sSDM05[i] = bBBF_enable?SMA05[i]-getSMA(iP5,i,vDev1):EMPTY_VALUE;
+            sSDP052[i] = bBBF_enable?SMA05[i]+getSMA(iP5,i,vDev2):EMPTY_VALUE;
+            sSDM052[i] = bBBF_enable?SMA05[i]-getSMA(iP5,i,vDev2):EMPTY_VALUE;
+                
+            SMA06[i] = acuan03?iMA(_Symbol,_Period,iP6,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
+            SDP06[i]  = b2BB1_enable?SMA06[i]+getSMA(iP6,i,vDev1):EMPTY_VALUE;
+            SDM06[i]  = b2BB1_enable?SMA06[i]-getSMA(iP6,i,vDev1):EMPTY_VALUE;
+            SDP062[i] = b2BB2_enable?SMA06[i]+getSMA(iP6,i,vDev2):EMPTY_VALUE;
+            SDM062[i] = b2BB2_enable?SMA06[i]-getSMA(iP6,i,vDev2):EMPTY_VALUE;
+            
+            sSDP06[i]  = b2BBF_enable?SMA06[i]+getSMA(iP6,i,vDev1):EMPTY_VALUE;
+            sSDM06[i]  = b2BBF_enable?SMA06[i]-getSMA(iP6,i,vDev1):EMPTY_VALUE;
+            sSDP062[i] = b2BBF_enable?SMA06[i]+getSMA(iP6,i,vDev2):EMPTY_VALUE;
+            sSDM062[i] = b2BBF_enable?SMA06[i]-getSMA(iP6,i,vDev2):EMPTY_VALUE;
+            
+            SMA07[i]  = acuan04?iMA(_Symbol,_Period,iP7,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
+            SDP07[i]  = b3BB1_enable?SMA07[i]+getSMA(iP7,i,vDev1):EMPTY_VALUE;
+            SDM07[i]  = b3BB1_enable?SMA07[i]-getSMA(iP7,i,vDev1):EMPTY_VALUE;
+            SDP072[i] = b3BB2_enable?SMA07[i]+getSMA(iP7,i,vDev2):EMPTY_VALUE;
+            SDM072[i] = b3BB2_enable?SMA07[i]-getSMA(iP7,i,vDev2):EMPTY_VALUE;
+            
+            sSDP07[i]  = b3BBF_enable?SMA07[i]+getSMA(iP7,i,vDev1):EMPTY_VALUE;
+            sSDM07[i]  = b3BBF_enable?SMA07[i]-getSMA(iP7,i,vDev1):EMPTY_VALUE;
+            sSDP072[i] = b3BBF_enable?SMA07[i]+getSMA(iP7,i,vDev2):EMPTY_VALUE;
+            sSDM072[i] = b3BBF_enable?SMA07[i]-getSMA(iP7,i,vDev2):EMPTY_VALUE;
+            
+            SMA08[i]  = acuan05?iMA(_Symbol,_Period,iP8,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
+            SDP08[i]  = b4BB1_enable?SMA08[i]+getSMA(iP8,i,vDev1):EMPTY_VALUE;
+            SDM08[i]  = b4BB1_enable?SMA08[i]-getSMA(iP8,i,vDev1):EMPTY_VALUE;
+            SDP082[i] = b4BB2_enable?SMA08[i]+getSMA(iP8,i,vDev2):EMPTY_VALUE;
+            SDM082[i] = b4BB2_enable?SMA08[i]-getSMA(iP8,i,vDev2):EMPTY_VALUE;
+            
+            sSDP08[i]  = b4BBF_enable?SMA08[i]+getSMA(iP8,i,vDev1):EMPTY_VALUE;
+            sSDM08[i]  = b4BBF_enable?SMA08[i]-getSMA(iP8,i,vDev1):EMPTY_VALUE;
+            sSDP082[i] = b4BBF_enable?SMA08[i]+getSMA(iP8,i,vDev2):EMPTY_VALUE;
+            sSDM082[i] = b4BBF_enable?SMA08[i]-getSMA(iP8,i,vDev2):EMPTY_VALUE;
+                
+            SMA09[i]  = acuan06?iMA(_Symbol,_Period,iP9,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
+            SMA10[i]  = acuan07?iMA(_Symbol,_Period,iP10,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
+            
+            EMA01[i] = bbmaoa?iMA(_Symbol,_Period,50,0,MODE_EMA,PRICE_CLOSE,i):EMPTY_VALUE;
+            
+            //MATREND
+            SMAT00[i] = Entry0?  (3*iMA(_Symbol,_Period,tP0,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP0,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE;   
+            SMAT01[i] = Entry1?  (3*iMA(_Symbol,_Period,tP1,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP1,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
+            SMAT02[i] = Entry2?  (3*iMA(_Symbol,_Period,tP2,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP2,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
+            SMAT03[i] = tfactive?(3*iMA(_Symbol,_Period,tP3,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP3,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
+            SMAT04[i] = acuan01? (3*iMA(_Symbol,_Period,tP4,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP4,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
+            SMAT05[i] = acuan02? (3*iMA(_Symbol,_Period,tP5,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP5,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
+            SMAT06[i] = acuan03? (3*iMA(_Symbol,_Period,tP6,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP6,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
+            SMAT07[i] = acuan04? (3*iMA(_Symbol,_Period,tP7,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP7,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
+            SMAT08[i] = acuan05? (3*iMA(_Symbol,_Period,tP8,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP8,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
+            SMAT09[i] = acuan06? (3*iMA(_Symbol,_Period,tP9,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP9,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
+            SMAT10[i] = acuan07? (3*iMA(_Symbol,_Period,tP10,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP10,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE;
+            
+            //LWMA HILO
+            HLWMA01[i] = lwma5?iMA(_Symbol,_Period,(p40==true)?10:lP1,0,MODE_LWMA,PRICE_HIGH,i): bbmaoa?iMA(_Symbol,_Period,lP1,0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
+            LLWMA01[i] = lwma5?iMA(_Symbol,_Period,(p40==true)?10:lP1,0,MODE_LWMA,PRICE_LOW,i):  bbmaoa?iMA(_Symbol,_Period,lP1,0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
+            HLWMA02[i] = lwma10?iMA(_Symbol,_Period,(p40==true)?20:lP2,0,MODE_LWMA,PRICE_HIGH,i):bbmaoa?iMA(_Symbol,_Period,lP2,0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
+            LLWMA02[i] = lwma10?iMA(_Symbol,_Period,(p40==true)?20:lP2,0,MODE_LWMA,PRICE_LOW,i): bbmaoa?iMA(_Symbol,_Period,lP2,0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
+            
+            HLWMASH01[i] = shadow?iMA(_Symbol,_Period,6,0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
+            HLWMASH02[i] = shadow?iMA(_Symbol,_Period,7,0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
+            HLWMASH03[i] = shadow?iMA(_Symbol,_Period,8,0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
+            HLWMASH04[i] = shadow?iMA(_Symbol,_Period,9,0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
+            
+            LLWMASH01[i] = shadow?iMA(_Symbol,_Period,6,0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
+            LLWMASH02[i] = shadow?iMA(_Symbol,_Period,7,0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
+            LLWMASH03[i] = shadow?iMA(_Symbol,_Period,8,0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
+            LLWMASH04[i] = shadow?iMA(_Symbol,_Period,9,0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
+        }
+    }
+    else {
+        for(int i=0; i<MathMin(IndicatorCounted(),Bars-1); i++){
+            //SMA/MIDBB
+            SMA00[i] = EMPTY_VALUE;
+            SMA01[i] = EMPTY_VALUE;
+            SMA02[i] = EMPTY_VALUE;
+            
+            SMA03[i] = EMPTY_VALUE;
+            SDP03[i] = EMPTY_VALUE;
+            SDM03[i] = EMPTY_VALUE;
+            SDP032[i] = EMPTY_VALUE;
+            SDM032[i] = EMPTY_VALUE;
+            
+            sSDP03[i] = EMPTY_VALUE;
+            sSDM03[i] = EMPTY_VALUE;
+            sSDP032[i] = EMPTY_VALUE;
+            sSDM032[i] = EMPTY_VALUE;
+            
+            SMA04[i] = EMPTY_VALUE;
+            SDP04[i]  = EMPTY_VALUE;
+            SDM04[i]  = EMPTY_VALUE;
+            SDP042[i] = EMPTY_VALUE;
+            SDM042[i] = EMPTY_VALUE;
+            
+            sSDP04[i]  = EMPTY_VALUE;
+            sSDM04[i]  = EMPTY_VALUE;
+            sSDP042[i] = EMPTY_VALUE;
+            sSDM042[i] = EMPTY_VALUE; 
+                
+            SMA05[i] = EMPTY_VALUE;
+            SDP05[i] = EMPTY_VALUE;
+            SDM05[i] = EMPTY_VALUE;
+            SDP052[i] = EMPTY_VALUE;
+            SDM052[i] = EMPTY_VALUE;
+            
+            sSDP05[i] = EMPTY_VALUE;
+            sSDM05[i] = EMPTY_VALUE;
+            sSDP052[i] = EMPTY_VALUE;
+            sSDM052[i] = EMPTY_VALUE;
+                
+            SMA06[i] = EMPTY_VALUE;
+            SDP06[i]  = EMPTY_VALUE;
+            SDM06[i]  = EMPTY_VALUE;
+            SDP062[i] = EMPTY_VALUE;
+            SDM062[i] = EMPTY_VALUE;
+            
+            sSDP06[i]  = EMPTY_VALUE;
+            sSDM06[i]  = EMPTY_VALUE;
+            sSDP062[i] = EMPTY_VALUE;
+            sSDM062[i] = EMPTY_VALUE;
+            
+            SMA07[i]  = EMPTY_VALUE;
+            SDP07[i]  = EMPTY_VALUE;
+            SDM07[i]  = EMPTY_VALUE;
+            SDP072[i] = EMPTY_VALUE;
+            SDM072[i] = EMPTY_VALUE;
+            
+            sSDP07[i]  = EMPTY_VALUE;
+            sSDM07[i]  = EMPTY_VALUE;
+            sSDP072[i] = EMPTY_VALUE;
+            sSDM072[i] = EMPTY_VALUE;
+            
+            SMA08[i]  = EMPTY_VALUE;
+            SDP08[i]  = EMPTY_VALUE;
+            SDM08[i]  = EMPTY_VALUE;
+            SDP082[i] = EMPTY_VALUE;
+            SDM082[i] = EMPTY_VALUE;
+            
+            sSDP08[i]  = EMPTY_VALUE;
+            sSDM08[i]  = EMPTY_VALUE;
+            sSDP082[i] = EMPTY_VALUE;
+            sSDM082[i] = EMPTY_VALUE;
+                
+            SMA09[i]  = EMPTY_VALUE;
+            SMA10[i]  = EMPTY_VALUE;
+            
+            EMA01[i] = EMPTY_VALUE;
+            
+            //MATREND
+            SMAT00[i] = EMPTY_VALUE;   
+            SMAT01[i] = EMPTY_VALUE; 
+            SMAT02[i] = EMPTY_VALUE; 
+            SMAT03[i] = EMPTY_VALUE; 
+            SMAT04[i] = EMPTY_VALUE; 
+            SMAT05[i] = EMPTY_VALUE; 
+            SMAT06[i] = EMPTY_VALUE; 
+            SMAT07[i] = EMPTY_VALUE; 
+            SMAT08[i] = EMPTY_VALUE; 
+            SMAT09[i] = EMPTY_VALUE; 
+            SMAT10[i] = EMPTY_VALUE;
+            
+            //LWMA HILO
+            HLWMA01[i] = EMPTY_VALUE;
+            LLWMA01[i] = EMPTY_VALUE;
+            HLWMA02[i] = EMPTY_VALUE;
+            LLWMA02[i] = EMPTY_VALUE;
+            
+            HLWMASH01[i] = EMPTY_VALUE;
+            HLWMASH02[i] = EMPTY_VALUE;
+            HLWMASH03[i] = EMPTY_VALUE;
+            HLWMASH04[i] = EMPTY_VALUE;
+            
+            LLWMASH01[i] = EMPTY_VALUE;
+            LLWMASH02[i] = EMPTY_VALUE;
+            LLWMASH03[i] = EMPTY_VALUE;
+            LLWMASH04[i] = EMPTY_VALUE;
+            
+        }
+    }
 }
 
 //-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

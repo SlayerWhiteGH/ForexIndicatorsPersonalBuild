@@ -1,0 +1,151 @@
+0	06:39:18.895	Compiling 'Awptic'
+0	06:39:18.897	Compiling 'PositionSizeCalculator'
+0	06:39:18.900	Compiling '!BBMA MATrick N.G 2022 v1'
+0	06:39:18.902	Compiling '!BBMA Periode 40'
+0	06:39:18.903	Compiling '!BBMA MATrick N.G 2022 Test'
+0	06:39:18.908	Compiling 'Trading Sessions Trade'
+0	06:39:18.909	Compiling 'Asian Session Level'
+0	06:39:18.909	Compiling 'ClickAndDraw'
+0	06:39:23.253	Custom indicator Mine\ICT\OBdraw251 GBPUSD,M15: loaded successfully
+0	06:39:23.269	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	09:29:40.207	Compiling 'Asian Session Level'
+0	09:29:42.618	Custom indicator Mine\ICT\OBdraw251 GBPUSD,M15: loaded successfully
+0	09:29:42.632	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	09:29:42.651	Custom indicator Mine\BBMA MA Trick\!BBMA MATrick N.G 2022 v3 GBPUSD,M15: loaded successfully
+0	09:29:42.687	Expert Money Management\Money Management Tool TD (OrisFxRTM) GBPUSD,M15: loaded successfully
+0	09:29:42.687	Money Management Tool TD (OrisFxRTM) GBPUSD,M15 inputs: RiskPercent=0.5; SlPointFix=200; TpPointFix=300; Slippage=5; MagicNumber=0; iiiiiiiiiii=---------------------------------; iiiiiiiii=Point value setting ( broker dependent ); PointValueFactorMode=1; PointValueFactor=0.0; iiiiiiiiii=---------------------------------; TpLineColor=32768; SlLineColor=255; EntryLineColor=0; 
+0	09:30:15.912	Custom indicator Mine\ICT\OBdraw251 GBPUSD,M15: loaded successfully
+0	09:30:15.926	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	09:30:15.944	Custom indicator Mine\BBMA MA Trick\!BBMA MATrick N.G 2022 v3 GBPUSD,M15: loaded successfully
+0	09:30:15.979	Expert Money Management\Money Management Tool TD (OrisFxRTM) GBPUSD,M15: loaded successfully
+0	09:30:15.979	Money Management Tool TD (OrisFxRTM) GBPUSD,M15 inputs: RiskPercent=0.5; SlPointFix=200; TpPointFix=300; Slippage=5; MagicNumber=0; iiiiiiiiiii=---------------------------------; iiiiiiiii=Point value setting ( broker dependent ); PointValueFactorMode=1; PointValueFactor=0.0; iiiiiiiiii=---------------------------------; TpLineColor=32768; SlLineColor=255; EntryLineColor=0; 
+0	09:38:14.570	Compiling 'Asian Session Level'
+0	09:38:15.941	Custom indicator Mine\ICT\OBdraw251 GBPUSD,M15: loaded successfully
+0	09:38:15.954	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	09:38:15.966	Custom indicator Mine\My Build\Asian Session Level GBPUSD,M15: loaded successfully
+0	09:40:57.782	Custom indicator Mine\ICT\OBdraw251 GBPUSD,M15: loaded successfully
+0	09:40:57.798	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	09:40:57.811	Custom indicator Mine\My Build\Asian Session Level GBPUSD,M15: loaded successfully
+0	09:41:34.235	Custom indicator Mine\ICT\OBdraw251 GBPUSD,M15: loaded successfully
+0	09:41:34.249	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	09:41:34.260	Custom indicator Mine\My Build\Asian Session Level GBPUSD,M15: loaded successfully
+0	09:43:50.268	Custom indicator Mine\ICT\OBdraw251 GBPUSD,M15: loaded successfully
+0	09:43:50.282	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	09:43:50.294	Custom indicator Mine\My Build\Asian Session Level GBPUSD,M15: loaded successfully
+0	09:43:50.313	OBdraw251 GBPUSD,M15: initialized
+0	09:43:50.341	ClickAndDraw GBPUSD,M15: initialized
+0	09:43:50.362	Asian Session Level GBPUSD,M15: initialized
+0	09:44:06.914	Asian Session Level GBPUSD,M15: uninit reason 5
+0	09:44:06.927	Asian Session Level GBPUSD,M15: initialized
+0	09:58:13.529	Asian Session Level GBPUSD,M15: uninit reason 2
+0	09:58:13.531	Custom indicator Asian Session Level GBPUSD,M15: removed
+0	09:58:13.543	Custom indicator Mine\My Build\Asian Session Level GBPUSD,M15: loaded successfully
+0	09:58:13.561	Asian Session Level GBPUSD,M15: initialized
+0	09:58:28.097	Asian Session Level GBPUSD,M15: uninit reason 5
+0	09:58:28.111	Asian Session Level GBPUSD,M15: initialized
+0	10:12:21.691	Asian Session Level GBPUSD,M15: uninit reason 2
+0	10:12:21.693	Custom indicator Asian Session Level GBPUSD,M15: removed
+0	10:12:21.705	Custom indicator Mine\My Build\Asian Session Level GBPUSD,M15: loaded successfully
+0	10:12:21.724	Asian Session Level GBPUSD,M15: initialized
+0	10:12:39.568	Asian Session Level GBPUSD,M15: uninit reason 5
+0	10:12:39.582	Asian Session Level GBPUSD,M15: initialized
+0	10:12:48.151	Asian Session Level GBPUSD,M15: uninit reason 5
+0	10:12:48.164	Asian Session Level GBPUSD,M15: initialized
+0	10:16:54.804	Asian Session Level GBPUSD,M15: uninit reason 2
+0	10:16:54.806	Custom indicator Asian Session Level GBPUSD,M15: removed
+0	10:16:54.818	Custom indicator Mine\My Build\Asian Session Level GBPUSD,M15: loaded successfully
+0	10:16:54.838	Asian Session Level GBPUSD,M15: initialized
+0	10:17:08.844	Asian Session Level GBPUSD,M15: uninit reason 2
+0	10:17:08.846	Custom indicator Asian Session Level GBPUSD,M15: removed
+0	10:17:08.857	Custom indicator Mine\My Build\Asian Session Level GBPUSD,M15: loaded successfully
+0	10:17:08.876	Asian Session Level GBPUSD,M15: initialized
+0	10:19:13.809	Asian Session Level GBPUSD,M15: uninit reason 2
+0	10:19:13.811	Custom indicator Asian Session Level GBPUSD,M15: removed
+0	10:19:13.823	Custom indicator Mine\My Build\Asian Session Level GBPUSD,M15: loaded successfully
+0	10:19:13.843	Asian Session Level GBPUSD,M15: initialized
+0	10:20:08.635	Asian Session Level GBPUSD,M15: uninit reason 2
+0	10:20:08.637	Custom indicator Asian Session Level GBPUSD,M15: removed
+0	10:20:08.648	Custom indicator Mine\My Build\Asian Session Level GBPUSD,M15: loaded successfully
+0	10:20:08.668	Asian Session Level GBPUSD,M15: initialized
+0	10:20:32.408	Asian Session Level GBPUSD,M15: uninit reason 2
+0	10:20:32.410	Custom indicator Asian Session Level GBPUSD,M15: removed
+0	10:20:32.423	Custom indicator Mine\My Build\Asian Session Level GBPUSD,M15: loaded successfully
+0	10:20:32.442	Asian Session Level GBPUSD,M15: initialized
+0	10:20:32.443	Asian Session Level GBPUSD,M15: day : 33
+0	10:20:32.443	Asian Session Level GBPUSD,M15: last day of month : 31
+0	10:21:31.154	Asian Session Level GBPUSD,M15: uninit reason 2
+0	10:21:31.156	Custom indicator Asian Session Level GBPUSD,M15: removed
+0	10:21:31.168	Custom indicator Mine\My Build\Asian Session Level GBPUSD,M15: loaded successfully
+0	10:21:31.186	Asian Session Level GBPUSD,M15: initialized
+0	10:21:31.187	Asian Session Level GBPUSD,M15: di sini
+0	10:21:31.187	Asian Session Level GBPUSD,M15: di sini
+0	10:21:31.187	Asian Session Level GBPUSD,M15: day : 33
+0	10:21:31.187	Asian Session Level GBPUSD,M15: last day of month : 31
+0	10:21:51.896	Asian Session Level GBPUSD,M15: uninit reason 2
+0	10:21:51.898	Custom indicator Asian Session Level GBPUSD,M15: removed
+0	10:21:51.910	Custom indicator Mine\My Build\Asian Session Level GBPUSD,M15: loaded successfully
+0	10:21:51.929	Asian Session Level GBPUSD,M15: initialized
+0	10:21:51.930	Asian Session Level GBPUSD,M15: day : 33
+0	10:21:51.930	Asian Session Level GBPUSD,M15: last day of month : 31
+0	10:23:20.634	Asian Session Level GBPUSD,M15: uninit reason 2
+0	10:23:20.636	Custom indicator Asian Session Level GBPUSD,M15: removed
+0	10:23:20.650	Custom indicator Mine\My Build\Asian Session Level GBPUSD,M15: loaded successfully
+0	10:23:20.670	Asian Session Level GBPUSD,M15: initialized
+0	10:23:29.892	Asian Session Level GBPUSD,M15: uninit reason 5
+0	10:23:29.905	Asian Session Level GBPUSD,M15: initialized
+0	10:23:42.229	Asian Session Level GBPUSD,M15: uninit reason 5
+0	10:23:42.244	Asian Session Level GBPUSD,M15: initialized
+0	10:26:46.191	Asian Session Level GBPUSD,M15: uninit reason 5
+0	10:26:46.207	Asian Session Level GBPUSD,M15: initialized
+0	10:36:07.711	Asian Session Level GBPUSD,M15: uninit reason 2
+0	10:36:07.712	Custom indicator Asian Session Level GBPUSD,M15: removed
+0	10:36:07.724	Custom indicator Mine\My Build\Asian Session Level GBPUSD,M15: loaded successfully
+0	10:36:07.743	Asian Session Level GBPUSD,M15: initialized
+0	12:29:34.007	Asian Session Level GBPUSD,M15: uninit reason 5
+0	12:29:34.022	Asian Session Level GBPUSD,M15: initialized
+0	12:31:02.287	Asian Session Level GBPUSD,M15: uninit reason 1
+0	12:31:02.289	Custom indicator Asian Session Level GBPUSD,M15: removed
+0	12:37:19.209	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	12:37:19.211	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	12:37:19.226	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	12:37:19.255	ClickAndDraw GBPUSD,M15: initialized
+0	12:38:30.438	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	12:38:30.440	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	12:38:30.453	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	12:38:30.481	ClickAndDraw GBPUSD,M15: initialized
+0	12:40:35.236	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	12:40:35.237	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	12:40:35.251	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	12:40:35.280	ClickAndDraw GBPUSD,M15: initialized
+0	12:41:34.612	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	12:41:34.614	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	12:41:34.629	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	12:41:34.657	ClickAndDraw GBPUSD,M15: initialized
+0	12:42:40.788	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	12:42:40.789	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	12:42:40.804	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	12:42:40.832	ClickAndDraw GBPUSD,M15: initialized
+0	12:49:43.191	ClickAndDraw GBPUSD,M15: uninit reason 2
+0	12:49:43.193	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	12:49:43.208	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	12:49:43.236	ClickAndDraw GBPUSD,M15: initialized
+0	12:56:21.628	Custom indicator Mine\RTM\Ouro Drawing GBPUSD,M15: loaded successfully
+0	12:56:24.220	ClickAndDraw GBPUSD,M15: out : 16623Border
+0	12:56:24.220	ClickAndDraw GBPUSD,M15: out : 16623Back
+0	12:56:24.220	ClickAndDraw GBPUSD,M15: out : 16623Caption
+0	12:56:24.220	ClickAndDraw GBPUSD,M15: out : 16623Close
+0	12:56:24.220	ClickAndDraw GBPUSD,M15: out : 16623ClientBack
+0	12:56:24.220	ClickAndDraw GBPUSD,M15: out : 16623MinMax
+0	12:56:24.220	ClickAndDraw GBPUSD,M15: out : Ouro_DRAW_BASE_1
+0	12:56:24.220	ClickAndDraw GBPUSD,M15: out : Ouro_DRAW_BASE_2
+0	12:56:24.220	ClickAndDraw GBPUSD,M15: out : Ouro_DRAW_BASE_3
+0	12:56:24.220	ClickAndDraw GBPUSD,M15: out : Ouro_DRAW_BASE_4
+0	12:56:24.220	ClickAndDraw GBPUSD,M15: out : Ouro_DRAW_BASE_5
+0	12:56:24.220	ClickAndDraw GBPUSD,M15: out : Ouro_DRAW_BASE_6
+0	12:56:24.220	ClickAndDraw GBPUSD,M15: out : Ouro_DRAW_BASE_7
+0	12:56:24.220	ClickAndDraw GBPUSD,M15: out : Ouro_DRAW_BASE_8
+0	12:56:24.221	Ouro Drawing GBPUSD,M15: initialized
+0	12:56:25.226	ClickAndDraw GBPUSD,M15: out : Ouro_DRAW_LABEL_0
+0	12:56:25.226	ClickAndDraw GBPUSD,M15: out : Ouro_DRAW_LABEL_1
+0	12:56:25.226	ClickAndDraw GBPUSD,M15: out : Ouro_DRAW_LABEL_2
+1	12:57:20.444	ClickAndDraw GBPUSD,M15: invalid pointer access in 'ClickAndDraw.mq4' (262,21)

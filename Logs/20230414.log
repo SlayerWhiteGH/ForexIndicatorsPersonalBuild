@@ -1,0 +1,19 @@
+0	01:07:27.817	OBdraw251 GBPUSD,M15: uninit reason 9
+0	01:07:27.818	ClickAndDraw GBPUSD,M15: uninit reason 9
+0	01:07:27.818	Asian Session Level GBPUSD,M15: uninit reason 9
+0	01:07:27.905	Custom indicator OBdraw251 GBPUSD,M15: removed
+0	01:07:27.908	Custom indicator ClickAndDraw GBPUSD,M15: removed
+0	01:07:27.910	Custom indicator Asian Session Level GBPUSD,M15: removed
+0	04:11:34.103	Compiling 'Asian Session Level'
+0	04:11:36.509	Custom indicator Mine\ICT\OBdraw251 GBPUSD,M15: loaded successfully
+0	04:11:36.525	Custom indicator Mine\My Build\ClickAndDraw GBPUSD,M15: loaded successfully
+0	04:11:36.537	Custom indicator Mine\My Build\Asian Session Level GBPUSD,M15: loaded successfully
+0	04:11:36.560	OBdraw251 GBPUSD,M15: initialized
+0	04:11:36.592	ClickAndDraw GBPUSD,M15: initialized
+0	04:11:36.612	Asian Session Level GBPUSD,M15: initialized
+0	04:29:40.410	Asian Session Level GBPUSD,M15: uninit reason 1
+0	04:29:40.412	Custom indicator Asian Session Level GBPUSD,M15: removed
+0	06:02:03.528	OBdraw251 GBPUSD,M15: uninit reason 9
+0	06:02:03.528	ClickAndDraw GBPUSD,M15: uninit reason 9
+0	06:02:03.619	Custom indicator OBdraw251 GBPUSD,M15: removed
+0	06:02:03.621	Custom indicator ClickAndDraw GBPUSD,M15: removed
