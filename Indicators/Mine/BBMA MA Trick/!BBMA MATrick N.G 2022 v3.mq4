@@ -14,9 +14,8 @@
 #property indicator_buffers 83
 
 enum eModeMA         {_DisableAll/*Disable*/,_shEMA50/*Show EMA50*/,_shMAtr/*Show MATrend*/};
-enum eModeBB         {_DisableBB/*Disable*/,_shSD1/*Show BB SD 1*/,_shSD2/*Show BB SD 2*/,_shFSD/*Show BB SD 1 & 2*/};
+enum eModeBB         {_DisableBB/*Disable*/,_shSD2/*Show BB SD 2*/};
 enum eModeLine       {_0L/*Solid*/,_1L/*Dash*/,_2L/*Dot*/,_3L/*Dash Dot*/,_4L/*Dash Dot Dot*/};
-
 
 extern ENUM_BASE_CORNER   corner = CORNER_LEFT_LOWER; // Position
 extern int button_x              = 0;               // X
@@ -55,7 +54,6 @@ input bool acuan04               = false;          //TF ACUAN 04
 input bool acuan05               = false;          //TF ACUAN 05
 input bool acuan06               = false;          //TF ACUAN 06
 input bool acuan07               = false;          //TF ACUAN 07
-
           
 input string                _LWMA= "--- LWMA HiLo SETTING ---";//_______________________00 
 input bool p40                   = true;          //Change Periode
@@ -65,7 +63,6 @@ input color    clLWSMA1          = clrDimGray,        //LWMA 5
                clLWSMA2          = clrDimGray;        //LWMA 10  
 input bool shadow                = false;          //HiLo LWMA Shadow
 input color    clLWSMA30         = "20,20,20";     //Shadow
-
 
 input string              _cENTRY= "--- COLOR TF ENTRY ---";//_______________________00             
 input color    clSMA0            = clrNONE,//-------- MID
@@ -114,10 +111,7 @@ input color    clSMA9            = clrNONE,//-------- MID
                clSMAT9           = clrNONE;//-------- MA TRICK
 input string              _acuan7= "--- COLOR TF ACUAN 07 ---";//_______________________00                
 input color    clSMA10           = clrNONE,//-------- MID
-               clSMAT10          = clrNONE;//-------- MA TRICK
-
-            
-
+               clSMAT10          = clrNONE;//-------- MA TRICK         
 
 string iName, buttonId, IndicatorObjPrefix;
 int    iP0,iP1,iP2,iP3,iP4,iP5,iP6,iP7,iP8,iP9,iP10,iP11,iP12,
@@ -156,29 +150,12 @@ double vDev2  = 2.0;//Deviation
 
 bool iOn = true; 
 
-bool BB1_enable = s0ModeBB==_shSD1,
-     BB2_enable = s0ModeBB==_shSD2,
-     BBF_enable = s0ModeBB==_shFSD,
-     
-     XBB1_enable = s1ModeBB==_shSD1,
-     XBB2_enable = s1ModeBB==_shSD2,
-     XBBF_enable = s1ModeBB==_shFSD,
-          
-     bBB1_enable = s2ModeBB==_shSD1,
-     bBB2_enable = s2ModeBB==_shSD2,
-     bBBF_enable = s2ModeBB==_shFSD,
-     
-     b2BB1_enable = s3ModeBB==_shSD1,
+bool BB2_enable = s0ModeBB==_shSD2,
+     XBB2_enable = s1ModeBB==_shSD2,  
+     bBB2_enable = s2ModeBB==_shSD2,    
      b2BB2_enable = s3ModeBB==_shSD2,
-     b2BBF_enable = s3ModeBB==_shFSD,
-     
-     b3BB1_enable = s4ModeBB==_shSD1,
      b3BB2_enable = s4ModeBB==_shSD2,
-     b3BBF_enable = s4ModeBB==_shFSD,
-     
-     b4BB1_enable = s5ModeBB==_shSD1,
      b4BB2_enable = s5ModeBB==_shSD2,
-     b4BBF_enable = s5ModeBB==_shFSD,
         
      line0_enable = linemode==_0L,
      line1_enable = linemode==_1L,
@@ -223,7 +200,7 @@ int OnInit() {
 //=================================================================   
    iName="!BBMA MATrick N.G 2022";   
    NamaFile = "tmp\\MATrick OA-"+_Symbol;
-   SetFile(0);
+   // SetFile(0);
    
    DrawOnOff();
    
@@ -258,116 +235,73 @@ int OnInit() {
    lP1=StrToInteger(getPer(125,0,1));
    lP2=StrToInteger(getPer(126,0,1));   
   
-   IndicatorBuffers(83);
+   IndicatorBuffers(46);
  
    //LWMA SHADOW
-   SetIndexBuffer(82,LLWMASH04); SetIndexStyle(82,isOn?0:12,0,2,getClr(102,0,(colormode==false?true:false),clLWSMA30)); SetIndexLabel(82,getPer(98,0,0,false));
-   SetIndexBuffer(81,HLWMASH04); SetIndexStyle(81,isOn?0:12,0,2,getClr(102,0,(colormode==false?true:false),clLWSMA30)); SetIndexLabel(81,getPer(98,0,0,false));
-   SetIndexBuffer(80,LLWMASH03); SetIndexStyle(80,isOn?0:12,0,2,getClr(101,0,(colormode==false?true:false),clLWSMA30)); SetIndexLabel(80,getPer(97,0,0,false));  
-   SetIndexBuffer(79,HLWMASH03); SetIndexStyle(79,isOn?0:12,0,2,getClr(101,0,(colormode==false?true:false),clLWSMA30)); SetIndexLabel(79,getPer(97,0,0,false));
+   SetIndexBuffer(45,LLWMASH04); SetIndexStyle(45,isOn?0:12,0,2,getClr(102,0,(colormode==false?true:false),clLWSMA30)); SetIndexLabel(45,getPer(98,0,0,false));
+   SetIndexBuffer(44,HLWMASH04); SetIndexStyle(44,isOn?0:12,0,2,getClr(102,0,(colormode==false?true:false),clLWSMA30)); SetIndexLabel(44,getPer(98,0,0,false));
+   SetIndexBuffer(43,LLWMASH03); SetIndexStyle(43,isOn?0:12,0,2,getClr(101,0,(colormode==false?true:false),clLWSMA30)); SetIndexLabel(43,getPer(97,0,0,false));  
+   SetIndexBuffer(42,HLWMASH03); SetIndexStyle(42,isOn?0:12,0,2,getClr(101,0,(colormode==false?true:false),clLWSMA30)); SetIndexLabel(42,getPer(97,0,0,false));
  
-   //EMA50a
-   SetIndexBuffer(78,EMA01);SetIndexStyle(78,isOn?0:12,0,1,getClr(118,0,(colormode==false?true:false),clSMAT4)); SetIndexLabel(78,"MaTrick EMA 50");  //EMA 50 
    //MATREND
-   SetIndexBuffer(77,SMAT10);SetIndexStyle(77,isOn?0:12,linemode,1,(bbmaoa==true)?clrNONE:getClr(124,0,(colormode==false?true:false),clSMAT10));SetIndexLabel(77,"MaTrick " +getPer(124,0,0,false)+"");  //ACUAN 7
-   SetIndexBuffer(76,SMAT09);SetIndexStyle(76,isOn?0:12,linemode,1,(bbmaoa==true)?clrNONE:getClr(123,0,(colormode==false?true:false),clSMAT9)); SetIndexLabel(76,"MaTrick " +getPer(123,0,0,false)+"");  //ACUAN 6
-   SetIndexBuffer(75,SMAT08);SetIndexStyle(75,isOn?0:12,linemode,1,(bbmaoa==true)?clrNONE:getClr(122,0,(colormode==false?true:false),clSMAT8)); SetIndexLabel(75,"MaTrick " +getPer(122,0,0,false)+"");  //ACUAN 5
-   SetIndexBuffer(74,SMAT07);SetIndexStyle(74,isOn?0:12,linemode,1,(bbmaoa==true)?clrNONE:getClr(121,0,(colormode==false?true:false),clSMAT7)); SetIndexLabel(74,"MaTrick " +getPer(121,0,0,false)+"");  //ACUAN 4
-   SetIndexBuffer(73,SMAT06);SetIndexStyle(73,isOn?0:12,linemode,1,(bbmaoa==true)?clrNONE:getClr(120,0,(colormode==false?true:false),clSMAT6)); SetIndexLabel(73,"MaTrick " +getPer(120,0,0,false)+"");  //ACUAN 3
-   SetIndexBuffer(72,SMAT05);SetIndexStyle(72,isOn?0:12,linemode,1,(bbmaoa==true)?clrNONE:getClr(119,0,(colormode==false?true:false),clSMAT5)); SetIndexLabel(72,"MaTrick " +getPer(119,0,0,false)+"");  //ACUAN 2
-   SetIndexBuffer(71,SMAT04);SetIndexStyle(71,isOn?0:12,linemode,1,(bbmaoa==true)?clrNONE:getClr(118,0,(colormode==false?true:false),clSMAT4)); SetIndexLabel(71,"MaTrick " +getPer(118,0,0,false)+"");  //ACUAN 1
-   SetIndexBuffer(70,SMAT03);SetIndexStyle(70,isOn?0:12,linemode,1,getClr(117,0,(colormode==false?true:false),clSMAT3)); SetIndexLabel(70,"MaTrick " +getPer(117,0,0,false)+"");  //ACTIVE
-   SetIndexBuffer(69,SMAT02);SetIndexStyle(69,isOn?0:12,linemode,1,(bbmaoa==true)?clrNONE:getClr(116,0,(colormode==false?true:false),clSMAT2)); SetIndexLabel(69,"MaTrick " +getPer(116,0,0,false)+"");  //TF KONFIRMASI 2
-   SetIndexBuffer(68,SMAT01);SetIndexStyle(68,isOn?0:12,linemode,1,(bbmaoa==true)?clrNONE:getClr(115,0,(colormode==false?true:false),clSMAT1)); SetIndexLabel(68,"MaTrick " +getPer(115,0,0,false)+"");  //TF KONFIRMASI 1
-   SetIndexBuffer(67,SMAT00);SetIndexStyle(67,isOn?0:12,linemode,1,(bbmaoa==true)?clrNONE:getClr(114,0,(colormode==false?true:false),clSMAT1)); SetIndexLabel(67,"MaTrick " +getPer(114,0,0,false)+"");  //TF ENTRY
+   SetIndexBuffer(41,SMAT10);SetIndexStyle(41,isOn?0:12,linemode,1,(bbmaoa==true)?clrNONE:getClr(124,0,(colormode==false?true:false),clSMAT10));SetIndexLabel(41,"MaTrick " +getPer(124,0,0,false)+"");  //ACUAN 7
+   SetIndexBuffer(40,SMAT09);SetIndexStyle(40,isOn?0:12,linemode,1,(bbmaoa==true)?clrNONE:getClr(123,0,(colormode==false?true:false),clSMAT9)); SetIndexLabel(40,"MaTrick " +getPer(123,0,0,false)+"");  //ACUAN 6
+   SetIndexBuffer(39,SMAT08);SetIndexStyle(39,isOn?0:12,linemode,1,(bbmaoa==true)?clrNONE:getClr(122,0,(colormode==false?true:false),clSMAT8)); SetIndexLabel(39,"MaTrick " +getPer(122,0,0,false)+"");  //ACUAN 5
+   SetIndexBuffer(38,SMAT07);SetIndexStyle(38,isOn?0:12,linemode,1,(bbmaoa==true)?clrNONE:getClr(121,0,(colormode==false?true:false),clSMAT7)); SetIndexLabel(38,"MaTrick " +getPer(121,0,0,false)+"");  //ACUAN 4
+   SetIndexBuffer(37,SMAT06);SetIndexStyle(37,isOn?0:12,linemode,1,(bbmaoa==true)?clrNONE:getClr(120,0,(colormode==false?true:false),clSMAT6)); SetIndexLabel(37,"MaTrick " +getPer(120,0,0,false)+"");  //ACUAN 3
+   SetIndexBuffer(36,SMAT05);SetIndexStyle(36,isOn?0:12,linemode,1,(bbmaoa==true)?clrNONE:getClr(119,0,(colormode==false?true:false),clSMAT5)); SetIndexLabel(36,"MaTrick " +getPer(119,0,0,false)+"");  //ACUAN 2
+   SetIndexBuffer(35,SMAT04);SetIndexStyle(35,isOn?0:12,linemode,1,(bbmaoa==true)?clrNONE:getClr(118,0,(colormode==false?true:false),clSMAT4)); SetIndexLabel(35,"MaTrick " +getPer(118,0,0,false)+"");  //ACUAN 1
+   SetIndexBuffer(34,SMAT03);SetIndexStyle(34,isOn?0:12,linemode,1,getClr(117,0,(colormode==false?true:false),clSMAT3)); SetIndexLabel(34,"MaTrick " +getPer(117,0,0,false)+"");  //ACTIVE
+   SetIndexBuffer(33,SMAT02);SetIndexStyle(33,isOn?0:12,linemode,1,(bbmaoa==true)?clrNONE:getClr(116,0,(colormode==false?true:false),clSMAT2)); SetIndexLabel(33,"MaTrick " +getPer(116,0,0,false)+"");  //TF KONFIRMASI 2
+   SetIndexBuffer(32,SMAT01);SetIndexStyle(32,isOn?0:12,linemode,1,(bbmaoa==true)?clrNONE:getClr(115,0,(colormode==false?true:false),clSMAT1)); SetIndexLabel(32,"MaTrick " +getPer(115,0,0,false)+"");  //TF KONFIRMASI 1
+   SetIndexBuffer(31,SMAT00);SetIndexStyle(31,isOn?0:12,linemode,1,(bbmaoa==true)?clrNONE:getClr(114,0,(colormode==false?true:false),clSMAT1)); SetIndexLabel(31,"MaTrick " +getPer(114,0,0,false)+"");  //TF ENTRY
    
    //MID BB
-   SetIndexBuffer(66,SMA10); SetIndexStyle(66,isOn?0:12,0,1,(bbmaoa==true)?clrNONE:getClr(104,0,(colormode==false?true:false),clSMA10)); SetIndexLabel(66,"MidBB " +getPer(104,0,0,false)+"");   //ACUAN 7
-   SetIndexBuffer(65,SMA09); SetIndexStyle(65,isOn?0:12,0,1,(bbmaoa==true)?clrNONE:getClr(103,0,(colormode==false?true:false),clSMA9));  SetIndexLabel(65,"MidBB " +getPer(103,0,0,false)+"");   //ACUAN 6
-   SetIndexBuffer(64,SMA08); SetIndexStyle(64,isOn?0:12,0,1,(bbmaoa==true)?clrNONE:getClr(102,0,(colormode==false?true:false),clSMA8));  SetIndexLabel(64,"MidBB " +getPer(102,0,0,false)+"");   //ACUAN 5
-   SetIndexBuffer(63,SMA07); SetIndexStyle(63,isOn?0:12,0,1,(bbmaoa==true)?clrNONE:getClr(101,0,(colormode==false?true:false),clSMA7));  SetIndexLabel(63,"MidBB " +getPer(101,0,0,false)+"");   //ACUAN 4
-   SetIndexBuffer(62,SMA06); SetIndexStyle(62,isOn?0:12,0,1,(bbmaoa==true)?clrNONE:getClr(100,0,(colormode==false?true:false),clSMA6));  SetIndexLabel(62,"MidBB " +getPer(100,0,0,false)+"");   //ACUAN 3
-   SetIndexBuffer(61,SMA05); SetIndexStyle(61,isOn?0:12,0,1,(bbmaoa==true)?clrNONE:getClr(99,0,(colormode==false?true:false),clSMA5));   SetIndexLabel(61,"MidBB " +getPer(99,0,0,false)+"");   //ACUAN 2
-   SetIndexBuffer(60,SMA04); SetIndexStyle(60,isOn?0:12,0,0,(bbmaoa==true)?clrNONE:getClr(98,0,(colormode==false?true:false),clSMA4));   SetIndexLabel(60,"MidBB " +getPer(98,0,0,false)+"");   //ACUAN 1
-   SetIndexBuffer(59,SMA03); SetIndexStyle(59,isOn?0:12,0,2,getClr(97,0,(colormode==false?true:false),clSMA3));   SetIndexLabel(59,"MidBB " +getPer(97,0,0,false)+"");   //ACTIVE
-   SetIndexBuffer(58,SMA02); SetIndexStyle(58,isOn?0:12,0,1,(bbmaoa==true)?clrNONE:getClr(96,0,(colormode==false?true:false),clSMA2));   SetIndexLabel(58,"MidBB " +getPer(96,0,0,false)+"");   //TF KONFIRMASI 2
-   SetIndexBuffer(57,SMA01); SetIndexStyle(57,isOn?0:12,0,1,(bbmaoa==true)?clrNONE:getClr(95,0,(colormode==false?true:false),clSMA1));   SetIndexLabel(57,"MidBB " +getPer(95,0,0,false)+"");   //TF KONFIRMASI 1
-   SetIndexBuffer(56,SMA00); SetIndexStyle(56,isOn?0:12,0,1,(bbmaoa==true)?clrNONE:getClr(94,0,(colormode==false?true:false),clSMA0));   SetIndexLabel(56,"MidBB " +getPer(94,0,0,false)+"");   //TF ENTRY
+   SetIndexBuffer(30,SMA10); SetIndexStyle(30,isOn?0:12,0,1,(bbmaoa==true)?clrNONE:getClr(104,0,(colormode==false?true:false),clSMA10)); SetIndexLabel(30,"MidBB " +getPer(104,0,0,false)+"");   //ACUAN 7
+   SetIndexBuffer(29,SMA09); SetIndexStyle(29,isOn?0:12,0,1,(bbmaoa==true)?clrNONE:getClr(103,0,(colormode==false?true:false),clSMA9));  SetIndexLabel(29,"MidBB " +getPer(103,0,0,false)+"");   //ACUAN 6
+   SetIndexBuffer(28,SMA08); SetIndexStyle(28,isOn?0:12,0,1,(bbmaoa==true)?clrNONE:getClr(102,0,(colormode==false?true:false),clSMA8));  SetIndexLabel(28,"MidBB " +getPer(102,0,0,false)+"");   //ACUAN 5
+   SetIndexBuffer(27,SMA07); SetIndexStyle(27,isOn?0:12,0,1,(bbmaoa==true)?clrNONE:getClr(101,0,(colormode==false?true:false),clSMA7));  SetIndexLabel(27,"MidBB " +getPer(101,0,0,false)+"");   //ACUAN 4
+   SetIndexBuffer(26,SMA06); SetIndexStyle(26,isOn?0:12,0,1,(bbmaoa==true)?clrNONE:getClr(100,0,(colormode==false?true:false),clSMA6));  SetIndexLabel(26,"MidBB " +getPer(100,0,0,false)+"");   //ACUAN 3
+   SetIndexBuffer(25,SMA05); SetIndexStyle(25,isOn?0:12,0,1,(bbmaoa==true)?clrNONE:getClr(99,0,(colormode==false?true:false),clSMA5));   SetIndexLabel(25,"MidBB " +getPer(99,0,0,false)+"");   //ACUAN 2
+   SetIndexBuffer(24,SMA04); SetIndexStyle(24,isOn?0:12,0,0,(bbmaoa==true)?clrNONE:getClr(98,0,(colormode==false?true:false),clSMA4));   SetIndexLabel(24,"MidBB " +getPer(98,0,0,false)+"");   //ACUAN 1
+   SetIndexBuffer(23,SMA03); SetIndexStyle(23,isOn?0:12,0,2,getClr(97,0,(colormode==false?true:false),clSMA3));   SetIndexLabel(23,"MidBB " +getPer(97,0,0,false)+"");   //ACTIVE
+   SetIndexBuffer(22,SMA02); SetIndexStyle(22,isOn?0:12,0,1,(bbmaoa==true)?clrNONE:getClr(96,0,(colormode==false?true:false),clSMA2));   SetIndexLabel(22,"MidBB " +getPer(96,0,0,false)+"");   //TF KONFIRMASI 2
+   SetIndexBuffer(21,SMA01); SetIndexStyle(21,isOn?0:12,0,1,(bbmaoa==true)?clrNONE:getClr(95,0,(colormode==false?true:false),clSMA1));   SetIndexLabel(21,"MidBB " +getPer(95,0,0,false)+"");   //TF KONFIRMASI 1
+   SetIndexBuffer(20,SMA00); SetIndexStyle(20,isOn?0:12,0,1,(bbmaoa==true)?clrNONE:getClr(94,0,(colormode==false?true:false),clSMA0));   SetIndexLabel(20,"MidBB " +getPer(94,0,0,false)+"");   //TF ENTRY
 
    //LWMA HIGH LOW
-   SetIndexBuffer(55,LLWMASH02); SetIndexStyle(55,isOn?0:12,0,2,getClr(102,0,(colormode==false?true:false),clLWSMA30)); SetIndexLabel(55,getPer(98,0,0,false));
-   SetIndexBuffer(54,HLWMASH02); SetIndexStyle(54,isOn?0:12,0,2,getClr(102,0,(colormode==false?true:false),clLWSMA30)); SetIndexLabel(54,getPer(98,0,0,false));
-   SetIndexBuffer(53,LLWMASH01); SetIndexStyle(53,isOn?0:12,0,2,getClr(101,0,(colormode==false?true:false),clLWSMA30)); SetIndexLabel(53,getPer(97,0,0,false));  
-   SetIndexBuffer(52,HLWMASH01); SetIndexStyle(52,isOn?0:12,0,2,getClr(101,0,(colormode==false?true:false),clLWSMA30)); SetIndexLabel(52,getPer(97,0,0,false));
+   SetIndexBuffer(19,LLWMASH02); SetIndexStyle(19,isOn?0:12,0,2,getClr(102,0,(colormode==false?true:false),clLWSMA30)); SetIndexLabel(19,getPer(98,0,0,false));
+   SetIndexBuffer(18,HLWMASH02); SetIndexStyle(18,isOn?0:12,0,2,getClr(102,0,(colormode==false?true:false),clLWSMA30)); SetIndexLabel(18,getPer(98,0,0,false));
+   SetIndexBuffer(17,LLWMASH01); SetIndexStyle(17,isOn?0:12,0,2,getClr(101,0,(colormode==false?true:false),clLWSMA30)); SetIndexLabel(17,getPer(97,0,0,false));  
+   SetIndexBuffer(16,HLWMASH01); SetIndexStyle(16,isOn?0:12,0,2,getClr(101,0,(colormode==false?true:false),clLWSMA30)); SetIndexLabel(16,getPer(97,0,0,false));
   
-   SetIndexBuffer(51,LLWMA02); SetIndexStyle(51,isOn?0:12,0,(bbmaoa==true)?2:1,getClr(96,0,(colormode==false?true:false),clLWSMA2)); SetIndexLabel(51,getPer(96,0,0,false));
-   SetIndexBuffer(50,HLWMA02); SetIndexStyle(50,isOn?0:12,0,(bbmaoa==true)?2:1,getClr(96,0,(colormode==false?true:false),clLWSMA2)); SetIndexLabel(50,getPer(96,0,0,false));
-   SetIndexBuffer(49,LLWMA01); SetIndexStyle(49,isOn?0:12,0,(bbmaoa==true)?2:1,getClr(95,0,(colormode==false?true:false),clLWSMA1)); SetIndexLabel(49,getPer(95,0,0,false));
-   SetIndexBuffer(48,HLWMA01); SetIndexStyle(48,isOn?0:12,0,(bbmaoa==true)?2:1,getClr(95,0,(colormode==false?true:false),clLWSMA1)); SetIndexLabel(48,getPer(95,0,0,false));
+   SetIndexBuffer(15,LLWMA02); SetIndexStyle(15,isOn?0:12,0,(bbmaoa==true)?2:1,getClr(96,0,(colormode==false?true:false),clLWSMA2)); SetIndexLabel(15,getPer(96,0,0,false));
+   SetIndexBuffer(14,HLWMA02); SetIndexStyle(14,isOn?0:12,0,(bbmaoa==true)?2:1,getClr(96,0,(colormode==false?true:false),clLWSMA2)); SetIndexLabel(14,getPer(96,0,0,false));
+   SetIndexBuffer(13,LLWMA01); SetIndexStyle(13,isOn?0:12,0,(bbmaoa==true)?2:1,getClr(95,0,(colormode==false?true:false),clLWSMA1)); SetIndexLabel(13,getPer(95,0,0,false));
+   SetIndexBuffer(12,HLWMA01); SetIndexStyle(12,isOn?0:12,0,(bbmaoa==true)?2:1,getClr(95,0,(colormode==false?true:false),clLWSMA1)); SetIndexLabel(12,getPer(95,0,0,false));
    
    //BB TF ACTIVE
-   SetIndexBuffer(47,SDP03); SetIndexStyle(47,isOn&&BB1_enable?0:12,0,2,getClr(97,0,(colormode==false?true:false),clSDP3)); SetIndexLabel(47,"BB20UPR_SD 1_" +getPer(97,0,0,false)+"");
-   SetIndexBuffer(46,SDM03); SetIndexStyle(46,isOn&&BB1_enable?0:12,0,2,getClr(97,0,(colormode==false?true:false),clSDM3)); SetIndexLabel(46,"BB20LWR_SD 1_" +getPer(97,0,0,false)+"");
-   SetIndexBuffer(45,SDP032);SetIndexStyle(45,isOn&&BB2_enable?0:12,0,2,getClr(97,0,(colormode==false?true:false),clSDP3)); SetIndexLabel(45,"BB20UPR_SD 2_" +getPer(97,0,0,false)+"");
-   SetIndexBuffer(44,SDM032);SetIndexStyle(44,isOn&&BB2_enable?0:12,0,2,getClr(97,0,(colormode==false?true:false),clSDM3)); SetIndexLabel(44,"BB20LWR_SD 2_" +getPer(97,0,0,false)+"");
- 
-   SetIndexBuffer(43,sSDP03); SetIndexStyle(43,isOn&&BBF_enable?0:12,0,2,getClr(97,0,(colormode==false?true:false),clSDP3)); SetIndexLabel(43,"BB20UPR_SD 1_" +getPer(97,0,0,false)+"");
-   SetIndexBuffer(42,sSDM03); SetIndexStyle(42,isOn&&BBF_enable?0:12,0,2,getClr(97,0,(colormode==false?true:false),clSDM3)); SetIndexLabel(42,"BB20LWR_SD 1_" +getPer(97,0,0,false)+"");
-   SetIndexBuffer(41,sSDP032);SetIndexStyle(41,isOn&&BBF_enable?0:12,0,2,getClr(97,0,(colormode==false?true:false),clSDP3)); SetIndexLabel(41,"BB20UPR_SD 2_" +getPer(97,0,0,false)+"");
-   SetIndexBuffer(40,sSDM032);SetIndexStyle(40,isOn&&BBF_enable?0:12,0,2,getClr(97,0,(colormode==false?true:false),clSDM3)); SetIndexLabel(40,"BB20LWR_SD 2_" +getPer(97,0,0,false)+"");
+   SetIndexBuffer(11,SDP03); SetIndexStyle(11,isOn&&BB2_enable?0:12,0,2,getClr(97,0,(colormode==false?true:false),clSDP3)); SetIndexLabel(11,"BB20UPR_SD 1_" +getPer(97,0,0,false)+"");
+   SetIndexBuffer(10,SDM03); SetIndexStyle(10,isOn&&BB2_enable?0:12,0,2,getClr(97,0,(colormode==false?true:false),clSDM3)); SetIndexLabel(10,"BB20LWR_SD 1_" +getPer(97,0,0,false)+"");
         
    //BB TFX
-   SetIndexBuffer(39,SDP04);  SetIndexStyle(39,isOn&&XBB1_enable?0:12,linemode1,1,getClr(98,0,(colormode==false?true:false),clSDP4)); SetIndexLabel(39,"BB20UPR_SD 1_" +getPer(98,0,0,false)+"");
-   SetIndexBuffer(38,SDM04);  SetIndexStyle(38,isOn&&XBB1_enable?0:12,linemode1,1,getClr(98,0,(colormode==false?true:false),clSDM4)); SetIndexLabel(38,"BB20LWR_SD 1_" +getPer(98,0,0,false)+"");
-   SetIndexBuffer(37,SDP042); SetIndexStyle(37,isOn&&XBB2_enable?0:12,linemode2,1,getClr(98,0,(colormode==false?true:false),clSDP4)); SetIndexLabel(37,"BB20UPR_SD 2_" +getPer(98,0,0,false)+"");
-   SetIndexBuffer(36,SDM042); SetIndexStyle(36,isOn&&XBB2_enable?0:12,linemode2,1,getClr(98,0,(colormode==false?true:false),clSDM4)); SetIndexLabel(36,"BB20LWR_SD 2_" +getPer(98,0,0,false)+"");
-
-   SetIndexBuffer(35,sSDP04); SetIndexStyle(35,isOn&&XBBF_enable?0:12,linemode1,1,getClr(98,0,(colormode==false?true:false),clSDP4)); SetIndexLabel(35,"BB20UPR_SD 1_" +getPer(98,0,0,false)+"");
-   SetIndexBuffer(34,sSDM04); SetIndexStyle(34,isOn&&XBBF_enable?0:12,linemode1,1,getClr(98,0,(colormode==false?true:false),clSDM4)); SetIndexLabel(34,"BB20LWR_SD 1_" +getPer(98,0,0,false)+"");
-   SetIndexBuffer(33,sSDP042);SetIndexStyle(33,isOn&&XBBF_enable?0:12,linemode2,1,getClr(98,0,(colormode==false?true:false),clSDP4)); SetIndexLabel(33,"BB20UPR_SD 2_" +getPer(98,0,0,false)+"");
-   SetIndexBuffer(32,sSDM042);SetIndexStyle(32,isOn&&XBBF_enable?0:12,linemode2,1,getClr(98,0,(colormode==false?true:false),clSDM4)); SetIndexLabel(32,"BB20LWR_SD 2_" +getPer(98,0,0,false)+"");
+   SetIndexBuffer(9,SDP04);  SetIndexStyle(9,isOn&&XBB2_enable?0:12,linemode1,1,getClr(98,0,(colormode==false?true:false),clSDP4)); SetIndexLabel(9,"BB20UPR_SD 1_" +getPer(98,0,0,false)+"");
+   SetIndexBuffer(8,SDM04);  SetIndexStyle(8,isOn&&XBB2_enable?0:12,linemode1,1,getClr(98,0,(colormode==false?true:false),clSDM4)); SetIndexLabel(8,"BB20LWR_SD 1_" +getPer(98,0,0,false)+"");
    
    //BB TF UPWARD
-   SetIndexBuffer(31,SDP05);  SetIndexStyle(31,isOn&&bBB1_enable?0:12,linemode1,1,getClr(99,0,(colormode==false?true:false),clSDP5)); SetIndexLabel(31,"BB20UPR_SD 1_" +getPer(99,0,0,false)+"");
-   SetIndexBuffer(30,SDM05);  SetIndexStyle(30,isOn&&bBB1_enable?0:12,linemode1,1,getClr(99,0,(colormode==false?true:false),clSDM5)); SetIndexLabel(30,"BB20LWR_SD 1_" +getPer(99,0,0,false)+"");
-   SetIndexBuffer(29,SDP052); SetIndexStyle(29,isOn&&bBB2_enable?0:12,linemode2,1,getClr(99,0,(colormode==false?true:false),clSDP5)); SetIndexLabel(29,"BB20UPR_SD 2_" +getPer(99,0,0,false)+"");
-   SetIndexBuffer(28,SDM052); SetIndexStyle(28,isOn&&bBB2_enable?0:12,linemode2,1,getClr(99,0,(colormode==false?true:false),clSDM5)); SetIndexLabel(28,"BB20LWR_SD 2_" +getPer(99,0,0,false)+"");
- 
-   SetIndexBuffer(27,sSDP05); SetIndexStyle(27,isOn&&bBBF_enable?0:12,linemode1,1,getClr(99,0,(colormode==false?true:false),clSDP5)); SetIndexLabel(27,"BB20UPR_SD 1_" +getPer(99,0,0,false)+"");
-   SetIndexBuffer(26,sSDM05); SetIndexStyle(26,isOn&&bBBF_enable?0:12,linemode1,1,getClr(99,0,(colormode==false?true:false),clSDM5)); SetIndexLabel(26,"BB20LWR_SD 1_" +getPer(99,0,0,false)+"");
-   SetIndexBuffer(25,sSDP052); SetIndexStyle(25,isOn&&bBBF_enable?0:12,linemode2,1,getClr(99,0,(colormode==false?true:false),clSDP5)); SetIndexLabel(25,"BB20UPR_SD 2_" +getPer(99,0,0,false)+"");
-   SetIndexBuffer(24,sSDM052); SetIndexStyle(24,isOn&&bBBF_enable?0:12,linemode2,1,getClr(99,0,(colormode==false?true:false),clSDM5)); SetIndexLabel(24,"BB20LWR_SD 2_" +getPer(99,0,0,false)+"");
-     
+   SetIndexBuffer(7,SDP05);  SetIndexStyle(7,isOn&&bBB2_enable?0:12,linemode1,1,getClr(99,0,(colormode==false?true:false),clSDP5)); SetIndexLabel(7,"BB20UPR_SD 1_" +getPer(99,0,0,false)+"");
+   SetIndexBuffer(6,SDM05);  SetIndexStyle(6,isOn&&bBB2_enable?0:12,linemode1,1,getClr(99,0,(colormode==false?true:false),clSDM5)); SetIndexLabel(6,"BB20LWR_SD 1_" +getPer(99,0,0,false)+"");
+
    //BB TF 2 UPWARD
-   SetIndexBuffer(23,SDP06); SetIndexStyle(23,isOn&&b2BB1_enable?0:12,linemode1,1,getClr(100,0,(colormode==false?true:false),clSDP6)); SetIndexLabel(23,"BB20UPR_SD 1_" +getPer(100,0,0,false)+"");
-   SetIndexBuffer(22,SDM06); SetIndexStyle(22,isOn&&b2BB1_enable?0:12,linemode1,1,getClr(100,0,(colormode==false?true:false),clSDP6)); SetIndexLabel(22,"BB20LWR_SD 1_" +getPer(100,0,0,false)+"");
-   SetIndexBuffer(21,SDP062);SetIndexStyle(21,isOn&&b2BB2_enable?0:12,linemode2,1,getClr(100,0,(colormode==false?true:false),clSDP6)); SetIndexLabel(21,"BB20UPR_SD 2_" +getPer(100,0,0,false)+"");
-   SetIndexBuffer(20,SDM062);SetIndexStyle(20,isOn&&b2BB2_enable?0:12,linemode2,1,getClr(100,0,(colormode==false?true:false),clSDP6)); SetIndexLabel(20,"BB20LWR_SD 2_" +getPer(100,0,0,false)+"");
+   SetIndexBuffer(5,SDP06); SetIndexStyle(5,isOn&&b2BB2_enable?0:12,linemode1,1,getClr(100,0,(colormode==false?true:false),clSDP6)); SetIndexLabel(5,"BB20UPR_SD 1_" +getPer(100,0,0,false)+"");
+   SetIndexBuffer(4,SDM06); SetIndexStyle(4,isOn&&b2BB2_enable?0:12,linemode1,1,getClr(100,0,(colormode==false?true:false),clSDP6)); SetIndexLabel(4,"BB20LWR_SD 1_" +getPer(100,0,0,false)+"");
    
-   SetIndexBuffer(19,sSDP06); SetIndexStyle(19,isOn&&b2BBF_enable?0:12,linemode1,1,getClr(100,0,(colormode==false?true:false),clSDP6)); SetIndexLabel(19,"BB20UPR_SD 1_" +getPer(100,0,0,false)+"");
-   SetIndexBuffer(18,sSDM06); SetIndexStyle(18,isOn&&b2BBF_enable?0:12,linemode1,1,getClr(100,0,(colormode==false?true:false),clSDM6)); SetIndexLabel(18,"BB20LWR_SD 1_" +getPer(100,0,0,false)+"");
-   SetIndexBuffer(17,sSDP062);SetIndexStyle(17,isOn&&b2BBF_enable?0:12,linemode2,1,getClr(100,0,(colormode==false?true:false),clSDP6)); SetIndexLabel(17,"BB20UPR_SD 2_" +getPer(100,0,0,false)+"");
-   SetIndexBuffer(16,sSDM062);SetIndexStyle(16,isOn&&b2BBF_enable?0:12,linemode2,1,getClr(100,0,(colormode==false?true:false),clSDM6)); SetIndexLabel(16,"BB20LWR_SD 2_" +getPer(100,0,0,false)+"");
+   SetIndexBuffer(3,SDP07); SetIndexStyle(3,isOn&&b3BB2_enable?0:12,linemode1,1,getClr(101,0,(colormode==false?true:false),clSDP7)); SetIndexLabel(3,"BB20UPR_SD 1_" +getPer(101,0,0,false)+"");
+   SetIndexBuffer(2,SDM07); SetIndexStyle(2,isOn&&b3BB2_enable?0:12,linemode1,1,getClr(101,0,(colormode==false?true:false),clSDP7)); SetIndexLabel(2,"BB20LWR_SD 1_" +getPer(101,0,0,false)+"");
    
-   SetIndexBuffer(15,SDP07); SetIndexStyle(15,isOn&&b3BB1_enable?0:12,linemode1,1,getClr(101,0,(colormode==false?true:false),clSDP7)); SetIndexLabel(15,"BB20UPR_SD 1_" +getPer(101,0,0,false)+"");
-   SetIndexBuffer(14,SDM07); SetIndexStyle(14,isOn&&b3BB1_enable?0:12,linemode1,1,getClr(101,0,(colormode==false?true:false),clSDP7)); SetIndexLabel(14,"BB20LWR_SD 1_" +getPer(101,0,0,false)+"");
-   SetIndexBuffer(13,SDP072);SetIndexStyle(13,isOn&&b3BB2_enable?0:12,linemode2,1,getClr(101,0,(colormode==false?true:false),clSDP7)); SetIndexLabel(13,"BB20UPR_SD 2_" +getPer(101,0,0,false)+"");
-   SetIndexBuffer(12,SDM072);SetIndexStyle(12,isOn&&b3BB2_enable?0:12,linemode2,1,getClr(101,0,(colormode==false?true:false),clSDP7)); SetIndexLabel(12,"BB20LWR_SD 2_" +getPer(101,0,0,false)+"");
-   
-   SetIndexBuffer(11,sSDP07); SetIndexStyle(11,isOn&&b3BBF_enable?0:12,linemode1,1,getClr(101,0,(colormode==false?true:false),clSDP7)); SetIndexLabel(11,"BB20UPR_SD 1_" +getPer(101,0,0,false)+"");
-   SetIndexBuffer(10,sSDM07); SetIndexStyle(10,isOn&&b3BBF_enable?0:12,linemode1,1,getClr(101,0,(colormode==false?true:false),clSDM7)); SetIndexLabel(10,"BB20LWR_SD 1_" +getPer(101,0,0,false)+"");
-   SetIndexBuffer(9,sSDP072);SetIndexStyle(9,isOn&&b3BBF_enable?0:12,linemode2,1,getClr(101,0,(colormode==false?true:false),clSDP7)); SetIndexLabel(9,"BB20UPR_SD 2_" +getPer(101,0,0,false)+"");
-   SetIndexBuffer(8,sSDM072);SetIndexStyle(8,isOn&&b3BBF_enable?0:12,linemode2,1,getClr(101,0,(colormode==false?true:false),clSDM7)); SetIndexLabel(8,"BB20LWR_SD 2_" +getPer(101,0,0,false)+"");
-   
-   SetIndexBuffer(7,SDP08); SetIndexStyle(7,isOn&&b4BB1_enable?0:12,linemode1,1,getClr(102,0,(colormode==false?true:false),clSDP8)); SetIndexLabel(7,"BB20UPR_SD 1_" +getPer(102,0,0,false)+"");
-   SetIndexBuffer(6,SDM08); SetIndexStyle(6,isOn&&b4BB1_enable?0:12,linemode1,1,getClr(102,0,(colormode==false?true:false),clSDP8)); SetIndexLabel(6,"BB20LWR_SD 1_" +getPer(102,0,0,false)+"");
-   SetIndexBuffer(5,SDP082);SetIndexStyle(5,isOn&&b4BB2_enable?0:12,linemode2,1,getClr(102,0,(colormode==false?true:false),clSDP8)); SetIndexLabel(5,"BB20UPR_SD 2_" +getPer(102,0,0,false)+"");
-   SetIndexBuffer(4,SDM082);SetIndexStyle(4,isOn&&b4BB2_enable?0:12,linemode2,1,getClr(102,0,(colormode==false?true:false),clSDP8)); SetIndexLabel(4,"BB20LWR_SD 2_" +getPer(102,0,0,false)+"");
-   
-   SetIndexBuffer(3,sSDP08); SetIndexStyle(3,isOn&&b4BBF_enable?0:12,linemode1,1,getClr(102,0,(colormode==false?true:false),clSDP8)); SetIndexLabel(3,"BB20UPR_SD 1_" +getPer(102,0,0,false)+"");
-   SetIndexBuffer(2,sSDM08); SetIndexStyle(2,isOn&&b4BBF_enable?0:12,linemode1,1,getClr(102,0,(colormode==false?true:false),clSDM8)); SetIndexLabel(2,"BB20LWR_SD 1_" +getPer(102,0,0,false)+"");
-   SetIndexBuffer(1,sSDP082);SetIndexStyle(1,isOn&&b4BBF_enable?0:12,linemode2,1,getClr(102,0,(colormode==false?true:false),clSDP8)); SetIndexLabel(1,"BB20UPR_SD 2_" +getPer(102,0,0,false)+"");
-   SetIndexBuffer(0,sSDM082);SetIndexStyle(0,isOn&&b4BBF_enable?0:12,linemode2,1,getClr(102,0,(colormode==false?true:false),clSDM8)); SetIndexLabel(0,"BB20LWR_SD 2_" +getPer(102,0,0,false)+"");
+   SetIndexBuffer(1,SDP08); SetIndexStyle(1,isOn&&b4BB2_enable?0:12,linemode1,1,getClr(102,0,(colormode==false?true:false),clSDP8)); SetIndexLabel(1,"BB20UPR_SD 1_" +getPer(102,0,0,false)+"");
+   SetIndexBuffer(0,SDM08); SetIndexStyle(0,isOn&&b4BB2_enable?0:12,linemode1,1,getClr(102,0,(colormode==false?true:false),clSDP8)); SetIndexLabel(0,"BB20LWR_SD 1_" +getPer(102,0,0,false)+"");
+
    return(INIT_SUCCEEDED);
 }
 //+==================================================================+
@@ -442,7 +376,7 @@ void OnChartEvent(const int id,const long &lparam,const double &dparam,const str
             isOn = !isOn;
             DrawOnOff();
             setBufferValues();
-            SetFile(1);
+            // SetFile(1);
          }
       }
    }
@@ -477,75 +411,32 @@ void setBufferValues() {
             SMA02[i] = Entry2?iMA(_Symbol,_Period,iP2,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
             
             SMA03[i] = tfactive?iMA(_Symbol,_Period,iP3,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
-            SDP03[i] = BB1_enable?SMA03[i]+getSMA(iP3,i,vDev1):EMPTY_VALUE;
-            SDM03[i] = BB1_enable?SMA03[i]-getSMA(iP3,i,vDev1):EMPTY_VALUE;
-            SDP032[i] = BB2_enable?SMA03[i]+getSMA(iP3,i,vDev2):EMPTY_VALUE;
-            SDM032[i] = BB2_enable?SMA03[i]-getSMA(iP3,i,vDev2):EMPTY_VALUE;
-            
-            sSDP03[i] = BBF_enable?SMA03[i]+getSMA(iP3,i,vDev1):EMPTY_VALUE;
-            sSDM03[i] = BBF_enable?SMA03[i]-getSMA(iP3,i,vDev1):EMPTY_VALUE;
-            sSDP032[i] = BBF_enable?SMA03[i]+getSMA(iP3,i,vDev2):EMPTY_VALUE;
-            sSDM032[i] = BBF_enable?SMA03[i]-getSMA(iP3,i,vDev2):EMPTY_VALUE;
-            
+            SDP03[i] = BB2_enable?SMA03[i]+getSMA(iP3,i,vDev2):EMPTY_VALUE;
+            SDM03[i] = BB2_enable?SMA03[i]-getSMA(iP3,i,vDev2):EMPTY_VALUE;
+
             SMA04[i] = acuan01?iMA(_Symbol,_Period,iP4,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
-            SDP04[i]  = XBB1_enable?SMA04[i]+getSMA(iP4,i,vDev1):EMPTY_VALUE;
-            SDM04[i]  = XBB1_enable?SMA04[i]-getSMA(iP4,i,vDev1):EMPTY_VALUE;
-            SDP042[i] = XBB2_enable?SMA04[i]+getSMA(iP4,i,vDev2):EMPTY_VALUE;
-            SDM042[i] = XBB2_enable?SMA04[i]-getSMA(iP4,i,vDev2):EMPTY_VALUE;
-            
-            sSDP04[i]  = XBBF_enable?SMA04[i]+getSMA(iP4,i,vDev1):EMPTY_VALUE;
-            sSDM04[i]  = XBBF_enable?SMA04[i]-getSMA(iP4,i,vDev1):EMPTY_VALUE;
-            sSDP042[i] = XBBF_enable?SMA04[i]+getSMA(iP4,i,vDev2):EMPTY_VALUE;
-            sSDM042[i] = XBBF_enable?SMA04[i]-getSMA(iP4,i,vDev2):EMPTY_VALUE; 
+            SDP04[i]  = XBB2_enable?SMA04[i]+getSMA(iP4,i,vDev2):EMPTY_VALUE;
+            SDM04[i]  = XBB2_enable?SMA04[i]-getSMA(iP4,i,vDev2):EMPTY_VALUE;
                 
             SMA05[i] = acuan02?iMA(_Symbol,_Period,iP5,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
-            SDP05[i] = bBB1_enable?SMA05[i]+getSMA(iP5,i,vDev1):EMPTY_VALUE;
-            SDM05[i] = bBB1_enable?SMA05[i]-getSMA(iP5,i,vDev1):EMPTY_VALUE;
-            SDP052[i] = bBB2_enable?SMA05[i]+getSMA(iP5,i,vDev2):EMPTY_VALUE;
-            SDM052[i] = bBB2_enable?SMA05[i]-getSMA(iP5,i,vDev2):EMPTY_VALUE;
-            
-            sSDP05[i] = bBBF_enable?SMA05[i]+getSMA(iP5,i,vDev1):EMPTY_VALUE;
-            sSDM05[i] = bBBF_enable?SMA05[i]-getSMA(iP5,i,vDev1):EMPTY_VALUE;
-            sSDP052[i] = bBBF_enable?SMA05[i]+getSMA(iP5,i,vDev2):EMPTY_VALUE;
-            sSDM052[i] = bBBF_enable?SMA05[i]-getSMA(iP5,i,vDev2):EMPTY_VALUE;
+            SDP05[i] = bBB2_enable?SMA05[i]+getSMA(iP5,i,vDev2):EMPTY_VALUE;
+            SDM05[i] = bBB2_enable?SMA05[i]-getSMA(iP5,i,vDev2):EMPTY_VALUE;
                 
             SMA06[i] = acuan03?iMA(_Symbol,_Period,iP6,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
-            SDP06[i]  = b2BB1_enable?SMA06[i]+getSMA(iP6,i,vDev1):EMPTY_VALUE;
-            SDM06[i]  = b2BB1_enable?SMA06[i]-getSMA(iP6,i,vDev1):EMPTY_VALUE;
-            SDP062[i] = b2BB2_enable?SMA06[i]+getSMA(iP6,i,vDev2):EMPTY_VALUE;
-            SDM062[i] = b2BB2_enable?SMA06[i]-getSMA(iP6,i,vDev2):EMPTY_VALUE;
-            
-            sSDP06[i]  = b2BBF_enable?SMA06[i]+getSMA(iP6,i,vDev1):EMPTY_VALUE;
-            sSDM06[i]  = b2BBF_enable?SMA06[i]-getSMA(iP6,i,vDev1):EMPTY_VALUE;
-            sSDP062[i] = b2BBF_enable?SMA06[i]+getSMA(iP6,i,vDev2):EMPTY_VALUE;
-            sSDM062[i] = b2BBF_enable?SMA06[i]-getSMA(iP6,i,vDev2):EMPTY_VALUE;
+            SDP06[i]  = b2BB2_enable?SMA06[i]+getSMA(iP6,i,vDev2):EMPTY_VALUE;
+            SDM06[i]  = b2BB2_enable?SMA06[i]-getSMA(iP6,i,vDev2):EMPTY_VALUE;
             
             SMA07[i]  = acuan04?iMA(_Symbol,_Period,iP7,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
-            SDP07[i]  = b3BB1_enable?SMA07[i]+getSMA(iP7,i,vDev1):EMPTY_VALUE;
-            SDM07[i]  = b3BB1_enable?SMA07[i]-getSMA(iP7,i,vDev1):EMPTY_VALUE;
-            SDP072[i] = b3BB2_enable?SMA07[i]+getSMA(iP7,i,vDev2):EMPTY_VALUE;
-            SDM072[i] = b3BB2_enable?SMA07[i]-getSMA(iP7,i,vDev2):EMPTY_VALUE;
-            
-            sSDP07[i]  = b3BBF_enable?SMA07[i]+getSMA(iP7,i,vDev1):EMPTY_VALUE;
-            sSDM07[i]  = b3BBF_enable?SMA07[i]-getSMA(iP7,i,vDev1):EMPTY_VALUE;
-            sSDP072[i] = b3BBF_enable?SMA07[i]+getSMA(iP7,i,vDev2):EMPTY_VALUE;
-            sSDM072[i] = b3BBF_enable?SMA07[i]-getSMA(iP7,i,vDev2):EMPTY_VALUE;
+            SDP07[i]  = b3BB2_enable?SMA07[i]+getSMA(iP7,i,vDev2):EMPTY_VALUE;
+            SDM07[i]  = b3BB2_enable?SMA07[i]-getSMA(iP7,i,vDev2):EMPTY_VALUE;
             
             SMA08[i]  = acuan05?iMA(_Symbol,_Period,iP8,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
-            SDP08[i]  = b4BB1_enable?SMA08[i]+getSMA(iP8,i,vDev1):EMPTY_VALUE;
-            SDM08[i]  = b4BB1_enable?SMA08[i]-getSMA(iP8,i,vDev1):EMPTY_VALUE;
-            SDP082[i] = b4BB2_enable?SMA08[i]+getSMA(iP8,i,vDev2):EMPTY_VALUE;
-            SDM082[i] = b4BB2_enable?SMA08[i]-getSMA(iP8,i,vDev2):EMPTY_VALUE;
-            
-            sSDP08[i]  = b4BBF_enable?SMA08[i]+getSMA(iP8,i,vDev1):EMPTY_VALUE;
-            sSDM08[i]  = b4BBF_enable?SMA08[i]-getSMA(iP8,i,vDev1):EMPTY_VALUE;
-            sSDP082[i] = b4BBF_enable?SMA08[i]+getSMA(iP8,i,vDev2):EMPTY_VALUE;
-            sSDM082[i] = b4BBF_enable?SMA08[i]-getSMA(iP8,i,vDev2):EMPTY_VALUE;
+            SDP08[i]  = b4BB2_enable?SMA08[i]+getSMA(iP8,i,vDev2):EMPTY_VALUE;
+            SDM08[i]  = b4BB2_enable?SMA08[i]-getSMA(iP8,i,vDev2):EMPTY_VALUE;
                 
             SMA09[i]  = acuan06?iMA(_Symbol,_Period,iP9,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
             SMA10[i]  = acuan07?iMA(_Symbol,_Period,iP10,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
             
-            EMA01[i] = bbmaoa?iMA(_Symbol,_Period,50,0,MODE_EMA,PRICE_CLOSE,i):EMPTY_VALUE;
             
             //MATREND
             SMAT00[i] = Entry0?  (3*iMA(_Symbol,_Period,tP0,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP0,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE;   
@@ -587,73 +478,29 @@ void setBufferValues() {
             SMA03[i] = EMPTY_VALUE;
             SDP03[i] = EMPTY_VALUE;
             SDM03[i] = EMPTY_VALUE;
-            SDP032[i] = EMPTY_VALUE;
-            SDM032[i] = EMPTY_VALUE;
-            
-            sSDP03[i] = EMPTY_VALUE;
-            sSDM03[i] = EMPTY_VALUE;
-            sSDP032[i] = EMPTY_VALUE;
-            sSDM032[i] = EMPTY_VALUE;
             
             SMA04[i] = EMPTY_VALUE;
             SDP04[i]  = EMPTY_VALUE;
             SDM04[i]  = EMPTY_VALUE;
-            SDP042[i] = EMPTY_VALUE;
-            SDM042[i] = EMPTY_VALUE;
-            
-            sSDP04[i]  = EMPTY_VALUE;
-            sSDM04[i]  = EMPTY_VALUE;
-            sSDP042[i] = EMPTY_VALUE;
-            sSDM042[i] = EMPTY_VALUE; 
-                
+
             SMA05[i] = EMPTY_VALUE;
             SDP05[i] = EMPTY_VALUE;
             SDM05[i] = EMPTY_VALUE;
-            SDP052[i] = EMPTY_VALUE;
-            SDM052[i] = EMPTY_VALUE;
-            
-            sSDP05[i] = EMPTY_VALUE;
-            sSDM05[i] = EMPTY_VALUE;
-            sSDP052[i] = EMPTY_VALUE;
-            sSDM052[i] = EMPTY_VALUE;
                 
             SMA06[i] = EMPTY_VALUE;
             SDP06[i]  = EMPTY_VALUE;
             SDM06[i]  = EMPTY_VALUE;
-            SDP062[i] = EMPTY_VALUE;
-            SDM062[i] = EMPTY_VALUE;
-            
-            sSDP06[i]  = EMPTY_VALUE;
-            sSDM06[i]  = EMPTY_VALUE;
-            sSDP062[i] = EMPTY_VALUE;
-            sSDM062[i] = EMPTY_VALUE;
             
             SMA07[i]  = EMPTY_VALUE;
             SDP07[i]  = EMPTY_VALUE;
             SDM07[i]  = EMPTY_VALUE;
-            SDP072[i] = EMPTY_VALUE;
-            SDM072[i] = EMPTY_VALUE;
-            
-            sSDP07[i]  = EMPTY_VALUE;
-            sSDM07[i]  = EMPTY_VALUE;
-            sSDP072[i] = EMPTY_VALUE;
-            sSDM072[i] = EMPTY_VALUE;
             
             SMA08[i]  = EMPTY_VALUE;
             SDP08[i]  = EMPTY_VALUE;
             SDM08[i]  = EMPTY_VALUE;
-            SDP082[i] = EMPTY_VALUE;
-            SDM082[i] = EMPTY_VALUE;
-            
-            sSDP08[i]  = EMPTY_VALUE;
-            sSDM08[i]  = EMPTY_VALUE;
-            sSDP082[i] = EMPTY_VALUE;
-            sSDM082[i] = EMPTY_VALUE;
                 
             SMA09[i]  = EMPTY_VALUE;
             SMA10[i]  = EMPTY_VALUE;
-            
-            EMA01[i] = EMPTY_VALUE;
             
             //MATREND
             SMAT00[i] = EMPTY_VALUE;   
@@ -683,7 +530,6 @@ void setBufferValues() {
             LLWMASH02[i] = EMPTY_VALUE;
             LLWMASH03[i] = EMPTY_VALUE;
             LLWMASH04[i] = EMPTY_VALUE;
-            
         }
     }
 }

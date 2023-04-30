@@ -81,26 +81,6 @@ int OnCalculate(const int rates_total,
         }
     }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~    
-    // Buat objek garis vertikal pada setiap jam 8.30 malam setiap hari
-    datetime startTime = D'20:30:00';
-    datetime curTime = TimeLocal();
-    datetime lineTime = TimeGMT() + startTime - curTime;
-    int lineHandle = ObjectCreate("8.30 AM", OBJ_VLINE, 0, lineTime, 0);
-
-        if (lineHandle == INVALID_HANDLE)
-        {
-            Print("Gagal membuat objek garis vertikal!");
-            return INIT_FAILED;
-        }
-
-        ObjectSet("8.30 AM", OBJPROP_COLOR, clrLime);
-        ObjectSet("8.30 AM", OBJPROP_WIDTH, 1);
-        ObjectSet("8.30 AM", OBJPROP_STYLE, STYLE_DOT);
-        ObjectSet("8.30 AM", OBJPROP_SELECTABLE, FALSE);
-        ObjectSet("8.30 AM", OBJPROP_HIDDEN, TRUE);
-        ObjectSet("8.30 AM", OBJPROP_BACK, TRUE);
-        
-    
     
     return(rates_total);
 }

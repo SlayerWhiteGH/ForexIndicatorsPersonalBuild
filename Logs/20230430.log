@@ -1,0 +1,1430 @@
+0	00:04:08.220	Quick Style GBPUSD,M5: uninit reason 9
+0	00:04:08.220	OHLC Magnet GBPUSD,M5: uninit reason 9
+0	00:04:08.220	Time Range Separator GBPUSD,M5: uninit reason 9
+0	00:04:08.221	CandleTime GBPUSD,M5: uninit reason 9
+0	00:04:08.221	Watermark Symbol GBPUSD,M5: uninit reason 9
+0	00:04:08.222	Separator Time GBPUSD,M5: uninit reason 9
+0	00:04:08.225	Separator Time GBPUSD,M5: uninit reason 9
+0	00:04:08.227	Separator Time GBPUSD,M5: uninit reason 9
+0	00:04:08.228	Separator Time GBPUSD,M5: uninit reason 9
+0	00:04:08.228	Separator Time GBPUSD,M5: uninit reason 9
+0	00:04:08.228	Separator Time GBPUSD,M5: uninit reason 9
+0	00:04:08.229	Ouro Drawing GBPUSD,M5: uninit reason 9
+1	00:04:08.230	Ouro Drawing GBPUSD,M5: invalid pointer access in 'Ouro Drawing.mq4' (407,7)
+0	00:04:08.230	!BBMA MATrick N.G 2022 v1 GBPUSD,M5: uninit reason 9
+0	00:04:08.231	Quick Style XAUUSD,M15: uninit reason 9
+0	00:04:08.232	OHLC Magnet XAUUSD,M15: uninit reason 9
+0	00:04:08.232	Time Range Separator XAUUSD,M15: uninit reason 9
+0	00:04:08.232	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 9
+0	00:04:08.232	CandleTime XAUUSD,M15: uninit reason 9
+0	00:04:08.232	Watermark Symbol XAUUSD,M15: uninit reason 9
+0	00:04:08.233	Asian Session Level XAUUSD,M15: uninit reason 9
+0	00:04:08.233	!BBMA MATrick N.G 2022 v1 XAUUSD,M15: uninit reason 9
+0	00:04:08.234	Trading box Technical analysis XAUUSD,M15: uninit reason 9
+0	00:04:08.234	!AML PDW 1.4 2019 XAUUSD,M15: uninit reason 9
+0	00:04:08.333	Custom indicator Quick Style GBPUSD,M5: removed
+0	00:04:08.338	Custom indicator OHLC Magnet GBPUSD,M5: removed
+0	00:04:08.340	Custom indicator Time Range Separator GBPUSD,M5: removed
+0	00:04:08.343	Custom indicator CandleTime GBPUSD,M5: removed
+0	00:04:08.348	Custom indicator Watermark Symbol GBPUSD,M5: removed
+0	00:04:08.358	Custom indicator Separator Time GBPUSD,M5: removed
+0	00:04:08.360	Custom indicator Separator Time GBPUSD,M5: removed
+0	00:04:08.366	Custom indicator Separator Time GBPUSD,M5: removed
+0	00:04:08.386	Custom indicator Separator Time GBPUSD,M5: removed
+0	00:04:08.388	Custom indicator Separator Time GBPUSD,M5: removed
+0	00:04:08.391	Custom indicator Separator Time GBPUSD,M5: removed
+0	00:04:08.394	Custom indicator Ouro Drawing GBPUSD,M5: removed
+0	00:04:08.406	Custom indicator !BBMA MATrick N.G 2022 v1 GBPUSD,M5: removed
+0	00:04:08.455	Custom indicator Quick Style XAUUSD,M15: removed
+0	00:04:08.457	Custom indicator OHLC Magnet XAUUSD,M15: removed
+0	00:04:08.460	Custom indicator Time Range Separator XAUUSD,M15: removed
+0	00:04:08.463	Custom indicator Kill Zone & 90 Min Cycle XAUUSD,M15: removed
+0	00:04:08.466	Custom indicator CandleTime XAUUSD,M15: removed
+0	00:04:08.469	Custom indicator Watermark Symbol XAUUSD,M15: removed
+0	00:04:08.470	Custom indicator Asian Session Level XAUUSD,M15: removed
+0	00:04:08.473	Custom indicator !BBMA MATrick N.G 2022 v1 XAUUSD,M15: removed
+0	00:04:08.478	Custom indicator Trading box Technical analysis XAUUSD,M15: removed
+0	00:04:08.479	Custom indicator !AML PDW 1.4 2019 XAUUSD,M15: removed
+0	14:07:20.664	Custom indicator Market\Quick Style GBPUSD,M5: loaded successfully
+0	14:07:20.690	Custom indicator Market\OHLC Magnet GBPUSD,M5: loaded successfully
+0	14:07:20.716	Custom indicator Market\Time Range Separator GBPUSD,M5: loaded successfully
+0	14:07:20.736	Custom indicator Mine\Background Indicator\CandleTime GBPUSD,M5: loaded successfully
+0	14:07:20.765	Custom indicator Market\Watermark Symbol GBPUSD,M5: loaded successfully
+0	14:07:20.786	Custom indicator Mine\Daily Open\Separator Time GBPUSD,M5: loaded successfully
+0	14:07:20.806	Custom indicator Mine\Daily Open\Separator Time GBPUSD,M5: loaded successfully
+0	14:07:20.832	Custom indicator Mine\Daily Open\Separator Time GBPUSD,M5: loaded successfully
+0	14:07:20.855	Custom indicator Mine\Daily Open\Separator Time GBPUSD,M5: loaded successfully
+0	14:07:20.881	Custom indicator Mine\Daily Open\Separator Time GBPUSD,M5: loaded successfully
+0	14:07:20.907	Custom indicator Mine\Daily Open\Separator Time GBPUSD,M5: loaded successfully
+0	14:07:20.945	Custom indicator Mine\RTM\Ouro Drawing GBPUSD,M5: loaded successfully
+0	14:07:20.971	Custom indicator Mine\BBMA MA Trick\!BBMA MATrick N.G 2022 v1 GBPUSD,M5: loaded successfully
+0	14:07:21.054	Quick Style GBPUSD,M5: 0
+0	14:07:21.054	Quick Style GBPUSD,M5: 0
+0	14:07:21.055	Quick Style GBPUSD,M5: 1
+0	14:07:21.056	Quick Style GBPUSD,M5: 1
+0	14:07:21.056	Quick Style GBPUSD,M5: 2
+0	14:07:21.058	Quick Style GBPUSD,M5: initialized
+0	14:07:21.091	OHLC Magnet GBPUSD,M5: initialized
+0	14:07:21.124	Time Range Separator GBPUSD,M5: initialized
+0	14:07:21.155	CandleTime GBPUSD,M5: initialized
+0	14:07:21.196	Watermark Symbol GBPUSD,M5: initialized
+0	14:07:21.220	Separator Time GBPUSD,M5: initialized
+0	14:07:21.245	Separator Time GBPUSD,M5: initialized
+0	14:07:21.269	Separator Time GBPUSD,M5: initialized
+0	14:07:21.293	Separator Time GBPUSD,M5: initialized
+0	14:07:21.323	Separator Time GBPUSD,M5: initialized
+0	14:07:21.365	Separator Time GBPUSD,M5: initialized
+0	14:07:21.794	Ouro Drawing GBPUSD,M5: initialized
+0	14:07:21.881	!BBMA MATrick N.G 2022 v1 GBPUSD,M5: initialized
+0	14:07:24.181	Custom indicator Market\Quick Style XAUUSD,M15: loaded successfully
+0	14:07:24.234	Custom indicator Market\OHLC Magnet XAUUSD,M15: loaded successfully
+0	14:07:24.300	Custom indicator Market\Time Range Separator XAUUSD,M15: loaded successfully
+0	14:07:24.350	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle XAUUSD,M15: loaded successfully
+0	14:07:24.378	Custom indicator Mine\Background Indicator\CandleTime XAUUSD,M15: loaded successfully
+0	14:07:24.421	Custom indicator Market\Watermark Symbol XAUUSD,M15: loaded successfully
+0	14:07:24.445	Custom indicator Mine\My Build\Asian Session Level XAUUSD,M15: loaded successfully
+0	14:07:24.510	Custom indicator Mine\BBMA MA Trick\!BBMA MATrick N.G 2022 v1 XAUUSD,M15: loaded successfully
+0	14:07:24.598	Custom indicator Market\Trading box Technical analysis XAUUSD,M15: loaded successfully
+0	14:07:24.622	Custom indicator Mine\AML\!AML PDW 1.4 2019 XAUUSD,M15: loaded successfully
+0	14:07:24.698	Quick Style XAUUSD,M15: 0
+0	14:07:24.699	Quick Style XAUUSD,M15: 0
+0	14:07:24.699	Quick Style XAUUSD,M15: 1
+0	14:07:24.700	Quick Style XAUUSD,M15: 1
+0	14:07:24.700	Quick Style XAUUSD,M15: 2
+0	14:07:24.700	Quick Style XAUUSD,M15: initialized
+0	14:07:24.781	OHLC Magnet XAUUSD,M15: initialized
+0	14:07:24.817	Time Range Separator XAUUSD,M15: initialized
+0	14:07:24.978	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	14:07:25.018	CandleTime XAUUSD,M15: initialized
+0	14:07:25.059	Watermark Symbol XAUUSD,M15: initialized
+0	14:07:25.103	Asian Session Level XAUUSD,M15: initialized
+0	14:07:25.225	!BBMA MATrick N.G 2022 v1 XAUUSD,M15: initialized
+0	14:07:25.299	Trading box Technical analysis XAUUSD,M15: initialized
+0	14:07:25.354	!AML PDW 1.4 2019 XAUUSD,M15: initialized
+1	14:07:25.357	Kill Zone & 90 Min Cycle XAUUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (141,32)
+0	14:08:27.403	Ouro Drawing GBPUSD,M5: uninit reason 5
+0	14:08:27.425	Ouro Drawing GBPUSD,M5: initialized
+0	14:10:44.310	Ouro Drawing GBPUSD,M5: uninit reason 5
+0	14:10:44.332	Ouro Drawing GBPUSD,M5: initialized
+0	15:16:40.279	Quick Style GBPUSD,M5: uninit reason 3
+0	15:16:40.281	OHLC Magnet GBPUSD,M5: uninit reason 3
+0	15:16:40.281	Time Range Separator GBPUSD,M5: uninit reason 3
+0	15:16:40.282	CandleTime GBPUSD,M5: uninit reason 3
+0	15:16:40.282	Watermark Symbol GBPUSD,M5: uninit reason 3
+0	15:16:40.282	Separator Time GBPUSD,M5: uninit reason 3
+0	15:16:40.286	Separator Time GBPUSD,M5: uninit reason 3
+0	15:16:40.288	Separator Time GBPUSD,M5: uninit reason 3
+0	15:16:40.288	Separator Time GBPUSD,M5: uninit reason 3
+0	15:16:40.289	Separator Time GBPUSD,M5: uninit reason 3
+0	15:16:40.289	Separator Time GBPUSD,M5: uninit reason 3
+0	15:16:40.289	Ouro Drawing GBPUSD,M5: uninit reason 3
+0	15:16:40.291	!BBMA MATrick N.G 2022 v1 GBPUSD,M5: uninit reason 3
+0	15:16:40.317	Quick Style GBPUSD,M1: 0
+0	15:16:40.317	Quick Style GBPUSD,M1: 0
+0	15:16:40.317	Quick Style GBPUSD,M1: 1
+0	15:16:40.317	Quick Style GBPUSD,M1: 1
+0	15:16:40.317	Quick Style GBPUSD,M1: 2
+0	15:16:40.317	Quick Style GBPUSD,M1: initialized
+0	15:16:40.318	OHLC Magnet GBPUSD,M1: initialized
+0	15:16:40.318	Time Range Separator GBPUSD,M1: initialized
+0	15:16:40.318	CandleTime GBPUSD,M1: initialized
+0	15:16:40.318	Watermark Symbol GBPUSD,M1: initialized
+0	15:16:40.319	Separator Time GBPUSD,M1: initialized
+0	15:16:40.319	Separator Time GBPUSD,M1: initialized
+0	15:16:40.319	Separator Time GBPUSD,M1: initialized
+0	15:16:40.319	Separator Time GBPUSD,M1: initialized
+0	15:16:40.319	Separator Time GBPUSD,M1: initialized
+0	15:16:40.319	Separator Time GBPUSD,M1: initialized
+0	15:16:40.319	Ouro Drawing GBPUSD,M1: initialized
+0	15:16:40.320	!BBMA MATrick N.G 2022 v1 GBPUSD,M1: initialized
+0	15:17:04.592	Quick Style GBPUSD,M1: uninit reason 3
+0	15:17:04.593	OHLC Magnet GBPUSD,M1: uninit reason 3
+0	15:17:04.593	Time Range Separator GBPUSD,M1: uninit reason 3
+0	15:17:04.593	CandleTime GBPUSD,M1: uninit reason 3
+0	15:17:04.593	Watermark Symbol GBPUSD,M1: uninit reason 3
+0	15:17:04.594	Separator Time GBPUSD,M1: uninit reason 3
+0	15:17:04.595	Separator Time GBPUSD,M1: uninit reason 3
+0	15:17:04.595	Separator Time GBPUSD,M1: uninit reason 3
+0	15:17:04.595	Separator Time GBPUSD,M1: uninit reason 3
+0	15:17:04.595	Separator Time GBPUSD,M1: uninit reason 3
+0	15:17:04.595	Separator Time GBPUSD,M1: uninit reason 3
+0	15:17:04.595	Ouro Drawing GBPUSD,M1: uninit reason 3
+0	15:17:04.597	!BBMA MATrick N.G 2022 v1 GBPUSD,M1: uninit reason 3
+0	15:17:04.611	Quick Style GBPUSD,M5: 0
+0	15:17:04.611	Quick Style GBPUSD,M5: 0
+0	15:17:04.612	Quick Style GBPUSD,M5: 1
+0	15:17:04.612	Quick Style GBPUSD,M5: 1
+0	15:17:04.612	Quick Style GBPUSD,M5: 2
+0	15:17:04.612	Quick Style GBPUSD,M5: initialized
+0	15:17:04.612	OHLC Magnet GBPUSD,M5: initialized
+0	15:17:04.612	Time Range Separator GBPUSD,M5: initialized
+0	15:17:04.612	CandleTime GBPUSD,M5: initialized
+0	15:17:04.612	Watermark Symbol GBPUSD,M5: initialized
+0	15:17:04.612	Separator Time GBPUSD,M5: initialized
+0	15:17:04.612	Separator Time GBPUSD,M5: initialized
+0	15:17:04.612	Separator Time GBPUSD,M5: initialized
+0	15:17:04.612	Separator Time GBPUSD,M5: initialized
+0	15:17:04.612	Separator Time GBPUSD,M5: initialized
+0	15:17:04.612	Separator Time GBPUSD,M5: initialized
+0	15:17:04.613	Ouro Drawing GBPUSD,M5: initialized
+0	15:17:04.613	!BBMA MATrick N.G 2022 v1 GBPUSD,M5: initialized
+0	15:18:29.877	Quick Style GBPUSD,M5: uninit reason 3
+0	15:18:29.879	OHLC Magnet GBPUSD,M5: uninit reason 3
+0	15:18:29.879	Time Range Separator GBPUSD,M5: uninit reason 3
+0	15:18:29.880	CandleTime GBPUSD,M5: uninit reason 3
+0	15:18:29.880	Watermark Symbol GBPUSD,M5: uninit reason 3
+0	15:18:29.880	Separator Time GBPUSD,M5: uninit reason 3
+0	15:18:29.884	Separator Time GBPUSD,M5: uninit reason 3
+0	15:18:29.885	Separator Time GBPUSD,M5: uninit reason 3
+0	15:18:29.886	Separator Time GBPUSD,M5: uninit reason 3
+0	15:18:29.887	Separator Time GBPUSD,M5: uninit reason 3
+0	15:18:29.887	Separator Time GBPUSD,M5: uninit reason 3
+0	15:18:29.887	Ouro Drawing GBPUSD,M5: uninit reason 3
+0	15:18:29.889	!BBMA MATrick N.G 2022 v1 GBPUSD,M5: uninit reason 3
+0	15:18:29.904	Quick Style GBPUSD,M1: 0
+0	15:18:29.905	Quick Style GBPUSD,M1: 0
+0	15:18:29.905	Quick Style GBPUSD,M1: 1
+0	15:18:29.905	Quick Style GBPUSD,M1: 1
+0	15:18:29.905	Quick Style GBPUSD,M1: 2
+0	15:18:29.905	Quick Style GBPUSD,M1: initialized
+0	15:18:29.905	OHLC Magnet GBPUSD,M1: initialized
+0	15:18:29.905	Time Range Separator GBPUSD,M1: initialized
+0	15:18:29.905	CandleTime GBPUSD,M1: initialized
+0	15:18:29.906	Watermark Symbol GBPUSD,M1: initialized
+0	15:18:29.906	Separator Time GBPUSD,M1: initialized
+0	15:18:29.906	Separator Time GBPUSD,M1: initialized
+0	15:18:29.906	Separator Time GBPUSD,M1: initialized
+0	15:18:29.906	Separator Time GBPUSD,M1: initialized
+0	15:18:29.906	Separator Time GBPUSD,M1: initialized
+0	15:18:29.906	Separator Time GBPUSD,M1: initialized
+0	15:18:29.906	Ouro Drawing GBPUSD,M1: initialized
+0	15:18:29.906	!BBMA MATrick N.G 2022 v1 GBPUSD,M1: initialized
+0	15:18:56.803	!BBMA MATrick N.G 2022 v1 GBPUSD,M1: uninit reason 5
+0	15:18:56.832	!BBMA MATrick N.G 2022 v1 GBPUSD,M1: initialized
+0	15:19:03.527	Quick Style GBPUSD,M1: uninit reason 3
+0	15:19:03.529	OHLC Magnet GBPUSD,M1: uninit reason 3
+0	15:19:03.529	Time Range Separator GBPUSD,M1: uninit reason 3
+0	15:19:03.529	CandleTime GBPUSD,M1: uninit reason 3
+0	15:19:03.529	Watermark Symbol GBPUSD,M1: uninit reason 3
+0	15:19:03.529	Separator Time GBPUSD,M1: uninit reason 3
+0	15:19:03.530	Separator Time GBPUSD,M1: uninit reason 3
+0	15:19:03.531	Separator Time GBPUSD,M1: uninit reason 3
+0	15:19:03.531	Separator Time GBPUSD,M1: uninit reason 3
+0	15:19:03.531	Separator Time GBPUSD,M1: uninit reason 3
+0	15:19:03.531	Separator Time GBPUSD,M1: uninit reason 3
+0	15:19:03.531	Ouro Drawing GBPUSD,M1: uninit reason 3
+0	15:19:03.533	!BBMA MATrick N.G 2022 v1 GBPUSD,M1: uninit reason 3
+0	15:19:03.547	Quick Style GBPUSD,M5: 0
+0	15:19:03.547	Quick Style GBPUSD,M5: 0
+0	15:19:03.547	Quick Style GBPUSD,M5: 1
+0	15:19:03.547	Quick Style GBPUSD,M5: 1
+0	15:19:03.547	Quick Style GBPUSD,M5: 2
+0	15:19:03.547	Quick Style GBPUSD,M5: initialized
+0	15:19:03.548	OHLC Magnet GBPUSD,M5: initialized
+0	15:19:03.548	Time Range Separator GBPUSD,M5: initialized
+0	15:19:03.548	CandleTime GBPUSD,M5: initialized
+0	15:19:03.548	Watermark Symbol GBPUSD,M5: initialized
+0	15:19:03.548	Separator Time GBPUSD,M5: initialized
+0	15:19:03.548	Separator Time GBPUSD,M5: initialized
+0	15:19:03.548	Separator Time GBPUSD,M5: initialized
+0	15:19:03.548	Separator Time GBPUSD,M5: initialized
+0	15:19:03.548	Separator Time GBPUSD,M5: initialized
+0	15:19:03.548	Separator Time GBPUSD,M5: initialized
+0	15:19:03.548	Ouro Drawing GBPUSD,M5: initialized
+0	15:19:03.549	!BBMA MATrick N.G 2022 v1 GBPUSD,M5: initialized
+0	16:02:13.985	Quick Style GBPUSD,M5: uninit reason 3
+0	16:02:13.986	OHLC Magnet GBPUSD,M5: uninit reason 3
+0	16:02:13.986	Time Range Separator GBPUSD,M5: uninit reason 3
+0	16:02:13.987	CandleTime GBPUSD,M5: uninit reason 3
+0	16:02:13.987	Watermark Symbol GBPUSD,M5: uninit reason 3
+0	16:02:13.988	Separator Time GBPUSD,M5: uninit reason 3
+0	16:02:13.991	Separator Time GBPUSD,M5: uninit reason 3
+0	16:02:13.992	Separator Time GBPUSD,M5: uninit reason 3
+0	16:02:13.993	Separator Time GBPUSD,M5: uninit reason 3
+0	16:02:13.994	Separator Time GBPUSD,M5: uninit reason 3
+0	16:02:13.994	Separator Time GBPUSD,M5: uninit reason 3
+0	16:02:13.994	Ouro Drawing GBPUSD,M5: uninit reason 3
+0	16:02:13.995	!BBMA MATrick N.G 2022 v1 GBPUSD,M5: uninit reason 3
+0	16:02:14.014	Quick Style GBPUSD,M30: 0
+0	16:02:14.014	Quick Style GBPUSD,M30: 0
+0	16:02:14.014	Quick Style GBPUSD,M30: 1
+0	16:02:14.015	Quick Style GBPUSD,M30: 1
+0	16:02:14.015	Quick Style GBPUSD,M30: 2
+0	16:02:14.015	Quick Style GBPUSD,M30: initialized
+0	16:02:14.015	OHLC Magnet GBPUSD,M30: initialized
+0	16:02:14.016	Time Range Separator GBPUSD,M30: initialized
+0	16:02:14.016	CandleTime GBPUSD,M30: initialized
+0	16:02:14.017	Watermark Symbol GBPUSD,M30: initialized
+0	16:02:14.017	Separator Time GBPUSD,M30: initialized
+0	16:02:14.017	Separator Time GBPUSD,M30: initialized
+0	16:02:14.017	Separator Time GBPUSD,M30: initialized
+0	16:02:14.017	Separator Time GBPUSD,M30: initialized
+0	16:02:14.017	Separator Time GBPUSD,M30: initialized
+0	16:02:14.017	Separator Time GBPUSD,M30: initialized
+0	16:02:14.017	Ouro Drawing GBPUSD,M30: initialized
+0	16:02:14.018	!BBMA MATrick N.G 2022 v1 GBPUSD,M30: initialized
+0	16:02:14.573	Quick Style GBPUSD,M30: uninit reason 3
+0	16:02:14.574	OHLC Magnet GBPUSD,M30: uninit reason 3
+0	16:02:14.574	Time Range Separator GBPUSD,M30: uninit reason 3
+0	16:02:14.574	CandleTime GBPUSD,M30: uninit reason 3
+0	16:02:14.574	Watermark Symbol GBPUSD,M30: uninit reason 3
+0	16:02:14.574	Separator Time GBPUSD,M30: uninit reason 3
+0	16:02:14.574	Separator Time GBPUSD,M30: uninit reason 3
+0	16:02:14.574	Separator Time GBPUSD,M30: uninit reason 3
+0	16:02:14.574	Separator Time GBPUSD,M30: uninit reason 3
+0	16:02:14.574	Separator Time GBPUSD,M30: uninit reason 3
+0	16:02:14.574	Separator Time GBPUSD,M30: uninit reason 3
+0	16:02:14.574	Ouro Drawing GBPUSD,M30: uninit reason 3
+0	16:02:14.576	!BBMA MATrick N.G 2022 v1 GBPUSD,M30: uninit reason 3
+0	16:02:14.599	Quick Style GBPUSD,M15: 0
+0	16:02:14.599	Quick Style GBPUSD,M15: 0
+0	16:02:14.599	Quick Style GBPUSD,M15: 1
+0	16:02:14.599	Quick Style GBPUSD,M15: 1
+0	16:02:14.599	Quick Style GBPUSD,M15: 2
+0	16:02:14.599	Quick Style GBPUSD,M15: initialized
+0	16:02:14.600	OHLC Magnet GBPUSD,M15: initialized
+0	16:02:14.600	Time Range Separator GBPUSD,M15: initialized
+0	16:02:14.600	CandleTime GBPUSD,M15: initialized
+0	16:02:14.600	Watermark Symbol GBPUSD,M15: initialized
+0	16:02:14.600	Separator Time GBPUSD,M15: initialized
+0	16:02:14.600	Separator Time GBPUSD,M15: initialized
+0	16:02:14.600	Separator Time GBPUSD,M15: initialized
+0	16:02:14.600	Separator Time GBPUSD,M15: initialized
+0	16:02:14.600	Separator Time GBPUSD,M15: initialized
+0	16:02:14.600	Separator Time GBPUSD,M15: initialized
+0	16:02:14.600	Ouro Drawing GBPUSD,M15: initialized
+0	16:02:14.601	!BBMA MATrick N.G 2022 v1 GBPUSD,M15: initialized
+0	16:02:18.429	Quick Style GBPUSD,M15: uninit reason 3
+0	16:02:18.431	OHLC Magnet GBPUSD,M15: uninit reason 3
+0	16:02:18.431	Time Range Separator GBPUSD,M15: uninit reason 3
+0	16:02:18.432	CandleTime GBPUSD,M15: uninit reason 3
+0	16:02:18.432	Watermark Symbol GBPUSD,M15: uninit reason 3
+0	16:02:18.433	Separator Time GBPUSD,M15: uninit reason 3
+0	16:02:18.438	Separator Time GBPUSD,M15: uninit reason 3
+0	16:02:18.440	Separator Time GBPUSD,M15: uninit reason 3
+0	16:02:18.442	Separator Time GBPUSD,M15: uninit reason 3
+0	16:02:18.442	Separator Time GBPUSD,M15: uninit reason 3
+0	16:02:18.443	Separator Time GBPUSD,M15: uninit reason 3
+0	16:02:18.443	Ouro Drawing GBPUSD,M15: uninit reason 3
+0	16:02:18.444	!BBMA MATrick N.G 2022 v1 GBPUSD,M15: uninit reason 3
+0	16:02:18.460	Quick Style GBPUSD,M1: 0
+0	16:02:18.460	Quick Style GBPUSD,M1: 0
+0	16:02:18.460	Quick Style GBPUSD,M1: 1
+0	16:02:18.460	Quick Style GBPUSD,M1: 1
+0	16:02:18.460	Quick Style GBPUSD,M1: 2
+0	16:02:18.460	Quick Style GBPUSD,M1: initialized
+0	16:02:18.461	OHLC Magnet GBPUSD,M1: initialized
+0	16:02:18.461	Time Range Separator GBPUSD,M1: initialized
+0	16:02:18.461	CandleTime GBPUSD,M1: initialized
+0	16:02:18.461	Watermark Symbol GBPUSD,M1: initialized
+0	16:02:18.461	Separator Time GBPUSD,M1: initialized
+0	16:02:18.461	Separator Time GBPUSD,M1: initialized
+0	16:02:18.461	Separator Time GBPUSD,M1: initialized
+0	16:02:18.461	Separator Time GBPUSD,M1: initialized
+0	16:02:18.461	Separator Time GBPUSD,M1: initialized
+0	16:02:18.461	Separator Time GBPUSD,M1: initialized
+0	16:02:18.461	Ouro Drawing GBPUSD,M1: initialized
+0	16:02:18.462	!BBMA MATrick N.G 2022 v1 GBPUSD,M1: initialized
+0	16:02:46.075	Quick Style GBPUSD,M1: uninit reason 3
+0	16:02:46.077	OHLC Magnet GBPUSD,M1: uninit reason 3
+0	16:02:46.077	Time Range Separator GBPUSD,M1: uninit reason 3
+0	16:02:46.077	CandleTime GBPUSD,M1: uninit reason 3
+0	16:02:46.077	Watermark Symbol GBPUSD,M1: uninit reason 3
+0	16:02:46.077	Separator Time GBPUSD,M1: uninit reason 3
+0	16:02:46.078	Separator Time GBPUSD,M1: uninit reason 3
+0	16:02:46.079	Separator Time GBPUSD,M1: uninit reason 3
+0	16:02:46.079	Separator Time GBPUSD,M1: uninit reason 3
+0	16:02:46.079	Separator Time GBPUSD,M1: uninit reason 3
+0	16:02:46.079	Separator Time GBPUSD,M1: uninit reason 3
+0	16:02:46.079	Ouro Drawing GBPUSD,M1: uninit reason 3
+0	16:02:46.080	!BBMA MATrick N.G 2022 v1 GBPUSD,M1: uninit reason 3
+0	16:02:46.095	Quick Style GBPUSD,M5: 0
+0	16:02:46.096	Quick Style GBPUSD,M5: 0
+0	16:02:46.096	Quick Style GBPUSD,M5: 1
+0	16:02:46.096	Quick Style GBPUSD,M5: 1
+0	16:02:46.096	Quick Style GBPUSD,M5: 2
+0	16:02:46.096	Quick Style GBPUSD,M5: initialized
+0	16:02:46.096	OHLC Magnet GBPUSD,M5: initialized
+0	16:02:46.096	Time Range Separator GBPUSD,M5: initialized
+0	16:02:46.096	CandleTime GBPUSD,M5: initialized
+0	16:02:46.097	Watermark Symbol GBPUSD,M5: initialized
+0	16:02:46.097	Separator Time GBPUSD,M5: initialized
+0	16:02:46.097	Separator Time GBPUSD,M5: initialized
+0	16:02:46.097	Separator Time GBPUSD,M5: initialized
+0	16:02:46.097	Separator Time GBPUSD,M5: initialized
+0	16:02:46.097	Separator Time GBPUSD,M5: initialized
+0	16:02:46.097	Separator Time GBPUSD,M5: initialized
+0	16:02:46.097	Ouro Drawing GBPUSD,M5: initialized
+0	16:02:46.097	!BBMA MATrick N.G 2022 v1 GBPUSD,M5: initialized
+0	16:02:57.173	Quick Style GBPUSD,M5: uninit reason 3
+0	16:02:57.175	OHLC Magnet GBPUSD,M5: uninit reason 3
+0	16:02:57.175	Time Range Separator GBPUSD,M5: uninit reason 3
+0	16:02:57.175	CandleTime GBPUSD,M5: uninit reason 3
+0	16:02:57.175	Watermark Symbol GBPUSD,M5: uninit reason 3
+0	16:02:57.176	Separator Time GBPUSD,M5: uninit reason 3
+0	16:02:57.180	Separator Time GBPUSD,M5: uninit reason 3
+0	16:02:57.182	Separator Time GBPUSD,M5: uninit reason 3
+0	16:02:57.183	Separator Time GBPUSD,M5: uninit reason 3
+0	16:02:57.183	Separator Time GBPUSD,M5: uninit reason 3
+0	16:02:57.183	Separator Time GBPUSD,M5: uninit reason 3
+0	16:02:57.183	Ouro Drawing GBPUSD,M5: uninit reason 3
+0	16:02:57.185	!BBMA MATrick N.G 2022 v1 GBPUSD,M5: uninit reason 3
+0	16:02:57.200	Quick Style GBPUSD,M1: 0
+0	16:02:57.200	Quick Style GBPUSD,M1: 0
+0	16:02:57.200	Quick Style GBPUSD,M1: 1
+0	16:02:57.200	Quick Style GBPUSD,M1: 1
+0	16:02:57.200	Quick Style GBPUSD,M1: 2
+0	16:02:57.201	Quick Style GBPUSD,M1: initialized
+0	16:02:57.201	OHLC Magnet GBPUSD,M1: initialized
+0	16:02:57.201	Time Range Separator GBPUSD,M1: initialized
+0	16:02:57.201	CandleTime GBPUSD,M1: initialized
+0	16:02:57.201	Watermark Symbol GBPUSD,M1: initialized
+0	16:02:57.201	Separator Time GBPUSD,M1: initialized
+0	16:02:57.201	Separator Time GBPUSD,M1: initialized
+0	16:02:57.201	Separator Time GBPUSD,M1: initialized
+0	16:02:57.201	Separator Time GBPUSD,M1: initialized
+0	16:02:57.201	Separator Time GBPUSD,M1: initialized
+0	16:02:57.201	Separator Time GBPUSD,M1: initialized
+0	16:02:57.202	Ouro Drawing GBPUSD,M1: initialized
+0	16:02:57.202	!BBMA MATrick N.G 2022 v1 GBPUSD,M1: initialized
+0	17:20:20.798	Quick Style GBPUSD,M1: uninit reason 3
+0	17:20:20.800	OHLC Magnet GBPUSD,M1: uninit reason 3
+0	17:20:20.800	Time Range Separator GBPUSD,M1: uninit reason 3
+0	17:20:20.800	CandleTime GBPUSD,M1: uninit reason 3
+0	17:20:20.800	Watermark Symbol GBPUSD,M1: uninit reason 3
+0	17:20:20.800	Separator Time GBPUSD,M1: uninit reason 3
+0	17:20:20.802	Separator Time GBPUSD,M1: uninit reason 3
+0	17:20:20.803	Separator Time GBPUSD,M1: uninit reason 3
+0	17:20:20.803	Separator Time GBPUSD,M1: uninit reason 3
+0	17:20:20.803	Separator Time GBPUSD,M1: uninit reason 3
+0	17:20:20.803	Separator Time GBPUSD,M1: uninit reason 3
+0	17:20:20.803	Ouro Drawing GBPUSD,M1: uninit reason 3
+0	17:20:20.805	!BBMA MATrick N.G 2022 v1 GBPUSD,M1: uninit reason 3
+0	17:20:20.821	Quick Style GBPUSD,M5: 0
+0	17:20:20.821	Quick Style GBPUSD,M5: 0
+0	17:20:20.821	Quick Style GBPUSD,M5: 1
+0	17:20:20.821	Quick Style GBPUSD,M5: 1
+0	17:20:20.821	Quick Style GBPUSD,M5: 2
+0	17:20:20.821	Quick Style GBPUSD,M5: initialized
+0	17:20:20.822	OHLC Magnet GBPUSD,M5: initialized
+0	17:20:20.823	Time Range Separator GBPUSD,M5: initialized
+0	17:20:20.823	CandleTime GBPUSD,M5: initialized
+0	17:20:20.823	Watermark Symbol GBPUSD,M5: initialized
+0	17:20:20.824	Separator Time GBPUSD,M5: initialized
+0	17:20:20.824	Separator Time GBPUSD,M5: initialized
+0	17:20:20.824	Separator Time GBPUSD,M5: initialized
+0	17:20:20.824	Separator Time GBPUSD,M5: initialized
+0	17:20:20.824	Separator Time GBPUSD,M5: initialized
+0	17:20:20.824	Separator Time GBPUSD,M5: initialized
+0	17:20:20.824	Ouro Drawing GBPUSD,M5: initialized
+0	17:20:20.825	!BBMA MATrick N.G 2022 v1 GBPUSD,M5: initialized
+0	17:56:04.763	Quick Style GBPUSD,M5: uninit reason 3
+0	17:56:04.765	OHLC Magnet GBPUSD,M5: uninit reason 3
+0	17:56:04.765	Time Range Separator GBPUSD,M5: uninit reason 3
+0	17:56:04.766	CandleTime GBPUSD,M5: uninit reason 3
+0	17:56:04.766	Watermark Symbol GBPUSD,M5: uninit reason 3
+0	17:56:04.766	Separator Time GBPUSD,M5: uninit reason 3
+0	17:56:04.770	Separator Time GBPUSD,M5: uninit reason 3
+0	17:56:04.772	Separator Time GBPUSD,M5: uninit reason 3
+0	17:56:04.773	Separator Time GBPUSD,M5: uninit reason 3
+0	17:56:04.773	Separator Time GBPUSD,M5: uninit reason 3
+0	17:56:04.773	Separator Time GBPUSD,M5: uninit reason 3
+0	17:56:04.773	Ouro Drawing GBPUSD,M5: uninit reason 3
+0	17:56:04.775	!BBMA MATrick N.G 2022 v1 GBPUSD,M5: uninit reason 3
+0	17:56:04.792	Quick Style GBPUSD,M1: 0
+0	17:56:04.792	Quick Style GBPUSD,M1: 0
+0	17:56:04.792	Quick Style GBPUSD,M1: 1
+0	17:56:04.792	Quick Style GBPUSD,M1: 1
+0	17:56:04.792	Quick Style GBPUSD,M1: 2
+0	17:56:04.792	Quick Style GBPUSD,M1: initialized
+0	17:56:04.793	OHLC Magnet GBPUSD,M1: initialized
+0	17:56:04.793	Time Range Separator GBPUSD,M1: initialized
+0	17:56:04.793	CandleTime GBPUSD,M1: initialized
+0	17:56:04.794	Watermark Symbol GBPUSD,M1: initialized
+0	17:56:04.794	Separator Time GBPUSD,M1: initialized
+0	17:56:04.794	Separator Time GBPUSD,M1: initialized
+0	17:56:04.794	Separator Time GBPUSD,M1: initialized
+0	17:56:04.794	Separator Time GBPUSD,M1: initialized
+0	17:56:04.794	Separator Time GBPUSD,M1: initialized
+0	17:56:04.794	Separator Time GBPUSD,M1: initialized
+0	17:56:04.795	Ouro Drawing GBPUSD,M1: initialized
+0	17:56:04.795	!BBMA MATrick N.G 2022 v1 GBPUSD,M1: initialized
+0	17:56:51.341	Quick Style GBPUSD,M1: uninit reason 3
+0	17:56:51.343	OHLC Magnet GBPUSD,M1: uninit reason 3
+0	17:56:51.343	Time Range Separator GBPUSD,M1: uninit reason 3
+0	17:56:51.343	CandleTime GBPUSD,M1: uninit reason 3
+0	17:56:51.343	Watermark Symbol GBPUSD,M1: uninit reason 3
+0	17:56:51.343	Separator Time GBPUSD,M1: uninit reason 3
+0	17:56:51.344	Separator Time GBPUSD,M1: uninit reason 3
+0	17:56:51.344	Separator Time GBPUSD,M1: uninit reason 3
+0	17:56:51.345	Separator Time GBPUSD,M1: uninit reason 3
+0	17:56:51.345	Separator Time GBPUSD,M1: uninit reason 3
+0	17:56:51.345	Separator Time GBPUSD,M1: uninit reason 3
+0	17:56:51.345	Ouro Drawing GBPUSD,M1: uninit reason 3
+0	17:56:51.347	!BBMA MATrick N.G 2022 v1 GBPUSD,M1: uninit reason 3
+0	17:56:51.361	Quick Style GBPUSD,M5: 0
+0	17:56:51.362	Quick Style GBPUSD,M5: 0
+0	17:56:51.362	Quick Style GBPUSD,M5: 1
+0	17:56:51.362	Quick Style GBPUSD,M5: 1
+0	17:56:51.362	Quick Style GBPUSD,M5: 2
+0	17:56:51.362	Quick Style GBPUSD,M5: initialized
+0	17:56:51.362	OHLC Magnet GBPUSD,M5: initialized
+0	17:56:51.362	Time Range Separator GBPUSD,M5: initialized
+0	17:56:51.362	CandleTime GBPUSD,M5: initialized
+0	17:56:51.362	Watermark Symbol GBPUSD,M5: initialized
+0	17:56:51.363	Separator Time GBPUSD,M5: initialized
+0	17:56:51.363	Separator Time GBPUSD,M5: initialized
+0	17:56:51.363	Separator Time GBPUSD,M5: initialized
+0	17:56:51.363	Separator Time GBPUSD,M5: initialized
+0	17:56:51.363	Separator Time GBPUSD,M5: initialized
+0	17:56:51.363	Separator Time GBPUSD,M5: initialized
+0	17:56:51.363	Ouro Drawing GBPUSD,M5: initialized
+0	17:56:51.363	!BBMA MATrick N.G 2022 v1 GBPUSD,M5: initialized
+0	17:57:42.401	!BBMA MATrick N.G 2022 v1 GBPUSD,M5: uninit reason 1
+0	17:57:42.405	Custom indicator !BBMA MATrick N.G 2022 v1 GBPUSD,M5: removed
+0	17:58:35.151	Quick Style GBPUSD,M5: uninit reason 3
+0	17:58:35.154	OHLC Magnet GBPUSD,M5: uninit reason 3
+0	17:58:35.154	Time Range Separator GBPUSD,M5: uninit reason 3
+0	17:58:35.155	CandleTime GBPUSD,M5: uninit reason 3
+0	17:58:35.155	Watermark Symbol GBPUSD,M5: uninit reason 3
+0	17:58:35.155	Separator Time GBPUSD,M5: uninit reason 3
+0	17:58:35.159	Separator Time GBPUSD,M5: uninit reason 3
+0	17:58:35.160	Separator Time GBPUSD,M5: uninit reason 3
+0	17:58:35.161	Separator Time GBPUSD,M5: uninit reason 3
+0	17:58:35.162	Separator Time GBPUSD,M5: uninit reason 3
+0	17:58:35.162	Separator Time GBPUSD,M5: uninit reason 3
+0	17:58:35.162	Ouro Drawing GBPUSD,M5: uninit reason 3
+0	17:58:35.180	Quick Style GBPUSD,M1: 0
+0	17:58:35.180	Quick Style GBPUSD,M1: 0
+0	17:58:35.180	Quick Style GBPUSD,M1: 1
+0	17:58:35.182	Quick Style GBPUSD,M1: 1
+0	17:58:35.182	Quick Style GBPUSD,M1: 2
+0	17:58:35.182	Quick Style GBPUSD,M1: initialized
+0	17:58:35.182	OHLC Magnet GBPUSD,M1: initialized
+0	17:58:35.182	Time Range Separator GBPUSD,M1: initialized
+0	17:58:35.182	CandleTime GBPUSD,M1: initialized
+0	17:58:35.182	Watermark Symbol GBPUSD,M1: initialized
+0	17:58:35.182	Separator Time GBPUSD,M1: initialized
+0	17:58:35.182	Separator Time GBPUSD,M1: initialized
+0	17:58:35.182	Separator Time GBPUSD,M1: initialized
+0	17:58:35.182	Separator Time GBPUSD,M1: initialized
+0	17:58:35.182	Separator Time GBPUSD,M1: initialized
+0	17:58:35.182	Separator Time GBPUSD,M1: initialized
+0	17:58:35.182	Ouro Drawing GBPUSD,M1: initialized
+0	17:58:44.645	Quick Style GBPUSD,M1: uninit reason 3
+0	17:58:44.647	OHLC Magnet GBPUSD,M1: uninit reason 3
+0	17:58:44.647	Time Range Separator GBPUSD,M1: uninit reason 3
+0	17:58:44.647	CandleTime GBPUSD,M1: uninit reason 3
+0	17:58:44.647	Watermark Symbol GBPUSD,M1: uninit reason 3
+0	17:58:44.647	Separator Time GBPUSD,M1: uninit reason 3
+0	17:58:44.648	Separator Time GBPUSD,M1: uninit reason 3
+0	17:58:44.648	Separator Time GBPUSD,M1: uninit reason 3
+0	17:58:44.649	Separator Time GBPUSD,M1: uninit reason 3
+0	17:58:44.649	Separator Time GBPUSD,M1: uninit reason 3
+0	17:58:44.649	Separator Time GBPUSD,M1: uninit reason 3
+0	17:58:44.649	Ouro Drawing GBPUSD,M1: uninit reason 3
+0	17:58:44.662	Quick Style GBPUSD,M5: 0
+0	17:58:44.662	Quick Style GBPUSD,M5: 0
+0	17:58:44.662	Quick Style GBPUSD,M5: 1
+0	17:58:44.663	Quick Style GBPUSD,M5: 1
+0	17:58:44.663	Quick Style GBPUSD,M5: 2
+0	17:58:44.663	Quick Style GBPUSD,M5: initialized
+0	17:58:44.663	OHLC Magnet GBPUSD,M5: initialized
+0	17:58:44.663	Time Range Separator GBPUSD,M5: initialized
+0	17:58:44.663	CandleTime GBPUSD,M5: initialized
+0	17:58:44.663	Watermark Symbol GBPUSD,M5: initialized
+0	17:58:44.663	Separator Time GBPUSD,M5: initialized
+0	17:58:44.663	Separator Time GBPUSD,M5: initialized
+0	17:58:44.663	Separator Time GBPUSD,M5: initialized
+0	17:58:44.663	Separator Time GBPUSD,M5: initialized
+0	17:58:44.663	Separator Time GBPUSD,M5: initialized
+0	17:58:44.663	Separator Time GBPUSD,M5: initialized
+0	17:58:44.664	Ouro Drawing GBPUSD,M5: initialized
+0	17:58:49.164	Custom indicator Mine\BBMA MA Trick\!BBMA MATrick N.G 2022 v1 GBPUSD,M5: loaded successfully
+0	17:58:50.130	!BBMA MATrick N.G 2022 v1 GBPUSD,M5: initialized
+0	17:58:57.967	!BBMA MATrick N.G 2022 v1 GBPUSD,M5: uninit reason 5
+0	17:58:57.994	!BBMA MATrick N.G 2022 v1 GBPUSD,M5: initialized
+0	17:59:02.621	Quick Style GBPUSD,M5: uninit reason 3
+0	17:59:02.623	OHLC Magnet GBPUSD,M5: uninit reason 3
+0	17:59:02.623	Time Range Separator GBPUSD,M5: uninit reason 3
+0	17:59:02.623	CandleTime GBPUSD,M5: uninit reason 3
+0	17:59:02.623	Watermark Symbol GBPUSD,M5: uninit reason 3
+0	17:59:02.624	Separator Time GBPUSD,M5: uninit reason 3
+0	17:59:02.627	Separator Time GBPUSD,M5: uninit reason 3
+0	17:59:02.629	Separator Time GBPUSD,M5: uninit reason 3
+0	17:59:02.630	Separator Time GBPUSD,M5: uninit reason 3
+0	17:59:02.630	Separator Time GBPUSD,M5: uninit reason 3
+0	17:59:02.630	Separator Time GBPUSD,M5: uninit reason 3
+0	17:59:02.630	Ouro Drawing GBPUSD,M5: uninit reason 3
+0	17:59:02.632	!BBMA MATrick N.G 2022 v1 GBPUSD,M5: uninit reason 3
+0	17:59:02.647	Quick Style GBPUSD,M1: 0
+0	17:59:02.647	Quick Style GBPUSD,M1: 0
+0	17:59:02.647	Quick Style GBPUSD,M1: 1
+0	17:59:02.647	Quick Style GBPUSD,M1: 1
+0	17:59:02.648	Quick Style GBPUSD,M1: 2
+0	17:59:02.648	Quick Style GBPUSD,M1: initialized
+0	17:59:02.648	OHLC Magnet GBPUSD,M1: initialized
+0	17:59:02.648	Time Range Separator GBPUSD,M1: initialized
+0	17:59:02.648	CandleTime GBPUSD,M1: initialized
+0	17:59:02.648	Watermark Symbol GBPUSD,M1: initialized
+0	17:59:02.648	Separator Time GBPUSD,M1: initialized
+0	17:59:02.648	Separator Time GBPUSD,M1: initialized
+0	17:59:02.648	Separator Time GBPUSD,M1: initialized
+0	17:59:02.648	Separator Time GBPUSD,M1: initialized
+0	17:59:02.648	Separator Time GBPUSD,M1: initialized
+0	17:59:02.648	Separator Time GBPUSD,M1: initialized
+0	17:59:02.649	Ouro Drawing GBPUSD,M1: initialized
+0	17:59:02.649	!BBMA MATrick N.G 2022 v1 GBPUSD,M1: initialized
+0	17:59:36.373	Quick Style GBPUSD,M1: uninit reason 3
+0	17:59:36.374	OHLC Magnet GBPUSD,M1: uninit reason 3
+0	17:59:36.374	Time Range Separator GBPUSD,M1: uninit reason 3
+0	17:59:36.375	CandleTime GBPUSD,M1: uninit reason 3
+0	17:59:36.375	Watermark Symbol GBPUSD,M1: uninit reason 3
+0	17:59:36.375	Separator Time GBPUSD,M1: uninit reason 3
+0	17:59:36.376	Separator Time GBPUSD,M1: uninit reason 3
+0	17:59:36.376	Separator Time GBPUSD,M1: uninit reason 3
+0	17:59:36.376	Separator Time GBPUSD,M1: uninit reason 3
+0	17:59:36.376	Separator Time GBPUSD,M1: uninit reason 3
+0	17:59:36.377	Separator Time GBPUSD,M1: uninit reason 3
+0	17:59:36.377	Ouro Drawing GBPUSD,M1: uninit reason 3
+0	17:59:36.378	!BBMA MATrick N.G 2022 v1 GBPUSD,M1: uninit reason 3
+0	17:59:36.389	Quick Style GBPUSD,M5: 0
+0	17:59:36.389	Quick Style GBPUSD,M5: 0
+0	17:59:36.389	Quick Style GBPUSD,M5: 1
+0	17:59:36.389	Quick Style GBPUSD,M5: 1
+0	17:59:36.389	Quick Style GBPUSD,M5: 2
+0	17:59:36.390	Quick Style GBPUSD,M5: initialized
+0	17:59:36.390	OHLC Magnet GBPUSD,M5: initialized
+0	17:59:36.390	Time Range Separator GBPUSD,M5: initialized
+0	17:59:36.390	CandleTime GBPUSD,M5: initialized
+0	17:59:36.390	Watermark Symbol GBPUSD,M5: initialized
+0	17:59:36.390	Separator Time GBPUSD,M5: initialized
+0	17:59:36.390	Separator Time GBPUSD,M5: initialized
+0	17:59:36.390	Separator Time GBPUSD,M5: initialized
+0	17:59:36.390	Separator Time GBPUSD,M5: initialized
+0	17:59:36.390	Separator Time GBPUSD,M5: initialized
+0	17:59:36.390	Separator Time GBPUSD,M5: initialized
+0	17:59:36.390	Ouro Drawing GBPUSD,M5: initialized
+0	17:59:36.391	!BBMA MATrick N.G 2022 v1 GBPUSD,M5: initialized
+0	19:17:33.605	Quick Style GBPUSD,M5: uninit reason 3
+0	19:17:33.607	OHLC Magnet GBPUSD,M5: uninit reason 3
+0	19:17:33.607	Time Range Separator GBPUSD,M5: uninit reason 3
+0	19:17:33.608	CandleTime GBPUSD,M5: uninit reason 3
+0	19:17:33.608	Watermark Symbol GBPUSD,M5: uninit reason 3
+0	19:17:33.608	Separator Time GBPUSD,M5: uninit reason 3
+0	19:17:33.612	Separator Time GBPUSD,M5: uninit reason 3
+0	19:17:33.613	Separator Time GBPUSD,M5: uninit reason 3
+0	19:17:33.614	Separator Time GBPUSD,M5: uninit reason 3
+0	19:17:33.615	Separator Time GBPUSD,M5: uninit reason 3
+0	19:17:33.615	Separator Time GBPUSD,M5: uninit reason 3
+0	19:17:33.615	Ouro Drawing GBPUSD,M5: uninit reason 3
+0	19:17:33.616	!BBMA MATrick N.G 2022 v1 GBPUSD,M5: uninit reason 3
+0	19:17:33.633	Quick Style GBPUSD,M1: 0
+0	19:17:33.633	Quick Style GBPUSD,M1: 0
+0	19:17:33.633	Quick Style GBPUSD,M1: 1
+0	19:17:33.633	Quick Style GBPUSD,M1: 1
+0	19:17:33.633	Quick Style GBPUSD,M1: 2
+0	19:17:33.633	Quick Style GBPUSD,M1: initialized
+0	19:17:33.634	OHLC Magnet GBPUSD,M1: initialized
+0	19:17:33.634	Time Range Separator GBPUSD,M1: initialized
+0	19:17:33.634	CandleTime GBPUSD,M1: initialized
+0	19:17:33.635	Watermark Symbol GBPUSD,M1: initialized
+0	19:17:33.636	Separator Time GBPUSD,M1: initialized
+0	19:17:33.636	Separator Time GBPUSD,M1: initialized
+0	19:17:33.636	Separator Time GBPUSD,M1: initialized
+0	19:17:33.636	Separator Time GBPUSD,M1: initialized
+0	19:17:33.636	Separator Time GBPUSD,M1: initialized
+0	19:17:33.636	Separator Time GBPUSD,M1: initialized
+0	19:17:33.636	Ouro Drawing GBPUSD,M1: initialized
+0	19:17:33.636	!BBMA MATrick N.G 2022 v1 GBPUSD,M1: initialized
+0	19:41:47.135	Quick Style GBPUSD,M1: uninit reason 3
+0	19:41:47.137	OHLC Magnet GBPUSD,M1: uninit reason 3
+0	19:41:47.137	Time Range Separator GBPUSD,M1: uninit reason 3
+0	19:41:47.137	CandleTime GBPUSD,M1: uninit reason 3
+0	19:41:47.137	Watermark Symbol GBPUSD,M1: uninit reason 3
+0	19:41:47.137	Separator Time GBPUSD,M1: uninit reason 3
+0	19:41:47.138	Separator Time GBPUSD,M1: uninit reason 3
+0	19:41:47.138	Separator Time GBPUSD,M1: uninit reason 3
+0	19:41:47.138	Separator Time GBPUSD,M1: uninit reason 3
+0	19:41:47.139	Separator Time GBPUSD,M1: uninit reason 3
+0	19:41:47.139	Separator Time GBPUSD,M1: uninit reason 3
+0	19:41:47.139	Ouro Drawing GBPUSD,M1: uninit reason 3
+0	19:41:47.141	!BBMA MATrick N.G 2022 v1 GBPUSD,M1: uninit reason 3
+0	19:41:47.154	Quick Style GBPUSD,M15: 0
+0	19:41:47.154	Quick Style GBPUSD,M15: 0
+0	19:41:47.154	Quick Style GBPUSD,M15: 1
+0	19:41:47.154	Quick Style GBPUSD,M15: 1
+0	19:41:47.154	Quick Style GBPUSD,M15: 2
+0	19:41:47.154	Quick Style GBPUSD,M15: initialized
+0	19:41:47.155	OHLC Magnet GBPUSD,M15: initialized
+0	19:41:47.155	Time Range Separator GBPUSD,M15: initialized
+0	19:41:47.155	CandleTime GBPUSD,M15: initialized
+0	19:41:47.156	Watermark Symbol GBPUSD,M15: initialized
+0	19:41:47.157	Separator Time GBPUSD,M15: initialized
+0	19:41:47.157	Separator Time GBPUSD,M15: initialized
+0	19:41:47.157	Separator Time GBPUSD,M15: initialized
+0	19:41:47.157	Separator Time GBPUSD,M15: initialized
+0	19:41:47.157	Separator Time GBPUSD,M15: initialized
+0	19:41:47.157	Separator Time GBPUSD,M15: initialized
+0	19:41:47.157	Ouro Drawing GBPUSD,M15: initialized
+0	19:41:47.158	!BBMA MATrick N.G 2022 v1 GBPUSD,M15: initialized
+0	19:42:33.667	Quick Style GBPUSD,M15: uninit reason 3
+0	19:42:33.669	OHLC Magnet GBPUSD,M15: uninit reason 3
+0	19:42:33.669	Time Range Separator GBPUSD,M15: uninit reason 3
+0	19:42:33.669	CandleTime GBPUSD,M15: uninit reason 3
+0	19:42:33.669	Watermark Symbol GBPUSD,M15: uninit reason 3
+0	19:42:33.670	Separator Time GBPUSD,M15: uninit reason 3
+0	19:42:33.676	Separator Time GBPUSD,M15: uninit reason 3
+0	19:42:33.678	Separator Time GBPUSD,M15: uninit reason 3
+0	19:42:33.680	Separator Time GBPUSD,M15: uninit reason 3
+0	19:42:33.680	Separator Time GBPUSD,M15: uninit reason 3
+0	19:42:33.680	Separator Time GBPUSD,M15: uninit reason 3
+0	19:42:33.681	Ouro Drawing GBPUSD,M15: uninit reason 3
+0	19:42:33.682	!BBMA MATrick N.G 2022 v1 GBPUSD,M15: uninit reason 3
+0	19:42:33.693	Quick Style GBPUSD,M30: 0
+0	19:42:33.693	Quick Style GBPUSD,M30: 0
+0	19:42:33.693	Quick Style GBPUSD,M30: 1
+0	19:42:33.693	Quick Style GBPUSD,M30: 1
+0	19:42:33.693	Quick Style GBPUSD,M30: 2
+0	19:42:33.693	Quick Style GBPUSD,M30: initialized
+0	19:42:33.693	OHLC Magnet GBPUSD,M30: initialized
+0	19:42:33.693	Time Range Separator GBPUSD,M30: initialized
+0	19:42:33.693	CandleTime GBPUSD,M30: initialized
+0	19:42:33.694	Watermark Symbol GBPUSD,M30: initialized
+0	19:42:33.694	Separator Time GBPUSD,M30: initialized
+0	19:42:33.694	Separator Time GBPUSD,M30: initialized
+0	19:42:33.694	Separator Time GBPUSD,M30: initialized
+0	19:42:33.694	Separator Time GBPUSD,M30: initialized
+0	19:42:33.694	Separator Time GBPUSD,M30: initialized
+0	19:42:33.694	Separator Time GBPUSD,M30: initialized
+0	19:42:33.694	Ouro Drawing GBPUSD,M30: initialized
+0	19:42:33.694	!BBMA MATrick N.G 2022 v1 GBPUSD,M30: initialized
+0	19:42:34.524	Quick Style GBPUSD,M30: uninit reason 3
+0	19:42:34.526	OHLC Magnet GBPUSD,M30: uninit reason 3
+0	19:42:34.526	Time Range Separator GBPUSD,M30: uninit reason 3
+0	19:42:34.526	CandleTime GBPUSD,M30: uninit reason 3
+0	19:42:34.526	Watermark Symbol GBPUSD,M30: uninit reason 3
+0	19:42:34.526	Separator Time GBPUSD,M30: uninit reason 3
+0	19:42:34.526	Separator Time GBPUSD,M30: uninit reason 3
+0	19:42:34.526	Separator Time GBPUSD,M30: uninit reason 3
+0	19:42:34.527	Separator Time GBPUSD,M30: uninit reason 3
+0	19:42:34.527	Separator Time GBPUSD,M30: uninit reason 3
+0	19:42:34.527	Separator Time GBPUSD,M30: uninit reason 3
+0	19:42:34.527	Ouro Drawing GBPUSD,M30: uninit reason 3
+0	19:42:34.528	!BBMA MATrick N.G 2022 v1 GBPUSD,M30: uninit reason 3
+0	19:42:34.546	Quick Style GBPUSD,H1: 0
+0	19:42:34.546	Quick Style GBPUSD,H1: 0
+0	19:42:34.546	Quick Style GBPUSD,H1: 1
+0	19:42:34.546	Quick Style GBPUSD,H1: 1
+0	19:42:34.546	Quick Style GBPUSD,H1: 2
+0	19:42:34.546	Quick Style GBPUSD,H1: initialized
+0	19:42:34.546	OHLC Magnet GBPUSD,H1: initialized
+0	19:42:34.546	Time Range Separator GBPUSD,H1: initialized
+0	19:42:34.546	CandleTime GBPUSD,H1: initialized
+0	19:42:34.547	Watermark Symbol GBPUSD,H1: initialized
+0	19:42:34.547	Separator Time GBPUSD,H1: initialized
+0	19:42:34.547	Separator Time GBPUSD,H1: initialized
+0	19:42:34.547	Separator Time GBPUSD,H1: initialized
+0	19:42:34.547	Separator Time GBPUSD,H1: initialized
+0	19:42:34.547	Separator Time GBPUSD,H1: initialized
+0	19:42:34.547	Separator Time GBPUSD,H1: initialized
+0	19:42:34.547	Ouro Drawing GBPUSD,H1: initialized
+0	19:42:34.547	!BBMA MATrick N.G 2022 v1 GBPUSD,H1: initialized
+0	19:42:35.298	Quick Style GBPUSD,H1: uninit reason 3
+0	19:42:35.300	OHLC Magnet GBPUSD,H1: uninit reason 3
+0	19:42:35.300	Time Range Separator GBPUSD,H1: uninit reason 3
+0	19:42:35.300	CandleTime GBPUSD,H1: uninit reason 3
+0	19:42:35.300	Watermark Symbol GBPUSD,H1: uninit reason 3
+0	19:42:35.300	Separator Time GBPUSD,H1: uninit reason 3
+0	19:42:35.300	Separator Time GBPUSD,H1: uninit reason 3
+0	19:42:35.300	Separator Time GBPUSD,H1: uninit reason 3
+0	19:42:35.300	Separator Time GBPUSD,H1: uninit reason 3
+0	19:42:35.300	Separator Time GBPUSD,H1: uninit reason 3
+0	19:42:35.300	Separator Time GBPUSD,H1: uninit reason 3
+0	19:42:35.300	Ouro Drawing GBPUSD,H1: uninit reason 3
+0	19:42:35.302	!BBMA MATrick N.G 2022 v1 GBPUSD,H1: uninit reason 3
+0	19:42:35.313	Quick Style GBPUSD,M15: 0
+0	19:42:35.313	Quick Style GBPUSD,M15: 0
+0	19:42:35.313	Quick Style GBPUSD,M15: 1
+0	19:42:35.313	Quick Style GBPUSD,M15: 1
+0	19:42:35.313	Quick Style GBPUSD,M15: 2
+0	19:42:35.314	Quick Style GBPUSD,M15: initialized
+0	19:42:35.314	OHLC Magnet GBPUSD,M15: initialized
+0	19:42:35.314	Time Range Separator GBPUSD,M15: initialized
+0	19:42:35.314	CandleTime GBPUSD,M15: initialized
+0	19:42:35.314	Watermark Symbol GBPUSD,M15: initialized
+0	19:42:35.314	Separator Time GBPUSD,M15: initialized
+0	19:42:35.314	Separator Time GBPUSD,M15: initialized
+0	19:42:35.314	Separator Time GBPUSD,M15: initialized
+0	19:42:35.314	Separator Time GBPUSD,M15: initialized
+0	19:42:35.314	Separator Time GBPUSD,M15: initialized
+0	19:42:35.314	Separator Time GBPUSD,M15: initialized
+0	19:42:35.315	Ouro Drawing GBPUSD,M15: initialized
+0	19:42:35.315	!BBMA MATrick N.G 2022 v1 GBPUSD,M15: initialized
+0	19:43:08.142	Quick Style GBPUSD,M15: uninit reason 3
+0	19:43:08.144	OHLC Magnet GBPUSD,M15: uninit reason 3
+0	19:43:08.144	Time Range Separator GBPUSD,M15: uninit reason 3
+0	19:43:08.145	CandleTime GBPUSD,M15: uninit reason 3
+0	19:43:08.145	Watermark Symbol GBPUSD,M15: uninit reason 3
+0	19:43:08.146	Separator Time GBPUSD,M15: uninit reason 3
+0	19:43:08.151	Separator Time GBPUSD,M15: uninit reason 3
+0	19:43:08.154	Separator Time GBPUSD,M15: uninit reason 3
+0	19:43:08.155	Separator Time GBPUSD,M15: uninit reason 3
+0	19:43:08.155	Separator Time GBPUSD,M15: uninit reason 3
+0	19:43:08.156	Separator Time GBPUSD,M15: uninit reason 3
+0	19:43:08.156	Ouro Drawing GBPUSD,M15: uninit reason 3
+0	19:43:08.157	!BBMA MATrick N.G 2022 v1 GBPUSD,M15: uninit reason 3
+0	19:43:08.170	Quick Style GBPUSD,M5: 0
+0	19:43:08.170	Quick Style GBPUSD,M5: 0
+0	19:43:08.171	Quick Style GBPUSD,M5: 1
+0	19:43:08.171	Quick Style GBPUSD,M5: 1
+0	19:43:08.171	Quick Style GBPUSD,M5: 2
+0	19:43:08.171	Quick Style GBPUSD,M5: initialized
+0	19:43:08.171	OHLC Magnet GBPUSD,M5: initialized
+0	19:43:08.171	Time Range Separator GBPUSD,M5: initialized
+0	19:43:08.171	CandleTime GBPUSD,M5: initialized
+0	19:43:08.171	Watermark Symbol GBPUSD,M5: initialized
+0	19:43:08.172	Separator Time GBPUSD,M5: initialized
+0	19:43:08.172	Separator Time GBPUSD,M5: initialized
+0	19:43:08.172	Separator Time GBPUSD,M5: initialized
+0	19:43:08.172	Separator Time GBPUSD,M5: initialized
+0	19:43:08.172	Separator Time GBPUSD,M5: initialized
+0	19:43:08.172	Separator Time GBPUSD,M5: initialized
+0	19:43:08.172	Ouro Drawing GBPUSD,M5: initialized
+0	19:43:08.172	!BBMA MATrick N.G 2022 v1 GBPUSD,M5: initialized
+0	19:43:47.588	Quick Style GBPUSD,M5: uninit reason 3
+0	19:43:47.590	OHLC Magnet GBPUSD,M5: uninit reason 3
+0	19:43:47.590	Time Range Separator GBPUSD,M5: uninit reason 3
+0	19:43:47.590	CandleTime GBPUSD,M5: uninit reason 3
+0	19:43:47.590	Watermark Symbol GBPUSD,M5: uninit reason 3
+0	19:43:47.591	Separator Time GBPUSD,M5: uninit reason 3
+0	19:43:47.594	Separator Time GBPUSD,M5: uninit reason 3
+0	19:43:47.596	Separator Time GBPUSD,M5: uninit reason 3
+0	19:43:47.597	Separator Time GBPUSD,M5: uninit reason 3
+0	19:43:47.597	Separator Time GBPUSD,M5: uninit reason 3
+0	19:43:47.597	Separator Time GBPUSD,M5: uninit reason 3
+0	19:43:47.597	Ouro Drawing GBPUSD,M5: uninit reason 3
+0	19:43:47.599	!BBMA MATrick N.G 2022 v1 GBPUSD,M5: uninit reason 3
+0	19:43:47.612	Quick Style GBPUSD,M30: 0
+0	19:43:47.613	Quick Style GBPUSD,M30: 0
+0	19:43:47.613	Quick Style GBPUSD,M30: 1
+0	19:43:47.613	Quick Style GBPUSD,M30: 1
+0	19:43:47.613	Quick Style GBPUSD,M30: 2
+0	19:43:47.613	Quick Style GBPUSD,M30: initialized
+0	19:43:47.613	OHLC Magnet GBPUSD,M30: initialized
+0	19:43:47.614	Time Range Separator GBPUSD,M30: initialized
+0	19:43:47.614	CandleTime GBPUSD,M30: initialized
+0	19:43:47.614	Watermark Symbol GBPUSD,M30: initialized
+0	19:43:47.614	Separator Time GBPUSD,M30: initialized
+0	19:43:47.614	Separator Time GBPUSD,M30: initialized
+0	19:43:47.614	Separator Time GBPUSD,M30: initialized
+0	19:43:47.614	Separator Time GBPUSD,M30: initialized
+0	19:43:47.614	Separator Time GBPUSD,M30: initialized
+0	19:43:47.614	Separator Time GBPUSD,M30: initialized
+0	19:43:47.614	Ouro Drawing GBPUSD,M30: initialized
+0	19:43:47.614	!BBMA MATrick N.G 2022 v1 GBPUSD,M30: initialized
+0	19:43:54.560	Quick Style GBPUSD,M30: uninit reason 3
+0	19:43:54.562	OHLC Magnet GBPUSD,M30: uninit reason 3
+0	19:43:54.562	Time Range Separator GBPUSD,M30: uninit reason 3
+0	19:43:54.562	CandleTime GBPUSD,M30: uninit reason 3
+0	19:43:54.562	Watermark Symbol GBPUSD,M30: uninit reason 3
+0	19:43:54.562	Separator Time GBPUSD,M30: uninit reason 3
+0	19:43:54.562	Separator Time GBPUSD,M30: uninit reason 3
+0	19:43:54.562	Separator Time GBPUSD,M30: uninit reason 3
+0	19:43:54.563	Separator Time GBPUSD,M30: uninit reason 3
+0	19:43:54.563	Separator Time GBPUSD,M30: uninit reason 3
+0	19:43:54.563	Separator Time GBPUSD,M30: uninit reason 3
+0	19:43:54.563	Ouro Drawing GBPUSD,M30: uninit reason 3
+0	19:43:54.564	!BBMA MATrick N.G 2022 v1 GBPUSD,M30: uninit reason 3
+0	19:43:54.575	Quick Style GBPUSD,H1: 0
+0	19:43:54.575	Quick Style GBPUSD,H1: 0
+0	19:43:54.575	Quick Style GBPUSD,H1: 1
+0	19:43:54.575	Quick Style GBPUSD,H1: 1
+0	19:43:54.575	Quick Style GBPUSD,H1: 2
+0	19:43:54.575	Quick Style GBPUSD,H1: initialized
+0	19:43:54.576	OHLC Magnet GBPUSD,H1: initialized
+0	19:43:54.576	Time Range Separator GBPUSD,H1: initialized
+0	19:43:54.576	CandleTime GBPUSD,H1: initialized
+0	19:43:54.576	Watermark Symbol GBPUSD,H1: initialized
+0	19:43:54.576	Separator Time GBPUSD,H1: initialized
+0	19:43:54.576	Separator Time GBPUSD,H1: initialized
+0	19:43:54.576	Separator Time GBPUSD,H1: initialized
+0	19:43:54.576	Separator Time GBPUSD,H1: initialized
+0	19:43:54.576	Separator Time GBPUSD,H1: initialized
+0	19:43:54.576	Separator Time GBPUSD,H1: initialized
+0	19:43:54.576	Ouro Drawing GBPUSD,H1: initialized
+0	19:43:54.577	!BBMA MATrick N.G 2022 v1 GBPUSD,H1: initialized
+0	19:44:26.466	Quick Style GBPUSD,H1: uninit reason 3
+0	19:44:26.468	OHLC Magnet GBPUSD,H1: uninit reason 3
+0	19:44:26.468	Time Range Separator GBPUSD,H1: uninit reason 3
+0	19:44:26.468	CandleTime GBPUSD,H1: uninit reason 3
+0	19:44:26.468	Watermark Symbol GBPUSD,H1: uninit reason 3
+0	19:44:26.468	Separator Time GBPUSD,H1: uninit reason 3
+0	19:44:26.468	Separator Time GBPUSD,H1: uninit reason 3
+0	19:44:26.468	Separator Time GBPUSD,H1: uninit reason 3
+0	19:44:26.468	Separator Time GBPUSD,H1: uninit reason 3
+0	19:44:26.468	Separator Time GBPUSD,H1: uninit reason 3
+0	19:44:26.468	Separator Time GBPUSD,H1: uninit reason 3
+0	19:44:26.468	Ouro Drawing GBPUSD,H1: uninit reason 3
+0	19:44:26.470	!BBMA MATrick N.G 2022 v1 GBPUSD,H1: uninit reason 3
+0	19:44:26.488	Quick Style GBPUSD,H4: 0
+0	19:44:26.488	Quick Style GBPUSD,H4: 0
+0	19:44:26.489	Quick Style GBPUSD,H4: 1
+0	19:44:26.489	Quick Style GBPUSD,H4: 1
+0	19:44:26.489	Quick Style GBPUSD,H4: 2
+0	19:44:26.489	Quick Style GBPUSD,H4: initialized
+0	19:44:26.489	OHLC Magnet GBPUSD,H4: initialized
+0	19:44:26.489	Time Range Separator GBPUSD,H4: initialized
+0	19:44:26.489	CandleTime GBPUSD,H4: initialized
+0	19:44:26.489	Watermark Symbol GBPUSD,H4: initialized
+0	19:44:26.490	Separator Time GBPUSD,H4: initialized
+0	19:44:26.490	Separator Time GBPUSD,H4: initialized
+0	19:44:26.490	Separator Time GBPUSD,H4: initialized
+0	19:44:26.490	Separator Time GBPUSD,H4: initialized
+0	19:44:26.490	Separator Time GBPUSD,H4: initialized
+0	19:44:26.490	Separator Time GBPUSD,H4: initialized
+0	19:44:26.490	Ouro Drawing GBPUSD,H4: initialized
+0	19:44:26.490	!BBMA MATrick N.G 2022 v1 GBPUSD,H4: initialized
+0	19:44:33.208	Quick Style GBPUSD,H4: uninit reason 3
+0	19:44:33.210	OHLC Magnet GBPUSD,H4: uninit reason 3
+0	19:44:33.210	Time Range Separator GBPUSD,H4: uninit reason 3
+0	19:44:33.210	CandleTime GBPUSD,H4: uninit reason 3
+0	19:44:33.210	Watermark Symbol GBPUSD,H4: uninit reason 3
+0	19:44:33.210	Separator Time GBPUSD,H4: uninit reason 3
+0	19:44:33.210	Separator Time GBPUSD,H4: uninit reason 3
+0	19:44:33.210	Separator Time GBPUSD,H4: uninit reason 3
+0	19:44:33.210	Separator Time GBPUSD,H4: uninit reason 3
+0	19:44:33.210	Separator Time GBPUSD,H4: uninit reason 3
+0	19:44:33.210	Separator Time GBPUSD,H4: uninit reason 3
+0	19:44:33.210	Ouro Drawing GBPUSD,H4: uninit reason 3
+0	19:44:33.212	!BBMA MATrick N.G 2022 v1 GBPUSD,H4: uninit reason 3
+0	19:44:33.236	Quick Style GBPUSD,Daily: 0
+0	19:44:33.236	Quick Style GBPUSD,Daily: 0
+0	19:44:33.236	Quick Style GBPUSD,Daily: 1
+0	19:44:33.236	Quick Style GBPUSD,Daily: 1
+0	19:44:33.236	Quick Style GBPUSD,Daily: 2
+0	19:44:33.236	Quick Style GBPUSD,Daily: initialized
+0	19:44:33.236	OHLC Magnet GBPUSD,Daily: initialized
+0	19:44:33.237	Time Range Separator GBPUSD,Daily: initialized
+0	19:44:33.237	CandleTime GBPUSD,Daily: initialized
+0	19:44:33.237	Watermark Symbol GBPUSD,Daily: initialized
+0	19:44:33.237	Separator Time GBPUSD,Daily: initialized
+0	19:44:33.237	Separator Time GBPUSD,Daily: initialized
+0	19:44:33.237	Separator Time GBPUSD,Daily: initialized
+0	19:44:33.237	Separator Time GBPUSD,Daily: initialized
+0	19:44:33.237	Separator Time GBPUSD,Daily: initialized
+0	19:44:33.237	Separator Time GBPUSD,Daily: initialized
+0	19:44:33.237	Ouro Drawing GBPUSD,Daily: initialized
+0	19:44:33.237	!BBMA MATrick N.G 2022 v1 GBPUSD,Daily: initialized
+0	19:44:35.020	Quick Style GBPUSD,Daily: uninit reason 3
+0	19:44:35.022	OHLC Magnet GBPUSD,Daily: uninit reason 3
+0	19:44:35.022	Time Range Separator GBPUSD,Daily: uninit reason 3
+0	19:44:35.022	CandleTime GBPUSD,Daily: uninit reason 3
+0	19:44:35.022	Watermark Symbol GBPUSD,Daily: uninit reason 3
+0	19:44:35.022	Separator Time GBPUSD,Daily: uninit reason 3
+0	19:44:35.022	Separator Time GBPUSD,Daily: uninit reason 3
+0	19:44:35.022	Separator Time GBPUSD,Daily: uninit reason 3
+0	19:44:35.022	Separator Time GBPUSD,Daily: uninit reason 3
+0	19:44:35.022	Separator Time GBPUSD,Daily: uninit reason 3
+0	19:44:35.022	Separator Time GBPUSD,Daily: uninit reason 3
+0	19:44:35.022	Ouro Drawing GBPUSD,Daily: uninit reason 3
+0	19:44:35.024	!BBMA MATrick N.G 2022 v1 GBPUSD,Daily: uninit reason 3
+0	19:44:35.035	Quick Style GBPUSD,Weekly: 0
+0	19:44:35.035	Quick Style GBPUSD,Weekly: 0
+0	19:44:35.035	Quick Style GBPUSD,Weekly: 1
+0	19:44:35.035	Quick Style GBPUSD,Weekly: 1
+0	19:44:35.036	Quick Style GBPUSD,Weekly: 2
+0	19:44:35.036	Quick Style GBPUSD,Weekly: initialized
+0	19:44:35.036	OHLC Magnet GBPUSD,Weekly: initialized
+0	19:44:35.036	Time Range Separator GBPUSD,Weekly: initialized
+0	19:44:35.036	CandleTime GBPUSD,Weekly: initialized
+0	19:44:35.036	Watermark Symbol GBPUSD,Weekly: initialized
+0	19:44:35.036	Separator Time GBPUSD,Weekly: initialized
+0	19:44:35.036	Separator Time GBPUSD,Weekly: initialized
+0	19:44:35.036	Separator Time GBPUSD,Weekly: initialized
+0	19:44:35.036	Separator Time GBPUSD,Weekly: initialized
+0	19:44:35.036	Separator Time GBPUSD,Weekly: initialized
+0	19:44:35.036	Separator Time GBPUSD,Weekly: initialized
+0	19:44:35.037	Ouro Drawing GBPUSD,Weekly: initialized
+0	19:44:35.037	!BBMA MATrick N.G 2022 v1 GBPUSD,Weekly: initialized
+0	19:44:39.042	Quick Style GBPUSD,Weekly: uninit reason 3
+0	19:44:39.044	OHLC Magnet GBPUSD,Weekly: uninit reason 3
+0	19:44:39.044	Time Range Separator GBPUSD,Weekly: uninit reason 3
+0	19:44:39.044	CandleTime GBPUSD,Weekly: uninit reason 3
+0	19:44:39.044	Watermark Symbol GBPUSD,Weekly: uninit reason 3
+0	19:44:39.044	Separator Time GBPUSD,Weekly: uninit reason 3
+0	19:44:39.044	Separator Time GBPUSD,Weekly: uninit reason 3
+0	19:44:39.044	Separator Time GBPUSD,Weekly: uninit reason 3
+0	19:44:39.044	Separator Time GBPUSD,Weekly: uninit reason 3
+0	19:44:39.044	Separator Time GBPUSD,Weekly: uninit reason 3
+0	19:44:39.044	Separator Time GBPUSD,Weekly: uninit reason 3
+0	19:44:39.044	Ouro Drawing GBPUSD,Weekly: uninit reason 3
+0	19:44:39.045	!BBMA MATrick N.G 2022 v1 GBPUSD,Weekly: uninit reason 3
+0	19:44:39.062	Quick Style GBPUSD,Monthly: 0
+0	19:44:39.062	Quick Style GBPUSD,Monthly: 0
+0	19:44:39.062	Quick Style GBPUSD,Monthly: 1
+0	19:44:39.062	Quick Style GBPUSD,Monthly: 1
+0	19:44:39.063	Quick Style GBPUSD,Monthly: 2
+0	19:44:39.063	Quick Style GBPUSD,Monthly: initialized
+0	19:44:39.063	OHLC Magnet GBPUSD,Monthly: initialized
+0	19:44:39.063	Time Range Separator GBPUSD,Monthly: initialized
+0	19:44:39.063	CandleTime GBPUSD,Monthly: initialized
+0	19:44:39.063	Watermark Symbol GBPUSD,Monthly: initialized
+0	19:44:39.063	Separator Time GBPUSD,Monthly: initialized
+0	19:44:39.063	Separator Time GBPUSD,Monthly: initialized
+0	19:44:39.063	Separator Time GBPUSD,Monthly: initialized
+0	19:44:39.063	Separator Time GBPUSD,Monthly: initialized
+0	19:44:39.063	Separator Time GBPUSD,Monthly: initialized
+0	19:44:39.063	Separator Time GBPUSD,Monthly: initialized
+0	19:44:39.064	Ouro Drawing GBPUSD,Monthly: initialized
+0	19:44:39.064	!BBMA MATrick N.G 2022 v1 GBPUSD,Monthly: initialized
+0	19:44:42.572	Quick Style GBPUSD,Monthly: uninit reason 3
+0	19:44:42.574	OHLC Magnet GBPUSD,Monthly: uninit reason 3
+0	19:44:42.574	Time Range Separator GBPUSD,Monthly: uninit reason 3
+0	19:44:42.574	CandleTime GBPUSD,Monthly: uninit reason 3
+0	19:44:42.574	Watermark Symbol GBPUSD,Monthly: uninit reason 3
+0	19:44:42.574	Separator Time GBPUSD,Monthly: uninit reason 3
+0	19:44:42.574	Separator Time GBPUSD,Monthly: uninit reason 3
+0	19:44:42.574	Separator Time GBPUSD,Monthly: uninit reason 3
+0	19:44:42.574	Separator Time GBPUSD,Monthly: uninit reason 3
+0	19:44:42.574	Separator Time GBPUSD,Monthly: uninit reason 3
+0	19:44:42.574	Separator Time GBPUSD,Monthly: uninit reason 3
+0	19:44:42.574	Ouro Drawing GBPUSD,Monthly: uninit reason 3
+0	19:44:42.576	!BBMA MATrick N.G 2022 v1 GBPUSD,Monthly: uninit reason 3
+0	19:44:42.587	Quick Style GBPUSD,Weekly: 0
+0	19:44:42.588	Quick Style GBPUSD,Weekly: 0
+0	19:44:42.588	Quick Style GBPUSD,Weekly: 1
+0	19:44:42.588	Quick Style GBPUSD,Weekly: 1
+0	19:44:42.588	Quick Style GBPUSD,Weekly: 2
+0	19:44:42.588	Quick Style GBPUSD,Weekly: initialized
+0	19:44:42.588	OHLC Magnet GBPUSD,Weekly: initialized
+0	19:44:42.588	Time Range Separator GBPUSD,Weekly: initialized
+0	19:44:42.588	CandleTime GBPUSD,Weekly: initialized
+0	19:44:42.589	Watermark Symbol GBPUSD,Weekly: initialized
+0	19:44:42.589	Separator Time GBPUSD,Weekly: initialized
+0	19:44:42.589	Separator Time GBPUSD,Weekly: initialized
+0	19:44:42.589	Separator Time GBPUSD,Weekly: initialized
+0	19:44:42.589	Separator Time GBPUSD,Weekly: initialized
+0	19:44:42.589	Separator Time GBPUSD,Weekly: initialized
+0	19:44:42.589	Separator Time GBPUSD,Weekly: initialized
+0	19:44:42.589	Ouro Drawing GBPUSD,Weekly: initialized
+0	19:44:42.589	!BBMA MATrick N.G 2022 v1 GBPUSD,Weekly: initialized
+0	19:44:43.064	Quick Style GBPUSD,Weekly: uninit reason 3
+0	19:44:43.066	OHLC Magnet GBPUSD,Weekly: uninit reason 3
+0	19:44:43.066	Time Range Separator GBPUSD,Weekly: uninit reason 3
+0	19:44:43.066	CandleTime GBPUSD,Weekly: uninit reason 3
+0	19:44:43.066	Watermark Symbol GBPUSD,Weekly: uninit reason 3
+0	19:44:43.066	Separator Time GBPUSD,Weekly: uninit reason 3
+0	19:44:43.066	Separator Time GBPUSD,Weekly: uninit reason 3
+0	19:44:43.066	Separator Time GBPUSD,Weekly: uninit reason 3
+0	19:44:43.066	Separator Time GBPUSD,Weekly: uninit reason 3
+0	19:44:43.066	Separator Time GBPUSD,Weekly: uninit reason 3
+0	19:44:43.066	Separator Time GBPUSD,Weekly: uninit reason 3
+0	19:44:43.066	Ouro Drawing GBPUSD,Weekly: uninit reason 3
+0	19:44:43.068	!BBMA MATrick N.G 2022 v1 GBPUSD,Weekly: uninit reason 3
+0	19:44:43.079	Quick Style GBPUSD,Daily: 0
+0	19:44:43.079	Quick Style GBPUSD,Daily: 0
+0	19:44:43.079	Quick Style GBPUSD,Daily: 1
+0	19:44:43.079	Quick Style GBPUSD,Daily: 1
+0	19:44:43.079	Quick Style GBPUSD,Daily: 2
+0	19:44:43.080	Quick Style GBPUSD,Daily: initialized
+0	19:44:43.080	OHLC Magnet GBPUSD,Daily: initialized
+0	19:44:43.080	Time Range Separator GBPUSD,Daily: initialized
+0	19:44:43.080	CandleTime GBPUSD,Daily: initialized
+0	19:44:43.080	Watermark Symbol GBPUSD,Daily: initialized
+0	19:44:43.080	Separator Time GBPUSD,Daily: initialized
+0	19:44:43.080	Separator Time GBPUSD,Daily: initialized
+0	19:44:43.080	Separator Time GBPUSD,Daily: initialized
+0	19:44:43.080	Separator Time GBPUSD,Daily: initialized
+0	19:44:43.080	Separator Time GBPUSD,Daily: initialized
+0	19:44:43.080	Separator Time GBPUSD,Daily: initialized
+0	19:44:43.081	Ouro Drawing GBPUSD,Daily: initialized
+0	19:44:43.081	!BBMA MATrick N.G 2022 v1 GBPUSD,Daily: initialized
+0	19:44:43.792	Quick Style GBPUSD,Daily: uninit reason 3
+0	19:44:43.794	OHLC Magnet GBPUSD,Daily: uninit reason 3
+0	19:44:43.794	Time Range Separator GBPUSD,Daily: uninit reason 3
+0	19:44:43.794	CandleTime GBPUSD,Daily: uninit reason 3
+0	19:44:43.794	Watermark Symbol GBPUSD,Daily: uninit reason 3
+0	19:44:43.794	Separator Time GBPUSD,Daily: uninit reason 3
+0	19:44:43.794	Separator Time GBPUSD,Daily: uninit reason 3
+0	19:44:43.794	Separator Time GBPUSD,Daily: uninit reason 3
+0	19:44:43.794	Separator Time GBPUSD,Daily: uninit reason 3
+0	19:44:43.794	Separator Time GBPUSD,Daily: uninit reason 3
+0	19:44:43.794	Separator Time GBPUSD,Daily: uninit reason 3
+0	19:44:43.794	Ouro Drawing GBPUSD,Daily: uninit reason 3
+0	19:44:43.796	!BBMA MATrick N.G 2022 v1 GBPUSD,Daily: uninit reason 3
+0	19:44:43.807	Quick Style GBPUSD,H1: 0
+0	19:44:43.808	Quick Style GBPUSD,H1: 0
+0	19:44:43.808	Quick Style GBPUSD,H1: 1
+0	19:44:43.808	Quick Style GBPUSD,H1: 1
+0	19:44:43.808	Quick Style GBPUSD,H1: 2
+0	19:44:43.808	Quick Style GBPUSD,H1: initialized
+0	19:44:43.808	OHLC Magnet GBPUSD,H1: initialized
+0	19:44:43.808	Time Range Separator GBPUSD,H1: initialized
+0	19:44:43.808	CandleTime GBPUSD,H1: initialized
+0	19:44:43.809	Watermark Symbol GBPUSD,H1: initialized
+0	19:44:43.809	Separator Time GBPUSD,H1: initialized
+0	19:44:43.809	Separator Time GBPUSD,H1: initialized
+0	19:44:43.809	Separator Time GBPUSD,H1: initialized
+0	19:44:43.809	Separator Time GBPUSD,H1: initialized
+0	19:44:43.809	Separator Time GBPUSD,H1: initialized
+0	19:44:43.809	Separator Time GBPUSD,H1: initialized
+0	19:44:43.809	Ouro Drawing GBPUSD,H1: initialized
+0	19:44:43.809	!BBMA MATrick N.G 2022 v1 GBPUSD,H1: initialized
+0	19:46:29.948	Quick Style GBPUSD,H1: uninit reason 3
+0	19:46:29.950	OHLC Magnet GBPUSD,H1: uninit reason 3
+0	19:46:29.950	Time Range Separator GBPUSD,H1: uninit reason 3
+0	19:46:29.950	CandleTime GBPUSD,H1: uninit reason 3
+0	19:46:29.950	Watermark Symbol GBPUSD,H1: uninit reason 3
+0	19:46:29.950	Separator Time GBPUSD,H1: uninit reason 3
+0	19:46:29.950	Separator Time GBPUSD,H1: uninit reason 3
+0	19:46:29.950	Separator Time GBPUSD,H1: uninit reason 3
+0	19:46:29.950	Separator Time GBPUSD,H1: uninit reason 3
+0	19:46:29.950	Separator Time GBPUSD,H1: uninit reason 3
+0	19:46:29.950	Separator Time GBPUSD,H1: uninit reason 3
+0	19:46:29.950	Ouro Drawing GBPUSD,H1: uninit reason 3
+0	19:46:29.952	!BBMA MATrick N.G 2022 v1 GBPUSD,H1: uninit reason 3
+0	19:46:29.963	Quick Style GBPUSD,H4: 0
+0	19:46:29.963	Quick Style GBPUSD,H4: 0
+0	19:46:29.963	Quick Style GBPUSD,H4: 1
+0	19:46:29.963	Quick Style GBPUSD,H4: 1
+0	19:46:29.963	Quick Style GBPUSD,H4: 2
+0	19:46:29.964	Quick Style GBPUSD,H4: initialized
+0	19:46:29.964	OHLC Magnet GBPUSD,H4: initialized
+0	19:46:29.964	Time Range Separator GBPUSD,H4: initialized
+0	19:46:29.964	CandleTime GBPUSD,H4: initialized
+0	19:46:29.964	Watermark Symbol GBPUSD,H4: initialized
+0	19:46:29.964	Separator Time GBPUSD,H4: initialized
+0	19:46:29.964	Separator Time GBPUSD,H4: initialized
+0	19:46:29.964	Separator Time GBPUSD,H4: initialized
+0	19:46:29.964	Separator Time GBPUSD,H4: initialized
+0	19:46:29.964	Separator Time GBPUSD,H4: initialized
+0	19:46:29.964	Separator Time GBPUSD,H4: initialized
+0	19:46:29.965	Ouro Drawing GBPUSD,H4: initialized
+0	19:46:29.965	!BBMA MATrick N.G 2022 v1 GBPUSD,H4: initialized
+0	19:46:37.242	Quick Style GBPUSD,H4: uninit reason 3
+0	19:46:37.243	OHLC Magnet GBPUSD,H4: uninit reason 3
+0	19:46:37.243	Time Range Separator GBPUSD,H4: uninit reason 3
+0	19:46:37.243	CandleTime GBPUSD,H4: uninit reason 3
+0	19:46:37.243	Watermark Symbol GBPUSD,H4: uninit reason 3
+0	19:46:37.243	Separator Time GBPUSD,H4: uninit reason 3
+0	19:46:37.243	Separator Time GBPUSD,H4: uninit reason 3
+0	19:46:37.243	Separator Time GBPUSD,H4: uninit reason 3
+0	19:46:37.243	Separator Time GBPUSD,H4: uninit reason 3
+0	19:46:37.243	Separator Time GBPUSD,H4: uninit reason 3
+0	19:46:37.243	Separator Time GBPUSD,H4: uninit reason 3
+0	19:46:37.243	Ouro Drawing GBPUSD,H4: uninit reason 3
+0	19:46:37.245	!BBMA MATrick N.G 2022 v1 GBPUSD,H4: uninit reason 3
+0	19:46:37.255	Quick Style GBPUSD,Daily: 0
+0	19:46:37.255	Quick Style GBPUSD,Daily: 0
+0	19:46:37.256	Quick Style GBPUSD,Daily: 1
+0	19:46:37.256	Quick Style GBPUSD,Daily: 1
+0	19:46:37.256	Quick Style GBPUSD,Daily: 2
+0	19:46:37.256	Quick Style GBPUSD,Daily: initialized
+0	19:46:37.256	OHLC Magnet GBPUSD,Daily: initialized
+0	19:46:37.256	Time Range Separator GBPUSD,Daily: initialized
+0	19:46:37.256	CandleTime GBPUSD,Daily: initialized
+0	19:46:37.256	Watermark Symbol GBPUSD,Daily: initialized
+0	19:46:37.257	Separator Time GBPUSD,Daily: initialized
+0	19:46:37.257	Separator Time GBPUSD,Daily: initialized
+0	19:46:37.257	Separator Time GBPUSD,Daily: initialized
+0	19:46:37.257	Separator Time GBPUSD,Daily: initialized
+0	19:46:37.257	Separator Time GBPUSD,Daily: initialized
+0	19:46:37.257	Separator Time GBPUSD,Daily: initialized
+0	19:46:37.257	Ouro Drawing GBPUSD,Daily: initialized
+0	19:46:37.257	!BBMA MATrick N.G 2022 v1 GBPUSD,Daily: initialized
+0	19:46:38.640	Quick Style GBPUSD,Daily: uninit reason 3
+0	19:46:38.641	OHLC Magnet GBPUSD,Daily: uninit reason 3
+0	19:46:38.641	Time Range Separator GBPUSD,Daily: uninit reason 3
+0	19:46:38.641	CandleTime GBPUSD,Daily: uninit reason 3
+0	19:46:38.642	Watermark Symbol GBPUSD,Daily: uninit reason 3
+0	19:46:38.642	Separator Time GBPUSD,Daily: uninit reason 3
+0	19:46:38.642	Separator Time GBPUSD,Daily: uninit reason 3
+0	19:46:38.642	Separator Time GBPUSD,Daily: uninit reason 3
+0	19:46:38.642	Separator Time GBPUSD,Daily: uninit reason 3
+0	19:46:38.642	Separator Time GBPUSD,Daily: uninit reason 3
+0	19:46:38.642	Separator Time GBPUSD,Daily: uninit reason 3
+0	19:46:38.642	Ouro Drawing GBPUSD,Daily: uninit reason 3
+0	19:46:38.643	!BBMA MATrick N.G 2022 v1 GBPUSD,Daily: uninit reason 3
+0	19:46:38.654	Quick Style GBPUSD,H4: 0
+0	19:46:38.654	Quick Style GBPUSD,H4: 0
+0	19:46:38.654	Quick Style GBPUSD,H4: 1
+0	19:46:38.654	Quick Style GBPUSD,H4: 1
+0	19:46:38.654	Quick Style GBPUSD,H4: 2
+0	19:46:38.654	Quick Style GBPUSD,H4: initialized
+0	19:46:38.655	OHLC Magnet GBPUSD,H4: initialized
+0	19:46:38.655	Time Range Separator GBPUSD,H4: initialized
+0	19:46:38.655	CandleTime GBPUSD,H4: initialized
+0	19:46:38.655	Watermark Symbol GBPUSD,H4: initialized
+0	19:46:38.655	Separator Time GBPUSD,H4: initialized
+0	19:46:38.655	Separator Time GBPUSD,H4: initialized
+0	19:46:38.655	Separator Time GBPUSD,H4: initialized
+0	19:46:38.655	Separator Time GBPUSD,H4: initialized
+0	19:46:38.655	Separator Time GBPUSD,H4: initialized
+0	19:46:38.655	Separator Time GBPUSD,H4: initialized
+0	19:46:38.655	Ouro Drawing GBPUSD,H4: initialized
+0	19:46:38.656	!BBMA MATrick N.G 2022 v1 GBPUSD,H4: initialized
+0	19:47:21.490	Quick Style GBPUSD,H4: uninit reason 3
+0	19:47:21.492	OHLC Magnet GBPUSD,H4: uninit reason 3
+0	19:47:21.492	Time Range Separator GBPUSD,H4: uninit reason 3
+0	19:47:21.492	CandleTime GBPUSD,H4: uninit reason 3
+0	19:47:21.492	Watermark Symbol GBPUSD,H4: uninit reason 3
+0	19:47:21.492	Separator Time GBPUSD,H4: uninit reason 3
+0	19:47:21.492	Separator Time GBPUSD,H4: uninit reason 3
+0	19:47:21.492	Separator Time GBPUSD,H4: uninit reason 3
+0	19:47:21.492	Separator Time GBPUSD,H4: uninit reason 3
+0	19:47:21.492	Separator Time GBPUSD,H4: uninit reason 3
+0	19:47:21.492	Separator Time GBPUSD,H4: uninit reason 3
+0	19:47:21.492	Ouro Drawing GBPUSD,H4: uninit reason 3
+0	19:47:21.493	!BBMA MATrick N.G 2022 v1 GBPUSD,H4: uninit reason 3
+0	19:47:21.503	Quick Style GBPUSD,M5: 0
+0	19:47:21.504	Quick Style GBPUSD,M5: 0
+0	19:47:21.504	Quick Style GBPUSD,M5: 1
+0	19:47:21.504	Quick Style GBPUSD,M5: 1
+0	19:47:21.504	Quick Style GBPUSD,M5: 2
+0	19:47:21.504	Quick Style GBPUSD,M5: initialized
+0	19:47:21.504	OHLC Magnet GBPUSD,M5: initialized
+0	19:47:21.504	Time Range Separator GBPUSD,M5: initialized
+0	19:47:21.504	CandleTime GBPUSD,M5: initialized
+0	19:47:21.505	Watermark Symbol GBPUSD,M5: initialized
+0	19:47:21.505	Separator Time GBPUSD,M5: initialized
+0	19:47:21.505	Separator Time GBPUSD,M5: initialized
+0	19:47:21.505	Separator Time GBPUSD,M5: initialized
+0	19:47:21.505	Separator Time GBPUSD,M5: initialized
+0	19:47:21.505	Separator Time GBPUSD,M5: initialized
+0	19:47:21.505	Separator Time GBPUSD,M5: initialized
+0	19:47:21.505	Ouro Drawing GBPUSD,M5: initialized
+0	19:47:21.505	!BBMA MATrick N.G 2022 v1 GBPUSD,M5: initialized
+0	19:47:29.454	Quick Style GBPUSD,M5: uninit reason 3
+0	19:47:29.456	OHLC Magnet GBPUSD,M5: uninit reason 3
+0	19:47:29.456	Time Range Separator GBPUSD,M5: uninit reason 3
+0	19:47:29.456	CandleTime GBPUSD,M5: uninit reason 3
+0	19:47:29.456	Watermark Symbol GBPUSD,M5: uninit reason 3
+0	19:47:29.457	Separator Time GBPUSD,M5: uninit reason 3
+0	19:47:29.461	Separator Time GBPUSD,M5: uninit reason 3
+0	19:47:29.462	Separator Time GBPUSD,M5: uninit reason 3
+0	19:47:29.463	Separator Time GBPUSD,M5: uninit reason 3
+0	19:47:29.464	Separator Time GBPUSD,M5: uninit reason 3
+0	19:47:29.464	Separator Time GBPUSD,M5: uninit reason 3
+0	19:47:29.464	Ouro Drawing GBPUSD,M5: uninit reason 3
+0	19:47:29.466	!BBMA MATrick N.G 2022 v1 GBPUSD,M5: uninit reason 3
+0	19:47:29.478	Quick Style GBPUSD,M15: 0
+0	19:47:29.479	Quick Style GBPUSD,M15: 0
+0	19:47:29.479	Quick Style GBPUSD,M15: 1
+0	19:47:29.479	Quick Style GBPUSD,M15: 1
+0	19:47:29.479	Quick Style GBPUSD,M15: 2
+0	19:47:29.479	Quick Style GBPUSD,M15: initialized
+0	19:47:29.479	OHLC Magnet GBPUSD,M15: initialized
+0	19:47:29.479	Time Range Separator GBPUSD,M15: initialized
+0	19:47:29.479	CandleTime GBPUSD,M15: initialized
+0	19:47:29.480	Watermark Symbol GBPUSD,M15: initialized
+0	19:47:29.480	Separator Time GBPUSD,M15: initialized
+0	19:47:29.480	Separator Time GBPUSD,M15: initialized
+0	19:47:29.480	Separator Time GBPUSD,M15: initialized
+0	19:47:29.480	Separator Time GBPUSD,M15: initialized
+0	19:47:29.480	Separator Time GBPUSD,M15: initialized
+0	19:47:29.480	Separator Time GBPUSD,M15: initialized
+0	19:47:29.480	Ouro Drawing GBPUSD,M15: initialized
+0	19:47:29.480	!BBMA MATrick N.G 2022 v1 GBPUSD,M15: initialized
+0	19:47:34.628	Quick Style GBPUSD,M15: uninit reason 3
+0	19:47:34.630	OHLC Magnet GBPUSD,M15: uninit reason 3
+0	19:47:34.630	Time Range Separator GBPUSD,M15: uninit reason 3
+0	19:47:34.631	CandleTime GBPUSD,M15: uninit reason 3
+0	19:47:34.631	Watermark Symbol GBPUSD,M15: uninit reason 3
+0	19:47:34.632	Separator Time GBPUSD,M15: uninit reason 3
+0	19:47:34.637	Separator Time GBPUSD,M15: uninit reason 3
+0	19:47:34.639	Separator Time GBPUSD,M15: uninit reason 3
+0	19:47:34.640	Separator Time GBPUSD,M15: uninit reason 3
+0	19:47:34.641	Separator Time GBPUSD,M15: uninit reason 3
+0	19:47:34.641	Separator Time GBPUSD,M15: uninit reason 3
+0	19:47:34.641	Ouro Drawing GBPUSD,M15: uninit reason 3
+0	19:47:34.643	!BBMA MATrick N.G 2022 v1 GBPUSD,M15: uninit reason 3
+0	19:47:34.654	Quick Style GBPUSD,M5: 0
+0	19:47:34.654	Quick Style GBPUSD,M5: 0
+0	19:47:34.654	Quick Style GBPUSD,M5: 1
+0	19:47:34.655	Quick Style GBPUSD,M5: 1
+0	19:47:34.655	Quick Style GBPUSD,M5: 2
+0	19:47:34.655	Quick Style GBPUSD,M5: initialized
+0	19:47:34.655	OHLC Magnet GBPUSD,M5: initialized
+0	19:47:34.655	Time Range Separator GBPUSD,M5: initialized
+0	19:47:34.655	CandleTime GBPUSD,M5: initialized
+0	19:47:34.655	Watermark Symbol GBPUSD,M5: initialized
+0	19:47:34.655	Separator Time GBPUSD,M5: initialized
+0	19:47:34.655	Separator Time GBPUSD,M5: initialized
+0	19:47:34.655	Separator Time GBPUSD,M5: initialized
+0	19:47:34.655	Separator Time GBPUSD,M5: initialized
+0	19:47:34.655	Separator Time GBPUSD,M5: initialized
+0	19:47:34.655	Separator Time GBPUSD,M5: initialized
+0	19:47:34.656	Ouro Drawing GBPUSD,M5: initialized
+0	19:47:34.656	!BBMA MATrick N.G 2022 v1 GBPUSD,M5: initialized
+0	19:47:42.090	Quick Style GBPUSD,M5: uninit reason 3
+0	19:47:42.092	OHLC Magnet GBPUSD,M5: uninit reason 3
+0	19:47:42.092	Time Range Separator GBPUSD,M5: uninit reason 3
+0	19:47:42.092	CandleTime GBPUSD,M5: uninit reason 3
+0	19:47:42.092	Watermark Symbol GBPUSD,M5: uninit reason 3
+0	19:47:42.093	Separator Time GBPUSD,M5: uninit reason 3
+0	19:47:42.096	Separator Time GBPUSD,M5: uninit reason 3
+0	19:47:42.098	Separator Time GBPUSD,M5: uninit reason 3
+0	19:47:42.099	Separator Time GBPUSD,M5: uninit reason 3
+0	19:47:42.099	Separator Time GBPUSD,M5: uninit reason 3
+0	19:47:42.100	Separator Time GBPUSD,M5: uninit reason 3
+0	19:47:42.100	Ouro Drawing GBPUSD,M5: uninit reason 3
+0	19:47:42.102	!BBMA MATrick N.G 2022 v1 GBPUSD,M5: uninit reason 3
+0	19:47:42.113	Quick Style GBPUSD,M30: 0
+0	19:47:42.113	Quick Style GBPUSD,M30: 0
+0	19:47:42.113	Quick Style GBPUSD,M30: 1
+0	19:47:42.113	Quick Style GBPUSD,M30: 1
+0	19:47:42.113	Quick Style GBPUSD,M30: 2
+0	19:47:42.113	Quick Style GBPUSD,M30: initialized
+0	19:47:42.113	OHLC Magnet GBPUSD,M30: initialized
+0	19:47:42.114	Time Range Separator GBPUSD,M30: initialized
+0	19:47:42.114	CandleTime GBPUSD,M30: initialized
+0	19:47:42.114	Watermark Symbol GBPUSD,M30: initialized
+0	19:47:42.114	Separator Time GBPUSD,M30: initialized
+0	19:47:42.114	Separator Time GBPUSD,M30: initialized
+0	19:47:42.114	Separator Time GBPUSD,M30: initialized
+0	19:47:42.114	Separator Time GBPUSD,M30: initialized
+0	19:47:42.114	Separator Time GBPUSD,M30: initialized
+0	19:47:42.114	Separator Time GBPUSD,M30: initialized
+0	19:47:42.114	Ouro Drawing GBPUSD,M30: initialized
+0	19:47:42.114	!BBMA MATrick N.G 2022 v1 GBPUSD,M30: initialized
+0	19:47:56.584	Quick Style GBPUSD,M30: uninit reason 3
+0	19:47:56.586	OHLC Magnet GBPUSD,M30: uninit reason 3
+0	19:47:56.586	Time Range Separator GBPUSD,M30: uninit reason 3
+0	19:47:56.586	CandleTime GBPUSD,M30: uninit reason 3
+0	19:47:56.586	Watermark Symbol GBPUSD,M30: uninit reason 3
+0	19:47:56.586	Separator Time GBPUSD,M30: uninit reason 3
+0	19:47:56.586	Separator Time GBPUSD,M30: uninit reason 3
+0	19:47:56.586	Separator Time GBPUSD,M30: uninit reason 3
+0	19:47:56.586	Separator Time GBPUSD,M30: uninit reason 3
+0	19:47:56.586	Separator Time GBPUSD,M30: uninit reason 3
+0	19:47:56.586	Separator Time GBPUSD,M30: uninit reason 3
+0	19:47:56.586	Ouro Drawing GBPUSD,M30: uninit reason 3
+0	19:47:56.588	!BBMA MATrick N.G 2022 v1 GBPUSD,M30: uninit reason 3
+0	19:47:56.599	Quick Style GBPUSD,H1: 0
+0	19:47:56.600	Quick Style GBPUSD,H1: 0
+0	19:47:56.600	Quick Style GBPUSD,H1: 1
+0	19:47:56.600	Quick Style GBPUSD,H1: 1
+0	19:47:56.600	Quick Style GBPUSD,H1: 2
+0	19:47:56.600	Quick Style GBPUSD,H1: initialized
+0	19:47:56.600	OHLC Magnet GBPUSD,H1: initialized
+0	19:47:56.600	Time Range Separator GBPUSD,H1: initialized
+0	19:47:56.600	CandleTime GBPUSD,H1: initialized
+0	19:47:56.601	Watermark Symbol GBPUSD,H1: initialized
+0	19:47:56.601	Separator Time GBPUSD,H1: initialized
+0	19:47:56.601	Separator Time GBPUSD,H1: initialized
+0	19:47:56.601	Separator Time GBPUSD,H1: initialized
+0	19:47:56.601	Separator Time GBPUSD,H1: initialized
+0	19:47:56.601	Separator Time GBPUSD,H1: initialized
+0	19:47:56.601	Separator Time GBPUSD,H1: initialized
+0	19:47:56.601	Ouro Drawing GBPUSD,H1: initialized
+0	19:47:56.602	!BBMA MATrick N.G 2022 v1 GBPUSD,H1: initialized
+0	19:48:25.010	Quick Style GBPUSD,H1: uninit reason 3
+0	19:48:25.012	OHLC Magnet GBPUSD,H1: uninit reason 3
+0	19:48:25.012	Time Range Separator GBPUSD,H1: uninit reason 3
+0	19:48:25.012	CandleTime GBPUSD,H1: uninit reason 3
+0	19:48:25.012	Watermark Symbol GBPUSD,H1: uninit reason 3
+0	19:48:25.012	Separator Time GBPUSD,H1: uninit reason 3
+0	19:48:25.012	Separator Time GBPUSD,H1: uninit reason 3
+0	19:48:25.012	Separator Time GBPUSD,H1: uninit reason 3
+0	19:48:25.012	Separator Time GBPUSD,H1: uninit reason 3
+0	19:48:25.012	Separator Time GBPUSD,H1: uninit reason 3
+0	19:48:25.012	Separator Time GBPUSD,H1: uninit reason 3
+0	19:48:25.012	Ouro Drawing GBPUSD,H1: uninit reason 3
+0	19:48:25.014	!BBMA MATrick N.G 2022 v1 GBPUSD,H1: uninit reason 3
+0	19:48:25.026	Quick Style GBPUSD,H4: 0
+0	19:48:25.026	Quick Style GBPUSD,H4: 0
+0	19:48:25.026	Quick Style GBPUSD,H4: 1
+0	19:48:25.026	Quick Style GBPUSD,H4: 1
+0	19:48:25.026	Quick Style GBPUSD,H4: 2
+0	19:48:25.026	Quick Style GBPUSD,H4: initialized
+0	19:48:25.026	OHLC Magnet GBPUSD,H4: initialized
+0	19:48:25.026	Time Range Separator GBPUSD,H4: initialized
+0	19:48:25.026	CandleTime GBPUSD,H4: initialized
+0	19:48:25.027	Watermark Symbol GBPUSD,H4: initialized
+0	19:48:25.027	Separator Time GBPUSD,H4: initialized
+0	19:48:25.027	Separator Time GBPUSD,H4: initialized
+0	19:48:25.027	Separator Time GBPUSD,H4: initialized
+0	19:48:25.027	Separator Time GBPUSD,H4: initialized
+0	19:48:25.027	Separator Time GBPUSD,H4: initialized
+0	19:48:25.027	Separator Time GBPUSD,H4: initialized
+0	19:48:25.027	Ouro Drawing GBPUSD,H4: initialized
+0	19:48:25.027	!BBMA MATrick N.G 2022 v1 GBPUSD,H4: initialized
+0	19:48:26.994	Quick Style GBPUSD,H4: uninit reason 3
+0	19:48:26.995	OHLC Magnet GBPUSD,H4: uninit reason 3
+0	19:48:26.995	Time Range Separator GBPUSD,H4: uninit reason 3
+0	19:48:26.995	CandleTime GBPUSD,H4: uninit reason 3
+0	19:48:26.995	Watermark Symbol GBPUSD,H4: uninit reason 3
+0	19:48:26.996	Separator Time GBPUSD,H4: uninit reason 3
+0	19:48:26.996	Separator Time GBPUSD,H4: uninit reason 3
+0	19:48:26.996	Separator Time GBPUSD,H4: uninit reason 3
+0	19:48:26.996	Separator Time GBPUSD,H4: uninit reason 3
+0	19:48:26.996	Separator Time GBPUSD,H4: uninit reason 3
+0	19:48:26.996	Separator Time GBPUSD,H4: uninit reason 3
+0	19:48:26.996	Ouro Drawing GBPUSD,H4: uninit reason 3
+0	19:48:26.997	!BBMA MATrick N.G 2022 v1 GBPUSD,H4: uninit reason 3
+0	19:48:27.009	Quick Style GBPUSD,H1: 0
+0	19:48:27.009	Quick Style GBPUSD,H1: 0
+0	19:48:27.009	Quick Style GBPUSD,H1: 1
+0	19:48:27.009	Quick Style GBPUSD,H1: 1
+0	19:48:27.009	Quick Style GBPUSD,H1: 2
+0	19:48:27.009	Quick Style GBPUSD,H1: initialized
+0	19:48:27.009	OHLC Magnet GBPUSD,H1: initialized
+0	19:48:27.010	Time Range Separator GBPUSD,H1: initialized
+0	19:48:27.010	CandleTime GBPUSD,H1: initialized
+0	19:48:27.010	Watermark Symbol GBPUSD,H1: initialized
+0	19:48:27.010	Separator Time GBPUSD,H1: initialized
+0	19:48:27.010	Separator Time GBPUSD,H1: initialized
+0	19:48:27.010	Separator Time GBPUSD,H1: initialized
+0	19:48:27.010	Separator Time GBPUSD,H1: initialized
+0	19:48:27.010	Separator Time GBPUSD,H1: initialized
+0	19:48:27.010	Separator Time GBPUSD,H1: initialized
+0	19:48:27.010	Ouro Drawing GBPUSD,H1: initialized
+0	19:48:27.011	!BBMA MATrick N.G 2022 v1 GBPUSD,H1: initialized
+0	20:09:57.239	Quick Style GBPUSD,H1: uninit reason 9
+0	20:09:57.239	OHLC Magnet GBPUSD,H1: uninit reason 9
+0	20:09:57.239	Time Range Separator GBPUSD,H1: uninit reason 9
+0	20:09:57.239	CandleTime GBPUSD,H1: uninit reason 9
+0	20:09:57.239	Watermark Symbol GBPUSD,H1: uninit reason 9
+0	20:09:57.239	Separator Time GBPUSD,H1: uninit reason 9
+0	20:09:57.239	Separator Time GBPUSD,H1: uninit reason 9
+0	20:09:57.239	Separator Time GBPUSD,H1: uninit reason 9
+0	20:09:57.239	Separator Time GBPUSD,H1: uninit reason 9
+0	20:09:57.239	Separator Time GBPUSD,H1: uninit reason 9
+0	20:09:57.239	Separator Time GBPUSD,H1: uninit reason 9
+0	20:09:57.239	Ouro Drawing GBPUSD,H1: uninit reason 9
+1	20:09:57.241	Ouro Drawing GBPUSD,H1: invalid pointer access in 'Ouro Drawing.mq4' (407,7)
+0	20:09:57.243	!BBMA MATrick N.G 2022 v1 GBPUSD,H1: uninit reason 9
+0	20:09:57.243	Quick Style XAUUSD,M15: uninit reason 9
+0	20:09:57.245	OHLC Magnet XAUUSD,M15: uninit reason 9
+0	20:09:57.245	Time Range Separator XAUUSD,M15: uninit reason 9
+0	20:09:57.245	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 9
+0	20:09:57.245	CandleTime XAUUSD,M15: uninit reason 9
+0	20:09:57.245	Watermark Symbol XAUUSD,M15: uninit reason 9
+0	20:09:57.245	Asian Session Level XAUUSD,M15: uninit reason 9
+0	20:09:57.246	!BBMA MATrick N.G 2022 v1 XAUUSD,M15: uninit reason 9
+0	20:09:57.247	Trading box Technical analysis XAUUSD,M15: uninit reason 9
+0	20:09:57.247	!AML PDW 1.4 2019 XAUUSD,M15: uninit reason 9
+0	20:09:57.352	Custom indicator Quick Style GBPUSD,H1: removed
+0	20:09:57.354	Custom indicator OHLC Magnet GBPUSD,H1: removed
+0	20:09:57.359	Custom indicator Time Range Separator GBPUSD,H1: removed
+0	20:09:57.361	Custom indicator CandleTime GBPUSD,H1: removed
+0	20:09:57.365	Custom indicator Watermark Symbol GBPUSD,H1: removed
+0	20:09:57.368	Custom indicator Separator Time GBPUSD,H1: removed
+0	20:09:57.370	Custom indicator Separator Time GBPUSD,H1: removed
+0	20:09:57.372	Custom indicator Separator Time GBPUSD,H1: removed
+0	20:09:57.375	Custom indicator Separator Time GBPUSD,H1: removed
+0	20:09:57.377	Custom indicator Separator Time GBPUSD,H1: removed
+0	20:09:57.380	Custom indicator Separator Time GBPUSD,H1: removed
+0	20:09:57.382	Custom indicator Ouro Drawing GBPUSD,H1: removed
+0	20:09:57.383	Custom indicator !BBMA MATrick N.G 2022 v1 GBPUSD,H1: removed
+0	20:09:57.401	Custom indicator Quick Style XAUUSD,M15: removed
+0	20:09:57.403	Custom indicator OHLC Magnet XAUUSD,M15: removed
+0	20:09:57.404	Custom indicator Time Range Separator XAUUSD,M15: removed
+0	20:09:57.406	Custom indicator Kill Zone & 90 Min Cycle XAUUSD,M15: removed
+0	20:09:57.409	Custom indicator CandleTime XAUUSD,M15: removed
+0	20:09:57.412	Custom indicator Watermark Symbol XAUUSD,M15: removed
+0	20:09:57.414	Custom indicator Asian Session Level XAUUSD,M15: removed
+0	20:09:57.416	Custom indicator !BBMA MATrick N.G 2022 v1 XAUUSD,M15: removed
+0	20:09:57.420	Custom indicator Trading box Technical analysis XAUUSD,M15: removed
+0	20:09:57.421	Custom indicator !AML PDW 1.4 2019 XAUUSD,M15: removed

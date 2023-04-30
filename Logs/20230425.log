@@ -1,0 +1,1790 @@
+0	09:38:35.213	Custom indicator Market\Quick Style XAUUSD,M5: loaded successfully
+0	09:38:35.229	Custom indicator Market\OHLC Magnet XAUUSD,M5: loaded successfully
+0	09:38:35.244	Custom indicator Market\Time Range Separator XAUUSD,M5: loaded successfully
+0	09:38:35.260	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle XAUUSD,M5: loaded successfully
+0	09:38:35.273	Custom indicator Mine\Background Indicator\CandleTime XAUUSD,M5: loaded successfully
+0	09:38:35.288	Custom indicator Market\Watermark Symbol XAUUSD,M5: loaded successfully
+0	09:38:35.302	Custom indicator Mine\My Build\Asian Session Level XAUUSD,M5: loaded successfully
+0	09:38:35.318	Custom indicator Mine\BBMA MA Trick\!BBMA MATrick N.G 2022 v1 XAUUSD,M5: loaded successfully
+0	09:38:35.346	Custom indicator Market\Trading box Technical analysis XAUUSD,M5: loaded successfully
+0	09:38:35.400	Quick Style XAUUSD,M5: 0
+0	09:38:35.400	Quick Style XAUUSD,M5: 0
+0	09:38:35.400	Quick Style XAUUSD,M5: 1
+0	09:38:35.400	Quick Style XAUUSD,M5: 1
+0	09:38:35.400	Quick Style XAUUSD,M5: 2
+0	09:38:35.402	Quick Style XAUUSD,M5: initialized
+0	09:38:35.423	OHLC Magnet XAUUSD,M5: initialized
+0	09:38:35.441	Time Range Separator XAUUSD,M5: initialized
+0	09:38:35.529	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	09:38:35.546	CandleTime XAUUSD,M5: initialized
+0	09:38:35.567	Watermark Symbol XAUUSD,M5: initialized
+0	09:38:35.586	Asian Session Level XAUUSD,M5: initialized
+0	09:38:35.631	!BBMA MATrick N.G 2022 v1 XAUUSD,M5: initialized
+0	09:38:35.666	Trading box Technical analysis XAUUSD,M5: initialized
+0	09:38:37.081	Custom indicator Market\Quick Style XAUUSD,H1: loaded successfully
+0	09:38:37.095	Custom indicator Market\OHLC Magnet XAUUSD,H1: loaded successfully
+0	09:38:37.109	Custom indicator Market\Time Range Separator XAUUSD,H1: loaded successfully
+0	09:38:37.121	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle XAUUSD,H1: loaded successfully
+0	09:38:37.132	Custom indicator Mine\Background Indicator\CandleTime XAUUSD,H1: loaded successfully
+0	09:38:37.147	Custom indicator Market\Watermark Symbol XAUUSD,H1: loaded successfully
+0	09:38:37.161	Custom indicator Mine\My Build\Asian Session Level XAUUSD,H1: loaded successfully
+0	09:38:37.198	Custom indicator Market\Trading box Technical analysis XAUUSD,H1: loaded successfully
+0	09:38:37.213	Custom indicator Mine\AML\!AML PDW 1.4 2019 XAUUSD,H1: loaded successfully
+0	09:38:37.273	Quick Style XAUUSD,H1: 0
+0	09:38:37.273	Quick Style XAUUSD,H1: 0
+0	09:38:37.273	Quick Style XAUUSD,H1: 1
+0	09:38:37.273	Quick Style XAUUSD,H1: 1
+0	09:38:37.273	Quick Style XAUUSD,H1: 2
+0	09:38:37.274	Quick Style XAUUSD,H1: initialized
+0	09:38:37.303	OHLC Magnet XAUUSD,H1: initialized
+0	09:38:37.331	Time Range Separator XAUUSD,H1: initialized
+0	09:38:37.454	Kill Zone & 90 Min Cycle XAUUSD,H1: initialized
+0	09:38:37.481	CandleTime XAUUSD,H1: initialized
+0	09:38:37.508	Watermark Symbol XAUUSD,H1: initialized
+0	09:38:37.530	Asian Session Level XAUUSD,H1: initialized
+0	09:38:37.573	Trading box Technical analysis XAUUSD,H1: initialized
+0	09:38:37.613	!AML PDW 1.4 2019 XAUUSD,H1: initialized
+1	09:38:39.293	Kill Zone & 90 Min Cycle XAUUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (141,32)
+0	09:38:44.357	Quick Style XAUUSD,M5: uninit reason 3
+0	09:38:44.360	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	09:38:44.360	Time Range Separator XAUUSD,M5: uninit reason 3
+0	09:38:44.360	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	09:38:44.360	CandleTime XAUUSD,M5: uninit reason 3
+0	09:38:44.360	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	09:38:44.361	Asian Session Level XAUUSD,M5: uninit reason 3
+0	09:38:44.361	!BBMA MATrick N.G 2022 v1 XAUUSD,M5: uninit reason 3
+0	09:38:44.362	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	09:38:44.383	Quick Style XAUUSD,M15: 0
+0	09:38:44.383	Quick Style XAUUSD,M15: 0
+0	09:38:44.383	Quick Style XAUUSD,M15: 1
+0	09:38:44.383	Quick Style XAUUSD,M15: 1
+0	09:38:44.384	Quick Style XAUUSD,M15: 2
+0	09:38:44.384	Quick Style XAUUSD,M15: initialized
+0	09:38:44.384	OHLC Magnet XAUUSD,M15: initialized
+0	09:38:44.384	Time Range Separator XAUUSD,M15: initialized
+0	09:38:44.384	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	09:38:44.384	CandleTime XAUUSD,M15: initialized
+0	09:38:44.385	Watermark Symbol XAUUSD,M15: initialized
+0	09:38:44.385	Asian Session Level XAUUSD,M15: initialized
+0	09:38:44.385	!BBMA MATrick N.G 2022 v1 XAUUSD,M15: initialized
+0	09:38:44.395	Trading box Technical analysis XAUUSD,M15: initialized
+1	09:38:44.395	Kill Zone & 90 Min Cycle XAUUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (141,32)
+0	09:38:46.474	Quick Style XAUUSD,M15: uninit reason 3
+0	09:38:46.477	OHLC Magnet XAUUSD,M15: uninit reason 3
+0	09:38:46.477	Time Range Separator XAUUSD,M15: uninit reason 3
+0	09:38:46.478	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 3
+0	09:38:46.478	CandleTime XAUUSD,M15: uninit reason 3
+0	09:38:46.478	Watermark Symbol XAUUSD,M15: uninit reason 3
+0	09:38:46.478	Asian Session Level XAUUSD,M15: uninit reason 3
+0	09:38:46.478	!BBMA MATrick N.G 2022 v1 XAUUSD,M15: uninit reason 3
+0	09:38:46.479	Trading box Technical analysis XAUUSD,M15: uninit reason 3
+0	09:38:46.495	Quick Style XAUUSD,M5: 0
+0	09:38:46.495	Quick Style XAUUSD,M5: 0
+0	09:38:46.495	Quick Style XAUUSD,M5: 1
+0	09:38:46.495	Quick Style XAUUSD,M5: 1
+0	09:38:46.495	Quick Style XAUUSD,M5: 2
+0	09:38:46.495	Quick Style XAUUSD,M5: initialized
+0	09:38:46.496	OHLC Magnet XAUUSD,M5: initialized
+0	09:38:46.496	Time Range Separator XAUUSD,M5: initialized
+0	09:38:46.496	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	09:38:46.496	CandleTime XAUUSD,M5: initialized
+0	09:38:46.497	Watermark Symbol XAUUSD,M5: initialized
+0	09:38:46.497	Asian Session Level XAUUSD,M5: initialized
+0	09:38:46.497	!BBMA MATrick N.G 2022 v1 XAUUSD,M5: initialized
+0	09:38:46.509	Trading box Technical analysis XAUUSD,M5: initialized
+0	09:38:50.209	Quick Style XAUUSD,M5: uninit reason 3
+0	09:38:50.213	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	09:38:50.213	Time Range Separator XAUUSD,M5: uninit reason 3
+0	09:38:50.213	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	09:38:50.213	CandleTime XAUUSD,M5: uninit reason 3
+0	09:38:50.213	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	09:38:50.213	Asian Session Level XAUUSD,M5: uninit reason 3
+0	09:38:50.214	!BBMA MATrick N.G 2022 v1 XAUUSD,M5: uninit reason 3
+0	09:38:50.214	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	09:38:50.233	Quick Style XAUUSD,M30: 0
+0	09:38:50.233	Quick Style XAUUSD,M30: 0
+0	09:38:50.233	Quick Style XAUUSD,M30: 1
+0	09:38:50.233	Quick Style XAUUSD,M30: 1
+0	09:38:50.233	Quick Style XAUUSD,M30: 2
+0	09:38:50.233	Quick Style XAUUSD,M30: initialized
+0	09:38:50.233	OHLC Magnet XAUUSD,M30: initialized
+0	09:38:50.233	Time Range Separator XAUUSD,M30: initialized
+0	09:38:50.233	Kill Zone & 90 Min Cycle XAUUSD,M30: initialized
+0	09:38:50.234	CandleTime XAUUSD,M30: initialized
+0	09:38:50.234	Watermark Symbol XAUUSD,M30: initialized
+0	09:38:50.234	Asian Session Level XAUUSD,M30: initialized
+0	09:38:50.234	!BBMA MATrick N.G 2022 v1 XAUUSD,M30: initialized
+0	09:38:50.244	Trading box Technical analysis XAUUSD,M30: initialized
+0	09:38:57.748	Quick Style XAUUSD,M30: uninit reason 3
+0	09:38:57.751	OHLC Magnet XAUUSD,M30: uninit reason 3
+0	09:38:57.751	Time Range Separator XAUUSD,M30: uninit reason 3
+0	09:38:57.751	Kill Zone & 90 Min Cycle XAUUSD,M30: uninit reason 3
+0	09:38:57.751	CandleTime XAUUSD,M30: uninit reason 3
+0	09:38:57.751	Watermark Symbol XAUUSD,M30: uninit reason 3
+0	09:38:57.751	Asian Session Level XAUUSD,M30: uninit reason 3
+0	09:38:57.751	!BBMA MATrick N.G 2022 v1 XAUUSD,M30: uninit reason 3
+0	09:38:57.752	Trading box Technical analysis XAUUSD,M30: uninit reason 3
+0	09:38:57.764	Quick Style XAUUSD,M15: 0
+0	09:38:57.764	Quick Style XAUUSD,M15: 0
+0	09:38:57.764	Quick Style XAUUSD,M15: 1
+0	09:38:57.765	Quick Style XAUUSD,M15: 1
+0	09:38:57.765	Quick Style XAUUSD,M15: 2
+0	09:38:57.765	Quick Style XAUUSD,M15: initialized
+0	09:38:57.765	OHLC Magnet XAUUSD,M15: initialized
+0	09:38:57.765	Time Range Separator XAUUSD,M15: initialized
+0	09:38:57.765	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	09:38:57.765	CandleTime XAUUSD,M15: initialized
+0	09:38:57.766	Watermark Symbol XAUUSD,M15: initialized
+0	09:38:57.766	Asian Session Level XAUUSD,M15: initialized
+0	09:38:57.766	!BBMA MATrick N.G 2022 v1 XAUUSD,M15: initialized
+0	09:38:57.776	Trading box Technical analysis XAUUSD,M15: initialized
+0	09:39:20.638	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 5
+0	09:39:20.654	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	09:39:23.124	Quick Style XAUUSD,M15: uninit reason 3
+0	09:39:23.127	OHLC Magnet XAUUSD,M15: uninit reason 3
+0	09:39:23.127	Time Range Separator XAUUSD,M15: uninit reason 3
+0	09:39:23.127	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 3
+0	09:39:23.128	CandleTime XAUUSD,M15: uninit reason 3
+0	09:39:23.128	Watermark Symbol XAUUSD,M15: uninit reason 3
+0	09:39:23.128	Asian Session Level XAUUSD,M15: uninit reason 3
+0	09:39:23.128	!BBMA MATrick N.G 2022 v1 XAUUSD,M15: uninit reason 3
+0	09:39:23.129	Trading box Technical analysis XAUUSD,M15: uninit reason 3
+0	09:39:23.142	Quick Style XAUUSD,M5: 0
+0	09:39:23.142	Quick Style XAUUSD,M5: 0
+0	09:39:23.142	Quick Style XAUUSD,M5: 1
+0	09:39:23.142	Quick Style XAUUSD,M5: 1
+0	09:39:23.142	Quick Style XAUUSD,M5: 2
+0	09:39:23.142	Quick Style XAUUSD,M5: initialized
+0	09:39:23.142	OHLC Magnet XAUUSD,M5: initialized
+0	09:39:23.143	Time Range Separator XAUUSD,M5: initialized
+0	09:39:23.143	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	09:39:23.143	CandleTime XAUUSD,M5: initialized
+0	09:39:23.143	Watermark Symbol XAUUSD,M5: initialized
+0	09:39:23.143	Asian Session Level XAUUSD,M5: initialized
+0	09:39:23.143	!BBMA MATrick N.G 2022 v1 XAUUSD,M5: initialized
+0	09:39:23.153	Trading box Technical analysis XAUUSD,M5: initialized
+0	09:39:40.975	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 5
+0	09:39:40.991	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	09:39:51.162	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 5
+0	09:39:51.180	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	09:40:31.532	Quick Style XAUUSD,M5: uninit reason 3
+0	09:40:31.535	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	09:40:31.535	Time Range Separator XAUUSD,M5: uninit reason 3
+0	09:40:31.535	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	09:40:31.536	CandleTime XAUUSD,M5: uninit reason 3
+0	09:40:31.536	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	09:40:31.537	Asian Session Level XAUUSD,M5: uninit reason 3
+0	09:40:31.537	!BBMA MATrick N.G 2022 v1 XAUUSD,M5: uninit reason 3
+0	09:40:31.538	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	09:40:31.548	Quick Style XAUUSD,M15: 0
+0	09:40:31.548	Quick Style XAUUSD,M15: 0
+0	09:40:31.549	Quick Style XAUUSD,M15: 1
+0	09:40:31.549	Quick Style XAUUSD,M15: 1
+0	09:40:31.549	Quick Style XAUUSD,M15: 2
+0	09:40:31.549	Quick Style XAUUSD,M15: initialized
+0	09:40:31.549	OHLC Magnet XAUUSD,M15: initialized
+0	09:40:31.549	Time Range Separator XAUUSD,M15: initialized
+0	09:40:31.549	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	09:40:31.550	CandleTime XAUUSD,M15: initialized
+0	09:40:31.550	Watermark Symbol XAUUSD,M15: initialized
+0	09:40:31.550	Asian Session Level XAUUSD,M15: initialized
+0	09:40:31.550	!BBMA MATrick N.G 2022 v1 XAUUSD,M15: initialized
+0	09:40:31.560	Trading box Technical analysis XAUUSD,M15: initialized
+0	09:40:41.520	Quick Style XAUUSD,M15: uninit reason 3
+0	09:40:41.523	OHLC Magnet XAUUSD,M15: uninit reason 3
+0	09:40:41.523	Time Range Separator XAUUSD,M15: uninit reason 3
+0	09:40:41.523	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 3
+0	09:40:41.524	CandleTime XAUUSD,M15: uninit reason 3
+0	09:40:41.524	Watermark Symbol XAUUSD,M15: uninit reason 3
+0	09:40:41.524	Asian Session Level XAUUSD,M15: uninit reason 3
+0	09:40:41.524	!BBMA MATrick N.G 2022 v1 XAUUSD,M15: uninit reason 3
+0	09:40:41.525	Trading box Technical analysis XAUUSD,M15: uninit reason 3
+0	09:40:41.537	Quick Style XAUUSD,M5: 0
+0	09:40:41.537	Quick Style XAUUSD,M5: 0
+0	09:40:41.537	Quick Style XAUUSD,M5: 1
+0	09:40:41.537	Quick Style XAUUSD,M5: 1
+0	09:40:41.537	Quick Style XAUUSD,M5: 2
+0	09:40:41.537	Quick Style XAUUSD,M5: initialized
+0	09:40:41.538	OHLC Magnet XAUUSD,M5: initialized
+0	09:40:41.538	Time Range Separator XAUUSD,M5: initialized
+0	09:40:41.538	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	09:40:41.538	CandleTime XAUUSD,M5: initialized
+0	09:40:41.538	Watermark Symbol XAUUSD,M5: initialized
+0	09:40:41.538	Asian Session Level XAUUSD,M5: initialized
+0	09:40:41.539	!BBMA MATrick N.G 2022 v1 XAUUSD,M5: initialized
+0	09:40:41.548	Trading box Technical analysis XAUUSD,M5: initialized
+0	09:41:10.534	Quick Style XAUUSD,M5: uninit reason 3
+0	09:41:10.537	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	09:41:10.537	Time Range Separator XAUUSD,M5: uninit reason 3
+0	09:41:10.537	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	09:41:10.538	CandleTime XAUUSD,M5: uninit reason 3
+0	09:41:10.538	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	09:41:10.538	Asian Session Level XAUUSD,M5: uninit reason 3
+0	09:41:10.538	!BBMA MATrick N.G 2022 v1 XAUUSD,M5: uninit reason 3
+0	09:41:10.539	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	09:41:10.565	Quick Style XAUUSD,M1: 0
+0	09:41:10.565	Quick Style XAUUSD,M1: 0
+0	09:41:10.565	Quick Style XAUUSD,M1: 1
+0	09:41:10.565	Quick Style XAUUSD,M1: 1
+0	09:41:10.565	Quick Style XAUUSD,M1: 2
+0	09:41:10.565	Quick Style XAUUSD,M1: initialized
+0	09:41:10.565	OHLC Magnet XAUUSD,M1: initialized
+0	09:41:10.565	Time Range Separator XAUUSD,M1: initialized
+0	09:41:10.566	Kill Zone & 90 Min Cycle XAUUSD,M1: initialized
+0	09:41:10.566	CandleTime XAUUSD,M1: initialized
+0	09:41:10.566	Watermark Symbol XAUUSD,M1: initialized
+0	09:41:10.566	Asian Session Level XAUUSD,M1: initialized
+0	09:41:10.566	!BBMA MATrick N.G 2022 v1 XAUUSD,M1: initialized
+0	09:41:10.576	Trading box Technical analysis XAUUSD,M1: initialized
+1	09:41:10.584	Kill Zone & 90 Min Cycle XAUUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (141,32)
+0	09:41:22.096	Quick Style XAUUSD,M1: uninit reason 3
+0	09:41:22.099	OHLC Magnet XAUUSD,M1: uninit reason 3
+0	09:41:22.099	Time Range Separator XAUUSD,M1: uninit reason 3
+0	09:41:22.099	Kill Zone & 90 Min Cycle XAUUSD,M1: uninit reason 3
+0	09:41:22.099	CandleTime XAUUSD,M1: uninit reason 3
+0	09:41:22.099	Watermark Symbol XAUUSD,M1: uninit reason 3
+0	09:41:22.099	Asian Session Level XAUUSD,M1: uninit reason 3
+0	09:41:22.100	!BBMA MATrick N.G 2022 v1 XAUUSD,M1: uninit reason 3
+0	09:41:22.102	Trading box Technical analysis XAUUSD,M1: uninit reason 3
+0	09:41:22.115	Quick Style XAUUSD,M5: 0
+0	09:41:22.115	Quick Style XAUUSD,M5: 0
+0	09:41:22.115	Quick Style XAUUSD,M5: 1
+0	09:41:22.115	Quick Style XAUUSD,M5: 1
+0	09:41:22.115	Quick Style XAUUSD,M5: 2
+0	09:41:22.115	Quick Style XAUUSD,M5: initialized
+0	09:41:22.116	OHLC Magnet XAUUSD,M5: initialized
+0	09:41:22.116	Time Range Separator XAUUSD,M5: initialized
+0	09:41:22.116	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	09:41:22.117	CandleTime XAUUSD,M5: initialized
+0	09:41:22.117	Watermark Symbol XAUUSD,M5: initialized
+0	09:41:22.117	Asian Session Level XAUUSD,M5: initialized
+0	09:41:22.117	!BBMA MATrick N.G 2022 v1 XAUUSD,M5: initialized
+0	09:41:22.131	Trading box Technical analysis XAUUSD,M5: initialized
+0	09:41:25.720	Quick Style XAUUSD,M5: uninit reason 3
+0	09:41:25.723	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	09:41:25.723	Time Range Separator XAUUSD,M5: uninit reason 3
+0	09:41:25.723	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	09:41:25.724	CandleTime XAUUSD,M5: uninit reason 3
+0	09:41:25.724	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	09:41:25.724	Asian Session Level XAUUSD,M5: uninit reason 3
+0	09:41:25.724	!BBMA MATrick N.G 2022 v1 XAUUSD,M5: uninit reason 3
+0	09:41:25.726	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	09:41:25.737	Quick Style XAUUSD,M1: 0
+0	09:41:25.737	Quick Style XAUUSD,M1: 0
+0	09:41:25.738	Quick Style XAUUSD,M1: 1
+0	09:41:25.738	Quick Style XAUUSD,M1: 1
+0	09:41:25.738	Quick Style XAUUSD,M1: 2
+0	09:41:25.738	Quick Style XAUUSD,M1: initialized
+0	09:41:25.738	OHLC Magnet XAUUSD,M1: initialized
+0	09:41:25.738	Time Range Separator XAUUSD,M1: initialized
+0	09:41:25.738	Kill Zone & 90 Min Cycle XAUUSD,M1: initialized
+0	09:41:25.739	CandleTime XAUUSD,M1: initialized
+0	09:41:25.739	Watermark Symbol XAUUSD,M1: initialized
+0	09:41:25.739	Asian Session Level XAUUSD,M1: initialized
+0	09:41:25.739	!BBMA MATrick N.G 2022 v1 XAUUSD,M1: initialized
+0	09:41:25.752	Trading box Technical analysis XAUUSD,M1: initialized
+0	09:42:25.293	Quick Style XAUUSD,M1: uninit reason 3
+0	09:42:25.296	OHLC Magnet XAUUSD,M1: uninit reason 3
+0	09:42:25.296	Time Range Separator XAUUSD,M1: uninit reason 3
+0	09:42:25.297	Kill Zone & 90 Min Cycle XAUUSD,M1: uninit reason 3
+0	09:42:25.298	CandleTime XAUUSD,M1: uninit reason 3
+0	09:42:25.298	Watermark Symbol XAUUSD,M1: uninit reason 3
+0	09:42:25.298	Asian Session Level XAUUSD,M1: uninit reason 3
+0	09:42:25.298	!BBMA MATrick N.G 2022 v1 XAUUSD,M1: uninit reason 3
+0	09:42:25.299	Trading box Technical analysis XAUUSD,M1: uninit reason 3
+0	09:42:25.309	Quick Style XAUUSD,M15: 0
+0	09:42:25.310	Quick Style XAUUSD,M15: 0
+0	09:42:25.310	Quick Style XAUUSD,M15: 1
+0	09:42:25.310	Quick Style XAUUSD,M15: 1
+0	09:42:25.310	Quick Style XAUUSD,M15: 2
+0	09:42:25.310	Quick Style XAUUSD,M15: initialized
+0	09:42:25.310	OHLC Magnet XAUUSD,M15: initialized
+0	09:42:25.310	Time Range Separator XAUUSD,M15: initialized
+0	09:42:25.310	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	09:42:25.311	CandleTime XAUUSD,M15: initialized
+0	09:42:25.311	Watermark Symbol XAUUSD,M15: initialized
+0	09:42:25.311	Asian Session Level XAUUSD,M15: initialized
+0	09:42:25.311	!BBMA MATrick N.G 2022 v1 XAUUSD,M15: initialized
+0	09:42:25.325	Trading box Technical analysis XAUUSD,M15: initialized
+0	10:34:13.669	Quick Style XAUUSD,H1: uninit reason 7
+0	10:34:13.670	OHLC Magnet XAUUSD,H1: uninit reason 7
+0	10:34:13.670	Time Range Separator XAUUSD,H1: uninit reason 7
+0	10:34:13.671	Kill Zone & 90 Min Cycle XAUUSD,H1: uninit reason 7
+0	10:34:13.671	CandleTime XAUUSD,H1: uninit reason 7
+0	10:34:13.671	Watermark Symbol XAUUSD,H1: uninit reason 7
+0	10:34:13.671	Asian Session Level XAUUSD,H1: uninit reason 7
+0	10:34:13.671	Trading box Technical analysis XAUUSD,H1: uninit reason 7
+0	10:34:13.671	!AML PDW 1.4 2019 XAUUSD,H1: uninit reason 7
+0	10:34:13.673	Custom indicator Quick Style XAUUSD,H1: removed
+0	10:34:13.675	Custom indicator OHLC Magnet XAUUSD,H1: removed
+0	10:34:13.676	Custom indicator Time Range Separator XAUUSD,H1: removed
+0	10:34:13.678	Custom indicator Kill Zone & 90 Min Cycle XAUUSD,H1: removed
+0	10:34:13.679	Custom indicator CandleTime XAUUSD,H1: removed
+0	10:34:13.680	Custom indicator Watermark Symbol XAUUSD,H1: removed
+0	10:34:13.682	Custom indicator Asian Session Level XAUUSD,H1: removed
+0	10:34:13.683	Custom indicator Trading box Technical analysis XAUUSD,H1: removed
+0	10:34:13.685	Custom indicator !AML PDW 1.4 2019 XAUUSD,H1: removed
+0	10:34:13.707	Custom indicator Mine\My Build\ClickAndDraw XAUUSD,H1: loaded successfully
+0	10:34:13.718	Custom indicator Market\Watermark Symbol XAUUSD,H1: loaded successfully
+0	10:34:13.744	ClickAndDraw XAUUSD,H1: initialized
+0	10:34:13.762	ClickAndDraw XAUUSD,H1: out : Watermark
+0	10:34:13.762	Watermark Symbol XAUUSD,H1: initialized
+0	10:34:15.530	ClickAndDraw XAUUSD,H1: uninit reason 3
+0	10:34:15.530	Watermark Symbol XAUUSD,H1: uninit reason 3
+0	10:34:15.531	ClickAndDraw XAUUSD,M15: initialized
+0	10:34:15.531	ClickAndDraw XAUUSD,M15: out : Watermark
+0	10:34:15.531	Watermark Symbol XAUUSD,M15: initialized
+0	10:34:24.381	Quick Style XAUUSD,M15: uninit reason 9
+0	10:34:24.382	OHLC Magnet XAUUSD,M15: uninit reason 9
+0	10:34:24.382	Time Range Separator XAUUSD,M15: uninit reason 9
+0	10:34:24.382	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 9
+0	10:34:24.383	CandleTime XAUUSD,M15: uninit reason 9
+0	10:34:24.384	Watermark Symbol XAUUSD,M15: uninit reason 9
+0	10:34:24.384	Asian Session Level XAUUSD,M15: uninit reason 9
+0	10:34:24.384	!BBMA MATrick N.G 2022 v1 XAUUSD,M15: uninit reason 9
+0	10:34:24.384	Trading box Technical analysis XAUUSD,M15: uninit reason 9
+0	10:34:24.384	ClickAndDraw XAUUSD,M15: uninit reason 9
+0	10:34:24.384	Watermark Symbol XAUUSD,M15: uninit reason 9
+0	10:34:24.518	Custom indicator Quick Style XAUUSD,M15: removed
+0	10:34:24.526	Custom indicator OHLC Magnet XAUUSD,M15: removed
+0	10:34:24.529	Custom indicator Time Range Separator XAUUSD,M15: removed
+0	10:34:24.534	Custom indicator Kill Zone & 90 Min Cycle XAUUSD,M15: removed
+0	10:34:24.538	Custom indicator CandleTime XAUUSD,M15: removed
+0	10:34:24.541	Custom indicator Watermark Symbol XAUUSD,M15: removed
+0	10:34:24.544	Custom indicator Asian Session Level XAUUSD,M15: removed
+0	10:34:24.548	Custom indicator !BBMA MATrick N.G 2022 v1 XAUUSD,M15: removed
+0	10:34:24.561	Custom indicator Trading box Technical analysis XAUUSD,M15: removed
+0	10:34:24.579	Custom indicator ClickAndDraw XAUUSD,M15: removed
+0	10:34:24.585	Custom indicator Watermark Symbol XAUUSD,M15: removed
+0	10:34:28.154	Custom indicator Market\Quick Style XAUUSD,M15: loaded successfully
+0	10:34:28.169	Custom indicator Market\OHLC Magnet XAUUSD,M15: loaded successfully
+0	10:34:28.183	Custom indicator Market\Time Range Separator XAUUSD,M15: loaded successfully
+0	10:34:28.195	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle XAUUSD,M15: loaded successfully
+0	10:34:28.207	Custom indicator Mine\Background Indicator\CandleTime XAUUSD,M15: loaded successfully
+0	10:34:28.221	Custom indicator Market\Watermark Symbol XAUUSD,M15: loaded successfully
+0	10:34:28.234	Custom indicator Mine\My Build\Asian Session Level XAUUSD,M15: loaded successfully
+0	10:34:28.249	Custom indicator Mine\BBMA MA Trick\!BBMA MATrick N.G 2022 v1 XAUUSD,M15: loaded successfully
+0	10:34:28.278	Custom indicator Market\Trading box Technical analysis XAUUSD,M15: loaded successfully
+0	10:34:28.312	Quick Style XAUUSD,M15: 0
+0	10:34:28.312	Quick Style XAUUSD,M15: 0
+0	10:34:28.312	Quick Style XAUUSD,M15: 1
+0	10:34:28.312	Quick Style XAUUSD,M15: 1
+0	10:34:28.313	Quick Style XAUUSD,M15: 2
+0	10:34:28.313	Quick Style XAUUSD,M15: initialized
+0	10:34:28.331	OHLC Magnet XAUUSD,M15: initialized
+0	10:34:28.348	Time Range Separator XAUUSD,M15: initialized
+0	10:34:28.437	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	10:34:28.453	CandleTime XAUUSD,M15: initialized
+0	10:34:28.472	Watermark Symbol XAUUSD,M15: initialized
+0	10:34:28.490	Asian Session Level XAUUSD,M15: initialized
+0	10:34:28.539	!BBMA MATrick N.G 2022 v1 XAUUSD,M15: initialized
+0	10:34:28.577	Trading box Technical analysis XAUUSD,M15: initialized
+0	10:34:29.464	Custom indicator Mine\My Build\ClickAndDraw XAUUSD,M15: loaded successfully
+0	10:34:29.477	Custom indicator Market\Watermark Symbol XAUUSD,M15: loaded successfully
+0	10:34:29.506	ClickAndDraw XAUUSD,M15: initialized
+0	10:34:29.524	Watermark Symbol XAUUSD,M15: initialized
+0	10:34:32.432	Custom indicator Mine\BBMA MA Trick\!BBMA MATrick N.G 2022 v3 XAUUSD,M15: loaded successfully
+0	10:34:35.448	!BBMA MATrick N.G 2022 v3 XAUUSD,M15: initialized
+0	10:35:06.321	ClickAndDraw XAUUSD,M15: uninit reason 3
+0	10:35:06.321	Watermark Symbol XAUUSD,M15: uninit reason 3
+0	10:35:06.321	!BBMA MATrick N.G 2022 v3 XAUUSD,M15: uninit reason 3
+0	10:35:06.327	ClickAndDraw XAUUSD,M30: initialized
+0	10:35:06.328	Watermark Symbol XAUUSD,M30: initialized
+0	10:35:06.328	!BBMA MATrick N.G 2022 v3 XAUUSD,M30: initialized
+0	10:36:18.491	Quick Style XAUUSD,M15: uninit reason 9
+0	10:36:18.494	OHLC Magnet XAUUSD,M15: uninit reason 9
+0	10:36:18.494	Time Range Separator XAUUSD,M15: uninit reason 9
+0	10:36:18.494	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 9
+0	10:36:18.496	CandleTime XAUUSD,M15: uninit reason 9
+0	10:36:18.496	Watermark Symbol XAUUSD,M15: uninit reason 9
+0	10:36:18.496	Asian Session Level XAUUSD,M15: uninit reason 9
+0	10:36:18.496	!BBMA MATrick N.G 2022 v1 XAUUSD,M15: uninit reason 9
+0	10:36:18.497	Trading box Technical analysis XAUUSD,M15: uninit reason 9
+0	10:36:18.497	ClickAndDraw XAUUSD,M30: uninit reason 9
+0	10:36:18.497	Watermark Symbol XAUUSD,M30: uninit reason 9
+0	10:36:18.497	!BBMA MATrick N.G 2022 v3 XAUUSD,M30: uninit reason 9
+0	10:36:18.575	Custom indicator Quick Style XAUUSD,M15: removed
+0	10:36:18.580	Custom indicator OHLC Magnet XAUUSD,M15: removed
+0	10:36:18.582	Custom indicator Time Range Separator XAUUSD,M15: removed
+0	10:36:18.585	Custom indicator Kill Zone & 90 Min Cycle XAUUSD,M15: removed
+0	10:36:18.589	Custom indicator CandleTime XAUUSD,M15: removed
+0	10:36:18.594	Custom indicator Watermark Symbol XAUUSD,M15: removed
+0	10:36:18.596	Custom indicator Asian Session Level XAUUSD,M15: removed
+0	10:36:18.599	Custom indicator !BBMA MATrick N.G 2022 v1 XAUUSD,M15: removed
+0	10:36:18.610	Custom indicator Trading box Technical analysis XAUUSD,M15: removed
+0	10:36:18.644	Custom indicator ClickAndDraw XAUUSD,M30: removed
+0	10:36:18.646	Custom indicator Watermark Symbol XAUUSD,M30: removed
+0	10:36:18.649	Custom indicator !BBMA MATrick N.G 2022 v3 XAUUSD,M30: removed
+0	15:36:05.943	Custom indicator Market\Quick Style XAUUSD,M15: loaded successfully
+0	15:36:05.961	Custom indicator Market\OHLC Magnet XAUUSD,M15: loaded successfully
+0	15:36:05.976	Custom indicator Market\Time Range Separator XAUUSD,M15: loaded successfully
+0	15:36:05.990	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle XAUUSD,M15: loaded successfully
+0	15:36:06.002	Custom indicator Mine\Background Indicator\CandleTime XAUUSD,M15: loaded successfully
+0	15:36:06.015	Custom indicator Market\Watermark Symbol XAUUSD,M15: loaded successfully
+0	15:36:06.027	Custom indicator Mine\My Build\Asian Session Level XAUUSD,M15: loaded successfully
+0	15:36:06.041	Custom indicator Mine\BBMA MA Trick\!BBMA MATrick N.G 2022 v1 XAUUSD,M15: loaded successfully
+0	15:36:06.067	Custom indicator Market\Trading box Technical analysis XAUUSD,M15: loaded successfully
+0	15:36:06.109	Quick Style XAUUSD,M15: 0
+0	15:36:06.109	Quick Style XAUUSD,M15: 0
+0	15:36:06.109	Quick Style XAUUSD,M15: 1
+0	15:36:06.109	Quick Style XAUUSD,M15: 1
+0	15:36:06.109	Quick Style XAUUSD,M15: 2
+0	15:36:06.109	Quick Style XAUUSD,M15: initialized
+0	15:36:06.126	OHLC Magnet XAUUSD,M15: initialized
+0	15:36:06.143	Time Range Separator XAUUSD,M15: initialized
+0	15:36:06.218	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	15:36:06.234	CandleTime XAUUSD,M15: initialized
+0	15:36:06.250	Watermark Symbol XAUUSD,M15: initialized
+0	15:36:06.266	Asian Session Level XAUUSD,M15: initialized
+0	15:36:06.307	!BBMA MATrick N.G 2022 v1 XAUUSD,M15: initialized
+0	15:36:06.339	Trading box Technical analysis XAUUSD,M15: initialized
+0	15:36:07.322	Custom indicator Mine\My Build\ClickAndDraw XAUUSD,M30: loaded successfully
+0	15:36:07.335	Custom indicator Market\Watermark Symbol XAUUSD,M30: loaded successfully
+0	15:36:07.349	Custom indicator Mine\BBMA MA Trick\!BBMA MATrick N.G 2022 v3 XAUUSD,M30: loaded successfully
+0	15:36:07.382	ClickAndDraw XAUUSD,M30: initialized
+0	15:36:07.400	Watermark Symbol XAUUSD,M30: initialized
+0	15:36:07.439	!BBMA MATrick N.G 2022 v3 XAUUSD,M30: initialized
+1	15:36:08.949	Kill Zone & 90 Min Cycle XAUUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,33)
+0	15:45:01.620	Quick Style XAUUSD,M15: uninit reason 3
+0	15:45:01.624	OHLC Magnet XAUUSD,M15: uninit reason 3
+0	15:45:01.624	Time Range Separator XAUUSD,M15: uninit reason 3
+0	15:45:01.624	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 3
+0	15:45:01.624	CandleTime XAUUSD,M15: uninit reason 3
+0	15:45:01.624	Watermark Symbol XAUUSD,M15: uninit reason 3
+0	15:45:01.625	Asian Session Level XAUUSD,M15: uninit reason 3
+0	15:45:01.625	!BBMA MATrick N.G 2022 v1 XAUUSD,M15: uninit reason 3
+0	15:45:01.626	Trading box Technical analysis XAUUSD,M15: uninit reason 3
+0	15:45:01.650	Quick Style EURUSD,M15: 0
+0	15:45:01.650	Quick Style EURUSD,M15: 0
+0	15:45:01.650	Quick Style EURUSD,M15: 1
+0	15:45:01.650	Quick Style EURUSD,M15: 1
+0	15:45:01.651	Quick Style EURUSD,M15: 2
+0	15:45:01.651	Quick Style EURUSD,M15: initialized
+0	15:45:01.651	OHLC Magnet EURUSD,M15: initialized
+0	15:45:01.651	Time Range Separator EURUSD,M15: initialized
+0	15:45:01.651	Kill Zone & 90 Min Cycle EURUSD,M15: initialized
+0	15:45:01.652	CandleTime EURUSD,M15: initialized
+0	15:45:01.652	Watermark Symbol EURUSD,M15: initialized
+0	15:45:01.652	Asian Session Level EURUSD,M15: initialized
+0	15:45:01.653	!BBMA MATrick N.G 2022 v1 EURUSD,M15: initialized
+0	15:45:01.671	Trading box Technical analysis EURUSD,M15: initialized
+1	15:45:01.726	Kill Zone & 90 Min Cycle EURUSD,M15: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (141,32)
+0	15:45:28.468	ClickAndDraw XAUUSD,M30: uninit reason 7
+0	15:45:28.468	Watermark Symbol XAUUSD,M30: uninit reason 7
+0	15:45:28.468	!BBMA MATrick N.G 2022 v3 XAUUSD,M30: uninit reason 7
+0	15:45:28.470	Custom indicator ClickAndDraw XAUUSD,M30: removed
+0	15:45:28.472	Custom indicator Watermark Symbol XAUUSD,M30: removed
+0	15:45:28.474	Custom indicator !BBMA MATrick N.G 2022 v3 XAUUSD,M30: removed
+0	15:45:28.504	Custom indicator Market\Quick Style XAUUSD,M30: loaded successfully
+0	15:45:28.517	Custom indicator Market\OHLC Magnet XAUUSD,M30: loaded successfully
+0	15:45:28.532	Custom indicator Market\Time Range Separator XAUUSD,M30: loaded successfully
+0	15:45:28.546	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle XAUUSD,M30: loaded successfully
+0	15:45:28.560	Custom indicator Mine\Background Indicator\CandleTime XAUUSD,M30: loaded successfully
+0	15:45:28.574	Custom indicator Market\Watermark Symbol XAUUSD,M30: loaded successfully
+0	15:45:28.587	Custom indicator Mine\My Build\Asian Session Level XAUUSD,M30: loaded successfully
+0	15:45:28.603	Custom indicator Mine\BBMA MA Trick\!BBMA MATrick N.G 2022 v1 XAUUSD,M30: loaded successfully
+0	15:45:28.633	Custom indicator Market\Trading box Technical analysis XAUUSD,M30: loaded successfully
+0	15:45:28.673	Quick Style XAUUSD,M30: 0
+0	15:45:28.673	Quick Style XAUUSD,M30: 0
+0	15:45:28.673	Quick Style XAUUSD,M30: 1
+0	15:45:28.673	Quick Style XAUUSD,M30: 1
+0	15:45:28.674	Quick Style XAUUSD,M30: 2
+0	15:45:28.674	Quick Style XAUUSD,M30: initialized
+0	15:45:28.697	OHLC Magnet XAUUSD,M30: initialized
+0	15:45:28.718	Time Range Separator XAUUSD,M30: initialized
+0	15:45:28.817	Kill Zone & 90 Min Cycle XAUUSD,M30: initialized
+0	15:45:28.834	CandleTime XAUUSD,M30: initialized
+0	15:45:28.856	Watermark Symbol XAUUSD,M30: initialized
+0	15:45:28.877	Asian Session Level XAUUSD,M30: initialized
+0	15:45:28.925	!BBMA MATrick N.G 2022 v1 XAUUSD,M30: initialized
+0	15:45:28.960	Trading box Technical analysis XAUUSD,M30: initialized
+0	15:45:37.042	Custom indicator Mine\AML\!AML PDW 1.4 2019 XAUUSD,M30: loaded successfully
+0	15:46:01.977	!AML PDW 1.4 2019 XAUUSD,M30: initialized
+0	15:46:18.377	!AML PDW 1.4 2019 XAUUSD,M30: uninit reason 5
+0	15:46:18.399	!AML PDW 1.4 2019 XAUUSD,M30: initialized
+0	15:46:29.064	Quick Style XAUUSD,M30: uninit reason 3
+0	15:46:29.068	OHLC Magnet XAUUSD,M30: uninit reason 3
+0	15:46:29.068	Time Range Separator XAUUSD,M30: uninit reason 3
+0	15:46:29.068	Kill Zone & 90 Min Cycle XAUUSD,M30: uninit reason 3
+0	15:46:29.068	CandleTime XAUUSD,M30: uninit reason 3
+0	15:46:29.068	Watermark Symbol XAUUSD,M30: uninit reason 3
+0	15:46:29.069	Asian Session Level XAUUSD,M30: uninit reason 3
+0	15:46:29.069	!BBMA MATrick N.G 2022 v1 XAUUSD,M30: uninit reason 3
+0	15:46:29.069	Trading box Technical analysis XAUUSD,M30: uninit reason 3
+0	15:46:29.069	!AML PDW 1.4 2019 XAUUSD,M30: uninit reason 3
+0	15:46:29.083	Quick Style XAUUSD,H1: 0
+0	15:46:29.083	Quick Style XAUUSD,H1: 0
+0	15:46:29.083	Quick Style XAUUSD,H1: 1
+0	15:46:29.083	Quick Style XAUUSD,H1: 1
+0	15:46:29.083	Quick Style XAUUSD,H1: 2
+0	15:46:29.084	Quick Style XAUUSD,H1: initialized
+0	15:46:29.084	OHLC Magnet XAUUSD,H1: initialized
+0	15:46:29.084	Time Range Separator XAUUSD,H1: initialized
+0	15:46:29.084	Kill Zone & 90 Min Cycle XAUUSD,H1: initialized
+0	15:46:29.084	CandleTime XAUUSD,H1: initialized
+0	15:46:29.084	Watermark Symbol XAUUSD,H1: initialized
+0	15:46:29.084	Asian Session Level XAUUSD,H1: initialized
+0	15:46:29.084	!BBMA MATrick N.G 2022 v1 XAUUSD,H1: initialized
+0	15:46:29.089	Trading box Technical analysis XAUUSD,H1: initialized
+0	15:46:29.089	!AML PDW 1.4 2019 XAUUSD,H1: initialized
+0	15:47:07.314	!AML PDW 1.4 2019 XAUUSD,H1: uninit reason 5
+0	15:47:07.334	!AML PDW 1.4 2019 XAUUSD,H1: initialized
+0	15:47:28.647	!AML PDW 1.4 2019 XAUUSD,H1: uninit reason 5
+0	15:47:28.666	!AML PDW 1.4 2019 XAUUSD,H1: initialized
+0	15:47:38.473	!AML PDW 1.4 2019 XAUUSD,H1: uninit reason 5
+0	15:47:38.492	!AML PDW 1.4 2019 XAUUSD,H1: initialized
+0	15:48:42.086	Trading box Technical analysis XAUUSD,H1: uninit reason 5
+0	15:48:42.105	Trading box Technical analysis XAUUSD,H1: initialized
+0	15:49:41.520	Trading box Technical analysis XAUUSD,H1: uninit reason 5
+0	15:49:41.536	Trading box Technical analysis XAUUSD,H1: initialized
+0	15:51:00.926	Script PSC-Trader XAUUSD,H1: loaded successfully
+0	15:51:00.972	PSC-Trader XAUUSD,H1: initialized
+0	15:51:00.972	PSC-Trader XAUUSD,H1: Alert: AutoTrading disabled! Please enable AutoTrading.
+0	15:51:00.972	PSC-Trader XAUUSD,H1: uninit reason 0
+0	15:51:00.976	Script PSC-Trader XAUUSD,H1: removed
+0	15:51:09.727	Trading box Technical analysis XAUUSD,H1: uninit reason 5
+0	15:51:09.743	Trading box Technical analysis XAUUSD,H1: initialized
+0	15:51:49.158	Trading box Technical analysis XAUUSD,H1: uninit reason 5
+0	15:51:49.175	Trading box Technical analysis XAUUSD,H1: initialized
+0	15:52:17.162	Trading box Technical analysis XAUUSD,H1: uninit reason 5
+0	15:52:17.179	Trading box Technical analysis XAUUSD,H1: initialized
+0	15:52:25.902	Quick Style XAUUSD,H1: uninit reason 3
+0	15:52:25.905	OHLC Magnet XAUUSD,H1: uninit reason 3
+0	15:52:25.905	Time Range Separator XAUUSD,H1: uninit reason 3
+0	15:52:25.905	Kill Zone & 90 Min Cycle XAUUSD,H1: uninit reason 3
+0	15:52:25.905	CandleTime XAUUSD,H1: uninit reason 3
+0	15:52:25.905	Watermark Symbol XAUUSD,H1: uninit reason 3
+0	15:52:25.906	Asian Session Level XAUUSD,H1: uninit reason 3
+0	15:52:25.906	!BBMA MATrick N.G 2022 v1 XAUUSD,H1: uninit reason 3
+0	15:52:25.906	Trading box Technical analysis XAUUSD,H1: uninit reason 3
+0	15:52:25.906	!AML PDW 1.4 2019 XAUUSD,H1: uninit reason 3
+0	15:52:25.917	Quick Style XAUUSD,M30: 0
+0	15:52:25.917	Quick Style XAUUSD,M30: 0
+0	15:52:25.917	Quick Style XAUUSD,M30: 1
+0	15:52:25.917	Quick Style XAUUSD,M30: 1
+0	15:52:25.917	Quick Style XAUUSD,M30: 2
+0	15:52:25.917	Quick Style XAUUSD,M30: initialized
+0	15:52:25.917	OHLC Magnet XAUUSD,M30: initialized
+0	15:52:25.917	Time Range Separator XAUUSD,M30: initialized
+0	15:52:25.917	Kill Zone & 90 Min Cycle XAUUSD,M30: initialized
+0	15:52:25.919	CandleTime XAUUSD,M30: initialized
+0	15:52:25.919	Watermark Symbol XAUUSD,M30: initialized
+0	15:52:25.919	Asian Session Level XAUUSD,M30: initialized
+0	15:52:25.919	!BBMA MATrick N.G 2022 v1 XAUUSD,M30: initialized
+0	15:52:25.922	Trading box Technical analysis XAUUSD,M30: initialized
+0	15:52:25.922	!AML PDW 1.4 2019 XAUUSD,M30: initialized
+0	15:52:27.487	Quick Style XAUUSD,M30: uninit reason 3
+0	15:52:27.491	OHLC Magnet XAUUSD,M30: uninit reason 3
+0	15:52:27.491	Time Range Separator XAUUSD,M30: uninit reason 3
+0	15:52:27.491	Kill Zone & 90 Min Cycle XAUUSD,M30: uninit reason 3
+0	15:52:27.492	CandleTime XAUUSD,M30: uninit reason 3
+0	15:52:27.492	Watermark Symbol XAUUSD,M30: uninit reason 3
+0	15:52:27.492	Asian Session Level XAUUSD,M30: uninit reason 3
+0	15:52:27.492	!BBMA MATrick N.G 2022 v1 XAUUSD,M30: uninit reason 3
+0	15:52:27.492	Trading box Technical analysis XAUUSD,M30: uninit reason 3
+0	15:52:27.492	!AML PDW 1.4 2019 XAUUSD,M30: uninit reason 3
+0	15:52:27.505	Quick Style XAUUSD,M15: 0
+0	15:52:27.506	Quick Style XAUUSD,M15: 0
+0	15:52:27.506	Quick Style XAUUSD,M15: 1
+0	15:52:27.507	Quick Style XAUUSD,M15: 1
+0	15:52:27.507	Quick Style XAUUSD,M15: 2
+0	15:52:27.507	Quick Style XAUUSD,M15: initialized
+0	15:52:27.507	OHLC Magnet XAUUSD,M15: initialized
+0	15:52:27.508	Time Range Separator XAUUSD,M15: initialized
+0	15:52:27.508	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	15:52:27.508	CandleTime XAUUSD,M15: initialized
+0	15:52:27.508	Watermark Symbol XAUUSD,M15: initialized
+0	15:52:27.508	Asian Session Level XAUUSD,M15: initialized
+0	15:52:27.508	!BBMA MATrick N.G 2022 v1 XAUUSD,M15: initialized
+0	15:52:27.510	Trading box Technical analysis XAUUSD,M15: initialized
+0	15:52:27.511	!AML PDW 1.4 2019 XAUUSD,M15: initialized
+0	15:52:35.328	Quick Style XAUUSD,M15: uninit reason 3
+0	15:52:35.332	OHLC Magnet XAUUSD,M15: uninit reason 3
+0	15:52:35.332	Time Range Separator XAUUSD,M15: uninit reason 3
+0	15:52:35.332	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 3
+0	15:52:35.333	CandleTime XAUUSD,M15: uninit reason 3
+0	15:52:35.333	Watermark Symbol XAUUSD,M15: uninit reason 3
+0	15:52:35.333	Asian Session Level XAUUSD,M15: uninit reason 3
+0	15:52:35.333	!BBMA MATrick N.G 2022 v1 XAUUSD,M15: uninit reason 3
+0	15:52:35.334	Trading box Technical analysis XAUUSD,M15: uninit reason 3
+0	15:52:35.334	!AML PDW 1.4 2019 XAUUSD,M15: uninit reason 3
+0	15:52:35.347	Quick Style XAUUSD,H1: 0
+0	15:52:35.347	Quick Style XAUUSD,H1: 0
+0	15:52:35.347	Quick Style XAUUSD,H1: 1
+0	15:52:35.348	Quick Style XAUUSD,H1: 1
+0	15:52:35.348	Quick Style XAUUSD,H1: 2
+0	15:52:35.348	Quick Style XAUUSD,H1: initialized
+0	15:52:35.348	OHLC Magnet XAUUSD,H1: initialized
+0	15:52:35.348	Time Range Separator XAUUSD,H1: initialized
+0	15:52:35.348	Kill Zone & 90 Min Cycle XAUUSD,H1: initialized
+0	15:52:35.349	CandleTime XAUUSD,H1: initialized
+0	15:52:35.349	Watermark Symbol XAUUSD,H1: initialized
+0	15:52:35.349	Asian Session Level XAUUSD,H1: initialized
+0	15:52:35.349	!BBMA MATrick N.G 2022 v1 XAUUSD,H1: initialized
+0	15:52:35.355	Trading box Technical analysis XAUUSD,H1: initialized
+0	15:52:35.355	!AML PDW 1.4 2019 XAUUSD,H1: initialized
+0	15:52:45.036	!AML PDW 1.4 2019 XAUUSD,H1: uninit reason 5
+0	15:52:45.055	!AML PDW 1.4 2019 XAUUSD,H1: initialized
+0	15:52:52.410	Quick Style XAUUSD,H1: uninit reason 3
+0	15:52:52.414	OHLC Magnet XAUUSD,H1: uninit reason 3
+0	15:52:52.414	Time Range Separator XAUUSD,H1: uninit reason 3
+0	15:52:52.414	Kill Zone & 90 Min Cycle XAUUSD,H1: uninit reason 3
+0	15:52:52.414	CandleTime XAUUSD,H1: uninit reason 3
+0	15:52:52.414	Watermark Symbol XAUUSD,H1: uninit reason 3
+0	15:52:52.414	Asian Session Level XAUUSD,H1: uninit reason 3
+0	15:52:52.414	!BBMA MATrick N.G 2022 v1 XAUUSD,H1: uninit reason 3
+0	15:52:52.416	Trading box Technical analysis XAUUSD,H1: uninit reason 3
+0	15:52:52.416	!AML PDW 1.4 2019 XAUUSD,H1: uninit reason 3
+0	15:52:52.429	Quick Style XAUUSD,M15: 0
+0	15:52:52.429	Quick Style XAUUSD,M15: 0
+0	15:52:52.429	Quick Style XAUUSD,M15: 1
+0	15:52:52.429	Quick Style XAUUSD,M15: 1
+0	15:52:52.430	Quick Style XAUUSD,M15: 2
+0	15:52:52.430	Quick Style XAUUSD,M15: initialized
+0	15:52:52.430	OHLC Magnet XAUUSD,M15: initialized
+0	15:52:52.430	Time Range Separator XAUUSD,M15: initialized
+0	15:52:52.430	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	15:52:52.430	CandleTime XAUUSD,M15: initialized
+0	15:52:52.430	Watermark Symbol XAUUSD,M15: initialized
+0	15:52:52.430	Asian Session Level XAUUSD,M15: initialized
+0	15:52:52.430	!BBMA MATrick N.G 2022 v1 XAUUSD,M15: initialized
+0	15:52:52.437	Trading box Technical analysis XAUUSD,M15: initialized
+0	15:52:52.437	!AML PDW 1.4 2019 XAUUSD,M15: initialized
+0	15:53:14.409	Quick Style EURUSD,M15: uninit reason 7
+0	15:53:14.411	OHLC Magnet EURUSD,M15: uninit reason 7
+0	15:53:14.411	Time Range Separator EURUSD,M15: uninit reason 7
+0	15:53:14.411	Kill Zone & 90 Min Cycle EURUSD,M15: uninit reason 7
+0	15:53:14.411	CandleTime EURUSD,M15: uninit reason 7
+0	15:53:14.411	Watermark Symbol EURUSD,M15: uninit reason 7
+0	15:53:14.411	Asian Session Level EURUSD,M15: uninit reason 7
+0	15:53:14.411	!BBMA MATrick N.G 2022 v1 EURUSD,M15: uninit reason 7
+0	15:53:14.413	Trading box Technical analysis EURUSD,M15: uninit reason 7
+0	15:53:14.415	Custom indicator Quick Style EURUSD,M15: removed
+0	15:53:14.416	Custom indicator OHLC Magnet EURUSD,M15: removed
+0	15:53:14.418	Custom indicator Time Range Separator EURUSD,M15: removed
+0	15:53:14.419	Custom indicator Kill Zone & 90 Min Cycle EURUSD,M15: removed
+0	15:53:14.422	Custom indicator CandleTime EURUSD,M15: removed
+0	15:53:14.424	Custom indicator Watermark Symbol EURUSD,M15: removed
+0	15:53:14.426	Custom indicator Asian Session Level EURUSD,M15: removed
+0	15:53:14.428	Custom indicator !BBMA MATrick N.G 2022 v1 EURUSD,M15: removed
+0	15:53:14.433	Custom indicator Trading box Technical analysis EURUSD,M15: removed
+0	15:53:14.454	Custom indicator Market\Quick Style EURUSD,M15: loaded successfully
+0	15:53:14.469	Custom indicator Market\OHLC Magnet EURUSD,M15: loaded successfully
+0	15:53:14.484	Custom indicator Market\Time Range Separator EURUSD,M15: loaded successfully
+0	15:53:14.498	Custom indicator Mine\My Build\Kill Zone & 90 Min Cycle EURUSD,M15: loaded successfully
+0	15:53:14.508	Custom indicator Mine\Background Indicator\CandleTime EURUSD,M15: loaded successfully
+0	15:53:14.524	Custom indicator Market\Watermark Symbol EURUSD,M15: loaded successfully
+0	15:53:14.537	Custom indicator Mine\My Build\Asian Session Level EURUSD,M15: loaded successfully
+0	15:53:14.552	Custom indicator Mine\BBMA MA Trick\!BBMA MATrick N.G 2022 v1 EURUSD,M15: loaded successfully
+0	15:53:14.587	Custom indicator Market\Trading box Technical analysis EURUSD,M15: loaded successfully
+0	15:53:14.600	Custom indicator Mine\AML\!AML PDW 1.4 2019 EURUSD,M15: loaded successfully
+0	15:53:14.638	Quick Style EURUSD,M15: 0
+0	15:53:14.638	Quick Style EURUSD,M15: 0
+0	15:53:14.638	Quick Style EURUSD,M15: 1
+0	15:53:14.638	Quick Style EURUSD,M15: 1
+0	15:53:14.638	Quick Style EURUSD,M15: 2
+0	15:53:14.639	Quick Style EURUSD,M15: initialized
+0	15:53:14.661	OHLC Magnet EURUSD,M15: initialized
+0	15:53:14.685	Time Range Separator EURUSD,M15: initialized
+0	15:53:14.791	Kill Zone & 90 Min Cycle EURUSD,M15: initialized
+0	15:53:14.814	CandleTime EURUSD,M15: initialized
+0	15:53:14.834	Watermark Symbol EURUSD,M15: initialized
+0	15:53:14.858	Asian Session Level EURUSD,M15: initialized
+0	15:53:14.914	!BBMA MATrick N.G 2022 v1 EURUSD,M15: initialized
+0	15:53:14.964	Trading box Technical analysis EURUSD,M15: initialized
+0	15:53:15.000	!AML PDW 1.4 2019 EURUSD,M15: initialized
+0	15:53:25.637	Quick Style EURUSD,M15: uninit reason 3
+0	15:53:25.643	OHLC Magnet EURUSD,M15: uninit reason 3
+0	15:53:25.643	Time Range Separator EURUSD,M15: uninit reason 3
+0	15:53:25.643	Kill Zone & 90 Min Cycle EURUSD,M15: uninit reason 3
+0	15:53:25.644	CandleTime EURUSD,M15: uninit reason 3
+0	15:53:25.644	Watermark Symbol EURUSD,M15: uninit reason 3
+0	15:53:25.644	Asian Session Level EURUSD,M15: uninit reason 3
+0	15:53:25.644	!BBMA MATrick N.G 2022 v1 EURUSD,M15: uninit reason 3
+0	15:53:25.645	Trading box Technical analysis EURUSD,M15: uninit reason 3
+0	15:53:25.645	!AML PDW 1.4 2019 EURUSD,M15: uninit reason 3
+0	15:53:25.671	Quick Style EURUSD,H1: 0
+0	15:53:25.671	Quick Style EURUSD,H1: 0
+0	15:53:25.672	Quick Style EURUSD,H1: 1
+0	15:53:25.672	Quick Style EURUSD,H1: 1
+0	15:53:25.672	Quick Style EURUSD,H1: 2
+0	15:53:25.672	Quick Style EURUSD,H1: initialized
+0	15:53:25.672	OHLC Magnet EURUSD,H1: initialized
+0	15:53:25.672	Time Range Separator EURUSD,H1: initialized
+0	15:53:25.672	Kill Zone & 90 Min Cycle EURUSD,H1: initialized
+0	15:53:25.673	CandleTime EURUSD,H1: initialized
+0	15:53:25.673	Watermark Symbol EURUSD,H1: initialized
+0	15:53:25.674	Asian Session Level EURUSD,H1: initialized
+0	15:53:25.674	!BBMA MATrick N.G 2022 v1 EURUSD,H1: initialized
+0	15:53:25.683	Trading box Technical analysis EURUSD,H1: initialized
+0	15:53:25.683	!AML PDW 1.4 2019 EURUSD,H1: initialized
+0	15:53:59.621	Quick Style EURUSD,H1: uninit reason 3
+0	15:53:59.624	OHLC Magnet EURUSD,H1: uninit reason 3
+0	15:53:59.624	Time Range Separator EURUSD,H1: uninit reason 3
+0	15:53:59.624	Kill Zone & 90 Min Cycle EURUSD,H1: uninit reason 3
+0	15:53:59.624	CandleTime EURUSD,H1: uninit reason 3
+0	15:53:59.624	Watermark Symbol EURUSD,H1: uninit reason 3
+0	15:53:59.624	Asian Session Level EURUSD,H1: uninit reason 3
+0	15:53:59.624	!BBMA MATrick N.G 2022 v1 EURUSD,H1: uninit reason 3
+0	15:53:59.626	Trading box Technical analysis EURUSD,H1: uninit reason 3
+0	15:53:59.626	!AML PDW 1.4 2019 EURUSD,H1: uninit reason 3
+0	15:53:59.640	Quick Style EURUSD,M15: 0
+0	15:53:59.640	Quick Style EURUSD,M15: 0
+0	15:53:59.640	Quick Style EURUSD,M15: 1
+0	15:53:59.641	Quick Style EURUSD,M15: 1
+0	15:53:59.641	Quick Style EURUSD,M15: 2
+0	15:53:59.641	Quick Style EURUSD,M15: initialized
+0	15:53:59.641	OHLC Magnet EURUSD,M15: initialized
+0	15:53:59.641	Time Range Separator EURUSD,M15: initialized
+0	15:53:59.641	Kill Zone & 90 Min Cycle EURUSD,M15: initialized
+0	15:53:59.641	CandleTime EURUSD,M15: initialized
+0	15:53:59.641	Watermark Symbol EURUSD,M15: initialized
+0	15:53:59.642	Asian Session Level EURUSD,M15: initialized
+0	15:53:59.642	!BBMA MATrick N.G 2022 v1 EURUSD,M15: initialized
+0	15:53:59.648	Trading box Technical analysis EURUSD,M15: initialized
+0	15:53:59.648	!AML PDW 1.4 2019 EURUSD,M15: initialized
+0	15:54:21.328	Quick Style EURUSD,M15: uninit reason 3
+0	15:54:21.331	OHLC Magnet EURUSD,M15: uninit reason 3
+0	15:54:21.331	Time Range Separator EURUSD,M15: uninit reason 3
+0	15:54:21.331	Kill Zone & 90 Min Cycle EURUSD,M15: uninit reason 3
+0	15:54:21.332	CandleTime EURUSD,M15: uninit reason 3
+0	15:54:21.332	Watermark Symbol EURUSD,M15: uninit reason 3
+0	15:54:21.332	Asian Session Level EURUSD,M15: uninit reason 3
+0	15:54:21.332	!BBMA MATrick N.G 2022 v1 EURUSD,M15: uninit reason 3
+0	15:54:21.332	Trading box Technical analysis EURUSD,M15: uninit reason 3
+0	15:54:21.332	!AML PDW 1.4 2019 EURUSD,M15: uninit reason 3
+0	15:54:21.346	Quick Style EURUSD,H1: 0
+0	15:54:21.346	Quick Style EURUSD,H1: 0
+0	15:54:21.346	Quick Style EURUSD,H1: 1
+0	15:54:21.346	Quick Style EURUSD,H1: 1
+0	15:54:21.346	Quick Style EURUSD,H1: 2
+0	15:54:21.346	Quick Style EURUSD,H1: initialized
+0	15:54:21.347	OHLC Magnet EURUSD,H1: initialized
+0	15:54:21.347	Time Range Separator EURUSD,H1: initialized
+0	15:54:21.347	Kill Zone & 90 Min Cycle EURUSD,H1: initialized
+0	15:54:21.347	CandleTime EURUSD,H1: initialized
+0	15:54:21.347	Watermark Symbol EURUSD,H1: initialized
+0	15:54:21.347	Asian Session Level EURUSD,H1: initialized
+0	15:54:21.347	!BBMA MATrick N.G 2022 v1 EURUSD,H1: initialized
+0	15:54:21.353	Trading box Technical analysis EURUSD,H1: initialized
+0	15:54:21.354	!AML PDW 1.4 2019 EURUSD,H1: initialized
+0	15:54:23.490	Quick Style EURUSD,H1: uninit reason 3
+0	15:54:23.493	OHLC Magnet EURUSD,H1: uninit reason 3
+0	15:54:23.493	Time Range Separator EURUSD,H1: uninit reason 3
+0	15:54:23.494	Kill Zone & 90 Min Cycle EURUSD,H1: uninit reason 3
+0	15:54:23.494	CandleTime EURUSD,H1: uninit reason 3
+0	15:54:23.494	Watermark Symbol EURUSD,H1: uninit reason 3
+0	15:54:23.494	Asian Session Level EURUSD,H1: uninit reason 3
+0	15:54:23.494	!BBMA MATrick N.G 2022 v1 EURUSD,H1: uninit reason 3
+0	15:54:23.495	Trading box Technical analysis EURUSD,H1: uninit reason 3
+0	15:54:23.495	!AML PDW 1.4 2019 EURUSD,H1: uninit reason 3
+0	15:54:23.522	Quick Style EURUSD,M5: 0
+0	15:54:23.522	Quick Style EURUSD,M5: 0
+0	15:54:23.522	Quick Style EURUSD,M5: 1
+0	15:54:23.522	Quick Style EURUSD,M5: 1
+0	15:54:23.522	Quick Style EURUSD,M5: 2
+0	15:54:23.522	Quick Style EURUSD,M5: initialized
+0	15:54:23.523	OHLC Magnet EURUSD,M5: initialized
+0	15:54:23.523	Time Range Separator EURUSD,M5: initialized
+0	15:54:23.523	Kill Zone & 90 Min Cycle EURUSD,M5: initialized
+0	15:54:23.523	CandleTime EURUSD,M5: initialized
+0	15:54:23.523	Watermark Symbol EURUSD,M5: initialized
+0	15:54:23.523	Asian Session Level EURUSD,M5: initialized
+0	15:54:23.523	!BBMA MATrick N.G 2022 v1 EURUSD,M5: initialized
+0	15:54:23.529	Trading box Technical analysis EURUSD,M5: initialized
+0	15:54:23.530	!AML PDW 1.4 2019 EURUSD,M5: initialized
+1	15:54:23.570	Kill Zone & 90 Min Cycle EURUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (141,32)
+0	15:54:32.230	Quick Style EURUSD,M5: uninit reason 3
+0	15:54:32.234	OHLC Magnet EURUSD,M5: uninit reason 3
+0	15:54:32.234	Time Range Separator EURUSD,M5: uninit reason 3
+0	15:54:32.234	Kill Zone & 90 Min Cycle EURUSD,M5: uninit reason 3
+0	15:54:32.234	CandleTime EURUSD,M5: uninit reason 3
+0	15:54:32.234	Watermark Symbol EURUSD,M5: uninit reason 3
+0	15:54:32.234	Asian Session Level EURUSD,M5: uninit reason 3
+0	15:54:32.234	!BBMA MATrick N.G 2022 v1 EURUSD,M5: uninit reason 3
+0	15:54:32.235	Trading box Technical analysis EURUSD,M5: uninit reason 3
+0	15:54:32.235	!AML PDW 1.4 2019 EURUSD,M5: uninit reason 3
+0	15:54:32.248	Quick Style EURUSD,M15: 0
+0	15:54:32.248	Quick Style EURUSD,M15: 0
+0	15:54:32.249	Quick Style EURUSD,M15: 1
+0	15:54:32.249	Quick Style EURUSD,M15: 1
+0	15:54:32.249	Quick Style EURUSD,M15: 2
+0	15:54:32.249	Quick Style EURUSD,M15: initialized
+0	15:54:32.249	OHLC Magnet EURUSD,M15: initialized
+0	15:54:32.249	Time Range Separator EURUSD,M15: initialized
+0	15:54:32.249	Kill Zone & 90 Min Cycle EURUSD,M15: initialized
+0	15:54:32.250	CandleTime EURUSD,M15: initialized
+0	15:54:32.250	Watermark Symbol EURUSD,M15: initialized
+0	15:54:32.250	Asian Session Level EURUSD,M15: initialized
+0	15:54:32.250	!BBMA MATrick N.G 2022 v1 EURUSD,M15: initialized
+0	15:54:32.263	Trading box Technical analysis EURUSD,M15: initialized
+0	15:54:32.263	!AML PDW 1.4 2019 EURUSD,M15: initialized
+0	15:54:44.539	Quick Style EURUSD,M15: uninit reason 3
+0	15:54:44.543	OHLC Magnet EURUSD,M15: uninit reason 3
+0	15:54:44.543	Time Range Separator EURUSD,M15: uninit reason 3
+0	15:54:44.544	Kill Zone & 90 Min Cycle EURUSD,M15: uninit reason 3
+0	15:54:44.544	CandleTime EURUSD,M15: uninit reason 3
+0	15:54:44.544	Watermark Symbol EURUSD,M15: uninit reason 3
+0	15:54:44.545	Asian Session Level EURUSD,M15: uninit reason 3
+0	15:54:44.545	!BBMA MATrick N.G 2022 v1 EURUSD,M15: uninit reason 3
+0	15:54:44.546	Trading box Technical analysis EURUSD,M15: uninit reason 3
+0	15:54:44.546	!AML PDW 1.4 2019 EURUSD,M15: uninit reason 3
+0	15:54:44.560	Quick Style EURUSD,M5: 0
+0	15:54:44.561	Quick Style EURUSD,M5: 0
+0	15:54:44.561	Quick Style EURUSD,M5: 1
+0	15:54:44.561	Quick Style EURUSD,M5: 1
+0	15:54:44.561	Quick Style EURUSD,M5: 2
+0	15:54:44.561	Quick Style EURUSD,M5: initialized
+0	15:54:44.562	OHLC Magnet EURUSD,M5: initialized
+0	15:54:44.562	Time Range Separator EURUSD,M5: initialized
+0	15:54:44.562	Kill Zone & 90 Min Cycle EURUSD,M5: initialized
+0	15:54:44.562	CandleTime EURUSD,M5: initialized
+0	15:54:44.562	Watermark Symbol EURUSD,M5: initialized
+0	15:54:44.562	Asian Session Level EURUSD,M5: initialized
+0	15:54:44.563	!BBMA MATrick N.G 2022 v1 EURUSD,M5: initialized
+0	15:54:44.573	Trading box Technical analysis EURUSD,M5: initialized
+0	15:54:44.574	!AML PDW 1.4 2019 EURUSD,M5: initialized
+0	15:55:17.992	Quick Style EURUSD,M5: uninit reason 3
+0	15:55:17.997	OHLC Magnet EURUSD,M5: uninit reason 3
+0	15:55:17.997	Time Range Separator EURUSD,M5: uninit reason 3
+0	15:55:17.998	Kill Zone & 90 Min Cycle EURUSD,M5: uninit reason 3
+0	15:55:17.998	CandleTime EURUSD,M5: uninit reason 3
+0	15:55:17.998	Watermark Symbol EURUSD,M5: uninit reason 3
+0	15:55:17.999	Asian Session Level EURUSD,M5: uninit reason 3
+0	15:55:17.999	!BBMA MATrick N.G 2022 v1 EURUSD,M5: uninit reason 3
+0	15:55:18.000	Trading box Technical analysis EURUSD,M5: uninit reason 3
+0	15:55:18.000	!AML PDW 1.4 2019 EURUSD,M5: uninit reason 3
+0	15:55:18.013	Quick Style EURUSD,M15: 0
+0	15:55:18.013	Quick Style EURUSD,M15: 0
+0	15:55:18.013	Quick Style EURUSD,M15: 1
+0	15:55:18.013	Quick Style EURUSD,M15: 1
+0	15:55:18.013	Quick Style EURUSD,M15: 2
+0	15:55:18.013	Quick Style EURUSD,M15: initialized
+0	15:55:18.013	OHLC Magnet EURUSD,M15: initialized
+0	15:55:18.014	Time Range Separator EURUSD,M15: initialized
+0	15:55:18.014	Kill Zone & 90 Min Cycle EURUSD,M15: initialized
+0	15:55:18.014	CandleTime EURUSD,M15: initialized
+0	15:55:18.014	Watermark Symbol EURUSD,M15: initialized
+0	15:55:18.015	Asian Session Level EURUSD,M15: initialized
+0	15:55:18.015	!BBMA MATrick N.G 2022 v1 EURUSD,M15: initialized
+0	15:55:18.027	Trading box Technical analysis EURUSD,M15: initialized
+0	15:55:18.027	!AML PDW 1.4 2019 EURUSD,M15: initialized
+0	15:56:42.795	Quick Style EURUSD,M15: uninit reason 3
+0	15:56:42.799	OHLC Magnet EURUSD,M15: uninit reason 3
+0	15:56:42.799	Time Range Separator EURUSD,M15: uninit reason 3
+0	15:56:42.800	Kill Zone & 90 Min Cycle EURUSD,M15: uninit reason 3
+0	15:56:42.801	CandleTime EURUSD,M15: uninit reason 3
+0	15:56:42.801	Watermark Symbol EURUSD,M15: uninit reason 3
+0	15:56:42.801	Asian Session Level EURUSD,M15: uninit reason 3
+0	15:56:42.801	!BBMA MATrick N.G 2022 v1 EURUSD,M15: uninit reason 3
+0	15:56:42.803	Trading box Technical analysis EURUSD,M15: uninit reason 3
+0	15:56:42.803	!AML PDW 1.4 2019 EURUSD,M15: uninit reason 3
+0	15:56:42.833	Quick Style EURUSD,M1: 0
+0	15:56:42.833	Quick Style EURUSD,M1: 0
+0	15:56:42.833	Quick Style EURUSD,M1: 1
+0	15:56:42.833	Quick Style EURUSD,M1: 1
+0	15:56:42.834	Quick Style EURUSD,M1: 2
+0	15:56:42.834	Quick Style EURUSD,M1: initialized
+0	15:56:42.834	OHLC Magnet EURUSD,M1: initialized
+0	15:56:42.834	Time Range Separator EURUSD,M1: initialized
+0	15:56:42.834	Kill Zone & 90 Min Cycle EURUSD,M1: initialized
+0	15:56:42.835	CandleTime EURUSD,M1: initialized
+0	15:56:42.835	Watermark Symbol EURUSD,M1: initialized
+0	15:56:42.835	Asian Session Level EURUSD,M1: initialized
+0	15:56:42.835	!BBMA MATrick N.G 2022 v1 EURUSD,M1: initialized
+0	15:56:42.848	Trading box Technical analysis EURUSD,M1: initialized
+0	15:56:42.848	!AML PDW 1.4 2019 EURUSD,M1: initialized
+1	15:56:42.861	Kill Zone & 90 Min Cycle EURUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (141,32)
+0	15:59:56.486	Quick Style EURUSD,M1: uninit reason 3
+0	15:59:56.490	OHLC Magnet EURUSD,M1: uninit reason 3
+0	15:59:56.490	Time Range Separator EURUSD,M1: uninit reason 3
+0	15:59:56.491	Kill Zone & 90 Min Cycle EURUSD,M1: uninit reason 3
+0	15:59:56.491	CandleTime EURUSD,M1: uninit reason 3
+0	15:59:56.491	Watermark Symbol EURUSD,M1: uninit reason 3
+0	15:59:56.491	Asian Session Level EURUSD,M1: uninit reason 3
+0	15:59:56.491	!BBMA MATrick N.G 2022 v1 EURUSD,M1: uninit reason 3
+0	15:59:56.492	Trading box Technical analysis EURUSD,M1: uninit reason 3
+0	15:59:56.492	!AML PDW 1.4 2019 EURUSD,M1: uninit reason 3
+0	15:59:56.505	Quick Style EURUSD,M15: 0
+0	15:59:56.505	Quick Style EURUSD,M15: 0
+0	15:59:56.505	Quick Style EURUSD,M15: 1
+0	15:59:56.505	Quick Style EURUSD,M15: 1
+0	15:59:56.506	Quick Style EURUSD,M15: 2
+0	15:59:56.506	Quick Style EURUSD,M15: initialized
+0	15:59:56.506	OHLC Magnet EURUSD,M15: initialized
+0	15:59:56.507	Time Range Separator EURUSD,M15: initialized
+0	15:59:56.507	Kill Zone & 90 Min Cycle EURUSD,M15: initialized
+0	15:59:56.507	CandleTime EURUSD,M15: initialized
+0	15:59:56.507	Watermark Symbol EURUSD,M15: initialized
+0	15:59:56.508	Asian Session Level EURUSD,M15: initialized
+0	15:59:56.508	!BBMA MATrick N.G 2022 v1 EURUSD,M15: initialized
+0	15:59:56.526	Trading box Technical analysis EURUSD,M15: initialized
+0	15:59:56.526	!AML PDW 1.4 2019 EURUSD,M15: initialized
+0	16:00:27.545	Quick Style EURUSD,M15: uninit reason 3
+0	16:00:27.548	OHLC Magnet EURUSD,M15: uninit reason 3
+0	16:00:27.548	Time Range Separator EURUSD,M15: uninit reason 3
+0	16:00:27.549	Kill Zone & 90 Min Cycle EURUSD,M15: uninit reason 3
+0	16:00:27.549	CandleTime EURUSD,M15: uninit reason 3
+0	16:00:27.549	Watermark Symbol EURUSD,M15: uninit reason 3
+0	16:00:27.549	Asian Session Level EURUSD,M15: uninit reason 3
+0	16:00:27.549	!BBMA MATrick N.G 2022 v1 EURUSD,M15: uninit reason 3
+0	16:00:27.551	Trading box Technical analysis EURUSD,M15: uninit reason 3
+0	16:00:27.551	!AML PDW 1.4 2019 EURUSD,M15: uninit reason 3
+0	16:00:27.564	Quick Style EURUSD,H1: 0
+0	16:00:27.564	Quick Style EURUSD,H1: 0
+0	16:00:27.564	Quick Style EURUSD,H1: 1
+0	16:00:27.564	Quick Style EURUSD,H1: 1
+0	16:00:27.564	Quick Style EURUSD,H1: 2
+0	16:00:27.564	Quick Style EURUSD,H1: initialized
+0	16:00:27.564	OHLC Magnet EURUSD,H1: initialized
+0	16:00:27.564	Time Range Separator EURUSD,H1: initialized
+0	16:00:27.564	Kill Zone & 90 Min Cycle EURUSD,H1: initialized
+0	16:00:27.565	CandleTime EURUSD,H1: initialized
+0	16:00:27.565	Watermark Symbol EURUSD,H1: initialized
+0	16:00:27.565	Asian Session Level EURUSD,H1: initialized
+0	16:00:27.565	!BBMA MATrick N.G 2022 v1 EURUSD,H1: initialized
+0	16:00:27.582	Trading box Technical analysis EURUSD,H1: initialized
+0	16:00:27.582	!AML PDW 1.4 2019 EURUSD,H1: initialized
+0	16:00:36.885	Quick Style EURUSD,H1: uninit reason 3
+0	16:00:36.890	OHLC Magnet EURUSD,H1: uninit reason 3
+0	16:00:36.890	Time Range Separator EURUSD,H1: uninit reason 3
+0	16:00:36.890	Kill Zone & 90 Min Cycle EURUSD,H1: uninit reason 3
+0	16:00:36.890	CandleTime EURUSD,H1: uninit reason 3
+0	16:00:36.890	Watermark Symbol EURUSD,H1: uninit reason 3
+0	16:00:36.890	Asian Session Level EURUSD,H1: uninit reason 3
+0	16:00:36.891	!BBMA MATrick N.G 2022 v1 EURUSD,H1: uninit reason 3
+0	16:00:36.891	Trading box Technical analysis EURUSD,H1: uninit reason 3
+0	16:00:36.891	!AML PDW 1.4 2019 EURUSD,H1: uninit reason 3
+0	16:00:36.901	Quick Style EURUSD,M15: 0
+0	16:00:36.901	Quick Style EURUSD,M15: 0
+0	16:00:36.901	Quick Style EURUSD,M15: 1
+0	16:00:36.902	Quick Style EURUSD,M15: 1
+0	16:00:36.902	Quick Style EURUSD,M15: 2
+0	16:00:36.902	Quick Style EURUSD,M15: initialized
+0	16:00:36.902	OHLC Magnet EURUSD,M15: initialized
+0	16:00:36.902	Time Range Separator EURUSD,M15: initialized
+0	16:00:36.902	Kill Zone & 90 Min Cycle EURUSD,M15: initialized
+0	16:00:36.903	CandleTime EURUSD,M15: initialized
+0	16:00:36.903	Watermark Symbol EURUSD,M15: initialized
+0	16:00:36.903	Asian Session Level EURUSD,M15: initialized
+0	16:00:36.903	!BBMA MATrick N.G 2022 v1 EURUSD,M15: initialized
+0	16:00:36.918	Trading box Technical analysis EURUSD,M15: initialized
+0	16:00:36.918	!AML PDW 1.4 2019 EURUSD,M15: initialized
+0	16:00:41.057	Quick Style EURUSD,M15: uninit reason 3
+0	16:00:41.060	OHLC Magnet EURUSD,M15: uninit reason 3
+0	16:00:41.060	Time Range Separator EURUSD,M15: uninit reason 3
+0	16:00:41.060	Kill Zone & 90 Min Cycle EURUSD,M15: uninit reason 3
+0	16:00:41.060	CandleTime EURUSD,M15: uninit reason 3
+0	16:00:41.060	Watermark Symbol EURUSD,M15: uninit reason 3
+0	16:00:41.060	Asian Session Level EURUSD,M15: uninit reason 3
+0	16:00:41.061	!BBMA MATrick N.G 2022 v1 EURUSD,M15: uninit reason 3
+0	16:00:41.062	Trading box Technical analysis EURUSD,M15: uninit reason 3
+0	16:00:41.062	!AML PDW 1.4 2019 EURUSD,M15: uninit reason 3
+0	16:00:41.079	Quick Style EURUSD,M5: 0
+0	16:00:41.079	Quick Style EURUSD,M5: 0
+0	16:00:41.079	Quick Style EURUSD,M5: 1
+0	16:00:41.079	Quick Style EURUSD,M5: 1
+0	16:00:41.079	Quick Style EURUSD,M5: 2
+0	16:00:41.079	Quick Style EURUSD,M5: initialized
+0	16:00:41.080	OHLC Magnet EURUSD,M5: initialized
+0	16:00:41.080	Time Range Separator EURUSD,M5: initialized
+0	16:00:41.080	Kill Zone & 90 Min Cycle EURUSD,M5: initialized
+0	16:00:41.081	CandleTime EURUSD,M5: initialized
+0	16:00:41.081	Watermark Symbol EURUSD,M5: initialized
+0	16:00:41.081	Asian Session Level EURUSD,M5: initialized
+0	16:00:41.081	!BBMA MATrick N.G 2022 v1 EURUSD,M5: initialized
+0	16:00:41.097	Trading box Technical analysis EURUSD,M5: initialized
+0	16:00:41.098	!AML PDW 1.4 2019 EURUSD,M5: initialized
+0	16:57:48.448	Quick Style EURUSD,M5: uninit reason 3
+0	16:57:48.451	OHLC Magnet EURUSD,M5: uninit reason 3
+0	16:57:48.451	Time Range Separator EURUSD,M5: uninit reason 3
+0	16:57:48.451	Kill Zone & 90 Min Cycle EURUSD,M5: uninit reason 3
+0	16:57:48.452	CandleTime EURUSD,M5: uninit reason 3
+0	16:57:48.452	Watermark Symbol EURUSD,M5: uninit reason 3
+0	16:57:48.452	Asian Session Level EURUSD,M5: uninit reason 3
+0	16:57:48.452	!BBMA MATrick N.G 2022 v1 EURUSD,M5: uninit reason 3
+0	16:57:48.453	Trading box Technical analysis EURUSD,M5: uninit reason 3
+0	16:57:48.453	!AML PDW 1.4 2019 EURUSD,M5: uninit reason 3
+0	16:57:48.465	Quick Style EURUSD,M15: 0
+0	16:57:48.465	Quick Style EURUSD,M15: 0
+0	16:57:48.465	Quick Style EURUSD,M15: 1
+0	16:57:48.465	Quick Style EURUSD,M15: 1
+0	16:57:48.465	Quick Style EURUSD,M15: 2
+0	16:57:48.465	Quick Style EURUSD,M15: initialized
+0	16:57:48.466	OHLC Magnet EURUSD,M15: initialized
+0	16:57:48.466	Time Range Separator EURUSD,M15: initialized
+0	16:57:48.466	Kill Zone & 90 Min Cycle EURUSD,M15: initialized
+0	16:57:48.468	CandleTime EURUSD,M15: initialized
+0	16:57:48.469	Watermark Symbol EURUSD,M15: initialized
+0	16:57:48.469	Asian Session Level EURUSD,M15: initialized
+0	16:57:48.469	!BBMA MATrick N.G 2022 v1 EURUSD,M15: initialized
+0	16:57:48.518	Trading box Technical analysis EURUSD,M15: initialized
+0	16:57:48.518	!AML PDW 1.4 2019 EURUSD,M15: initialized
+0	16:57:50.633	Quick Style EURUSD,M15: uninit reason 3
+0	16:57:50.636	OHLC Magnet EURUSD,M15: uninit reason 3
+0	16:57:50.636	Time Range Separator EURUSD,M15: uninit reason 3
+0	16:57:50.636	Kill Zone & 90 Min Cycle EURUSD,M15: uninit reason 3
+0	16:57:50.636	CandleTime EURUSD,M15: uninit reason 3
+0	16:57:50.636	Watermark Symbol EURUSD,M15: uninit reason 3
+0	16:57:50.637	Asian Session Level EURUSD,M15: uninit reason 3
+0	16:57:50.637	!BBMA MATrick N.G 2022 v1 EURUSD,M15: uninit reason 3
+0	16:57:50.638	Trading box Technical analysis EURUSD,M15: uninit reason 3
+0	16:57:50.638	!AML PDW 1.4 2019 EURUSD,M15: uninit reason 3
+0	16:57:50.650	Quick Style EURUSD,M5: 0
+0	16:57:50.650	Quick Style EURUSD,M5: 0
+0	16:57:50.650	Quick Style EURUSD,M5: 1
+0	16:57:50.651	Quick Style EURUSD,M5: 1
+0	16:57:50.651	Quick Style EURUSD,M5: 2
+0	16:57:50.651	Quick Style EURUSD,M5: initialized
+0	16:57:50.651	OHLC Magnet EURUSD,M5: initialized
+0	16:57:50.651	Time Range Separator EURUSD,M5: initialized
+0	16:57:50.651	Kill Zone & 90 Min Cycle EURUSD,M5: initialized
+0	16:57:50.652	CandleTime EURUSD,M5: initialized
+0	16:57:50.652	Watermark Symbol EURUSD,M5: initialized
+0	16:57:50.652	Asian Session Level EURUSD,M5: initialized
+0	16:57:50.652	!BBMA MATrick N.G 2022 v1 EURUSD,M5: initialized
+0	16:57:50.665	Trading box Technical analysis EURUSD,M5: initialized
+0	16:57:50.665	!AML PDW 1.4 2019 EURUSD,M5: initialized
+0	16:57:56.269	Quick Style EURUSD,M5: uninit reason 3
+0	16:57:56.272	OHLC Magnet EURUSD,M5: uninit reason 3
+0	16:57:56.272	Time Range Separator EURUSD,M5: uninit reason 3
+0	16:57:56.272	Kill Zone & 90 Min Cycle EURUSD,M5: uninit reason 3
+0	16:57:56.273	CandleTime EURUSD,M5: uninit reason 3
+0	16:57:56.273	Watermark Symbol EURUSD,M5: uninit reason 3
+0	16:57:56.273	Asian Session Level EURUSD,M5: uninit reason 3
+0	16:57:56.273	!BBMA MATrick N.G 2022 v1 EURUSD,M5: uninit reason 3
+0	16:57:56.274	Trading box Technical analysis EURUSD,M5: uninit reason 3
+0	16:57:56.274	!AML PDW 1.4 2019 EURUSD,M5: uninit reason 3
+0	16:57:56.288	Quick Style EURUSD,M1: 0
+0	16:57:56.288	Quick Style EURUSD,M1: 0
+0	16:57:56.288	Quick Style EURUSD,M1: 1
+0	16:57:56.288	Quick Style EURUSD,M1: 1
+0	16:57:56.289	Quick Style EURUSD,M1: 2
+0	16:57:56.289	Quick Style EURUSD,M1: initialized
+0	16:57:56.289	OHLC Magnet EURUSD,M1: initialized
+0	16:57:56.289	Time Range Separator EURUSD,M1: initialized
+0	16:57:56.289	Kill Zone & 90 Min Cycle EURUSD,M1: initialized
+0	16:57:56.290	CandleTime EURUSD,M1: initialized
+0	16:57:56.290	Watermark Symbol EURUSD,M1: initialized
+0	16:57:56.290	Asian Session Level EURUSD,M1: initialized
+0	16:57:56.290	!BBMA MATrick N.G 2022 v1 EURUSD,M1: initialized
+0	16:57:56.304	Trading box Technical analysis EURUSD,M1: initialized
+0	16:57:56.304	!AML PDW 1.4 2019 EURUSD,M1: initialized
+0	16:58:03.461	Quick Style EURUSD,M1: uninit reason 3
+0	16:58:03.464	OHLC Magnet EURUSD,M1: uninit reason 3
+0	16:58:03.464	Time Range Separator EURUSD,M1: uninit reason 3
+0	16:58:03.464	Kill Zone & 90 Min Cycle EURUSD,M1: uninit reason 3
+0	16:58:03.465	CandleTime EURUSD,M1: uninit reason 3
+0	16:58:03.465	Watermark Symbol EURUSD,M1: uninit reason 3
+0	16:58:03.465	Asian Session Level EURUSD,M1: uninit reason 3
+0	16:58:03.465	!BBMA MATrick N.G 2022 v1 EURUSD,M1: uninit reason 3
+0	16:58:03.467	Trading box Technical analysis EURUSD,M1: uninit reason 3
+0	16:58:03.467	!AML PDW 1.4 2019 EURUSD,M1: uninit reason 3
+0	16:58:03.477	Quick Style EURUSD,M5: 0
+0	16:58:03.477	Quick Style EURUSD,M5: 0
+0	16:58:03.477	Quick Style EURUSD,M5: 1
+0	16:58:03.477	Quick Style EURUSD,M5: 1
+0	16:58:03.477	Quick Style EURUSD,M5: 2
+0	16:58:03.477	Quick Style EURUSD,M5: initialized
+0	16:58:03.478	OHLC Magnet EURUSD,M5: initialized
+0	16:58:03.478	Time Range Separator EURUSD,M5: initialized
+0	16:58:03.478	Kill Zone & 90 Min Cycle EURUSD,M5: initialized
+0	16:58:03.478	CandleTime EURUSD,M5: initialized
+0	16:58:03.478	Watermark Symbol EURUSD,M5: initialized
+0	16:58:03.479	Asian Session Level EURUSD,M5: initialized
+0	16:58:03.479	!BBMA MATrick N.G 2022 v1 EURUSD,M5: initialized
+0	16:58:03.491	Trading box Technical analysis EURUSD,M5: initialized
+0	16:58:03.492	!AML PDW 1.4 2019 EURUSD,M5: initialized
+0	16:58:05.375	Quick Style EURUSD,M5: uninit reason 3
+0	16:58:05.378	OHLC Magnet EURUSD,M5: uninit reason 3
+0	16:58:05.378	Time Range Separator EURUSD,M5: uninit reason 3
+0	16:58:05.379	Kill Zone & 90 Min Cycle EURUSD,M5: uninit reason 3
+0	16:58:05.379	CandleTime EURUSD,M5: uninit reason 3
+0	16:58:05.379	Watermark Symbol EURUSD,M5: uninit reason 3
+0	16:58:05.379	Asian Session Level EURUSD,M5: uninit reason 3
+0	16:58:05.379	!BBMA MATrick N.G 2022 v1 EURUSD,M5: uninit reason 3
+0	16:58:05.381	Trading box Technical analysis EURUSD,M5: uninit reason 3
+0	16:58:05.381	!AML PDW 1.4 2019 EURUSD,M5: uninit reason 3
+0	16:58:05.391	Quick Style EURUSD,M15: 0
+0	16:58:05.391	Quick Style EURUSD,M15: 0
+0	16:58:05.391	Quick Style EURUSD,M15: 1
+0	16:58:05.391	Quick Style EURUSD,M15: 1
+0	16:58:05.391	Quick Style EURUSD,M15: 2
+0	16:58:05.391	Quick Style EURUSD,M15: initialized
+0	16:58:05.391	OHLC Magnet EURUSD,M15: initialized
+0	16:58:05.391	Time Range Separator EURUSD,M15: initialized
+0	16:58:05.391	Kill Zone & 90 Min Cycle EURUSD,M15: initialized
+0	16:58:05.392	CandleTime EURUSD,M15: initialized
+0	16:58:05.392	Watermark Symbol EURUSD,M15: initialized
+0	16:58:05.392	Asian Session Level EURUSD,M15: initialized
+0	16:58:05.392	!BBMA MATrick N.G 2022 v1 EURUSD,M15: initialized
+0	16:58:05.406	Trading box Technical analysis EURUSD,M15: initialized
+0	16:58:05.406	!AML PDW 1.4 2019 EURUSD,M15: initialized
+0	16:58:10.037	Quick Style EURUSD,M15: uninit reason 3
+0	16:58:10.040	OHLC Magnet EURUSD,M15: uninit reason 3
+0	16:58:10.040	Time Range Separator EURUSD,M15: uninit reason 3
+0	16:58:10.040	Kill Zone & 90 Min Cycle EURUSD,M15: uninit reason 3
+0	16:58:10.041	CandleTime EURUSD,M15: uninit reason 3
+0	16:58:10.041	Watermark Symbol EURUSD,M15: uninit reason 3
+0	16:58:10.041	Asian Session Level EURUSD,M15: uninit reason 3
+0	16:58:10.041	!BBMA MATrick N.G 2022 v1 EURUSD,M15: uninit reason 3
+0	16:58:10.042	Trading box Technical analysis EURUSD,M15: uninit reason 3
+0	16:58:10.042	!AML PDW 1.4 2019 EURUSD,M15: uninit reason 3
+0	16:58:10.053	Quick Style EURUSD,M1: 0
+0	16:58:10.053	Quick Style EURUSD,M1: 0
+0	16:58:10.053	Quick Style EURUSD,M1: 1
+0	16:58:10.053	Quick Style EURUSD,M1: 1
+0	16:58:10.053	Quick Style EURUSD,M1: 2
+0	16:58:10.053	Quick Style EURUSD,M1: initialized
+0	16:58:10.053	OHLC Magnet EURUSD,M1: initialized
+0	16:58:10.054	Time Range Separator EURUSD,M1: initialized
+0	16:58:10.054	Kill Zone & 90 Min Cycle EURUSD,M1: initialized
+0	16:58:10.054	CandleTime EURUSD,M1: initialized
+0	16:58:10.054	Watermark Symbol EURUSD,M1: initialized
+0	16:58:10.055	Asian Session Level EURUSD,M1: initialized
+0	16:58:10.055	!BBMA MATrick N.G 2022 v1 EURUSD,M1: initialized
+0	16:58:10.068	Trading box Technical analysis EURUSD,M1: initialized
+0	16:58:10.068	!AML PDW 1.4 2019 EURUSD,M1: initialized
+0	16:58:46.705	Quick Style XAUUSD,M15: uninit reason 3
+0	16:58:46.708	OHLC Magnet XAUUSD,M15: uninit reason 3
+0	16:58:46.708	Time Range Separator XAUUSD,M15: uninit reason 3
+0	16:58:46.708	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 3
+0	16:58:46.708	CandleTime XAUUSD,M15: uninit reason 3
+0	16:58:46.708	Watermark Symbol XAUUSD,M15: uninit reason 3
+0	16:58:46.708	Asian Session Level XAUUSD,M15: uninit reason 3
+0	16:58:46.709	!BBMA MATrick N.G 2022 v1 XAUUSD,M15: uninit reason 3
+0	16:58:46.709	Trading box Technical analysis XAUUSD,M15: uninit reason 3
+0	16:58:46.709	!AML PDW 1.4 2019 XAUUSD,M15: uninit reason 3
+0	16:58:46.735	Quick Style XAUUSD,M5: 0
+0	16:58:46.736	Quick Style XAUUSD,M5: 0
+0	16:58:46.736	Quick Style XAUUSD,M5: 1
+0	16:58:46.736	Quick Style XAUUSD,M5: 1
+0	16:58:46.736	Quick Style XAUUSD,M5: 2
+0	16:58:46.736	Quick Style XAUUSD,M5: initialized
+0	16:58:46.736	OHLC Magnet XAUUSD,M5: initialized
+0	16:58:46.736	Time Range Separator XAUUSD,M5: initialized
+0	16:58:46.736	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	16:58:46.736	CandleTime XAUUSD,M5: initialized
+0	16:58:46.736	Watermark Symbol XAUUSD,M5: initialized
+0	16:58:46.736	Asian Session Level XAUUSD,M5: initialized
+0	16:58:46.736	!BBMA MATrick N.G 2022 v1 XAUUSD,M5: initialized
+0	16:58:46.751	Trading box Technical analysis XAUUSD,M5: initialized
+0	16:58:46.751	!AML PDW 1.4 2019 XAUUSD,M5: initialized
+1	16:58:46.775	Kill Zone & 90 Min Cycle XAUUSD,M5: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,33)
+0	17:00:22.283	Quick Style XAUUSD,M5: uninit reason 3
+0	17:00:22.286	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	17:00:22.286	Time Range Separator XAUUSD,M5: uninit reason 3
+0	17:00:22.286	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	17:00:22.286	CandleTime XAUUSD,M5: uninit reason 3
+0	17:00:22.286	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	17:00:22.286	Asian Session Level XAUUSD,M5: uninit reason 3
+0	17:00:22.286	!BBMA MATrick N.G 2022 v1 XAUUSD,M5: uninit reason 3
+0	17:00:22.288	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	17:00:22.288	!AML PDW 1.4 2019 XAUUSD,M5: uninit reason 3
+0	17:00:22.298	Quick Style XAUUSD,M15: 0
+0	17:00:22.299	Quick Style XAUUSD,M15: 0
+0	17:00:22.299	Quick Style XAUUSD,M15: 1
+0	17:00:22.299	Quick Style XAUUSD,M15: 1
+0	17:00:22.299	Quick Style XAUUSD,M15: 2
+0	17:00:22.299	Quick Style XAUUSD,M15: initialized
+0	17:00:22.299	OHLC Magnet XAUUSD,M15: initialized
+0	17:00:22.299	Time Range Separator XAUUSD,M15: initialized
+0	17:00:22.299	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	17:00:22.300	CandleTime XAUUSD,M15: initialized
+0	17:00:22.300	Watermark Symbol XAUUSD,M15: initialized
+0	17:00:22.300	Asian Session Level XAUUSD,M15: initialized
+0	17:00:22.300	!BBMA MATrick N.G 2022 v1 XAUUSD,M15: initialized
+0	17:00:22.310	Trading box Technical analysis XAUUSD,M15: initialized
+0	17:00:22.310	!AML PDW 1.4 2019 XAUUSD,M15: initialized
+0	17:00:24.648	Quick Style XAUUSD,M15: uninit reason 3
+0	17:00:24.651	OHLC Magnet XAUUSD,M15: uninit reason 3
+0	17:00:24.651	Time Range Separator XAUUSD,M15: uninit reason 3
+0	17:00:24.651	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 3
+0	17:00:24.652	CandleTime XAUUSD,M15: uninit reason 3
+0	17:00:24.652	Watermark Symbol XAUUSD,M15: uninit reason 3
+0	17:00:24.652	Asian Session Level XAUUSD,M15: uninit reason 3
+0	17:00:24.652	!BBMA MATrick N.G 2022 v1 XAUUSD,M15: uninit reason 3
+0	17:00:24.653	Trading box Technical analysis XAUUSD,M15: uninit reason 3
+0	17:00:24.653	!AML PDW 1.4 2019 XAUUSD,M15: uninit reason 3
+0	17:00:24.662	Quick Style XAUUSD,M5: 0
+0	17:00:24.662	Quick Style XAUUSD,M5: 0
+0	17:00:24.662	Quick Style XAUUSD,M5: 1
+0	17:00:24.663	Quick Style XAUUSD,M5: 1
+0	17:00:24.663	Quick Style XAUUSD,M5: 2
+0	17:00:24.663	Quick Style XAUUSD,M5: initialized
+0	17:00:24.663	OHLC Magnet XAUUSD,M5: initialized
+0	17:00:24.663	Time Range Separator XAUUSD,M5: initialized
+0	17:00:24.663	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	17:00:24.664	CandleTime XAUUSD,M5: initialized
+0	17:00:24.664	Watermark Symbol XAUUSD,M5: initialized
+0	17:00:24.664	Asian Session Level XAUUSD,M5: initialized
+0	17:00:24.664	!BBMA MATrick N.G 2022 v1 XAUUSD,M5: initialized
+0	17:00:24.674	Trading box Technical analysis XAUUSD,M5: initialized
+0	17:00:24.674	!AML PDW 1.4 2019 XAUUSD,M5: initialized
+0	17:00:29.803	Quick Style XAUUSD,M5: uninit reason 3
+0	17:00:29.806	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	17:00:29.806	Time Range Separator XAUUSD,M5: uninit reason 3
+0	17:00:29.806	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	17:00:29.807	CandleTime XAUUSD,M5: uninit reason 3
+0	17:00:29.807	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	17:00:29.807	Asian Session Level XAUUSD,M5: uninit reason 3
+0	17:00:29.807	!BBMA MATrick N.G 2022 v1 XAUUSD,M5: uninit reason 3
+0	17:00:29.808	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	17:00:29.808	!AML PDW 1.4 2019 XAUUSD,M5: uninit reason 3
+0	17:00:29.835	Quick Style XAUUSD,M1: 0
+0	17:00:29.835	Quick Style XAUUSD,M1: 0
+0	17:00:29.835	Quick Style XAUUSD,M1: 1
+0	17:00:29.835	Quick Style XAUUSD,M1: 1
+0	17:00:29.835	Quick Style XAUUSD,M1: 2
+0	17:00:29.835	Quick Style XAUUSD,M1: initialized
+0	17:00:29.835	OHLC Magnet XAUUSD,M1: initialized
+0	17:00:29.836	Time Range Separator XAUUSD,M1: initialized
+0	17:00:29.836	Kill Zone & 90 Min Cycle XAUUSD,M1: initialized
+0	17:00:29.836	CandleTime XAUUSD,M1: initialized
+0	17:00:29.836	Watermark Symbol XAUUSD,M1: initialized
+0	17:00:29.836	Asian Session Level XAUUSD,M1: initialized
+0	17:00:29.836	!BBMA MATrick N.G 2022 v1 XAUUSD,M1: initialized
+0	17:00:29.847	Trading box Technical analysis XAUUSD,M1: initialized
+0	17:00:29.847	!AML PDW 1.4 2019 XAUUSD,M1: initialized
+1	17:00:29.855	Kill Zone & 90 Min Cycle XAUUSD,M1: array out of range in 'Kill Zone & 90 Min Cycle.mq4' (156,33)
+0	18:06:54.421	Quick Style XAUUSD,M1: uninit reason 3
+0	18:06:54.426	OHLC Magnet XAUUSD,M1: uninit reason 3
+0	18:06:54.426	Time Range Separator XAUUSD,M1: uninit reason 3
+0	18:06:54.426	Kill Zone & 90 Min Cycle XAUUSD,M1: uninit reason 3
+0	18:06:54.426	CandleTime XAUUSD,M1: uninit reason 3
+0	18:06:54.426	Watermark Symbol XAUUSD,M1: uninit reason 3
+0	18:06:54.426	Asian Session Level XAUUSD,M1: uninit reason 3
+0	18:06:54.426	!BBMA MATrick N.G 2022 v1 XAUUSD,M1: uninit reason 3
+0	18:06:54.429	Trading box Technical analysis XAUUSD,M1: uninit reason 3
+0	18:06:54.429	!AML PDW 1.4 2019 XAUUSD,M1: uninit reason 3
+0	18:06:54.465	Quick Style XAUUSD,M5: 0
+0	18:06:54.465	Quick Style XAUUSD,M5: 0
+0	18:06:54.466	Quick Style XAUUSD,M5: 1
+0	18:06:54.466	Quick Style XAUUSD,M5: 1
+0	18:06:54.466	Quick Style XAUUSD,M5: 2
+0	18:06:54.466	Quick Style XAUUSD,M5: initialized
+0	18:06:54.467	OHLC Magnet XAUUSD,M5: initialized
+0	18:06:54.468	Time Range Separator XAUUSD,M5: initialized
+0	18:06:54.468	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	18:06:54.471	CandleTime XAUUSD,M5: initialized
+0	18:06:54.472	Watermark Symbol XAUUSD,M5: initialized
+0	18:06:54.473	Asian Session Level XAUUSD,M5: initialized
+0	18:06:54.473	!BBMA MATrick N.G 2022 v1 XAUUSD,M5: initialized
+0	18:06:54.567	Trading box Technical analysis XAUUSD,M5: initialized
+0	18:06:54.568	!AML PDW 1.4 2019 XAUUSD,M5: initialized
+0	18:06:59.482	Quick Style XAUUSD,M5: uninit reason 3
+0	18:06:59.490	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	18:06:59.490	Time Range Separator XAUUSD,M5: uninit reason 3
+0	18:06:59.490	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	18:06:59.492	CandleTime XAUUSD,M5: uninit reason 3
+0	18:06:59.492	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	18:06:59.492	Asian Session Level XAUUSD,M5: uninit reason 3
+0	18:06:59.493	!BBMA MATrick N.G 2022 v1 XAUUSD,M5: uninit reason 3
+0	18:06:59.495	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	18:06:59.495	!AML PDW 1.4 2019 XAUUSD,M5: uninit reason 3
+0	18:06:59.525	Quick Style XAUUSD,M15: 0
+0	18:06:59.525	Quick Style XAUUSD,M15: 0
+0	18:06:59.525	Quick Style XAUUSD,M15: 1
+0	18:06:59.525	Quick Style XAUUSD,M15: 1
+0	18:06:59.525	Quick Style XAUUSD,M15: 2
+0	18:06:59.526	Quick Style XAUUSD,M15: initialized
+0	18:06:59.526	OHLC Magnet XAUUSD,M15: initialized
+0	18:06:59.526	Time Range Separator XAUUSD,M15: initialized
+0	18:06:59.526	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	18:06:59.527	CandleTime XAUUSD,M15: initialized
+0	18:06:59.527	Watermark Symbol XAUUSD,M15: initialized
+0	18:06:59.527	Asian Session Level XAUUSD,M15: initialized
+0	18:06:59.527	!BBMA MATrick N.G 2022 v1 XAUUSD,M15: initialized
+0	18:06:59.550	Trading box Technical analysis XAUUSD,M15: initialized
+0	18:06:59.550	!AML PDW 1.4 2019 XAUUSD,M15: initialized
+0	18:11:47.930	Quick Style XAUUSD,M15: uninit reason 3
+0	18:11:47.933	OHLC Magnet XAUUSD,M15: uninit reason 3
+0	18:11:47.933	Time Range Separator XAUUSD,M15: uninit reason 3
+0	18:11:47.933	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 3
+0	18:11:47.934	CandleTime XAUUSD,M15: uninit reason 3
+0	18:11:47.934	Watermark Symbol XAUUSD,M15: uninit reason 3
+0	18:11:47.934	Asian Session Level XAUUSD,M15: uninit reason 3
+0	18:11:47.934	!BBMA MATrick N.G 2022 v1 XAUUSD,M15: uninit reason 3
+0	18:11:47.935	Trading box Technical analysis XAUUSD,M15: uninit reason 3
+0	18:11:47.935	!AML PDW 1.4 2019 XAUUSD,M15: uninit reason 3
+0	18:11:47.949	Quick Style XAUUSD,M5: 0
+0	18:11:47.949	Quick Style XAUUSD,M5: 0
+0	18:11:47.949	Quick Style XAUUSD,M5: 1
+0	18:11:47.949	Quick Style XAUUSD,M5: 1
+0	18:11:47.949	Quick Style XAUUSD,M5: 2
+0	18:11:47.950	Quick Style XAUUSD,M5: initialized
+0	18:11:47.951	OHLC Magnet XAUUSD,M5: initialized
+0	18:11:47.951	Time Range Separator XAUUSD,M5: initialized
+0	18:11:47.951	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	18:11:47.952	CandleTime XAUUSD,M5: initialized
+0	18:11:47.952	Watermark Symbol XAUUSD,M5: initialized
+0	18:11:47.952	Asian Session Level XAUUSD,M5: initialized
+0	18:11:47.952	!BBMA MATrick N.G 2022 v1 XAUUSD,M5: initialized
+0	18:11:47.970	Trading box Technical analysis XAUUSD,M5: initialized
+0	18:11:47.971	!AML PDW 1.4 2019 XAUUSD,M5: initialized
+0	18:11:54.368	Quick Style XAUUSD,M5: uninit reason 3
+0	18:11:54.371	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	18:11:54.371	Time Range Separator XAUUSD,M5: uninit reason 3
+0	18:11:54.371	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	18:11:54.371	CandleTime XAUUSD,M5: uninit reason 3
+0	18:11:54.371	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	18:11:54.371	Asian Session Level XAUUSD,M5: uninit reason 3
+0	18:11:54.372	!BBMA MATrick N.G 2022 v1 XAUUSD,M5: uninit reason 3
+0	18:11:54.373	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	18:11:54.373	!AML PDW 1.4 2019 XAUUSD,M5: uninit reason 3
+0	18:11:54.420	Quick Style XAUUSD,H4: 0
+0	18:11:54.420	Quick Style XAUUSD,H4: 0
+0	18:11:54.420	Quick Style XAUUSD,H4: 1
+0	18:11:54.420	Quick Style XAUUSD,H4: 1
+0	18:11:54.420	Quick Style XAUUSD,H4: 2
+0	18:11:54.421	Quick Style XAUUSD,H4: initialized
+0	18:11:54.421	OHLC Magnet XAUUSD,H4: initialized
+0	18:11:54.421	Time Range Separator XAUUSD,H4: initialized
+0	18:11:54.421	Kill Zone & 90 Min Cycle XAUUSD,H4: initialized
+0	18:11:54.421	CandleTime XAUUSD,H4: initialized
+0	18:11:54.422	Watermark Symbol XAUUSD,H4: initialized
+0	18:11:54.422	Asian Session Level XAUUSD,H4: initialized
+0	18:11:54.422	!BBMA MATrick N.G 2022 v1 XAUUSD,H4: initialized
+0	18:11:54.437	Trading box Technical analysis XAUUSD,H4: initialized
+0	18:11:54.437	!AML PDW 1.4 2019 XAUUSD,H4: initialized
+0	18:11:56.220	Quick Style XAUUSD,H4: uninit reason 3
+0	18:11:56.223	OHLC Magnet XAUUSD,H4: uninit reason 3
+0	18:11:56.223	Time Range Separator XAUUSD,H4: uninit reason 3
+0	18:11:56.224	Kill Zone & 90 Min Cycle XAUUSD,H4: uninit reason 3
+0	18:11:56.224	CandleTime XAUUSD,H4: uninit reason 3
+0	18:11:56.224	Watermark Symbol XAUUSD,H4: uninit reason 3
+0	18:11:56.224	Asian Session Level XAUUSD,H4: uninit reason 3
+0	18:11:56.224	!BBMA MATrick N.G 2022 v1 XAUUSD,H4: uninit reason 3
+0	18:11:56.226	Trading box Technical analysis XAUUSD,H4: uninit reason 3
+0	18:11:56.226	!AML PDW 1.4 2019 XAUUSD,H4: uninit reason 3
+0	18:11:56.242	Quick Style XAUUSD,H1: 0
+0	18:11:56.242	Quick Style XAUUSD,H1: 0
+0	18:11:56.242	Quick Style XAUUSD,H1: 1
+0	18:11:56.242	Quick Style XAUUSD,H1: 1
+0	18:11:56.243	Quick Style XAUUSD,H1: 2
+0	18:11:56.243	Quick Style XAUUSD,H1: initialized
+0	18:11:56.243	OHLC Magnet XAUUSD,H1: initialized
+0	18:11:56.243	Time Range Separator XAUUSD,H1: initialized
+0	18:11:56.243	Kill Zone & 90 Min Cycle XAUUSD,H1: initialized
+0	18:11:56.244	CandleTime XAUUSD,H1: initialized
+0	18:11:56.244	Watermark Symbol XAUUSD,H1: initialized
+0	18:11:56.244	Asian Session Level XAUUSD,H1: initialized
+0	18:11:56.244	!BBMA MATrick N.G 2022 v1 XAUUSD,H1: initialized
+0	18:11:56.258	Trading box Technical analysis XAUUSD,H1: initialized
+0	18:11:56.258	!AML PDW 1.4 2019 XAUUSD,H1: initialized
+0	18:11:59.782	Quick Style XAUUSD,H1: uninit reason 3
+0	18:11:59.785	OHLC Magnet XAUUSD,H1: uninit reason 3
+0	18:11:59.785	Time Range Separator XAUUSD,H1: uninit reason 3
+0	18:11:59.785	Kill Zone & 90 Min Cycle XAUUSD,H1: uninit reason 3
+0	18:11:59.786	CandleTime XAUUSD,H1: uninit reason 3
+0	18:11:59.786	Watermark Symbol XAUUSD,H1: uninit reason 3
+0	18:11:59.786	Asian Session Level XAUUSD,H1: uninit reason 3
+0	18:11:59.786	!BBMA MATrick N.G 2022 v1 XAUUSD,H1: uninit reason 3
+0	18:11:59.787	Trading box Technical analysis XAUUSD,H1: uninit reason 3
+0	18:11:59.787	!AML PDW 1.4 2019 XAUUSD,H1: uninit reason 3
+0	18:11:59.797	Quick Style XAUUSD,H4: 0
+0	18:11:59.797	Quick Style XAUUSD,H4: 0
+0	18:11:59.797	Quick Style XAUUSD,H4: 1
+0	18:11:59.798	Quick Style XAUUSD,H4: 1
+0	18:11:59.798	Quick Style XAUUSD,H4: 2
+0	18:11:59.798	Quick Style XAUUSD,H4: initialized
+0	18:11:59.798	OHLC Magnet XAUUSD,H4: initialized
+0	18:11:59.799	Time Range Separator XAUUSD,H4: initialized
+0	18:11:59.799	Kill Zone & 90 Min Cycle XAUUSD,H4: initialized
+0	18:11:59.799	CandleTime XAUUSD,H4: initialized
+0	18:11:59.800	Watermark Symbol XAUUSD,H4: initialized
+0	18:11:59.800	Asian Session Level XAUUSD,H4: initialized
+0	18:11:59.800	!BBMA MATrick N.G 2022 v1 XAUUSD,H4: initialized
+0	18:11:59.813	Trading box Technical analysis XAUUSD,H4: initialized
+0	18:11:59.813	!AML PDW 1.4 2019 XAUUSD,H4: initialized
+0	18:12:31.718	Quick Style XAUUSD,H4: uninit reason 3
+0	18:12:31.722	OHLC Magnet XAUUSD,H4: uninit reason 3
+0	18:12:31.722	Time Range Separator XAUUSD,H4: uninit reason 3
+0	18:12:31.722	Kill Zone & 90 Min Cycle XAUUSD,H4: uninit reason 3
+0	18:12:31.722	CandleTime XAUUSD,H4: uninit reason 3
+0	18:12:31.722	Watermark Symbol XAUUSD,H4: uninit reason 3
+0	18:12:31.722	Asian Session Level XAUUSD,H4: uninit reason 3
+0	18:12:31.722	!BBMA MATrick N.G 2022 v1 XAUUSD,H4: uninit reason 3
+0	18:12:31.723	Trading box Technical analysis XAUUSD,H4: uninit reason 3
+0	18:12:31.723	!AML PDW 1.4 2019 XAUUSD,H4: uninit reason 3
+0	18:12:31.741	Quick Style XAUUSD,M5: 0
+0	18:12:31.741	Quick Style XAUUSD,M5: 0
+0	18:12:31.741	Quick Style XAUUSD,M5: 1
+0	18:12:31.741	Quick Style XAUUSD,M5: 1
+0	18:12:31.741	Quick Style XAUUSD,M5: 2
+0	18:12:31.741	Quick Style XAUUSD,M5: initialized
+0	18:12:31.741	OHLC Magnet XAUUSD,M5: initialized
+0	18:12:31.742	Time Range Separator XAUUSD,M5: initialized
+0	18:12:31.742	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	18:12:31.742	CandleTime XAUUSD,M5: initialized
+0	18:12:31.742	Watermark Symbol XAUUSD,M5: initialized
+0	18:12:31.743	Asian Session Level XAUUSD,M5: initialized
+0	18:12:31.743	!BBMA MATrick N.G 2022 v1 XAUUSD,M5: initialized
+0	18:12:31.759	Trading box Technical analysis XAUUSD,M5: initialized
+0	18:12:31.759	!AML PDW 1.4 2019 XAUUSD,M5: initialized
+0	18:12:44.361	Quick Style XAUUSD,M5: uninit reason 3
+0	18:12:44.367	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	18:12:44.367	Time Range Separator XAUUSD,M5: uninit reason 3
+0	18:12:44.367	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	18:12:44.368	CandleTime XAUUSD,M5: uninit reason 3
+0	18:12:44.368	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	18:12:44.368	Asian Session Level XAUUSD,M5: uninit reason 3
+0	18:12:44.368	!BBMA MATrick N.G 2022 v1 XAUUSD,M5: uninit reason 3
+0	18:12:44.370	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	18:12:44.370	!AML PDW 1.4 2019 XAUUSD,M5: uninit reason 3
+0	18:12:44.387	Quick Style XAUUSD,M15: 0
+0	18:12:44.387	Quick Style XAUUSD,M15: 0
+0	18:12:44.387	Quick Style XAUUSD,M15: 1
+0	18:12:44.387	Quick Style XAUUSD,M15: 1
+0	18:12:44.388	Quick Style XAUUSD,M15: 2
+0	18:12:44.388	Quick Style XAUUSD,M15: initialized
+0	18:12:44.389	OHLC Magnet XAUUSD,M15: initialized
+0	18:12:44.389	Time Range Separator XAUUSD,M15: initialized
+0	18:12:44.389	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	18:12:44.390	CandleTime XAUUSD,M15: initialized
+0	18:12:44.390	Watermark Symbol XAUUSD,M15: initialized
+0	18:12:44.391	Asian Session Level XAUUSD,M15: initialized
+0	18:12:44.391	!BBMA MATrick N.G 2022 v1 XAUUSD,M15: initialized
+0	18:12:44.408	Trading box Technical analysis XAUUSD,M15: initialized
+0	18:12:44.408	!AML PDW 1.4 2019 XAUUSD,M15: initialized
+0	18:14:24.512	Quick Style XAUUSD,M15: uninit reason 3
+0	18:14:24.515	OHLC Magnet XAUUSD,M15: uninit reason 3
+0	18:14:24.515	Time Range Separator XAUUSD,M15: uninit reason 3
+0	18:14:24.515	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 3
+0	18:14:24.516	CandleTime XAUUSD,M15: uninit reason 3
+0	18:14:24.516	Watermark Symbol XAUUSD,M15: uninit reason 3
+0	18:14:24.516	Asian Session Level XAUUSD,M15: uninit reason 3
+0	18:14:24.516	!BBMA MATrick N.G 2022 v1 XAUUSD,M15: uninit reason 3
+0	18:14:24.517	Trading box Technical analysis XAUUSD,M15: uninit reason 3
+0	18:14:24.517	!AML PDW 1.4 2019 XAUUSD,M15: uninit reason 3
+0	18:14:24.530	Quick Style XAUUSD,M30: 0
+0	18:14:24.530	Quick Style XAUUSD,M30: 0
+0	18:14:24.530	Quick Style XAUUSD,M30: 1
+0	18:14:24.530	Quick Style XAUUSD,M30: 1
+0	18:14:24.531	Quick Style XAUUSD,M30: 2
+0	18:14:24.531	Quick Style XAUUSD,M30: initialized
+0	18:14:24.531	OHLC Magnet XAUUSD,M30: initialized
+0	18:14:24.531	Time Range Separator XAUUSD,M30: initialized
+0	18:14:24.531	Kill Zone & 90 Min Cycle XAUUSD,M30: initialized
+0	18:14:24.532	CandleTime XAUUSD,M30: initialized
+0	18:14:24.532	Watermark Symbol XAUUSD,M30: initialized
+0	18:14:24.532	Asian Session Level XAUUSD,M30: initialized
+0	18:14:24.532	!BBMA MATrick N.G 2022 v1 XAUUSD,M30: initialized
+0	18:14:24.552	Trading box Technical analysis XAUUSD,M30: initialized
+0	18:14:24.553	!AML PDW 1.4 2019 XAUUSD,M30: initialized
+0	18:14:36.925	Quick Style XAUUSD,M30: uninit reason 3
+0	18:14:36.928	OHLC Magnet XAUUSD,M30: uninit reason 3
+0	18:14:36.928	Time Range Separator XAUUSD,M30: uninit reason 3
+0	18:14:36.928	Kill Zone & 90 Min Cycle XAUUSD,M30: uninit reason 3
+0	18:14:36.928	CandleTime XAUUSD,M30: uninit reason 3
+0	18:14:36.928	Watermark Symbol XAUUSD,M30: uninit reason 3
+0	18:14:36.929	Asian Session Level XAUUSD,M30: uninit reason 3
+0	18:14:36.929	!BBMA MATrick N.G 2022 v1 XAUUSD,M30: uninit reason 3
+0	18:14:36.931	Trading box Technical analysis XAUUSD,M30: uninit reason 3
+0	18:14:36.931	!AML PDW 1.4 2019 XAUUSD,M30: uninit reason 3
+0	18:14:36.942	Quick Style XAUUSD,H4: 0
+0	18:14:36.942	Quick Style XAUUSD,H4: 0
+0	18:14:36.942	Quick Style XAUUSD,H4: 1
+0	18:14:36.943	Quick Style XAUUSD,H4: 1
+0	18:14:36.943	Quick Style XAUUSD,H4: 2
+0	18:14:36.943	Quick Style XAUUSD,H4: initialized
+0	18:14:36.943	OHLC Magnet XAUUSD,H4: initialized
+0	18:14:36.943	Time Range Separator XAUUSD,H4: initialized
+0	18:14:36.943	Kill Zone & 90 Min Cycle XAUUSD,H4: initialized
+0	18:14:36.944	CandleTime XAUUSD,H4: initialized
+0	18:14:36.944	Watermark Symbol XAUUSD,H4: initialized
+0	18:14:36.944	Asian Session Level XAUUSD,H4: initialized
+0	18:14:36.944	!BBMA MATrick N.G 2022 v1 XAUUSD,H4: initialized
+0	18:14:36.958	Trading box Technical analysis XAUUSD,H4: initialized
+0	18:14:36.958	!AML PDW 1.4 2019 XAUUSD,H4: initialized
+0	18:14:39.449	Quick Style XAUUSD,H4: uninit reason 3
+0	18:14:39.452	OHLC Magnet XAUUSD,H4: uninit reason 3
+0	18:14:39.452	Time Range Separator XAUUSD,H4: uninit reason 3
+0	18:14:39.452	Kill Zone & 90 Min Cycle XAUUSD,H4: uninit reason 3
+0	18:14:39.452	CandleTime XAUUSD,H4: uninit reason 3
+0	18:14:39.452	Watermark Symbol XAUUSD,H4: uninit reason 3
+0	18:14:39.452	Asian Session Level XAUUSD,H4: uninit reason 3
+0	18:14:39.452	!BBMA MATrick N.G 2022 v1 XAUUSD,H4: uninit reason 3
+0	18:14:39.454	Trading box Technical analysis XAUUSD,H4: uninit reason 3
+0	18:14:39.454	!AML PDW 1.4 2019 XAUUSD,H4: uninit reason 3
+0	18:14:39.470	Quick Style XAUUSD,M15: 0
+0	18:14:39.470	Quick Style XAUUSD,M15: 0
+0	18:14:39.470	Quick Style XAUUSD,M15: 1
+0	18:14:39.470	Quick Style XAUUSD,M15: 1
+0	18:14:39.470	Quick Style XAUUSD,M15: 2
+0	18:14:39.470	Quick Style XAUUSD,M15: initialized
+0	18:14:39.471	OHLC Magnet XAUUSD,M15: initialized
+0	18:14:39.471	Time Range Separator XAUUSD,M15: initialized
+0	18:14:39.471	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	18:14:39.472	CandleTime XAUUSD,M15: initialized
+0	18:14:39.472	Watermark Symbol XAUUSD,M15: initialized
+0	18:14:39.472	Asian Session Level XAUUSD,M15: initialized
+0	18:14:39.472	!BBMA MATrick N.G 2022 v1 XAUUSD,M15: initialized
+0	18:14:39.489	Trading box Technical analysis XAUUSD,M15: initialized
+0	18:14:39.489	!AML PDW 1.4 2019 XAUUSD,M15: initialized
+0	18:14:42.981	Quick Style XAUUSD,M15: uninit reason 3
+0	18:14:42.984	OHLC Magnet XAUUSD,M15: uninit reason 3
+0	18:14:42.984	Time Range Separator XAUUSD,M15: uninit reason 3
+0	18:14:42.984	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 3
+0	18:14:42.985	CandleTime XAUUSD,M15: uninit reason 3
+0	18:14:42.985	Watermark Symbol XAUUSD,M15: uninit reason 3
+0	18:14:42.985	Asian Session Level XAUUSD,M15: uninit reason 3
+0	18:14:42.985	!BBMA MATrick N.G 2022 v1 XAUUSD,M15: uninit reason 3
+0	18:14:42.986	Trading box Technical analysis XAUUSD,M15: uninit reason 3
+0	18:14:42.987	!AML PDW 1.4 2019 XAUUSD,M15: uninit reason 3
+0	18:14:43.001	Quick Style XAUUSD,M5: 0
+0	18:14:43.001	Quick Style XAUUSD,M5: 0
+0	18:14:43.002	Quick Style XAUUSD,M5: 1
+0	18:14:43.002	Quick Style XAUUSD,M5: 1
+0	18:14:43.002	Quick Style XAUUSD,M5: 2
+0	18:14:43.002	Quick Style XAUUSD,M5: initialized
+0	18:14:43.002	OHLC Magnet XAUUSD,M5: initialized
+0	18:14:43.002	Time Range Separator XAUUSD,M5: initialized
+0	18:14:43.002	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	18:14:43.003	CandleTime XAUUSD,M5: initialized
+0	18:14:43.003	Watermark Symbol XAUUSD,M5: initialized
+0	18:14:43.003	Asian Session Level XAUUSD,M5: initialized
+0	18:14:43.003	!BBMA MATrick N.G 2022 v1 XAUUSD,M5: initialized
+0	18:14:43.018	Trading box Technical analysis XAUUSD,M5: initialized
+0	18:14:43.019	!AML PDW 1.4 2019 XAUUSD,M5: initialized
+0	18:14:47.325	Quick Style XAUUSD,M5: uninit reason 3
+0	18:14:47.328	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	18:14:47.328	Time Range Separator XAUUSD,M5: uninit reason 3
+0	18:14:47.328	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	18:14:47.328	CandleTime XAUUSD,M5: uninit reason 3
+0	18:14:47.328	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	18:14:47.328	Asian Session Level XAUUSD,M5: uninit reason 3
+0	18:14:47.329	!BBMA MATrick N.G 2022 v1 XAUUSD,M5: uninit reason 3
+0	18:14:47.330	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	18:14:47.330	!AML PDW 1.4 2019 XAUUSD,M5: uninit reason 3
+0	18:14:47.341	Quick Style XAUUSD,M15: 0
+0	18:14:47.341	Quick Style XAUUSD,M15: 0
+0	18:14:47.341	Quick Style XAUUSD,M15: 1
+0	18:14:47.341	Quick Style XAUUSD,M15: 1
+0	18:14:47.341	Quick Style XAUUSD,M15: 2
+0	18:14:47.341	Quick Style XAUUSD,M15: initialized
+0	18:14:47.342	OHLC Magnet XAUUSD,M15: initialized
+0	18:14:47.342	Time Range Separator XAUUSD,M15: initialized
+0	18:14:47.342	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	18:14:47.342	CandleTime XAUUSD,M15: initialized
+0	18:14:47.342	Watermark Symbol XAUUSD,M15: initialized
+0	18:14:47.343	Asian Session Level XAUUSD,M15: initialized
+0	18:14:47.343	!BBMA MATrick N.G 2022 v1 XAUUSD,M15: initialized
+0	18:14:47.357	Trading box Technical analysis XAUUSD,M15: initialized
+0	18:14:47.358	!AML PDW 1.4 2019 XAUUSD,M15: initialized
+0	18:15:00.419	Quick Style XAUUSD,M15: uninit reason 3
+0	18:15:00.422	OHLC Magnet XAUUSD,M15: uninit reason 3
+0	18:15:00.422	Time Range Separator XAUUSD,M15: uninit reason 3
+0	18:15:00.422	Kill Zone & 90 Min Cycle XAUUSD,M15: uninit reason 3
+0	18:15:00.423	CandleTime XAUUSD,M15: uninit reason 3
+0	18:15:00.423	Watermark Symbol XAUUSD,M15: uninit reason 3
+0	18:15:00.423	Asian Session Level XAUUSD,M15: uninit reason 3
+0	18:15:00.423	!BBMA MATrick N.G 2022 v1 XAUUSD,M15: uninit reason 3
+0	18:15:00.424	Trading box Technical analysis XAUUSD,M15: uninit reason 3
+0	18:15:00.424	!AML PDW 1.4 2019 XAUUSD,M15: uninit reason 3
+0	18:15:00.438	Quick Style XAUUSD,M5: 0
+0	18:15:00.438	Quick Style XAUUSD,M5: 0
+0	18:15:00.438	Quick Style XAUUSD,M5: 1
+0	18:15:00.438	Quick Style XAUUSD,M5: 1
+0	18:15:00.438	Quick Style XAUUSD,M5: 2
+0	18:15:00.438	Quick Style XAUUSD,M5: initialized
+0	18:15:00.439	OHLC Magnet XAUUSD,M5: initialized
+0	18:15:00.439	Time Range Separator XAUUSD,M5: initialized
+0	18:15:00.439	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	18:15:00.439	CandleTime XAUUSD,M5: initialized
+0	18:15:00.440	Watermark Symbol XAUUSD,M5: initialized
+0	18:15:00.440	Asian Session Level XAUUSD,M5: initialized
+0	18:15:00.440	!BBMA MATrick N.G 2022 v1 XAUUSD,M5: initialized
+0	18:15:00.454	Trading box Technical analysis XAUUSD,M5: initialized
+0	18:15:00.454	!AML PDW 1.4 2019 XAUUSD,M5: initialized
+0	18:15:10.898	Quick Style XAUUSD,M5: uninit reason 3
+0	18:15:10.900	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	18:15:10.900	Time Range Separator XAUUSD,M5: uninit reason 3
+0	18:15:10.901	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	18:15:10.901	CandleTime XAUUSD,M5: uninit reason 3
+0	18:15:10.901	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	18:15:10.902	Asian Session Level XAUUSD,M5: uninit reason 3
+0	18:15:10.902	!BBMA MATrick N.G 2022 v1 XAUUSD,M5: uninit reason 3
+0	18:15:10.903	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	18:15:10.903	!AML PDW 1.4 2019 XAUUSD,M5: uninit reason 3
+0	18:15:10.918	Quick Style XAUUSD,M1: 0
+0	18:15:10.919	Quick Style XAUUSD,M1: 0
+0	18:15:10.920	Quick Style XAUUSD,M1: 1
+0	18:15:10.920	Quick Style XAUUSD,M1: 1
+0	18:15:10.920	Quick Style XAUUSD,M1: 2
+0	18:15:10.921	Quick Style XAUUSD,M1: initialized
+0	18:15:10.921	OHLC Magnet XAUUSD,M1: initialized
+0	18:15:10.921	Time Range Separator XAUUSD,M1: initialized
+0	18:15:10.921	Kill Zone & 90 Min Cycle XAUUSD,M1: initialized
+0	18:15:10.922	CandleTime XAUUSD,M1: initialized
+0	18:15:10.922	Watermark Symbol XAUUSD,M1: initialized
+0	18:15:10.922	Asian Session Level XAUUSD,M1: initialized
+0	18:15:10.922	!BBMA MATrick N.G 2022 v1 XAUUSD,M1: initialized
+0	18:15:10.939	Trading box Technical analysis XAUUSD,M1: initialized
+0	18:15:10.939	!AML PDW 1.4 2019 XAUUSD,M1: initialized
+0	18:15:20.196	Quick Style XAUUSD,M1: uninit reason 3
+0	18:15:20.198	OHLC Magnet XAUUSD,M1: uninit reason 3
+0	18:15:20.198	Time Range Separator XAUUSD,M1: uninit reason 3
+0	18:15:20.199	Kill Zone & 90 Min Cycle XAUUSD,M1: uninit reason 3
+0	18:15:20.199	CandleTime XAUUSD,M1: uninit reason 3
+0	18:15:20.199	Watermark Symbol XAUUSD,M1: uninit reason 3
+0	18:15:20.199	Asian Session Level XAUUSD,M1: uninit reason 3
+0	18:15:20.199	!BBMA MATrick N.G 2022 v1 XAUUSD,M1: uninit reason 3
+0	18:15:20.201	Trading box Technical analysis XAUUSD,M1: uninit reason 3
+0	18:15:20.201	!AML PDW 1.4 2019 XAUUSD,M1: uninit reason 3
+0	18:15:20.213	Quick Style XAUUSD,M5: 0
+0	18:15:20.213	Quick Style XAUUSD,M5: 0
+0	18:15:20.214	Quick Style XAUUSD,M5: 1
+0	18:15:20.214	Quick Style XAUUSD,M5: 1
+0	18:15:20.214	Quick Style XAUUSD,M5: 2
+0	18:15:20.214	Quick Style XAUUSD,M5: initialized
+0	18:15:20.214	OHLC Magnet XAUUSD,M5: initialized
+0	18:15:20.214	Time Range Separator XAUUSD,M5: initialized
+0	18:15:20.214	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	18:15:20.215	CandleTime XAUUSD,M5: initialized
+0	18:15:20.215	Watermark Symbol XAUUSD,M5: initialized
+0	18:15:20.215	Asian Session Level XAUUSD,M5: initialized
+0	18:15:20.215	!BBMA MATrick N.G 2022 v1 XAUUSD,M5: initialized
+0	18:15:20.231	Trading box Technical analysis XAUUSD,M5: initialized
+0	18:15:20.231	!AML PDW 1.4 2019 XAUUSD,M5: initialized
+0	18:15:48.675	Quick Style XAUUSD,M5: uninit reason 3
+0	18:15:48.678	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	18:15:48.678	Time Range Separator XAUUSD,M5: uninit reason 3
+0	18:15:48.679	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	18:15:48.679	CandleTime XAUUSD,M5: uninit reason 3
+0	18:15:48.679	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	18:15:48.679	Asian Session Level XAUUSD,M5: uninit reason 3
+0	18:15:48.679	!BBMA MATrick N.G 2022 v1 XAUUSD,M5: uninit reason 3
+0	18:15:48.681	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	18:15:48.681	!AML PDW 1.4 2019 XAUUSD,M5: uninit reason 3
+0	18:15:48.696	Quick Style XAUUSD,M1: 0
+0	18:15:48.696	Quick Style XAUUSD,M1: 0
+0	18:15:48.696	Quick Style XAUUSD,M1: 1
+0	18:15:48.696	Quick Style XAUUSD,M1: 1
+0	18:15:48.697	Quick Style XAUUSD,M1: 2
+0	18:15:48.697	Quick Style XAUUSD,M1: initialized
+0	18:15:48.697	OHLC Magnet XAUUSD,M1: initialized
+0	18:15:48.697	Time Range Separator XAUUSD,M1: initialized
+0	18:15:48.697	Kill Zone & 90 Min Cycle XAUUSD,M1: initialized
+0	18:15:48.698	CandleTime XAUUSD,M1: initialized
+0	18:15:48.698	Watermark Symbol XAUUSD,M1: initialized
+0	18:15:48.698	Asian Session Level XAUUSD,M1: initialized
+0	18:15:48.698	!BBMA MATrick N.G 2022 v1 XAUUSD,M1: initialized
+0	18:15:48.714	Trading box Technical analysis XAUUSD,M1: initialized
+0	18:15:48.714	!AML PDW 1.4 2019 XAUUSD,M1: initialized
+0	18:29:53.978	Quick Style XAUUSD,M1: uninit reason 3
+0	18:29:53.982	OHLC Magnet XAUUSD,M1: uninit reason 3
+0	18:29:53.982	Time Range Separator XAUUSD,M1: uninit reason 3
+0	18:29:53.982	Kill Zone & 90 Min Cycle XAUUSD,M1: uninit reason 3
+0	18:29:53.983	CandleTime XAUUSD,M1: uninit reason 3
+0	18:29:53.983	Watermark Symbol XAUUSD,M1: uninit reason 3
+0	18:29:53.983	Asian Session Level XAUUSD,M1: uninit reason 3
+0	18:29:53.983	!BBMA MATrick N.G 2022 v1 XAUUSD,M1: uninit reason 3
+0	18:29:53.984	Trading box Technical analysis XAUUSD,M1: uninit reason 3
+0	18:29:53.984	!AML PDW 1.4 2019 XAUUSD,M1: uninit reason 3
+0	18:29:53.999	Quick Style XAUUSD,M5: 0
+0	18:29:53.999	Quick Style XAUUSD,M5: 0
+0	18:29:53.999	Quick Style XAUUSD,M5: 1
+0	18:29:53.999	Quick Style XAUUSD,M5: 1
+0	18:29:53.999	Quick Style XAUUSD,M5: 2
+0	18:29:54.000	Quick Style XAUUSD,M5: initialized
+0	18:29:54.000	OHLC Magnet XAUUSD,M5: initialized
+0	18:29:54.000	Time Range Separator XAUUSD,M5: initialized
+0	18:29:54.000	Kill Zone & 90 Min Cycle XAUUSD,M5: initialized
+0	18:29:54.001	CandleTime XAUUSD,M5: initialized
+0	18:29:54.001	Watermark Symbol XAUUSD,M5: initialized
+0	18:29:54.001	Asian Session Level XAUUSD,M5: initialized
+0	18:29:54.001	!BBMA MATrick N.G 2022 v1 XAUUSD,M5: initialized
+0	18:29:54.019	Trading box Technical analysis XAUUSD,M5: initialized
+0	18:29:54.019	!AML PDW 1.4 2019 XAUUSD,M5: initialized
+0	18:47:13.245	Quick Style XAUUSD,M5: uninit reason 3
+0	18:47:13.248	OHLC Magnet XAUUSD,M5: uninit reason 3
+0	18:47:13.248	Time Range Separator XAUUSD,M5: uninit reason 3
+0	18:47:13.248	Kill Zone & 90 Min Cycle XAUUSD,M5: uninit reason 3
+0	18:47:13.249	CandleTime XAUUSD,M5: uninit reason 3
+0	18:47:13.249	Watermark Symbol XAUUSD,M5: uninit reason 3
+0	18:47:13.249	Asian Session Level XAUUSD,M5: uninit reason 3
+0	18:47:13.249	!BBMA MATrick N.G 2022 v1 XAUUSD,M5: uninit reason 3
+0	18:47:13.251	Trading box Technical analysis XAUUSD,M5: uninit reason 3
+0	18:47:13.251	!AML PDW 1.4 2019 XAUUSD,M5: uninit reason 3
+0	18:47:13.268	Quick Style XAUUSD,M15: 0
+0	18:47:13.268	Quick Style XAUUSD,M15: 0
+0	18:47:13.268	Quick Style XAUUSD,M15: 1
+0	18:47:13.268	Quick Style XAUUSD,M15: 1
+0	18:47:13.268	Quick Style XAUUSD,M15: 2
+0	18:47:13.269	Quick Style XAUUSD,M15: initialized
+0	18:47:13.269	OHLC Magnet XAUUSD,M15: initialized
+0	18:47:13.270	Time Range Separator XAUUSD,M15: initialized
+0	18:47:13.270	Kill Zone & 90 Min Cycle XAUUSD,M15: initialized
+0	18:47:13.272	CandleTime XAUUSD,M15: initialized
+0	18:47:13.273	Watermark Symbol XAUUSD,M15: initialized
+0	18:47:13.273	Asian Session Level XAUUSD,M15: initialized
+0	18:47:13.274	!BBMA MATrick N.G 2022 v1 XAUUSD,M15: initialized
+0	18:47:13.333	Trading box Technical analysis XAUUSD,M15: initialized
+0	18:47:13.333	!AML PDW 1.4 2019 XAUUSD,M15: initialized
+0	18:47:19.474	Quick Style EURUSD,M1: uninit reason 3
+0	18:47:19.480	OHLC Magnet EURUSD,M1: uninit reason 3
+0	18:47:19.480	Time Range Separator EURUSD,M1: uninit reason 3
+0	18:47:19.480	Kill Zone & 90 Min Cycle EURUSD,M1: uninit reason 3
+0	18:47:19.480	CandleTime EURUSD,M1: uninit reason 3
+0	18:47:19.480	Watermark Symbol EURUSD,M1: uninit reason 3
+0	18:47:19.481	Asian Session Level EURUSD,M1: uninit reason 3
+0	18:47:19.481	!BBMA MATrick N.G 2022 v1 EURUSD,M1: uninit reason 3
+0	18:47:19.482	Trading box Technical analysis EURUSD,M1: uninit reason 3
+0	18:47:19.482	!AML PDW 1.4 2019 EURUSD,M1: uninit reason 3
+0	18:47:19.504	Quick Style EURUSD,H1: 0
+0	18:47:19.504	Quick Style EURUSD,H1: 0
+0	18:47:19.504	Quick Style EURUSD,H1: 1
+0	18:47:19.504	Quick Style EURUSD,H1: 1
+0	18:47:19.504	Quick Style EURUSD,H1: 2
+0	18:47:19.504	Quick Style EURUSD,H1: initialized
+0	18:47:19.505	OHLC Magnet EURUSD,H1: initialized
+0	18:47:19.506	Time Range Separator EURUSD,H1: initialized
+0	18:47:19.506	Kill Zone & 90 Min Cycle EURUSD,H1: initialized
+0	18:47:19.507	CandleTime EURUSD,H1: initialized
+0	18:47:19.508	Watermark Symbol EURUSD,H1: initialized
+0	18:47:19.509	Asian Session Level EURUSD,H1: initialized
+0	18:47:19.509	!BBMA MATrick N.G 2022 v1 EURUSD,H1: initialized
+0	18:47:19.583	Trading box Technical analysis EURUSD,H1: initialized
+0	18:47:19.584	!AML PDW 1.4 2019 EURUSD,H1: initialized
+0	18:47:38.516	!AML PDW 1.4 2019 EURUSD,H1: uninit reason 1
+0	18:47:38.519	Custom indicator !AML PDW 1.4 2019 EURUSD,H1: removed
+0	18:47:45.210	Quick Style EURUSD,H1: uninit reason 3
+0	18:47:45.213	OHLC Magnet EURUSD,H1: uninit reason 3
+0	18:47:45.213	Time Range Separator EURUSD,H1: uninit reason 3
+0	18:47:45.213	Kill Zone & 90 Min Cycle EURUSD,H1: uninit reason 3
+0	18:47:45.214	CandleTime EURUSD,H1: uninit reason 3
+0	18:47:45.214	Watermark Symbol EURUSD,H1: uninit reason 3
+0	18:47:45.214	Asian Session Level EURUSD,H1: uninit reason 3
+0	18:47:45.214	!BBMA MATrick N.G 2022 v1 EURUSD,H1: uninit reason 3
+0	18:47:45.216	Trading box Technical analysis EURUSD,H1: uninit reason 3
+0	18:47:45.238	Quick Style EURUSD,M5: 0
+0	18:47:45.238	Quick Style EURUSD,M5: 0
+0	18:47:45.238	Quick Style EURUSD,M5: 1
+0	18:47:45.238	Quick Style EURUSD,M5: 1
+0	18:47:45.238	Quick Style EURUSD,M5: 2
+0	18:47:45.238	Quick Style EURUSD,M5: initialized
+0	18:47:45.239	OHLC Magnet EURUSD,M5: initialized
+0	18:47:45.239	Time Range Separator EURUSD,M5: initialized
+0	18:47:45.239	Kill Zone & 90 Min Cycle EURUSD,M5: initialized
+0	18:47:45.240	CandleTime EURUSD,M5: initialized
+0	18:47:45.240	Watermark Symbol EURUSD,M5: initialized
+0	18:47:45.240	Asian Session Level EURUSD,M5: initialized
+0	18:47:45.240	!BBMA MATrick N.G 2022 v1 EURUSD,M5: initialized
+0	18:47:45.255	Trading box Technical analysis EURUSD,M5: initialized
+0	18:48:02.479	Asian Session Level EURUSD,M5: uninit reason 1
+0	18:48:02.481	Custom indicator Asian Session Level EURUSD,M5: removed
+0	18:48:10.641	Kill Zone & 90 Min Cycle EURUSD,M5: uninit reason 5
+0	18:48:10.658	Kill Zone & 90 Min Cycle EURUSD,M5: initialized
+0	18:48:31.249	!BBMA MATrick N.G 2022 v1 EURUSD,M5: uninit reason 5
+0	18:48:31.284	!BBMA MATrick N.G 2022 v1 EURUSD,M5: initialized
+0	18:48:37.091	!BBMA MATrick N.G 2022 v1 EURUSD,M5: uninit reason 5
+0	18:48:37.121	!BBMA MATrick N.G 2022 v1 EURUSD,M5: initialized
+0	19:00:06.175	!BBMA MATrick N.G 2022 v1 EURUSD,M5: uninit reason 5
+0	19:00:06.209	!BBMA MATrick N.G 2022 v1 EURUSD,M5: initialized
+0	21:41:18.542	!BBMA MATrick N.G 2022 v1 EURUSD,M5: uninit reason 5
+0	21:41:18.572	!BBMA MATrick N.G 2022 v1 EURUSD,M5: initialized
+0	21:44:04.591	!BBMA MATrick N.G 2022 v1 EURUSD,M5: uninit reason 5
+0	21:44:04.628	!BBMA MATrick N.G 2022 v1 EURUSD,M5: initialized
+0	22:40:53.200	!BBMA MATrick N.G 2022 v1 EURUSD,M5: uninit reason 5
+0	22:40:53.228	!BBMA MATrick N.G 2022 v1 EURUSD,M5: initialized
