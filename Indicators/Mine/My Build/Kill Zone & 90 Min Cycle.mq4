@@ -184,7 +184,7 @@ int OnCalculate(const int rates_total,
                 Sett(Text(objName, getDateTime830AM(), lowestYPos, ninetyMinutesCycle[1], 7, clr90min, textAngle));
             }
 
-            // 11.30 AM VLine
+           /* // 11.30 AM VLine
             objName = "VL " + ninetyMinutesCycle[2];
             if (!findObject(objName)){
                 Sett(VLineCreate(objName, getDateTime1130AM(), clr90min, 2, 1));
@@ -193,7 +193,7 @@ int OnCalculate(const int rates_total,
             objName = "VLT " + ninetyMinutesCycle[2];
             if (!findObject(objName)) {
                 Sett(Text(objName, getDateTime1130AM(), lowestYPos, ninetyMinutesCycle[2], 7, clr90min, textAngle));
-            }
+            }*/
 
             // London Session 1 Start VLine
             objName = "VL " + london[0];
@@ -239,7 +239,7 @@ int OnCalculate(const int rates_total,
                 Sett(Text(objName, getDateTimeNewYorkStop(), lowestYPos, newYork[2] + " / " + london[2], fontSize, clrNyKz, textAngle));
             }
 
-            // London Session 2 Stop Vline
+            /*// London Session 2 Stop Vline
             objName = "VL " + london[3];
             if (!findObject(objName)) {
                 Sett(VLineCreate(objName, getDateTimeLondonSession2Stop(), clrLondonKz, 2, 1));
@@ -248,12 +248,12 @@ int OnCalculate(const int rates_total,
             objName = "VLT " + london[3];
             if (!findObject(objName)) {
                 Sett(Text(objName, getDateTimeLondonSession2Stop(), lowestYPos, london[3], fontSize, clrLondonKz, textAngle));
-            }
+            }*/
 
         }
 
         // Today 2 Hours Cycle
-        if (Show2Hr) {
+        /*if (Show2Hr) {
 
             // 2 AM VLine
             objName = "VL " + twoHoursCycle[0];
@@ -321,7 +321,7 @@ int OnCalculate(const int rates_total,
                 Sett(Text(objName, getDateTime12AM(), lowestYPos, twoHoursCycle[5], 7, clr2Hr, textAngle));
             }
 
-        }
+        }*/
 
         // Today London and New York Trendlines
         if (ShowLondonNewYork) {
@@ -504,7 +504,7 @@ int OnCalculate(const int rates_total,
                     }
                 }
 
-                // Datetime 11.30 AM
+                /*// Datetime 11.30 AM
                 dt = getDateTime1130AM() - (oneDay * i);
                 if (!currentTimeIsWeekend(dt)) {
                     // 11.30 AM VLine
@@ -517,7 +517,7 @@ int OnCalculate(const int rates_total,
                     if (!findObject(objName)) {
                         Sett(Text(objName, dt, lowestYPos, ninetyMinutesCycle[2], fontSize, clr90min, textAngle));
                     }
-                }
+                }*/
 
                 // Datetime Separator
                 dt = getDateTimeSeparator() - (oneDay * i);
@@ -594,7 +594,7 @@ int OnCalculate(const int rates_total,
                     }
                 }
 
-                // Datetime London Session 2 Stop
+                /*// Datetime London Session 2 Stop
                 dt = getDateTimeLondonSession2Stop() - (oneDay * i);
                 if (!currentTimeIsWeekend(dt)) {
                     // London Session 2 Stop Vline
@@ -607,12 +607,12 @@ int OnCalculate(const int rates_total,
                     if (!findObject(objName)) {
                         Sett(Text(objName, dt, lowestYPos, london[3], fontSize, clrLondonKz, textAngle));
                     }
-                }
+                }*/
 
             }
         }
    
-        if (ShowAll2Hr) {
+        /*if (ShowAll2Hr) {
             for (int i = 1; i <= lookback; i++) {
                 // Datetime 2 AM
                 dt = getDateTime2AM() - (oneDay * i);
@@ -705,7 +705,7 @@ int OnCalculate(const int rates_total,
                 }                
 
             }
-        }
+        }*/
 
     }
 

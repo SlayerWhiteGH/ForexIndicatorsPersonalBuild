@@ -54,12 +54,12 @@ input string           _MODEENTRY= "--- TF ENTRY ---";//_______________________0
 input ENUM_MA_METHOD
                modeMA            = MODE_SMA;       //---------- MA Method ----------
 input bool Entry1                = false;          //TF KONFIRMASI 1
-input bool Entry2                = false;           //TF KONFIRMASI 2
+input bool Entry2                = true;           //TF KONFIRMASI 2
 
 input string           _MODEBASIC= "--- SETTING TF ---";//_______________________00  
 input bool tfactive              = true;           //TF ACTIVE 
 input bool acuan01               = true;          //TF ACUAN 01
-input bool acuan02               = false;          //TF ACUAN 02
+input bool acuan02               = true;          //TF ACUAN 02
 input bool acuan03               = false;          //TF ACUAN 03
 input bool acuan04               = false;          //TF ACUAN 04
 input bool acuan05               = false;          //TF ACUAN 05

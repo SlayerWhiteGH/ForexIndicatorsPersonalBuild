@@ -11,7 +11,7 @@
 #property description " "
 #property description "                     --- @2022 --- "
 #property indicator_chart_window
-#property indicator_buffers 50
+#property indicator_buffers 32
 
 enum eModeMA         {_DisableAll/*Disable*/,_shEMA50/*Show EMA50*/,_shMAtr/*Show MATrend*/};
 enum eModeBB         {_DisableBB/*Disable*/,_shSD1/*Show BB SD 1*/,_shSD2/*Show BB SD 2*/,_shFSD/*Show BB SD 1 & 2*/};
@@ -23,49 +23,43 @@ extern int button_x              = 0;               // X
 extern int button_y              = 0;                // Y
 input string                 _Reguler= "--- REGULAR ---";//_______________________00
 
-input bool colormode             = true;          //Show White Background
 input bool showmathead           = false;          //Show MATrend Header
 input bool xlsma                 = false;          //LSMA MODE
-input eModeLine linemode         = _4L;            //Line MATrick Type    
-input eModeLine linemode1        = _3L;            //Line BB Type SD 1   
+input eModeLine linemode         = _2L;            //Line MATrick Type    
+input eModeLine linemode1        = _0L;            //Line BB Type SD 1   
 input eModeLine linemode2        = _0L;            //Line BB Type SD 2     
 input ENUM_MA_METHOD
                modeMA            = MODE_SMA;       //---------- MA Method ----------
  
 input string                  _BB= "--- BB SETTING ---";//_______________________00           
-input eModeBB  s0ModeBB          = _shSD2;         //BB TFX ENTRY
-input eModeBB  s1ModeBB          = _shSD2;     //BB ACTIVE 
+input eModeBB  s0ModeBB          = _shSD1;         //BB TFX ENTRY
+input eModeBB  s1ModeBB          = _shSD1;         //BB ACTIVE 
 input eModeBB  s2ModeBB          = _DisableBB;     //BB TF ACUAN 01 
-input eModeBB  s3ModeBB          = _DisableBB;     //BB TF ACUAN 02 
 
    
 input string           _MODEENTRY= "--- TF ENTRY ---";//_______________________00
 
-input bool Entry1                = false;          //TF ENTRY
+input bool Entry1                = true;          //TF ENTRY
 input bool Entry2                = true;           //TFX ENTRY
 
 input string           _MODEBASIC= "--- SETTING TF ---";//_______________________00  
 input bool tfactive              = true;           //TF ACTIVE 
 input bool acuan01               = false;          //TF ACUAN 01
-input bool acuan02               = false;          //TF ACUAN 02
 
+input string        _chour= "--- COLOR TF Entry ---";//_______________________00    
+input color    clr1hr            = clrRed,//-------- 1 HOUR
+               clr4hr            = clrYellow,//-------- 4 HOUR
+               clrd1             = clrLime,//-------- DAILY
+               clrw1             = clrMagenta,//-------- WEEKLY
+               clr1mh            = clrAqua,//-------- MONTHLY
+               clr4mh            = clrGold,//-------- 4 MONTHLY
+               clr1yr            = clrGreen;//-------- YEAR
 
-          
-input string                _LWMA= "--- LWMA HiLo SETTING ---";//_______________________00 
-input bool lwma5                 = false;          //HiLo LWMA 5
-input bool lwma10                = false;          //HiLo LWMA 10
-input color    clLWSMA1          = clrNONE,        //LWMA 5
-               clLWSMA2          = clrNONE;        //LWMA 10  
-input bool lwma3                 = false;          //HiLo LWMA TF Active
-input bool lwma4                 = false;          //HiLo LWMA TFX 
-input color    clLWSMA30         = clrNONE,        //LWMA TF Active
-               clLWSMA40         = clrNONE;        //LWMA TFX  
-
-
-
-input string        _ckonfirmasi1= "--- COLOR TF Entry ---";//_______________________00             
-input color    clSMA1            = clrNONE,//-------- MID
-               clSMAT1           = clrNONE;//-------- MA TRICK 
+input string        _ckonfirmasi1= "--- COLOR TFX Entry ---";//_______________________00                  
+input color    clSMA1            = clrNONE,//-------- MID 
+               clSMAT1           = clrNONE,//-------- MA TRICK
+               clSDP1            = clrNONE,//-------- SD +
+               clSDM1            = clrNONE;//-------- SD -  
 
 input string        _ckonfirmasi2= "--- COLOR TFX Entry ---";//_______________________00                  
 input color    clSMA2            = clrNONE,//-------- MID 
@@ -76,8 +70,8 @@ input color    clSMA2            = clrNONE,//-------- MID
 input string             _cACTIVE= "--- COLOR TF ACTIVE ---";//_______________________00               
 input color    clSMA3            = clrNONE,//-------- MID
                clSMAT3           = clrNONE,//-------- MA TRICK
-               clSDP3            = C'43,43,255',//-------- SD +
-               clSDM3            = C'43,43,255';//-------- SD -  
+               clSDP3            = clrNONE,//-------- SD +
+               clSDM3            = clrNONE;//-------- SD -  
                
 input string              _acuan1= "--- COLOR TF ACUAN 01 ---";//_______________________00                 
 input color    clSMA4            = clrNONE,//-------- MID
@@ -85,11 +79,6 @@ input color    clSMA4            = clrNONE,//-------- MID
                clSDP4            = clrNONE,//-------- SD +
                clSDM4            = clrNONE;//-------- SD - 
 
-input string              _acuan2= "--- COLOR TF ACUAN 02 ---";//_______________________00                
-input color    clSMA5            = clrNONE,//-------- MID
-               clSMAT5           = clrNONE,//-------- MA TRICK 
-               clSDP5            = clrNONE,//-------- SD +
-               clSDM5            = clrNONE;//-------- SD -  
 
             
 
@@ -140,10 +129,6 @@ bool BB1_enable = s0ModeBB==_shSD1, //BB TFX ENTRY
      b1BB1_enable = s2ModeBB==_shSD1, //BB TF ACUAN 01 
      b1BB2_enable = s2ModeBB==_shSD2,
      b1BBF_enable = s2ModeBB==_shFSD,
-     
-     b2BB1_enable = s3ModeBB==_shSD1, //BB TF ACUAN 02
-     b2BB2_enable = s3ModeBB==_shSD2,
-     b2BBF_enable = s3ModeBB==_shFSD,
         
      line0_enable = linemode==_0L,
      line1_enable = linemode==_1L,
@@ -231,74 +216,52 @@ int OnInit() {
    lP1=StrToInteger(getPer(125,0,1));
    lP2=StrToInteger(getPer(126,0,1));   
   
-   IndicatorBuffers(50);
+   IndicatorBuffers(32);
  
-   SetIndexBuffer(49,SDP02);  SetIndexStyle(49,isOn&&BB1_enable?0:12,linemode1,1,getClr(96,0,(colormode==false?true:false),clSDP2)); SetIndexLabel(49,"BB20UPR_SD 1_" +getPer(96,0,0,false)+"");
-   SetIndexBuffer(48,SDM02);  SetIndexStyle(48,isOn&&BB1_enable?0:12,linemode1,1,getClr(96,0,(colormode==false?true:false),clSDM2)); SetIndexLabel(48,"BB20LWR_SD 1_" +getPer(96,0,0,false)+"");
-   SetIndexBuffer(47,SDP022); SetIndexStyle(47,isOn&&BB2_enable?0:12,linemode2,1,getClr(96,0,(colormode==false?true:false),clSDP2)); SetIndexLabel(47,"BB20UPR_SD 2_" +getPer(96,0,0,false)+"");
-   SetIndexBuffer(46,SDM022); SetIndexStyle(46,isOn&&BB2_enable?0:12,linemode2,1,getClr(96,0,(colormode==false?true:false),clSDM2)); SetIndexLabel(45,"BB20LWR_SD 2_" +getPer(96,0,0,false)+"");
+   SetIndexBuffer(31,SDP02);  SetIndexStyle(49,isOn&&BB1_enable?0:12,linemode1,1,getClr(96,0,false,clSDP2)); SetIndexLabel(31,"BB20UPR_SD 1_" +getPer(96,0,0,false)+"");
+   SetIndexBuffer(30,SDM02);  SetIndexStyle(48,isOn&&BB1_enable?0:12,linemode1,1,getClr(96,0,false,clSDM2)); SetIndexLabel(30,"BB20LWR_SD 1_" +getPer(96,0,0,false)+"");
+   SetIndexBuffer(29,SDP022); SetIndexStyle(47,isOn&&BB2_enable?0:12,linemode2,1,getClr(96,0,false,clSDP2)); SetIndexLabel(29,"BB20UPR_SD 2_" +getPer(96,0,0,false)+"");
+   SetIndexBuffer(28,SDM022); SetIndexStyle(46,isOn&&BB2_enable?0:12,linemode2,1,getClr(96,0,false,clSDM2)); SetIndexLabel(28,"BB20LWR_SD 2_" +getPer(96,0,0,false)+"");
  
-   SetIndexBuffer(45,sSDP02); SetIndexStyle(45,isOn&&BBF_enable?0:12,linemode1,1,getClr(96,0,(colormode==false?true:false),clSDP2)); SetIndexLabel(45,"BB20UPR_SD 1_" +getPer(96,0,0,false)+"");
-   SetIndexBuffer(44,sSDM02); SetIndexStyle(44,isOn&&BBF_enable?0:12,linemode1,1,getClr(96,0,(colormode==false?true:false),clSDM2)); SetIndexLabel(44,"BB20LWR_SD 1_" +getPer(96,0,0,false)+"");
-   SetIndexBuffer(43,sSDP022); SetIndexStyle(43,isOn&&BBF_enable?0:12,linemode2,1,getClr(96,0,(colormode==false?true:false),clSDP2)); SetIndexLabel(43,"BB20UPR_SD 2_" +getPer(96,0,0,false)+"");
-   SetIndexBuffer(42,sSDM022); SetIndexStyle(42,isOn&&BBF_enable?0:12,linemode2,1,getClr(96,0,(colormode==false?true:false),clSDM2)); SetIndexLabel(42,"BB20LWR_SD 2_" +getPer(96,0,0,false)+"");
+   SetIndexBuffer(27,sSDP02); SetIndexStyle(45,isOn&&BBF_enable?0:12,linemode1,1, getClr(96,0,false,clSDP2)); SetIndexLabel(27,"BB20UPR_SD 1_" +getPer(96,0,0,false)+"");
+   SetIndexBuffer(26,sSDM02); SetIndexStyle(44,isOn&&BBF_enable?0:12,linemode1,1, getClr(96,0,false,clSDM2)); SetIndexLabel(26,"BB20LWR_SD 1_" +getPer(96,0,0,false)+"");
+   SetIndexBuffer(25,sSDP022); SetIndexStyle(43,isOn&&BBF_enable?0:12,linemode2,1,getClr(96,0,false,clSDP2)); SetIndexLabel(25,"BB20UPR_SD 2_" +getPer(96,0,0,false)+"");
+   SetIndexBuffer(24,sSDM022); SetIndexStyle(42,isOn&&BBF_enable?0:12,linemode2,1,getClr(96,0,false,clSDM2)); SetIndexLabel(24,"BB20LWR_SD 2_" +getPer(96,0,0,false)+"");
  
-   SetIndexBuffer(41,SMAT05);SetIndexStyle(41,isOn?0:12,linemode,1,getClr(105,0,(colormode==false?true:false),clSMAT5)); SetIndexLabel(41,"MaTrick " +getPer(105,0,0,false)+"");  //ACUAN 2
-   SetIndexBuffer(40,SMAT04);SetIndexStyle(40,isOn?0:12,linemode,1,getClr(104,0,(colormode==false?true:false),clSMAT4)); SetIndexLabel(40,"MaTrick " +getPer(104,0,0,false)+"");  //ACUAN 1
-   SetIndexBuffer(39,SMAT03);SetIndexStyle(39,isOn?0:12,linemode,1,getClr(103,0,(colormode==false?true:false),clSMAT3)); SetIndexLabel(39,"MaTrick " +getPer(103,0,0,false)+"");  //ACTIVE
-   SetIndexBuffer(38,SMAT02);SetIndexStyle(38,isOn?0:12,linemode,1,getClr(102,0,(colormode==false?true:false),clSMAT2)); SetIndexLabel(38,"MaTrick " +getPer(102,0,0,false)+"");  //TF KONFIRMASI 2
-   SetIndexBuffer(37,SMAT01);SetIndexStyle(37,isOn?0:12,linemode,1,getClr(101,0,(colormode==false?true:false),clSMAT1)); SetIndexLabel(37,"MaTrick " +getPer(101,0,0,false)+"");  //TF KONFIRMASI 1
+   SetIndexBuffer(23,SMAT04);SetIndexStyle(40,isOn?0:12,linemode,1,getClr(104,0,false,clSMAT4)); SetIndexLabel(23,"MaTrick " +getPer(104,0,0,false)+"");  //ACUAN 1
+   SetIndexBuffer(22,SMAT03);SetIndexStyle(39,isOn?0:12,linemode,1,getClr(103,0,false,clSMAT3)); SetIndexLabel(22,"MaTrick " +getPer(103,0,0,false)+"");  //ACTIVE
+   SetIndexBuffer(21,SMAT02);SetIndexStyle(38,isOn?0:12,linemode,1,getClr(102,0,false,clSMAT2)); SetIndexLabel(21,"MaTrick " +getPer(102,0,0,false)+"");  //TF KONFIRMASI 2
+   SetIndexBuffer(20,SMAT01);SetIndexStyle(37,isOn?0:12,linemode,1,getClr(101,0,false,clSMAT1)); SetIndexLabel(20,"MaTrick " +getPer(101,0,0,false)+"");  //TF KONFIRMASI 1
    
    //MID BB
-   SetIndexBuffer(36,SMA05); SetIndexStyle(36,isOn?0:12,0,1,getClr(99,0,(colormode==false?true:false),clSMA5));   SetIndexLabel(36,"MidBB " +getPer(99,0,0,false)+"");   //ACUAN 2
-   SetIndexBuffer(35,SMA04); SetIndexStyle(35,isOn?0:12,0,1,getClr(98,0,(colormode==false?true:false),clSMA4));   SetIndexLabel(35,"MidBB " +getPer(98,0,0,false)+"");   //ACUAN 1
-   SetIndexBuffer(34,SMA03); SetIndexStyle(34,isOn?0:12,0,1,getClr(97,0,(colormode==false?true:false),clSMA3));   SetIndexLabel(34,"MidBB " +getPer(97,0,0,false)+"");   //ACTIVE
-   SetIndexBuffer(33,SMA02); SetIndexStyle(33,isOn?0:12,0,1,getClr(96,0,(colormode==false?true:false),clSMA2));   SetIndexLabel(33,"MidBB " +getPer(96,0,0,false)+"");   //TF KONFIRMASI 2
-   SetIndexBuffer(32,SMA01); SetIndexStyle(32,isOn?0:12,0,1,getClr(95,0,(colormode==false?true:false),clSMA1));   SetIndexLabel(32,"MidBB " +getPer(95,0,0,false)+"");   //TF KONFIRMASI 1
+   SetIndexBuffer(19,SMA04); SetIndexStyle(35,isOn?0:12,0,1,getClr(98,0,false,clSMA4));   SetIndexLabel(19,"MidBB " +getPer(98,0,0,false)+"");   //ACUAN 1
+   SetIndexBuffer(18,SMA03); SetIndexStyle(34,isOn?0:12,0,1,getClr(97,0,false,clSMA3));   SetIndexLabel(18,"MidBB " +getPer(97,0,0,false)+"");   //ACTIVE
+   SetIndexBuffer(17,SMA02); SetIndexStyle(33,isOn?0:12,0,1,getClr(96,0,false,clSMA2));   SetIndexLabel(17,"MidBB " +getPer(96,0,0,false)+"");   //TF KONFIRMASI 2
+   SetIndexBuffer(16,SMA01); SetIndexStyle(32,isOn?0:12,0,1,getClr(95,0,false,clSMA1));   SetIndexLabel(16,"MidBB " +getPer(95,0,0,false)+"");   //TF KONFIRMASI 1
 
-   //LWMA HIGH LOW
-   SetIndexBuffer(31,LLWMA04); SetIndexStyle(31,isOn?0:12,0,2,getClr(102,0,(colormode==false?true:false),clLWSMA40)); SetIndexLabel(31,getPer(98,0,0,false));
-   SetIndexBuffer(30,HLWMA04); SetIndexStyle(30,isOn?0:12,0,2,getClr(101,0,(colormode==false?true:false),clLWSMA40)); SetIndexLabel(30,getPer(98,0,0,false));
-   SetIndexBuffer(29,LLWMA03); SetIndexStyle(29,isOn?0:12,0,2,getClr(102,0,(colormode==false?true:false),clLWSMA30)); SetIndexLabel(29,getPer(97,0,0,false));  
-   SetIndexBuffer(28,HLWMA03); SetIndexStyle(28,isOn?0:12,0,2,getClr(101,0,(colormode==false?true:false),clLWSMA30)); SetIndexLabel(28,getPer(97,0,0,false));
-
-   SetIndexBuffer(27,LLWMA02); SetIndexStyle(27,isOn?0:12,0,1,getClr(102,0,(colormode==false?true:false),clLWSMA2)); SetIndexLabel(27,getPer(96,0,0,false));
-   SetIndexBuffer(26,HLWMA02); SetIndexStyle(26,isOn?0:12,0,1,getClr(101,0,(colormode==false?true:false),clLWSMA1)); SetIndexLabel(26,getPer(96,0,0,false));
-   SetIndexBuffer(25,LLWMA01); SetIndexStyle(25,isOn?0:12,0,1,getClr(102,0,(colormode==false?true:false),clLWSMA2)); SetIndexLabel(25,getPer(95,0,0,false));
-   SetIndexBuffer(24,HLWMA01); SetIndexStyle(24,isOn?0:12,0,1,getClr(101,0,(colormode==false?true:false),clLWSMA1)); SetIndexLabel(24,getPer(95,0,0,false));
    
    //BB TF ACTIVE
-   SetIndexBuffer(23,SDP03); SetIndexStyle(23,isOn&&XBB1_enable?0:12,linemode1,(clSDM3==C'43,43,255'?2:1),getClr(97,0,(colormode==false?true:false),clSDP3)); SetIndexLabel(23,"BB20UPR_SD 1_" +getPer(97,0,0,false)+"");
-   SetIndexBuffer(22,SDM03); SetIndexStyle(22,isOn&&XBB1_enable?0:12,linemode1,(clSDM3==C'43,43,255'?2:1),getClr(97,0,(colormode==false?true:false),clSDM3)); SetIndexLabel(22,"BB20LWR_SD 1_" +getPer(97,0,0,false)+"");
-   SetIndexBuffer(21,SDP032);SetIndexStyle(21,isOn&&XBB2_enable?0:12,linemode2,(clSDM3==C'43,43,255'?2:1),getClr(97,0,(colormode==false?true:false),clSDP3)); SetIndexLabel(21,"BB20UPR_SD 2_" +getPer(97,0,0,false)+"");
-   SetIndexBuffer(20,SDM032);SetIndexStyle(20,isOn&&XBB2_enable?0:12,linemode2,(clSDM3==C'43,43,255'?2:1),getClr(97,0,(colormode==false?true:false),clSDM3)); SetIndexLabel(20,"BB20LWR_SD 2_" +getPer(97,0,0,false)+"");
+   SetIndexBuffer(15,SDP03); SetIndexStyle(23,isOn&&XBB1_enable?0:12,linemode1,(clSDM3==C'43,43,255'?2:1),getClr(97,0,false,clSDP3)); SetIndexLabel(15,"BB20UPR_SD 1_" +getPer(97,0,0,false)+"");
+   SetIndexBuffer(14,SDM03); SetIndexStyle(22,isOn&&XBB1_enable?0:12,linemode1,(clSDM3==C'43,43,255'?2:1),getClr(97,0,false,clSDM3)); SetIndexLabel(14,"BB20LWR_SD 1_" +getPer(97,0,0,false)+"");
+   SetIndexBuffer(13,SDP032);SetIndexStyle(21,isOn&&XBB2_enable?0:12,linemode2,(clSDM3==C'43,43,255'?2:1),getClr(97,0,false,clSDP3)); SetIndexLabel(13,"BB20UPR_SD 2_" +getPer(97,0,0,false)+"");
+   SetIndexBuffer(12,SDM032);SetIndexStyle(20,isOn&&XBB2_enable?0:12,linemode2,(clSDM3==C'43,43,255'?2:1),getClr(97,0,false,clSDM3)); SetIndexLabel(12,"BB20LWR_SD 2_" +getPer(97,0,0,false)+"");
  
-   SetIndexBuffer(19,sSDP03); SetIndexStyle(19,isOn&&XBBF_enable?0:12,linemode1,(clSDM3==C'43,43,255'?2:1),getClr(97,0,(colormode==false?true:false),clSDP3)); SetIndexLabel(19,"BB20UPR_SD 1_" +getPer(97,0,0,false)+"");
-   SetIndexBuffer(18,sSDM03); SetIndexStyle(18,isOn&&XBBF_enable?0:12,linemode1,(clSDM3==C'43,43,255'?2:1),getClr(97,0,(colormode==false?true:false),clSDM3)); SetIndexLabel(18,"BB20LWR_SD 1_" +getPer(97,0,0,false)+"");
-   SetIndexBuffer(17,sSDP032);SetIndexStyle(17,isOn&&XBBF_enable?0:12,linemode2,(clSDM3==C'43,43,255'?2:1),getClr(97,0,(colormode==false?true:false),clSDP3)); SetIndexLabel(17,"BB20UPR_SD 2_" +getPer(97,0,0,false)+"");
-   SetIndexBuffer(16,sSDM032);SetIndexStyle(16,isOn&&XBBF_enable?0:12,linemode2,(clSDM3==C'43,43,255'?2:1),getClr(97,0,(colormode==false?true:false),clSDM3)); SetIndexLabel(16,"BB20LWR_SD 2_" +getPer(97,0,0,false)+"");
+   SetIndexBuffer(11,sSDP03); SetIndexStyle(19,isOn&&XBBF_enable?0:12,linemode1,(clSDM3==C'43,43,255'?2:1),getClr(97,0,false,clSDP3)); SetIndexLabel(11,"BB20UPR_SD 1_" +getPer(97,0,0,false)+"");
+   SetIndexBuffer(10,sSDM03); SetIndexStyle(18,isOn&&XBBF_enable?0:12,linemode1,(clSDM3==C'43,43,255'?2:1),getClr(97,0,false,clSDM3)); SetIndexLabel(10,"BB20LWR_SD 1_" +getPer(97,0,0,false)+"");
+   SetIndexBuffer(9,sSDP032);SetIndexStyle(17,isOn&&XBBF_enable?0:12,linemode2,(clSDM3==C'43,43,255'?2:1), getClr(97,0,false,clSDP3)); SetIndexLabel(9,"BB20UPR_SD 2_" +getPer(97,0,0,false)+"");
+   SetIndexBuffer(8,sSDM032);SetIndexStyle(16,isOn&&XBBF_enable?0:12,linemode2,(clSDM3==C'43,43,255'?2:1), getClr(97,0,false,clSDM3)); SetIndexLabel(8,"BB20LWR_SD 2_" +getPer(97,0,0,false)+"");
         
    //BB TFX
-   SetIndexBuffer(15,SDP04);  SetIndexStyle(15,isOn&&b1BB1_enable?0:12,linemode1,1,getClr(98,0,(colormode==false?true:false),clSDP4)); SetIndexLabel(15,"BB20UPR_SD 1_" +getPer(98,0,0,false)+"");
-   SetIndexBuffer(14,SDM04);  SetIndexStyle(14,isOn&&b1BB1_enable?0:12,linemode1,1,getClr(98,0,(colormode==false?true:false),clSDM4)); SetIndexLabel(14,"BB20LWR_SD 1_" +getPer(98,0,0,false)+"");
-   SetIndexBuffer(13,SDP042); SetIndexStyle(13,isOn&&b1BB2_enable?0:12,linemode2,1,getClr(98,0,(colormode==false?true:false),clSDP4)); SetIndexLabel(13,"BB20UPR_SD 2_" +getPer(98,0,0,false)+"");
-   SetIndexBuffer(12,SDM042); SetIndexStyle(12,isOn&&b1BB2_enable?0:12,linemode2,1,getClr(98,0,(colormode==false?true:false),clSDM4)); SetIndexLabel(12,"BB20LWR_SD 2_" +getPer(98,0,0,false)+"");
+   SetIndexBuffer(7,SDP04);  SetIndexStyle(15,isOn&&b1BB1_enable?0:12,linemode1,1,getClr(98,0,false,clSDP4)); SetIndexLabel(7,"BB20UPR_SD 1_" +getPer(98,0,0,false)+"");
+   SetIndexBuffer(6,SDM04);  SetIndexStyle(14,isOn&&b1BB1_enable?0:12,linemode1,1,getClr(98,0,false,clSDM4)); SetIndexLabel(6,"BB20LWR_SD 1_" +getPer(98,0,0,false)+"");
+   SetIndexBuffer(5,SDP042); SetIndexStyle(13,isOn&&b1BB2_enable?0:12,linemode2,1,getClr(98,0,false,clSDP4)); SetIndexLabel(5,"BB20UPR_SD 2_" +getPer(98,0,0,false)+"");
+   SetIndexBuffer(4,SDM042); SetIndexStyle(12,isOn&&b1BB2_enable?0:12,linemode2,1,getClr(98,0,false,clSDM4)); SetIndexLabel(4,"BB20LWR_SD 2_" +getPer(98,0,0,false)+"");
 
-   SetIndexBuffer(11,sSDP04); SetIndexStyle(11,isOn&&b1BBF_enable?0:12,linemode1,1,getClr(98,0,(colormode==false?true:false),clSDP4)); SetIndexLabel(11,"BB20UPR_SD 1_" +getPer(98,0,0,false)+"");
-   SetIndexBuffer(10,sSDM04); SetIndexStyle(10,isOn&&b1BBF_enable?0:12,linemode1,1,getClr(98,0,(colormode==false?true:false),clSDM4)); SetIndexLabel(10,"BB20LWR_SD 1_" +getPer(98,0,0,false)+"");
-   SetIndexBuffer(9,sSDP042);SetIndexStyle(9,isOn&&b1BBF_enable?0:12,linemode2,1,getClr(98,0,(colormode==false?true:false),clSDP4)); SetIndexLabel(9,"BB20UPR_SD 2_" +getPer(98,0,0,false)+"");
-   SetIndexBuffer(8,sSDM042);SetIndexStyle(8,isOn&&b1BBF_enable?0:12,linemode2,1,getClr(98,0,(colormode==false?true:false),clSDM4)); SetIndexLabel(8,"BB20LWR_SD 2_" +getPer(98,0,0,false)+"");
+   SetIndexBuffer(3,sSDP04); SetIndexStyle(11,isOn&&b1BBF_enable?0:12,linemode1,1,getClr(98,0,false,clSDP4)); SetIndexLabel(3,"BB20UPR_SD 1_" +getPer(98,0,0,false)+"");
+   SetIndexBuffer(2,sSDM04); SetIndexStyle(10,isOn&&b1BBF_enable?0:12,linemode1,1,getClr(98,0,false,clSDM4)); SetIndexLabel(2,"BB20LWR_SD 1_" +getPer(98,0,0,false)+"");
+   SetIndexBuffer(1,sSDP042);SetIndexStyle(9,isOn&&b1BBF_enable?0:12,linemode2,1, getClr(98,0,false,clSDP4)); SetIndexLabel(1,"BB20UPR_SD 2_" +getPer(98,0,0,false)+"");
+   SetIndexBuffer(0,sSDM042);SetIndexStyle(8,isOn&&b1BBF_enable?0:12,linemode2,1, getClr(98,0,false,clSDM4)); SetIndexLabel(0,"BB20LWR_SD 2_" +getPer(98,0,0,false)+"");
    
-   //BB TF UPWARD
-   SetIndexBuffer(7,SDP05);  SetIndexStyle(7,isOn&&b2BB1_enable?0:12,linemode1,1,getClr(99,0,(colormode==false?true:false),clSDP5)); SetIndexLabel(7,"BB20UPR_SD 1_" +getPer(99,0,0,false)+"");
-   SetIndexBuffer(6,SDM05);  SetIndexStyle(6,isOn&&b2BB1_enable?0:12,linemode1,1,getClr(99,0,(colormode==false?true:false),clSDM5)); SetIndexLabel(6,"BB20LWR_SD 1_" +getPer(99,0,0,false)+"");
-   SetIndexBuffer(5,SDP052); SetIndexStyle(5,isOn&&b2BB2_enable?0:12,linemode2,1,getClr(99,0,(colormode==false?true:false),clSDP5)); SetIndexLabel(5,"BB20UPR_SD 2_" +getPer(99,0,0,false)+"");
-   SetIndexBuffer(4,SDM052); SetIndexStyle(4,isOn&&b2BB2_enable?0:12,linemode2,1,getClr(99,0,(colormode==false?true:false),clSDM5)); SetIndexLabel(4,"BB20LWR_SD 2_" +getPer(99,0,0,false)+"");
- 
-   SetIndexBuffer(3,sSDP05); SetIndexStyle(3,isOn&&b2BBF_enable?0:12,linemode1,1,getClr(99,0,(colormode==false?true:false),clSDP5)); SetIndexLabel(3,"BB20UPR_SD 1_" +getPer(99,0,0,false)+"");
-   SetIndexBuffer(2,sSDM05); SetIndexStyle(2,isOn&&b2BBF_enable?0:12,linemode1,1,getClr(99,0,(colormode==false?true:false),clSDM5)); SetIndexLabel(2,"BB20LWR_SD 1_" +getPer(99,0,0,false)+"");
-   SetIndexBuffer(1,sSDP052); SetIndexStyle(1,isOn&&b2BBF_enable?0:12,linemode2,1,getClr(99,0,(colormode==false?true:false),clSDP5)); SetIndexLabel(1,"BB20UPR_SD 2_" +getPer(99,0,0,false)+"");
-   SetIndexBuffer(0,sSDM052); SetIndexStyle(0,isOn&&b2BBF_enable?0:12,linemode2,1,getClr(99,0,(colormode==false?true:false),clSDM5)); SetIndexLabel(0,"BB20LWR_SD 2_" +getPer(99,0,0,false)+"");
      
 
    return(INIT_SUCCEEDED);
@@ -393,17 +356,7 @@ int OnCalculate(const int rates_total,const int prev_calculated,const datetime &
       sSDM04[i]  = b1BBF_enable?SMA04[i]-getSMA(iP4,i,vDev1):EMPTY_VALUE;
       sSDP042[i] = b1BBF_enable?SMA04[i]+getSMA(iP4,i,vDev2):EMPTY_VALUE;
       sSDM042[i] = b1BBF_enable?SMA04[i]-getSMA(iP4,i,vDev2):EMPTY_VALUE; 
-         
-      SMA05[i]   = acuan02?iMA(_Symbol,_Period,iP5,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
-      SDP05[i]   = b2BB1_enable?SMA05[i]+getSMA(iP5,i,vDev1):EMPTY_VALUE;
-      SDM05[i]   = b2BB1_enable?SMA05[i]-getSMA(iP5,i,vDev1):EMPTY_VALUE;
-      SDP052[i]  = b2BB2_enable?SMA05[i]+getSMA(iP5,i,vDev2):EMPTY_VALUE;
-      SDM052[i]  = b2BB2_enable?SMA05[i]-getSMA(iP5,i,vDev2):EMPTY_VALUE;
-      
-      sSDP05[i]  = b2BBF_enable?SMA05[i]+getSMA(iP5,i,vDev1):EMPTY_VALUE;
-      sSDM05[i]  = b2BBF_enable?SMA05[i]-getSMA(iP5,i,vDev1):EMPTY_VALUE;
-      sSDP052[i] = b2BBF_enable?SMA05[i]+getSMA(iP5,i,vDev2):EMPTY_VALUE;
-      sSDM052[i] = b2BBF_enable?SMA05[i]-getSMA(iP5,i,vDev2):EMPTY_VALUE;
+       
            
       
       //MATREND 
@@ -411,18 +364,6 @@ int OnCalculate(const int rates_total,const int prev_calculated,const datetime &
       SMAT02[i] = Entry2?  (3*iMA(_Symbol,_Period,tP2,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP2,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
       SMAT03[i] = tfactive?(3*iMA(_Symbol,_Period,tP3,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP3,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
       SMAT04[i] = acuan01? (3*iMA(_Symbol,_Period,tP4,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP4,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
-      SMAT05[i] = acuan02? (3*iMA(_Symbol,_Period,tP5,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP5,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
-
-      
-      //LWMA HILO
-      HLWMA01[i] = lwma5?iMA(_Symbol,_Period,lP1,0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
-      LLWMA01[i] = lwma5?iMA(_Symbol,_Period,lP1,0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
-      HLWMA02[i] = lwma10?iMA(_Symbol,_Period,lP2,0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
-      LLWMA02[i] = lwma10?iMA(_Symbol,_Period,lP2,0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
-      HLWMA03[i] = lwma3?iMA(_Symbol,_Period,iP3,0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
-      LLWMA03[i] = lwma3?iMA(_Symbol,_Period,iP3,0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
-      HLWMA04[i] = lwma4?iMA(_Symbol,_Period,iP4,0,MODE_LWMA,PRICE_HIGH,i):EMPTY_VALUE;
-      LLWMA04[i] = lwma4?iMA(_Symbol,_Period,iP4,0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
    }
    
    return(rates_total);
@@ -431,74 +372,49 @@ int OnCalculate(const int rates_total,const int prev_calculated,const datetime &
 void SetStyle(){
 
    //BB TFX ENTRY 
-   SetIndexStyle(49,isOn&&BB1_enable?0:12,linemode1,1,getClr(96,0,(colormode==false?true:false),clSDP2));
-   SetIndexStyle(48,isOn&&BB1_enable?0:12,linemode1,1,getClr(96,0,(colormode==false?true:false),clSDM2));
-   SetIndexStyle(47,isOn&&BB2_enable?0:12,linemode2,1,getClr(96,0,(colormode==false?true:false),clSDP2));
-   SetIndexStyle(46,isOn&&BB2_enable?0:12,linemode2,1,getClr(96,0,(colormode==false?true:false),clSDM2));
-   
-   SetIndexStyle(45,isOn&&BBF_enable?0:12,linemode1,1,getClr(96,0,(colormode==false?true:false),clSDP2));
-   SetIndexStyle(44,isOn&&BBF_enable?0:12,linemode1,1,getClr(96,0,(colormode==false?true:false),clSDM2));
-   SetIndexStyle(43,isOn&&BBF_enable?0:12,linemode2,1,getClr(96,0,(colormode==false?true:false),clSDP2));
-   SetIndexStyle(42,isOn&&BBF_enable?0:12,linemode2,1,getClr(96,0,(colormode==false?true:false),clSDM2));
+   SetIndexStyle(31,isOn&&BB1_enable?0:12,linemode1,1,getClr(96,0,false,clSDP2));
+   SetIndexStyle(30,isOn&&BB1_enable?0:12,linemode1,1,getClr(96,0,false,clSDM2));
+   SetIndexStyle(29,isOn&&BB2_enable?0:12,linemode2,1,getClr(96,0,false,clSDP2));
+   SetIndexStyle(28,isOn&&BB2_enable?0:12,linemode2,1,getClr(96,0,false,clSDM2));
+ 
+   SetIndexStyle(27,isOn&&BBF_enable?0:12,linemode1,1,getClr(96,0,false,clSDP2));
+   SetIndexStyle(26,isOn&&BBF_enable?0:12,linemode1,1,getClr(96,0,false,clSDM2));
+   SetIndexStyle(25,isOn&&BBF_enable?0:12,linemode2,1,getClr(96,0,false,clSDP2));
+   SetIndexStyle(24,isOn&&BBF_enable?0:12,linemode2,1,getClr(96,0,false,clSDM2));
 
    //MATREND
-   SetIndexStyle(41,isOn?0:12,linemode,1,getClr(105,0,(colormode==false?true:false),clSMAT5));
-   SetIndexStyle(40,isOn?0:12,linemode,1,getClr(104,0,(colormode==false?true:false),clSMAT4));
-   SetIndexStyle(39,isOn?0:12,linemode,1,getClr(103,0,(colormode==false?true:false),clSMAT3));
-   SetIndexStyle(38,isOn?0:12,linemode,1,getClr(102,0,(colormode==false?true:false),clSMAT2));
-   SetIndexStyle(37,isOn?0:12,linemode,1,getClr(101,0,(colormode==false?true:false),clSMAT1));
+   SetIndexStyle(23,isOn?0:12,linemode,1,getClr(104,0,false,clSMAT4));
+   SetIndexStyle(22,isOn?0:12,linemode,1,getClr(103,0,false,clSMAT3));
+   SetIndexStyle(21,isOn?0:12,linemode,1,getClr(102,0,false,clSMAT2));
+   SetIndexStyle(20,isOn?0:12,linemode,1,getClr(101,0,false,clSMAT1));
 
    //MID BB
-   SetIndexStyle(36,isOn?0:12,0,1,getClr(99,0,(colormode==false?true:false),clSMA5));
-   SetIndexStyle(35,isOn?0:12,0,1,getClr(98,0,(colormode==false?true:false),clSMA4));
-   SetIndexStyle(34,isOn?0:12,0,1,getClr(97,0,(colormode==false?true:false),clSMA3));
-   SetIndexStyle(33,isOn?0:12,0,1,getClr(96,0,(colormode==false?true:false),clSMA2));
-   SetIndexStyle(32,isOn?0:12,0,1,getClr(95,0,(colormode==false?true:false),clSMA1));
-   
-   //LWMA HIGH LOW
-   SetIndexStyle(31,isOn?0:12,0,2,getClr(102,0,(colormode==false?true:false),clLWSMA40));
-   SetIndexStyle(30,isOn?0:12,0,2,getClr(101,0,(colormode==false?true:false),clLWSMA40));
-   SetIndexStyle(29,isOn?0:12,0,2,getClr(102,0,(colormode==false?true:false),clLWSMA30));
-   SetIndexStyle(28,isOn?0:12,0,2,getClr(101,0,(colormode==false?true:false),clLWSMA30));
-   
-   SetIndexStyle(27,isOn?0:12,0,1,getClr(102,0,(colormode==false?true:false),clLWSMA2));
-   SetIndexStyle(26,isOn?0:12,0,1,getClr(101,0,(colormode==false?true:false),clLWSMA1));
-   SetIndexStyle(25,isOn?0:12,0,1,getClr(102,0,(colormode==false?true:false),clLWSMA2));
-   SetIndexStyle(24,isOn?0:12,0,1,getClr(101,0,(colormode==false?true:false),clLWSMA1));
+   SetIndexStyle(19,isOn?0:12,0,1,getClr(98,0,false,clSMA4));
+   SetIndexStyle(18,isOn?0:12,0,1,getClr(97,0,false,clSMA3));
+   SetIndexStyle(17,isOn?0:12,0,1,getClr(96,0,false,clSMA2));
+   SetIndexStyle(16,isOn?0:12,0,1,getClr(95,0,false,clSMA1));
    
    //BB TF ACTIVE   
-   SetIndexStyle(23,isOn&&XBB1_enable?0:12,linemode1,(clSDM3==C'43,43,255'?2:1),getClr(97,0,(colormode==false?true:false),clSDP3));
-   SetIndexStyle(22,isOn&&XBB1_enable?0:12,linemode1,(clSDM3==C'43,43,255'?2:1),getClr(97,0,(colormode==false?true:false),clSDM3));
-   SetIndexStyle(21,isOn&&XBB2_enable?0:12,linemode2,(clSDM3==C'43,43,255'?2:1),getClr(97,0,(colormode==false?true:false),clSDP3));
-   SetIndexStyle(20,isOn&&XBB2_enable?0:12,linemode2,(clSDM3==C'43,43,255'?2:1),getClr(97,0,(colormode==false?true:false),clSDM3));
+   SetIndexStyle(15,isOn&&XBB1_enable?0:12,linemode1,(clSDM3==C'43,43,255'?2:1),getClr(97,0,false,clSDP3));
+   SetIndexStyle(14,isOn&&XBB1_enable?0:12,linemode1,(clSDM3==C'43,43,255'?2:1),getClr(97,0,false,clSDM3));
+   SetIndexStyle(13,isOn&&XBB2_enable?0:12,linemode2,(clSDM3==C'43,43,255'?2:1),getClr(97,0,false,clSDP3));
+   SetIndexStyle(12,isOn&&XBB2_enable?0:12,linemode2,(clSDM3==C'43,43,255'?2:1),getClr(97,0,false,clSDM3));
    
-   SetIndexStyle(19,isOn&&XBBF_enable?0:12,linemode1,(clSDM3==C'43,43,255'?2:1),getClr(97,0,(colormode==false?true:false),clSDP3));
-   SetIndexStyle(18,isOn&&XBBF_enable?0:12,linemode1,(clSDM3==C'43,43,255'?2:1),getClr(97,0,(colormode==false?true:false),clSDM3));
-   SetIndexStyle(17,isOn&&XBBF_enable?0:12,linemode2,(clSDM3==C'43,43,255'?2:1),getClr(97,0,(colormode==false?true:false),clSDP3));
-   SetIndexStyle(16,isOn&&XBBF_enable?0:12,linemode2,(clSDM3==C'43,43,255'?2:1),getClr(97,0,(colormode==false?true:false),clSDM3));
+   SetIndexStyle(11,isOn&&XBBF_enable?0:12,linemode1,(clSDM3==C'43,43,255'?2:1),getClr(97,0,false,clSDP3));
+   SetIndexStyle(10,isOn&&XBBF_enable?0:12,linemode1,(clSDM3==C'43,43,255'?2:1),getClr(97,0,false,clSDM3));
+   SetIndexStyle(9,isOn&&XBBF_enable?0:12,linemode2,(clSDM3==C'43,43,255'?2:1),getClr(97,0,false,clSDP3));
+   SetIndexStyle(8,isOn&&XBBF_enable?0:12,linemode2,(clSDM3==C'43,43,255'?2:1),getClr(97,0,false,clSDM3));
    
    //BB TFX
-   SetIndexStyle(15,isOn&&b1BB1_enable?0:12,linemode1,1,getClr(98,0,(colormode==false?true:false),clSDP4));
-   SetIndexStyle(14,isOn&&b1BB1_enable?0:12,linemode1,1,getClr(98,0,(colormode==false?true:false),clSDM4));
-   SetIndexStyle(13,isOn&&b1BB2_enable?0:12,linemode2,1,getClr(98,0,(colormode==false?true:false),clSDP4));
-   SetIndexStyle(12,isOn&&b1BB2_enable?0:12,linemode2,1,getClr(98,0,(colormode==false?true:false),clSDM4));
+   SetIndexStyle(7,isOn&&b1BB1_enable?0:12,linemode1,1,getClr(98,0,false,clSDP4));
+   SetIndexStyle(6,isOn&&b1BB1_enable?0:12,linemode1,1,getClr(98,0,false,clSDM4));
+   SetIndexStyle(5,isOn&&b1BB2_enable?0:12,linemode2,1,getClr(98,0,false,clSDP4));
+   SetIndexStyle(4,isOn&&b1BB2_enable?0:12,linemode2,1,getClr(98,0,false,clSDM4));
    
-   SetIndexStyle(11,isOn&&b1BBF_enable?0:12,linemode1,1,getClr(98,0,(colormode==false?true:false),clSDP4));
-   SetIndexStyle(10,isOn&&b1BBF_enable?0:12,linemode1,1,getClr(98,0,(colormode==false?true:false),clSDM4));
-   SetIndexStyle(9,isOn&&b1BBF_enable?0:12,linemode2,1,getClr(98,0,(colormode==false?true:false),clSDP4));
-   SetIndexStyle(8,isOn&&b1BBF_enable?0:12,linemode2,1,getClr(98,0,(colormode==false?true:false),clSDM4));
-   
-   //BB TF UPWARD
-   SetIndexStyle(7,isOn&&b2BB1_enable?0:12,linemode1,1,getClr(99,0,(colormode==false?true:false),clSDP5));
-   SetIndexStyle(6,isOn&&b2BB1_enable?0:12,linemode1,1,getClr(99,0,(colormode==false?true:false),clSDM5));
-   SetIndexStyle(5,isOn&&b2BB2_enable?0:12,linemode2,1,getClr(99,0,(colormode==false?true:false),clSDP5));
-   SetIndexStyle(4,isOn&&b2BB2_enable?0:12,linemode2,1,getClr(99,0,(colormode==false?true:false),clSDM5));
-   
-   SetIndexStyle(3,isOn&&b2BBF_enable?0:12,linemode1,1,getClr(99,0,(colormode==false?true:false),clSDP5));
-   SetIndexStyle(2,isOn&&b2BBF_enable?0:12,linemode1,1,getClr(99,0,(colormode==false?true:false),clSDM5));
-   SetIndexStyle(1,isOn&&b2BBF_enable?0:12,linemode2,1,getClr(99,0,(colormode==false?true:false),clSDP5));
-   SetIndexStyle(0,isOn&&b2BBF_enable?0:12,linemode2,1,getClr(99,0,(colormode==false?true:false),clSDM5));
-   
+   SetIndexStyle(3,isOn&&b1BBF_enable?0:12,linemode1,1,getClr(98,0,false,clSDP4));
+   SetIndexStyle(2,isOn&&b1BBF_enable?0:12,linemode1,1,getClr(98,0,false,clSDM4));
+   SetIndexStyle(1,isOn&&b1BBF_enable?0:12,linemode2,1,getClr(98,0,false,clSDP4));
+   SetIndexStyle(0,isOn&&b1BBF_enable?0:12,linemode2,1,getClr(98,0,false,clSDM4));
 }
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 void OnChartEvent(const int id,const long &lparam,const double &dparam,const string &sparam){
@@ -532,141 +448,117 @@ string getPer(int enumPer,int manPer,int modeRes=0,bool mClr=true){
       case  3: strPer= "8Mn";  intPer= 8*mn;   clrPer=mClr?C'238,130,238':C'221,160,221';  break;/*5 Minute*/
       case  4: strPer= "15Mn"; intPer=15*mn;   clrPer=mClr?C'238,130,238':C'221,160,221';  break;/*5 Minute*/
       case  5: strPer= "30Mn"; intPer=30*mn;   clrPer=mClr?C'255,255,000':C'190,190,000';  break;/*15 Minute*/
-      case  6: strPer= "1Hr";  intPer=   hr;   clrPer=mClr?C'255,000,000':C'125,000,000';  break;/*1 Hours*/
-      case  7: strPer= "2Hr";  intPer= 2*hr;   clrPer=mClr?C'230,230,250':C'230,225,255';  break;/*2 Hours*/
-      case  8: strPer= "4Hr";  intPer= 4*hr;   clrPer=mClr?C'000,255,000':C'050,205,050';  break;/*4 Hours*/
-      case  9: strPer= "1Dy";  intPer=   dy;   clrPer=mClr?C'175,238,238':C'190,225,225';  break;/*1 Day*/
+      case  6: strPer= "1Hr";  intPer=   hr;   clrPer=clr1hr;  break;/*1 Hours*/
+      case  7: strPer= "4Hr";  intPer= 4*hr;   clrPer=clr4hr;  break;/*4 Hours*/
+      case  8: strPer= "8Hr";  intPer= 8*hr;   clrPer=mClr?clrGoldenrod:clrSienna;         break;/*8 Hours*/
+      case  9: strPer= "1Dy";  intPer=   dy;   clrPer=clrd1;   break;/*1 Day*/
       case 10: strPer= "2Dy";  intPer= 2*dy;   clrPer=mClr?C'000,200,000':C'000,170,000';  break;/*2 Day*/      
-      case 11: strPer= "1Wk";  intPer=   wk;   clrPer=mClr?C'106,090,205':C'120,115,190';  break;/*1 Week*/
+      case 11: strPer= "1Wk";  intPer=   wk;   clrPer=clrw1;   break;/*1 Week*/
       case 12: strPer= "2Wk";  intPer= 2*wk;   clrPer=mClr?C'165,042,042':C'185,040,020';  break;/*2 Week*/
-      case 13: strPer= "1Mh";  intPer=   mh;   clrPer=mClr?C'000,128,000':C'035,090,035';  break;/*1 Month*/
-      case 14: strPer= "4Mh";  intPer= 4*mh;   clrPer=mClr?C'174,125,011':C'150,110,035';  break;/*4 Month*/
-      case 15: strPer= "1Yr";  intPer=   yr;   clrPer=mClr?C'255,250,250':C'192,192,192';  break;/*1 Year*/      
+      case 13: strPer= "1Mh";  intPer=   mh;   clrPer=clr1mh;  break;/*1 Month*/
+      case 14: strPer= "4Mh";  intPer= 4*mh;   clrPer=clr4mh;  break;/*4 Month*/
+      case 15: strPer= "1Yr";  intPer=   yr;   clrPer=clr1yr;  break;/*1 Year*/      
            
            
-           
+      /*TF Entry*/     
       case 95: switch(_Period){
-                  case  PERIOD_M1 : strPer=    "";  intPer= NULL;   clrPer=mClr?clrNONE:clrNONE;                break;/*TF Entry*/
-                  case  PERIOD_M5 : strPer=    "";  intPer= NULL;   clrPer=mClr?clrNONE:clrNONE;                break;
-                  case  PERIOD_M15: strPer=    "";  intPer= NULL;   clrPer=mClr?clrNONE:clrNONE;                break;
-                  case  PERIOD_M30: strPer=    "";  intPer= NULL;   clrPer=mClr?clrNONE:clrNONE;                break;
-                  case  PERIOD_H1 : strPer= "4Hr";  intPer= 4*hr;   clrPer=mClr?clrRoyalBlue:clrBlue;           break;
-                  case  PERIOD_H4 : strPer= "8Hr";  intPer= 8*hr;   clrPer=mClr?clrGoldenrod:clrSienna;         break;
-                  case  PERIOD_D1 : strPer= "1Dy";  intPer=   dy;   clrPer=mClr?clrLime:clrGreen;               break;
-                  case  PERIOD_W1 : strPer= "1Wk";  intPer=   wk;   clrPer=mClr?clrMagenta:clrPurple;           break;
-                  case  PERIOD_MN1: strPer= "1Mh";  intPer=   mh;   clrPer=mClr?clrAqua:clrDodgerBlue;          break;
+                  case  PERIOD_M1 : strPer= "1Hr";  intPer=   hr;   clrPer=clr1hr; break;/*1 Hours*/
+                  case  PERIOD_M5 : strPer= "1Hr";  intPer=   hr;   clrPer=clr1hr; break;/*1 Hours*/
+                  case  PERIOD_M30: strPer= "4Hr";  intPer= 4*hr;   clrPer=clr4hr; break;/*4 Hours*/        
+                  case  PERIOD_M15: strPer= "4Hr";  intPer= 4*hr;   clrPer=clr4hr; break;/*4 Hours*/       
+                  case  PERIOD_H1 : strPer= "1Dy";  intPer=   dy;   clrPer=clrd1;  break;/*1 Day*/
+                  case  PERIOD_H4 : strPer= "1Dy";  intPer=   dy;   clrPer=clrd1;  break;/*1 Day*/
+                  case  PERIOD_D1 : strPer= "1Wk";  intPer=   wk;   clrPer=clrw1;  break;/*1 Week*/
+                  case  PERIOD_W1 : strPer= "1Wk";  intPer=   wk;   clrPer=clrw1;  break;/*1 Week*/
+                  case  PERIOD_MN1: strPer= "1Wk";  intPer=   wk;   clrPer=clrw1;  break;/*1 Week*/
                } break;
+      /*TFX Entry*/
       case 96: switch(_Period){
-                  case  PERIOD_M1 : strPer=    "";  intPer= NULL;   clrPer=mClr?clrNONE:clrNONE;                break;/*TFX Entry*/
-                  case  PERIOD_M5 : strPer=    "";  intPer= NULL;   clrPer=mClr?clrNONE:clrNONE;                break;
-                  case  PERIOD_M15: strPer= "1Hr";  intPer=   hr;   clrPer=mClr?clrRed:clrMaroon;               break;
-                  case  PERIOD_M30: strPer= "4Hr";  intPer= 4*hr;   clrPer=mClr?clrRoyalBlue:clrBlue;           break;
-                  case  PERIOD_H1 : strPer= "8Hr";  intPer= 8*hr;   clrPer=mClr?clrGoldenrod:clrSienna;         break;
-                  case  PERIOD_H4 : strPer= "1Dy";  intPer=   dy;   clrPer=mClr?clrLime:clrGreen;               break;
-                  case  PERIOD_D1 : strPer= "1Wk";  intPer=   wk;   clrPer=mClr?clrMagenta:clrPurple;           break;
-                  case  PERIOD_W1 : strPer= "1Mh";  intPer=   mh;   clrPer=mClr?clrAqua:clrDodgerBlue;          break;
+                  case  PERIOD_M1 : strPer= "4Hr";  intPer= 4*hr;   clrPer=clr4hr;  break;/*4 Hours*/
+                  case  PERIOD_M5 : strPer= "4Hr";  intPer= 4*hr;   clrPer=clr4hr;  break;/*4 Hours*/         
+                  case  PERIOD_M15: strPer= "1Dy";  intPer=   dy;   clrPer=clrd1;   break;/*1 Day*/
+                  case  PERIOD_M30: strPer= "1Dy";  intPer=   dy;   clrPer=clrd1;   break;/*1 Day*/
+                  case  PERIOD_H1 : strPer= "1Wk";  intPer=   wk;   clrPer=clrw1;   break;/*1 Week*/
+                  case  PERIOD_H4 : strPer= "1Wk";  intPer=   wk;   clrPer=clrw1;   break;/*1 Week*/
+                  case  PERIOD_D1 : strPer= "1Mh";  intPer=   mh;   clrPer=clr1mh;  break;/*1 Month*/
+                  case  PERIOD_W1 : strPer= "1Mh";  intPer=   mh;   clrPer=clr1mh;  break;/*1 Month*/
+                  case  PERIOD_MN1: strPer= "1Mh";  intPer=   mh;   clrPer=clr1mh;  break;/*1 Month*/
                } break;
+      /*TF Active*/
       case 97: switch(_Period){
-                  case  PERIOD_M1 : strPer= "1Hr";  intPer=   hr;   clrPer=mClr?clrRed:clrMaroon;               break;/*TF Active*/
-                  case  PERIOD_M5 : strPer= "1Hr";  intPer=   hr;   clrPer=mClr?clrRed:clrMaroon;               break;
-                  case  PERIOD_M15: strPer= "4Hr";  intPer= 4*hr;   clrPer=mClr?clrRoyalBlue:clrBlue;           break;
-                  case  PERIOD_M30: strPer= "1Dy";  intPer=   dy;   clrPer=mClr?clrLime:clrGreen;               break;
-                  case  PERIOD_H1 : strPer= "1Dy";  intPer=   dy;   clrPer=mClr?clrLime:clrGreen;               break;
-                  case  PERIOD_H4 : strPer= "1Wk";  intPer=   wk;   clrPer=mClr?clrMagenta:clrPurple;           break;
-                  case  PERIOD_D1 : strPer= "1Mh";  intPer=   mh;   clrPer=mClr?clrAqua:clrDodgerBlue;          break;
-                  case  PERIOD_W1 : strPer= "1Mh";  intPer=   mh;   clrPer=mClr?clrAqua:clrDodgerBlue;          break;
-                  case  PERIOD_MN1: strPer= "1Mh";  intPer=   mh;   clrPer=mClr?clrAqua:clrDodgerBlue;          break;
+                  case  PERIOD_M1 : strPer= "1Dy";  intPer=   dy;   clrPer=clrd1;   break;/*1 Day*/         
+                  case  PERIOD_M5 : strPer= "1Dy";  intPer=   dy;   clrPer=clrd1;   break;/*1 Day*/
+                  case  PERIOD_M15: strPer= "1Wk";  intPer=   wk;   clrPer=clrw1;   break;/*1 Week*/
+                  case  PERIOD_M30: strPer= "1Wk";  intPer=   wk;   clrPer=clrw1;   break;/*1 Week*/
+                  case  PERIOD_H1 : strPer= "1Mh";  intPer=   mh;   clrPer=clr1mh;  break;/*1 Month*/
+                  case  PERIOD_H4 : strPer= "1Mh";  intPer=   mh;   clrPer=clr1mh;  break;/*1 Month*/
+                  case  PERIOD_D1 : strPer= "4Mh";  intPer= 4*mh;   clrPer=clr4mh;  break;/*4 Month*/
+                  case  PERIOD_W1 : strPer= "4Mh";  intPer= 4*mh;   clrPer=clr4mh;  break;/*4 Month*/
+                  case  PERIOD_MN1: strPer= "4Mh";  intPer= 4*mh;   clrPer=clr4mh;  break;/*4 Month*/
                } break;
+      /*TFX*/         
       case 98: switch(_Period){
-                  case  PERIOD_M1 : strPer= "4Hr";  intPer= 4*hr;   clrPer=mClr?clrRoyalBlue:clrBlue;           break;/*TFX*/
-                  case  PERIOD_M5 : strPer= "8Hr";  intPer= 4*hr;   clrPer=mClr?clrRoyalBlue:clrBlue;           break;
-                  case  PERIOD_M15: strPer= "8Hr";  intPer= 8*hr;   clrPer=mClr?clrGoldenrod:clrSienna;         break;
-                  case  PERIOD_M30: strPer= "1Wk";  intPer=   wk;   clrPer=mClr?clrMagenta:clrPurple;           break;
-                  case  PERIOD_H1 : strPer= "1Wk";  intPer=   wk;   clrPer=mClr?clrMagenta:clrPurple;           break;
-                  case  PERIOD_H4 : strPer= "1Mh";  intPer=   mh;   clrPer=mClr?clrAqua:clrDodgerBlue;          break;
-               } break;
-      case 99: switch(_Period){
-                  case  PERIOD_M1 : strPer= "8Hr";  intPer= 8*hr;   clrPer=mClr?clrGoldenrod:clrSienna;         break;/*TF Up*/
-                  case  PERIOD_M5 : strPer= "8Hr";  intPer= 8*hr;   clrPer=mClr?clrGoldenrod:clrSienna;         break;
-                  case  PERIOD_M15: strPer= "1Dy";  intPer=   dy;   clrPer=mClr?clrLime:clrGreen;               break;
-                  case  PERIOD_M30: strPer= "1Mh";  intPer=   mh;   clrPer=mClr?clrAqua:clrDodgerBlue;          break;
-                  case  PERIOD_H1 : strPer= "1Mh";  intPer=   mh;   clrPer=mClr?clrAqua:clrDodgerBlue;          break;
-               } break;      
+                  case  PERIOD_M1 : strPer= "1Wk";  intPer=   wk;   clrPer=clrw1;   break;/*1 Week*/
+                  case  PERIOD_M5 : strPer= "1Wk";  intPer=   wk;   clrPer=clrw1;   break;/*1 Week*/
+                  case  PERIOD_M15: strPer= "1Mh";  intPer=   mh;   clrPer=clr1mh;  break;/*1 Month*/
+                  case  PERIOD_M30: strPer= "1Mh";  intPer=   mh;   clrPer=clr1mh;  break;/*1 Month*/
+                  case  PERIOD_H1 : strPer= "4Mh";  intPer= 4*mh;   clrPer=clr4mh;  break;/*4 Month*/
+                  case  PERIOD_H4 : strPer= "4Mh";  intPer= 4*mh;   clrPer=clr4mh;  break;/*4 Month*/
+                  case  PERIOD_D1 : strPer= "1Yr";  intPer=   yr;   clrPer=clr1yr;  break;/*1 Year*/   
+                  case  PERIOD_W1 : strPer= "1Yr";  intPer=   yr;   clrPer=clr1yr;  break;/*1 Year*/   
+                  case  PERIOD_MN1: strPer= "1Yr";  intPer=   yr;   clrPer=clr1yr;  break;/*1 Year*/   
+               } break;    
                
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------------
  
+      /*TF Entry*/     
       case 101: switch(_Period){
-                  case  PERIOD_M1 : strPer=    "";  intPer=   NULL;   clrPer=mClr?clrNONE:clrNONE;                break;/*TF Entry*/
-                  case  PERIOD_M5 : strPer=    "";  intPer=   NULL;   clrPer=mClr?clrNONE:clrNONE;                break;
-                  case  PERIOD_M15: strPer=    "";  intPer=   NULL;   clrPer=mClr?clrNONE:clrNONE;                break;
-                  case  PERIOD_M30: strPer=    "";  intPer=   NULL;   clrPer=mClr?clrNONE:clrNONE;                break;
-                  case  PERIOD_H1 : strPer= "4Hr";  intPer= 4*hr*2;   clrPer=mClr?clrRoyalBlue:clrBlue;           break;
-                  case  PERIOD_H4 : strPer= "8Hr";  intPer= 8*hr*2;   clrPer=mClr?clrGoldenrod:clrSienna;         break;
-                  case  PERIOD_D1 : strPer= "1Dy";  intPer=   dy*2;   clrPer=mClr?clrLime:clrGreen;               break;
-                  case  PERIOD_W1 : strPer= "1Wk";  intPer=   wk*2;   clrPer=mClr?clrMagenta:clrPurple;           break;
-                  case  PERIOD_MN1: strPer= "1Mh";  intPer=   mh*2;   clrPer=mClr?clrAqua:clrDodgerBlue;          break;
+                  case  PERIOD_M1 : strPer= "1Hr";  intPer=   hr*2;   clrPer=clr1hr;  break;/*1 Hours*/
+                  case  PERIOD_M5 : strPer= "1Hr";  intPer=   hr*2;   clrPer=clr1hr;  break;/*1 Hours*/
+                  case  PERIOD_M15: strPer= "4Hr";  intPer= 4*hr*2;   clrPer=clr4hr;  break;/*4 Hours*/         
+                  case  PERIOD_M30: strPer= "4Hr";  intPer= 4*hr*2;   clrPer=clr4hr;  break;/*4 Hours*/           
+                  case  PERIOD_H1 : strPer= "1Dy";  intPer=   dy*2;   clrPer=clrd1;   break;/*1 Day*/
+                  case  PERIOD_H4 : strPer= "1Dy";  intPer=   dy*2;   clrPer=clrd1;   break;/*1 Day*/
+                  case  PERIOD_D1 : strPer= "1Wk";  intPer=   wk*2;   clrPer=clrw1;   break;/*1 Week*/
+                  case  PERIOD_W1 : strPer= "1Wk";  intPer=   wk*2;   clrPer=clrw1;   break;/*1 Week*/
+                  case  PERIOD_MN1: strPer= "1Wk";  intPer=   wk*2;   clrPer=clrw1;   break;/*1 Week*/
                } break;
+      /*TFX Entry*/
       case 102: switch(_Period){
-                  case  PERIOD_M1 : strPer=    "";  intPer=   NULL;   clrPer=mClr?clrNONE:clrNONE;                break;/*TFX Entry*/
-                  case  PERIOD_M5 : strPer=    "";  intPer=   NULL;   clrPer=mClr?clrNONE:clrNONE;                break;
-                  case  PERIOD_M15: strPer= "1Hr";  intPer=   hr*2;   clrPer=mClr?clrRed:clrMaroon;               break;
-                  case  PERIOD_M30: strPer= "4Hr";  intPer= 4*hr*2;   clrPer=mClr?clrRoyalBlue:clrBlue;           break;
-                  case  PERIOD_H1 : strPer= "8Hr";  intPer= 8*hr*2;   clrPer=mClr?clrGoldenrod:clrSienna;         break;
-                  case  PERIOD_H4 : strPer= "1Dy";  intPer=   dy*2;   clrPer=mClr?clrLime:clrGreen;               break;
-                  case  PERIOD_D1 : strPer= "1Wk";  intPer=   wk*2;   clrPer=mClr?clrMagenta:clrPurple;           break;
-                  case  PERIOD_W1 : strPer= "1Mh";  intPer=   mh*2;   clrPer=mClr?clrAqua:clrDodgerBlue;          break;
+                  case  PERIOD_M1 : strPer= "4Hr";  intPer= 4*hr*2;   clrPer=clr4hr;  break;/*4 Hours*/ 
+                  case  PERIOD_M5 : strPer= "4Hr";  intPer= 4*hr*2;   clrPer=clr4hr;  break;/*4 Hours*/          
+                  case  PERIOD_M15: strPer= "1Dy";  intPer=   dy*2;   clrPer=clrd1;   break;/*1 Day*/
+                  case  PERIOD_M30: strPer= "1Dy";  intPer=   dy*2;   clrPer=clrd1;   break;/*1 Day*/
+                  case  PERIOD_H1 : strPer= "1Wk";  intPer=   wk*2;   clrPer=clrw1;   break;/*1 Week*/
+                  case  PERIOD_H4 : strPer= "1Wk";  intPer=   wk*2;   clrPer=clrw1;   break;/*1 Week*/
+                  case  PERIOD_D1 : strPer= "1Mh";  intPer=   mh*2;   clrPer=clr1mh;  break;/*1 Month*/
+                  case  PERIOD_W1 : strPer= "1Mh";  intPer=   mh*2;   clrPer=clr1mh;  break;/*1 Month*/
+                  case  PERIOD_MN1: strPer= "1Mh";  intPer=   mh*2;   clrPer=clr1mh;  break;/*1 Month*/
                } break;
+      /*TF Active*/
       case 103: switch(_Period){
-                  case  PERIOD_M1 : strPer= "1Hr";  intPer=   hr*2;   clrPer=mClr?clrRed:clrMaroon;               break;/*TF Active*/
-                  case  PERIOD_M5 : strPer= "1Hr";  intPer=   hr*2;   clrPer=mClr?clrRed:clrMaroon;               break;
-                  case  PERIOD_M15: strPer= "4Hr";  intPer= 4*hr*2;   clrPer=mClr?clrRoyalBlue:clrBlue;           break;
-                  case  PERIOD_M30: strPer= "1Dy";  intPer=   dy*2;   clrPer=mClr?clrLime:clrGreen;               break;
-                  case  PERIOD_H1 : strPer= "1Dy";  intPer=   dy*2;   clrPer=mClr?clrLime:clrGreen;               break;
-                  case  PERIOD_H4 : strPer= "1Wk";  intPer=   wk*2;   clrPer=mClr?clrMagenta:clrPurple;           break;
-                  case  PERIOD_D1 : strPer= "1Mh";  intPer=   mh*2;   clrPer=mClr?clrAqua:clrDodgerBlue;          break;
-                  case  PERIOD_W1 : strPer= "1Mh";  intPer=   mh*2;   clrPer=mClr?clrAqua:clrDodgerBlue;          break;
-                  case  PERIOD_MN1: strPer= "1Mh";  intPer=   mh*2;   clrPer=mClr?clrAqua:clrDodgerBlue;          break;
+                  case  PERIOD_M1 : strPer= "1Dy";  intPer=   dy*2;   clrPer=clrd1;   break;/*1 Day*/       
+                  case  PERIOD_M5 : strPer= "1Dy";  intPer=   dy*2;   clrPer=clrd1;   break;/*1 Day*/
+                  case  PERIOD_M15: strPer= "1Wk";  intPer=   wk*2;   clrPer=clrw1;   break;/*1 Week*/
+                  case  PERIOD_M30: strPer= "1Wk";  intPer=   wk*2;   clrPer=clrw1;   break;/*1 Week*/
+                  case  PERIOD_H1 : strPer= "1Mh";  intPer=   mh*2;   clrPer=clr1mh;  break;/*1 Month*/
+                  case  PERIOD_H4 : strPer= "1Mh";  intPer=   mh*2;   clrPer=clr1mh;  break;/*1 Month*/
+                  case  PERIOD_D1 : strPer= "4Mh";  intPer= 4*mh*2;   clrPer=clr4mh;  break;/*4 Month*/
+                  case  PERIOD_W1 : strPer= "4Mh";  intPer= 4*mh*2;   clrPer=clr4mh;  break;/*4 Month*/
+                  case  PERIOD_MN1: strPer= "4Mh";  intPer= 4*mh*2;   clrPer=clr4mh;  break;/*4 Month*/
                } break;
+      /*TFX*/         
       case 104: switch(_Period){
-                  case  PERIOD_M1 : strPer= "4Hr";  intPer= 4*hr*2;   clrPer=mClr?clrRoyalBlue:clrBlue;           break;/*TFX*/
-                  case  PERIOD_M5 : strPer= "8Hr";  intPer= 4*hr*2;   clrPer=mClr?clrRoyalBlue:clrBlue;           break;
-                  case  PERIOD_M15: strPer= "8Hr";  intPer= 8*hr*2;   clrPer=mClr?clrGoldenrod:clrSienna;         break;
-                  case  PERIOD_M30: strPer= "1Wk";  intPer=   wk*2;   clrPer=mClr?clrMagenta:clrPurple;           break;
-                  case  PERIOD_H1 : strPer= "1Wk";  intPer=   wk*2;   clrPer=mClr?clrMagenta:clrPurple;           break;
-                  case  PERIOD_H4 : strPer= "1Mh";  intPer=   mh*2;   clrPer=mClr?clrAqua:clrDodgerBlue;          break;
-               } break;
-      case 105: switch(_Period){
-                  case  PERIOD_M1 : strPer= "8Hr";  intPer= 8*hr*2;   clrPer=mClr?clrGoldenrod:clrSienna;         break;/*TF Up*/
-                  case  PERIOD_M5 : strPer= "8Hr";  intPer= 8*hr*2;   clrPer=mClr?clrGoldenrod:clrSienna;         break;
-                  case  PERIOD_M15: strPer= "1Dy";  intPer=   dy*2;   clrPer=mClr?clrLime:clrGreen;               break;
-                  case  PERIOD_M30: strPer= "1Mh";  intPer=   mh*2;   clrPer=mClr?clrAqua:clrDodgerBlue;          break;
-                  case  PERIOD_H1 : strPer= "1Mh";  intPer=   mh*2;   clrPer=mClr?clrAqua:clrDodgerBlue;          break;
-               } break;      
-                 
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------------                
-      
-      case 125: switch(_Period){
-                  case  PERIOD_M1 : strPer=    "";  intPer=EMPTY_VALUE; clrPer=mClr?clrNONE:clrNONE;            break;/*TF Entry*/
-                  case  PERIOD_M5 : strPer= "30M";  intPer=   30;   clrPer=mClr?C'173,255,047':C'073,155,000';  break;
-                  case  PERIOD_M15: strPer= "1Hr";  intPer=   hr;   clrPer=mClr?C'238,130,238':C'255,000,255';  break;
-                  case  PERIOD_M30: strPer= "4Hr";  intPer= 4*hr;   clrPer=mClr?C'000,255,255':C'000,155,255';  break;
-                  case  PERIOD_H1 : strPer= "8Hr";  intPer= 8*hr;   clrPer=mClr?C'255,255,000':C'100,100,000';  break;
-                  case  PERIOD_H4 : strPer= "1Dy";  intPer=   dy;   clrPer=mClr?C'000,255,000':C'000,100,000';  break;
-                  case  PERIOD_D1 : strPer= "1Wk";  intPer=   wk;   clrPer=mClr?C'255,000,255':C'120,000,120';  break;
-                  case  PERIOD_W1 : strPer= "1Mh";  intPer=   mh;   clrPer=mClr?C'000,255,255':C'000,120,120';  break;
-                  case  PERIOD_MN1: strPer= "4Mh";  intPer= 4*mh;   clrPer=mClr?C'255,069,000':C'132,036,000';  break;
-               } break;
-      case 126: switch(_Period){ 
-                  case  PERIOD_M1 : strPer= "30M";  intPer=   30;   clrPer=mClr?C'173,255,047':C'073,155,000';  break;/*TFX Entry*/
-                  case  PERIOD_M5 : strPer= "1Hr";  intPer=   hr;   clrPer=mClr?C'238,130,238':C'255,000,255';  break;
-                  case  PERIOD_M15: strPer= "4Hr";  intPer= 4*hr;   clrPer=mClr?C'000,255,255':C'000,155,255';  break;
-                  case  PERIOD_M30: strPer= "8Hr";  intPer= 8*hr;   clrPer=mClr?C'255,255,000':C'100,100,000';  break;
-                  case  PERIOD_H1 : strPer= "1Dy";  intPer=   dy;   clrPer=mClr?C'000,255,000':C'000,100,000';  break;
-                  case  PERIOD_H4 : strPer= "1Wk";  intPer=   wk;   clrPer=mClr?C'255,000,255':C'120,000,120';  break;
-                  case  PERIOD_D1 : strPer= "1Mh";  intPer=   mh;   clrPer=mClr?C'000,255,255':C'000,120,120';  break;
-                  case  PERIOD_W1 : strPer= "4Mh";  intPer= 4*mh;   clrPer=mClr?C'255,069,000':C'132,036,000';  break;
-                  case  PERIOD_MN1: strPer= "1Yr";  intPer=   yr;   clrPer=mClr?C'255,250,250':C'192,192,192';  break;
-               } break;
+                  case  PERIOD_M1 : strPer= "1Wk";  intPer=   wk*2;   clrPer=clrw1;   break;/*1 Week*/
+                  case  PERIOD_M5 : strPer= "1Wk";  intPer=   wk*2;   clrPer=clrw1;   break;/*1 Week*/
+                  case  PERIOD_M15: strPer= "1Mh";  intPer=   mh*2;   clrPer=clr1mh;  break;/*1 Month*/
+                  case  PERIOD_M30: strPer= "1Mh";  intPer=   mh*2;   clrPer=clr1mh;  break;/*1 Month*/
+                  case  PERIOD_H1 : strPer= "4Mh";  intPer= 4*mh*2;   clrPer=clr4mh;  break;/*4 Month*/
+                  case  PERIOD_H4 : strPer= "4Mh";  intPer= 4*mh*2;   clrPer=clr4mh;  break;/*4 Month*/
+                  case  PERIOD_D1 : strPer= "1Yr";  intPer=   yr*2;   clrPer=clr1yr;  break;/*1 Year*/   
+                  case  PERIOD_W1 : strPer= "1Yr";  intPer=   yr*2;   clrPer=clr1yr;  break;/*1 Year*/   
+                  case  PERIOD_MN1: strPer= "1Yr";  intPer=   yr*2;   clrPer=clr1yr;  break;/*1 Year*/   
+               } break;     
                  
                         
       default: strPer="";  intPer=0; clrPer=clrNONE;      
