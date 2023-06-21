@@ -21,15 +21,21 @@ enum eModeLine       {_0L/*Solid*/,_1L/*Dash*/,_2L/*Dot*/,_3L/*Dash Dot*/,_4L/*D
 extern ENUM_BASE_CORNER   corner = CORNER_LEFT_LOWER; // Position
 extern int button_x              = 0;               // X
 extern int button_y              = 0;                // Y
-input string                 _Reguler= "--- REGULAR ---";//_______________________00
 
+input string                _info= "--- INFO ---";//-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+input bool     shInfo            = true;//Show Info
+input int      disX              = 0,//Horizontal Distance
+               disY              = 0;//Vertical Distance
+color   clUbUp                   = clrLime,//Text Ubnormal Up Color
+        clUbDn                   = clrRed,//Text Ubnormal Down Color
+        clNormal                 = clrGold;//Text Normal Color
+
+input string                 _Reguler= "--- REGULAR ---";//_______________________00
 input bool showmathead           = false;          //Show MATrend Header
 input bool xlsma                 = false;          //LSMA MODE
 input eModeLine linemode         = _2L;            //Line MATrick Type    
 input eModeLine linemode1        = _0L;            //Line BB Type SD 1   
 input eModeLine linemode2        = _0L;            //Line BB Type SD 2     
-input ENUM_MA_METHOD
-               modeMA            = MODE_SMA;       //---------- MA Method ----------
  
 input string                  _BB= "--- BB SETTING ---";//_______________________00           
 input eModeBB  s0ModeBB          = _shSD1;         //BB TFX ENTRY
@@ -38,15 +44,17 @@ input eModeBB  s2ModeBB          = _DisableBB;     //BB TF ACUAN 01
 
    
 input string           _MODEENTRY= "--- TF ENTRY ---";//_______________________00
-
-input bool Entry1                = true;          //TF ENTRY
+input bool eighthour             = false;          //MODE 8 Hr
+input bool Entry1                = true;           //TF ENTRY
 input bool Entry2                = true;           //TFX ENTRY
 
 input string           _MODEBASIC= "--- SETTING TF ---";//_______________________00  
 input bool tfactive              = true;           //TF ACTIVE 
 input bool acuan01               = false;          //TF ACUAN 01
 
-input string        _chour= "--- COLOR TF Entry ---";//_______________________00    
+
+
+input string               _chour= "--- COLOR TF Entry ---";//_______________________00    
 input color    clr1hr            = clrRed,//-------- 1 HOUR
                clr4hr            = clrYellow,//-------- 4 HOUR
                clrd1             = clrLime,//-------- DAILY
@@ -55,26 +63,26 @@ input color    clr1hr            = clrRed,//-------- 1 HOUR
                clr4mh            = clrGold,//-------- 4 MONTHLY
                clr1yr            = clrGreen;//-------- YEAR
 
-input string        _ckonfirmasi1= "--- COLOR TFX Entry ---";//_______________________00                  
-input color    clSMA1            = clrNONE,//-------- MID 
+/*input string        _ckonfirmasi1= "--- COLOR TFX Entry ---";//_______________________00*/                  
+color          clSMA1            = clrNONE,//-------- MID 
                clSMAT1           = clrNONE,//-------- MA TRICK
                clSDP1            = clrNONE,//-------- SD +
                clSDM1            = clrNONE;//-------- SD -  
 
-input string        _ckonfirmasi2= "--- COLOR TFX Entry ---";//_______________________00                  
-input color    clSMA2            = clrNONE,//-------- MID 
+/*input string        _ckonfirmasi2= "--- COLOR TFX Entry ---";//_______________________00*/                  
+color          clSMA2            = clrNONE,//-------- MID 
                clSMAT2           = clrNONE,//-------- MA TRICK
                clSDP2            = clrNONE,//-------- SD +
                clSDM2            = clrNONE;//-------- SD -  
 
-input string             _cACTIVE= "--- COLOR TF ACTIVE ---";//_______________________00               
-input color    clSMA3            = clrNONE,//-------- MID
+/*input string             _cACTIVE= "--- COLOR TF ACTIVE ---";//_______________________00*/               
+color          clSMA3            = clrNONE,//-------- MID
                clSMAT3           = clrNONE,//-------- MA TRICK
                clSDP3            = clrNONE,//-------- SD +
                clSDM3            = clrNONE;//-------- SD -  
                
-input string              _acuan1= "--- COLOR TF ACUAN 01 ---";//_______________________00                 
-input color    clSMA4            = clrNONE,//-------- MID
+/*input string              _acuan1= "--- COLOR TF ACUAN 01 ---";//_______________________00*/                 
+color          clSMA4            = clrNONE,//-------- MID
                clSMAT4           = clrNONE,//-------- MA TRICK
                clSDP4            = clrNONE,//-------- SD +
                clSDM4            = clrNONE;//-------- SD - 
@@ -320,11 +328,12 @@ int OnCalculate(const int rates_total,const int prev_calculated,const datetime &
    showmathead?cLabel(0,"Header2",4,11,CORNER_RIGHT_UPPER,"------------------40------------------","Calibri",9,clrYellowGreen,0):EMPTY_VALUE;
    showmathead?cLabel(0,"Header3",130,3,CORNER_RIGHT_UPPER,"Shown MTF >>                            ","Calibri",8,clrYellowGreen,0):EMPTY_VALUE; 
    
-   for(int i=0; i<MathMin(Bars-IndicatorCounted(),Bars-1); i++){
+   int limit = fmax(WindowFirstVisibleBar(),1);
+   for(int i=0; i<limit; i++){
       //SMA/MIDBB
-      SMA01[i]   = Entry1?iMA(_Symbol,_Period,iP1,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
+      SMA01[i]   = Entry1?iMA(_Symbol,_Period,iP1,0,MODE_SMA,PRICE_CLOSE,i):EMPTY_VALUE;
       
-      SMA02[i]   = Entry2?iMA(_Symbol,_Period,iP2,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
+      SMA02[i]   = Entry2?iMA(_Symbol,_Period,iP2,0,MODE_SMA,PRICE_CLOSE,i):EMPTY_VALUE;
       SDP02[i]   = BB1_enable?SMA02[i]+getSMA(iP2,i,vDev1):EMPTY_VALUE;
       SDM02[i]   = BB1_enable?SMA02[i]-getSMA(iP2,i,vDev1):EMPTY_VALUE;
       SDP022[i]  = BB2_enable?SMA02[i]+getSMA(iP2,i,vDev2):EMPTY_VALUE;
@@ -335,7 +344,7 @@ int OnCalculate(const int rates_total,const int prev_calculated,const datetime &
       sSDP022[i] = BBF_enable?SMA02[i]+getSMA(iP2,i,vDev2):EMPTY_VALUE;
       sSDM022[i] = BBF_enable?SMA02[i]-getSMA(iP2,i,vDev2):EMPTY_VALUE;
       
-      SMA03[i]   = tfactive?iMA(_Symbol,_Period,iP3,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
+      SMA03[i]   = tfactive?iMA(_Symbol,_Period,iP3,0,MODE_SMA,PRICE_CLOSE,i):EMPTY_VALUE;
       SDP03[i]   = XBB1_enable?SMA03[i]+getSMA(iP3,i,vDev1):EMPTY_VALUE;
       SDM03[i]   = XBB1_enable?SMA03[i]-getSMA(iP3,i,vDev1):EMPTY_VALUE;
       SDP032[i]  = XBB2_enable?SMA03[i]+getSMA(iP3,i,vDev2):EMPTY_VALUE;
@@ -346,7 +355,7 @@ int OnCalculate(const int rates_total,const int prev_calculated,const datetime &
       sSDP032[i] = XBBF_enable?SMA03[i]+getSMA(iP3,i,vDev2):EMPTY_VALUE;
       sSDM032[i] = XBBF_enable?SMA03[i]-getSMA(iP3,i,vDev2):EMPTY_VALUE;
       
-      SMA04[i]   = acuan01?iMA(_Symbol,_Period,iP4,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
+      SMA04[i]   = acuan01?iMA(_Symbol,_Period,iP4,0,MODE_SMA,PRICE_CLOSE,i):EMPTY_VALUE;
       SDP04[i]   = b1BB1_enable?SMA04[i]+getSMA(iP4,i,vDev1):EMPTY_VALUE;
       SDM04[i]   = b1BB1_enable?SMA04[i]-getSMA(iP4,i,vDev1):EMPTY_VALUE;
       SDP042[i]  = b1BB2_enable?SMA04[i]+getSMA(iP4,i,vDev2):EMPTY_VALUE;
@@ -366,7 +375,19 @@ int OnCalculate(const int rates_total,const int prev_calculated,const datetime &
       SMAT04[i] = acuan01? (3*iMA(_Symbol,_Period,tP4,0,(xlsma==true)?MODE_LWMA:MODE_EMA,PRICE_CLOSE,i)) - (2*iMA(_Symbol,_Period,tP4,0,MODE_SMA,PRICE_CLOSE,i)):EMPTY_VALUE; 
    }
    
+   if(shInfo){
+      int posX=disX+10,posY=disY+25;
+         Sett(cLabel(0,"HPer1",posX,posY,CORNER_RIGHT_UPPER,getPer(96,0)+" : "+SetCond(SDP02,SDM02,1),"Arial",10,StringToColor(SetCond(SDP02,SDM02)))); posY+=20;
+         Sett(cLabel(0,"HPer2",posX,posY,CORNER_RIGHT_UPPER,getPer(97,0)+" : "+SetCond(SDP03,SDM03,1),"Arial",10,StringToColor(SetCond(SDP03,SDM03)))); posY+=20;
+      }
+
    return(rates_total);
+}
+//-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+string SetCond(double &SDP[],double &SDM[],int Mode=2){
+   return(Close[0]>MathMax(SDP[0],SDM[0])?(Mode==1?"Buyer's Win":ColorToString(clUbUp)):
+          Close[0]<MathMin(SDP[0],SDM[0])?(Mode==1?"Seller's Win":ColorToString(clUbDn)):
+          (Mode==1?"No Winner":ColorToString(clNormal)));
 }
 //-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 void SetStyle(){
@@ -449,7 +470,7 @@ string getPer(int enumPer,int manPer,int modeRes=0,bool mClr=true){
       case  4: strPer= "15Mn"; intPer=15*mn;   clrPer=mClr?C'238,130,238':C'221,160,221';  break;/*5 Minute*/
       case  5: strPer= "30Mn"; intPer=30*mn;   clrPer=mClr?C'255,255,000':C'190,190,000';  break;/*15 Minute*/
       case  6: strPer= "1Hr";  intPer=   hr;   clrPer=clr1hr;  break;/*1 Hours*/
-      case  7: strPer= "4Hr";  intPer= 4*hr;   clrPer=clr4hr;  break;/*4 Hours*/
+      case  7: strPer= "4Hr";  intPer= eighthour==true?8*hr:4*hr;   clrPer=clr4hr;  break;/*4 Hours*/
       case  8: strPer= "8Hr";  intPer= 8*hr;   clrPer=mClr?clrGoldenrod:clrSienna;         break;/*8 Hours*/
       case  9: strPer= "1Dy";  intPer=   dy;   clrPer=clrd1;   break;/*1 Day*/
       case 10: strPer= "2Dy";  intPer= 2*dy;   clrPer=mClr?C'000,200,000':C'000,170,000';  break;/*2 Day*/      
@@ -464,8 +485,8 @@ string getPer(int enumPer,int manPer,int modeRes=0,bool mClr=true){
       case 95: switch(_Period){
                   case  PERIOD_M1 : strPer= "1Hr";  intPer=   hr;   clrPer=clr1hr; break;/*1 Hours*/
                   case  PERIOD_M5 : strPer= "1Hr";  intPer=   hr;   clrPer=clr1hr; break;/*1 Hours*/
-                  case  PERIOD_M30: strPer= "4Hr";  intPer= 4*hr;   clrPer=clr4hr; break;/*4 Hours*/        
-                  case  PERIOD_M15: strPer= "4Hr";  intPer= 4*hr;   clrPer=clr4hr; break;/*4 Hours*/       
+                  case  PERIOD_M30: strPer= "4Hr";  intPer= eighthour==true?8*hr:4*hr;   clrPer=clr4hr; break;/*4 Hours*/        
+                  case  PERIOD_M15: strPer= "4Hr";  intPer= eighthour==true?8*hr:4*hr;   clrPer=clr4hr; break;/*4 Hours*/       
                   case  PERIOD_H1 : strPer= "1Dy";  intPer=   dy;   clrPer=clrd1;  break;/*1 Day*/
                   case  PERIOD_H4 : strPer= "1Dy";  intPer=   dy;   clrPer=clrd1;  break;/*1 Day*/
                   case  PERIOD_D1 : strPer= "1Wk";  intPer=   wk;   clrPer=clrw1;  break;/*1 Week*/
@@ -474,8 +495,8 @@ string getPer(int enumPer,int manPer,int modeRes=0,bool mClr=true){
                } break;
       /*TFX Entry*/
       case 96: switch(_Period){
-                  case  PERIOD_M1 : strPer= "4Hr";  intPer= 4*hr;   clrPer=clr4hr;  break;/*4 Hours*/
-                  case  PERIOD_M5 : strPer= "4Hr";  intPer= 4*hr;   clrPer=clr4hr;  break;/*4 Hours*/         
+                  case  PERIOD_M1 : strPer= "4Hr";  intPer= eighthour==true?8*hr:4*hr;   clrPer=clr4hr;  break;/*4 Hours*/
+                  case  PERIOD_M5 : strPer= "4Hr";  intPer= eighthour==true?8*hr:4*hr;   clrPer=clr4hr;  break;/*4 Hours*/         
                   case  PERIOD_M15: strPer= "1Dy";  intPer=   dy;   clrPer=clrd1;   break;/*1 Day*/
                   case  PERIOD_M30: strPer= "1Dy";  intPer=   dy;   clrPer=clrd1;   break;/*1 Day*/
                   case  PERIOD_H1 : strPer= "1Wk";  intPer=   wk;   clrPer=clrw1;   break;/*1 Week*/
@@ -515,8 +536,8 @@ string getPer(int enumPer,int manPer,int modeRes=0,bool mClr=true){
       case 101: switch(_Period){
                   case  PERIOD_M1 : strPer= "1Hr";  intPer=   hr*2;   clrPer=clr1hr;  break;/*1 Hours*/
                   case  PERIOD_M5 : strPer= "1Hr";  intPer=   hr*2;   clrPer=clr1hr;  break;/*1 Hours*/
-                  case  PERIOD_M15: strPer= "4Hr";  intPer= 4*hr*2;   clrPer=clr4hr;  break;/*4 Hours*/         
-                  case  PERIOD_M30: strPer= "4Hr";  intPer= 4*hr*2;   clrPer=clr4hr;  break;/*4 Hours*/           
+                  case  PERIOD_M15: strPer= "4Hr";  intPer= eighthour==true?8*hr*2:4*hr*2;   clrPer=clr4hr;  break;/*4 Hours*/         
+                  case  PERIOD_M30: strPer= "4Hr";  intPer= eighthour==true?8*hr*2:4*hr*2;   clrPer=clr4hr;  break;/*4 Hours*/           
                   case  PERIOD_H1 : strPer= "1Dy";  intPer=   dy*2;   clrPer=clrd1;   break;/*1 Day*/
                   case  PERIOD_H4 : strPer= "1Dy";  intPer=   dy*2;   clrPer=clrd1;   break;/*1 Day*/
                   case  PERIOD_D1 : strPer= "1Wk";  intPer=   wk*2;   clrPer=clrw1;   break;/*1 Week*/
@@ -525,8 +546,8 @@ string getPer(int enumPer,int manPer,int modeRes=0,bool mClr=true){
                } break;
       /*TFX Entry*/
       case 102: switch(_Period){
-                  case  PERIOD_M1 : strPer= "4Hr";  intPer= 4*hr*2;   clrPer=clr4hr;  break;/*4 Hours*/ 
-                  case  PERIOD_M5 : strPer= "4Hr";  intPer= 4*hr*2;   clrPer=clr4hr;  break;/*4 Hours*/          
+                  case  PERIOD_M1 : strPer= "4Hr";  intPer= eighthour==true?8*hr*2:4*hr*2;   clrPer=clr4hr;  break;/*4 Hours*/ 
+                  case  PERIOD_M5 : strPer= "4Hr";  intPer= eighthour==true?8*hr*2:4*hr*2;   clrPer=clr4hr;  break;/*4 Hours*/          
                   case  PERIOD_M15: strPer= "1Dy";  intPer=   dy*2;   clrPer=clrd1;   break;/*1 Day*/
                   case  PERIOD_M30: strPer= "1Dy";  intPer=   dy*2;   clrPer=clrd1;   break;/*1 Day*/
                   case  PERIOD_H1 : strPer= "1Wk";  intPer=   wk*2;   clrPer=clrw1;   break;/*1 Week*/

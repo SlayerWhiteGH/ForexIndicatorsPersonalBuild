@@ -41,35 +41,35 @@ string iName="Assian Session Level";
 int OnInit() {
     
     SetIndexBuffer(0, HighBuffer);
-    SetIndexStyle (0, DRAW_LINE,STYLE_DASH,1,clevelr);
+    SetIndexStyle (0, DRAW_LINE,STYLE_SOLID,1,clevelr);
     SetIndexLabel (0, "Highest");
 
     SetIndexBuffer(1, LowBuffer);
-    SetIndexStyle (1, DRAW_LINE,STYLE_DASH,1,clevels);
+    SetIndexStyle (1, DRAW_LINE,STYLE_SOLID,1,clevels);
     SetIndexLabel (1, "Lowest");
 
     SetIndexBuffer(2, HighBuffer1);
-    SetIndexStyle (2, DRAW_LINE,STYLE_DASH,1,clevelr);
+    SetIndexStyle (2, DRAW_LINE,STYLE_SOLID,1,clevelr);
     SetIndexLabel (2, "Level 1");
 
     SetIndexBuffer(3, LowBuffer1);
-    SetIndexStyle (3, DRAW_LINE,STYLE_DASH,1,clevels);
+    SetIndexStyle (3, DRAW_LINE,STYLE_SOLID,1,clevels);
     SetIndexLabel (3, "Level 1");
     
     SetIndexBuffer(4, HighBuffer2);
-    SetIndexStyle (4, DRAW_LINE,STYLE_DASH,1,clevelr);
+    SetIndexStyle (4, DRAW_LINE,STYLE_SOLID,1,clevelr);
     SetIndexLabel (4, "Level 2");
 
     SetIndexBuffer(5, LowBuffer2);
-    SetIndexStyle (5, DRAW_LINE,STYLE_DASH,1,clevels);
+    SetIndexStyle (5, DRAW_LINE,STYLE_SOLID,1,clevels);
     SetIndexLabel (5, "Level 2");
     
     SetIndexBuffer(6, HighBuffer3);
-    SetIndexStyle (6, DRAW_LINE,STYLE_DASH,1,clevelr);
+    SetIndexStyle (6, DRAW_LINE,STYLE_SOLID,1,clevelr);
     SetIndexLabel (6, "Level 3");
 
     SetIndexBuffer(7, LowBuffer3);
-    SetIndexStyle (7, DRAW_LINE,STYLE_DASH,1,clevels);
+    SetIndexStyle (7, DRAW_LINE,STYLE_SOLID,1,clevels);
     SetIndexLabel (7, "Level 3");
 
 

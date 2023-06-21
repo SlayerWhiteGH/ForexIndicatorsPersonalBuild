@@ -11,7 +11,7 @@
 #property description " "
 #property description "                     --- @2022 --- "
 #property indicator_chart_window
-#property indicator_buffers 83
+#property indicator_buffers 46
 
 enum eModeMA         {_DisableAll/*Disable*/,_shEMA50/*Show EMA50*/,_shMAtr/*Show MATrend*/};
 enum eModeBB         {_DisableBB/*Disable*/,_shSD2/*Show BB SD 2*/};
@@ -404,7 +404,8 @@ int OnCalculate(const int rates_total,const int prev_calculated,const datetime &
 
 void setBufferValues() {
     if (isOn) {
-        for(int i=0; i<MathMin(IndicatorCounted(),Bars-1); i++){
+        int limit = fmax(WindowFirstVisibleBar(),1);
+            for(int i=0; i<limit; i++){
             //SMA/MIDBB
             SMA00[i] = Entry0?iMA(_Symbol,_Period,iP0,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
             SMA01[i] = Entry1?iMA(_Symbol,_Period,iP1,0,modeMA,PRICE_CLOSE,i):EMPTY_VALUE;
@@ -466,10 +467,11 @@ void setBufferValues() {
             LLWMASH02[i] = shadow?iMA(_Symbol,_Period,7,0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
             LLWMASH03[i] = shadow?iMA(_Symbol,_Period,8,0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
             LLWMASH04[i] = shadow?iMA(_Symbol,_Period,9,0,MODE_LWMA,PRICE_LOW,i):EMPTY_VALUE;
-        }
-    }
+         }
+      }
     else {
-        for(int i=0; i<MathMin(IndicatorCounted(),Bars-1); i++){
+         int limit = fmax(WindowFirstVisibleBar(),1);
+         for(int i=0; i<limit; i++){
             //SMA/MIDBB
             SMA00[i] = EMPTY_VALUE;
             SMA01[i] = EMPTY_VALUE;
@@ -531,7 +533,7 @@ void setBufferValues() {
             LLWMASH03[i] = EMPTY_VALUE;
             LLWMASH04[i] = EMPTY_VALUE;
         }
-    }
+      }
 }
 
 //-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
